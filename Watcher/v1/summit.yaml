@@ -1,0 +1,16 @@
+rules:
+- classname: Enabled
+  configs:
+  - name: ATDome
+  - name: ATDomeTrajectory
+  - name: ATHexapod
+  - name: ATMCS
+  - name: ATPneumatics
+  - name: ATPtg
+  - name: Environment
+- classname: Heartbeat
+  configs:
+  - name: ATDome
+  - name: ATDomeTrajectory
+  - name: ATHexapod
+  - name: Environment
