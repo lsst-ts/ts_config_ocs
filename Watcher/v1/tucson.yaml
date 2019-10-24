@@ -1,20 +1,21 @@
 rules:
 - classname: Enabled
   configs:
-  - name: ATDome
+  - name: ATCamera
+  - name: ATSpectrograph
+  - name: ScriptQueue
+  - name: ATArchiver
+  - name: ATHeaderService
   - name: ATDomeTrajectory
   - name: ATHexapod
   - name: ATMCS
   - name: ATPneumatics
   - name: ATPtg
-  - name: Environment
-  - name: ATAOS
-  - name: GenericCamera
 - classname: Heartbeat
   configs:
-  - name: ATDome
   - name: ATDomeTrajectory
   - name: ATHexapod
   - name: Environment
-  - name: ATAOS
-  - name: GenericCamera
+  - name: ScriptQueue
+  - name: ATHeaderService
+  - name: ATSpectrograph
