@@ -44,6 +44,11 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
                                          module_name="lsst.ts.environment",
                                          config_package_root=self.config_package_root)
 
+    def test_FiberSpectrograph(self):
+        self.check_standard_config_files(sal_name="FiberSpectrograph",
+                                         module_name="lsst.ts.FiberSpectrograph",
+                                         config_package_root=self.config_package_root)
+
     def test_GenericCamera(self):
         # Use env var TS_GENERICCAMERA_DIR because importing the module
         # requires a package that is not in the standard Docker image.
