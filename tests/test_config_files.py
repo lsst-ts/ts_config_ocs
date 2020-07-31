@@ -56,16 +56,6 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
                                          package_name="ts_GenericCamera",
                                          config_package_root=self.config_package_root)
 
-    def test_Hexapod(self):
-        self.check_standard_config_files(sal_name="Hexapod",
-                                         module_name="lsst.ts.hexapod",
-                                         config_package_root=self.config_package_root)
-
-    def test_Rotator(self):
-        self.check_standard_config_files(sal_name="Rotator",
-                                         module_name="lsst.ts.rotator",
-                                         config_package_root=self.config_package_root)
-
     def test_Test(self):
         self.check_standard_config_files(sal_name="Test",
                                          module_name="lsst.ts.salobj",
