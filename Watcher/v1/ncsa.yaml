@@ -1,0 +1,40 @@
+rules:
+- classname: Enabled
+  configs:
+  - name: ScriptQueue:1
+  - name: ScriptQueue:2
+  - name: Hexapod:1
+  - name: Hexapod:2
+  - name: MTAOS
+  - name: MTTM1M3
+  - name: MTM2
+  - name: Rotator
+  - name: NewMTMount
+  - name: MTPtg
+  - name: ATMCS
+  - name: ATDome
+  - name: ATDomeTrajectory
+  - name: ATPneumatics
+  - name: ATAOS
+  - name: ATHexapod
+  - name: ATSpectrograph
+  - name: ATPtg
+- classname: Heartbeat
+  configs:
+  - name: ScriptQueue:1
+  - name: ScriptQueue:2
+  - name: Hexapod:1
+  - name: Hexapod:2
+  - name: MTAOS
+  - name: MTM2
+  - name: Rotator
+  - name: NewMTMount
+  - name: MTPtg
+  - name: ATMCS
+  - name: ATDome
+  - name: ATDomeTrajectory
+  - name: ATPneumatics
+  - name: ATAOS
+  - name: ATHexapod
+  - name: ATSpectrograph
+  - name: ATPtg
