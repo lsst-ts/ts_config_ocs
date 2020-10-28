@@ -3,6 +3,8 @@ rules:
   configs:
   - name: ScriptQueue:1
   - name: ScriptQueue:2
+  - name: Scheduler:1
+  - name: Scheduler:2
   - name: Hexapod:1
   - name: Hexapod:2
   - name: MTAOS
@@ -21,6 +23,9 @@ rules:
   - name: ATHexapod
   - name: ATSpectrograph
   - name: ATPtg
+  - name: CCArchiver
+  - name: CCCamera
+  - name: CCHeaderService
 - classname: Heartbeat
   configs:
   - name: ScriptQueue:1
@@ -45,3 +50,6 @@ rules:
   - name: ATHexapod
   - name: ATSpectrograph
   - name: ATPtg
+  - name: CCArchiver
+  - name: CCCamera
+  - name: CCHeaderService
