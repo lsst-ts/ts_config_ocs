@@ -1,55 +1,55 @@
 rules:
 - classname: Enabled
   configs:
-  - name: ScriptQueue:1
-  - name: ScriptQueue:2
-  - name: Scheduler:1
-  - name: Scheduler:2
-  - name: MTHexapod:1
-  - name: MTHexapod:2
-  - name: MTAOS
-  - name: MTM1M3
-  - name: MTM2
-  - name: MTRotator
-  - name: NewMTMount
-  - name: MTPtg
-  - name: MTDome
-  - name: MTDomeTrajectory
-  - name: ATMCS
+  - name: ATAOS
   - name: ATDome
   - name: ATDomeTrajectory
-  - name: ATPneumatics
-  - name: ATAOS
   - name: ATHexapod
-  - name: ATSpectrograph
+  - name: ATMCS
+  - name: ATPneumatics
   - name: ATPtg
+  - name: ATSpectrograph
   - name: CCArchiver
   - name: CCCamera
   - name: CCHeaderService
+  - name: MTAOS
+  - name: MTDome
+  - name: MTDomeTrajectory
+  - name: MTHexapod:1
+  - name: MTHexapod:2
+  - name: MTM1M3
+  - name: MTM2
+  - name: MTMount
+  - name: MTPtg
+  - name: MTRotator
+  - name: Scheduler:1
+  - name: Scheduler:2
+  - name: ScriptQueue:1
+  - name: ScriptQueue:2
 - classname: Heartbeat
   configs:
-  - name: ScriptQueue:1
-  - name: ScriptQueue:2
-  - name: Scheduler:1
-  - name: Scheduler:2
-  - name: MTHexapod:1
-  - name: MTHexapod:2
-  - name: MTAOS
-  - name: MTM1M3
-  - name: MTM2
-  - name: MTRotator
-  - name: NewMTMount
-  - name: MTPtg
-  - name: MTDome
-  - name: MTDomeTrajectory
-  - name: ATMCS
+  - name: ATAOS
   - name: ATDome
   - name: ATDomeTrajectory
-  - name: ATPneumatics
-  - name: ATAOS
   - name: ATHexapod
-  - name: ATSpectrograph
+  - name: ATMCS
+  - name: ATPneumatics
   - name: ATPtg
+  - name: ATSpectrograph
   - name: CCArchiver
   - name: CCCamera
   - name: CCHeaderService
+  - name: MTAOS
+  - name: MTDome
+  - name: MTDomeTrajectory
+  - name: MTHexapod:1
+  - name: MTHexapod:2
+  - name: MTM1M3
+  - name: MTM2
+  - name: MTMount
+  - name: MTPtg
+  - name: MTRotator
+  - name: Scheduler:1
+  - name: Scheduler:2
+  - name: ScriptQueue:1
+  - name: ScriptQueue:2
