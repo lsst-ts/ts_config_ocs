@@ -1,5 +1,4 @@
-kind: "Micrometer"
-units: "um"
-devices: [name: "Dial Gage"]
-location: "Office"
-serial_port: "/dev/ttyUSB0"
+hub_config:
+  - sal_index: 1
+    devices:
+      - "Dial Gage"
