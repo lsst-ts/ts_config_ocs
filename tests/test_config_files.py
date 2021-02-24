@@ -30,38 +30,88 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.config_package_root = pathlib.Path(__file__).parents[1]
 
     def test_DIMM(self):
-        self.check_standard_config_files(sal_name="DIMM",
-                                         module_name="lsst.ts.dimm",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="DIMM",
+            module_name="lsst.ts.dimm",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
+
+    def test_EAS(self):
+        self.check_standard_config_files(
+            sal_name="EAS",
+            module_name="lsst.ts.eas",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
 
     def test_Electrometer(self):
-        self.check_standard_config_files(sal_name="Electrometer",
-                                         module_name="lsst.ts.electrometer",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="Electrometer",
+            module_name="lsst.ts.electrometer",
+            config_package_root=self.config_package_root,
+        )
 
-    def test_Environment(self):
-        self.check_standard_config_files(sal_name="Environment",
-                                         module_name="lsst.ts.environment",
-                                         config_package_root=self.config_package_root)
+    def test_ESS(self):
+        self.check_standard_config_files(
+            sal_name="ESS",
+            module_name="lsst.ts.ess",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
 
     def test_FiberSpectrograph(self):
-        self.check_standard_config_files(sal_name="FiberSpectrograph",
-                                         module_name="lsst.ts.FiberSpectrograph",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="FiberSpectrograph",
+            module_name="lsst.ts.FiberSpectrograph",
+            config_package_root=self.config_package_root,
+        )
 
     def test_GenericCamera(self):
         # Use env var TS_GENERICCAMERA_DIR because importing the module
         # requires a package that is not in the standard Docker image.
-        self.check_standard_config_files(sal_name="GenericCamera",
-                                         package_name="ts_GenericCamera",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="GenericCamera",
+            package_name="ts_GenericCamera",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
+
+    def test_HVAC(self):
+        self.check_standard_config_files(
+            sal_name="HVAC",
+            module_name="lsst.ts.hvac",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
+
+    def test_MTEEC(self):
+        self.check_standard_config_files(
+            sal_name="MTEEC",
+            module_name="lsst.ts.mteec",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
 
     def test_Test(self):
-        self.check_standard_config_files(sal_name="Test",
-                                         module_name="lsst.ts.salobj",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="Test",
+            module_name="lsst.ts.salobj",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
 
     def test_Watcher(self):
-        self.check_standard_config_files(sal_name="Watcher",
-                                         module_name="lsst.ts.watcher",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="Watcher",
+            module_name="lsst.ts.watcher",
+            config_package_root=self.config_package_root,
+        )
+
+    def test_WeatherStation(self):
+        self.check_standard_config_files(
+            sal_name="WeatherStation",
+            module_name="lsst.ts.weatherstation",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
