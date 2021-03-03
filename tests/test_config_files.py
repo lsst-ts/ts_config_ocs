@@ -1,6 +1,6 @@
 # This file is part of ts_config_ocs.
 #
-# Developed for the LSST Telescope and Site Systems.
+# Developed for Vera C. Rubin Observatory Telescope and Site Systems.
 # This product includes software developed by the LSST Project
 # (https://www.lsst.org).
 # See the COPYRIGHT file at the top-level directory of this distribution
@@ -64,6 +64,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(
             sal_name="FiberSpectrograph",
             module_name="lsst.ts.FiberSpectrograph",
+            schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
 
@@ -105,6 +106,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(
             sal_name="Watcher",
             module_name="lsst.ts.watcher",
+            schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
 
