@@ -64,6 +64,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(
             sal_name="FiberSpectrograph",
             module_name="lsst.ts.FiberSpectrograph",
+            schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
 
@@ -105,6 +106,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(
             sal_name="Watcher",
             module_name="lsst.ts.watcher",
+            schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
 
