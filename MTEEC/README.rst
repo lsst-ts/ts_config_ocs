@@ -1,1 +1,1 @@
-Configuration files for lsst.ts.mteec.MtEecCrc
+Configuration files for lsst.ts.mteec.MtEecCsc
