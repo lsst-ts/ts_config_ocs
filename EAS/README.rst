@@ -1,1 +1,1 @@
-Configuration files for lsst.ts.eas.EasCrc
+Configuration files for lsst.ts.eas.EasCsc
