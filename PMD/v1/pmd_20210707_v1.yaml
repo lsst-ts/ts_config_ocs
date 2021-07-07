@@ -1,0 +1,13 @@
+# Ticket used to create this file: DM-30638
+# Date created: 2021-07-07
+# Description: Added two more sensors for the Initial setup on the AuxTel during the June run.
+# Was used on-sky but then the file was renamed to follow convention.
+hub_config:
+  - sal_index: 1
+    devices:
+      - "micrometer1"
+      - "micrometer2"
+      - "micrometer3"
+      - "micrometer4"
+      - "micrometer5"
+    location: "AT"
