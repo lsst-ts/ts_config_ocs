@@ -1,0 +1,5 @@
+# Configuration for the COMCAM temperature sensor readout box
+host: comcam-ess01.cp.lsst.org
+devices: [
+  {name: CamHex_CCW-ESS01, channels: 8, device_type: FTDI, ftdi_id: AK071D5X, sensor_type: Temperature}
+]

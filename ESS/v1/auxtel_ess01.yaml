@@ -1,0 +1,6 @@
+# Configuration for the AuxTel temperature sensor readout box
+host: auxtel-ess01.cp.lsst.org
+devices: [
+  {name: AuxTel-ESS01, channels: 4, device_type: FTDI, ftdi_id: AL05OBVR, sensor_type: Temperature},
+  {name: AuxTel-ESS02, device_type: Serial, serial_port: serial_ch_2, sensor_type: HX85BA},
+]
