@@ -1,0 +1,5 @@
+# Configuration for the MTDome ESS03 humidity sensors.
+host: mtdome-rpi03.cp.lsst.org
+devices: [
+  {name: MTDome-ESS03, device_type: Serial, serial_port: serial_ch_2, sensor_type: HX85BA},
+]
