@@ -18,7 +18,8 @@ driver_configuration:
   script_configuration:
     script_configuration_cwfs:
       filter: FELH0600
-      mag_limit: 8.0      
+      find_target:
+        mag_limit: 8.0      
     script_configuration_spec:
       do_acquire: True
       do_take_sequence: True
