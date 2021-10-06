@@ -21,13 +21,31 @@ driver_configuration:
       acq_filter: "BG40"
       acq_grating: "empty_1"
       target_pointing_verification: False
-      filter_sequence:
-        - "FELH0600"
-        - "FELH0600"
-      grating_sequence:
-        - "empty_1"
-        - "empty_1"
       exposure_time_sequence:
-        - 15.0
-        - 15.0
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+      filter_sequence:
+        - empty_1
+        - SDSSg
+        - BG40
+        - FELH0600
+        - empty_1
+        - SDSSg
+        - BG40
+        - FELH0600
+      grating_sequence:
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - holo4_003
       do_blind_offset: False
