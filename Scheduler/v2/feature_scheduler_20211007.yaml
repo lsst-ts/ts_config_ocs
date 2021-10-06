@@ -1,5 +1,9 @@
 driver_type: lsst.ts.scheduler.driver.feature_scheduler
 mode: ADVANCE
+observatory_model:
+  camera:
+    filter_max_changes_burst_num: 1
+    filter_max_changes_avg_num: 30000
 driver_configuration:
   default_observing_script_name: auxtel/standard_visit.py
   default_observing_script_is_standard: true
@@ -14,6 +18,7 @@ driver_configuration:
   script_configuration:
     script_configuration_cwfs:
       filter: FELH0600
+      mag_limit: 8.0      
     script_configuration_spec:
       do_acquire: True
       do_take_sequence: True
