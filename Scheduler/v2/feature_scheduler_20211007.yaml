@@ -1,0 +1,33 @@
+driver_type: lsst.ts.scheduler.driver.feature_scheduler
+mode: ADVANCE
+driver_configuration:
+  default_observing_script_name: auxtel/standard_visit.py
+  default_observing_script_is_standard: true
+  scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/2021/10/07/fbs_config_spec_survey.py
+  survey_observing_script:
+    cwfs:
+      observing_script_name: auxtel/latiss_cwfs_align.py
+      observing_script_is_standard: false
+    spec:
+      observing_script_name: auxtel/latiss_acquire_and_take_sequence.py
+      observing_script_is_standard: false
+  script_configuration:
+    script_configuration_cwfs:
+      filter: FELH0600
+    script_configuration_spec:
+      do_acquire: True
+      do_take_sequence: True
+      max_acq_iter: 0
+      acq_filter: "BG40"
+      acq_grating: "empty_1"
+      target_pointing_verification: False
+      filter_sequence:
+        - "FELH0600"
+        - "FELH0600"
+      grating_sequence:
+        - "empty_1"
+        - "empty_1"
+      exposure_time_sequence:
+        - 15.0
+        - 15.0
+      do_blind_offset: False
