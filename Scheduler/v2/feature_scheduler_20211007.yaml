@@ -19,14 +19,12 @@ driver_configuration:
     script_configuration_cwfs:
       filter: FELH0600
       find_target:
-        mag_limit: 8.0      
+        mag_limit: 8.0
     script_configuration_spec:
       do_acquire: True
+      acq_filter: BG40
+      acq_grating: ronchi170lpmm
       do_take_sequence: True
-      max_acq_iter: 0
-      acq_filter: "BG40"
-      acq_grating: "empty_1"
-      target_pointing_verification: False
       exposure_time_sequence:
         - 20
         - 20
@@ -54,4 +52,3 @@ driver_configuration:
         - holo4_003
         - holo4_003
         - holo4_003
-      do_blind_offset: False

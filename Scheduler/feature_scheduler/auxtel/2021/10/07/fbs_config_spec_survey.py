@@ -27,9 +27,9 @@ def get_basis_functions_sp_survey(ra, nside, note, ha_limits, frac_total):
         basis_functions.Slewtime_basis_function(nside=nside),
         basis_functions.Moon_avoidance_basis_function(nside=nside),
         basis_functions.Zenith_shadow_mask_basis_function(
-            min_alt=28.0, max_alt=85.5, nside=nside
+            min_alt=28.0, max_alt=85., nside=nside
         ),
-        basis_functions.VisitGap(note=note, gap_min=15.0),
+        basis_functions.VisitGap(note=note, gap_min=30.0),
     ]
 
 
@@ -40,7 +40,7 @@ def get_basis_functions_cwfs_survey(nside, note, time_gap_min):
         basis_functions.Slewtime_basis_function(nside=nside),
         basis_functions.Moon_avoidance_basis_function(nside=nside),
         basis_functions.Zenith_shadow_mask_basis_function(
-            min_alt=28.0, max_alt=85.5, nside=nside
+            min_alt=28.0, max_alt=85., nside=nside
         ),
         basis_functions.VisitGap(note=note, gap_min=time_gap_min),
     ]
@@ -75,7 +75,7 @@ if __name__ == "config":
 
     surveys[0].append(
         Greedy_survey(
-            bfs, np.ones_like(bfs) * 10.0, nside=32, survey_name="cwfs", nexp=4
+            bfs, np.ones_like(bfs) * 10000.0, nside=32, survey_name="cwfs", nexp=4
         )
     )
 
@@ -91,7 +91,7 @@ if __name__ == "config":
         observation["RA"] = np.radians(ra)
         observation["dec"] = np.radians(dec)
         observation["filter"] = "r"
-        observation["exptime"] = 130.0
+        observation["exptime"] = 360.0
         observation["nexp"] = 1.0
         observation["note"] = f"spec:{name}"
         sequence = [observation]
