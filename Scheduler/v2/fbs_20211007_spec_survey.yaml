@@ -7,6 +7,7 @@ observatory_model:
 driver_configuration:
   default_observing_script_name: auxtel/standard_visit.py
   default_observing_script_is_standard: true
+  stop_tracking_observing_script_name: auxtel/stop_tracking.py
   scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/2021/10/07/fbs_config_spec_survey.py
   survey_observing_script:
     cwfs:
