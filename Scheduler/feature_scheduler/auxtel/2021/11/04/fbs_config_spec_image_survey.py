@@ -31,7 +31,7 @@ def get_basis_functions_image_survey(
         basis_functions.Time_to_twilight_basis_function(time_needed=time_needed),
         basis_functions.Hour_Angle_limit_basis_function(RA=ra, ha_limits=ha_limits),
         basis_functions.M5_diff_basis_function(nside=nside),
-        basis_functions.Slewtime_basis_function(nside=nside, filtername="g"),
+        basis_functions.Slewtime_basis_function(nside=nside, filtername="r"),
         basis_functions.Moon_avoidance_basis_function(nside=nside),
         basis_functions.Zenith_shadow_mask_basis_function(
             min_alt=28.0, max_alt=85.0, nside=nside
@@ -48,12 +48,12 @@ def get_basis_functions_sp_survey(
     ha_limits,
     wind_speed_maximum,
 ):
-    sun_alt_limit = -12.0
-    time_needed = 62.0
+    # This will fallback to using the night boundaries specified on the
+    # driver.
+    sun_alt_limit = 0
 
     return [
         basis_functions.Not_twilight_basis_function(sun_alt_limit=sun_alt_limit),
-        basis_functions.Time_to_twilight_basis_function(time_needed=time_needed),
         basis_functions.Hour_Angle_limit_basis_function(RA=ra, ha_limits=ha_limits),
         basis_functions.M5_diff_basis_function(nside=nside),
         basis_functions.Slewtime_basis_function(nside=nside),
@@ -72,7 +72,9 @@ def get_basis_functions_cwfs_survey(
     time_gap_min,
     wind_speed_maximum,
 ):
-    sun_alt_limit = -12.0
+    # This will fallback to using the night boundaries specified on the
+    # driver.
+    sun_alt_limit = 0
     return [
         basis_functions.Not_twilight_basis_function(sun_alt_limit=sun_alt_limit),
         basis_functions.Slewtime_basis_function(nside=nside),
@@ -91,8 +93,17 @@ if __name__ == "config":
     reward_value = 10
     nexp = 1
 
-    spec_ha_limit = [[18.0, 24.0], [0.0, 6.0]]
-    image_ha_limit = [[24.0 - 2.5, 24.0], [0.0, 2.5]]
+    spec_ha_limit = [
+        [18.0, 24.0],
+        [0.0, 6.0],
+    ]
+    image_ha_limit = [
+        [24.0 - 2.5, 24.0],
+        [0.0, 2.5],
+    ]
+    image_ha_limit_pole = [
+        [0.0, 24.0],
+    ]
 
     wind_speed_maximum = 8.0  # maximum direct wind in m/s
 
@@ -106,20 +117,26 @@ if __name__ == "config":
         ("MUCOL", "05:46:00", "-32:18:23.2", spec_ha_limit, reward_value),
         ("HD38949", "05:48:20", "-24:27:49.9", spec_ha_limit, reward_value),
         ("ETA1DOR", "06:06:09", "-66:02:23", spec_ha_limit, reward_value),
-        ("HD185975", "20:28:18", "-87:28:19.9", [[0.0, 24.0]], reward_value * 2.0),
+        (
+            "HD185975",
+            "20:28:18",
+            "-87:28:19.9",
+            image_ha_limit_pole,
+            reward_value * 2.0,
+        ),
         ("HD200654", "21:06:34", "-49:57:50.3", spec_ha_limit, reward_value),
         ("HD205905", "21:39:10", "-27:18:23.7", spec_ha_limit, reward_value),
     ]
 
     path = Path(__file__).parent
-    tiles = astropy_ascii.read(path / "latiss_tiles_goods.txt")
+    tiles = astropy_ascii.read(path / "latiss_tiles.txt")
 
     image_target_list = [
         (
             tile["Name"],
             tile["RA"],
             tile["Dec"],
-            image_ha_limit,
+            image_ha_limit_pole if "POLE" in tile["Name"] else image_ha_limit,
             reward_value,
         )
         for tile in tiles
@@ -162,7 +179,7 @@ if __name__ == "config":
         observation = empty_observation()
         observation["RA"] = np.radians(ra)
         observation["dec"] = np.radians(dec)
-        observation["filter"] = "g"
+        observation["filter"] = "r"
         observation["exptime"] = 60.0
         observation["nexp"] = 2
         observation["note"] = f"{name}"

@@ -1,0 +1,8 @@
+driver_type: lsst.ts.scheduler.driver.feature_scheduler
+mode: ADVANCE
+s3instance: nts
+driver_configuration:
+  default_observing_script_name: auxtel/track_target_and_take_image.py
+  default_observing_script_is_standard: true
+  stop_tracking_observing_script_name: auxtel/stop_tracking.py
+  scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/standstill.py

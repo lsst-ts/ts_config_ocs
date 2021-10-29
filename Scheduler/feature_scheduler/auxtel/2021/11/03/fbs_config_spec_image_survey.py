@@ -31,7 +31,7 @@ def get_basis_functions_image_survey(
         basis_functions.Time_to_twilight_basis_function(time_needed=time_needed),
         basis_functions.Hour_Angle_limit_basis_function(RA=ra, ha_limits=ha_limits),
         basis_functions.M5_diff_basis_function(nside=nside),
-        basis_functions.Slewtime_basis_function(nside=nside, filtername="g"),
+        basis_functions.Slewtime_basis_function(nside=nside, filtername="r"),
         basis_functions.Moon_avoidance_basis_function(nside=nside),
         basis_functions.Zenith_shadow_mask_basis_function(
             min_alt=28.0, max_alt=85.0, nside=nside
@@ -48,12 +48,12 @@ def get_basis_functions_sp_survey(
     ha_limits,
     wind_speed_maximum,
 ):
-    sun_alt_limit = -12.0
-    time_needed = 62.0
+    # This will fallback to using the night boundaries specified on the
+    # driver.
+    sun_alt_limit = 0
 
     return [
         basis_functions.Not_twilight_basis_function(sun_alt_limit=sun_alt_limit),
-        basis_functions.Time_to_twilight_basis_function(time_needed=time_needed),
         basis_functions.Hour_Angle_limit_basis_function(RA=ra, ha_limits=ha_limits),
         basis_functions.M5_diff_basis_function(nside=nside),
         basis_functions.Slewtime_basis_function(nside=nside),
@@ -72,7 +72,9 @@ def get_basis_functions_cwfs_survey(
     time_gap_min,
     wind_speed_maximum,
 ):
-    sun_alt_limit = -12.0
+    # This will fallback to using the night boundaries specified on the
+    # driver.
+    sun_alt_limit = 0
     return [
         basis_functions.Not_twilight_basis_function(sun_alt_limit=sun_alt_limit),
         basis_functions.Slewtime_basis_function(nside=nside),
@@ -112,7 +114,7 @@ if __name__ == "config":
     ]
 
     path = Path(__file__).parent
-    tiles = astropy_ascii.read(path / "latiss_tiles_goods.txt")
+    tiles = astropy_ascii.read(path / "latiss_tiles_pole.txt")
 
     image_target_list = [
         (
@@ -162,7 +164,7 @@ if __name__ == "config":
         observation = empty_observation()
         observation["RA"] = np.radians(ra)
         observation["dec"] = np.radians(dec)
-        observation["filter"] = "g"
+        observation["filter"] = "r"
         observation["exptime"] = 60.0
         observation["nexp"] = 2
         observation["note"] = f"{name}"
