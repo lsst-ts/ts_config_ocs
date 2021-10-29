@@ -16,7 +16,13 @@ from rubin_sim.scheduler.schedulers import Core_scheduler
 from rubin_sim.scheduler.surveys import Greedy_survey, FieldSurvey
 
 
-def get_basis_functions_image_survey(ra, nside, note, ha_limits):
+def get_basis_functions_image_survey(
+    ra,
+    nside,
+    note,
+    ha_limits,
+    wind_speed_maximum,
+):
     sun_alt_limit = -18.0
     time_needed = 62.0
 
@@ -31,11 +37,18 @@ def get_basis_functions_image_survey(ra, nside, note, ha_limits):
             min_alt=28.0, max_alt=85.0, nside=nside
         ),
         basis_functions.VisitGap(note=note, gap_min=1440.0),
+        basis_functions.AvoidDirectWind(wind_speed_maximum=wind_speed_maximum),
     ]
 
 
-def get_basis_functions_sp_survey(ra, nside, note, ha_limits, frac_total):
-    sun_alt_limit = -18.0
+def get_basis_functions_sp_survey(
+    ra,
+    nside,
+    note,
+    ha_limits,
+    wind_speed_maximum,
+):
+    sun_alt_limit = -12.0
     time_needed = 62.0
 
     return [
@@ -46,22 +59,29 @@ def get_basis_functions_sp_survey(ra, nside, note, ha_limits, frac_total):
         basis_functions.Slewtime_basis_function(nside=nside),
         basis_functions.Moon_avoidance_basis_function(nside=nside),
         basis_functions.Zenith_shadow_mask_basis_function(
-            min_alt=28.0, max_alt=85., nside=nside
+            min_alt=28.0, max_alt=85.0, nside=nside
         ),
         basis_functions.VisitGap(note=note, gap_min=30.0),
+        basis_functions.AvoidDirectWind(wind_speed_maximum=wind_speed_maximum),
     ]
 
 
-def get_basis_functions_cwfs_survey(nside, note, time_gap_min):
+def get_basis_functions_cwfs_survey(
+    nside,
+    note,
+    time_gap_min,
+    wind_speed_maximum,
+):
     sun_alt_limit = -12.0
     return [
         basis_functions.Not_twilight_basis_function(sun_alt_limit=sun_alt_limit),
         basis_functions.Slewtime_basis_function(nside=nside),
         basis_functions.Moon_avoidance_basis_function(nside=nside),
         basis_functions.Zenith_shadow_mask_basis_function(
-            min_alt=28.0, max_alt=85., nside=nside
+            min_alt=28.0, max_alt=85.0, nside=nside
         ),
         basis_functions.VisitGap(note=note, gap_min=time_gap_min),
+        basis_functions.AvoidDirectWind(wind_speed_maximum=wind_speed_maximum),
     ]
 
 
@@ -73,6 +93,8 @@ if __name__ == "config":
 
     spec_ha_limit = [[18.0, 24.0], [0.0, 6.0]]
     image_ha_limit = [[24.0 - 2.5, 24.0], [0.0, 2.5]]
+
+    wind_speed_maximum = 8.0  # maximum direct wind in m/s
 
     spec_target_list = [
         ("HD2811", "00:31:18", "-43:36:23.0", spec_ha_limit, reward_value),
@@ -93,18 +115,33 @@ if __name__ == "config":
     tiles = astropy_ascii.read(path / "latiss_tiles_goods.txt")
 
     image_target_list = [
-        (tile["Name"], tile["RA"], tile["Dec"], image_ha_limit, reward_value)
+        (
+            tile["Name"],
+            tile["RA"],
+            tile["Dec"],
+            image_ha_limit,
+            reward_value,
+        )
         for tile in tiles
     ]
 
     surveys = [[], [], []]
 
     # CWFS survey
-    bfs = get_basis_functions_cwfs_survey(nside=32, note="cwfs", time_gap_min=120.0)
+    bfs = get_basis_functions_cwfs_survey(
+        nside=32,
+        note="cwfs",
+        time_gap_min=120.0,
+        wind_speed_maximum=wind_speed_maximum,
+    )
 
     surveys[0].append(
         Greedy_survey(
-            bfs, np.ones_like(bfs) * 10000.0, nside=32, survey_name="cwfs", nexp=4
+            bfs,
+            np.ones_like(bfs) * 10000.0,
+            nside=32,
+            survey_name="cwfs",
+            nexp=4,
         )
     )
 
@@ -115,7 +152,11 @@ if __name__ == "config":
         dec = Angle(dec_str, unit=u.deg).to(u.deg).value
 
         bfs = get_basis_functions_image_survey(
-            ra=ra, nside=nside, note=name, ha_limits=ha_limits
+            ra=ra,
+            nside=nside,
+            note=name,
+            ha_limits=ha_limits,
+            wind_speed_maximum=wind_speed_maximum,
         )
 
         observation = empty_observation()
@@ -155,7 +196,11 @@ if __name__ == "config":
         dec = Angle(dec_str, unit=u.deg).to(u.deg).value
 
         bfs = get_basis_functions_sp_survey(
-            ra=ra, nside=32, note=name, ha_limits=ha_limits, frac_total=0.2
+            ra=ra,
+            nside=32,
+            note=name,
+            ha_limits=ha_limits,
+            wind_speed_maximum=wind_speed_maximum,
         )
 
         observation = empty_observation()
