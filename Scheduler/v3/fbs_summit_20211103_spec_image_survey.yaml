@@ -12,7 +12,7 @@ models:
         - 90
 driver_configuration:
   parameters:
-    night_boundary: -6.0
+    night_boundary: -18.0
   default_observing_script_name: auxtel/track_target_and_take_image.py
   default_observing_script_is_standard: true
   stop_tracking_observing_script_name: auxtel/stop_tracking.py
