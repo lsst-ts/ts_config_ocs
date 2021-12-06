@@ -11,7 +11,15 @@ instances:
             device_type: FTDI
             ftdi_id: AK071D5X
             sensor_type: Temperature
-            location: Motor 1 temp,Motor 2 temp,Strut 7 temp,Strut 8 temp,Strut 9 temp,Strut 10 temp,Strut 11 temp,Strut 12 temp
+            location: >-
+              MT rotator motor 1,
+              MT rotator motor 2,
+              MT camera hexapod strut 7,
+              MT camera hexapod strut 8,
+              MT camera hexapod strut 9,
+              MT camera hexapod strut 10,
+              MT camera hexapod strut 11,
+              MT camera hexapod strut 12
   - sal_index: 101
     models:
       - model_class: RPiModel
@@ -23,7 +31,7 @@ instances:
             device_type: Serial
             serial_port: serial_ch_2
             sensor_type: HX85A
-            location: MTDome-ESS01
+            location: MT dome air handling unit 1
   - sal_index: 102
     models:
       - model_class: RPiModel
@@ -35,7 +43,8 @@ instances:
             device_type: Serial
             serial_port: serial_ch_2
             sensor_type: HX85A
-            location: MTDome-ESS02
+            # TODO: is this sensor inside or outside?
+            location: MT dome wall at 7th floor
   - sal_index: 103
     models:
       - model_class: RPiModel
@@ -47,7 +56,7 @@ instances:
             device_type: Serial
             serial_port: serial_ch_2
             sensor_type: HX85A
-            location: MTDome-ESS03
+            location: MT dome inside at 8th floor
   - sal_index: 201
     models:
       - model_class: RPiModel
@@ -60,9 +69,9 @@ instances:
             device_type: FTDI
             ftdi_id: AL05OBVR
             sensor_type: Temperature
-            location: Unused,Air,Truss,M2
+            location: unused, AT air, AT truss, AT M2
           - name: AuxTel-ESS02
             device_type: Serial
             serial_port: serial_ch_2
             sensor_type: HX85BA
-            location: AzAxis
+            location: AT azimuth axis
