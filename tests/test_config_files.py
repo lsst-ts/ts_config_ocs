@@ -63,7 +63,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def test_ESS(self):
         self.check_standard_config_files(
             sal_name="ESS",
-            module_name="lsst.ts.ess",
+            module_name="lsst.ts.ess.csc",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
