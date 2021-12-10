@@ -2,8 +2,11 @@ rules:
 - classname: Enabled
   configs:
   - name: ATAOS
+  - name: ATArchiver
+  - name: ATCamera
   - name: ATDome
   - name: ATDomeTrajectory
+  - name: ATHeaderService
   - name: ATHexapod
   - name: ATMCS
   - name: ATPneumatics
@@ -12,6 +15,10 @@ rules:
   - name: CCArchiver
   - name: CCCamera
   - name: CCHeaderService
+  - name: DIMM:1
+  - name: DIMM:2
+  - name: DSM:1
+  - name: DSM:2
   - name: MTAOS
   - name: MTDome
   - name: MTDomeTrajectory
@@ -26,11 +33,15 @@ rules:
   - name: Scheduler:2
   - name: ScriptQueue:1
   - name: ScriptQueue:2
+  - name: WeatherStation:1
 - classname: Heartbeat
   configs:
   - name: ATAOS
+  - name: ATArchiver
+  - name: ATCamera
   - name: ATDome
   - name: ATDomeTrajectory
+  - name: ATHeaderService
   - name: ATHexapod
   - name: ATMCS
   - name: ATPneumatics
@@ -39,6 +50,10 @@ rules:
   - name: CCArchiver
   - name: CCCamera
   - name: CCHeaderService
+  - name: DIMM:1
+  - name: DIMM:2
+  - name: DSM:1
+  - name: DSM:2
   - name: MTAOS
   - name: MTDome
   - name: MTDomeTrajectory
@@ -53,3 +68,4 @@ rules:
   - name: Scheduler:2
   - name: ScriptQueue:1
   - name: ScriptQueue:2
+  - name: WeatherStation:1
