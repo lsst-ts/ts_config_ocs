@@ -3,6 +3,6 @@ host: mtdome-rpi01.cp.lsst.org
 devices:
 - name: MTDome-ESS01
   device_type: Serial
-  serial_port: serial_ch_2
+  serial_port: /dev/ttyAMA2
   sensor_type: HX85A
   location: MTDome-ESS01
