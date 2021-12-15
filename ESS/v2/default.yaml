@@ -29,7 +29,7 @@ instances:
           devices:
           - name: MTDome-ESS01
             device_type: Serial
-            serial_port: serial_ch_2
+            serial_port: /dev/ttyAMA1
             sensor_type: HX85A
             location: MT dome air handling unit 1
   - sal_index: 102
@@ -41,10 +41,9 @@ instances:
           devices:
           - name: MTDome-ESS02
             device_type: Serial
-            serial_port: serial_ch_2
+            serial_port: /dev/ttyAMA1
             sensor_type: HX85A
-            # TODO: is this sensor inside or outside?
-            location: MT dome wall at 7th floor
+            location: MT dome wall inside at 7th floor
   - sal_index: 103
     data_clients:
       - client_class: RPiDataClient
@@ -54,8 +53,8 @@ instances:
           devices:
           - name: MTDome-ESS03
             device_type: Serial
-            serial_port: serial_ch_2
-            sensor_type: HX85A
+            serial_port: /dev/ttyAMA1
+            sensor_type: HX85BA
             location: MT dome inside at 8th floor
   - sal_index: 201
     data_clients:
@@ -72,6 +71,6 @@ instances:
             location: unused, AT air, AT truss, AT M2
           - name: AuxTel-ESS02
             device_type: Serial
-            serial_port: serial_ch_2
+            serial_port: /dev/ttyAMA1
             sensor_type: HX85BA
             location: AT azimuth axis
