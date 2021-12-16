@@ -12,14 +12,14 @@ instances:
             ftdi_id: AK071D5X
             sensor_type: Temperature
             location: >-
-              MT rotator motor 1,
-              MT rotator motor 2,
               MT camera hexapod strut 7,
               MT camera hexapod strut 8,
               MT camera hexapod strut 9,
               MT camera hexapod strut 10,
               MT camera hexapod strut 11,
-              MT camera hexapod strut 12
+              MT camera hexapod strut 12,
+              MT rotator motor 1,
+              MT rotator motor 2
   - sal_index: 101
     data_clients:
       - client_class: RPiDataClient
