@@ -110,7 +110,7 @@ rules:
       - topic_name: temperature
         sensor_names:
         - sensor_name: CamHex_CCW-ESS01
-          indices: [2, 3, 4, 5, 5, 6]  # struts 7-12
+          indices: [0, 1, 2, 3, 4, 5]  # struts 7-12
     warning_level: 28
     warning_msg: Strut temperature is nearing the shutoff limit.
     critical_level: 30
