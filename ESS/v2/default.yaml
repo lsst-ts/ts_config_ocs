@@ -31,7 +31,7 @@ instances:
             device_type: Serial
             serial_port: /dev/ttyAMA1
             sensor_type: HX85A
-            location: MT dome air handling unit 1
+            location: MT dome air handling unit 1; RPi with sticker 3
   - sal_index: 102
     data_clients:
       - client_class: RPiDataClient
@@ -43,7 +43,7 @@ instances:
             device_type: Serial
             serial_port: /dev/ttyAMA1
             sensor_type: HX85A
-            location: MT dome wall inside at 7th floor
+            location: MT dome wall inside at 7th floor; RPi with sticker 1
   - sal_index: 103
     data_clients:
       - client_class: RPiDataClient
@@ -55,7 +55,7 @@ instances:
             device_type: Serial
             serial_port: /dev/ttyAMA1
             sensor_type: HX85BA
-            location: MT dome inside at 8th floor
+            location: MT dome inside at 8th floor; RPi with sticker 4
   - sal_index: 201
     data_clients:
       - client_class: RPiDataClient
