@@ -1,0 +1,120 @@
+rules:
+- classname: Enabled
+  configs:
+  - name: ATAOS
+  - name: ATArchiver
+  - name: ATCamera
+  - name: ATDome
+  - name: ATDomeTrajectory
+  - name: ATHeaderService
+  - name: ATHexapod
+  - name: ATMCS
+  - name: ATPneumatics
+  - name: ATPtg
+  - name: ATSpectrograph
+  - name: CCArchiver
+  - name: CCCamera
+  - name: CCHeaderService
+  - name: DIMM:1
+  - name: DIMM:2
+  - name: GenericCamera
+  - name: MTAOS
+  - name: MTDome
+  - name: MTDomeTrajectory
+  - name: MTHexapod:1
+  - name: MTHexapod:2
+  - name: MTM1M3
+  - name: MTM2
+  - name: MTMount
+  - name: MTPtg
+  - name: MTRotator
+  - name: Scheduler:1
+  - name: Scheduler:2
+  - name: ScriptQueue:1
+  - name: ScriptQueue:2
+  - name: WeatherStation:1
+- classname: Heartbeat
+  configs:
+  - name: ATAOS
+  - name: ATArchiver
+  - name: ATCamera
+  - name: ATDome
+  - name: ATDomeTrajectory
+  - name: ATHeaderService
+  - name: ATHexapod
+  - name: ATMCS
+  - name: ATPneumatics
+  - name: ATPtg
+  - name: ATSpectrograph
+  - name: CCArchiver
+  - name: CCCamera
+  - name: CCHeaderService
+  - name: DIMM:1
+  - name: DIMM:2
+  - name: GenericCamera
+  - name: MTAOS
+  - name: MTDome
+  - name: MTDomeTrajectory
+  - name: MTHexapod:1
+  - name: MTHexapod:2
+  - name: MTM1M3
+  - name: MTM2
+  - name: MTMount
+  - name: MTPtg
+  - name: MTRotator
+  - name: Scheduler:1
+  - name: Scheduler:2
+  - name: ScriptQueue:1
+  - name: ScriptQueue:2
+  - name: WeatherStation:1
+- classname: DewPointDepression
+  configs:
+  - name: AT
+    dew_point_sensors:
+    - sal_index: 201  # see https://confluence.lsstcorp.org/display/LTS/ESS+CSC+Index+Registry
+      topics:
+      - topic_name: hx85ba
+        sensor_names:
+        - AuxTel-ESS01
+    temperature_sensors:
+    - sal_index: 1
+      topics:
+      - topic_name: temperature
+        sensor_names:
+        - sensor_name: AuxTel-ESS02
+          indices: [1, 2, 3]
+    warning_level: 3
+    critical_level: 2
+    hysteresis: 0.2
+    poll_interval: 1
+    max_data_age: 30
+- classname: Humidity
+  configs:
+  - name: AT
+    humidity_sensors:
+    - sal_index: 201  # see https://confluence.lsstcorp.org/display/LTS/ESS+CSC+Index+Registry
+      topics:
+      - topic_name: hx85ba
+        sensor_names:
+        - AuxTel-ESS01
+    warning_level: 73
+    hysteresis: 1
+    poll_interval: 1
+    max_data_age: 30
+- classname: OverTemperature
+  configs:
+  - name: MT Camera Hexapod
+    temperature_sensors:
+    - sal_index: 1  # see https://confluence.lsstcorp.org/display/LTS/ESS+CSC+Index+Registry
+      topics:
+      - topic_name: temperature
+        sensor_names:
+        - sensor_name: CamHex_CCW-ESS01
+          indices: [0, 1, 2, 3, 4, 5]  # struts 7-12
+    warning_level: 28
+    warning_msg: Strut temperature is nearing the shutoff limit.
+    critical_level: 30
+    critical_msg: Disable the hexapod. Strut temperature is too high.
+    hysteresis: 1
+    poll_interval: 1
+    max_data_age: 30
