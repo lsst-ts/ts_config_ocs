@@ -9,6 +9,7 @@ from pathlib import Path
 from astropy.coordinates import Angle
 from astropy.io import ascii as astropy_ascii
 
+from rubin_sim.scheduler import detailers
 from rubin_sim.scheduler import basis_functions
 
 from rubin_sim.scheduler.utils import empty_observation
@@ -112,7 +113,6 @@ def get_basis_functions_cwfs_survey(
             min_alt=28.0, max_alt=85.0, nside=nside
         ),
         basis_functions.VisitGap(note=note, gap_min=time_gap_min),
-        basis_functions.AvoidDirectWind(wind_speed_maximum=wind_speed_maximum),
     ]
 
 
@@ -128,6 +128,7 @@ def generate_image_survey(
     wind_speed_maximum,
     filters,
     nfields,
+    survey_detailers,
 ):
 
     ra = Angle(ra_str, unit=u.hourangle).to(u.deg).value
@@ -171,7 +172,7 @@ def generate_image_survey(
         reward_value=reward,
         nside=nside,
         nexp=nexp,
-        detailers=[],
+        detailers=survey_detailers,
     )
 
 
@@ -243,7 +244,6 @@ def get_scheduler():
 
     path = Path(__file__).parent.parent.parent
     tiles_file = path / "latiss_tiles.txt"
-    print(f"Reading tiles from {tiles_file}")
 
     tiles = astropy_ascii.read(str(tiles_file))
 
@@ -320,6 +320,13 @@ def get_scheduler():
         image_target_list_e6a,
         # image_target_list_pole,
     ]:
+        survey_detailers = [
+            detailers.Dither_detailer(
+                max_dither=0.0042,  # this is 0.25 arcminutes
+                per_night=True,
+                nnights=4,
+            )
+        ]
         for (
             name,
             name_survey,
@@ -343,6 +350,7 @@ def get_scheduler():
                     wind_speed_maximum=wind_speed_maximum,
                     filters=filters,
                     nfields=len(image_target_list),
+                    survey_detailers=survey_detailers,
                 )
             )
 
@@ -350,6 +358,14 @@ def get_scheduler():
     for image_target_list in [
         image_target_list_pole,
     ]:
+        survey_detailers = [
+            detailers.Dither_detailer(
+                max_dither=0.0042,  # this is 0.25 arcminutes
+                per_night=True,
+                nnights=4,
+            )
+        ]
+
         for (
             name,
             name_survey,
@@ -373,6 +389,7 @@ def get_scheduler():
                     wind_speed_maximum=wind_speed_maximum,
                     filters=filters,
                     nfields=len(image_target_list),
+                    survey_detailers=survey_detailers,
                 )
             )
 
