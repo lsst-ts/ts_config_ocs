@@ -57,7 +57,6 @@ def get_basis_functions_image_survey(
 
     return [
         basis_functions.Not_twilight_basis_function(sun_alt_limit=sun_alt_limit),
-        basis_functions.Time_to_twilight_basis_function(time_needed=time_needed),
         basis_functions.Hour_Angle_limit_basis_function(RA=ra, ha_limits=ha_limits),
         # basis_functions.M5_diff_basis_function(nside=nside),
         basis_functions.Slewtime_basis_function(nside=nside, filtername="g"),
