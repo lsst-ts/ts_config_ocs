@@ -9,7 +9,6 @@ from pathlib import Path
 from astropy.coordinates import Angle
 from astropy.io import ascii as astropy_ascii
 
-from rubin_sim.scheduler import detailers
 from rubin_sim.scheduler import basis_functions
 
 from rubin_sim.scheduler.utils import empty_observation
@@ -240,6 +239,13 @@ def get_scheduler():
         ),
         ("HD200654", "21:06:34", "-49:57:50.3", spec_ha_limit, reward_value),
         ("HD205905", "21:39:10", "-27:18:23.7", spec_ha_limit, reward_value),
+        ("HD60753", "07:33:27", "-50:35:03.3", spec_ha_limit, reward_value),
+        ("HD074000", "08:40:50", "-16:20:42.5", spec_ha_limit, reward_value),
+        ("HD111980", "12:53:15", "-18:31:20.0", spec_ha_limit, reward_value),
+        ("BD11_3759", "14:34:17 ", "-12:31:10.0", spec_ha_limit, reward_value),
+        ("18Sco", "16:15:37", "-08:22:10.0", spec_ha_limit, reward_value),
+        ("HD160617", "17:42:49", "-40:19:15.5", spec_ha_limit, reward_value),
+        ("HD167060", "18:17:44", "-61:42:31.6", spec_ha_limit, reward_value),
     ]
 
     path = Path(__file__).parent.parent.parent
@@ -320,12 +326,8 @@ def get_scheduler():
         image_target_list_e6a,
         # image_target_list_pole,
     ]:
-        survey_detailers = [
-            detailers.Dither_detailer(
-                max_dither=0.0042,  # this is 0.25 arcminutes
-                per_night=True,
-            )
-        ]
+        survey_detailers = []
+
         for (
             name,
             name_survey,
@@ -336,7 +338,7 @@ def get_scheduler():
             filters,
         ) in image_target_list:
 
-            surveys[1].append(
+            surveys[2].append(
                 generate_image_survey(
                     nside=nside,
                     reward=reward,
@@ -357,12 +359,7 @@ def get_scheduler():
     for image_target_list in [
         image_target_list_pole,
     ]:
-        survey_detailers = [
-            detailers.Dither_detailer(
-                max_dither=0.0042,  # this is 0.25 arcminutes
-                per_night=True,
-            )
-        ]
+        survey_detailers = []
 
         for (
             name,
@@ -374,7 +371,7 @@ def get_scheduler():
             filters,
         ) in image_target_list:
 
-            surveys[2].append(
+            surveys[3].append(
                 generate_image_survey(
                     nside=nside,
                     reward=reward,
@@ -413,7 +410,7 @@ def get_scheduler():
         observation["note"] = f"spec:{name}"
         sequence = [observation]
 
-        surveys[3].append(
+        surveys[1].append(
             FieldSurvey(
                 bfs,
                 np.array(
