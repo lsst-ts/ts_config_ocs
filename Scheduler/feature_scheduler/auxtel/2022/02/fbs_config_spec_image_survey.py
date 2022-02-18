@@ -9,7 +9,6 @@ from pathlib import Path
 from astropy.coordinates import Angle
 from astropy.io import ascii as astropy_ascii
 
-from rubin_sim.scheduler import detailers
 from rubin_sim.scheduler import basis_functions
 
 from rubin_sim.scheduler.utils import empty_observation
@@ -319,17 +318,7 @@ def get_scheduler():
         image_target_list_e6a,
         # image_target_list_pole,
     ]:
-        survey_detailers = [
-            detailers.Dither_detailer(
-                max_dither=0.0042,  # this is 0.25 arcminutes
-                per_night=True,
-            ),
-            detailers.Camera_rot_detailer(
-                max_rot=10.0,
-                min_rot=-10.0,
-                per_night=True,
-            ),
-        ]
+        survey_detailers = []
         for (
             name,
             name_survey,
@@ -361,17 +350,7 @@ def get_scheduler():
     for image_target_list in [
         image_target_list_pole,
     ]:
-        survey_detailers = [
-            detailers.Dither_detailer(
-                max_dither=0.0042,  # this is 0.25 arcminutes
-                per_night=True,
-            ),
-            detailers.Camera_rot_detailer(
-                max_rot=10.0,
-                min_rot=-10.0,
-                per_night=True,
-            ),
-        ]
+        survey_detailers = []
 
         for (
             name,
