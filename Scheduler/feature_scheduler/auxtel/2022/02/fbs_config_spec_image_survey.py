@@ -323,7 +323,12 @@ def get_scheduler():
             detailers.Dither_detailer(
                 max_dither=0.0042,  # this is 0.25 arcminutes
                 per_night=True,
-            )
+            ),
+            detailers.Camera_rot_detailer(
+                max_rot=10.0,
+                min_rot=-10.0,
+                per_night=True,
+            ),
         ]
         for (
             name,
@@ -360,7 +365,12 @@ def get_scheduler():
             detailers.Dither_detailer(
                 max_dither=0.0042,  # this is 0.25 arcminutes
                 per_night=True,
-            )
+            ),
+            detailers.Camera_rot_detailer(
+                max_rot=10.0,
+                min_rot=-10.0,
+                per_night=True,
+            ),
         ]
 
         for (
