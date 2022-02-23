@@ -75,13 +75,13 @@ rules:
       topics:
       - topic_name: hx85ba
         sensor_names:
-        - AuxTel-ESS01
+        - AuxTel-ESS02
     temperature_sensors:
-    - sal_index: 1
+    - sal_index: 201
       topics:
       - topic_name: temperature
         sensor_names:
-        - sensor_name: AuxTel-ESS02
+        - sensor_name: AuxTel-ESS01
           indices: [1, 2, 3]
     warning_level: 3
     critical_level: 2
@@ -96,7 +96,7 @@ rules:
       topics:
       - topic_name: hx85ba
         sensor_names:
-        - AuxTel-ESS01
+        - AuxTel-ESS02
     warning_level: 73
     hysteresis: 1
     poll_interval: 1
