@@ -1,6 +1,9 @@
 # A configuration that may be suitable for testing.
-type: lsst
-host: localhost
-port: 50000
-buffer_size: 2048
-timeout: 120.0
+instances:
+  - sal_index: 1
+    ws_type: lsst
+    config:
+      host: localhost
+      port: 50000
+      buffer_size: 2048
+      timeout: 120.0
