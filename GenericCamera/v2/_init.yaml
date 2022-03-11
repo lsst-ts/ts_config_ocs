@@ -3,11 +3,11 @@ instances:
     ip: "127.0.0.1"
     port: 5013
     directory: "~/"
-    fileNameFormat: "{timestamp}-{index}-{total}"
+    file_name_format: "{timestamp}-{index}-{total}"
     camera: "Simulator"
-    autoExposureInterval: 60
-    minBackground: 32500.0
-    maxBackground: 33000.0
+    auto_exposure_nterval: 60
+    min_background: 32500.0
+    max_background: 33000.0
     config:
-      maxWidth: 1024
-      maxHeight: 1024
+      max_width: 1024
+      max_height: 1024
