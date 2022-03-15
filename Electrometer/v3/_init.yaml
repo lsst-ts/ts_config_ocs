@@ -1,0 +1,11 @@
+# init configuration
+mode: 1
+fits_files_path: "~/electrometerFitsFiles"
+range: -0.01
+integration_time: 0.01
+median_filter_active: false
+filter_active: true
+avg_filter_active: false
+tcp_port: 9999
+host: 127.0.0.1
+timeout: 2
