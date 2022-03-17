@@ -16,7 +16,7 @@ driver_configuration:
   default_observing_script_name: auxtel/track_target_and_take_image.py
   default_observing_script_is_standard: true
   stop_tracking_observing_script_name: auxtel/stop_tracking.py
-  scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/2022/03/fbs_config_im_sp.py
+  scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/2022/03/fbs_config_sp_poor_conditions.py
   survey_observing_script:
     cwfs:
       observing_script_name: auxtel/latiss_cwfs_align.py
