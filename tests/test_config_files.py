@@ -81,7 +81,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         # requires a package that is not in the standard Docker image.
         self.check_standard_config_files(
             sal_name="GenericCamera",
-            package_name="ts_GenericCamera",
+            module_name="lsst.ts.genericcamera",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
