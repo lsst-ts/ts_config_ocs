@@ -2,19 +2,19 @@ rules:
 - classname: Enabled
   configs:
   - name: ATAOS
-  - name: ATArchiver
   - name: ATCamera
   - name: ATDome
   - name: ATDomeTrajectory
   - name: ATHeaderService
   - name: ATHexapod
   - name: ATMCS
+  - name: ATOODS
   - name: ATPneumatics
   - name: ATPtg
   - name: ATSpectrograph
-  - name: CCArchiver
   - name: CCCamera
   - name: CCHeaderService
+  - name: CCOODS
   - name: DIMM:1
   - name: GenericCamera
   - name: MTAOS
@@ -35,19 +35,19 @@ rules:
 - classname: Heartbeat
   configs:
   - name: ATAOS
-  - name: ATArchiver
   - name: ATCamera
   - name: ATDome
   - name: ATDomeTrajectory
   - name: ATHeaderService
   - name: ATHexapod
   - name: ATMCS
+  - name: ATOODS
   - name: ATPneumatics
   - name: ATPtg
   - name: ATSpectrograph
-  - name: CCArchiver
   - name: CCCamera
   - name: CCHeaderService
+  - name: CCOODS
   - name: DIMM:1
   - name: GenericCamera
   - name: MTAOS
