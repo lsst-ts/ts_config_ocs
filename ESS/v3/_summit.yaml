@@ -80,3 +80,20 @@ instances:
             ftdi_id: A104SE9D
             sensor_type: Temperature
             location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5, M1 sensor 6
+      - client_class: LabJackDataClient
+        # LabJack reading AuxTel camera coolant pressures
+        config:
+          device_type: T4
+          connection_type: TCP
+          identifier: 139.229.170.151  # TODO IT-3689: use the IP name, once it is updated
+          poll_interval: 5
+          topics:
+            - topic_name: tel_pressure
+              sensor_name: AuxTel-LabJack2
+              field_name: pressure
+              location: camera coolant high side pressure,camera coolant low side pressure
+              channel_names:
+                - AIN0
+                - AIN1
+              offset: 0
+              scale: 344738.0
