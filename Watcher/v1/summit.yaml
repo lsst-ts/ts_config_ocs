@@ -71,7 +71,7 @@ rules:
   configs:
   - name: AT
     dew_point_sensors:
-    - sal_index: 201  # see https://confluence.lsstcorp.org/display/LTS/ESS+CSC+Index+Registry
+    - sal_index: 201  # see ESS configuration
       topics:
       - topic_name: hx85ba
         sensor_names:
@@ -92,7 +92,7 @@ rules:
   configs:
   - name: AT
     humidity_sensors:
-    - sal_index: 201  # see https://confluence.lsstcorp.org/display/LTS/ESS+CSC+Index+Registry
+    - sal_index: 201  # see ESS configuration
       topics:
       - topic_name: hx85ba
         sensor_names:
@@ -105,7 +105,7 @@ rules:
   configs:
   - name: MT Camera Hexapod
     temperature_sensors:
-    - sal_index: 1  # see https://confluence.lsstcorp.org/display/LTS/ESS+CSC+Index+Registry
+    - sal_index: 1  # see ESS configuration
       topics:
       - topic_name: temperature
         sensor_names:

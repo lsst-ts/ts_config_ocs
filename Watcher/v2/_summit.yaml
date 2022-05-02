@@ -69,7 +69,7 @@ rules:
   configs:
   - name: AT
     dew_point_sensors:
-    - sal_index: 201  # see https://confluence.lsstcorp.org/display/LTS/ESS+CSC+Index+Registry
+    - sal_index: 201  # see ESS configuration
       topics:
       - topic_name: hx85ba
         sensor_names:
@@ -90,7 +90,7 @@ rules:
   configs:
   - name: AT
     humidity_sensors:
-    - sal_index: 201  # see https://confluence.lsstcorp.org/display/LTS/ESS+CSC+Index+Registry
+    - sal_index: 201  # see ESS configuration
       topics:
       - topic_name: hx85ba
         sensor_names:
@@ -103,7 +103,7 @@ rules:
   configs:
   - name: MT Camera Hexapod
     temperature_sensors:
-    - sal_index: 1  # see https://confluence.lsstcorp.org/display/LTS/ESS+CSC+Index+Registry
+    - sal_index: 1  # see ESS configuration
       topics:
       - topic_name: temperature
         sensor_names:
@@ -116,3 +116,20 @@ rules:
     hysteresis: 1
     poll_interval: 1
     max_data_age: 30
+- classname: ATCameraDewar
+  configs:
+  - min_warning_ccd_temp: -95
+    min_serious_ccd_temp: null
+    min_critical_ccd_temp: -97
+    max_warning_ccd_temp: -93
+    max_serious_ccd_temp: null
+    max_critical_ccd_temp: -91
+    max_warning_cold_plate_temp: -108
+    max_serious_cold_plate_temp: null
+    max_critical_cold_plate_temp: -104
+    max_warning_cryo_head_temp: -140
+    max_serious_cryo_head_temp: null
+    max_critical_cryo_head_temp: -128
+    max_warning_vacuum: 1.0e-6
+    max_serious_vacuum: null
+    max_critical_vacuum: 6.0e-6
