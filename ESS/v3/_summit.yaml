@@ -85,13 +85,13 @@ instances:
         config:
           device_type: T4
           connection_type: TCP
-          identifier: 139.229.170.151  # TODO IT-3689: use the IP name, once it is updated
+          identifier: auxtel-labjack01.cp.lsst.org
           poll_interval: 5
           topics:
             - topic_name: tel_pressure
-              sensor_name: AuxTel-LabJack2
+              sensor_name: AuxTel-LabJack01
               field_name: pressure
-              location: camera coolant high side pressure,camera coolant low side pressure
+              location: camera coolant high side,camera coolant low side
               channel_names:
                 - AIN0
                 - AIN1
