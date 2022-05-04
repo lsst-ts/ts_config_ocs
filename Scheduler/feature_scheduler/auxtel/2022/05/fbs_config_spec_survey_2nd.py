@@ -24,7 +24,7 @@ def get_basis_functions_cwfs_survey(
     """Get the basis functions for the CWFS survey.
 
     This is a background survey that will activate at specific points in time
-    to make sure the telescope optics is aligned.
+    to make sure the telescope optics are aligned.
 
     Parameters
     ----------
@@ -64,6 +64,28 @@ def get_basis_functions_sp_survey(
     wind_speed_maximum,
     gap_min,
 ):
+    """Get basis functions for spectroscopic survey.
+
+    Parameters
+    ----------
+    ra : float
+        RA of the target (in hours).
+    nside : int
+        Healpix maps resolution.
+    note : str
+        Survey note.
+    ha_limits : list [float, float]
+        Hour angle limits (in hours).
+    wind_speed_maximum : float
+        Maximum wind speed (in m/s).
+    gap_min : float
+        Gap between subsequent observations (in minutes).
+
+    Returns
+    -------
+    list of basis_functions.Base_basis_function
+        List of basis functions.
+    """
     # This will fallback to using the night boundaries specified on the
     # driver.
     sun_alt_limit = -12.0
@@ -85,6 +107,15 @@ def get_basis_functions_sp_survey(
 
 
 def get_scheduler():
+    """Construct feature based scheduler.
+
+    Returns
+    -------
+    nside : int
+        Healpix map resolution.
+    scheduler : Core_scheduler
+        Feature based scheduler.
+    """
     nside = 32
 
     reward_value = 10
@@ -108,6 +139,7 @@ def get_scheduler():
             spec_ha_limit_pole,
             reward_value * 2.0,
             60.0,
+            "spole",
         ),
         (
             "HD160617",
@@ -116,6 +148,7 @@ def get_scheduler():
             spec_ha_limit,
             reward_value,
             0.0,
+            "spec",
         ),
     ]
 
@@ -142,14 +175,22 @@ def get_scheduler():
     )
 
     # Spectroscopic survey
-    for name, ra_str, dec_str, ha_limits, reward, gap_min in spec_target_list:
+    for (
+        target_name,
+        ra_str,
+        dec_str,
+        ha_limits,
+        reward,
+        gap_min,
+        survey_name,
+    ) in spec_target_list:
         ra = Angle(ra_str, unit=u.hourangle).to(u.deg).value
         dec = Angle(dec_str, unit=u.deg).to(u.deg).value
 
         bfs = get_basis_functions_sp_survey(
             ra=ra,
             nside=nside,
-            note=name,
+            note=target_name,
             ha_limits=ha_limits,
             wind_speed_maximum=wind_speed_maximum,
             gap_min=gap_min,
@@ -161,7 +202,7 @@ def get_scheduler():
         observation["filter"] = "r"
         observation["exptime"] = 360.0
         observation["nexp"] = 1.0
-        observation["note"] = f"spec:{name}"
+        observation["note"] = f"{survey_name}:{target_name}"
         sequence = [observation]
 
         surveys.append(
@@ -179,7 +220,7 @@ def get_scheduler():
                         ]
                     ),
                     sequence=sequence,
-                    survey_name=name,
+                    survey_name=target_name,
                     reward_value=reward,
                     nside=nside,
                     nexp=nexp,
