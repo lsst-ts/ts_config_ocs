@@ -108,6 +108,7 @@ def get_scheduler():
             spec_ha_limit_pole,
             reward_value * 2.0,
             60.0,
+            "spole",
         ),
         (
             "HD111980",
@@ -116,6 +117,7 @@ def get_scheduler():
             spec_ha_limit,
             reward_value,
             0.0,
+            "spec",
         ),
     ]
 
@@ -142,14 +144,22 @@ def get_scheduler():
     )
 
     # Spectroscopic survey
-    for name, ra_str, dec_str, ha_limits, reward, gap_min in spec_target_list:
+    for (
+        target_name,
+        ra_str,
+        dec_str,
+        ha_limits,
+        reward,
+        gap_min,
+        survey_name,
+    ) in spec_target_list:
         ra = Angle(ra_str, unit=u.hourangle).to(u.deg).value
         dec = Angle(dec_str, unit=u.deg).to(u.deg).value
 
         bfs = get_basis_functions_sp_survey(
             ra=ra,
             nside=nside,
-            note=name,
+            note=target_name,
             ha_limits=ha_limits,
             wind_speed_maximum=wind_speed_maximum,
             gap_min=gap_min,
@@ -161,7 +171,7 @@ def get_scheduler():
         observation["filter"] = "r"
         observation["exptime"] = 360.0
         observation["nexp"] = 1.0
-        observation["note"] = f"spec:{name}"
+        observation["note"] = f"{survey_name}:{target_name}"
         sequence = [observation]
 
         surveys.append(
@@ -179,7 +189,7 @@ def get_scheduler():
                         ]
                     ),
                     sequence=sequence,
-                    survey_name=name,
+                    survey_name=target_name,
                     reward_value=reward,
                     nside=nside,
                     nexp=nexp,

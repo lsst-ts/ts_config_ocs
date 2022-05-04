@@ -33,7 +33,7 @@ driver_configuration:
       filter: SDSSg
       find_target:
         mag_limit: 8.0
-    script_configuration_spec:
+    script_configuration_spole:
       do_acquire: True
       acq_filter: empty_1
       acq_grating: ronchi170lpmm
@@ -50,6 +50,135 @@ driver_configuration:
         - empty_1
         - empty_1
       grating_sequence:
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
+    script_configuration_spec:
+      do_acquire: True
+      acq_filter: empty_1
+      acq_grating: ronchi170lpmm
+      do_blind_offset: False
+      do_take_sequence: True
+      exposure_time_sequence:
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+        - 20
+      filter_sequence:
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+      grating_sequence:
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - holo4_003
+        - holo4_003
         - ronchi170lpmm
         - ronchi170lpmm
         - holo4_003
