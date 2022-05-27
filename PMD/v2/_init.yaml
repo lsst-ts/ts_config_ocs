@@ -3,6 +3,7 @@
 # Description: Added two more sensors for the Initial setup on the AuxTel during the June run.
 # Was used on-sky but then the file was renamed to follow convention.
 # Was then updated to have *not* use port 5 on the multiplexer but use port 6 instead
+# Updated to include mtdome location for wind characterization test
 hub_config:
   - sal_index: 1
     devices:
@@ -15,6 +16,22 @@ hub_config:
       - ""
       - ""
     location: "AT"
+    telemetry_interval: 1
+    serial_port: 
+    units: "um"
+    serial_port: "/dev/ttyUSB0"
+    hub_type: "Mitutoyo"
+  - sal_index: 2
+    devices:
+      - "micrometer1"
+      - "micrometer2"
+      - "micrometer3"
+      - "micrometer4"
+      - ""
+      - ""
+      - ""
+      - ""
+    location: "MTDome"
     telemetry_interval: 1
     serial_port: 
     units: "um"
