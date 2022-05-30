@@ -140,34 +140,34 @@ def generate_image_survey(
 
     Parameters
     ----------
-    nside : int
+    nside : `int`
         Healpix map resolution.
-    reward : float
+    reward : `float`
         Reward value for the survey.
-    ra_str : str
-        Target RA coordinates in hexagesimal formal (HH:MM:SS.S).
-    dec_str : str
-        Target declination coordinates in hexagesimal format (DD:MM:SS.S).
-    name : str
+    ra_str : `str`
+        Target RA coordinates in hexagesimal format, in HH:MM:SS.S.
+    dec_str : `str`
+        Target declination coordinates in hexagesimal format, in DD:MM:SS.S.
+    name : `str`
         Target name.
-    name_survey : str
+    name_survey : `str`
         Name of the survey.
-    nexp : int
+    nexp : `int`
         Number of exposures.
-    ha_limits : list of list of [float, float]
-        Hour angle limits (in hours).
-    wind_speed_maximum : float
-        Wind speed limit (in m/s).
-    filters : str
+    ha_limits : `list` of `list` of [`float`, `float`]
+        Hour angle limits, in hours.
+    wind_speed_maximum : `float`
+        Wind speed limit, in m/s.
+    filters : `str`
         Observations filter name.
-    nfields : int
+    nfields : `int`
         Number of fields in the general survey.
-    survey_detailers : list of detailers.Base_detailer
+    survey_detailers : `list` of `detailers.Base_detailer`
         List of survey detailers.
 
     Returns
     -------
-    FieldSurvey
+    `FieldSurvey`
         Image survey.
     """
 
@@ -234,17 +234,17 @@ def get_basis_functions_sp_survey(
     Parameters
     ----------
     ra : float
-        RA of the target (in hours).
+        RA of the target, in hours.
     nside : int
         Healpix maps resolution.
     note : str
         Survey note.
     ha_limits : list [float, float]
-        Hour angle limits (in hours).
+        Hour angle limits, in hours.
     wind_speed_maximum : float
-        Maximum wind speed (in m/s).
+        Maximum wind speed, in m/s.
     gap_min : float
-        Gap between subsequent observations (in minutes).
+        Gap between subsequent observations, in minutes.
 
     Returns
     -------
@@ -367,6 +367,21 @@ def get_scheduler():
         if "_NGC" in tile["Name"]
     ]
 
+    image_target_list_sptcl = [
+        (
+            tile["Name"],
+            "SPTCL_J2040-5725",
+            tile["RA"],
+            tile["Dec"],
+            image_ha_limit,
+            reward_value,
+            "gri",
+            visit_gap,
+        )
+        for tile in tiles
+        if "SPTCL_J2040-5725" in tile["Name"]
+    ]
+
     surveys = [
         [],
         [],
@@ -393,9 +408,9 @@ def get_scheduler():
 
     # Image surveys
     for image_target_list in [
-        image_target_list_md02,
         image_target_list_e6a,
         image_target_list_ngc,
+        image_target_list_sptcl,
     ]:
         survey_detailers = []
         for (
