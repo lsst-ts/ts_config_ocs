@@ -88,7 +88,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["g"],
             visit_gap=10.0,
-            exptime=2160.0,
+            exptime=720.0,
             nexp=1,
         ),
     ]

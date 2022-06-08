@@ -39,7 +39,7 @@ driver_configuration:
       do_acquire: True
       acq_filter: empty_1
       acq_grating: ronchi170lpmm
-      do_blind_offset: False
+      do_blind_offset: True
       do_take_sequence: True
       exposure_time_sequence:
         - 30.0
