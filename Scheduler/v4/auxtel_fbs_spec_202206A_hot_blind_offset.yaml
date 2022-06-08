@@ -1,6 +1,6 @@
 driver_type: lsst.ts.scheduler.driver.feature_scheduler
 mode: ADVANCE
-startup_type: COLD
+startup_type: HOT
 startup_database: /home/saluser/rubin_sim_data/fbs_observation_database.sql
 models:
   observatory_model:
@@ -39,7 +39,7 @@ driver_configuration:
       do_acquire: True
       acq_filter: empty_1
       acq_grating: ronchi170lpmm
-      do_blind_offset: False
+      do_blind_offset: True
       do_take_sequence: True
       exposure_time_sequence:
         - 30.0
