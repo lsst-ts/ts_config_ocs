@@ -53,7 +53,7 @@ def get_scheduler():
 
     spec_ha_limit = [
         (18.0, 24.0),
-        (0.0, 6.0),
+        (0.0, 1.0),
     ]
     spec_ha_limit_pole = [
         (0.0, 24.0),
@@ -69,7 +69,7 @@ def get_scheduler():
     spec_target_list = [
         Target(
             target_name="HD185975",
-            survey_name="spole",
+            survey_name="spec",
             ra=Angle("20:28:18", unit=units.hourangle),
             dec=Angle("-87:28:19.9", unit=units.deg),
             hour_angle_limit=spec_ha_limit_pole,
@@ -80,10 +80,22 @@ def get_scheduler():
             nexp=1,
         ),
         Target(
-            target_name="HD160617",
+            target_name="HD142331",
             survey_name="spec",
-            ra=Angle("17:42:49", unit=units.hourangle),
-            dec=Angle("-40:19:15.5", unit=units.deg),
+            ra=Angle("15:54:19.79", unit=units.hourangle),
+            dec=Angle("-8:34:49.4", unit=units.deg),
+            hour_angle_limit=spec_ha_limit,
+            reward_value=reward_values["default"],
+            filters=["g"],
+            visit_gap=10.0,
+            exptime=720.0,
+            nexp=1,
+        ),
+        Target(
+            target_name="HD205905",
+            survey_name="spec",
+            ra=Angle("21:39:10.15", unit=units.hourangle),
+            dec=Angle("-27:18:23.7", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["default"],
             filters=["g"],
