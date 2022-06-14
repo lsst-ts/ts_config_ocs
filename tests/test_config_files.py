@@ -86,14 +86,6 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             config_package_root=self.config_package_root,
         )
 
-    def test_HVAC(self):
-        self.check_standard_config_files(
-            sal_name="HVAC",
-            module_name="lsst.ts.hvac",
-            schema_name="CONFIG_SCHEMA",
-            config_package_root=self.config_package_root,
-        )
-
     def test_MTEEC(self):
         self.check_standard_config_files(
             sal_name="MTEEC",
