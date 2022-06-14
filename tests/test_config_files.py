@@ -77,8 +77,6 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         )
 
     def test_GenericCamera(self):
-        # Use env var TS_GENERICCAMERA_DIR because importing the module
-        # requires a package that is not in the standard Docker image.
         self.check_standard_config_files(
             sal_name="GenericCamera",
             module_name="lsst.ts.genericcamera",
@@ -86,10 +84,10 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             config_package_root=self.config_package_root,
         )
 
-    def test_HVAC(self):
+    def test_GIS(self):
         self.check_standard_config_files(
-            sal_name="HVAC",
-            module_name="lsst.ts.hvac",
+            sal_name="GIS",
+            module_name="lsst.ts.gis",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
