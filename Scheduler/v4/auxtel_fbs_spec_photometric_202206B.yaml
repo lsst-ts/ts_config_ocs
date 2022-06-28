@@ -16,7 +16,7 @@ driver_configuration:
   parameters:
     night_boundary: -10.0  
   observation_database_name: /home/saluser/rubin_sim_data/fbs_observation_database.sql
-  scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/2022/06/fbs_config_spec_survey.py
+  scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/2022/06/fbs_config_spec_survey_photometric.py
   default_observing_script_name: auxtel/track_target_and_take_image.py
   default_observing_script_is_standard: true
   stop_tracking_observing_script_name: auxtel/stop_tracking.py
@@ -32,7 +32,7 @@ driver_configuration:
       grating: empty_1
       filter_prefix: SDSS
     script_configuration_cwfs:
-      filter: SDSSg
+      filter: SDSSr
       find_target:
         mag_limit: 8.0
     script_configuration_spec:
