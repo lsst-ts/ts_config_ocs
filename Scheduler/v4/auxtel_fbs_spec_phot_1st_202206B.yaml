@@ -1,0 +1,118 @@
+driver_type: lsst.ts.scheduler.driver.feature_scheduler
+mode: ADVANCE
+startup_type: COLD
+startup_database: /home/saluser/rubin_sim_data/fbs_observation_database.sql
+models:
+  observatory_model:
+    camera:
+      filter_max_changes_burst_num: 1
+      filter_max_changes_avg_num: 30000
+    optics_loop_corr:
+      tel_optics_cl_alt_limit:
+        - 0
+        - 30
+        - 90
+driver_configuration:
+  parameters:
+    night_boundary: -10.0  
+  observation_database_name: /home/saluser/rubin_sim_data/fbs_observation_database.sql
+  scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/2022/06/fbs_config_spec_survey_phot_1st.py
+  default_observing_script_name: auxtel/track_target_and_take_image.py
+  default_observing_script_is_standard: true
+  stop_tracking_observing_script_name: auxtel/stop_tracking.py
+  survey_observing_script:
+    cwfs:
+      observing_script_name: auxtel/latiss_cwfs_align.py
+      observing_script_is_standard: false
+    spec:
+      observing_script_name: auxtel/latiss_acquire_and_take_sequence.py
+      observing_script_is_standard: false
+  script_configuration:
+    script_configuration:
+      grating: empty_1
+      filter_prefix: SDSS
+    script_configuration_cwfs:
+      filter: SDSSr
+      find_target:
+        mag_limit: 8.0
+    script_configuration_spec:
+      do_acquire: True
+      acq_filter: empty_1
+      acq_grating: ronchi170lpmm
+      do_blind_offset: False
+      do_take_sequence: True
+      exposure_time_sequence:
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+        - 30.0
+      filter_sequence:
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - BG40
+        - BG40
+        - BG40
+        - BG40
+        - FELH0600
+        - FELH0600
+        - FELH0600
+        - FELH0600
+        - empty_1
+        - empty_1
+        - empty_1
+        - empty_1
+        - BG40
+        - BG40
+        - BG40
+        - BG40
+        - FELH0600
+        - FELH0600
+        - FELH0600
+        - FELH0600
+      grating_sequence:
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - holo4_003
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
+        - ronchi170lpmm
