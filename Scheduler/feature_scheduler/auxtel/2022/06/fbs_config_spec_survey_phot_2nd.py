@@ -53,10 +53,11 @@ def get_scheduler():
 
     spec_ha_limit = [
         (18.0, 24.0),
-        (0.0, 1.0),
+        (0.0, 6.0),
     ]
     spec_ha_limit_pole = [
-        (0.0, 24.0),
+        (22.0, 24.0),
+        (0.0, 8.0),
     ]
     image_ha_limit = [
         (24.0 - 3.5, 24.0),
@@ -76,18 +77,6 @@ def get_scheduler():
             reward_value=reward_values["spec_pole"],
             filters=["r"],
             visit_gap=60.0,
-            exptime=720.0,
-            nexp=1,
-        ),
-        Target(
-            target_name="HD142331",
-            survey_name="spec",
-            ra=Angle("15:54:19.79", unit=units.hourangle),
-            dec=Angle("-8:34:49.4", unit=units.deg),
-            hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["default"],
-            filters=["r"],
-            visit_gap=10.0,
             exptime=720.0,
             nexp=1,
         ),
