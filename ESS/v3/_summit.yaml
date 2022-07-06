@@ -108,6 +108,7 @@ instances:
           min_frequency: 0
           max_frequency: 100
           num_frequencies: 200
+          write_acceleration_data: false
           accelerometers:
             - sensor_name: AuxTel-M2
               location: AuxTel M2 x=el y=az
@@ -116,7 +117,8 @@ instances:
               # published scales: [989.58, 985.72, 999.46] mV/g
               scales: [0.100978, 0.100584, 0.101986]
             - sensor_name: AuxTel-Truss
-              location: AuxTell Truss x=el y=az
+              # Note z=az: this accelerometer is turned 90° from the other two
+              location: AuxTel Truss x=el z=az
               analog_inputs: [4, 5, 6]
               offsets: [2.49874, 2.49595, 2.41423]
               # published scales: [997.40, 1001.42, 995.95] mV/g
