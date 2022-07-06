@@ -97,3 +97,34 @@ instances:
                 - AIN1
               offset: 0
               scale: 344738.0
+  - sal_index: 202
+    data_clients:
+      - client_class: LabJackAccelerometerDataClient
+        # LabJack reading three accelerometers
+        config:
+          device_type: T7
+          connection_type: WIFI
+          identifier: aux-labjackwifi.cp.lsst.org
+          min_frequency: 0
+          max_frequency: 100
+          num_frequencies: 200
+          accelerometers:
+            - sensor_name: AuxTel-M2
+              location: AuxTel M2 x=el y=az
+              analog_inputs: [1, 2, 3]
+              offsets: [2.49017, 2.44424, 2.44589]
+              # published scales: [989.58, 985.72, 999.46] mV/g
+              scales: [0.100978, 0.100584, 0.101986]
+            - sensor_name: AuxTel-Truss
+              location: AuxTell Truss x=el y=az
+              analog_inputs: [4, 5, 6]
+              offsets: [2.49874, 2.49595, 2.41423]
+              # published scales: [997.40, 1001.42, 995.95] mV/g
+              scales: [0.101776, 0.102186, 0.101628]
+            - sensor_name: AuxTel-M1
+              location: AuxTel M1 x=el y=az
+              analog_inputs: [7, 8, 9]
+              offsets: [2.47830, 2.48088, 2.41385]
+              # published scales: [979.57, 966.99, 1003.76] mV/g
+              scales: [0.099956, 0.098672, 0.102424]
+
