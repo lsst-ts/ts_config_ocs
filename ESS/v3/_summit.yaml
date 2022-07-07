@@ -4,7 +4,7 @@ instances:
       - client_class: RPiDataClient
         # COMCAM temperature sensor readout box
         config:
-          host: comcam-ess01.cp.lsst.org
+          host: hexrot-ess01.cp.lsst.org
           devices:
           - name: CamHex_CCW-ESS01
             channels: 8
@@ -25,7 +25,7 @@ instances:
       - client_class: RPiDataClient
         # MTDome ESS01 humidity sensors.
         config:
-          host: mtdome-rpi01.cp.lsst.org
+          host: mtdome-ess01.cp.lsst.org
           devices:
           - name: MTDome-ESS01
             device_type: Serial
@@ -37,7 +37,7 @@ instances:
       - client_class: RPiDataClient
         # MTDome ESS02 humidity sensors.
         config:
-          host: mtdome-rpi02.cp.lsst.org
+          host: mtdome-ess02.cp.lsst.org
           devices:
           - name: MTDome-ESS02
             device_type: Serial
@@ -49,7 +49,7 @@ instances:
       - client_class: RPiDataClient
         # Configuration for the MTDome ESS03 humidity sensors.
         config:
-          host: mtdome-rpi03.cp.lsst.org
+          host: mtdome-ess03.cp.lsst.org
           devices:
           - name: MTDome-ESS03
             device_type: Serial
