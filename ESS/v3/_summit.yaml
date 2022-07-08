@@ -103,12 +103,12 @@ instances:
         # LabJack reading three accelerometers
         config:
           device_type: T7
-          connection_type: WIFI
-          identifier: aux-labjackwifi.cp.lsst.org
+          connection_type: TCP
+          identifier: aux-labjackwired.cp.lsst.org
           min_frequency: 0
           max_frequency: 100
           num_frequencies: 200
-          write_acceleration_data: false
+          write_acceleration: false
           accelerometers:
             - sensor_name: AuxTel-M2
               location: AuxTel M2 x=el y=az
