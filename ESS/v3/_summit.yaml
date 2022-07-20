@@ -80,6 +80,12 @@ instances:
             ftdi_id: A104SE9D
             sensor_type: Temperature
             location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5, M1 sensor 6
+          - name: AuxTel-ESS03
+            device_type: Serial
+            serial_port: /dev/ttyS0
+            sensor_type: CSAT3B
+            baud_rate: 151200
+            location: AT Dome
       - client_class: LabJackDataClient
         # LabJack reading AuxTel camera coolant pressures
         config:
