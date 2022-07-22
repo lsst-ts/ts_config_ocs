@@ -80,6 +80,12 @@ instances:
             ftdi_id: A104SE9D
             sensor_type: Temperature
             location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5, M1 sensor 6
+          - name: AuxTel-ESS03
+            device_type: Serial
+            serial_port: /dev/ttyS0
+            sensor_type: CSAT3B
+            baud_rate: 151200
+            location: AT Dome
       - client_class: LabJackDataClient
         # LabJack reading AuxTel camera coolant pressures
         config:
@@ -115,18 +121,18 @@ instances:
               analog_inputs: [1, 2, 3]
               offsets: [2.49017, 2.44424, 2.44589]
               # published scales: [989.58, 985.72, 999.46] mV/g
-              scales: [0.100978, 0.100584, 0.101986]
+              # desired units are (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published mV/g
+              scales: [9.903, 9.942, 9.805]
             - sensor_name: AuxTel-Truss
               # Note z=az: this accelerometer is turned 90° from the other two
               location: AuxTel Truss x=el z=az
               analog_inputs: [4, 5, 6]
               offsets: [2.49874, 2.49595, 2.41423]
               # published scales: [997.40, 1001.42, 995.95] mV/g
-              scales: [0.101776, 0.102186, 0.101628]
+              scales: [9.826, 9.786, 9.84]
             - sensor_name: AuxTel-M1
               location: AuxTel M1 x=el y=az
               analog_inputs: [7, 8, 9]
               offsets: [2.47830, 2.48088, 2.41385]
               # published scales: [979.57, 966.99, 1003.76] mV/g
-              scales: [0.099956, 0.098672, 0.102424]
-
+              scales: [10.004, 10.135, 9.763]
