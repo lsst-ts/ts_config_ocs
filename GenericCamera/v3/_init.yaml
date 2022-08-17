@@ -1,0 +1,12 @@
+instances:
+  - sal_index: 1
+    ip: "127.0.0.1"
+    port: 5013
+    file_name_format: "{timestamp}-{index}-{total}"
+    camera: "Simulator"
+    auto_exposure_interval: 60
+    min_background: 32500.0
+    max_background: 33000.0
+    config:
+      max_width: 1024
+      max_height: 1024

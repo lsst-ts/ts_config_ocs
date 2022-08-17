@@ -1,0 +1,10 @@
+instances:
+  - sal_index: 301
+    ip: 127.0.0.1
+    port: 5013
+    file_name_format: "{timestamp}-{index}-{total}"
+    camera: AlliedVision
+    config:
+      id: DEV_000F3103746E
+      liveview_use_autoexposure: false
+      image_type: Mono12
