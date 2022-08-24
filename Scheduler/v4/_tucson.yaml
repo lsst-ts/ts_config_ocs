@@ -54,8 +54,10 @@ driver_configuration:
     script_configuration:
       grating: empty_1
       filter_prefix: SDSS
+      camera_playlist: default
     script_configuration_cwfs:
       filter: SDSSr
+      camera_playlist: cwfs-test_take_sequence
       find_target:
         mag_limit: 8.0
     script_configuration_spec:
