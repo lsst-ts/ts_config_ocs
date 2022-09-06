@@ -63,29 +63,32 @@ instances:
         config:
           host: auxtel-ess01.cp.lsst.org
           devices:
-          - name: AuxTel-ESS01
-            channels: 4
-            device_type: FTDI
-            ftdi_id: AL05OBVR
-            sensor_type: Temperature
-            location: unused, AT air, AT truss, AT M2
+# Temporarily disabled because in repairs.
+#          - name: AuxTel-ESS01
+#            channels: 4
+#            device_type: FTDI
+#            ftdi_id: AL05OBVR
+#            sensor_type: Temperature
+#            location: unused, AT air, AT truss, AT M2
           - name: AuxTel-ESS02
             device_type: Serial
             serial_port: /dev/ttyAMA1
             sensor_type: HX85BA
             location: AT azimuth axis
-          - name: AuxTel-ESS03
-            channels: 6
-            device_type: FTDI
-            ftdi_id: A104SE9D
-            sensor_type: Temperature
-            location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5, M1 sensor 6
-          - name: AuxTel-ESS03
-            device_type: Serial
-            serial_port: /dev/ttyS0
-            sensor_type: CSAT3B
-            baud_rate: 151200
-            location: AT Dome
+# Temporarily disabled because in repairs.
+#          - name: AuxTel-ESS03
+#            channels: 6
+#            device_type: FTDI
+#            ftdi_id: A104SE9D
+#            sensor_type: Temperature
+#            location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5, M1 sensor 6
+# Temporarily disabled because in repairs.
+#          - name: AuxTel-ESS03
+#            device_type: Serial
+#            serial_port: /dev/ttyS0
+#            sensor_type: CSAT3B
+#            baud_rate: 151200
+#            location: AT Dome
       - client_class: LabJackDataClient
         # LabJack reading AuxTel camera coolant pressures
         config:
