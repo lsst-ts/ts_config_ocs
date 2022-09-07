@@ -1,8 +1,9 @@
+s3instance: null
+require_image_service: false
 instances:
   - sal_index: 301
     ip: 127.0.0.1
     port: 5013
-    file_name_format: "{timestamp}-{index}-{total}"
     camera: AlliedVision
     config:
       id: DEV_000F3103746E
