@@ -56,7 +56,7 @@ def get_scheduler():
         (0.0, 6.0),
     ]
     spec_ha_limit_pole = [
-        (12.0, 24.0),
+        (0.0, 24.0),
     ]
     image_ha_limit = [
         (24.0 - 3.5, 24.0),
@@ -76,7 +76,7 @@ def get_scheduler():
             reward_value=reward_values["spec_pole"],
             filters=["r"],
             visit_gap=60.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
         ),
         Target(
@@ -88,7 +88,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
         ),
         Target(
@@ -100,7 +100,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
         ),
         Target(
@@ -112,7 +112,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
         ),
         Target(
@@ -124,7 +124,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
         ),
         Target(
@@ -136,7 +136,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
         ),
         Target(
@@ -148,7 +148,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
         ),
         Target(
@@ -160,7 +160,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
         ),
         Target(
@@ -172,7 +172,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
         ),
         Target(
@@ -184,9 +184,20 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
-            moon_distance=90.0,
+        ),
+        Target(
+            target_name="HD60753",
+            survey_name="spec",
+            ra=Angle("07:33:27", unit=units.hourangle),
+            dec=Angle("-50:35:03.3", unit=units.deg),
+            hour_angle_limit=spec_ha_limit,
+            reward_value=reward_values["default"],
+            filters=["r"],
+            visit_gap=6.0,
+            exptime=240.0,
+            nexp=1,
         ),
         Target(
             target_name="HD167060",
@@ -197,9 +208,8 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
-            moon_distance=90.0,
         ),
         Target(
             target_name="HD200654",
@@ -210,9 +220,8 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
-            moon_distance=90.0,
         ),
         Target(
             target_name="HD205905",
@@ -223,9 +232,8 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=6.0,
-            exptime=120.0,
+            exptime=240.0,
             nexp=1,
-            moon_distance=90.0,
         ),
     ]
 
