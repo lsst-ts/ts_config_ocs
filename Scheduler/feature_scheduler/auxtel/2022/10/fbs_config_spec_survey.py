@@ -188,10 +188,10 @@ def get_scheduler():
             nexp=1,
         ),
         Target(
-            target_name="HD167060",
+            target_name="HD074000",
             survey_name="spec",
-            ra=Angle("18:17:44", unit=units.hourangle),
-            dec=Angle("-61:42:31.6", unit=units.deg),
+            ra=Angle("08:40:50", unit=units.hourangle),
+            dec=Angle("-16:20:42.5", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["default"],
             filters=["r"],
