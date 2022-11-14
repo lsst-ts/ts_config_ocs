@@ -1,0 +1,62 @@
+s3instance: cp
+# FIXME (IHS-6623): Need to use a fixed IP because name-resolution issues at
+# the summit. This should go back to ccs.lsst.org once these issues are
+# resolved.
+image_service_url: "http://139.229.170.11/ImageUtilities/rest/imageNameService"
+require_image_service: true
+always_save: true
+instances:
+  - sal_index: 101
+    ip: 127.0.0.1
+    port: 5101
+    camera: AlliedVision
+    config:
+      id: DEV_000F310360C2
+      liveview_use_autoexposure: true
+      image_type: Mono14
+      focal_length: 135
+      diameter: 67.5
+      aperture: "f/2"
+      plate_scale: 8.64
+  - sal_index: 102
+    ip: 127.0.0.1
+    port: 5102
+    camera: AlliedVision
+    config:
+      id: DEV_000F3103AE60
+      liveview_use_autoexposure: true
+      image_type: Mono14
+      focal_length: 375
+      diameter: 125
+      aperture: "f/3"
+      plate_scale: 3.11
+  - sal_index: 103
+    ip: 127.0.0.1
+    port: 5103
+    camera: AlliedVision
+    config:
+      id: DEV_000F31033FBA
+      liveview_use_autoexposure: true
+      image_type: Mono12
+      focal_length: 3432
+      diameter: 304
+      aperture: "f/11"
+      plate_scale: 0.67
+  - sal_index: 201
+    ip: 139.229.170.216
+    camera: Zwo
+    config:
+      bin_value: 2
+      use_zwo_filter_wheel: false
+  - sal_index: 301
+    ip: 127.0.0.1
+    port: 5301
+    camera: AlliedVision
+    config:
+      id: DEV_000F3103746E
+      liveview_use_autoexposure: true
+      image_type: Mono12
+      focal_length: null
+      diameter: null
+      aperture: null
+      plate_scale: null
