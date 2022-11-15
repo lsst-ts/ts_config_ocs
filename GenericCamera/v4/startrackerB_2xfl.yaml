@@ -1,0 +1,14 @@
+require_image_service: true
+instances:
+  - sal_index: 102
+    ip: 127.0.0.1
+    port: 5013
+    camera: AlliedVision
+    config:
+      id: DEV_000F3103AE60
+      liveview_use_autoexposure: true
+      image_type: Mono14
+      focal_length: 750
+      diameter: 125
+      aperture: "f/6"
+      plate_scale: 1.56
