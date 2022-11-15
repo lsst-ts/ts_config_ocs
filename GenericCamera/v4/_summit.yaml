@@ -4,6 +4,8 @@ s3instance: cp
 # resolved.
 image_service_url: "http://139.229.170.11/ImageUtilities/rest/imageNameService"
 require_image_service: true
+always_save: true
+directory: /net/project/
 instances:
   - sal_index: 101
     ip: 127.0.0.1
