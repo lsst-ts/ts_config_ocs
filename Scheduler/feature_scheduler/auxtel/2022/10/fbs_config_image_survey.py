@@ -37,6 +37,7 @@ def get_scheduler():
     nside = 64
     reward_values = dict(
         default=10.0,
+        image_pole=5.0,
     )
 
     image_nexp = 2  # number of exposures
