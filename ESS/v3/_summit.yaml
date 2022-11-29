@@ -139,3 +139,22 @@ instances:
               offsets: [2.47830, 2.48088, 2.41385]
               # published scales: [979.57, 966.99, 1003.76] mV/g
               scales: [10.004, 10.135, 9.763]
+  - sal_index: 203
+    data_clients:
+      - client_class: LightningDataClient
+        # Lightning and Electric Field Strength detectors.
+        config:
+          host: auxtel-lightning01.cp.lsst.org
+          devices:
+          - name: AuxTel-ElectricField01
+            device_type: FTDI
+            ftdi_id: FT0BH8QC
+            sensor_type: EFM100C
+            safe_interval: 60
+            num_samples: 20
+            threshold: 10.0
+          - name: AuxTel-Lightning01
+            device_type: FTDI
+            ftdi_id: FT2L9WW9
+            sensor_type: LD250
+            safe_interval: 2
