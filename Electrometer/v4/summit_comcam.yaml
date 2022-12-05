@@ -1,0 +1,14 @@
+# Configuration for photodiode electrometer attached to comcam cart.
+# Created 06-28-2022
+
+host: 'electrometer-photodiode01.cp.lsst.org'
+tcp_port: 5000
+fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+brand: "Keithley"
+model_id: "6517b"
+location: "ComCam"
+sensor_brand: "Hamamatsu"
+sensor_model: "S2281"
+sensor_serial: "S22818D091"
+vsource_attached: false
+temperature_attached: false
