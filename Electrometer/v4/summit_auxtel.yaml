@@ -1,0 +1,14 @@
+# Configuration for electrometer in AuxTel Illumination System
+# Created 2022-12-07
+
+host: 'auxtel-electrometer.cp.lsst.org'
+tcp_port: 4001
+fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+brand: "Keithley"
+model_id: "6517b"
+location: "AuxTel"
+sensor_brand: "Hamamatsu"
+sensor_model: "S2281"
+sensor_serial: ""
+vsource_attached: false
+temperature_attached: false
