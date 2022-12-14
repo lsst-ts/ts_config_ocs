@@ -1,0 +1,24 @@
+# Testing of electrometer with new converter
+# Created on 2022-03-16
+electrometer_config:
+  - sal_index: 1
+    mode: 1
+    range: 0.01
+    integration_time: 0.01
+    median_filter_active: false
+    filter_active: false
+    avg_filter_active: false
+    timeout: 2
+    tcp_port:  4001
+    host: 'lanToSerialConverterChiller.tu.lsst.org'
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_service_url: "http://comcam-mcm.tu.lsst.org"
+    s3_instance: "tuc"
+    brand: "Keithley"
+    model_id: "6517b"
+    location: "ComCam"
+    sensor_brand: "Hamamatsu"
+    sensor_model: "S2281"
+    sensor_serial: "S22818D091"
+    vsource_attached: false
+    temperature_attached: false
