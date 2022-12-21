@@ -12,13 +12,17 @@ rules:
   - name: ATPneumatics
   - name: ATPtg
   - name: ATSpectrograph
+  - name: Authorize
   - name: CCCamera
   - name: CCHeaderService
   - name: CCOODS
   - name: DIMM:1
+  - name: DIMM:2
   - name: DSM:1
   - name: DSM:2
   - name: MTAOS
+  - name: MTAirCompressor:1
+  - name: MTAirCompressor:2
   - name: MTDome
   - name: MTDomeTrajectory
   - name: MTHexapod:1
@@ -28,6 +32,8 @@ rules:
   - name: MTMount
   - name: MTPtg
   - name: MTRotator
+  - name: OCPS:1
+  - name: OCPS:2
   - name: Scheduler:1
   - name: Scheduler:2
   - name: ScriptQueue:1
@@ -46,13 +52,17 @@ rules:
   - name: ATPneumatics
   - name: ATPtg
   - name: ATSpectrograph
+  - name: Authorize
   - name: CCCamera
   - name: CCHeaderService
   - name: CCOODS
   - name: DIMM:1
+  - name: DIMM:2
   - name: DSM:1
   - name: DSM:2
   - name: MTAOS
+  - name: MTAirCompressor:1
+  - name: MTAirCompressor:2
   - name: MTDome
   - name: MTDomeTrajectory
   - name: MTHexapod:1
@@ -62,6 +72,8 @@ rules:
   - name: MTMount
   - name: MTPtg
   - name: MTRotator
+  - name: OCPS:1
+  - name: OCPS:2
   - name: Scheduler:1
   - name: Scheduler:2
   - name: ScriptQueue:1
