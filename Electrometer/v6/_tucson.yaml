@@ -1,7 +1,7 @@
 # Testing of electrometer with new converter
-# Created on 2022-03-16
+# Created on 2023-01-04
 electrometer_config:
-  - sal_index: 1
+  - sal_index: 3
     mode: 1
     range: 0.01
     integration_time: 0.01
@@ -10,7 +10,7 @@ electrometer_config:
     avg_filter_active: false
     timeout: 2
     tcp_port:  4001
-    host: 'lanToSerialConverterChiller.tu.lsst.org'
+    host: 'lan2laserElectrometer2.tu.lsst.org'
     fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
     image_service_url: "http://comcam-mcm.tu.lsst.org"
     s3_instance: "tuc"

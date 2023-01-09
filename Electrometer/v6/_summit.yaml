@@ -1,16 +1,16 @@
 # Configuration for photodiode electrometer attached to comcam cart.
-# Created 06-28-2022
+# Created 2023-01-04
 
 electrometer_config:
-  - host: 'electrometer-photodiode01.cp.lsst.org'
+  - sal_index: 1
+    host: 'electrometer-photodiode01.cp.lsst.org'
     mode: 1
-    range: 0.01
-    integration_time: 0.01
+    range: 2.0e-08
+    integration_time: 0.1
     median_filter_active: false
     filter_active: false
     avg_filter_active: false
     timeout: 2
-    sal_index: 1
     tcp_port: 5000
     fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
     brand: "Keithley"
@@ -21,5 +21,27 @@ electrometer_config:
     sensor_serial: "S22818D091"
     vsource_attached: false
     temperature_attached: false
-    image_service_url: "http://139.229.170.11"
+    image_service_url: "http://ccs.lsst.org"
+    s3_instance: "cp"
+
+  - sal_index: 201
+    host: 'auxtel-electrometer.cp.lsst.org'
+    mode: 1
+    range: 2.0e-08
+    integration_time: 0.1
+    median_filter_active: false
+    filter_active: false
+    avg_filter_active: false
+    timeout: 2
+    tcp_port: 4001
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    brand: "Keithley"
+    model_id: "6517b"
+    location: "AuxTel"
+    sensor_brand: "Hamamatsu"
+    sensor_model: "S2281"
+    sensor_serial: ""
+    vsource_attached: false
+    temperature_attached: false
+    image_service_url: "http://ccs.lsst.org"
     s3_instance: "cp"
