@@ -1,0 +1,16 @@
+# Testing of electrometer with new converter
+# Created on 2022-03-16
+tcp_port: 4001
+host: 'lanToSerialConverterChiller.tu.lsst.org'
+fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+image_service_url: "http://comcam-mcm.tu.lsst.org"
+s3instance: tuc
+baudrate: 57600
+brand: "Keithley"
+model_id: "6517b"
+location: "AuxTel"
+sensor_brand: "Hamamatsu"
+sensor_model: "S2281"
+sensor_serial: ""
+vsource_attached: false
+temperature_attached: false
