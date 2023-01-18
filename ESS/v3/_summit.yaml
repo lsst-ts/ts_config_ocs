@@ -89,6 +89,13 @@ instances:
             location: AT Dome
             # 10 samples per second so for 1 minute that is 600 samples.
             num_samples: 600
+          - name: AuxTel-Windsonic
+            device_type: Serial
+            serial_port: /dev/AMA1
+            sensor_type: Windsonic
+            location: AT Dome
+            # 1 sample per second so for 1 minute that is 60 samples.
+            num_samples: 60
       - client_class: LabJackDataClient
         # LabJack reading AuxTel camera coolant pressures
         config:
