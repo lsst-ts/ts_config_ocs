@@ -44,7 +44,7 @@ def get_scheduler():
         image_pole=1.0,
         image_survey=2.0,
         spec_pole=30.0,
-        spec_mucol=20.0,
+        spec_mucol=25.0,
     )
 
     image_nexp = 2  # number of exposures
