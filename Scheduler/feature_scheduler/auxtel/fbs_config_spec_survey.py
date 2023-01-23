@@ -212,7 +212,7 @@ def get_scheduler():
             nexp=1,
         ),
         Target(
-            target_name="HD1151169",
+            target_name="HD115169",
             survey_name="spec",
             ra=Angle("13:15:47", unit=units.hourangle),
             dec=Angle("-29:30:21.2", unit=units.deg),
