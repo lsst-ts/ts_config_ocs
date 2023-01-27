@@ -131,3 +131,11 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
+
+    def test_WeatherForecast(self):
+        self.check_standard_config_files(
+            sal_name="WeatherForecast",
+            module_name="lsst.ts.weatherforecast",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
