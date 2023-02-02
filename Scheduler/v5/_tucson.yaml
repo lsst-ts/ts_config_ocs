@@ -55,16 +55,20 @@ auxtel:
       script_configuration:
         grating: empty_1
         filter_prefix: SDSS
+        filter_suffix: _65mm
         camera_playlist: default
       script_configuration_cwfs:
-        filter: SDSSr
         camera_playlist: cwfs-test_take_sequence
+        filter: SDSSr_65mm
         find_target:
           mag_limit: 8.0
+          radius: 3.0
       script_configuration_spec:
         do_acquire: True
         acq_filter: empty_1
-        acq_grating: ronchi170lpmm
+        acq_grating: holo4_003
+        acq_exposure_time: 5.0
+        program: spec
         do_blind_offset: False
         do_take_sequence: True
         exposure_time_sequence:
@@ -72,13 +76,19 @@ auxtel:
           - 30.0
           - 30.0
           - 30.0
+          - 30.0
+          - 30.0
         filter_sequence:
           - empty_1
           - empty_1
-          - empty_1
-          - empty_1
+          - BG40_65mm_1
+          - BG40_65mm_1
+          - OG550_65mm_1
+          - OG550_65mm_1
         grating_sequence:
           - holo4_003
           - holo4_003
-          - ronchi170lpmm
-          - ronchi170lpmm
+          - holo4_003
+          - holo4_003
+          - holo4_003
+          - holo4_003
