@@ -155,14 +155,14 @@ instances:
           host: auxtel-lightning01.cp.lsst.org
           devices:
           - name: AuxTel-ElectricField01
-            device_type: FTDI
-            ftdi_id: FT0BH8QC
+            device_type: Serial
+            serial_port: /dev/ttyUSB1
             sensor_type: EFM100C
             safe_interval: 60
             num_samples: 20
             threshold: 10.0
           - name: AuxTel-Lightning01
-            device_type: FTDI
-            ftdi_id: FT2L9WW9
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
             sensor_type: LD250
             safe_interval: 2
