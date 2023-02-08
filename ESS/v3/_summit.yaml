@@ -158,11 +158,13 @@ instances:
             device_type: Serial
             serial_port: /dev/ttyUSB1
             sensor_type: EFM100C
-            safe_interval: 60
+            safe_interval: 10
             num_samples: 20
             threshold: 10.0
+            baud_rate: 9600
           - name: AuxTel-Lightning01
             device_type: Serial
             serial_port: /dev/ttyUSB0
             sensor_type: LD250
             safe_interval: 2
+            baud_rate: 9600
