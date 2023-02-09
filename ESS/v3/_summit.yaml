@@ -59,28 +59,31 @@ instances:
   - sal_index: 201
     data_clients:
       - client_class: RPiDataClient
-        # AuxTel temperature sensor readout box
         config:
           host: auxtel-ess01.cp.lsst.org
           devices:
+          # AuxTel temperature sensor readout box
           - name: AuxTel-ESS01
             channels: 4
             device_type: Serial
             serial_port: /dev/ttyAMA2
             sensor_type: Temperature
             location: unused, AT air, AT truss, AT M2
+          # AuxTel humidity sensor
           - name: AuxTel-ESS02
             device_type: Serial
             serial_port: /dev/ttyAMA1
             sensor_type: HX85BA
             location: AT azimuth axis
 # Temporarily disabled because in repairs.
+#          # AuxTel temperature sensor readout box
 #          - name: AuxTel-ESS03
 #            channels: 6
 #            device_type: FTDI
 #            ftdi_id: A104SE9D
 #            sensor_type: Temperature
 #            location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5, M1 sensor 6
+          # AuxTel 3D anemometer
           - name: AuxTel-ESS04
             device_type: Serial
             serial_port: /dev/ttyS0
@@ -89,13 +92,6 @@ instances:
             location: AT Dome
             # 10 samples per second so for 1 minute that is 600 samples.
             num_samples: 600
-          - name: AuxTel-Windsonic
-            device_type: Serial
-            serial_port: /dev/AMA1
-            sensor_type: Windsonic
-            location: AT Dome
-            # 1 sample per second so for 1 minute that is 60 samples.
-            num_samples: 60
       - client_class: LabJackDataClient
         # LabJack reading AuxTel camera coolant pressures
         config:
@@ -154,14 +150,31 @@ instances:
           host: auxtel-lightning01.cp.lsst.org
           devices:
           - name: AuxTel-ElectricField01
-            device_type: FTDI
-            ftdi_id: FT0BH8QC
+            device_type: Serial
+            serial_port: /dev/ttyUSB1
             sensor_type: EFM100C
-            safe_interval: 60
+            safe_interval: 10
             num_samples: 20
             threshold: 10.0
+            baud_rate: 9600
           - name: AuxTel-Lightning01
-            device_type: FTDI
-            ftdi_id: FT2L9WW9
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
             sensor_type: LD250
             safe_interval: 2
+            baud_rate: 9600
+  - sal_index: 204
+    data_clients:
+      - client_class: RPiDataClient
+        config:
+          host: auxtel-ess02.cp.lsst.org
+          devices:
+          # AuxTel 2D anemometer
+          - name: AuxTel-Windsonic
+            device_type: Serial
+            serial_port: /dev/ttyAMA4
+            sensor_type: Windsonic
+            baud_rate: 9600
+            location: AT Dome
+            # 1 sample per second so for 1 minute that is 60 samples.
+            num_samples: 60
