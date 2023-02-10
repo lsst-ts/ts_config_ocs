@@ -22,7 +22,7 @@ auxtel:
     stop_tracking_observing_script_name: auxtel/stop_tracking.py
     survey_observing_script:
       cwfs:
-        observing_script_name: auxtel/latiss_cwfs_align.py
+        observing_script_name: auxtel/latiss_wep_align.py
         observing_script_is_standard: false
       spec:
         observing_script_name: auxtel/latiss_acquire_and_take_sequence.py
