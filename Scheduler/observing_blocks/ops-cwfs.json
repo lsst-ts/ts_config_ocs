@@ -1,0 +1,20 @@
+{
+    "name": "CurvatureWavefrontSensing",
+    "program": "cwfs",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/latiss_wep_align.py",
+            "standard": false,
+            "parameters": {
+                "find_target": {
+                    "az": "$az",
+                    "el": "$alt",
+                    "mag_limit": 8.0
+                },
+                "filter": "SDSSr_65mm",
+                "program": "$program"
+            }
+        }
+    ]
+}
