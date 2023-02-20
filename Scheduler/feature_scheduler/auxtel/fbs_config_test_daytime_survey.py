@@ -102,6 +102,14 @@ def get_scheduler():
             if "Slewtime" in str(basis_func):
                 survey.basis_weights[i] *= 10.0
 
+    # Add "_sim" to all survey names
+    for survey_list in scheduler.survey_lists:
+        for survey in survey_list:
+            survey.survey_name += "_sim"
+            note = str(survey.observation[0]["note"])
+            survey_name, target_name = note.split(":", maxplit=1)
+            survey.observation[0]["note"] = f"{survey_name}_sim:{target_name}"
+
     return nside, scheduler
 
 
