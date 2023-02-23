@@ -14,7 +14,6 @@ properties([
 ])
 pipeline {
     agent {
-        // Run as root to avoid permission issues when creating files.
         // To run on a specific node, e.g. for a specific architecture, add `label '...'`.
         docker {
             alwaysPull true
