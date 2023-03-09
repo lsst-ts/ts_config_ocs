@@ -70,7 +70,7 @@ def get_scheduler():
     spec_target_list = [
         Target(
             target_name="HD185975",
-            survey_name="spec",
+            survey_name="spec_pole",
             ra=Angle("20:28:18", unit=units.hourangle),
             dec=Angle("-87:28:19.9", unit=units.deg),
             hour_angle_limit=spec_ha_limit_pole,
@@ -105,7 +105,7 @@ def get_scheduler():
             nexp=1,
         ),
         Target(
-            target_name="MU-COL",
+            target_name="HD38666",
             survey_name="spec_bright",
             ra=Angle("05:46:00", unit=units.hourangle),
             dec=Angle("-32:18:23.2", unit=units.deg),
@@ -129,7 +129,7 @@ def get_scheduler():
             nexp=1,
         ),
         Target(
-            target_name="ETA1-DOR",
+            target_name="HD42525",
             survey_name="spec_bright",
             ra=Angle("06:06:09", unit=units.hourangle),
             dec=Angle("-66:02:23", unit=units.deg),
@@ -201,7 +201,7 @@ def get_scheduler():
             nexp=1,
         ),
         Target(
-            target_name="18-SCO",
+            target_name="HD146233",
             survey_name="spec_bright",
             ra=Angle("16:15:37", unit=units.hourangle),
             dec=Angle("-08:22:10.0", unit=units.deg),
