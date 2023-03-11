@@ -20,6 +20,55 @@ instances:
               MT camera hexapod strut 12,
               MT camera rotator motor 1,
               MT camera rotator motor 2
+  - sal_index: 2
+    data_clients:
+      - client_class: LabJackAccelerometerDataClient
+        # LabJack reading 4 accelerometers attached to the SST.
+        config:
+          device_type: T7
+          connection_type: TCP
+          identifier: 139.229.178.63
+          min_frequency: 0
+          max_frequency: 100
+          num_frequencies: 200
+          write_acceleration: false
+          accelerometers:
+            - sensor_name: "MT top end ring +x -y"
+              location: "MT top end ring +x -y side, at base plate of star tracker: x = -azimuth, y = elevation"
+              analog_inputs: [0, 1, 2]
+              # serial number: A435781
+              # published offsets: [2486.22, 2488.33, 2457.21]
+              # published scales:  [997.92, 1046.44, 1021.42]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4862, 2.4883, 2.4572]
+              scales: [9.8204, 9.3651, 9.5945]
+            - sensor_name: "MT top end ring -x -y"
+              location: "MT top end ring -x -y side, at base plate of DIMM telescope: x = -azimuth, y = elevation"
+              analog_inputs: [3, 4, 5]
+              # serial number: A435784
+              # published offsets: [2510.84, 2512.03, 2458.48]
+              # published scales:  [992.51, 1031.08, 1018.55]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.5108, 2.5120, 2.4585]
+              scales: [9.8740, 9.5046, 9.6215]
+            - sensor_name: "MT spider spindle"
+              location: "MT cental spider spindle, before hexapod at -x side: x = -azimuth, y = elevation"
+              analog_inputs: [6, 7, 8]
+              # serial number: A435788
+              # published offsets: [2489.26, 2509.10, 2448.83]
+              # published scales:  [985.83, 1015.88, 1011.85]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4893, 2.5091, 2.4488]
+              scales: [9.9409, 9.6468, 9.6852]
+            - sensor_name: "MT M2 surrogate"
+              location: "MT M2 surrogate mass, -x side of front flange: x = -azimuth, y = elevation"
+              analog_inputs: [9, 10, 11]
+              # serial number: A435804
+              # published offsets: [2469.15, 2518.43, 2455.70]
+              # published scales:  [1010.00, 1008.81, 1003.92]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4691, 2.5184, 2.4557]
+              scales: [9.7030, 9.7144, 9.7617]
   - sal_index: 101
     data_clients:
       - client_class: RPiDataClient
