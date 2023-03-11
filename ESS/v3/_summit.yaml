@@ -122,26 +122,33 @@ instances:
           num_frequencies: 200
           write_acceleration: false
           accelerometers:
-            - sensor_name: AuxTel-M2
-              location: AuxTel M2 x=el y=az
+            - sensor_name: "AuxTel-M2"
+              location: "AuxTel M2 x=el y=az"
               analog_inputs: [1, 2, 3]
-              offsets: [2.49017, 2.44424, 2.44589]
-              # published scales: [989.58, 985.72, 999.46] mV/g
-              # desired units are (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published mV/g
-              scales: [9.903, 9.942, 9.805]
-            - sensor_name: AuxTel-Truss
-              # Note z=az: this accelerometer is turned 90° from the other two
-              location: AuxTel Truss x=el z=az
+              # serial number: A395429
+              # published offsets: [2490.17, 2444.24, 2445.89]
+              # published scales:  [989.58, 985.72, 999.46]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4902, 2.4442, 2.4459]
+              scales: [9.9032, 9.9420, 9.8053]
+            - sensor_name: "AuxTel-Truss"
+              location: "AuxTel Truss x=el z=az"
               analog_inputs: [4, 5, 6]
-              offsets: [2.49874, 2.49595, 2.41423]
-              # published scales: [997.40, 1001.42, 995.95] mV/g
-              scales: [9.826, 9.786, 9.84]
-            - sensor_name: AuxTel-M1
-              location: AuxTel M1 x=el y=az
+              # serial number: A395423
+              # published offsets: [2498.74, 2495.95, 2414.23]
+              # published scales:  [997.40, 1001.42, 995.95]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4987, 2.4959, 2.4142]
+              scales: [9.8255, 9.7861, 9.8399]
+            - sensor_name: "AuxTel-M1"
+              location: "AuxTel M1 x=el y=az"
               analog_inputs: [7, 8, 9]
-              offsets: [2.47830, 2.48088, 2.41385]
-              # published scales: [979.57, 966.99, 1003.76] mV/g
-              scales: [10.004, 10.135, 9.763]
+              # serial number: A395446
+              # published offsets: [2478.30, 2480.88, 2413.85]
+              # published scales:  [979.57, 986.99, 1003.76]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4783, 2.4809, 2.4139]
+              scales: [10.0044, 9.9292, 9.7633]
   - sal_index: 203
     data_clients:
       - client_class: LightningDataClient
