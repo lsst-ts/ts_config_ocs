@@ -1,0 +1,33 @@
+# Data for the SST accelerometers 2023-03-10
+# Photos of the calibration certificates are attached to
+# https://jira.lsstcorp.org/browse/DM-38125
+initial_analog_input: 0
+accelerometers:
+- serial: A435781
+  sensor_name: "SST top end ring +x -y"
+  location: "SST top end ring +x -y side, at base plate of star tracker: x = -azimuth, y = elevation"
+  scale_offset:
+  - [ 997.92, 2486.22]
+  - [1046.44, 2488.33]
+  - [1021.42, 2457.21]
+- serial: A435784
+  sensor_name: "SST top end ring -x -y"
+  location: "SST top end ring -x -y side, at base plate of DIMM telescope: x = -azimuth, y = elevation"
+  scale_offset:
+  - [992.51, 2510.84]
+  - [1031.08, 2512.03]
+  - [1018.55, 2458.48]
+- serial: A435788
+  sensor_name: "SST spider spindle"
+  location: "SST cental spider spindle, before hexapod at -x side: x = -azimuth, y = elevation"
+  scale_offset:
+  - [985.83, 2489.26]
+  - [1015.88, 2509.10]
+  - [1011.85, 2448.83]
+- serial: A435804
+  sensor_name: "SST M2 surrogate"
+  location: "SST M2 surrogate mass, -x side of front flange: x = -azimuth, y = elevation"
+  scale_offset:
+  - [1010.00, 2469.15]
+  - [1008.81, 2518.43]
+  - [1003.92, 2455.70]
