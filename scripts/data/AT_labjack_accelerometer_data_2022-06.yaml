@@ -1,0 +1,26 @@
+# Data for the AT accelerometers 2022-06.
+# For calibration data and wiring see
+# https://jira.lsstcorp.org/browse/DM-33299.
+initial_analog_input: 1
+accelerometers:
+- serial: A395429
+  sensor_name: AuxTel-M2
+  location: AuxTel M2 x=el y=az
+  scale_offset:
+  - [989.58, 2490.17]
+  - [985.72, 2444.24]
+  - [999.46, 2445.89]
+- serial: A395423
+  sensor_name: AuxTel-Truss
+  location: AuxTel Truss x=el z=az
+  scale_offset:
+  - [ 997.40, 2498.74]
+  - [1001.42, 2495.95]
+  - [ 995.95, 2414.23]
+- serial: A395446
+  sensor_name: AuxTel-M1
+  location: AuxTel M1 x=el y=az
+  scale_offset:
+  - [ 979.57, 2478.30]
+  - [ 986.99, 2480.88]
+  - [1003.76, 2413.85]
