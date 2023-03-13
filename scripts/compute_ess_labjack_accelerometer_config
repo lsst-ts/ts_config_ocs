@@ -1,0 +1,106 @@
+#!/usr/bin/env python
+# Compute config for LabJackAccelerometerDataClient from calibration data
+# for TE model 4030 triaxial MEMS DC accelererometers.
+
+import argparse
+import types
+
+import jsonschema
+import numpy as np
+import yaml
+
+schema = yaml.safe_load(
+    """
+$schema: http://json-schema.org/draft-07/schema#
+$id: LabJackAccelerometerDataClient_config
+title: LabJackAccelerometerDataClient config v1
+description: >-
+  Schema for ESS LabJackAccelerometerDataClient config.
+  If possible, list the items in the same order as
+  they are connected to the LabJack's analog inputs.
+type: object
+properties:
+  initial_analog_input:
+    description: Initial LabJack analog input channel number.
+    type: integer
+  accelerometers:
+    type: array
+    items:
+      - type: object
+        properties:
+          serial:
+            description: accelerometer serial number
+            type: string
+          sensor_name:
+            description: sensor name (must be unique for a give salIndex)
+            type: string
+          location:
+            description: location of accelerometer
+            type: string
+          scale_offset:
+            type: array
+            items:
+              type: array
+              items:
+                type: number
+                minItems: 3
+                maxItems: 3
+        required:
+          - serial
+          - sensor_name
+          - location
+          - scale_offset
+        additionalItems: false
+"""
+)
+
+validator = jsonschema.Draft7Validator(schema=schema)
+
+parser = argparse.ArgumentParser(
+    "Compute config for LabJackAccelerometerDataClient from "
+    "calibration data for TE model 4030 triaxial MEMS DC accelererometers. "
+    "The data must be in the format specified by the schema in this script. "
+    "The analog_inputs data assumes that the accelerometers are attached "
+    "to consecutive analog inputs for each accelerometer, e.g. "
+    "accelerometer 1 x,y,z are read by analog inputs 5,6,7, "
+    "accelerometer 2 x,y,z are read by analog inputs 8,9,10, etc. "
+    "If this is not the case then you will have to manually fix that config."
+)
+parser.add_argument("data_file", help="Calibration data in yaml")
+args = parser.parse_args()
+
+with open(args.data_file, "r") as f:
+    data_yaml = f.read()
+data_dict = yaml.safe_load(data_yaml.strip())
+validator.validate(data_dict)
+
+initial_analog_input = data_dict["initial_analog_input"]
+
+print("          accelerometers:")
+for i, accelerometer_dict in enumerate(data_dict["accelerometers"]):
+    accelerometer = types.SimpleNamespace(**accelerometer_dict)
+    scale_offset_arr = np.array(accelerometer.scale_offset)
+    published_scales = scale_offset_arr[:, 0]
+    published_offsets = scale_offset_arr[:, 1]
+    assert len(published_scales) == 3, f"{published_scales=} not len 3"
+    assert len(published_offsets) == 3, f"{published_offsets=} not len 3"
+    published_offsets_str = ", ".join(f"{value:0.2f}" for value in published_offsets)
+    published_scales_str = ", ".join(f"{value:0.2f}" for value in published_scales)
+    offsets_str = ", ".join(f"{value / 1000:0.4f}" for value in published_offsets)
+    scales_str = ", ".join(f"{1000 * 9.8 / value:0.4f}" for value in published_scales)
+    base_input = initial_analog_input + (i * 3)
+    analog_inputs_str = ", ".join(
+        str(input) for input in range(base_input, base_input + 3)
+    )
+    print(f'            - sensor_name: "{accelerometer.sensor_name}"')
+    print(f'              location: "{accelerometer.location}"')
+    print(f"              analog_inputs: [{analog_inputs_str}]")
+    print(f"              # serial number: {accelerometer.serial}")
+    print(f"              # published offsets: [{published_offsets_str}]")
+    print(f"              # published scales:  [{published_scales_str}]")
+    print(
+        "              # desired scale (m/s2)/V = "
+        "1000 mv/V * 9.8 (m/s2)/g / published scale mV/g"
+    )
+    print(f"              offsets: [{offsets_str}]")
+    print(f"              scales: [{scales_str}]")
