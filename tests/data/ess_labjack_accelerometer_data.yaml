@@ -1,0 +1,17 @@
+# Test data for scrips/compute_ess_labjack_accelerometer_config
+initial_analog_input: 5
+accelerometers:
+- serial: "1234"
+  sensor_name: "name of accelerometer 1234"
+  location: "location for 1234"
+  scale_offset:
+  - [987.65, 2111.11]
+  - [876.54, -2222.22]
+  - [-765.43, 2333.33]
+- serial: "#523"
+  sensor_name: "name of accelerometer #523"
+  location: "location of accelerometer #523"
+  scale_offset:
+  - [ 997.40, 2498.74]
+  - [1001.42, 2495.95]
+  - [ 995.95, 2414.23]
