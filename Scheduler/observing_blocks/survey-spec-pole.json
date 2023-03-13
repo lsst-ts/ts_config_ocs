@@ -1,0 +1,44 @@
+{
+    "name": "Spectroscopy",
+    "program": "spec_pole",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/latiss_acquire_and_take_sequence.py",
+            "standard": false,
+            "parameters": {
+                "object_ra": "$ra",
+                "object_dec": "$dec",
+                "object_name": "$name",
+                "do_acquire": true,
+                "acq_filter": "empty_1",
+                "acq_grating": "holo4_003",
+                "acq_exposure_time": 5.0,
+                "do_blind_offset": false,
+                "do_take_sequence": true,
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    40.0,
+                    40.0,
+                    40.0
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ],
+                "program": "spec"
+            }
+        }
+    ]
+}
