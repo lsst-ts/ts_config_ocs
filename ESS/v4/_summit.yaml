@@ -236,3 +236,27 @@ instances:
             location: AT Dome
             # 1 sample per second so for 1 minute that is 60 samples.
             num_samples: 60
+  - sal_index: 301
+    data_clients:
+      - client_class: Young32400WeatherStationDataClient
+        config:
+          host: 139.229.170.70
+          port: 4001
+          connect_timeout: 5
+          read_timeout: 5
+          num_samples_airflow: 20
+          num_samples_temperature: 60
+          rain_stopped_interval: 160
+          sensor_name_airflow: "Weather tower airflow"
+          sensor_name_dew_point: "Weather tower computed dew point"
+          sensor_name_humidity: "Weather tower relative humidity"
+          sensor_name_pressure: "Weather tower atmospheric pressure"
+          sensor_name_rain: ""
+          sensor_name_temperature: "Weather tower air temperature"
+          scale_offset_humidity: [0.025, 0]
+          scale_offset_pressure: [48, 500]
+          scale_offset_temperature: [0.025, -50]
+          scale_offset_wind_direction: [0.1, 0]
+          scale_offset_wind_speed: [0.0834, 0]
+          scale_rain_rate: 0.1
+          location: "Weather tower"
