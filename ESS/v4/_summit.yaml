@@ -67,7 +67,7 @@ instances:
           min_frequency: 0
           max_frequency: 100
           num_frequencies: 200
-          write_acceleration: false
+          write_acceleration: true
           accelerometers:
             - sensor_name: "SST top end ring +x -y"
               location: "SST top end ring +x -y side, at base plate of star tracker: x = -azimuth, y = elevation"
@@ -169,7 +169,7 @@ instances:
           min_frequency: 0
           max_frequency: 100
           num_frequencies: 200
-          write_acceleration: false
+          write_acceleration: true
           accelerometers:
             - sensor_name: "AuxTel-M2"
               location: "AuxTel M2 x=el y=az"
