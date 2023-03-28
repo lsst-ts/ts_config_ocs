@@ -271,6 +271,9 @@ def get_scheduler():
         ),
     ]
 
+    spec_detailers = []
+    image_detailers = []
+
     make_scheduler = MakeScheduler()
 
     return make_scheduler.get_scheduler(
@@ -279,6 +282,8 @@ def get_scheduler():
         survey_type=SurveyType.SpecImage,
         spec_targets=spec_target_list,
         image_tiles=image_tiles,
+        spec_detailers=spec_detailers,
+        image_detailers=image_detailers,
     )
 
 
