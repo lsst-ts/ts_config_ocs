@@ -23,6 +23,8 @@ from lsst.ts.fbs.utils import Tiles
 
 from lsst.ts.fbs.utils.auxtel.make_scheduler import MakeScheduler, SurveyType
 
+from rubin_sim.scheduler.detailers import DitherDetailer
+
 
 def get_scheduler():
     """Construct feature based scheduler.
@@ -75,7 +77,8 @@ def get_scheduler():
     ]
 
     spec_detailers = []
-    image_detailers = []
+    image_detailers = [DitherDetailer(
+        max_dither=(1.0 / 60.0), per_night=False)]
 
     make_scheduler = MakeScheduler()
 

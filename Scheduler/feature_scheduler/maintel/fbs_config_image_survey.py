@@ -21,7 +21,7 @@
 
 from lsst.ts.fbs.utils import Tiles
 
-from lsst.ts.fbs.utils.auxtel.make_scheduler import MakeScheduler, SurveyType
+from lsst.ts.fbs.utils.maintel.make_scheduler import MakeScheduler
 
 
 def get_scheduler():
@@ -40,8 +40,8 @@ def get_scheduler():
         image_pole=5.0,
     )
 
-    image_nexp = 2  # number of exposures
-    image_exptime = 60.0  # total exposure time in seconds
+    image_nexp = 3  # number of exposures
+    image_exptime = 18.0  # total exposure time in seconds
     image_visit_gap = 60.0
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
 
@@ -55,38 +55,31 @@ def get_scheduler():
 
     image_tiles = [
         Tiles(
-            survey_name="LATISS_POLE",
+            survey_name="STAR_TRACKER_POLE",
             hour_angle_limit=image_ha_limit_pole,
             reward_value=reward_values["image_pole"],
-            filters=["g", "r", "i"],
+            filters=["g"],
             visit_gap=image_visit_gap,
             exptime=image_exptime,
             nexp=image_nexp,
         ),
         Tiles(
-            survey_name="AUXTEL_DRP_IMAGING",
+            survey_name="STAR_TRACKER",
             hour_angle_limit=image_ha_limit,
             reward_value=reward_values["default"],
-            filters=["g", "r", "i"],
+            filters=["g"],
             visit_gap=image_visit_gap,
             exptime=image_exptime,
             nexp=image_nexp,
         ),
     ]
 
-    spec_detailers = []
-    image_detailers = []
-
     make_scheduler = MakeScheduler()
 
     return make_scheduler.get_scheduler(
         nside=nside,
         wind_speed_maximum=wind_speed_maximum,
-        survey_type=SurveyType.Image,
-        spec_targets=[],
         image_tiles=image_tiles,
-        spec_detailers=spec_detailers,
-        image_detailers=image_detailers,
     )
 
 

@@ -23,6 +23,8 @@ from lsst.ts.fbs.utils import Tiles
 
 from lsst.ts.fbs.utils.auxtel.make_scheduler import MakeScheduler, SurveyType
 
+from rubin_sim.scheduler.detailers import CameraRotDetailer
+
 
 def get_scheduler():
     """Construct feature based scheduler.
@@ -75,7 +77,7 @@ def get_scheduler():
     ]
 
     spec_detailers = []
-    image_detailers = []
+    image_detailers = [CameraRotDetailer(max_rot=5.0, min_rot=1.0, per_night=False)]
 
     make_scheduler = MakeScheduler()
 

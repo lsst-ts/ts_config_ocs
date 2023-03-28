@@ -1,0 +1,29 @@
+{
+    "name": "Imaging",
+    "program": "STAR_TRACKER_POLE",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/tma/track_target_and_take_image_gencam_with_dome.py",
+            "standard": false,
+            "parameters": {
+                "ra": "$ra",
+                "dec": "$dec",
+                "name": "$name",
+                "rot_sky": 0.0,
+                "band_filter": "g",
+                "estimated_slew_time": "$estimated_slew_time",
+                "num_exp": "$num_exp",
+                "obs_time": "$obs_time",
+                "program": "$program",
+                "targetid": "$targetid",
+                "exp_times": [5, 4, 6],
+                "camera_sal_indexes": [101, 102, 103],
+                "dome_offset": 118,
+                "sleep_time": 1.5,
+                "max_dome_mount_az": 8.0,
+                "ignore": [ "mtaos", "mtrotator", "mtdome", "mtdometrajectory", "mtm1m3", "mtm2", "mthexapod_1", "mthexapod_2"]
+            }
+        }
+    ]
+}
