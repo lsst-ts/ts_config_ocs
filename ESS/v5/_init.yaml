@@ -64,10 +64,7 @@ instances:
           device_type: T7
           connection_type: TCP
           identifier: 139.229.178.63
-          min_frequency: 0
           max_frequency: 100
-          num_frequencies: 200
-          write_acceleration: true
           accelerometers:
             - sensor_name: "SST top end ring +x -y"
               location: "SST top end ring +x -y side, at base plate of star tracker: x = -azimuth, y = elevation"
@@ -166,10 +163,7 @@ instances:
           device_type: T7
           connection_type: TCP
           identifier: aux-labjackwired.cp.lsst.org
-          min_frequency: 0
           max_frequency: 100
-          num_frequencies: 200
-          write_acceleration: true
           accelerometers:
             - sensor_name: "AuxTel-M2"
               location: "AuxTel M2 x=el y=az"
