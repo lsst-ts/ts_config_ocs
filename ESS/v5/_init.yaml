@@ -237,7 +237,7 @@ instances:
           host: 139.229.170.70
           port: 4001
           connect_timeout: 5
-          read_timeout: 5
+          read_timeout: 60
           num_samples_airflow: 20
           num_samples_temperature: 60
           rain_stopped_interval: 160
