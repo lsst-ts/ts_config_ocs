@@ -102,6 +102,18 @@ instances:
               # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
               offsets: [2.4691, 2.5184, 2.4557]
               scales: [9.7030, 9.7144, 9.7617]
+  - sal_index: 105
+    data_clients:
+      - client_class: SiglentSSA3000xSpectrumAnalyzerDataClient
+        config:
+          host: spectrum-analyzer01.cp.lsst.org
+          port: 5025
+          connect_timeout: 5
+          read_timeout: 60
+          location: MT dome wall
+          sensor_name: SSA3000X
+          poll_interval: 1.0
+
   - sal_index: 201
     data_clients:
       - client_class: RPiDataClient
