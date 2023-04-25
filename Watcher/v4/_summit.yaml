@@ -20,8 +20,13 @@ rules:
   - name: ESS:101
   - name: ESS:102
   - name: ESS:103
+  - name: ESS:104
+  - name: ESS:105
   - name: ESS:201
   - name: ESS:202
+  - name: ESS:203
+  - name: ESS:204
+  - name: ESS:301
   - name: GenericCamera
   - name: HVAC
   - name: MTAOS
@@ -46,7 +51,6 @@ rules:
   - name: Scheduler:2
   - name: ScriptQueue:1
   - name: ScriptQueue:2
-  - name: WeatherStation:1
 - classname: Heartbeat
   configs:
   - name: ATAOS
@@ -68,8 +72,13 @@ rules:
   - name: ESS:101
   - name: ESS:102
   - name: ESS:103
+  - name: ESS:104
+  - name: ESS:105
   - name: ESS:201
   - name: ESS:202
+  - name: ESS:203
+  - name: ESS:204
+  - name: ESS:301
   - name: GenericCamera
   - name: HVAC
   - name: MTAOS
@@ -90,7 +99,6 @@ rules:
   - name: Scheduler:2
   - name: ScriptQueue:1
   - name: ScriptQueue:2
-  - name: WeatherStation:1
 - classname: DewPointDepression
   configs:
   - name: AT
