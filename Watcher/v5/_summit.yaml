@@ -20,8 +20,12 @@ rules:
   - name: ESS:101
   - name: ESS:102
   - name: ESS:103
+  - name: ESS:104
   - name: ESS:201
   - name: ESS:202
+  - name: ESS:203
+  - name: ESS:204
+  - name: ESS:301
   - name: GenericCamera
   - name: HVAC
   - name: MTAOS
@@ -46,7 +50,6 @@ rules:
   - name: Scheduler:2
   - name: ScriptQueue:1
   - name: ScriptQueue:2
-  - name: WeatherStation:1
 - classname: Heartbeat
   configs:
   - name: ATAOS
@@ -68,8 +71,12 @@ rules:
   - name: ESS:101
   - name: ESS:102
   - name: ESS:103
+  - name: ESS:104
   - name: ESS:201
   - name: ESS:202
+  - name: ESS:203
+  - name: ESS:204
+  - name: ESS:301
   - name: GenericCamera
   - name: HVAC
   - name: MTAOS
@@ -90,7 +97,6 @@ rules:
   - name: Scheduler:2
   - name: ScriptQueue:1
   - name: ScriptQueue:2
-  - name: WeatherStation:1
 - classname: DewPointDepression
   configs:
   - name: AT
@@ -155,3 +161,18 @@ rules:
   configs:
   - index: 1
   - index: 2
+escalation:
+  - alarms:
+    - ATCameraDewar
+    responder: atcamera
+    delay: 60
+  - alarms:
+    - DewPointDepression
+    responder: weather
+    delay: 300
+  - alarms:
+    - Enabled
+    - Heartbeat
+    responder: control_system
+    delay: 300
+escalation_url: https://api.squadcast.com
