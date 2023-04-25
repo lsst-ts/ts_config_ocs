@@ -163,3 +163,18 @@ rules:
   configs:
   - index: 1
   - index: 2
+escalation:
+  - alarms:
+    - ATCameraDewar
+    responder: atcamera
+    delay: 60
+  - alarms:
+    - DewPointDepression
+    responder: weather
+    delay: 300
+  - alarms:
+    - Enabled
+    - Heartbeat
+    responder: control_system
+    delay: 300
+escalation_url: https://api.squadcast.com
