@@ -20,8 +20,12 @@ rules:
   - name: ESS:101
   - name: ESS:102
   - name: ESS:103
+  - name: ESS:104
   - name: ESS:201
   - name: ESS:202
+  - name: ESS:203
+  - name: ESS:204
+  - name: ESS:301
   - name: GenericCamera
   - name: HVAC
   - name: MTAOS
@@ -46,7 +50,6 @@ rules:
   - name: Scheduler:2
   - name: ScriptQueue:1
   - name: ScriptQueue:2
-  - name: WeatherStation:1
 - classname: Heartbeat
   configs:
   - name: ATAOS
@@ -68,8 +71,12 @@ rules:
   - name: ESS:101
   - name: ESS:102
   - name: ESS:103
+  - name: ESS:104
   - name: ESS:201
   - name: ESS:202
+  - name: ESS:203
+  - name: ESS:204
+  - name: ESS:301
   - name: GenericCamera
   - name: HVAC
   - name: MTAOS
@@ -90,7 +97,6 @@ rules:
   - name: Scheduler:2
   - name: ScriptQueue:1
   - name: ScriptQueue:2
-  - name: WeatherStation:1
 - classname: DewPointDepression
   configs:
   - name: AT
@@ -125,7 +131,7 @@ rules:
     temperature_sensors:
     - sal_index: 1  # see ESS configuration
       sensor_info:
-      - sensor_name: CamHex_CCW-ESS01
+      - sensor_name: MTCameraAssembly-ESS01
         indices: [0, 1, 2, 3, 4, 5]  # struts 7-12
     warning_level: 28
     warning_msg: Strut temperature is nearing the shutoff limit.
@@ -155,3 +161,18 @@ rules:
   configs:
   - index: 1
   - index: 2
+escalation:
+  - alarms:
+    - ATCameraDewar
+    responder: atcamera
+    delay: 60
+  - alarms:
+    - DewPointDepression
+    responder: weather
+    delay: 300
+  - alarms:
+    - Enabled
+    - Heartbeat
+    responder: control_system
+    delay: 300
+escalation_url: https://api.squadcast.com

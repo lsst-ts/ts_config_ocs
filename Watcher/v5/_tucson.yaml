@@ -38,7 +38,6 @@ rules:
   - name: Scheduler:2
   - name: ScriptQueue:1
   - name: ScriptQueue:2
-  - name: WeatherStation:1
 - classname: Heartbeat
   configs:
   - name: ATAOS
@@ -78,7 +77,6 @@ rules:
   - name: Scheduler:2
   - name: ScriptQueue:1
   - name: ScriptQueue:2
-  - name: WeatherStation:1
 - classname: ScriptFailed
   configs:
   - index: 1
