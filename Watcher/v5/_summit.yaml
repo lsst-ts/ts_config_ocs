@@ -1,3 +1,6 @@
+# TODO DM-38885: remove this section (or just MTM1M3
+# if there is more than one component listed)
+# once MTM1M3 is running on site again.
 disabled_sal_components:
   - MTM1M3
 rules:
@@ -23,6 +26,7 @@ rules:
   - name: ESS:102
   - name: ESS:103
   - name: ESS:104
+# TODO DM-38884: add ESS:105 once it is running (cycle 30)
   - name: ESS:201
   - name: ESS:202
   - name: ESS:203
@@ -31,7 +35,7 @@ rules:
   - name: GenericCamera
   - name: HVAC
   - name: MTAOS
-# DM-37395: These CSCs were in STANDBY which is why they have been commented
+# TODO DM-37395: These CSCs were in STANDBY which is why they have been commented
 # out. Please uncomment them and remove this comment if they should be enabled.
 #  - name: MTAirCompressor:1
 #  - name: MTAirCompressor:2
@@ -44,7 +48,7 @@ rules:
   - name: MTMount
   - name: MTPtg
   - name: MTRotator
-# DM-37395: These CSCs were in STANDBY which is why they have been commented
+# TODO DM-37395: These CSCs were in STANDBY which is why they have been commented
 # out. Please uncomment them and remove this comment if they should be enabled.
 #  - name: OCPS:1
 #  - name: OCPS:2
@@ -74,6 +78,7 @@ rules:
   - name: ESS:102
   - name: ESS:103
   - name: ESS:104
+# TODO DM-38884: add ESS:105 once it is running (cycle 30)
   - name: ESS:201
   - name: ESS:202
   - name: ESS:203
