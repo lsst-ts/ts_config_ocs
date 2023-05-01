@@ -1,0 +1,45 @@
+s3instance: ls
+auxtel:
+  telemetry:
+    efd_name: base_efd
+    streams:
+      - name: seeing
+        efd_table: lsst.sal.DIMM.logevent_dimmMeasurement
+        efd_columns:
+          - fwhm
+        efd_delta_time: 300.0
+        fill_value: null
+      - name: wind_speed
+        efd_table: lsst.sal.WeatherStation.windSpeed
+        efd_columns:
+          - avg2M
+        efd_delta_time: 300.0
+        fill_value: null
+      - name: wind_direction
+        efd_table: lsst.sal.WeatherStation.windDirection
+        efd_columns:
+          - avg2M
+        efd_delta_time: 300.0
+        fill_value: null
+  driver_type: feature_scheduler
+  mode: ADVANCE
+  startup_type: COLD
+  startup_database: /home/saluser/rubin_sim_data/fbs_observation_database.sql
+  predicted_scheduler_window: 0.05
+  models:
+    observatory_model:
+      camera:
+        filter_max_changes_burst_num: 1
+        filter_max_changes_avg_num: 30000
+      optics_loop_corr:
+        tel_optics_cl_alt_limit:
+          - 0
+          - 30
+          - 90
+  driver_configuration:
+    parameters:
+      night_boundary: -10.0
+    stop_tracking_observing_script_name: auxtel/stop_tracking.py
+  feature_scheduler_driver_configuration:
+    observation_database_name: /home/saluser/rubin_sim_data/fbs_observation_database.sql
+    scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/fbs_config_test_daytime_survey.py
