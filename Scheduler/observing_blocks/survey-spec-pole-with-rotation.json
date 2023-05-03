@@ -1,0 +1,131 @@
+{
+    "name": "Spectroscopy",
+    "program": "spec_pole_with_rotation",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/latiss_acquire.py",
+            "standard": false,
+            "parameters": {
+                "object_ra": "$ra",
+                "object_dec": "$dec",
+                "object_name": "$name",
+                "acq_filter": "empty_1",
+                "acq_grating": "holo4_003",
+                "acq_exposure_time": 5.0,
+                "program": "spec",
+                "reason": "Generic Survey",
+                "estimated_slew_time": "$estimated_slew_time",
+                "time_on_target": 300.0
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    40.0
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "blue300lpmm_qn1"
+                ],
+                "program": "spec",
+                "reason": "Generic Survey"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_rot": {"rot": -5.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_acquire.py",
+            "standard": false,
+            "parameters": {
+                "object_ra": "$ra",
+                "object_dec": "$dec",
+                "object_name": "$name",
+                "acq_filter": "empty_1",
+                "acq_grating": "blue300lpmm_qn1",
+                "acq_exposure_time": 5.0,
+                "program": "spec",
+                "reason": "Generic Survey",
+                "estimated_slew_time": "$estimated_slew_time",
+                "time_on_target": 300.0,
+                "do_reacquire": true
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    40.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "blue300lpmm_qn1",
+                    "holo4_003"
+                ],
+                "program": "spec",
+                "reason": "Generic Survey"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_rot": {"rot": 10.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_acquire.py",
+            "standard": false,
+            "parameters": {
+                "object_ra": "$ra",
+                "object_dec": "$dec",
+                "object_name": "$name",
+                "acq_filter": "empty_1",
+                "acq_grating": "holo4_003",
+                "acq_exposure_time": 5.0,
+                "program": "spec",
+                "reason": "Generic Survey",
+                "estimated_slew_time": "$estimated_slew_time",
+                "time_on_target": 300.0,
+                "do_reacquire": true
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    40.0
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "blue300lpmm_qn1"
+                ],
+                "program": "spec",
+                "reason": "Generic Survey"
+            }
+        }
+    ]
+}
