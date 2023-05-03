@@ -1,8 +1,0 @@
-# Configuration for the MTDome ESS01 humidity sensors.
-host: mtdome-rpi01.cp.lsst.org
-devices:
-- name: MTDome-ESS01
-  device_type: Serial
-  serial_port: /dev/ttyAMA1
-  sensor_type: HX85A
-  location: MTDome-ESS01
