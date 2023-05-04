@@ -1,0 +1,989 @@
+{
+    "name": "Imaging",
+    "program": "AUXTEL_PHOTOCALIB_IMAGING",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/track_target_and_take_image.py",
+            "standard": true,
+            "parameters": {
+                "ra": "$ra",
+                "dec": "$dec",
+                "rot_sky": "$rot_sky",
+                "band_filter": "$band_filter",
+                "name": "$name",
+                "estimated_slew_time": "$estimated_slew_time",
+                "exp_times": [30.0],
+                "filter_prefix": "SDSS",
+                "filter_suffix": "_65mm",
+                "grating": "empty_1",
+                "num_exp": 1,
+                "obs_time": "$obs_time",
+                "program": "$program",
+                "reason": "Photometric Calibration Test",
+                "targetid": "$targetid"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": -186.375,"y":-159.7}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 53.25,"y":0.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 53.25,"y":0.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 53.25,"y":0.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 53.25,"y":0.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 53.25,"y":0.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 53.25,"y":0.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 53.25,"y":0.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSi_65mm",
+                    "SDSSr_65mm",
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {"x": 0.0,"y":-106.5}
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time_sequence": [
+                    30.0,
+                    30.0,
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm",
+                    "SDSSr_65mm",
+                    "SDSSi_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "program": "$program",
+                "reason": "Photometric Calibration"
+            }
+        }
+    ]
+}
+        
