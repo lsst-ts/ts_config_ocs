@@ -63,7 +63,7 @@ instances:
         config:
           device_type: T7
           connection_type: TCP
-          identifier: 139.229.178.63
+          identifier: tma-labjack01.cp.lsst.org
           max_frequency: 100
           accelerometers:
             - sensor_name: "SST top end ring +x -y"
@@ -246,7 +246,7 @@ instances:
     data_clients:
       - client_class: Young32400WeatherStationDataClient
         config:
-          host: 139.229.170.70
+          host: calibhill-weatherstation01.cp.lsst.org
           port: 4001
           connect_timeout: 5
           read_timeout: 60
