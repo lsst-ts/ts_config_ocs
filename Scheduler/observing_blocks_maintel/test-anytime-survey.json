@@ -1,0 +1,27 @@
+{
+    "name": "Imaging",
+    "program": "TEST_ANYTIME_SURVEY",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/track_target_sched.py",
+            "standard": false,
+            "parameters": {
+                "ra": "$ra",
+                "dec": "$dec",
+                "rot_sky": "$rot_sky",
+                "band_filter": "$band_filter",
+                "name": "$name",
+                "estimated_slew_time": "$estimated_slew_time",
+                "exp_times": "$exp_times",
+                "filter_prefix": "SDSS",
+                "filter_suffix": "_65mm",
+                "grating": "empty_1",
+                "num_exp": "$num_exp",
+                "obs_time": "$obs_time",
+                "program": "$program",
+                "targetid": "$targetid"
+            }
+        }
+    ]
+}
