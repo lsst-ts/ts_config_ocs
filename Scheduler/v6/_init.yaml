@@ -1,6 +1,6 @@
 s3instance: cp
 auxtel:
-  path_observing_blocks: ../observing_blocks/
+  path_observing_blocks: ../observing_blocks_auxtel/
   cmd_timeout: 60.0
   driver_configuration:
     parameters:
@@ -144,7 +144,7 @@ auxtel:
     efd_name: summit_efd
 maintel:
   cmd_timeout: 60.0
-  path_observing_blocks: ../observing_blocks/
+  path_observing_blocks: ../observing_blocks_maintel/
   driver_configuration:
     parameters:
       new_moon_phase_threshold: 20.0
