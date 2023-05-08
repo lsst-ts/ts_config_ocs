@@ -133,14 +133,13 @@ instances:
             serial_port: /dev/ttyAMA1
             sensor_type: HX85BA
             location: AT azimuth axis
-# Temporarily disabled because in repairs.
-#          # AuxTel temperature sensor readout box
-#          - name: AuxTel-ESS03
-#            channels: 6
-#            device_type: FTDI
-#            ftdi_id: A104SE9D
-#            sensor_type: Temperature
-#            location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5, M1 sensor 6
+          # AuxTel temperature sensor readout box
+          - name: AuxTel-ESS03
+            channels: 6
+            device_type: FTDI
+            ftdi_id: A104SE9D
+            sensor_type: Temperature
+            location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5, M1 sensor 6
           # AuxTel 3D anemometer
           - name: AuxTel-ESS04
             device_type: Serial
