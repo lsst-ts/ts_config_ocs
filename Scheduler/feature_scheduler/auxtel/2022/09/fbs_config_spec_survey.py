@@ -20,11 +20,8 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from astropy import units
-
 from astropy.coordinates import Angle
-
 from lsst.ts.fbs.utils import Target, Tiles
-
 from lsst.ts.fbs.utils.auxtel.make_scheduler import MakeScheduler, SurveyType
 
 
