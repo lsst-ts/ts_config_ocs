@@ -154,8 +154,7 @@ def get_scheduler():
     ]
 
     spec_detailers = []
-    image_detailers = [DitherDetailer(
-        max_dither=(1.0 / 60.0), per_night=False)]
+    image_detailers = [DitherDetailer(max_dither=(1.0 / 60.0), per_night=False)]
 
     make_scheduler = MakeScheduler()
 
