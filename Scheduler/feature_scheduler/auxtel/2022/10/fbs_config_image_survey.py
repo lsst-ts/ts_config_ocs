@@ -20,7 +20,6 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from lsst.ts.fbs.utils import Tiles
-
 from lsst.ts.fbs.utils.auxtel.make_scheduler import MakeScheduler, SurveyType
 
 
