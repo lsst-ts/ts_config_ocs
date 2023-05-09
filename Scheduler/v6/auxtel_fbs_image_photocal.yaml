@@ -1,6 +1,6 @@
 auxtel:
   driver_type: feature_scheduler
-  mode: ADVANCE
+  mode: SIMPLE
   startup_type: COLD
   startup_database: /home/saluser/rubin_sim_data/fbs_observation_database.sql
   models:
@@ -19,4 +19,4 @@ auxtel:
     stop_tracking_observing_script_name: auxtel/stop_tracking.py
   feature_scheduler_driver_configuration:
     observation_database_name: /home/saluser/rubin_sim_data/fbs_observation_database.sql
-    scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/fbs_config_image_survey.py
+    scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/fbs_config_image_photocal_survey.py
