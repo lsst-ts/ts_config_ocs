@@ -3,6 +3,7 @@ DevelopPipeline(
     name: "ts_config_ocs",
     idl_names: [], 
     module_name: "lsst.ts.config.ocs",
+    has_doc_site: false,
     packages: [
         "lsst-ts/ts_authorize",
         "lsst-ts/ts_dimm",
