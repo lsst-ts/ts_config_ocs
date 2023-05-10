@@ -12,11 +12,12 @@
                 "object_name": "$name",
                 "acq_filter": "empty_1",
                 "acq_grating": "holo4_003",
-                "acq_exposure_time": 2.0,
+                "acq_exposure_time": 0.5,
                 "program": "spec",
                 "reason": "Generic Survey",
                 "estimated_slew_time": "$estimated_slew_time",
-                "time_on_target": 300.0
+                "time_on_target": 300.0,
+                "target_pointing_verification": false
             }
         },
         {
@@ -60,7 +61,8 @@
                 "reason": "Generic Survey",
                 "estimated_slew_time": "$estimated_slew_time",
                 "time_on_target": 300.0,
-                "do_reacquire": true
+                "do_reacquire": true,
+                "target_pointing_verification": false
             }
         },
         {
@@ -104,7 +106,8 @@
                 "reason": "Generic Survey",
                 "estimated_slew_time": "$estimated_slew_time",
                 "time_on_target": 300.0,
-                "do_reacquire": true
+                "do_reacquire": true,
+                "target_pointing_verification": false
             }
         },
         {
