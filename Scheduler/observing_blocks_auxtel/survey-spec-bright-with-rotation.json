@@ -12,7 +12,7 @@
                 "object_name": "$name",
                 "acq_filter": "SDSSr_65mm",
                 "acq_grating": "holo4_003",
-                "acq_exposure_time": 0.5,
+                "acq_exposure_time": 1.0,
                 "program": "spec",
                 "reason": "Generic Survey",
                 "estimated_slew_time": "$estimated_slew_time",
@@ -44,8 +44,24 @@
             "name": "auxtel/offset_atcs.py",
             "standard": true,
             "parameters": {
-                "offset_rot": {"rot":-5.0},
-                "offset_pa": {"angle": 5.0, "radius": 165.014}
+                "offset_rot": {"rot":-5.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_acquire.py",
+            "standard": false,
+            "parameters": {
+                "object_ra": "$ra",
+                "object_dec": "$dec",
+                "object_name": "$name",
+                "acq_filter": "SDSSr_65mm",
+                "acq_grating": "blue300lpmm_qn1",
+                "acq_exposure_time": 1.0,
+                "program": "spec",
+                "reason": "Generic Survey",
+                "estimated_slew_time": "$estimated_slew_time",
+                "time_on_target": 300.0,
+                "do_reacquire": true
             }
         },
         {
@@ -72,8 +88,24 @@
             "name": "auxtel/offset_atcs.py",
             "standard": true,
             "parameters": {
-                "offset_rot": {"rot":10.0},
-                "offset_pa": {"angle": -10.0, "radius": 165.014}
+                "offset_rot": {"rot":10.0}
+            }
+        },
+        {
+            "name": "auxtel/latiss_acquire.py",
+            "standard": false,
+            "parameters": {
+                "object_ra": "$ra",
+                "object_dec": "$dec",
+                "object_name": "$name",
+                "acq_filter": "SDSSr_65mm",
+                "acq_grating": "holo4_003",
+                "acq_exposure_time": 1.0,
+                "program": "spec",
+                "reason": "Generic Survey",
+                "estimated_slew_time": "$estimated_slew_time",
+                "time_on_target": 300.0,
+                "do_reacquire": true
             }
         },
         {
