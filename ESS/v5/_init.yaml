@@ -121,14 +121,12 @@ instances:
           host: auxtel-ess01.cp.lsst.org
           devices:
           # AuxTel temperature sensor readout box
-# Temporarily disabled because in repairs.
-# TODO DM-39171: Restore this configuration as soon as the sensor has been repaired.
-#          - name: AuxTel-ESS01
-#            channels: 4
-#            device_type: Serial
-#            serial_port: /dev/ttyAMA2
-#            sensor_type: Temperature
-#            location: unused, AT air, AT truss, AT M2
+          - name: AuxTel-ESS01
+            channels: 8
+            device_type: Serial
+            serial_port: /dev/ttyAMA4
+            sensor_type: Temperature
+            location: unused, AT air, AT truss, AT M2, unused, unused, unused, unused
           # AuxTel humidity sensor
           - name: AuxTel-ESS02
             device_type: Serial
@@ -136,23 +134,19 @@ instances:
             sensor_type: HX85BA
             location: AT azimuth axis
           # AuxTel temperature sensor readout box
-# Temporarily disabled because in repairs.
-# TODO DM-39171: Restore this configuration as soon as the sensor has been repaired.
-#          - name: AuxTel-ESS03
-#            channels: 5
-#            device_type: FTDI
-#            ftdi_id: FT5QONV3
-#            sensor_type: Temperature
-#            location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5
+          - name: AuxTel-ESS03
+            channels: 5
+            device_type: FTDI
+            ftdi_id: AL05OBVR
+            sensor_type: Temperature
+            location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5
           # AuxTel 3D anemometer
-# Temporarily disabled because in repairs.
-# TODO DM-39171: Restore this configuration as soon as the sensor has been repaired.
-#          - name: AuxTel-ESS04
-#            device_type: Serial
-#            serial_port: /dev/ttyS0
-#            sensor_type: CSAT3B
-#            baud_rate: 115200
-#            location: AT Dome
+          - name: AuxTel-ESS04
+            device_type: Serial
+            serial_port: /dev/ttyS0
+            sensor_type: CSAT3B
+            baud_rate: 115200
+            location: AT Dome
             # 10 samples per second so for 1 minute that is 600 samples.
             num_samples: 600
       - client_class: LabJackDataClient
