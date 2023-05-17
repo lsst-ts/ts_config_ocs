@@ -51,8 +51,8 @@ def get_scheduler():
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
 
     image_ha_limit = [
-        (24.0 - 4.5, 24.0),
-        (0.0, 4.5),
+        (18.0, 24.0),
+        (0.0, 6.0),
     ]
     spec_ha_limit = [
         (18.0, 24.0),
@@ -71,20 +71,8 @@ def get_scheduler():
             hour_angle_limit=spec_ha_limit_pole,
             reward_value=reward_values["spec_pole"],
             filters=["r"],
-            visit_gap=30.0,
-            exptime=200.0,
-            nexp=1,
-        ),
-        Target(
-            target_name="HD185975",
-            survey_name="spec_pole_with_rotation",
-            ra=Angle("20:28:18", unit=units.hourangle),
-            dec=Angle("-87:28:19.9", unit=units.deg),
-            hour_angle_limit=spec_ha_limit_pole,
-            reward_value=reward_values["default"],
-            filters=["r"],
-            visit_gap=0.0,
-            exptime=200.0,
+            visit_gap=45.0,
+            exptime=540.0,
             nexp=1,
         ),
         Target(
@@ -96,7 +84,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=5.0,
-            exptime=200.0,
+            exptime=540.0,
             nexp=1,
         ),
         Target(
@@ -108,7 +96,19 @@ def get_scheduler():
             reward_value=reward_values["spec_boost"],
             filters=["r"],
             visit_gap=0.0,
-            exptime=200.0,
+            exptime=540.0,
+            nexp=1,
+        ),
+        Target(
+            target_name="HD60753",
+            survey_name="spec_with_rotation",
+            ra=Angle("07:32:27.3", unit=units.hourangle),
+            dec=Angle("-50:35:03.3", unit=units.deg),
+            hour_angle_limit=spec_ha_limit,
+            reward_value=reward_values["spec_boost"],
+            filters=["r"],
+            visit_gap=0.0,
+            exptime=540.0,
             nexp=1,
         ),
         Target(
@@ -117,22 +117,10 @@ def get_scheduler():
             ra=Angle("16:15:37", unit=units.hourangle),
             dec=Angle("-08:22:10.0", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["spec_boost"],
-            filters=["r"],
-            visit_gap=0.0,
-            exptime=200.0,
-            nexp=1,
-        ),
-        Target(
-            target_name="HD205905",
-            survey_name="spec_with_rotation",
-            ra=Angle("21:39:10", unit=units.hourangle),
-            dec=Angle("-27:18:23.7", unit=units.deg),
-            hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["default"],
             filters=["r"],
-            visit_gap=5.0,
-            exptime=200.0,
+            visit_gap=0.0,
+            exptime=540.0,
             nexp=1,
         ),
     ]
@@ -151,7 +139,7 @@ def get_scheduler():
 
     spec_detailers = []
     image_detailers = [
-        DitherDetailer(max_dither=(25.0 / (60.0 * 60.0)), per_night=False)
+        DitherDetailer(max_dither=(25.0 / (60.0 * 60.0)), per_night=True)
     ]
 
     make_scheduler = MakeScheduler()
