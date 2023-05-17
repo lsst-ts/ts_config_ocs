@@ -1,1 +1,15 @@
 # eups is just used to set $TS_CONFIG_..._DIR
+# and set up packages for unit testing
+setupOptional(ts_authorize)
+setupOptional(ts_dimm)
+setupOptional(ts_eas)
+setupOptional(ts_electrometer)
+setupOptional(ts_ess_csc)
+setupOptional(ts_fiberspectrograph)
+setupOptional(ts_genericcamera)
+setupOptional(ts_gis)
+setupOptional(ts_mteec)
+setupOptional(ts_pmd)
+setupOptional(ts_salobj)  # for Test
+setupOptional(ts_scheduler)
+setupOptional(ts_watcher)
