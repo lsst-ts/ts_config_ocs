@@ -1,0 +1,3 @@
+# Tell Jenkins to run pytest in verbose mode
+[tool.pytest.ini_options]
+addopts = "--verbose"

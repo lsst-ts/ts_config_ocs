@@ -20,8 +20,8 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import pathlib
-import unittest
 import subprocess
+import unittest
 
 
 class ScriptsTestCase(unittest.TestCase):
