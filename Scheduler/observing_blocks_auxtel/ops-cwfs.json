@@ -16,6 +16,14 @@
                 "filter": "SDSSr_65mm",
                 "program": "$program"
             }
+        },
+        {
+            "name": "auxtel/latiss_intra_extra_focal_data.py",
+            "standard": false,
+            "parameters": {
+                "program": "$program",
+                "reason": "cwfs_corrected"
+            }
         }
     ]
 }

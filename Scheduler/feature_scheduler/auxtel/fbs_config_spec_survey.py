@@ -23,6 +23,7 @@ from astropy import units
 from astropy.coordinates import Angle
 from lsst.ts.fbs.utils import Target, Tiles
 from lsst.ts.fbs.utils.auxtel.make_scheduler import MakeScheduler, SurveyType
+from rubin_sim.scheduler.detailers import DitherDetailer
 
 
 def get_scheduler():
@@ -44,8 +45,8 @@ def get_scheduler():
         spec_boost=20.0,
     )
 
-    image_nexp = 2  # number of exposures
-    image_exptime = 60.0  # total exposure time in seconds
+    image_nexp = 1  # number of exposures
+    image_exptime = 30.0  # total exposure time in seconds
     image_visit_gap = 60.0
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
 
@@ -57,11 +58,8 @@ def get_scheduler():
         (0.0, 24.0),
     ]
     image_ha_limit = [
-        (24.0 - 3.5, 24.0),
-        (0.0, 3.5),
-    ]
-    image_ha_limit_pole = [
-        (0.0, 24.0),
+        (18, 24.0),
+        (0.0, 6.0),
     ]
 
     spec_target_list = [
@@ -73,20 +71,8 @@ def get_scheduler():
             hour_angle_limit=spec_ha_limit_pole,
             reward_value=reward_values["spec_pole"],
             filters=["r"],
-            visit_gap=30.0,
-            exptime=200.0,
-            nexp=1,
-        ),
-        Target(
-            target_name="HD185975",
-            survey_name="spec_pole_with_rotation",
-            ra=Angle("20:28:18", unit=units.hourangle),
-            dec=Angle("-87:28:19.9", unit=units.deg),
-            hour_angle_limit=spec_ha_limit_pole,
-            reward_value=reward_values["default"],
-            filters=["r"],
-            visit_gap=0.0,
-            exptime=200.0,
+            visit_gap=45.0,
+            exptime=540.0,
             nexp=1,
         ),
         Target(
@@ -98,7 +84,7 @@ def get_scheduler():
             reward_value=reward_values["default"],
             filters=["r"],
             visit_gap=5.0,
-            exptime=200.0,
+            exptime=540.0,
             nexp=1,
         ),
         Target(
@@ -110,7 +96,19 @@ def get_scheduler():
             reward_value=reward_values["spec_boost"],
             filters=["r"],
             visit_gap=0.0,
-            exptime=200.0,
+            exptime=540.0,
+            nexp=1,
+        ),
+        Target(
+            target_name="HD60753",
+            survey_name="spec_with_rotation",
+            ra=Angle("07:32:27.3", unit=units.hourangle),
+            dec=Angle("-50:35:03.3", unit=units.deg),
+            hour_angle_limit=spec_ha_limit,
+            reward_value=reward_values["spec_boost"],
+            filters=["r"],
+            visit_gap=0.0,
+            exptime=540.0,
             nexp=1,
         ),
         Target(
@@ -119,38 +117,17 @@ def get_scheduler():
             ra=Angle("16:15:37", unit=units.hourangle),
             dec=Angle("-08:22:10.0", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["spec_boost"],
-            filters=["r"],
-            visit_gap=0.0,
-            exptime=200.0,
-            nexp=1,
-        ),
-        Target(
-            target_name="HD205905",
-            survey_name="spec_with_rotation",
-            ra=Angle("21:39:10", unit=units.hourangle),
-            dec=Angle("-27:18:23.7", unit=units.deg),
-            hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["default"],
             filters=["r"],
-            visit_gap=5.0,
-            exptime=200.0,
+            visit_gap=0.0,
+            exptime=540.0,
             nexp=1,
         ),
     ]
 
     image_tiles = [
         Tiles(
-            survey_name="LATISS_POLE",
-            hour_angle_limit=image_ha_limit_pole,
-            reward_value=reward_values["image_pole"],
-            filters=["g", "r", "i"],
-            visit_gap=image_visit_gap,
-            exptime=image_exptime,
-            nexp=image_nexp,
-        ),
-        Tiles(
-            survey_name="AUXTEL_DRP_IMAGING",
+            survey_name="AUXTEL_PHOTO_IMAGING",
             hour_angle_limit=image_ha_limit,
             reward_value=reward_values["image_survey"],
             filters=["g", "r", "i"],
@@ -161,7 +138,9 @@ def get_scheduler():
     ]
 
     spec_detailers = []
-    image_detailers = []
+    image_detailers = [
+        DitherDetailer(max_dither=(25.0 / (60.0 * 60.0)), per_night=True)
+    ]
 
     make_scheduler = MakeScheduler()
 
