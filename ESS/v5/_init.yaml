@@ -248,7 +248,7 @@ instances:
           host: calibhill-weatherstation01.cp.lsst.org
           port: 4001
           connect_timeout: 5
-          read_timeout: 60
+          read_timeout: 120
           num_samples_airflow: 20
           num_samples_temperature: 60
           rain_stopped_interval: 160
