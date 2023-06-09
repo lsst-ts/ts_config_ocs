@@ -1,0 +1,24 @@
+{
+    "name": "SIT-Imaging",
+    "program": "SIT:DD_ELAISS1",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "target_name": "$name",
+                "rot_value": 0.0,
+                "rot_type": "PhysicalSky",
+                "program": "BLOCK-5",
+                "reason": "SITCOM-885",
+                "track_for": 32.0,
+                "ignore": [ "mtaos", "mtrotator", "mtdome", "mtdometrajectory", "mtm2", "mthexapod_1", "mthexapod_2"]
+            }
+        }
+    ]
+}
