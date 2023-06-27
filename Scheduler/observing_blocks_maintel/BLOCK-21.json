@@ -1,7 +1,6 @@
 {
     "name": "BLOCK-21",
     "program": "BLOCK-21",
-    "reason": "SITCOM-904",
     "constraints": [],
     "scripts": [
         {
@@ -11,7 +10,7 @@
                 "az": 153,
                 "el": 90,
                 "program": "$program",
-                "reason": "$reason",
+                "reason": "SITCOM-904",
                 "move_timeout": 2700.0,
                 "ignore": [ "mtaos", "mtrotator", "mtdome", "mtdometrajectory", "mtm2", "mthexapod_1", "mthexapod_2", "mtm1m3"]
             }
@@ -31,7 +30,7 @@
             "standard": true,
             "parameters": {
                 "program": "$program",
-                "reason": "$reason"
+                "reason": "SITCOM-904"
             }
         },
         {
@@ -116,7 +115,7 @@
                 ],
                 "pause_for": 60,
                 "program": "$program",
-                "reason": "$reason",
+                "reason": "SITCOM-904",
                 "move_timeout": 2700.0,
                 "ignore": [ "mtaos", "mtrotator", "mtdome", "mtdometrajectory", "mtm2", "mthexapod_1", "mthexapod_2", "mtm1m3"]
             }
