@@ -1,0 +1,20 @@
+{
+    "name": "BLOCK-22",
+    "program": "BLOCK-22",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": [144, 189, 174, 176, 145, 167, 150, 195, 109, 142, 126, 189, 146, 197, 198, 185, 189, 109, 175, 172],
+                "el": [41, 24, 24, 37, 49, 50, 27, 56, 67, 65, 25, 51, 55, 51, 57, 63, 57, 21, 37, 54],
+                "pause_for": 5,
+                "program": "$program",
+                "reason": "SITCOM-904",
+                "move_timeout": 2700.0,
+                "ignore": ["mtaos", "mtrotator", "mtdome", "mtdometrajectory", "mtm2", "mthexapod_1", "mthexapod_2", "mtm1m3"]
+            }
+        }
+    ]
+}
