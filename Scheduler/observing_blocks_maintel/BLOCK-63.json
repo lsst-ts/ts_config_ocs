@@ -1,0 +1,209 @@
+{
+    "name": "BLOCK-63",
+    "program": "BLOCK-63",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": [
+                    34,
+                    22,
+                    34
+                ],
+                "pause_for": 5,
+                "program": "BLOCK-63",
+                "reason": "SITCOM-923",
+                "test_case": {
+                    "name": "LVV-T2854",
+                    "execution": "LVV-E????",
+                    "version": "1.0",
+                    "initial_step": 1
+                },
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtm2",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ]
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": [
+                    34,
+                    30.5,
+                    34
+                ],
+                "pause_for": 5,
+                "program": "BLOCK-63",
+                "reason": "SITCOM-923",
+                "test_case": {
+                    "name": "LVV-T2854",
+                    "execution": "LVV-E????",
+                    "version": "1.0",
+                    "initial_step": 2
+                },
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtm2",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ]
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": [
+                    250,
+                    -250,
+                    250
+                ],
+                "el": 34,
+                "pause_for": 5,
+                "program": "BLOCK-63",
+                "reason": "SITCOM-923",
+                "test_case": {
+                    "name": "LVV-T2854",
+                    "execution": "LVV-E????",
+                    "version": "1.0",
+                    "initial_step": 3
+                },
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtm2",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ]
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": [
+                    153,
+                    149.5,
+                    153
+                ],
+                "el": 34,
+                "pause_for": 5,
+                "program": "BLOCK-63",
+                "reason": "SITCOM-923",
+                "test_case": {
+                    "name": "LVV-T2854",
+                    "execution": "LVV-E????",
+                    "version": "1.0",
+                    "initial_step": 4
+                },
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtm2",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ]
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": [
+                    153,
+                    148.26,
+                    153,
+                    157.75,
+                    153
+                ],
+                "el": [
+                    34,
+                    25.51,
+                    17.02,
+                    25.51,
+                    34
+                ],
+                "pause_for": 5,
+                "program": "BLOCK-63",
+                "reason": "SITCOM-923",
+                "test_case": {
+                    "name": "LVV-T2854",
+                    "execution": "LVV-E????",
+                    "version": "1.0",
+                    "initial_step": 5
+                },
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtm2",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ]
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": [
+                    153,
+                    151.62,
+                    153,
+                    154.38,
+                    153
+                ],
+                "el": [
+                    34,
+                    31.53,
+                    29.05,
+                    31.53,
+                    34
+                ],
+                "pause_for": 5,
+                "program": "BLOCK-63",
+                "reason": "SITCOM-923",
+                "test_case": {
+                    "name": "LVV-T2854",
+                    "execution": "LVV-E????",
+                    "version": "1.0",
+                    "initial_step": 6
+                },
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtm2",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ]
+            }
+        }
+    ]
+}
