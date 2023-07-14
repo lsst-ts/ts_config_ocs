@@ -1,6 +1,6 @@
 {
-    "name": "BLOCK-34",
-    "program": "BLOCK-34",
+    "name": "BLOCK-65",
+    "program": "BLOCK-65",
     "constraints": [],
     "scripts": [
         {
@@ -14,7 +14,7 @@
                     34
                 ],
                 "pause_for": 5,
-                "program": "BLOCK-34",
+                "program": "BLOCK-65",
                 "reason": "SITCOM-923",
                 "test_case": {
                     "name": "LVV-T2854",
@@ -22,7 +22,7 @@
                     "version": "1.0",
                     "initial_step": 1
                 },
-                "move_timeout": 2700.0,
+                "move_timeout": 2700,
                 "ignore": [
                     "mtaos",
                     "mtrotator",
@@ -30,8 +30,7 @@
                     "mtdometrajectory",
                     "mtm2",
                     "mthexapod_1",
-                    "mthexapod_2",
-                    "mtm1m3"
+                    "mthexapod_2"
                 ]
             }
         },
@@ -46,7 +45,7 @@
                     34
                 ],
                 "pause_for": 5,
-                "program": "BLOCK-34",
+                "program": "BLOCK-65",
                 "reason": "SITCOM-923",
                 "test_case": {
                     "name": "LVV-T2854",
@@ -54,7 +53,7 @@
                     "version": "1.0",
                     "initial_step": 2
                 },
-                "move_timeout": 2700.0,
+                "move_timeout": 2700,
                 "ignore": [
                     "mtaos",
                     "mtrotator",
@@ -62,8 +61,7 @@
                     "mtdometrajectory",
                     "mtm2",
                     "mthexapod_1",
-                    "mthexapod_2",
-                    "mtm1m3"
+                    "mthexapod_2"
                 ]
             }
         },
@@ -78,7 +76,7 @@
                 ],
                 "el": 34,
                 "pause_for": 5,
-                "program": "BLOCK-34",
+                "program": "BLOCK-65",
                 "reason": "SITCOM-923",
                 "test_case": {
                     "name": "LVV-T2854",
@@ -86,7 +84,7 @@
                     "version": "1.0",
                     "initial_step": 3
                 },
-                "move_timeout": 2700.0,
+                "move_timeout": 2700,
                 "ignore": [
                     "mtaos",
                     "mtrotator",
@@ -94,8 +92,7 @@
                     "mtdometrajectory",
                     "mtm2",
                     "mthexapod_1",
-                    "mthexapod_2",
-                    "mtm1m3"
+                    "mthexapod_2"
                 ]
             }
         },
@@ -110,7 +107,7 @@
                 ],
                 "el": 34,
                 "pause_for": 5,
-                "program": "BLOCK-34",
+                "program": "BLOCK-65",
                 "reason": "SITCOM-923",
                 "test_case": {
                     "name": "LVV-T2854",
@@ -118,7 +115,7 @@
                     "version": "1.0",
                     "initial_step": 4
                 },
-                "move_timeout": 2700.0,
+                "move_timeout": 2700,
                 "ignore": [
                     "mtaos",
                     "mtrotator",
@@ -126,8 +123,7 @@
                     "mtdometrajectory",
                     "mtm2",
                     "mthexapod_1",
-                    "mthexapod_2",
-                    "mtm1m3"
+                    "mthexapod_2"
                 ]
             }
         },
@@ -137,12 +133,20 @@
             "parameters": {
                 "az": [
                     153,
-                    149.5,
+                    148.26,
+                    153,
+                    157.75,
                     153
                 ],
-                "el": 34,
+                "el": [
+                    34,
+                    25.51,
+                    17.02,
+                    25.51,
+                    34
+                ],
                 "pause_for": 5,
-                "program": "BLOCK-34",
+                "program": "BLOCK-65",
                 "reason": "SITCOM-923",
                 "test_case": {
                     "name": "LVV-T2854",
@@ -150,7 +154,7 @@
                     "version": "1.0",
                     "initial_step": 5
                 },
-                "move_timeout": 2700.0,
+                "move_timeout": 2700,
                 "ignore": [
                     "mtaos",
                     "mtrotator",
@@ -158,8 +162,7 @@
                     "mtdometrajectory",
                     "mtm2",
                     "mthexapod_1",
-                    "mthexapod_2",
-                    "mtm1m3"
+                    "mthexapod_2"
                 ]
             }
         },
@@ -182,7 +185,7 @@
                     34
                 ],
                 "pause_for": 5,
-                "program": "BLOCK-34",
+                "program": "BLOCK-65",
                 "reason": "SITCOM-923",
                 "test_case": {
                     "name": "LVV-T2854",
@@ -190,7 +193,7 @@
                     "version": "1.0",
                     "initial_step": 6
                 },
-                "move_timeout": 2700.0,
+                "move_timeout": 2700,
                 "ignore": [
                     "mtaos",
                     "mtrotator",
@@ -198,8 +201,7 @@
                     "mtdometrajectory",
                     "mtm2",
                     "mthexapod_1",
-                    "mthexapod_2",
-                    "mtm1m3"
+                    "mthexapod_2"
                 ]
             }
         }
