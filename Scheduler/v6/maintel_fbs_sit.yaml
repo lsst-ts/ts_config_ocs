@@ -54,7 +54,7 @@ maintel:
         efd_columns:
           - fwhm
         efd_delta_time: 300.0
-        fill_value: null
+        fill_value: 1.0
       - name: wind_speed
         efd_table: lsst.sal.ESS.airFlow
         efd_columns:
