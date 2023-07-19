@@ -27,7 +27,9 @@ rules:
   - name: ESS:203
   - name: ESS:204
   - name: ESS:301
-  - name: GenericCamera
+  - name: GenericCamera:101
+  - name: GenericCamera:102
+  - name: GenericCamera:103
   - name: HVAC
   - name: MTAOS
 # TODO DM-37395: These CSCs were in STANDBY which is why they have been commented
@@ -79,7 +81,9 @@ rules:
   - name: ESS:203
   - name: ESS:204
   - name: ESS:301
-  - name: GenericCamera
+  - name: GenericCamera:101
+  - name: GenericCamera:102
+  - name: GenericCamera:103
   - name: HVAC
   - name: MTAOS
   - name: MTAirCompressor:1
@@ -176,5 +180,5 @@ escalation:
     - Enabled.*
     - Heartbeat.*
     responder: control_system
-    delay: 300
+    delay: 600
 escalation_url: https://api.squadcast.com
