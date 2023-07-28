@@ -26,7 +26,7 @@ auxtel:
   driver_type: feature_scheduler
   mode: ADVANCE
   startup_type: COLD
-  startup_database: /home/saluser/rubin_sim_data/fbs_observation_database.sql
+  startup_database: /home/saluser/rubin_sim_data/fbs_observation_database_auxtel.sql
   predicted_scheduler_window: 0.05
   models:
     observatory_model:
@@ -72,7 +72,7 @@ maintel:
   driver_type: feature_scheduler
   mode: ADVANCE
   startup_type: COLD
-  startup_database: /home/saluser/rubin_sim_data/fbs_observation_database.sql
+  startup_database: /home/saluser/rubin_sim_data/fbs_observation_database_maintel.sql
   predicted_scheduler_window: 0.05
   models:
     observatory_model:
