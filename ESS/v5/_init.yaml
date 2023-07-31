@@ -20,6 +20,7 @@ instances:
               MT camera hexapod strut 12,
               MT camera rotator motor 1,
               MT camera rotator motor 2
+
   - sal_index: 101
     data_clients:
       - client_class: RPiDataClient
@@ -113,6 +114,27 @@ instances:
           location: MT dome wall
           sensor_name: SSA3000X
           poll_interval: 1.0
+  - sal_index: 106
+    data_clients:
+      - client_class: RPiDataClient
+        # M2 temperature sensor readout box.
+        config:
+          host: 139.229.178.196
+          devices:
+          - name: M2-ESS01
+            channels: 8
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
+            sensor_type: Temperature
+            location: >-
+              Unused,
+              Tangent link A2,
+              Tangent link A4,
+              Tangent link A6,
+              Tangent link A3,
+              Tangent link A1,
+              Tangent link A5,
+              Unused
 
   - sal_index: 201
     data_clients:
@@ -241,6 +263,7 @@ instances:
             location: AT Dome
             # 1 sample per second so for 1 minute that is 60 samples.
             num_samples: 60
+
   - sal_index: 301
     data_clients:
       - client_class: Young32400WeatherStationDataClient
