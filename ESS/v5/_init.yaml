@@ -241,13 +241,14 @@ instances:
             threshold: 10.0
             baud_rate: 9600
             location: Calibration Hill
-          - name: AuxTel-Lightning01
-            device_type: Serial
-            serial_port: /dev/ttyUSB0
-            sensor_type: LD250
-            safe_interval: 2
-            baud_rate: 9600
-            location: Calibration Hill
+#          # Temporarily disabled until alarm state has been resolved
+#          - name: AuxTel-Lightning01
+#            device_type: Serial
+#            serial_port: /dev/ttyUSB0
+#            sensor_type: LD250
+#            safe_interval: 2
+#            baud_rate: 9600
+#            location: Calibration Hill
   - sal_index: 204
     data_clients:
       - client_class: RPiDataClient
