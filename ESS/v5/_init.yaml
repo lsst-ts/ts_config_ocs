@@ -162,15 +162,15 @@ instances:
             ftdi_id: AL05OBVR
             sensor_type: Temperature
             location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5
-          # AuxTel 3D anemometer
-          - name: AuxTel-ESS04
-            device_type: Serial
-            serial_port: /dev/ttyS0
-            sensor_type: CSAT3B
-            baud_rate: 115200
-            location: AT Dome
-            # 10 samples per second so for 1 minute that is 600 samples.
-            num_samples: 600
+#          # AuxTel 3D anemometer (Disabled until repaired)
+#          - name: AuxTel-ESS04
+#            device_type: Serial
+#            serial_port: /dev/ttyS0
+#            sensor_type: CSAT3B
+#            baud_rate: 115200
+#            location: AT Dome
+#            # 10 samples per second so for 1 minute that is 600 samples.
+#            num_samples: 600
       - client_class: LabJackDataClient
         # LabJack reading AuxTel camera coolant pressures
         config:
