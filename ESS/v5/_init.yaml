@@ -241,14 +241,13 @@ instances:
             threshold: 10.0
             baud_rate: 9600
             location: Calibration Hill
-#          # Temporarily disabled until alarm state has been resolved
-#          - name: AuxTel-Lightning01
-#            device_type: Serial
-#            serial_port: /dev/ttyUSB0
-#            sensor_type: LD250
-#            safe_interval: 2
-#            baud_rate: 9600
-#            location: Calibration Hill
+          - name: AuxTel-Lightning01
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
+            sensor_type: LD250
+            safe_interval: 2
+            baud_rate: 9600
+            location: Calibration Hill
   - sal_index: 204
     data_clients:
       - client_class: RPiDataClient
@@ -282,8 +281,9 @@ instances:
           sensor_name_pressure: "Weather tower atmospheric pressure"
           sensor_name_rain: ""
           sensor_name_temperature: "Weather tower air temperature"
+          # See ts-ess-common docs for an explanation of the values of sclae and offset.
           scale_offset_humidity: [0.025, 0]
-          scale_offset_pressure: [48, 500]
+          scale_offset_pressure: [0.15, 500]
           scale_offset_temperature: [0.025, -50]
           scale_offset_wind_direction: [0.1, 0]
           scale_offset_wind_speed: [0.0834, 0]
