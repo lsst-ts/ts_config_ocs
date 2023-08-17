@@ -1,0 +1,580 @@
+{
+    "name": "BLOCK-86",
+    "program": "BLOCK-86",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "find_target": {
+                    "az": 180,
+                    "el": 60,
+                    "mag_limit": 7,
+                    "mag_range": 3
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_wep_align.py",
+            "standard": false,
+            "parameters": {
+                "filter": "SDSSi_65mm"
+            }
+        },
+        {
+            "name": "auxtel/latiss_acquire.py",
+            "standard": false,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "do_user_final_position": true,
+                "do_recquire": true,
+                "user_final_x": 1750,
+                "user_final_y": 300
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": -0.12
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": -0.12
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": -0.12
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.02
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-86",
+                "reason": "SITCOM-702",
+                "nimages": 2,
+                "exptimes": 30,
+                "image_type": "ENGTEST",
+                "filter": "SDSSi_65mm",
+                "grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_ataos.py",
+            "standard": true,
+            "parameters": {
+                "z": -0.12
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "ATPtg",
+                "cmd": "stopTracking"
+            }
+        }
+    ]
+}
