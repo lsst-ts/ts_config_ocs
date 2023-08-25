@@ -4,23 +4,18 @@
     "constraints": [],
     "scripts": [
         {
-            "name": "maintel/track_target_sched.py",
-            "standard": false,
+            "name": "maintel/track_target.py",
+            "standard": true,
             "parameters": {
-                "ra": "$ra",
-                "dec": "$dec",
-                "rot_sky": "$rot_sky",
-                "band_filter": "$band_filter",
-                "name": "$name",
-                "estimated_slew_time": "$estimated_slew_time",
-                "exp_times": "$exp_times",
-                "filter_prefix": "SDSS",
-                "filter_suffix": "_65mm",
-                "grating": "empty_1",
-                "num_exp": "$num_exp",
-                "obs_time": "$obs_time",
-                "program": "$program",
-                "targetid": "$targetid"
+                "slew_icrs": {
+                    "ra": "$ra",
+                    "dec": "$dec"
+                },
+                "rot_value": 0,
+                "rot_type": "PhysicalSky",
+                "target_name": "$name",
+                "track_for": 30,
+                "ignore": ["mtm1m3", "mtm2"]
             }
         }
     ]
