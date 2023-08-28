@@ -4,11 +4,6 @@
     "constraints": [],
     "scripts": [
         {
-            "name": "auxtel/prepare_for/flat.py",
-            "standard": true,
-            "parameters": {}
-        },
-        {
             "name": "set_summary_state.py",
             "standard": true,
             "parameters": {
@@ -22,6 +17,11 @@
         },
         {
             "name": "auxtel/calibrations/power_on_atcalsys.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "auxtel/prepare_for/flat.py",
             "standard": true,
             "parameters": {}
         },
