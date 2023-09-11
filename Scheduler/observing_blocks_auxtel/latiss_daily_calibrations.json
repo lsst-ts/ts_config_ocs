@@ -1,0 +1,99 @@
+{
+    "name": "latiss_daily_calibrations",
+    "program": "latiss_daily_calibrations",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "ATWhiteLight",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "auxtel/calibrations/power_on_atcalsys.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "auxtel/prepare_for/flat.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "auxtel/make_latiss_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "n_flat": 20,
+                "exp_times_flat": 6,
+                "script_mode": "BIAS_DARK_FLAT",
+                "filter": "SDSSi_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/make_latiss_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "n_bias": 3,
+                "n_dark": 3,
+                "exp_times_dark": 6,
+                "n_flat": 20,
+                "exp_times_flat": 6,
+                "script_mode": "BIAS_DARK_FLAT",
+                "filter": "SDSSr_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/make_latiss_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "n_bias": 3,
+                "n_dark": 3,
+                "exp_times_dark": 6,
+                "n_flat": 20,
+                "exp_times_flat": 6,
+                "script_mode": "BIAS_DARK_FLAT",
+                "filter": "SDSSg_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/make_latiss_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "n_bias": 3,
+                "n_dark": 3,
+                "exp_times_dark": 1,
+                "n_flat": 20,
+                "exp_times_flat": 1,
+                "script_mode": "BIAS_DARK_FLAT",
+                "filter": "empty_1",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/calibrations/power_off_atcalsys.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "ATWhiteLight",
+                        "STANDBY"
+                    ]
+                ]
+            }
+        }
+    ]
+}
