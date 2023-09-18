@@ -195,6 +195,18 @@ def get_scheduler():
             exptime=360.0,
             nexp=1,
         ),
+        Target(
+            target_name="Feige110",
+            survey_name="spec",
+            ra=Angle("23:19:58", unit=units.hourangle),
+            dec=Angle("-05:09:56.1", unit=units.deg),
+            hour_angle_limit=spec_ha_limit,
+            reward_value=reward_values["spec_boost"],
+            filters=["r"],
+            visit_gap=30.0,
+            exptime=360.0,
+            nexp=1,
+        ),
     ]
 
     image_tiles = [

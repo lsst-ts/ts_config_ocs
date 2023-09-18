@@ -32,20 +32,6 @@
                 "n_flat": 20,
                 "exp_times_flat": 6,
                 "script_mode": "BIAS_DARK_FLAT",
-                "filter": "SDSSi_65mm",
-                "grating": "empty_1"
-            }
-        },
-        {
-            "name": "auxtel/make_latiss_calibrations.py",
-            "standard": false,
-            "parameters": {
-                "n_bias": 3,
-                "n_dark": 3,
-                "exp_times_dark": 6,
-                "n_flat": 20,
-                "exp_times_flat": 6,
-                "script_mode": "BIAS_DARK_FLAT",
                 "filter": "SDSSr_65mm",
                 "grating": "empty_1"
             }
@@ -76,6 +62,92 @@
                 "script_mode": "BIAS_DARK_FLAT",
                 "filter": "empty_1",
                 "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "FLAT",
+                "filter": "SDSSr_65mm",
+                "grating": "empty_1",
+                "reason": "daily_PTC",
+                "exp_times": [
+                    0.2,
+                    0.2,
+                    0.4,
+                    0.4,
+                    0.6,
+                    0.6,
+                    0.8,
+                    0.8,
+                    1.0,
+                    1.0,
+                    1.2,
+                    1.2,
+                    1.4,
+                    1.4,
+                    1.6,
+                    1.6,
+                    1.8,
+                    1.8,
+                    2.0,
+                    2.0,
+                    2.2,
+                    2.2,
+                    2.4,
+                    2.4,
+                    2.6,
+                    2.6,
+                    2.8,
+                    2.8,
+                    3.0,
+                    3.0,
+                    3.2,
+                    3.2,
+                    3.4,
+                    3.4,
+                    3.6,
+                    3.6,
+                    3.8,
+                    3.8,
+                    4.0,
+                    4.0,
+                    5.0,
+                    5.0,
+                    10.0,
+                    10.0,
+                    15.0,
+                    15.0,
+                    20.0,
+                    20.0,
+                    25.0,
+                    25.0,
+                    30.0,
+                    30.0
+                ]
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "FLAT",
+                "filter": "SDSSr_65mm",
+                "grating": "empty_1",
+                "reason": "daily_sflat",
+                "exp_times": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5,
+                    12.8,
+                    12.8,
+                    12.8,
+                    12.8,
+                    12.8
+                ]
             }
         },
         {
