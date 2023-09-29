@@ -17,27 +17,133 @@
                 "do_blind_offset": true,
                 "do_take_sequence": true,
                 "exposure_time_sequence": [
-                    30.0,
-                    30.0,
-                    20.0,
-                    20.0,
-                    20.0
+                    60.0
                 ],
                 "filter_sequence": [
-                    "empty_1",
-                    "empty_1",
-                    "empty_1",
-                    "empty_1",
                     "empty_1"
                 ],
                 "grating_sequence": [
-                    "holo4_003",
-                    "holo4_003",
-                    "blue300lpmm_qn1",
-                    "blue300lpmm_qn1",
-                    "blue300lpmm_qn1"
+                    "holo4_003"
                 ],
                 "program": "SITCOM-1001"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 10,
+                    "x": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "SITCOM-1001",
+                "reason": "y_offset_-100",
+                "exposure_time_sequence": [
+                    60.0
+                ],
+                "filter_sequence": [
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": -10,
+                    "x": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "SITCOM-1001",
+                "reason": "x_offset_0",
+                "exposure_time_sequence": [
+                    60.0
+                ],
+                "filter_sequence": [
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": -50
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "SITCOM-1001",
+                "reason": "x_offset_-50",
+                "exposure_time_sequence": [
+                    60.0
+                ],
+                "filter_sequence": [
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": 100
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "SITCOM-1001",
+                "reason": "x_offset_50",
+                "exposure_time_sequence": [
+                    60.0
+                ],
+                "filter_sequence": [
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": -50
+                }
             }
         }
     ]
