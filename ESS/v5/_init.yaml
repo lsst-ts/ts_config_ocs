@@ -283,7 +283,7 @@ instances:
           sensor_name_temperature: "Weather tower air temperature"
           # See ts-ess-common docs for an explanation of the values of scale and offset.
           scale_offset_humidity: [0.025, 0]
-          scale_offset_pressure: [15.0, 500]
+          scale_offset_pressure: [15.0, 50000]
           scale_offset_temperature: [0.025, -50]
           scale_offset_wind_direction: [0.1, 0]
           scale_offset_wind_speed: [0.0834, 0]
