@@ -118,7 +118,7 @@ def get_scheduler():
             survey_name="AUXTEL_PHOTO_IMAGING",
             hour_angle_limit=image_ha_limit,
             reward_value=reward_values["default"],
-            filters=["g", "r", "i"],
+            filters=["g"],
             visit_gap=image_visit_gap,
             exptime=image_exptime,
             nexp=image_nexp,
