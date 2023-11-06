@@ -65,7 +65,7 @@ def get_scheduler():
     spec_target_list = [
         Target(
             target_name="HD185975",
-            survey_name="spec_pole",
+            survey_name="spec",
             ra=Angle("20:28:18", unit=units.hourangle),
             dec=Angle("-87:28:19.9", unit=units.deg),
             hour_angle_limit=spec_ha_limit_pole,

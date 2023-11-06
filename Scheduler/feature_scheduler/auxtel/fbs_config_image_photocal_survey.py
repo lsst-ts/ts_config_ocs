@@ -39,7 +39,7 @@ def get_scheduler():
     nside = 64
     reward_values = dict(
         default=10.0,
-        image_pole=5.0,
+        image_pole=1.0,
         image_survey=2.0,
         spec_pole=30.0,
         spec_boost=20.0,
@@ -47,13 +47,9 @@ def get_scheduler():
 
     image_nexp = 1  # number of exposures
     image_exptime = 30.0  # total exposure time in seconds
-    image_visit_gap = 60.0
+    image_visit_gap = 24 * 60.0
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
 
-    image_ha_limit = [
-        (18.0, 24.0),
-        (0.0, 6.0),
-    ]
     spec_ha_limit = [
         (18.0, 24.0),
         (0.0, 6.0),
@@ -61,11 +57,15 @@ def get_scheduler():
     spec_ha_limit_pole = [
         (0.0, 24.0),
     ]
+    image_ha_limit = [
+        (22.0, 24.0),
+        (0.0, 4.0),
+    ]
 
     spec_target_list = [
         Target(
             target_name="HD185975",
-            survey_name="spec_pole",
+            survey_name="spec",
             ra=Angle("20:28:18", unit=units.hourangle),
             dec=Angle("-87:28:19.9", unit=units.deg),
             hour_angle_limit=spec_ha_limit_pole,
@@ -118,7 +118,7 @@ def get_scheduler():
             survey_name="AUXTEL_PHOTO_IMAGING",
             hour_angle_limit=image_ha_limit,
             reward_value=reward_values["default"],
-            filters=["g", "r"],
+            filters=["g", "r", "i"],
             visit_gap=image_visit_gap,
             exptime=image_exptime,
             nexp=image_nexp,
