@@ -19,7 +19,7 @@ auxtel:
     stop_tracking_observing_script_name: auxtel/stop_tracking.py
   feature_scheduler_driver_configuration:
     observation_database_name: /home/saluser/rubin_sim_data/fbs_observation_database.sql
-    scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/auxtel/fbs_config_spec_survey.py
+    scheduler_config: /net/obs-env/auto_base_packages/ts_config_ocs/Scheduler/feature_scheduler/auxtel/fbs_config_spec_survey.py
   telemetry:
     efd_name: summit_efd
     streams:
