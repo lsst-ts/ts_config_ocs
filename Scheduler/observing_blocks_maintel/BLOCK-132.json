@@ -1,0 +1,37 @@
+{
+    "name": "BLOCK-132",
+    "program": "BLOCK-132",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 0.0,
+                "el": [
+                    86.5,
+                    5.0,
+                    86.5
+                ],
+                "move_timeout": 1300,
+                "pause_for": 15,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ],
+                "program": "$program",
+                "reason": "SITCOM-926",
+                "test_case": {
+                    "name": "LVV-2811",
+                    "execution": "1",
+                    "version": "1.0",
+                    "initial_step": 1
+                }
+            }
+        }
+    ]
+}

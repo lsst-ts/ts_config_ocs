@@ -4,13 +4,24 @@
     "constraints": [],
     "scripts": [
         {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTM2",
+                "cmd": "switchForceBalanceSystem",
+                "parameters": {
+                    "status": false
+                }
+            }
+        },
+        {
             "name": "maintel/move_p2p.py",
             "standard": true,
             "parameters": {
                 "az": [153, 149.5, 153, 156.5],
-                "el": 80,
-                "pause_for": 5,
-                "program": "BLOCK-99",
+                "el": 45,
+                "pause_for": 15,
+                "program": "$program",
                 "reason": "SITCOM-1041",
                 "test_case": {
                     "name": "LVV-T????",
@@ -34,9 +45,9 @@
             "standard": true,
             "parameters": {
                 "az": [153, 144, 153, 162, 153],
-                "el": 80,
-                "pause_for": 5,
-                "program": "BLOCK-99",
+                "el": 45,
+                "pause_for": 15,
+                "program": "$program",
                 "reason": "SITCOM-1041",
                 "test_case": {
                     "name": "LVV-T????",
@@ -53,6 +64,17 @@
                     "mthexapod_1",
                     "mthexapod_2"
                 ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTM2",
+                "cmd": "switchForceBalanceSystem",
+                "parameters": {
+                    "status": true
+                }
             }
         }
     ]

@@ -4,23 +4,95 @@
     "constraints": [],
     "scripts": [
         {
-            "name": "auxtel/track_target_and_take_image.py",
+            "name": "auxtel/track_target.py",
             "standard": true,
             "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra",
+                    "dec": "$dec"
+                },
+                "rot_value": 0.0,
+                "target_name": "$name"
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "$program",
+                "reason": "imaging",
+                "exposure_time_sequence": [
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSg_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1"
+                ],
                 "ra": "$ra",
                 "dec": "$dec",
-                "rot_sky": 0.0,
-                "band_filter": "$band_filter",
-                "name": "$name",
-                "estimated_slew_time": "$estimated_slew_time",
-                "exp_times": "$exp_times",
-                "filter_prefix": "SDSS",
-                "filter_suffix": "_65mm",
-                "grating": "empty_1",
-                "num_exp": "$num_exp",
-                "obs_time": "$obs_time",
+                "rot_sky": 0.0
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
                 "program": "$program",
-                "targetid": "$targetid"
+                "reason": "imaging",
+                "exposure_time_sequence": [
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSr_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1"
+                ],
+                "ra": "$ra",
+                "dec": "$dec",
+                "rot_sky": 0.0
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "$program",
+                "reason": "imaging",
+                "exposure_time_sequence": [
+                    30.0
+                ],
+                "filter_sequence": [
+                    "SDSSz_65mm"
+                ],
+                "grating_sequence": [
+                    "empty_1"
+                ],
+                "ra": "$ra",
+                "dec": "$dec",
+                "rot_sky": 0.0
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "$program",
+                "reason": "imaging",
+                "exposure_time_sequence": [
+                    30.0
+                ],
+                "filter_sequence": [
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "SDSSy_65mm"
+                ],
+                "ra": "$ra",
+                "dec": "$dec",
+                "rot_sky": 0.0
             }
         }
     ]
