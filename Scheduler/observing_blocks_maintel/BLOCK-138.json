@@ -1,0 +1,17 @@
+{
+    "name": "BLOCK-138",
+    "program": "BLOCK-138",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "warmup_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "hexapod": "camera",
+                "max_position": 5000,
+                "program": "$program",
+                "reason": "FRACAS-111"
+            }
+        }
+    ]
+}
