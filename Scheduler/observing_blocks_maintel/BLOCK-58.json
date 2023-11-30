@@ -1,0 +1,17 @@
+{
+    "name": "BLOCK-58",
+    "program": "BLOCK-58",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "warmup_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "hexapod": "m2",
+                "max_position": 5000,
+                "program": "$program",
+                "reason": "FRACAS-110"
+            }
+        }
+    ]
+}
