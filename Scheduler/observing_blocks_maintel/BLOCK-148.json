@@ -1,0 +1,41 @@
+{
+    "name": "BLOCK-148",
+    "program": "BLOCK-148",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 90,
+                "program": "$program",
+                "reason": "SITCOM-923",
+                "move_timeout": 2700.0,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtm2",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        }
+    ]
+}
