@@ -12,10 +12,22 @@
                     "el": "$alt",
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
-                    "radius": 5.0
+                    "radius": 10.0
                 },
                 "filter": "SDSSr_65mm",
                 "program": "$program"
+            }
+        },
+        {
+            "name": "auxtel/correct_pointing.py",
+            "standard": false,
+            "parameters": {
+                "az": "$az",
+                "el": "$alt",
+                "mag_limit": 6.0,
+                "mag_range": 4.0,
+                "radius": 10.0,
+                "reset_aos_offsets": false
             }
         },
         {

@@ -1,0 +1,53 @@
+{
+    "name": "BLOCK-140",
+    "program": "BLOCK-140",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    -30.0,
+                    30.0,
+                    0.0,
+                    -30.0,
+                    30.0,
+                    0.0,
+                    -30.0,
+                    30.0,
+                    0.0,
+                    0.0
+                ],
+                "el": [
+                    86.5,
+                    5.0,
+                    86.5,
+                    86.5,
+                    86.5,
+                    86.5,
+                    45.0,
+                    45.0,
+                    45.0,
+                    5.0,
+                    5.0,
+                    5.0,
+                    86.5
+                ],
+                "move_timeout": 1300,
+                "pause_for": 5,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ],
+                "program": "$program",
+                "reason": "SITCOM-926"
+            }
+        }
+    ]
+}
