@@ -65,7 +65,7 @@ def get_scheduler():
     spec_target_list = [
         Target(
             target_name="HD185975",
-            survey_name="spec_pole",
+            survey_name="spec",
             ra=Angle("20:28:18", unit=units.hourangle),
             dec=Angle("-87:28:19.9", unit=units.deg),
             hour_angle_limit=spec_ha_limit_pole,
@@ -118,7 +118,7 @@ def get_scheduler():
             survey_name="AUXTEL_PHOTO_IMAGING",
             hour_angle_limit=image_ha_limit,
             reward_value=reward_values["image_survey"],
-            filters=["g", "r"],
+            filters=["g"],
             visit_gap=image_visit_gap,
             exptime=image_exptime,
             nexp=image_nexp,

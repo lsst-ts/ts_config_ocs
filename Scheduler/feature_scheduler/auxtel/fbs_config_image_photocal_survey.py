@@ -38,22 +38,18 @@ def get_scheduler():
     """
     nside = 64
     reward_values = dict(
-        default=10.0,
-        image_pole=5.0,
+        default=5.0,
+        image_pole=1.0,
         image_survey=2.0,
         spec_pole=30.0,
         spec_boost=20.0,
     )
 
     image_nexp = 1  # number of exposures
-    image_exptime = 30.0  # total exposure time in seconds
-    image_visit_gap = 60.0
+    image_exptime = 120.0  # total exposure time in seconds
+    image_visit_gap = 12 * 60.0
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
 
-    image_ha_limit = [
-        (18.0, 24.0),
-        (0.0, 6.0),
-    ]
     spec_ha_limit = [
         (18.0, 24.0),
         (0.0, 6.0),
@@ -61,17 +57,20 @@ def get_scheduler():
     spec_ha_limit_pole = [
         (0.0, 24.0),
     ]
+    image_ha_limit = [
+        (22.0, 24.0),
+    ]
 
     spec_target_list = [
         Target(
             target_name="HD185975",
-            survey_name="spec_pole",
+            survey_name="spec",
             ra=Angle("20:28:18", unit=units.hourangle),
             dec=Angle("-87:28:19.9", unit=units.deg),
             hour_angle_limit=spec_ha_limit_pole,
             reward_value=reward_values["spec_pole"],
             filters=["r"],
-            visit_gap=60.0,
+            visit_gap=90.0,
             exptime=360.0,
             nexp=1,
         ),
@@ -81,7 +80,7 @@ def get_scheduler():
             ra=Angle("00:31:18", unit=units.hourangle),
             dec=Angle("-43:36:23.0", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["default"],
+            reward_value=reward_values["spec_boost"],
             filters=["r"],
             visit_gap=10.0,
             exptime=420.0,
@@ -93,17 +92,17 @@ def get_scheduler():
             ra=Angle("05:46:00", unit=units.hourangle),
             dec=Angle("-32:18:23.2", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["spec_boost"],
+            reward_value=reward_values["spec_pole"],
             filters=["r"],
             visit_gap=10.0,
             exptime=420.0,
             nexp=1,
         ),
         Target(
-            target_name="HD205905",
-            survey_name="spec",
-            ra=Angle("21:39:10", unit=units.hourangle),
-            dec=Angle("-27:18:23.7", unit=units.deg),
+            target_name="HD73495",
+            survey_name="spec_bright",
+            ra=Angle("08:37:52", unit=units.hourangle),
+            dec=Angle("-26:15:18.0", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["default"],
             filters=["r"],
@@ -118,7 +117,7 @@ def get_scheduler():
             survey_name="AUXTEL_PHOTO_IMAGING",
             hour_angle_limit=image_ha_limit,
             reward_value=reward_values["default"],
-            filters=["g", "r"],
+            filters=["g"],
             visit_gap=image_visit_gap,
             exptime=image_exptime,
             nexp=image_nexp,

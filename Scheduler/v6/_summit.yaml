@@ -28,7 +28,7 @@ maintel:
   mode: ADVANCE
   startup_type: COLD
   predicted_scheduler_window: 0.5
-  startup_database: /home/saluser/rubin_sim_data/fbs_observation_database_maintel.sql
+  startup_database: ' '
   models:
     observatory_model:
       camera:
@@ -39,13 +39,20 @@ maintel:
           - 0
           - 85
           - 90
+      telescope:
+        altitude_maxpos: 84.0
+        azimuth_maxpos: 170.0
+        azimuth_minpos: -170.0
+      rotator:
+        maxpos: 80.0
+        minpos: -80.0
   driver_configuration:
     parameters:
       night_boundary: -10.0
     stop_tracking_observing_script_name: maintel/stop_tracking.py
   feature_scheduler_driver_configuration:
     observation_database_name: /home/saluser/rubin_sim_data/fbs_observation_database_maintel.sql
-    scheduler_config: ts_config_ocs/Scheduler/feature_scheduler/maintel/fbs_config_image_survey.py
+    scheduler_config: /net/obs-env/auto_base_packages/ts_config_ocs/Scheduler/feature_scheduler/maintel/fbs_config_image_survey.py
   telemetry:
     efd_name: summit_efd
     streams:
