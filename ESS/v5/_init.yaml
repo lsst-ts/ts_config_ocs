@@ -30,7 +30,7 @@ instances:
           devices:
           - name: MTDome-ESS01
             device_type: Serial
-            serial_port: /dev/ttyAMA1
+            serial_port: /dev/serial1
             sensor_type: HX85A
             location: MT dome air handling unit 1; RPi with sticker 3
   - sal_index: 102
@@ -42,7 +42,7 @@ instances:
           devices:
           - name: MTDome-ESS02
             device_type: Serial
-            serial_port: /dev/ttyAMA1
+            serial_port: /dev/serial1
             sensor_type: HX85A
             location: MT dome wall inside at 7th floor; RPi with sticker 1
   - sal_index: 103
@@ -54,7 +54,7 @@ instances:
           devices:
           - name: MTDome-ESS03
             device_type: Serial
-            serial_port: /dev/ttyAMA1
+            serial_port: /dev/serial1
             sensor_type: HX85BA
             location: MT dome inside at 8th floor; RPi with sticker 4
   - sal_index: 104
@@ -146,13 +146,13 @@ instances:
           - name: AuxTel-ESS01
             channels: 8
             device_type: Serial
-            serial_port: /dev/ttyAMA4
+            serial_port: /dev/serial4
             sensor_type: Temperature
             location: unused, AT air, AT truss, AT M2, unused, unused, unused, unused
           # AuxTel humidity sensor
           - name: AuxTel-ESS02
             device_type: Serial
-            serial_port: /dev/ttyAMA1
+            serial_port: /dev/serial1
             sensor_type: HX85BA
             location: AT azimuth axis
           # AuxTel temperature sensor readout box
@@ -257,7 +257,7 @@ instances:
           # AuxTel 2D anemometer
           - name: AuxTel-Windsonic
             device_type: Serial
-            serial_port: /dev/ttyAMA4
+            serial_port: /dev/serial4
             sensor_type: Windsonic
             baud_rate: 9600
             location: AT Dome
