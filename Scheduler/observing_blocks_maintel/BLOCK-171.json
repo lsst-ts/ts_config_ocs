@@ -1,6 +1,6 @@
 {
-    "name": "BLOCK-165",
-    "program": "BLOCK-165",
+    "name": "BLOCK-171",
+    "program": "BLOCK-171",
     "constraints": [],
     "scripts": [
         {
@@ -21,56 +21,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/move_p2p.py",
-            "standard": true,
-            "parameters": {
-                "az": 153,
-                "el": 85,
-                "program": "$program",
-                "reason": "SITCOM-923",
-                "move_timeout": 2700.0,
-                "ignore": [
-                    "mtaos",
-                    "mtrotator",
-                    "mtdome",
-                    "mtdometrajectory"
-                ]
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -91,21 +45,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -126,21 +69,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -161,21 +93,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -196,21 +117,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -231,21 +141,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -266,21 +165,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -301,21 +189,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -336,21 +213,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -371,21 +237,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -406,21 +261,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -441,21 +285,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -476,21 +309,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -511,21 +333,10 @@
             }
         },
         {
-            "name": "maintel/laser_tracker/align.py",
+            "name": "maintel/laser_tracker/measure.py",
             "standard": true,
             "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "TMA_CENTRAL",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
+                "target": "TMA_CENTRAL"
             }
         },
         {
@@ -543,15 +354,6 @@
                     "mtdome",
                     "mtdometrajectory"
                 ]
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0.0,
-                "tolerance_linear": 0.0
             }
         },
         {
