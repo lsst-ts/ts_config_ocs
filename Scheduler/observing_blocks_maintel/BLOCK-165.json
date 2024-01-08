@@ -1,6 +1,6 @@
 {
-    "name": "BLOCK-155",
-    "program": "BLOCK-155",
+    "name": "BLOCK-165",
+    "program": "BLOCK-165",
     "constraints": [],
     "scripts": [
         {
@@ -8,15 +8,14 @@
             "standard": true,
             "parameters": {
                 "az": 153,
-                "el": 45,
+                "el": 86,
                 "program": "$program",
-                "reason": "SITCOM-923",
+                "reason": "SITCOM-888",
                 "move_timeout": 2700,
                 "ignore": [
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -34,259 +33,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/move_p2p.py",
-            "standard": true,
-            "parameters": {
-                "az": 153,
-                "el": 50,
-                "program": "$program",
-                "reason": "SITCOM-923",
-                "move_timeout": 2700,
-                "ignore": [
-                    "mtaos",
-                    "mtrotator",
-                    "mtdome",
-                    "mtm1m3",
-                    "mtdometrajectory"
-                ]
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "M2",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/move_p2p.py",
-            "standard": true,
-            "parameters": {
-                "az": 153,
-                "el": 55,
-                "program": "$program",
-                "reason": "SITCOM-923",
-                "move_timeout": 2700,
-                "ignore": [
-                    "mtaos",
-                    "mtrotator",
-                    "mtdome",
-                    "mtm1m3",
-                    "mtdometrajectory"
-                ]
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "M2",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/move_p2p.py",
-            "standard": true,
-            "parameters": {
-                "az": 153,
-                "el": 60,
-                "program": "$program",
-                "reason": "SITCOM-923",
-                "move_timeout": 2700,
-                "ignore": [
-                    "mtaos",
-                    "mtrotator",
-                    "mtdome",
-                    "mtm1m3",
-                    "mtdometrajectory"
-                ]
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "M2",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/move_p2p.py",
-            "standard": true,
-            "parameters": {
-                "az": 153,
-                "el": 65,
-                "program": "$program",
-                "reason": "SITCOM-923",
-                "move_timeout": 2700,
-                "ignore": [
-                    "mtaos",
-                    "mtrotator",
-                    "mtdome",
-                    "mtm1m3",
-                    "mtdometrajectory"
-                ]
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "M2",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/move_p2p.py",
-            "standard": true,
-            "parameters": {
-                "az": 153,
-                "el": 70,
-                "program": "$program",
-                "reason": "SITCOM-923",
-                "move_timeout": 2700,
-                "ignore": [
-                    "mtaos",
-                    "mtrotator",
-                    "mtdome",
-                    "mtm1m3",
-                    "mtdometrajectory"
-                ]
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "M2",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/move_p2p.py",
-            "standard": true,
-            "parameters": {
-                "az": 153,
-                "el": 75,
-                "program": "$program",
-                "reason": "SITCOM-923",
-                "move_timeout": 2700,
-                "ignore": [
-                    "mtaos",
-                    "mtrotator",
-                    "mtdome",
-                    "mtm1m3",
-                    "mtdometrajectory"
-                ]
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "M2",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/move_p2p.py",
-            "standard": true,
-            "parameters": {
-                "az": 153,
-                "el": 80,
-                "program": "$program",
-                "reason": "SITCOM-923",
-                "move_timeout": 2700,
-                "ignore": [
-                    "mtaos",
-                    "mtrotator",
-                    "mtdome",
-                    "mtm1m3",
-                    "mtdometrajectory"
-                ]
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "Camera",
-                "tolerance_angular": 0,
-                "tolerance_linear": 0
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -304,7 +51,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -322,7 +68,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -340,7 +86,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -358,7 +103,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -376,7 +121,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -394,7 +138,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -412,7 +156,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -430,7 +173,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -448,7 +191,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -466,7 +208,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -484,7 +226,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -502,7 +243,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -520,7 +261,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -538,7 +278,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -556,7 +296,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -574,7 +313,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -592,7 +331,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -610,7 +348,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -628,7 +366,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -646,7 +383,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -664,7 +401,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -682,7 +418,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -700,7 +436,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -718,7 +453,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -728,7 +463,7 @@
             "standard": true,
             "parameters": {
                 "az": 153,
-                "el": 35,
+                "el": 25,
                 "program": "$program",
                 "reason": "SITCOM-923",
                 "move_timeout": 2700,
@@ -736,7 +471,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -754,7 +488,7 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
@@ -764,7 +498,7 @@
             "standard": true,
             "parameters": {
                 "az": 153,
-                "el": 40,
+                "el": 20,
                 "program": "$program",
                 "reason": "SITCOM-923",
                 "move_timeout": 2700,
@@ -772,7 +506,6 @@
                     "mtaos",
                     "mtrotator",
                     "mtdome",
-                    "mtm1m3",
                     "mtdometrajectory"
                 ]
             }
@@ -790,7 +523,42 @@
             "name": "maintel/laser_tracker/align.py",
             "standard": true,
             "parameters": {
-                "target": "M2",
+                "target": "TMA_CENTRAL",
+                "tolerance_angular": 0,
+                "tolerance_linear": 0
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 16,
+                "program": "$program",
+                "reason": "SITCOM-923",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "tolerance_angular": 0,
+                "tolerance_linear": 0
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "parameters": {
+                "target": "TMA_CENTRAL",
                 "tolerance_angular": 0,
                 "tolerance_linear": 0
             }
