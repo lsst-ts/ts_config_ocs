@@ -1,0 +1,192 @@
+{
+    "name": "BLOCK-167",
+    "program": "BLOCK-167",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 0,
+                "el": [
+                    82,
+                    70,
+                    82,
+                    70,
+                    82,
+                    70
+                ],
+                "move_timeout": 2700,
+                "pause_for": 5,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ],
+                "program": "$program",
+                "reason": "SITCOM-???",
+                "test_case": {
+                    "name": "LVV-????",
+                    "execution": "1",
+                    "version": "1.0",
+                    "initial_step": 1
+                }
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 0,
+                "el": [
+                    82,
+                    78.5,
+                    82,
+                    78.5,
+                    82,
+                    78.5,
+                    82
+                ],
+                "move_timeout": 2700,
+                "pause_for": 5,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ],
+                "program": "$program",
+                "reason": "SITCOM-???",
+                "test_case": {
+                    "name": "LVV-????",
+                    "execution": "1",
+                    "version": "1.0",
+                    "initial_step": 1
+                }
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": [
+                    -10,
+                    10,
+                    -10,
+                    10,
+                    -10,
+                    0
+                ],
+                "el": 45,
+                "move_timeout": 2700,
+                "pause_for": 5,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ],
+                "program": "$program",
+                "reason": "SITCOM-???",
+                "test_case": {
+                    "name": "LVV-????",
+                    "execution": "1",
+                    "version": "1.0",
+                    "initial_step": 1
+                }
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": [
+                    -100,
+                    100,
+                    -100,
+                    100,
+                    -100,
+                    0
+                ],
+                "el": 45,
+                "move_timeout": 2700,
+                "pause_for": 5,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ],
+                "program": "$program",
+                "reason": "SITCOM-???",
+                "test_case": {
+                    "name": "LVV-????",
+                    "execution": "1",
+                    "version": "1.0",
+                    "initial_step": 1
+                }
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 80,
+                "el": 85,
+                "move_timeout": 2700,
+                "pause_for": 30,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ],
+                "program": "$program",
+                "reason": "SITCOM-???",
+                "test_case": {
+                    "name": "LVV-????",
+                    "execution": "1",
+                    "version": "1.0",
+                    "initial_step": 1
+                }
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": -60,
+                "el": 20,
+                "move_timeout": 2700,
+                "pause_for": 30,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ],
+                "program": "$program",
+                "reason": "SITCOM-???",
+                "test_case": {
+                    "name": "LVV-????",
+                    "execution": "1",
+                    "version": "1.0",
+                    "initial_step": 1
+                }
+            }
+        }
+    ]
+}
