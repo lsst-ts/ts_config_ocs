@@ -1,0 +1,142 @@
+{
+    "name": "BLOCK-220",
+    "program": "BLOCK-220",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 2.0,
+                "program": "$program",
+                "reason": "SITCOM-251"
+            }
+        },
+        {
+            "name": "maintel/sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 30
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -5.0,
+                "program": "$program",
+                "reason": "SITCOM-251"
+            }
+        },
+        {
+            "name": "maintel/sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 30
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 45.0,
+                "program": "$program",
+                "reason": "SITCOM-251"
+            }
+        },
+        {
+            "name": "maintel/sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 30
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -89.0,
+                "program": "$program",
+                "reason": "SITCOM-251"
+            }
+        },
+        {
+            "name": "maintel/sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 30
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "program": "$program",
+                "reason": "SITCOM-251",
+                "find_target": {
+                    "az": -27,
+                    "el": 80,
+                    "mag_limit": 8.0
+                },
+                "rot_type": "PhysicalSky",
+                "rot_value": 15,
+                "ignore": [
+                    "mtaos",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod:1",
+                    "mthexapod:2",
+                    "mtm1m3",
+                    "mtm2"
+                ]
+            }
+        },
+        {
+            "name": "maintel/sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 30
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "program": "$program",
+                "reason": "SITCOM-251",
+                "find_target": {
+                    "az": -27,
+                    "el": 80,
+                    "mag_limit": 8.0
+                },
+                "rot_type": "PhysicalSky",
+                "rot_value": -25,
+                "ignore": [
+                    "mtaos",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod:1",
+                    "mthexapod:2",
+                    "mtm1m3",
+                    "mtm2"
+                ]
+            }
+        },
+        {
+            "name": "maintel/sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 30
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "SITCOM-251"
+            }
+        }
+    ]
+}
