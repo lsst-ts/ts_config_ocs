@@ -1,6 +1,7 @@
 {
     "name": "BLOCK-220",
     "program": "BLOCK-220",
+    "sleep_time": 30,
     "constraints": [],
     "scripts": [
         {
@@ -16,7 +17,7 @@
             "name": "sleep.py",
             "standard": true,
             "parameters": {
-                "sleep_for": 30
+                "sleep_for": "$sleep_time"
             }
         },
         {
@@ -32,7 +33,7 @@
             "name": "sleep.py",
             "standard": true,
             "parameters": {
-                "sleep_for": 30
+                "sleep_for": "$sleep_time"
             }
         },
         {
@@ -48,7 +49,7 @@
             "name": "sleep.py",
             "standard": true,
             "parameters": {
-                "sleep_for": 30
+                "sleep_for": "$sleep_time"
             }
         },
         {
@@ -64,7 +65,7 @@
             "name": "sleep.py",
             "standard": true,
             "parameters": {
-                "sleep_for": 30
+                "sleep_for": "$sleep_time"
             }
         },
         {
@@ -80,6 +81,7 @@
                 },
                 "rot_type": "PhysicalSky",
                 "rot_value": 15,
+                "track_for": "$sleep_time",
                 "ignore": [
                     "mtaos",
                     "mtdome",
@@ -90,13 +92,6 @@
                     "mtm1m3",
                     "mtm2"
                 ]
-            }
-        },
-        {
-            "name": "sleep.py",
-            "standard": true,
-            "parameters": {
-                "sleep_for": 30
             }
         },
         {
@@ -112,6 +107,8 @@
                 },
                 "rot_type": "PhysicalSky",
                 "rot_value": -25,
+                "stop_when_done": true,
+                "track_for": "$sleep_time",
                 "ignore": [
                     "mtaos",
                     "mtdome",
@@ -122,13 +119,6 @@
                     "mtm1m3",
                     "mtm2"
                 ]
-            }
-        },
-        {
-            "name": "sleep.py",
-            "standard": true,
-            "parameters": {
-                "sleep_for": 30
             }
         },
         {
