@@ -1,7 +1,6 @@
 {
     "name": "BLOCK-220",
     "program": "BLOCK-220",
-    "sleep_time": 30,
     "constraints": [],
     "scripts": [
         {
@@ -17,7 +16,7 @@
             "name": "sleep.py",
             "standard": true,
             "parameters": {
-                "sleep_for": "$sleep_time"
+                "sleep_for": 30
             }
         },
         {
@@ -33,7 +32,7 @@
             "name": "sleep.py",
             "standard": true,
             "parameters": {
-                "sleep_for": "$sleep_time"
+                "sleep_for": 30
             }
         },
         {
@@ -49,7 +48,7 @@
             "name": "sleep.py",
             "standard": true,
             "parameters": {
-                "sleep_for": "$sleep_time"
+                "sleep_for": 30
             }
         },
         {
@@ -65,7 +64,7 @@
             "name": "sleep.py",
             "standard": true,
             "parameters": {
-                "sleep_for": "$sleep_time"
+                "sleep_for": 30
             }
         },
         {
@@ -81,7 +80,7 @@
                 },
                 "rot_type": "PhysicalSky",
                 "rot_value": 15,
-                "track_for": "$sleep_time",
+                "track_for": 30,
                 "ignore": [
                     "mtaos",
                     "mtdome",
@@ -108,7 +107,7 @@
                 "rot_type": "PhysicalSky",
                 "rot_value": -25,
                 "stop_when_done": true,
-                "track_for": "$sleep_time",
+                "track_for": 30,
                 "ignore": [
                     "mtaos",
                     "mtdome",
