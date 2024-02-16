@@ -263,9 +263,9 @@ instances:
     data_clients:
       - client_class: LabJackDataClient
         config:
-          device_type: T4
+          device_type: T7
           connection_type: TCP
-          identifier: auxtel-labjack01.cp.lsst.org
+          identifier: auxtel-labjack03.cp.lsst.org
           poll_interval: 0.2
           processor: AirTurbulenceProcessor
           sensor_name: AuxTel-GillLabJack01
