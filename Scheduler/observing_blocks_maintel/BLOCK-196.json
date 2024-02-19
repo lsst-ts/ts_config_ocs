@@ -1,0 +1,43 @@
+{
+    "name": "BLOCK-196",
+    "program": "BLOCK-196",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 75,
+                "wait_for_complete": false,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3
+            },
+            "program": "$program",
+            "reason": "$program"
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault"
+            }
+        }
+    ]
+}
