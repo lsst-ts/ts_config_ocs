@@ -259,6 +259,22 @@ instances:
             location: AT Dome
             # 1 sample per second so for 1 minute that is 60 samples.
             num_samples: 60
+  - sal_index: 205
+    data_clients:
+      - client_class: LabJackDataClient
+        config:
+          device_type: T7
+          connection_type: TCP
+          identifier: auxtel-labjack03.cp.lsst.org
+          poll_interval: 0.2
+          processor: AirTurbulenceProcessor
+          sensor_name: AuxTel-GillLabJack01
+          location: Auxtel Dome Floor 2
+          channel_names: [AIN0, AIN1, AIN2, AIN3]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [2.0, 2.0, 2.0, 22.0]
+          # 5 samples per second so for 1 minute that is 300 samples.
+          num_samples: 300
 
   - sal_index: 301
     data_clients:
