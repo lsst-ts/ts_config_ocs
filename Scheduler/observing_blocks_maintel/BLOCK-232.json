@@ -1,0 +1,236 @@
+{
+    "name": "BLOCK-232",
+    "program": "BLOCK-232",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTRotator",
+                        "DISABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTRotator",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 1
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 90,
+                "wait_for_complete": false,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 15
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault"
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTMount",
+                        "DISABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTRotator",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTMount",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 1
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -90,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 30
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault"
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTMount",
+                        "DISABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTRotator",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTMount",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        }
+    ]
+}
