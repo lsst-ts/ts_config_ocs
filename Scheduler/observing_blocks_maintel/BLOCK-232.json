@@ -67,7 +67,9 @@
             "standard": true,
             "parameters": {
                 "component": "MTRotator",
-                "cmd": "fault"
+                "cmd": "fault",
+                "event": "summaryState",
+                "flush": true
             }
         },
         {
