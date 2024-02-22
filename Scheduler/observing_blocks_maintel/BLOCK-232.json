@@ -73,22 +73,10 @@
             }
         },
         {
-            "name": "sleep.py",
+            "name": "pause_queue.py",
             "standard": true,
             "parameters": {
-                "sleep_for": 2
-            }
-        },
-        {
-            "name": "set_summary_state.py",
-            "standard": true,
-            "parameters": {
-                "data": [
-                    [
-                        "MTRotator",
-                        "ENABLED"
-                    ]
-                ]
+                "queue": "MAIN_TEL"
             }
         },
         {
@@ -149,15 +137,10 @@
             }
         },
         {
-            "name": "set_summary_state.py",
+            "name": "pause_queue.py",
             "standard": true,
             "parameters": {
-                "data": [
-                    [
-                        "MTRotator",
-                        "ENABLED"
-                    ]
-                ]
+                "queue": "MAIN_TEL"
             }
         },
         {
