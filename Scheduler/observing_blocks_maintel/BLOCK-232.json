@@ -71,6 +71,18 @@
             }
         },
         {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTRotator",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
             "name": "run_command.py",
             "standard": true,
             "parameters": {
@@ -128,32 +140,6 @@
             }
         },
         {
-            "name": "sleep.py",
-            "standard": true,
-            "parameters": {
-                "sleep_for": 5
-            }
-        },
-        {
-            "name": "set_summary_state.py",
-            "standard": true,
-            "parameters": {
-                "data": [
-                    [
-                        "MTMount",
-                        "DISABLED"
-                    ]
-                ]
-            }
-        },
-        {
-            "name": "sleep.py",
-            "standard": true,
-            "parameters": {
-                "sleep_for": 5
-            }
-        },
-        {
             "name": "set_summary_state.py",
             "standard": true,
             "parameters": {
@@ -163,32 +149,6 @@
                         "ENABLED"
                     ]
                 ]
-            }
-        },
-        {
-            "name": "sleep.py",
-            "standard": true,
-            "parameters": {
-                "sleep_for": 5
-            }
-        },
-        {
-            "name": "set_summary_state.py",
-            "standard": true,
-            "parameters": {
-                "data": [
-                    [
-                        "MTMount",
-                        "ENABLED"
-                    ]
-                ]
-            }
-        },
-        {
-            "name": "sleep.py",
-            "standard": true,
-            "parameters": {
-                "sleep_for": 5
             }
         },
         {
