@@ -49,7 +49,7 @@
             "name": "maintel/mtrotator/move_rotator.py",
             "standard": true,
             "parameters": {
-                "angle": 90,
+                "angle": 75,
                 "wait_for_complete": false,
                 "program": "$program",
                 "reason": "$program"
@@ -59,7 +59,7 @@
             "name": "sleep.py",
             "standard": true,
             "parameters": {
-                "sleep_for": 15
+                "sleep_for": 10
             }
         },
         {
@@ -77,6 +77,15 @@
             "standard": true,
             "parameters": {
                 "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
             }
         },
         {
@@ -116,7 +125,7 @@
             "name": "maintel/mtrotator/move_rotator.py",
             "standard": true,
             "parameters": {
-                "angle": -90,
+                "angle": -75,
                 "program": "$program",
                 "reason": "$program"
             }
@@ -125,7 +134,7 @@
             "name": "sleep.py",
             "standard": true,
             "parameters": {
-                "sleep_for": 30
+                "sleep_for": 10
             }
         },
         {
