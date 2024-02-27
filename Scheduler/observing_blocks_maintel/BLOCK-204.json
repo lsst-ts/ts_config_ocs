@@ -1,0 +1,57 @@
+{
+    "name": "BLOCK-204",
+    "program": "BLOCK-204",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "find_target": {
+                    "az": "$az",
+                    "el": "$alt",
+                    "mag_limit": 6.0,
+                    "mag_range": 4.0,
+                    "radius": 10.0
+                },
+                "rot_value": 0,
+                "rot_type": "Physical",
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704",
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101, 
+                        "exp_times": 8.5, 
+                        "nimages": 20, 
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102, 
+                        "exp_times": 8.5, 
+                        "nimages": 20, 
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103, 
+                        "exp_times": 8.5, 
+                        "nimages": 20, 
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704"
+            }
+        }
+    ]
+}
