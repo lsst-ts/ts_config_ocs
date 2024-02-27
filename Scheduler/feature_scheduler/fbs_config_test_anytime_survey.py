@@ -20,9 +20,9 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import numpy as np
-from rubin_sim.scheduler import basis_functions, surveys
-from rubin_sim.scheduler.schedulers import CoreScheduler
-from rubin_sim.scheduler.utils import standard_goals
+from rubin_scheduler.scheduler import basis_functions, surveys
+from rubin_scheduler.scheduler.schedulers import CoreScheduler
+from rubin_scheduler.scheduler.utils import EuclidOverlapFootprint
 
 
 def get_scheduler():
@@ -39,8 +39,10 @@ def get_scheduler():
     scheduler : Core_scheduler
         Feature based scheduler.
     """
-    target_map = standard_goals()["r"]
     nside = 32
+    sky = EuclidOverlapFootprint(nside=nside)
+    footprints_hp, labels = sky.return_maps()
+    target_map = footprints_hp["r"]
 
     bfs = []
     bfs.append(
