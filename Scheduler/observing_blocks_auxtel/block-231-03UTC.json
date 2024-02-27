@@ -1,0 +1,99 @@
+{
+  "name": "BLOCK-231_03UTC",
+  "program": "BLOCK-231_03UTC",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "target_name": "523811 (2008 TQ2).V=18.714",
+        "slew_icrs": {
+          "ra": "09:45:29",
+          "dec": "-10:13:28"
+        }
+      }
+    },
+    {
+      "name": "auxtel/take_image_latiss.py",
+      "standard": true,
+      "parameters": {
+        "nimages": 5,
+        "exp_times": 15.0,
+        "program": "BLOCK-231",
+        "image_type": "OBJECT",
+        "filter": "SDSSr_65mm",
+        "grating": "empty_1"
+      }
+    },
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "target_name": "523811 (2008 TQ2).V=18.714",
+        "slew_icrs": {
+          "ra": "09:45:29",
+          "dec": "-10:13:28"
+        }
+      }
+    },
+    {
+      "name": "auxtel/take_image_latiss.py",
+      "standard": true,
+      "parameters": {
+        "nimages": 5,
+        "exp_times": 30.0,
+        "program": "BLOCK-231",
+        "image_type": "OBJECT",
+        "filter": "SDSSr_65mm",
+        "grating": "empty_1"
+      }
+    },
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "target_name": "523811 (2008 TQ2).V=18.714",
+        "slew_icrs": {
+          "ra": "09:45:29",
+          "dec": "-10:13:28"
+        }
+      }
+    },
+    {
+      "name": "auxtel/take_image_latiss.py",
+      "standard": true,
+      "parameters": {
+        "nimages": 2,
+        "exp_times": 60.0,
+        "program": "BLOCK-231",
+        "image_type": "OBJECT",
+        "filter": "SDSSr_65mm",
+        "grating": "empty_1"
+      }
+    },
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "target_name": "523811 (2008 TQ2).V=18.714",
+        "slew_icrs": {
+          "ra": "09:45:29",
+          "dec": "-10:13:28"
+        }
+      }
+    },
+    {
+      "name": "auxtel/take_image_latiss.py",
+      "standard": true,
+      "parameters": {
+        "nimages": 1,
+        "exp_times": 120.0,
+        "program": "BLOCK-231",
+        "image_type": "OBJECT",
+        "filter": "SDSSr_65mm",
+        "grating": "empty_1"
+      }
+    }
+  ]
+}
