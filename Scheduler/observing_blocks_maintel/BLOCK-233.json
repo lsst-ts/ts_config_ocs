@@ -1,0 +1,971 @@
+{
+    "name": "BLOCK-233",
+    "program": "BLOCK-233",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 1.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 75,
+                "wait_for_complete": false,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault",
+                "event": "summaryState",
+                "flush": true
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 1.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -75,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault"
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 2.0
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 75,
+                "wait_for_complete": false,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault",
+                "event": "summaryState",
+                "flush": true
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 2.0
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -75,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault"
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 2.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 75,
+                "wait_for_complete": false,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault",
+                "event": "summaryState",
+                "flush": true
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 2.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -75,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault"
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 3.0
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 75,
+                "wait_for_complete": false,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault",
+                "event": "summaryState",
+                "flush": true
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 3.0
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -75,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault"
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 75,
+                "wait_for_complete": false,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault",
+                "event": "summaryState",
+                "flush": true
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureVelocity",
+                "parameters": {
+                    "vlimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyAcceleration",
+                "parameters": {
+                    "alimit": 3.5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "configureEmergencyJerk",
+                "parameters": {
+                    "jlimit": 4
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -75,
+                "program": "$program",
+                "reason": "$program"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTRotator",
+                "cmd": "fault"
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0,
+                "program": "$program",
+                "reason": "$program"
+            }
+        }
+    ]
+}
