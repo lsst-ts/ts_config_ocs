@@ -8,7 +8,407 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
+                    "az": -145.03,
+                    "el": 40.87,
+                    "mag_limit": 6.0,
+                    "mag_range": 4.0,
+                    "radius": 10.0
+                },
+                "rot_value": 0,
+                "rot_type": "Physical",
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704",
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "find_target": {
+                    "az": -125.3,
+                    "el": 63.31,
+                    "mag_limit": 6.0,
+                    "mag_range": 4.0,
+                    "radius": 10.0
+                },
+                "rot_value": 0,
+                "rot_type": "Physical",
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704",
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "find_target": {
+                    "az": -121.73,
+                    "el": 41.41,
+                    "mag_limit": 6.0,
+                    "mag_range": 4.0,
+                    "radius": 10.0
+                },
+                "rot_value": 0,
+                "rot_type": "Physical",
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704",
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "find_target": {
+                    "az": -99.62,
+                    "el": 37.39,
+                    "mag_limit": 6.0,
+                    "mag_range": 4.0,
+                    "radius": 10.0
+                },
+                "rot_value": 0,
+                "rot_type": "Physical",
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704",
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "find_target": {
+                    "az": -91.19,
+                    "el": 54.56,
+                    "mag_limit": 6.0,
+                    "mag_range": 4.0,
+                    "radius": 10.0
+                },
+                "rot_value": 0,
+                "rot_type": "Physical",
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704",
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "find_target": {
+                    "az": -80.63,
+                    "el": 29.8,
+                    "mag_limit": 6.0,
+                    "mag_range": 4.0,
+                    "radius": 10.0
+                },
+                "rot_value": 0,
+                "rot_type": "Physical",
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704",
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "find_target": {
+                    "az": -77.81,
+                    "el": 71.74,
+                    "mag_limit": 6.0,
+                    "mag_range": 4.0,
+                    "radius": 10.0
+                },
+                "rot_value": 0,
+                "rot_type": "Physical",
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704",
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "find_target": {
+                    "az": -66.66,
+                    "el": 46.37,
+                    "mag_limit": 6.0,
+                    "mag_range": 4.0,
+                    "radius": 10.0
+                },
+                "rot_value": 0,
+                "rot_type": "Physical",
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704",
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 8.5,
+                        "nimages": 20,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-204",
+                "reason": "SITCOM-704"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "find_target": {
+                    "az": -64.68,
                     "el": 19.91,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
@@ -58,8 +458,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": -53.92,
+                    "el": 31.07,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -108,8 +508,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": -42.97,
+                    "el": 60.63,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -158,8 +558,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": -39.93,
+                    "el": 40.58,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -208,8 +608,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": -21.57,
+                    "el": 47.27,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -258,8 +658,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 0.5,
+                    "el": 49.7,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -308,8 +708,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 0.75,
+                    "el": 67.2,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -358,8 +758,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 22.5,
+                    "el": 47.12,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -408,8 +808,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 40.72,
+                    "el": 40.31,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -458,8 +858,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 44.02,
+                    "el": 60.34,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -508,8 +908,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 54.59,
+                    "el": 30.73,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -558,8 +958,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 65.26,
+                    "el": 19.54,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -608,8 +1008,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 67.35,
+                    "el": 45.99,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -658,8 +1058,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 78.58,
+                    "el": 71.33,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -708,8 +1108,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 81.19,
+                    "el": 29.39,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -758,8 +1158,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 91.69,
+                    "el": 54.15,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -808,8 +1208,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 100.09,
+                    "el": 36.98,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -858,8 +1258,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 122.06,
+                    "el": 41.06,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -908,8 +1308,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 125.34,
+                    "el": 62.97,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -958,8 +1358,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 145.25,
+                    "el": 40.63,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1008,8 +1408,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 179.31,
+                    "el": 77.8,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1058,408 +1458,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
-                },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
-            }
-        },
-        {
-            "name": "maintel/take_image_anycam.py",
-            "standard": true,
-            "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704"
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
-                },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
-            }
-        },
-        {
-            "name": "maintel/take_image_anycam.py",
-            "standard": true,
-            "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704"
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
-                },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
-            }
-        },
-        {
-            "name": "maintel/take_image_anycam.py",
-            "standard": true,
-            "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704"
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
-                },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
-            }
-        },
-        {
-            "name": "maintel/take_image_anycam.py",
-            "standard": true,
-            "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704"
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
-                },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
-            }
-        },
-        {
-            "name": "maintel/take_image_anycam.py",
-            "standard": true,
-            "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704"
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
-                },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
-            }
-        },
-        {
-            "name": "maintel/take_image_anycam.py",
-            "standard": true,
-            "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704"
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
-                },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
-            }
-        },
-        {
-            "name": "maintel/take_image_anycam.py",
-            "standard": true,
-            "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704"
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
-                },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
-            }
-        },
-        {
-            "name": "maintel/take_image_anycam.py",
-            "standard": true,
-            "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704"
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": 295.32,
-                    "el": 19.91,
+                    "az": 179.9,
+                    "el": 60.3,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
