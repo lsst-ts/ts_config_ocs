@@ -41,6 +41,45 @@
             "name": "auxtel/take_image_latiss.py",
             "standard": true,
             "parameters": {
+                "image_type": "BIAS",
+                "nimages": 20,
+                "reason": "bias"
+            }
+        },	    
+	{
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "DARK",
+                "nimages": 10,
+                "exp_times": 15,
+                "reason": "darks"
+            }
+        },
+	{
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "DARK",
+                "nimages": 10,
+                "exp_times": 30,
+                "reason": "darks"
+            }
+        },	    
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "DARK",
+                "nimages": 10,
+                "exp_times": 60,
+                "reason": "long_darks"
+            }
+        },	    
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
                 "image_type": "FLAT",
                 "filter": "SDSSr_65mm",
                 "grating": "empty_1",
@@ -441,28 +480,6 @@
 			27.87,
 			27.87
 		                    ]
-            }
-        },
-        {
-            "name": "auxtel/take_image_latiss.py",
-            "standard": true,
-            "parameters": {
-                "image_type": "FLAT",
-                "filter": "SDSSr_65mm",
-                "grating": "empty_1",
-                "reason": "daily_sflat",
-                "exp_times": [
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    12.8,
-                    12.8,
-                    12.8,
-                    12.8,
-                    12.8
-                ]
             }
         },
         {
