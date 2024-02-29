@@ -20,9 +20,9 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import numpy as np
-from rubin_sim.scheduler import basis_functions, surveys
-from rubin_sim.scheduler.schedulers import CoreScheduler
-from rubin_sim.scheduler.utils import standard_goals
+from rubin_scheduler.scheduler import basis_functions, surveys
+from rubin_scheduler.scheduler.schedulers import CoreScheduler
+from rubin_scheduler.scheduler.utils import standard_goals
 
 
 def get_scheduler():
