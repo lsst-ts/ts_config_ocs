@@ -8,8 +8,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -145.03,
-                    "el": 40.87,
+                    "az": -145.09,
+                    "el": 40.77,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -26,34 +26,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -61,8 +69,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -125.3,
-                    "el": 63.31,
+                    "az": -125.5,
+                    "el": 63.24,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -79,34 +87,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -114,8 +130,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -121.73,
-                    "el": 41.41,
+                    "az": -121.83,
+                    "el": 41.35,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -132,34 +148,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -167,8 +191,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -99.62,
-                    "el": 37.39,
+                    "az": -99.71,
+                    "el": 37.38,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -185,34 +209,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -220,7 +252,7 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -91.19,
+                    "az": -91.36,
                     "el": 54.56,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
@@ -238,34 +270,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -273,8 +313,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -80.63,
-                    "el": 29.8,
+                    "az": -80.7,
+                    "el": 29.82,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -291,34 +331,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -326,8 +374,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -77.81,
-                    "el": 71.74,
+                    "az": -78.17,
+                    "el": 71.77,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -344,43 +392,51 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
-             }
+                "reason": "SITCOM-704"
+            }
         },
         {
             "name": "maintel/track_target.py",
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -66.66,
-                    "el": 46.37,
+                    "az": -66.78,
+                    "el": 46.43,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -397,34 +453,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -432,8 +496,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -64.68,
-                    "el": 19.91,
+                    "az": -64.71,
+                    "el": 19.97,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -450,34 +514,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -485,8 +557,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -53.92,
-                    "el": 31.07,
+                    "az": -53.98,
+                    "el": 31.15,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -503,34 +575,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -538,8 +618,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -42.97,
-                    "el": 60.63,
+                    "az": -43.12,
+                    "el": 60.72,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -556,34 +636,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -591,8 +679,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -39.93,
-                    "el": 40.58,
+                    "az": -39.99,
+                    "el": 40.68,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -609,34 +697,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -644,8 +740,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -21.57,
-                    "el": 47.27,
+                    "az": -21.61,
+                    "el": 47.39,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -662,34 +758,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -697,8 +801,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 0.5,
-                    "el": 49.7,
+                    "az": 0.51,
+                    "el": 49.82,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -715,34 +819,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -750,8 +862,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 0.75,
-                    "el": 67.2,
+                    "az": 0.77,
+                    "el": 67.32,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -768,34 +880,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -803,8 +923,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 22.5,
-                    "el": 47.12,
+                    "az": 22.55,
+                    "el": 47.23,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -821,34 +941,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -856,8 +984,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 40.72,
-                    "el": 40.31,
+                    "az": 40.79,
+                    "el": 40.4,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -874,34 +1002,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -909,8 +1045,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 44.02,
-                    "el": 60.34,
+                    "az": 44.18,
+                    "el": 60.43,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -927,34 +1063,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -962,8 +1106,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 54.59,
-                    "el": 30.73,
+                    "az": 54.65,
+                    "el": 30.8,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -980,34 +1124,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -1015,8 +1167,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 65.26,
-                    "el": 19.54,
+                    "az": 65.3,
+                    "el": 19.59,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1033,34 +1185,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -1068,8 +1228,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 67.35,
-                    "el": 45.99,
+                    "az": 67.47,
+                    "el": 46.04,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1086,34 +1246,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -1121,8 +1289,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 78.58,
-                    "el": 71.33,
+                    "az": 78.94,
+                    "el": 71.35,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1139,34 +1307,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -1174,8 +1350,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 81.19,
-                    "el": 29.39,
+                    "az": 81.26,
+                    "el": 29.4,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1192,34 +1368,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -1227,8 +1411,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 91.69,
-                    "el": 54.15,
+                    "az": 91.86,
+                    "el": 54.14,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1245,34 +1429,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -1280,8 +1472,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 100.09,
-                    "el": 36.98,
+                    "az": 100.17,
+                    "el": 36.96,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1298,34 +1490,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -1333,8 +1533,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 122.06,
-                    "el": 41.06,
+                    "az": 122.14,
+                    "el": 40.99,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1351,34 +1551,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -1386,8 +1594,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 125.34,
-                    "el": 62.97,
+                    "az": 125.53,
+                    "el": 62.9,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1404,34 +1612,42 @@
             }
         },
         {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
+                },
+                "relative": false
+            }
+        },
+        {
             "name": "maintel/take_image_anycam.py",
             "standard": true,
             "parameters": {
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         },
         {
@@ -1439,8 +1655,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 145.25,
-                    "el": 40.63,
+                    "az": 145.31,
+                    "el": 40.53,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1457,56 +1673,14 @@
             }
         },
         {
-            "name": "maintel/take_image_anycam.py",
+            "name": "maintel/offset_mtcs.py",
             "standard": true,
             "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": 179.31,
-                    "el": 77.8,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
+                "offset_azel": {
+                    "az": 200,
+                    "el": 670
                 },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
+                "relative": false
             }
         },
         {
@@ -1516,81 +1690,25 @@
                 "gencam": [
                     {
                         "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 6.0,
+                        "nimages": 5,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 5.0,
+                        "nimages": 6,
                         "image_type": "OBJECT"
                     },
                     {
                         "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
+                        "exp_times": 4.0,
+                        "nimages": 8,
                         "image_type": "OBJECT"
                     }
                 ],
                 "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": 179.9,
-                    "el": 60.3,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
-                },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
-            }
-        },
-        {
-            "name": "maintel/take_image_anycam.py",
-            "standard": true,
-            "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 8.5,
-                        "nimages": 20,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "program": "BLOCK-204",
-                "reason": "SITCOM-704",
-                "ignore": [
-                    "mtm1m3"
-                ]
+                "reason": "SITCOM-704"
             }
         }
     ]
