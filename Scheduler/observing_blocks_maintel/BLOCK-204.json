@@ -8,8 +8,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -180.0,
-                    "el": 45.14,
+                    "az": -162.58,
+                    "el": 32.96,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -68,8 +68,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -162.59,
-                    "el": 32.95,
+                    "az": -149.9,
+                    "el": 51.64,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -128,67 +128,7 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -149.92,
-                    "el": 51.63,
-                    "mag_limit": 6.0,
-                    "mag_range": 4.0,
-                    "radius": 10.0
-                },
-                "rot_value": 0,
-                "rot_type": "Physical",
-                "ignore": [
-                    "mtaos",
-                    "mtm1m3",
-                    "mtrotator"
-                ]
-            }
-        },
-        {
-            "name": "maintel/offset_mtcs.py",
-            "standard": true,
-            "parameters": {
-                "offset_azel": {
-                    "az": 200,
-                    "el": 670
-                },
-                "relative": false
-            }
-        },
-        {
-            "name": "maintel/take_image_anycam.py",
-            "standard": true,
-            "parameters": {
-                "gencam": [
-                    {
-                        "index": 101,
-                        "exp_times": 6.0,
-                        "nimages": 5,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 102,
-                        "exp_times": 5.0,
-                        "nimages": 6,
-                        "image_type": "OBJECT"
-                    },
-                    {
-                        "index": 103,
-                        "exp_times": 4.0,
-                        "nimages": 8,
-                        "image_type": "OBJECT"
-                    }
-                ],
-                "ignore": [
-                    "mtm1m3"
-                ]
-            }
-        },
-        {
-            "name": "maintel/track_target.py",
-            "standard": true,
-            "parameters": {
-                "find_target": {
-                    "az": -143.67,
+                    "az": -143.66,
                     "el": 33.22,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
@@ -248,7 +188,7 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -130.59,
+                    "az": -130.56,
                     "el": 66.33,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
@@ -308,8 +248,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -125.23,
-                    "el": 30.67,
+                    "az": -125.21,
+                    "el": 30.68,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -368,7 +308,7 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -122.68,
+                    "az": -122.66,
                     "el": 48.69,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
@@ -428,8 +368,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -108.14,
-                    "el": 25.71,
+                    "az": -108.13,
+                    "el": 25.7,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -488,7 +428,7 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -101.44,
+                    "az": -101.43,
                     "el": 41.37,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
@@ -548,7 +488,7 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -94.66,
+                    "az": -94.64,
                     "el": 57.41,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
@@ -608,8 +548,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -85.2,
-                    "el": 73.61,
+                    "az": -85.16,
+                    "el": 73.6,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -668,8 +608,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -82.86,
-                    "el": 35.12,
+                    "az": -82.85,
+                    "el": 35.11,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -728,8 +668,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -69.82,
-                    "el": 50.88,
+                    "az": -69.8,
+                    "el": 50.87,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -788,8 +728,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -67.37,
-                    "el": 26.48,
+                    "az": -67.36,
+                    "el": 26.47,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -848,8 +788,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -52.49,
-                    "el": 40.55,
+                    "az": -52.48,
+                    "el": 40.54,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -908,8 +848,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -46.71,
-                    "el": 64.79,
+                    "az": -46.69,
+                    "el": 64.78,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -968,8 +908,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -40.16,
-                    "el": 28.37,
+                    "az": -40.15,
+                    "el": 28.36,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1029,7 +969,7 @@
             "parameters": {
                 "find_target": {
                     "az": -30.35,
-                    "el": 51.4,
+                    "el": 51.39,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1088,8 +1028,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": -21.74,
-                    "el": 36.79,
+                    "az": -21.73,
+                    "el": 36.78,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1209,7 +1149,7 @@
             "parameters": {
                 "find_target": {
                     "az": 0.57,
-                    "el": 55.69,
+                    "el": 55.68,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1269,7 +1209,7 @@
             "parameters": {
                 "find_target": {
                     "az": 0.91,
-                    "el": 71.52,
+                    "el": 71.51,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1448,8 +1388,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 40.81,
-                    "el": 28.08,
+                    "az": 40.82,
+                    "el": 28.07,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1508,8 +1448,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 47.83,
-                    "el": 64.46,
+                    "az": 47.81,
+                    "el": 64.45,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1808,8 +1748,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 85.79,
-                    "el": 73.15,
+                    "az": 85.77,
+                    "el": 73.16,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -1868,7 +1808,7 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 95.07,
+                    "az": 95.06,
                     "el": 56.96,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
@@ -1988,8 +1928,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 108.54,
-                    "el": 25.28,
+                    "az": 108.55,
+                    "el": 25.29,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -2048,8 +1988,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 122.86,
-                    "el": 48.31,
+                    "az": 122.87,
+                    "el": 48.32,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -2109,7 +2049,7 @@
             "parameters": {
                 "find_target": {
                     "az": 125.54,
-                    "el": 30.31,
+                    "el": 30.32,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -2169,7 +2109,7 @@
             "parameters": {
                 "find_target": {
                     "az": 130.39,
-                    "el": 65.99,
+                    "el": 66.0,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -2228,8 +2168,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 143.89,
-                    "el": 32.95,
+                    "az": 143.9,
+                    "el": 32.96,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -2288,8 +2228,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 149.89,
-                    "el": 51.41,
+                    "az": 149.9,
+                    "el": 51.42,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
@@ -2348,8 +2288,8 @@
             "standard": true,
             "parameters": {
                 "find_target": {
-                    "az": 162.77,
-                    "el": 32.82,
+                    "az": 162.78,
+                    "el": 32.83,
                     "mag_limit": 6.0,
                     "mag_range": 4.0,
                     "radius": 10.0
