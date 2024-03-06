@@ -1,0 +1,47 @@
+{
+    "name": "BLOCK-197",
+    "program": "BLOCK-197",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "tolerance_linear": 0.02,
+                "tolerance_angular": 0.002
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "tolerance_linear": 0.02,
+                "tolerance_angular": 0.002
+            }
+        }
+    ]
+}
