@@ -1,0 +1,35 @@
+{
+    "name": "BLOCK-246",
+    "program": "BLOCK-246",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "TMA_UPPER"
+            }
+        }
+    ]
+}
