@@ -1,0 +1,391 @@
+{
+    "name": "BLOCK-249",
+    "program": "BLOCK-249",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": -90,
+                "el": 86,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 0,
+                "el": 86,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 45,
+                "el": 86,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 90,
+                "el": 86,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 135,
+                "el": 86,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 170,
+                "el": 86,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": -90,
+                "el": 45,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 0,
+                "el": 45,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 45,
+                "el": 45,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 90,
+                "el": 45,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 135,
+                "el": 45,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 170,
+                "el": 45,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtrotator",
+                    "mtdome",
+                    "mtm1m3",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera"
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2"
+            }
+        }
+    ]
+}
