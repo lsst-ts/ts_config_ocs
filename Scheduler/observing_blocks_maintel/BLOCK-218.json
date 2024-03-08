@@ -68,7 +68,11 @@
             "name": "maintel/track_target.py",
             "standard": true,
             "parameters": {
-                "target_name": "HD 35411",
+                "slew_icrs": {
+                  "ra": "05:30:40",
+                  "dec": "-00:55:26"
+                },
+                "target_name": "EmptyField",
                 "rot_value": 0,
                 "rot_type": "Physical",
                 "ignore": [
