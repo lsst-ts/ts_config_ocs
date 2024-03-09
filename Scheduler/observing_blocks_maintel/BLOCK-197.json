@@ -1,0 +1,227 @@
+{
+    "name": "BLOCK-197",
+    "program": "BLOCK-197",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1214",
+            "parameters": {
+                "target": "Camera",
+                "tolerance_linear": 0.3,
+                "tolerance_angular": 0.002
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "x": 500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1214",
+            "parameters": {
+                "target": "Camera",
+                "tolerance_linear": 0.3,
+                "tolerance_angular": 0.002
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "z": 500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1214",
+            "parameters": {
+                "target": "Camera",
+                "tolerance_linear": 0.3,
+                "tolerance_angular": 0.002
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "u": 0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1214",
+            "parameters": {
+                "target": "Camera",
+                "tolerance_linear": 0.3,
+                "tolerance_angular": 0.002
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1214",
+            "parameters": {
+                "target": "Camera",
+                "tolerance_linear": 0.3,
+                "tolerance_angular": 0.002
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1214",
+            "parameters": {
+                "target": "M2",
+                "tolerance_linear": 0.3,
+                "tolerance_angular": 0.002
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "x": 500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1214",
+            "parameters": {
+                "target": "M2",
+                "tolerance_linear": 0.3,
+                "tolerance_angular": 0.002
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "z": 500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1214",
+            "parameters": {
+                "target": "M2",
+                "tolerance_linear": 0.3,
+                "tolerance_angular": 0.002
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "u": 0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1214",
+            "parameters": {
+                "target": "M2",
+                "tolerance_linear": 0.3,
+                "tolerance_angular": 0.002
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1214",
+            "parameters": {
+                "target": "M2",
+                "tolerance_linear": 0.3,
+                "tolerance_angular": 0.002
+            }
+        }
+    ]
+}
