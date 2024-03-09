@@ -23,7 +23,7 @@ from astropy import units
 from astropy.coordinates import Angle
 from lsst.ts.fbs.utils import Target, Tiles
 from lsst.ts.fbs.utils.auxtel.make_scheduler import MakeScheduler, SurveyType
-from rubin_scheduler.scheduler.detailers import DitherDetailer
+from rubin_sim.scheduler.detailers import DitherDetailer
 
 
 def get_scheduler():
@@ -58,7 +58,7 @@ def get_scheduler():
         (0.0, 24.0),
     ]
     image_ha_limit = [
-        (2.5, 5.0),
+        (22.0, 24.0),
     ]
 
     spec_target_list = [
@@ -92,29 +92,17 @@ def get_scheduler():
             ra=Angle("05:46:00", unit=units.hourangle),
             dec=Angle("-32:18:23.2", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["spec_boost"],
+            reward_value=reward_values["spec_pole"],
             filters=["r"],
             visit_gap=10.0,
             exptime=420.0,
             nexp=1,
         ),
         Target(
-            target_name="HD111235",
-            survey_name="spec",
-            ra=Angle("12:48:16.47", unit=units.hourangle),
-            dec=Angle("-44:43:07.56", unit=units.deg),
-            hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["spec_boost"],
-            filters=["r"],
-            visit_gap=10.0,
-            exptime=420.0,
-            nexp=1,
-        ),
-        Target(
-            target_name="HD144334",
-            survey_name="spec",
-            ra=Angle("16:06:06.38", unit=units.hourangle),
-            dec=Angle("-23:36:22.84", unit=units.deg),
+            target_name="HD73495",
+            survey_name="spec_bright",
+            ra=Angle("08:37:52", unit=units.hourangle),
+            dec=Angle("-26:15:18.0", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["default"],
             filters=["r"],
