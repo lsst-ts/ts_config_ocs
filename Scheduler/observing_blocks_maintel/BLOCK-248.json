@@ -1,0 +1,358 @@
+{
+    "name": "BLOCK-248",
+    "program": "BLOCK-248",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 20,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 30,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 40,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 50,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 60,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 70,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 80,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 70,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 60,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 50,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 40,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 30,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": 153,
+                "el": 20,
+                "program": "$program",
+                "reason": "SITCOM-8530",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtaos",
+                    "mtm1m3",
+                    "mtrotator",
+                    "mtdome",
+                    "mtdometrajectory"
+                ]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "program": "$program",
+            "reason": "SITCOM-1215",
+            "parameters": {
+                "target": "TMA_CENTRAL"
+            }
+        }
+    ]
+}
