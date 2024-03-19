@@ -45,13 +45,23 @@
                 "nimages": 20,
                 "reason": "bias"
             }
-        },	    
+        },
 	{
             "name": "auxtel/take_image_latiss.py",
             "standard": true,
             "parameters": {
                 "image_type": "DARK",
-                "nimages": 10,
+                "nimages": 20,
+                "exp_times": 1,
+                "reason": "darks"
+            }
+        },
+	{
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "DARK",
+                "nimages": 20,
                 "exp_times": 15,
                 "reason": "darks"
             }
@@ -61,7 +71,7 @@
             "standard": true,
             "parameters": {
                 "image_type": "DARK",
-                "nimages": 10,
+                "nimages": 20,
                 "exp_times": 30,
                 "reason": "darks"
             }
@@ -71,7 +81,7 @@
             "standard": true,
             "parameters": {
                 "image_type": "DARK",
-                "nimages": 10,
+                "nimages": 20,
                 "exp_times": 60,
                 "reason": "long_darks"
             }
