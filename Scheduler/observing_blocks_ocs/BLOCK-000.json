@@ -1,0 +1,1400 @@
+{
+    "name": "BLOCK-000",
+    "id": "00480425-d2d6-417d-8f41-83bf21a435ad",
+    "program": "ops-rehearsal-3",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "CCCamera",
+                "cmd": "play",
+                "parameters": {
+                    "playlist": "block-0_playlist_60",
+                    "repeat": false
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 68.65643692795837
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.6145414734849344
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.357309225162952
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.5616990043511527
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.4579677360346883
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.4982005086045396
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.307226225863202
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.38704199853989
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.422603082040184
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.6686740676179443
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.2992444462775334
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3281051813282834
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.686420035911077
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.445617096229118
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.449862336948509
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.1879735050788183
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.44411584838405
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3459993728411814
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3392401346635436
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.5405071868584472
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "r_03",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 120.0
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.4692650345139993
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.6365658933181417
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3929512550892684
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.5082398470510814
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.597594013128055
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3890116976919136
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.549082588987924
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.2646111276675054
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.569037526662722
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3298021410986567
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3884065457749184
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.628827313207532
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3488005644529295
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.4291781545137576
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.5279684462929772
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.293538827894862
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.4902040490283586
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.5749445656549836
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3957825702682456
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "g_07",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 120.0
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.671184572945415
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.625420023735316
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.395283433412588
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3546898087916137
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.58466624160086
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.605736682047268
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.4778445835916214
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.2695328417233536
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.383784926244303
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.4467262196626205
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.5756051772015285
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.4191287725977664
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.3810350132484723
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.345358488169854
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.584806483770558
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.49567995400609
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.6902109420426528
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.5135114324593526
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 3.4089945372634456
+            }
+        },
+        {
+            "name": "take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Rubin_SV_125_-15",
+                "filter": "i_06",
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "visit_metadata": {
+                    "ra": 125.12287384221898,
+                    "dec": -14.886582881446811,
+                    "rot_sky": 137.58715355364032
+                }
+            }
+        }
+    ]
+}
