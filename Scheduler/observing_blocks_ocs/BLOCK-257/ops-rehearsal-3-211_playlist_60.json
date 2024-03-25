@@ -1,0 +1,1100 @@
+{
+    "name": "BLOCK-257",
+    "id": "5a1d4055-f6ea-44e9-873e-221a81c4463c",
+    "program": "ops-rehearsal-3-211",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "CCCamera",
+                "cmd": "play",
+                "parameters": {
+                    "playlist": "ops-rehearsal-3-211_playlist_60",
+                    "repeat": false
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 01/60",
+                "filter": "i_06",
+                "slew_time": 78.68345611359634,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.011484004380879,
+                    "dec": 2.322579800108934,
+                    "rot_sky": 227.8921623707144
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 02/60",
+                "filter": "i_06",
+                "slew_time": 3.3487919203838,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.00263832307566,
+                    "dec": 2.2470453324631205,
+                    "rot_sky": 229.77991770133022
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 03/60",
+                "filter": "i_06",
+                "slew_time": 3.434610152140018,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.013465665989548,
+                    "dec": 2.133350433751472,
+                    "rot_sky": 230.71868607872238
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 04/60",
+                "filter": "i_06",
+                "slew_time": 3.269920742561401,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.01778542367765,
+                    "dec": 2.1019350833330583,
+                    "rot_sky": 231.83254591382118
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 05/60",
+                "filter": "i_06",
+                "slew_time": 3.4128243161260636,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.007829755274466,
+                    "dec": 2.1891532356635057,
+                    "rot_sky": 233.31095118305402
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 06/60",
+                "filter": "i_06",
+                "slew_time": 3.3961768444570373,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.016888669188221,
+                    "dec": 2.0986892634103573,
+                    "rot_sky": 234.29902793930017
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 07/60",
+                "filter": "i_06",
+                "slew_time": 3.3656468032959705,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.008356195807899,
+                    "dec": 2.103789323445894,
+                    "rot_sky": 235.7244080946694
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 08/60",
+                "filter": "i_06",
+                "slew_time": 3.456989536093112,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.006762644217742,
+                    "dec": 2.2928681451272004,
+                    "rot_sky": 237.03351083069762
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 09/60",
+                "filter": "i_06",
+                "slew_time": 3.362446912812313,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.007557478230668,
+                    "dec": 2.174571648188249,
+                    "rot_sky": 238.21060548558307
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 10/60",
+                "filter": "i_06",
+                "slew_time": 3.3068394560686767,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.00226206289691,
+                    "dec": 2.2466074921577257,
+                    "rot_sky": 239.5768831710546
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 11/60",
+                "filter": "i_06",
+                "slew_time": 3.4336651594211833,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.003546367215296,
+                    "dec": 2.077327376640444,
+                    "rot_sky": 240.73224410428796
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 12/60",
+                "filter": "i_06",
+                "slew_time": 3.246833669163061,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.000544492442446,
+                    "dec": 2.13775688454633,
+                    "rot_sky": 242.0433854688151
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 13/60",
+                "filter": "i_06",
+                "slew_time": 3.298702151988581,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.005189239088432,
+                    "dec": 2.0490110198726863,
+                    "rot_sky": 243.1394481318478
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 14/60",
+                "filter": "i_06",
+                "slew_time": 3.4526213034897784,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.002142754560424,
+                    "dec": 2.236283269700245,
+                    "rot_sky": 244.4779168454621
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 15/60",
+                "filter": "i_06",
+                "slew_time": 3.32268760973984,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.99774894262389,
+                    "dec": 2.153096462982631,
+                    "rot_sky": 245.7917229407043
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 16/60",
+                "filter": "i_06",
+                "slew_time": 3.3858597330385938,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.99704524400719,
+                    "dec": 2.28576518072453,
+                    "rot_sky": 247.06122157939328
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 17/60",
+                "filter": "i_06",
+                "slew_time": 3.3365304488388565,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.003793503419192,
+                    "dec": 2.229664187683342,
+                    "rot_sky": 248.11729986778647
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 18/60",
+                "filter": "i_06",
+                "slew_time": 3.479256043176559,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.018335030014622,
+                    "dec": 2.220419810195284,
+                    "rot_sky": 248.99754986780366
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 19/60",
+                "filter": "i_06",
+                "slew_time": 3.5016144050899065,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.001897373830905,
+                    "dec": 2.1639080349711963,
+                    "rot_sky": 250.60519885300468
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 20/60",
+                "filter": "i_06",
+                "slew_time": 3.281446319887371,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.006532355184028,
+                    "dec": 2.1137965307026185,
+                    "rot_sky": 251.7146718460077
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 21/60",
+                "filter": "g_07",
+                "slew_time": 120.0,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.00484009487319,
+                    "dec": 2.0669298748037166,
+                    "rot_sky": 207.0134119801263
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 22/60",
+                "filter": "g_07",
+                "slew_time": 3.4239678127451936,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.997117029796964,
+                    "dec": 2.2354030298732157,
+                    "rot_sky": 209.22987052473707
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 23/60",
+                "filter": "g_07",
+                "slew_time": 3.5404212099740078,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.014607915505232,
+                    "dec": 2.0799552514964073,
+                    "rot_sky": 210.01849757756466
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 24/60",
+                "filter": "g_07",
+                "slew_time": 3.4426090666944087,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.004507215745553,
+                    "dec": 2.2651122277192823,
+                    "rot_sky": 211.51650362144656
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 25/60",
+                "filter": "g_07",
+                "slew_time": 3.4927019335120395,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.019606862293896,
+                    "dec": 2.223927639177491,
+                    "rot_sky": 212.3793085060277
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 26/60",
+                "filter": "g_07",
+                "slew_time": 3.400743739287797,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.009636844679134,
+                    "dec": 2.2545736535490244,
+                    "rot_sky": 213.8519238958933
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 27/60",
+                "filter": "g_07",
+                "slew_time": 3.385238178159761,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.000495834753453,
+                    "dec": 2.300815304454849,
+                    "rot_sky": 215.30568428865968
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 28/60",
+                "filter": "g_07",
+                "slew_time": 3.4668701194467015,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.014355730451978,
+                    "dec": 2.322410003388798,
+                    "rot_sky": 216.2055606923678
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 29/60",
+                "filter": "g_07",
+                "slew_time": 3.5066920491570737,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.998138316673902,
+                    "dec": 2.3188588880731817,
+                    "rot_sky": 217.82355458140788
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 30/60",
+                "filter": "g_07",
+                "slew_time": 3.5226027297029354,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.014545921525771,
+                    "dec": 2.1283833557152163,
+                    "rot_sky": 218.6415247889672
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 31/60",
+                "filter": "g_07",
+                "slew_time": 3.286994722581003,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.00919932581614,
+                    "dec": 2.0820133895134347,
+                    "rot_sky": 219.9978322297886
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 32/60",
+                "filter": "g_07",
+                "slew_time": 3.2993789515418244,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.003626750187937,
+                    "dec": 2.0930738055291815,
+                    "rot_sky": 221.3639206419023
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 33/60",
+                "filter": "g_07",
+                "slew_time": 3.323437486854348,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.010167523107928,
+                    "dec": 2.0908345137348894,
+                    "rot_sky": 222.43651091513473
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 34/60",
+                "filter": "g_07",
+                "slew_time": 3.4849021113536827,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.999828124650975,
+                    "dec": 2.3036195038014333,
+                    "rot_sky": 223.93144924304912
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 35/60",
+                "filter": "g_07",
+                "slew_time": 3.4076329445105733,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.010136235036631,
+                    "dec": 2.2515888222184453,
+                    "rot_sky": 224.91112186870458
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 36/60",
+                "filter": "g_07",
+                "slew_time": 3.339418025085045,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.003046257613759,
+                    "dec": 2.313856021808666,
+                    "rot_sky": 226.31602661417315
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 37/60",
+                "filter": "g_07",
+                "slew_time": 3.536297546183259,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.013182534513598,
+                    "dec": 2.056981652164959,
+                    "rot_sky": 227.28795125328037
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 38/60",
+                "filter": "g_07",
+                "slew_time": 3.4913181632935166,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.998476850708709,
+                    "dec": 2.2744064271145077,
+                    "rot_sky": 228.88583531333074
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 39/60",
+                "filter": "g_07",
+                "slew_time": 3.496993289968362,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.997980190121602,
+                    "dec": 2.0583883841340644,
+                    "rot_sky": 230.1220949551589
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 40/60",
+                "filter": "g_07",
+                "slew_time": 3.215579550932416,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.00092893621369,
+                    "dec": 2.098266912848824,
+                    "rot_sky": 231.28466664005595
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 41/60",
+                "filter": "r_03",
+                "slew_time": 120.0,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.001780726792743,
+                    "dec": 2.112125387810322,
+                    "rot_sky": 206.50613829226467
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 42/60",
+                "filter": "r_03",
+                "slew_time": 3.4347948471362977,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.000856647670522,
+                    "dec": 2.2774948751138298,
+                    "rot_sky": 208.54587265431232
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 43/60",
+                "filter": "r_03",
+                "slew_time": 3.3966821433331496,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.010737545756827,
+                    "dec": 2.264702804672435,
+                    "rot_sky": 209.53896494293917
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 44/60",
+                "filter": "r_03",
+                "slew_time": 3.205636318126259,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.01339034136537,
+                    "dec": 2.2665305327295893,
+                    "rot_sky": 210.7059854437079
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 45/60",
+                "filter": "r_03",
+                "slew_time": 3.5553923182414873,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.008665399320297,
+                    "dec": 1.9957997502002376,
+                    "rot_sky": 212.05488847765756
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 46/60",
+                "filter": "r_03",
+                "slew_time": 3.472825629145416,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.004103681560663,
+                    "dec": 2.1902529700186038,
+                    "rot_sky": 213.393731524106
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 47/60",
+                "filter": "r_03",
+                "slew_time": 3.3713225890935044,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.995467569721951,
+                    "dec": 2.1886554197944585,
+                    "rot_sky": 214.83418756362255
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 48/60",
+                "filter": "r_03",
+                "slew_time": 3.581469221855695,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.0166428313587,
+                    "dec": 2.195300832720703,
+                    "rot_sky": 215.5538347909779
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 49/60",
+                "filter": "r_03",
+                "slew_time": 3.432216288430041,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.00564431256213,
+                    "dec": 2.354287664748596,
+                    "rot_sky": 217.04441032790731
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 50/60",
+                "filter": "r_03",
+                "slew_time": 3.515542426755038,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.010918814836845,
+                    "dec": 2.1241931461826553,
+                    "rot_sky": 218.15954442924306
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 51/60",
+                "filter": "r_03",
+                "slew_time": 3.462578709083188,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.997053208542818,
+                    "dec": 2.2945937453541116,
+                    "rot_sky": 219.7158437691916
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 52/60",
+                "filter": "r_03",
+                "slew_time": 3.542415794130234,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.999229228226604,
+                    "dec": 2.038367745862083,
+                    "rot_sky": 220.9123220921236
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 53/60",
+                "filter": "r_03",
+                "slew_time": 3.549060123054104,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.001805540193367,
+                    "dec": 2.3043230516286504,
+                    "rot_sky": 222.06288458879934
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 54/60",
+                "filter": "r_03",
+                "slew_time": 3.4501659853540203,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.007778846309415,
+                    "dec": 2.1312976789371287,
+                    "rot_sky": 223.16390410454284
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 55/60",
+                "filter": "r_03",
+                "slew_time": 3.3243660725704456,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.003818427556633,
+                    "dec": 2.2202797488754262,
+                    "rot_sky": 224.48325155733403
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 56/60",
+                "filter": "r_03",
+                "slew_time": 3.497311931919595,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.011389179132731,
+                    "dec": 2.010044706364503,
+                    "rot_sky": 225.54960416391995
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 57/60",
+                "filter": "r_03",
+                "slew_time": 3.479902568247817,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.996350665015735,
+                    "dec": 2.1533683578999003,
+                    "rot_sky": 227.13050648855221
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 58/60",
+                "filter": "r_03",
+                "slew_time": 3.400370005107388,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.005963390389573,
+                    "dec": 2.2578401056900965,
+                    "rot_sky": 228.1194821285893
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 59/60",
+                "filter": "r_03",
+                "slew_time": 3.3574688649651607,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 9.99845793535869,
+                    "dec": 2.1451953388502853,
+                    "rot_sky": 229.5421702441484
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "COSMOS 60/60",
+                "filter": "r_03",
+                "slew_time": 3.5467435309422117,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "ops-rehearsal-3",
+                "visit_metadata": {
+                    "ra": 10.017038519868061,
+                    "dec": 2.191328346503951,
+                    "rot_sky": 230.3204515084566
+                }
+            }
+        }
+    ]
+}
