@@ -1,0 +1,1153 @@
+{
+    "name": "BLOCK-259",
+    "program": "BLOCK-259",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "y": -500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "y": -500
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "x": -500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "x": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "x": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "x": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "x": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "x": -500
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "z": -500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "z": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "z": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "z": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "z": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "z": -500
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "u": -0.15
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "u": 0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "u": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "u": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "u": 0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "u": -0.15
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "v": -0.15
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "Camera",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "v": -0.15
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "y": -500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "y": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "y": -500
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "x": -500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "x": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "x": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "x": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "x": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "x": -500
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "z": -500
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "z": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "z": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "z": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "z": 250
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "z": -500
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "offset",
+                "parameters": {
+                    "u": -0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "u": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "u": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "u": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "u": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "u": -0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "v": -0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.05
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "v": -0.1
+                }
+            }
+        }
+    ]
+}
