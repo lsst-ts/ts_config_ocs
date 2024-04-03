@@ -925,27 +925,7 @@
                 "component": "MTHexapod:1",
                 "cmd": "offset",
                 "parameters": {
-                    "u": -0.15
-                }
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/measure.py",
-            "standard": true,
-            "parameters": {
-                "target": "M2",
-                "program": "$program",
-                "reason": "SITCOM-1215"
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "MTHexapod:2",
-                "cmd": "offset",
-                "parameters": {
-                    "u": 0.1
+                    "u": -0.1
                 }
             }
         },
@@ -1005,7 +985,7 @@
                 "component": "MTHexapod:2",
                 "cmd": "offset",
                 "parameters": {
-                    "u": 0.1
+                    "u": 0.05
                 }
             }
         },
@@ -1025,7 +1005,7 @@
                 "component": "MTHexapod:2",
                 "cmd": "offset",
                 "parameters": {
-                    "u": -0.15
+                    "u": 0.05
                 }
             }
         },
@@ -1045,7 +1025,7 @@
                 "component": "MTHexapod:2",
                 "cmd": "offset",
                 "parameters": {
-                    "v": -0.15
+                    "u": -0.1
                 }
             }
         },
@@ -1065,7 +1045,27 @@
                 "component": "MTHexapod:2",
                 "cmd": "offset",
                 "parameters": {
-                    "v": 0.1
+                    "v": -0.1
+                }
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/measure.py",
+            "standard": true,
+            "parameters": {
+                "target": "M2",
+                "program": "$program",
+                "reason": "SITCOM-1215"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "offset",
+                "parameters": {
+                    "v": 0.05
                 }
             }
         },
@@ -1125,7 +1125,7 @@
                 "component": "MTHexapod:2",
                 "cmd": "offset",
                 "parameters": {
-                    "v": 0.1
+                    "v": 0.05
                 }
             }
         },
@@ -1145,7 +1145,7 @@
                 "component": "MTHexapod:2",
                 "cmd": "offset",
                 "parameters": {
-                    "v": -0.15
+                    "v": -0.1
                 }
             }
         }
