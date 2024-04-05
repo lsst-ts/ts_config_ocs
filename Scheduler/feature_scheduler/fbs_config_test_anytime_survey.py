@@ -33,7 +33,7 @@ def gen_greedy_surveys(
     nside=32,
     nexp=1,
     exptime=30.0,
-    filters=["r", "i", "z", "y"],
+    filters=["g", "r", "z"],
     camera_rot_limits=[-80.0, 80.0],
     shadow_minutes=60.0,
     max_alt=76.0,
