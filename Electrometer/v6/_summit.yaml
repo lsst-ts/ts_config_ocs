@@ -24,6 +24,50 @@ electrometer_config:
     image_service_url: "http://ccs.lsst.org"
     s3_instance: "cp"
 
+  - sal_index: 101
+    host: 'cbp-Electrometer.tu.lsst.org'
+    mode: 1
+    range: -1.0
+    integration_time: 0.0001
+    median_filter_active: false
+    filter_active: false
+    avg_filter_active: false
+    timeout: 2
+    tcp_port: 5024
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'  
+    brand: "Keysight"
+    model_id: "A"
+    location: "ComCam"
+    sensor_brand: "Hamamatsu"
+    sensor_model: "S2281"
+    sensor_serial: "S22818D091"
+    vsource_attached: false
+    temperature_attached: false
+    image_service_url: "http://ccs.lsst.org"
+    s3_instance: "cp"
+
+  - sal_index: 102
+    host: 'cbp-calElectrometer.cp.lsst.org'
+    mode: 1
+    range: -1.0
+    integration_time: 0.0001
+    median_filter_active: false
+    filter_active: false
+    avg_filter_active: false
+    timeout: 2
+    tcp_port: 5024
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'  
+    brand: "Keysight"
+    model_id: "A"
+    location: "ComCam"
+    sensor_brand: "Hamamatsu"
+    sensor_model: "S2281"
+    sensor_serial: "S22818D091"
+    vsource_attached: false
+    temperature_attached: false
+    image_service_url: "http://ccs.lsst.org"
+    s3_instance: "cp"
+
   - sal_index: 201
     host: 'auxtel-electrometer.cp.lsst.org'
     mode: 1
