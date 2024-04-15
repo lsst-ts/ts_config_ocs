@@ -148,12 +148,12 @@ rules:
     max_data_age: 30
 - classname: ATCameraDewar
   configs:
-  - min_warning_ccd_temp: -95
+  - min_warning_ccd_temp: -105
     min_serious_ccd_temp: null
-    min_critical_ccd_temp: -97
-    max_warning_ccd_temp: -93
+    min_critical_ccd_temp: -107
+    max_warning_ccd_temp: -103
     max_serious_ccd_temp: null
-    max_critical_ccd_temp: -91
+    max_critical_ccd_temp: -101
     max_warning_cold_plate_temp: -108
     max_serious_cold_plate_temp: null
     max_critical_cold_plate_temp: -104
