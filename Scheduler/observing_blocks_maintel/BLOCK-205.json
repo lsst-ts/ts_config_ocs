@@ -1,0 +1,4524 @@
+{
+  "name": "BLOCK-205",
+  "id": "c02b5e76-5514-4b04-bd2e-d1537f97822b",
+  "program": "BLOCK-205",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "MTPtg",
+        "cmd": "pointLoadModel",
+        "parameters": {
+          "pointingFile": "../install/data/mt_20240417.mod"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "MTPtg",
+        "cmd": "poriginXY",
+        "parameters": {
+          "x": 105,
+          "y": 323
+        }
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -165.54,
+          "el": 35.42,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -152.85,
+          "el": 54.09,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -146.62,
+          "el": 35.68,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -133.49,
+          "el": 68.78,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -128.17,
+          "el": 33.12,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -125.61,
+          "el": 51.13,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -111.1,
+          "el": 28.15,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -104.38,
+          "el": 43.81,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -97.58,
+          "el": 59.84,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -95.61,
+          "el": 21.36,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -88.08,
+          "el": 76.04,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -85.81,
+          "el": 37.54,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -72.76,
+          "el": 53.3,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -70.33,
+          "el": 28.9,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -55.45,
+          "el": 42.97,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -49.66,
+          "el": 67.21,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -43.12,
+          "el": 30.78,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -33.32,
+          "el": 53.81,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -24.71,
+          "el": 39.21,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -2.56,
+          "el": 42.27,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -2.42,
+          "el": 58.11,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -2.1,
+          "el": 73.94,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 19.54,
+          "el": 39.05,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 28.31,
+          "el": 53.59,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 37.83,
+          "el": 30.51,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 44.8,
+          "el": 66.89,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 50.2,
+          "el": 42.63,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 64.94,
+          "el": 28.51,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 67.47,
+          "el": 52.9,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 80.38,
+          "el": 37.12,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 82.73,
+          "el": 75.61,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 90.14,
+          "el": 20.94,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 92.06,
+          "el": 59.42,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 98.84,
+          "el": 43.39,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 105.57,
+          "el": 27.74,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 119.88,
+          "el": 50.78,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 122.56,
+          "el": 32.78,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 127.4,
+          "el": 68.46,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 140.93,
+          "el": 35.43,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 146.93,
+          "el": 53.88,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 159.81,
+          "el": 35.29,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 170.0,
+          "el": 79.28,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 170.0,
+          "el": 63.45,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 170.0,
+          "el": 47.61,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 170.0,
+          "el": 47.61,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 170.0,
+          "el": 63.45,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 170.0,
+          "el": 79.28,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 159.81,
+          "el": 35.29,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 146.93,
+          "el": 53.88,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 140.93,
+          "el": 35.43,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 127.4,
+          "el": 68.46,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 122.56,
+          "el": 32.78,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 119.88,
+          "el": 50.78,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 105.57,
+          "el": 27.74,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 98.84,
+          "el": 43.39,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 92.06,
+          "el": 59.42,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 90.14,
+          "el": 20.94,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 82.73,
+          "el": 75.61,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 80.38,
+          "el": 37.12,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 67.47,
+          "el": 52.9,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 64.94,
+          "el": 28.51,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 50.2,
+          "el": 42.63,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 44.8,
+          "el": 66.89,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 37.83,
+          "el": 30.51,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 28.31,
+          "el": 53.59,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": 19.54,
+          "el": 39.05,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -2.1,
+          "el": 73.94,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -2.42,
+          "el": 58.11,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -2.56,
+          "el": 42.27,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -24.71,
+          "el": 39.21,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -33.32,
+          "el": 53.81,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -43.12,
+          "el": 30.78,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -49.66,
+          "el": 67.21,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -55.45,
+          "el": 42.97,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -70.33,
+          "el": 28.9,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -72.76,
+          "el": 53.3,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -85.81,
+          "el": 37.54,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -88.08,
+          "el": 76.04,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -95.61,
+          "el": 21.36,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -97.58,
+          "el": 59.84,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -104.38,
+          "el": 43.81,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -111.1,
+          "el": 28.15,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -125.61,
+          "el": 51.13,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -128.17,
+          "el": 33.12,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -133.49,
+          "el": 68.78,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -146.62,
+          "el": 35.68,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -152.85,
+          "el": 54.09,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "az": -165.54,
+          "el": 35.42,
+          "mag_limit": 6.0,
+          "mag_range": 4.0,
+          "radius": 9.0
+        },
+        "rot_value": 0,
+        "rot_type": "Physical",
+        "program": "$program",
+        "ignore": [
+          "mtaos",
+          "mtm1m3",
+          "mtrotator"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_anycam.py",
+      "standard": true,
+      "parameters": {
+        "gencam": [
+          {
+            "index": 101,
+            "exp_times": 6.0,
+            "nimages": 5,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 102,
+            "exp_times": 5.0,
+            "nimages": 6,
+            "image_type": "OBJECT"
+          },
+          {
+            "index": 103,
+            "exp_times": 4.0,
+            "nimages": 8,
+            "image_type": "OBJECT"
+          }
+        ],
+        "program": "$program",
+        "ignore": [
+          "mtm1m3"
+        ]
+      }
+    }
+  ]
+}
