@@ -7,21 +7,11 @@
             "name": "run_command.py",
             "standard": true,
             "parameters": {
-                "component": "MTHexapod:1",
-                "cmd": "setCompensationMode",
+                "component": "CCCamera",
+                "cmd": "play",
                 "parameters": {
-                    "enable": true
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "MTHexapod:2",
-                "cmd": "setCompensationMode",
-                "parameters": {
-                    "enable": true
+                    "playlist": "aos-comcam-playlist-0",
+                    "repeat": true
                 }
             }
         },
