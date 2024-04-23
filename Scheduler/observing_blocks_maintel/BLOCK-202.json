@@ -1,0 +1,69 @@
+{
+    "name": "BLOCK-202",
+    "program": "BLOCK-202",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "CCCamera",
+                "cmd": "play",
+                "parameters": {
+                    "playlist": "aos-comcam-playlist-0",
+                    "repeat": true
+                }
+            }
+        },
+        {
+            "name": "maintel/close_loop_comcam.py",
+            "standard": true,
+            "parameters": {
+                "filter": "g_01",
+                "exposure_time": 15,
+                "dz": 1.5,
+                "max_iter": 1,
+                "program": "$program",
+                "reason": "ComCam_AOS visit 68661",
+                "used_dofs": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 15.0,
+                "note": "ComCam_AOS visit 68661 2/3 seq 941 - Focus 0.0",
+                "filter": "g_01",
+                "image_type": "ACQ",
+                "nimages": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/close_loop_comcam.py",
+            "standard": true,
+            "parameters": {
+                "filter": "g_01",
+                "exposure_time": 15,
+                "dz": 1.5,
+                "max_iter":1,
+                "program": "$program",
+                "reason": "ComCam_AOS visit 68661",
+                "used_dofs": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 15.0,
+                "note": "ComCam_AOS visit 68659 2/3 seq 951 - Focus 0.0",
+                "filter": "g_01",
+                "image_type": "ACQ",
+                "nimages": 1,
+                "program": "$program"
+            }
+        }
+    ]
+}

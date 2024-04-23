@@ -1,0 +1,78 @@
+{
+    "name": "BLOCK-267",
+    "program": "BLOCK-267_45deg",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 45,
+                "program": "BLOCK-267",
+                "reason": "SITCOM-1323"
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": -32,
+                "el": [
+                    84,
+                    75,
+                    50,
+                    25,
+                    16,
+                    25,
+                    50,
+                    75,
+                    84,
+                    50
+                ],
+                "pause_for": 5,
+                "program": "BLOCK-267",
+                "reason": "SITCOM-1323",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtm1m3",
+                    "mtaos",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": [
+                    -32,
+                    45,
+                    -32
+                ],
+                "el": 50,
+                "pause_for": 5,
+                "program": "BLOCK-267",
+                "reason": "SITCOM-1323",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtm1m3",
+                    "mtaos",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ]
+            }
+        }
+    ]
+}

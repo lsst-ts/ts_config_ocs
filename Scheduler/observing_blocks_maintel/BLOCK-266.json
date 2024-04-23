@@ -1,0 +1,178 @@
+{
+    "name": "BLOCK-266",
+    "program": "BLOCK-266",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": -32,
+                "el": 84,
+                "program": "$program",
+                "reason": "LVV-T3019",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtm1m3",
+                    "mtaos",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    ["MTM2", "DISABLED"]
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTM2",
+                "cmd": "selectInclinationSource",
+                "parameters": {
+                    "source": 2,
+                    "maxDifference": 5
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    ["MTM2", "ENABLED"]
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": -32,
+                "el": 70,
+                "program": "$program",
+                "reason": "LVV-T3019",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtm1m3",
+                    "mtaos",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": -32,
+                "el": 84,
+                "program": "$program",
+                "reason": "LVV-T3019",
+                "move_timeout": 2700,
+                "ignore": [
+                    "mtm1m3",
+                    "mtaos",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    ["MTM2", "DISABLED"]
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTM2",
+                "cmd": "selectInclinationSource",
+                "parameters": {
+                    "source": 1,
+                    "maxDifference": 2,
+                    "enableComparison": false
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    ["MTM2", "ENABLED"]
+                ]
+            }
+        }
+    ]
+}
