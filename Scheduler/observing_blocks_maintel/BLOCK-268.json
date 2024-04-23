@@ -1,0 +1,379 @@
+{
+    "name": "BLOCK-268",
+    "program": "BLOCK-268",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "poriginXY",
+                "parameters": {
+                    "x": 105,
+                    "y": 323
+                }
+            }
+        },
+        {
+            "name": "maintel/point_azel.py",
+            "standard": true,
+            "parameters": {
+                "az": -64.131,
+                "el": 29.261,
+                "target_name": "EUTELSAT_117W_A",
+                "program": "$program",
+                "reason": "SITCOM-1284",
+                "wait_dome": true,
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "startTracking"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": [
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": [
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": [
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "$program",
+                "reason": "SITCOM-1284",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "poriginXY",
+                "parameters": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "poriginXY",
+                "parameters": {
+                    "x": 105,
+                    "y": 323
+                }
+            }
+        },
+        {
+            "name": "maintel/point_azel.py",
+            "standard": true,
+            "parameters": {
+                "az": -64.289,
+                "el": 29.092,
+                "target_name": "EUTELSAT_117W_B",
+                "program": "$program",
+                "reason": "SITCOM-1284",
+                "wait_dome": true,
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "startTracking"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": [
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": [
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": [
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "$program",
+                "reason": "SITCOM-1284",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "poriginXY",
+                "parameters": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "poriginXY",
+                "parameters": {
+                    "x": 105,
+                    "y": 323
+                }
+            }
+        },
+        {
+            "name": "maintel/point_azel.py",
+            "standard": true,
+            "parameters": {
+                "az": -8.812,
+                "el": 54.434,
+                "target_name": "GOES_16",
+                "program": "$program",
+                "reason": "SITCOM-1284",
+                "wait_dome": true,
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "startTracking"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": [
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": [
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": [
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            5.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ],
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "$program",
+                "reason": "SITCOM-1284",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "poriginXY",
+                "parameters": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        }
+    ]
+}

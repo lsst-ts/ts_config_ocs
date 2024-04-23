@@ -1,0 +1,615 @@
+{
+    "name": "BLOCK-218",
+    "program": "BLOCK-218_0255UT",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "poriginXY",
+                "parameters": {
+                    "x": 105,
+                    "y": 323
+                }
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "mid_point_HD_76728_80404",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ],
+                "slew_icrs": {
+                    "ra": "9.104937505985",
+                    "dec": "-59.98869744552815"
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDomeTrajectory",
+                "cmd": "setFollowingMode",
+                "parameters": {
+                    "enable": false
+                }
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 76728",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 6.0,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 5.0,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 0.1,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-218",
+                "reason": "BLOCK-218",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "GenericCamera:103",
+                "cmd": "startStreamingMode",
+                "parameters": {
+                    "expTime": 0.012
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 80404",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 76728",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "GenericCamera:103",
+                "cmd": "stopStreamingMode"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDomeTrajectory",
+                "cmd": "setFollowingMode",
+                "parameters": {
+                    "enable": true
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "mid_point_HD_90853_94510",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ],
+                "slew_icrs": {
+                    "ra": "10.677745703802088",
+                    "dec": "-58.836035803044716"
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDomeTrajectory",
+                "cmd": "setFollowingMode",
+                "parameters": {
+                    "enable": false
+                }
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 90853",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 6.0,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 5.0,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 0.1,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-218",
+                "reason": "BLOCK-218",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "GenericCamera:103",
+                "cmd": "startStreamingMode",
+                "parameters": {
+                    "expTime": 0.012
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 94510",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 90853",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "GenericCamera:103",
+                "cmd": "stopStreamingMode"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDomeTrajectory",
+                "cmd": "setFollowingMode",
+                "parameters": {
+                    "enable": true
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "mid_point_HD_105435_108483",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ],
+                "slew_icrs": {
+                    "ra": "12.304172536683364",
+                    "dec": "-50.502459151724395"
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDomeTrajectory",
+                "cmd": "setFollowingMode",
+                "parameters": {
+                    "enable": false
+                }
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 105435",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 6.0,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 5.0,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 0.1,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-218",
+                "reason": "BLOCK-218",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "GenericCamera:103",
+                "cmd": "startStreamingMode",
+                "parameters": {
+                    "expTime": 0.012
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 108483",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 105435",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "GenericCamera:103",
+                "cmd": "stopStreamingMode"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDomeTrajectory",
+                "cmd": "setFollowingMode",
+                "parameters": {
+                    "enable": true
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "mid_point_HD_106625_108767",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ],
+                "slew_icrs": {
+                    "ra": "12.380918178133388",
+                    "dec": "-17.036296552280902"
+                }
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDomeTrajectory",
+                "cmd": "setFollowingMode",
+                "parameters": {
+                    "enable": false
+                }
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 106625",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_anycam.py",
+            "standard": true,
+            "parameters": {
+                "gencam": [
+                    {
+                        "index": 101,
+                        "exp_times": 6.0,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 102,
+                        "exp_times": 5.0,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    },
+                    {
+                        "index": 103,
+                        "exp_times": 0.1,
+                        "nimages": 1,
+                        "image_type": "OBJECT"
+                    }
+                ],
+                "program": "BLOCK-218",
+                "reason": "BLOCK-218",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "GenericCamera:103",
+                "cmd": "startStreamingMode",
+                "parameters": {
+                    "expTime": 0.012
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 108767",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 10
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "HD 106625",
+                "rot_type": "Physical",
+                "ignore": [
+                    "mtm1m3",
+                    "mtrotator"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "GenericCamera:103",
+                "cmd": "stopStreamingMode"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDomeTrajectory",
+                "cmd": "setFollowingMode",
+                "parameters": {
+                    "enable": true
+                }
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 5
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTPtg",
+                "cmd": "poriginXY",
+                "parameters": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        }
+    ]
+}
