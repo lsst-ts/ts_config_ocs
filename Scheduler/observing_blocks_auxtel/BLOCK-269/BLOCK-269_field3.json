@@ -1,0 +1,59 @@
+{
+    "name": "BLOCK-269",
+    "program": "BLOCK-269",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-269",
+                "reason": "SITCOM-1031",
+                "find_target": {
+                    "az": -90,
+                    "el": 80,
+                    "mag_limit": 1,
+                    "mag_range": 1,
+                    "radius": 30
+                }
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-269",
+                "reason": "SITCOM-1031",
+                "nimages": 2,
+                "image_type": "BIAS",
+                "filter": "SDSSz_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-269",
+                "reason": "SITCOM-1031",
+                "nimages": 1,
+                "exp_times": 5,
+                "image_type": "OBJECT",
+                "filter": "SDSSz_65mm",
+                "grating": "empty_1"
+            }
+        },
+        {
+            "name": "auxtel/take_image_latiss.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-269",
+                "reason": "SITCOM-1031",
+                "nimages": 30,
+                "image_type": "BIAS",
+                "filter": "SDSSz_65mm",
+                "grating": "empty_1"
+            }
+        }
+    ]
+}
