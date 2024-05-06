@@ -135,6 +135,52 @@ instances:
               Tangent link A5,
               Tangent link A6,
               Unused
+  - sal_index: 107
+    data_clients:
+      - client_class: ControllerDataClient
+        # Laser Enclosure humidity and temperature sensors
+        config:
+          host: laser-rpi.cp.lsst.org
+          devices:
+# Commented out because the humidity sensor is under repair.
+#          - name: Laser-ESS01
+#            device_type: Serial
+#            serial_port: /dev/serial1 #this needs to be confirmed.
+#            sensor_type: HX85A
+#            location: Laser Enclosure
+          - name: Laser-ESS02
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
+            sensor_type: Temperature
+            location: >-
+              EnclosureFan
+              FCUnit
+              LaserTop
+              LaserBottom
+              LaserFan
+              PowerSupply
+              EnclosureOut
+              EnclosureMid
+  - sal_index: 108
+    data_clients:
+      - client_class: TcpipDataClient
+        # CBP temperature sensors
+        config:
+          devices:
+          - name: CBP-ESS01
+            host: cbp-control.cp.lsst.org
+            port: 4001
+            connect_timeout: 5
+            read_timeout: 5
+            max_read_timeouts: 2
+            channels: 4
+            baud_rate: 19200
+            sensor_type: Temperature
+            location: >-
+              Photodiode
+              PrimaryMirror
+              MaskChanger
+              ElectronicsCabinet
 
   - sal_index: 201
     data_clients:
