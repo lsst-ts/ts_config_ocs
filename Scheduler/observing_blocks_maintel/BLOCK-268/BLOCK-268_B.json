@@ -1,6 +1,6 @@
 {
     "name": "BLOCK-268",
-    "program": "BLOCK-268",
+    "program": "BLOCK-268_B",
     "constraints": [],
     "scripts": [
         {
@@ -19,31 +19,16 @@
             "name": "maintel/point_azel.py",
             "standard": true,
             "parameters": {
-                "az": -64.131,
-                "el": 29.261,
+                "az": -64.145,
+                "el": 29.247,
                 "target_name": "EUTELSAT_117W_A",
-                "program": "$program",
+                "program": "BLOCK-268",
                 "reason": "SITCOM-1284",
                 "wait_dome": true,
                 "ignore": [
                     "mtm1m3",
                     "mtrotator"
                 ]
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "MTPtg",
-                "cmd": "startTracking"
-            }
-        },
-        {
-            "name": "sleep.py",
-            "standard": true,
-            "parameters": {
-                "sleep_for": 10
             }
         },
         {
@@ -100,7 +85,7 @@
                         "image_type": "OBJECT"
                     }
                 ],
-                "program": "$program",
+                "program": "BLOCK-268",
                 "reason": "SITCOM-1284",
                 "ignore": [
                     "mtm1m3",
@@ -143,31 +128,16 @@
             "name": "maintel/point_azel.py",
             "standard": true,
             "parameters": {
-                "az": -64.289,
-                "el": 29.092,
+                "az": -64.297,
+                "el": 29.083,
                 "target_name": "EUTELSAT_117W_B",
-                "program": "$program",
+                "program": "BLOCK-268",
                 "reason": "SITCOM-1284",
                 "wait_dome": true,
                 "ignore": [
                     "mtm1m3",
                     "mtrotator"
                 ]
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "MTPtg",
-                "cmd": "startTracking"
-            }
-        },
-        {
-            "name": "sleep.py",
-            "standard": true,
-            "parameters": {
-                "sleep_for": 10
             }
         },
         {
@@ -224,7 +194,7 @@
                         "image_type": "OBJECT"
                     }
                 ],
-                "program": "$program",
+                "program": "BLOCK-268",
                 "reason": "SITCOM-1284",
                 "ignore": [
                     "mtm1m3",
@@ -267,31 +237,16 @@
             "name": "maintel/point_azel.py",
             "standard": true,
             "parameters": {
-                "az": -8.812,
-                "el": 54.434,
+                "az": -8.795,
+                "el": 54.436,
                 "target_name": "GOES_16",
-                "program": "$program",
+                "program": "BLOCK-268",
                 "reason": "SITCOM-1284",
                 "wait_dome": true,
                 "ignore": [
                     "mtm1m3",
                     "mtrotator"
                 ]
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "MTPtg",
-                "cmd": "startTracking"
-            }
-        },
-        {
-            "name": "sleep.py",
-            "standard": true,
-            "parameters": {
-                "sleep_for": 10
             }
         },
         {
@@ -348,7 +303,7 @@
                         "image_type": "OBJECT"
                     }
                 ],
-                "program": "$program",
+                "program": "BLOCK-268",
                 "reason": "SITCOM-1284",
                 "ignore": [
                     "mtm1m3",

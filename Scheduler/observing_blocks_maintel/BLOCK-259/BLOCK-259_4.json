@@ -7,33 +7,11 @@
             "name": "run_command.py",
             "standard": true,
             "parameters": {
-                "component": "MTHexapod:1",
-                "cmd": "setCompensationMode",
-                "parameters": {
-                    "enable": true
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
                 "component": "MTHexapod:2",
                 "cmd": "setCompensationMode",
                 "parameters": {
                     "enable": true
                 }
-            }
-        },
-        {
-            "name": "maintel/laser_tracker/align.py",
-            "standard": true,
-            "parameters": {
-                "target": "Camera",
-                "program": "$program",
-                "reason": "SITCOM-1215",
-                "tolerance_linear": 0.3,
-                "tolerance_angular": 0.002
             }
         },
         {
