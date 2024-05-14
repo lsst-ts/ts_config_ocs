@@ -149,6 +149,7 @@ instances:
 #            sensor_type: HX85A
 #            location: Laser Enclosure
           - name: Laser-ESS02
+            channels: 8
             device_type: Serial
             serial_port: /dev/ttyUSB0
             sensor_type: Temperature
@@ -166,21 +167,20 @@ instances:
       - client_class: TcpipDataClient
         # CBP temperature sensors
         config:
-          devices:
-          - name: CBP-ESS01
-            host: cbp-control.cp.lsst.org
-            port: 4001
-            connect_timeout: 5
-            read_timeout: 5
-            max_read_timeouts: 2
-            channels: 4
-            baud_rate: 19200
-            sensor_type: Temperature
-            location: >-
-              Photodiode
-              PrimaryMirror
-              MaskChanger
-              ElectronicsCabinet
+          name: CBP-ESS01
+          host: cbp-control.cp.lsst.org
+          port: 4001
+          connect_timeout: 5
+          read_timeout: 5
+          max_read_timeouts: 2
+          channels: 4
+          baud_rate: 19200
+          sensor_type: Temperature
+          location: >-
+            Photodiode
+            PrimaryMirror
+            MaskChanger
+            ElectronicsCabinet
 
   - sal_index: 201
     data_clients:
