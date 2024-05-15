@@ -1,0 +1,17 @@
+instances:
+  - sal_index: 1
+    data_clients:
+      - client_class: ControllerDataClient
+        # TODO DM-44354
+        # Bogus config data for now so the ts_epm unit tests pass. Once a new
+        # DataClient class has been created this will be updated wil the real
+        # config data.
+        config:
+          host: localhost
+          devices:
+          - name: Instance-EPM01
+            channels: 8
+            device_type: FTDI
+            ftdi_id: AB123456
+            sensor_type: Temperature
+            location: Non-existent.
