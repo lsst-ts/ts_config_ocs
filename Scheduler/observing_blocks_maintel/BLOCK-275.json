@@ -1,0 +1,46 @@
+{
+    "name": "BLOCK-275",
+    "id": "2dcf873d-a4c0-41d1-b391-300cd0621a59",
+    "program": "BLOCK-275",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "OCPS:2",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "CCCamera",
+                "cmd": "play",
+                "parameters": {
+                    "playlist": "comcam-daily-calibs-OR1_playlist_v0",
+                    "repeat": false
+                }
+            }
+        },
+        {
+            "name": "maintel/make_comcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS_DARK_FLAT",
+                "n_bias": 10,
+                "n_dark": 10,
+                "n_flat": 10,
+                "exp_times_dark": 30,
+                "exp_times_flat": 15,
+                "filter": "i_06",
+                "generate_calibrations": true
+            }
+        }
+    ]
+}
