@@ -21,6 +21,18 @@
             "parameters": {
                 "data": [
                     [
+                        "ATMonochromator",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
                         "OCPS:1",
                         "ENABLED"
                     ]
@@ -30,7 +42,9 @@
         {
             "name": "auxtel/calibrations/power_on_atcalsys.py",
             "standard": true,
-            "parameters": {}
+            "parameters": {
+                "use_atmonochromator": true
+            }
         },
         {
             "name": "auxtel/prepare_for/flat.py",
@@ -46,7 +60,7 @@
                 "script_mode": "BIAS_DARK_FLAT",
                 "filter": "SDSSr_65mm",
                 "grating": "empty_1",
-                "program": "latiss_daily_calibrations"
+                "program": "BLOCK-295"
             }
         },
         {
@@ -61,7 +75,7 @@
                 "script_mode": "BIAS_DARK_FLAT",
                 "filter": "SDSSg_65mm",
                 "grating": "empty_1",
-                "program": "latiss_daily_calibrations"
+                "program": "BLOCK-295"
             }
         },
         {
@@ -76,7 +90,7 @@
                 "script_mode": "BIAS_DARK_FLAT",
                 "filter": "SDSSz_65mm",
                 "grating": "empty_1",
-                "program": "latiss_daily_calibrations"
+                "program": "BLOCK-295"
             }
         },
         {
@@ -91,7 +105,7 @@
                 "script_mode": "BIAS_DARK_FLAT",
                 "filter": "empty_1",
                 "grating": "SDSSy_65mm",
-                "program": "latiss_daily_calibrations"
+                "program": "BLOCK-295"
             }
         },
         {
@@ -106,7 +120,7 @@
                 "script_mode": "BIAS_DARK_FLAT",
                 "filter": "empty_1",
                 "grating": "empty_1",
-                "program": "latiss_daily_calibrations"
+                "program": "BLOCK-295"
             }
         },
         {
@@ -116,7 +130,7 @@
                 "image_type": "FLAT",
                 "filter": "SDSSr_65mm",
                 "grating": "empty_1",
-                "program": "latiss_daily_calibrations",
+                "program": "BLOCK-295",
                 "reason": "daily_PTC",
                 "exp_times": [
                     0.25,
@@ -189,7 +203,7 @@
                 "image_type": "FLAT",
                 "filter": "SDSSr_65mm",
                 "grating": "empty_1",
-                "program": "latiss_daily_calibrations",
+                "program": "BLOCK-295",
                 "reason": "daily_sflat",
                 "exp_times": [
                     0.5,
