@@ -1,0 +1,115 @@
+{
+    "name": "BLOCK-271_3",
+    "program": "BLOCK-271_3",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "ATWhiteLight",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "OCPS:1",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "auxtel/make_latiss_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS_DARK_FLAT",
+                "filter": "SDSSr_65mm",
+                "grating": "empty_1",
+                "program": "BLOCK-271",
+                "reason": "BLOCK-271_3",
+                "do_ptc": true,
+                "n_bias": 2,
+                "n_dark": 2,
+                "n_flat": 65,
+                "exp_times_dark": 30,
+                "exp_times_flat": [
+                    0.52,
+                    0.52,
+                    22.51,
+                    22.51,
+                    2.57,
+                    2.57,
+                    4.02,
+                    4.02,
+                    4.28,
+                    4.28,
+                    71.02,
+                    71.02,
+                    3.32,
+                    3.32,
+                    6.28,
+                    6.28,
+                    0.26,
+                    0.26,
+                    0.99,
+                    0.99,
+                    86.01,
+                    86.01,
+                    42.62,
+                    42.62,
+                    6.69,
+                    6.69,
+                    25.58,
+                    25.58,
+                    0.23,
+                    0.23,
+                    1.05,
+                    1.05,
+                    0.59,
+                    0.59,
+                    51.62,
+                    51.62,
+                    3.11,
+                    3.11,
+                    0.29,
+                    0.29,
+                    39.99,
+                    39.99,
+                    45.43,
+                    45.43,
+                    2.12,
+                    2.12,
+                    11.89,
+                    11.89,
+                    29.06,
+                    29.06,
+                    10.47,
+                    10.47,
+                    0.33,
+                    0.33,
+                    3.77,
+                    3.77,
+                    1.27,
+                    1.27,
+                    2.92,
+                    2.92,
+                    55.02,
+                    55.02,
+                    35.19,
+                    35.19,
+                    30.98,
+                    30.98
+                ]
+            }
+        }
+    ]
+}
