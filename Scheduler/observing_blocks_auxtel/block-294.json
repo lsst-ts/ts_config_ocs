@@ -1,0 +1,24 @@
+{
+    "name": "BLOCK-294",
+    "program": "BLOCK-294",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/calibrations/run_calibration_sequence.py",
+            "standard": true,
+            "parameters": {
+                "sequence_name": "scan_g",
+                "program": "BLOCK-294"
+            }
+        },
+        {
+            "name": "auxtel/calibrations/run_calibration_sequence.py",
+            "standard": true,
+            "parameters": {
+                "sequence_name": "scan_r",
+                "program": "BLOCK-294"
+            }
+        }
+    ]
+}
+

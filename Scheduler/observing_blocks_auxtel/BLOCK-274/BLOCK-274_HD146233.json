@@ -1,0 +1,516 @@
+{
+    "name": "BLOCK-274",
+    "id": "434b36fb-e602-4e3e-8ce6-f858988d5f47",
+    "program": "BLOCK-274_HD146233",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/latiss_acquire.py",
+            "standard": false,
+            "parameters": {
+                "object_name": "HD146233",
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "acq_grating": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": -8.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": 1.0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-274",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": "empty_1",
+                "grating_sequence": "holo4_003"
+            }
+        },
+        {
+            "name": "auxtel/stop_tracking.py",
+            "standard": true,
+            "parameters": {}
+        }
+    ]
+}
