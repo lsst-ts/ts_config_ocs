@@ -215,7 +215,7 @@ instances:
             sensor_type: CSAT3B
             baud_rate: 115200
             location: AT Dome
-            # 10 samples per second.
+            # 10 samples per second so for 1 second that's 10 samples.
             num_samples: 10
       - client_class: LabJackDataClient
         # LabJack reading AuxTel camera coolant pressures
@@ -319,8 +319,8 @@ instances:
           channel_names: [AIN0, AIN1, AIN2, AIN3]
           offsets: [2.5, 2.5, 2.5, 1.81818]
           scales: [2.0, 2.0, 2.0, 22.0]
-          # 5 samples per second.
-          num_samples: r
+          # 5 samples per second so for 1 second that's 5 samples.
+          num_samples: 5
 
   - sal_index: 301
     data_clients:
