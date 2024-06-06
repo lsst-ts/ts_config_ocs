@@ -337,7 +337,7 @@ instances:
           sensor_name_dew_point: "Weather tower computed dew point"
           sensor_name_humidity: "Weather tower relative humidity"
           sensor_name_pressure: "Weather tower atmospheric pressure"
-          sensor_name_rain: ""
+          sensor_name_rain: "Weather tower rain tip count"
           sensor_name_temperature: "Weather tower air temperature"
           # See ts-ess-common docs for an explanation of the values of scale and offset.
           scale_offset_humidity: [0.025, 0]
@@ -345,5 +345,5 @@ instances:
           scale_offset_temperature: [0.025, -50]
           scale_offset_wind_direction: [0.1, 0]
           scale_offset_wind_speed: [0.0834, 0]
-          scale_rain_rate: 0.1
+          scale_rain_rate: 0.25
           location: "Weather tower"
