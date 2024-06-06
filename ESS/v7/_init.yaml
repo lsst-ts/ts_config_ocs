@@ -215,7 +215,7 @@ instances:
             sensor_type: CSAT3B
             baud_rate: 115200
             location: AT Dome
-            # 10 samples per second.
+            # 10 samples per second so for 1 second that's 10 samples.
             num_samples: 10
       - client_class: LabJackDataClient
         # LabJack reading AuxTel camera coolant pressures
@@ -319,8 +319,8 @@ instances:
           channel_names: [AIN0, AIN1, AIN2, AIN3]
           offsets: [2.5, 2.5, 2.5, 1.81818]
           scales: [2.0, 2.0, 2.0, 22.0]
-          # 5 samples per second.
-          num_samples: r
+          # 5 samples per second so for 1 second that's 5 samples.
+          num_samples: 5
 
   - sal_index: 301
     data_clients:
@@ -337,7 +337,7 @@ instances:
           sensor_name_dew_point: "Weather tower computed dew point"
           sensor_name_humidity: "Weather tower relative humidity"
           sensor_name_pressure: "Weather tower atmospheric pressure"
-          sensor_name_rain: ""
+          sensor_name_rain: "Weather tower rain tip count"
           sensor_name_temperature: "Weather tower air temperature"
           # See ts-ess-common docs for an explanation of the values of scale and offset.
           scale_offset_humidity: [0.025, 0]
@@ -345,5 +345,5 @@ instances:
           scale_offset_temperature: [0.025, -50]
           scale_offset_wind_direction: [0.1, 0]
           scale_offset_wind_speed: [0.0834, 0]
-          scale_rain_rate: 0.1
+          scale_rain_rate: 0.25
           location: "Weather tower"
