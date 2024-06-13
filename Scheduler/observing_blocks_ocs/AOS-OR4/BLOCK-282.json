@@ -1,0 +1,202 @@
+{
+    "name": "BLOCK-282",
+    "program": "BLOCK-282",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "CCCamera",
+                "cmd": "play",
+                "parameters": {
+                    "playlist": "or4_day2_aos_sweep_cam_rx",
+                    "repeat": false
+                }
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": 9.0,
+                    "el": 75.0
+                },
+                "rot_value": 45.0,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "u": -0.125
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Sweep Camera rX -450 arcsec",
+                "filter": "r_03",
+                "image_type": "FOCUS",
+                "nimages": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "u": 0.03125
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Sweep Camera rX -337.5 arcsec",
+                "filter": "r_03",
+                "image_type": "FOCUS",
+                "nimages": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "u": 0.03125
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Sweep Camera rX -225. arcsec",
+                "filter": "r_03",
+                "image_type": "FOCUS",
+                "nimages": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "u": 0.03125
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Sweep Camera rX -112.5 arcsec",
+                "filter": "r_03",
+                "image_type": "FOCUS",
+                "nimages": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "u": 0.03125
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Sweep Camera rX 0 arcsec",
+                "filter": "r_03",
+                "image_type": "FOCUS",
+                "nimages": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "u": 0.03125
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Sweep Camera rX 112.5 arcsec",
+                "filter": "r_03",
+                "image_type": "FOCUS",
+                "nimages": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "u": 0.03125
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Sweep Camera rX 225.0 arcsec",
+                "filter": "r_03",
+                "image_type": "FOCUS",
+                "nimages": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "u": 0.03125
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Sweep Camera rX 337.5 arcsec",
+                "filter": "r_03",
+                "image_type": "FOCUS",
+                "nimages": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "u": 0.03125
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "Sweep Camera rX 450. arcsec",
+                "filter": "r_03",
+                "image_type": "FOCUS",
+                "nimages": 1,
+                "program": "$program"
+            }
+        }
+    ]
+}
