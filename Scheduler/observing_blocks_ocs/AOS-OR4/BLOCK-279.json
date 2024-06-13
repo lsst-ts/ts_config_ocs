@@ -1,0 +1,289 @@
+{
+    "name": "BLOCK-279",
+    "program": "BLOCK-279",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "CCCamera",
+                "cmd": "play",
+                "parameters": {
+                    "playlist": "or4_day1_aos_sens_cam_dz",
+                    "repeat": false
+                }
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": 1.0,
+                    "el": 75.0
+                },
+                "rot_value": -85.0,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": -0.1
+            }
+        },
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 30.0,
+                "reason": "sens_cam_dz_-100um",
+                "filter": "i_06",
+                "n_triplets": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": 1.0,
+                    "el": 75.0
+                },
+                "rot_value": -63.75,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.025
+            }
+        },
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 30.0,
+                "reason": "sens_cam_dz_-75um",
+                "filter": "i_06",
+                "n_triplets": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": 1.0,
+                    "el": 75.0
+                },
+                "rot_value": -42.5,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.025
+            }
+        },
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 30.0,
+                "reason": "sens_cam_dz_-50um",
+                "filter": "i_06",
+                "n_triplets": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": 1.0,
+                    "el": 75.0
+                },
+                "rot_value": -21.25,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.025
+            }
+        },
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 30.0,
+                "reason": "sens_cam_dz_-25um",
+                "filter": "i_06",
+                "n_triplets": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": 1.0,
+                    "el": 75.0
+                },
+                "rot_value": 0.0,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.025
+            }
+        },
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 30.0,
+                "reason": "sens_cam_dz_0um",
+                "filter": "i_06",
+                "n_triplets": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": 1.0,
+                    "el": 75.0
+                },
+                "rot_value": 21.25,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.025
+            }
+        },
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 30.0,
+                "reason": "sens_cam_dz_25um",
+                "filter": "i_06",
+                "n_triplets": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": 1.0,
+                    "el": 75.0
+                },
+                "rot_value": 42.5,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.025
+            }
+        },
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 30.0,
+                "reason": "sens_cam_dz_50um",
+                "filter": "i_06",
+                "n_triplets": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": 1.0,
+                    "el": 75.0
+                },
+                "rot_value": 63.75,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.025
+            }
+        },
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 30.0,
+                "reason": "sens_cam_dz_75um",
+                "filter": "i_06",
+                "n_triplets": 1,
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": 1.0,
+                    "el": 75.0
+                },
+                "rot_value": 85.0,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/offset_camera_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": 0.025
+            }
+        },
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 30.0,
+                "reason": "sens_cam_dz_100um",
+                "filter": "i_06",
+                "n_triplets": 1,
+                "program": "$program"
+            }
+        },
+    ]
+}
