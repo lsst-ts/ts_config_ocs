@@ -1,0 +1,39 @@
+{
+    "name": "BLOCK-297",
+    "id": "10812e6f-4dfd-4046-b90c-6b7f5bc3b00b",
+    "program": "ops-rehearsal-4-218",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "CCCamera",
+                "cmd": "play",
+                "parameters": {
+                    "playlist": "ops-rehearsal-4-218_playlist_1",
+                    "repeat": false
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "DEEP_B0 218 01/1",
+                "filter": "r_03",
+                "slew_time": 20.04212653887602,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 20.66699907173088,
+                    "dec": -19.044299798624177,
+                    "rot_sky": 5.31593731023662
+                }
+            }
+        }
+    ]
+}
