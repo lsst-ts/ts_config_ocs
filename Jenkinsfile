@@ -7,6 +7,7 @@ DevelopPipeline(
     extra_packages: [
         // Dependencies
         "lsst-ts/ts_ess_common",
+        "lsst-ts/ts_ess_labjack",
         "lsst-ts/ts_simactuators",
         "lsst-ts/ts_tcpip",
         // Package tested by this package
