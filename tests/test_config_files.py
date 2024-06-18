@@ -29,14 +29,6 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def setUp(self):
         self.config_package_root = pathlib.Path(__file__).parents[1]
 
-    def test_Authorize(self):
-        self.check_standard_config_files(
-            sal_name="Authorize",
-            module_name="lsst.ts.authorize",
-            schema_name="CONFIG_SCHEMA",
-            config_package_root=self.config_package_root,
-        )
-
     def test_DIMM(self):
         self.check_standard_config_files(
             sal_name="DIMM",
