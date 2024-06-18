@@ -11,7 +11,6 @@ DevelopPipeline(
         "lsst-ts/ts_simactuators",
         "lsst-ts/ts_tcpip",
         // Package tested by this package
-        "lsst-ts/ts_authorize",
         "lsst-ts/ts_dimm",
         "lsst-ts/ts_eas",
         "lsst-ts/ts_electrometer",
