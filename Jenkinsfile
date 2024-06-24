@@ -14,6 +14,7 @@ DevelopPipeline(
         "lsst-ts/ts_dimm",
         "lsst-ts/ts_eas",
         "lsst-ts/ts_electrometer",
+        "lsst-ts/ts_epm",
         "lsst-ts/ts_ess_csc",
         "lsst-ts/ts_fiberspectrograph",
         "lsst-ts/ts_genericcamera",
