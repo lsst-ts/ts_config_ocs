@@ -1,13 +1,30 @@
 instances:
-  - sal_index: 1
+  - sal_index: 301
     data_clients:
-      # TODO DM-44580 This needs to be replaced with a real configuration.
       - client_class: SnmpDataClient
         config:
-          host: localhost
+          host: 10.18.3.21
           port: 161
           max_read_timeouts: 5
-          device_name: TestDevice
+          device_name: Schneider Electric - PM5560
           device_type: scheiderPm5xxx
+          snmp_community: public
           poll_interval: 1.0
-          location: Non-existent
+      - client_class: SnmpDataClient
+        config:
+          host: 10.18.3.31
+          port: 161
+          max_read_timeouts: 5
+          device_name: UPS01
+          device_type: xups
+          snmp_community: public
+          poll_interval: 1.0
+      - client_class: SnmpDataClient
+        config:
+          host: 10.18.3.62
+          port: 161
+          max_read_timeouts: 5
+          device_name: UPS02
+          device_type: xups
+          snmp_community: lsst_network
+          poll_interval: 1.0
