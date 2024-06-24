@@ -1,4 +1,16 @@
 instances:
+  - sal_index: 1
+    data_clients:
+      # Needed for BTS and TTS simulator instances.
+      - client_class: SnmpDataClient
+        config:
+          host: localhost
+          port: 161
+          max_read_timeouts: 5
+          device_name: TestDevice
+          device_type: scheiderPm5xxx
+          snmp_community: public
+          poll_interval: 1.0
   - sal_index: 301
     data_clients:
       - client_class: SnmpDataClient
