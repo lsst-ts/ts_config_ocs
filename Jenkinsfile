@@ -7,13 +7,14 @@ DevelopPipeline(
     extra_packages: [
         // Dependencies
         "lsst-ts/ts_ess_common",
+        "lsst-ts/ts_ess_labjack",
         "lsst-ts/ts_simactuators",
         "lsst-ts/ts_tcpip",
         // Package tested by this package
-        "lsst-ts/ts_authorize",
         "lsst-ts/ts_dimm",
         "lsst-ts/ts_eas",
         "lsst-ts/ts_electrometer",
+        "lsst-ts/ts_epm",
         "lsst-ts/ts_ess_csc",
         "lsst-ts/ts_fiberspectrograph",
         "lsst-ts/ts_genericcamera",

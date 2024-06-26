@@ -1,0 +1,1160 @@
+{
+    "name": "BLOCK-297",
+    "id": "1a67d984-cf25-41de-9314-a18e6a88f4a3",
+    "program": "ops-rehearsal-4-245",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "CCCamera",
+                "cmd": "play",
+                "parameters": {
+                    "playlist": "ops-rehearsal-4-245_playlist_60",
+                    "repeat": false
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 01/60",
+                "filter": "i_06",
+                "slew_time": 114.44413757937852,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6455864085126507,
+                    "dec": -43.91330152296657,
+                    "rot_sky": 172.352095330416
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 02/60",
+                "filter": "i_06",
+                "slew_time": 3.3825757600435202,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6407457619875149,
+                    "dec": -44.145039457098484,
+                    "rot_sky": 171.62455978273954
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 03/60",
+                "filter": "i_06",
+                "slew_time": 3.3989093965068404,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6238791694229475,
+                    "dec": -43.95943112066529,
+                    "rot_sky": 170.74478008470405
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 04/60",
+                "filter": "i_06",
+                "slew_time": 3.402252264513741,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6411013810788274,
+                    "dec": -44.15340567017543,
+                    "rot_sky": 169.79814997671306
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 05/60",
+                "filter": "i_06",
+                "slew_time": 3.2765523382543913,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6353711950198646,
+                    "dec": -44.051802239728794,
+                    "rot_sky": 168.87090946591218
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 06/60",
+                "filter": "i_06",
+                "slew_time": 3.2762099726784015,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6421257783406763,
+                    "dec": -44.07385971191754,
+                    "rot_sky": 167.9096616149037
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 07/60",
+                "filter": "i_06",
+                "slew_time": 3.356760832028165,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6316349283439963,
+                    "dec": -44.077118957218644,
+                    "rot_sky": 167.09151826369515
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 08/60",
+                "filter": "i_06",
+                "slew_time": 3.1697777887689664,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.630243225198597,
+                    "dec": -44.123117815052744,
+                    "rot_sky": 166.21879906715577
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 09/60",
+                "filter": "i_06",
+                "slew_time": 3.420246493976992,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6135305190930126,
+                    "dec": -44.01145594917159,
+                    "rot_sky": 165.38288448190076
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 10/60",
+                "filter": "i_06",
+                "slew_time": 3.191758577669539,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6131576951492086,
+                    "dec": -44.06673833003072,
+                    "rot_sky": 164.50757036547486
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 11/60",
+                "filter": "i_06",
+                "slew_time": 3.2992513324821333,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6195548027265427,
+                    "dec": -44.011639462895346,
+                    "rot_sky": 163.49977951780022
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 12/60",
+                "filter": "i_06",
+                "slew_time": 3.1458701732987433,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.617817842622696,
+                    "dec": -44.0128464714479,
+                    "rot_sky": 162.60144533842148
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 13/60",
+                "filter": "i_06",
+                "slew_time": 3.4878018575841816,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6340481900796374,
+                    "dec": -43.82627399519184,
+                    "rot_sky": 161.41976857192049
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 14/60",
+                "filter": "i_06",
+                "slew_time": 3.372694708901678,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6232797411371714,
+                    "dec": -43.86370272925805,
+                    "rot_sky": 160.62607854221517
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 15/60",
+                "filter": "i_06",
+                "slew_time": 3.427393478977909,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6377229909959432,
+                    "dec": -43.82989173655383,
+                    "rot_sky": 159.5601415621795
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 16/60",
+                "filter": "i_06",
+                "slew_time": 3.4252500498505865,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6278538481855573,
+                    "dec": -44.11231281283067,
+                    "rot_sky": 158.921450804623
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 17/60",
+                "filter": "i_06",
+                "slew_time": 3.3340234101594173,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6229602476012992,
+                    "dec": -43.958425340474435,
+                    "rot_sky": 157.94911473860083
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 18/60",
+                "filter": "i_06",
+                "slew_time": 3.3393976800092044,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6305822199461731,
+                    "dec": -43.85204489733239,
+                    "rot_sky": 156.8953261705571
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 19/60",
+                "filter": "i_06",
+                "slew_time": 3.4406477221421317,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6338664851159078,
+                    "dec": -44.13012365940606,
+                    "rot_sky": 156.13804155664764
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 20/60",
+                "filter": "i_06",
+                "slew_time": 3.3513988447636627,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6438023938653727,
+                    "dec": -44.114467005408386,
+                    "rot_sky": 155.12396980792505
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 21/60",
+                "filter": "g_01",
+                "slew_time": 120.0,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6355256541927701,
+                    "dec": -43.99823123456541,
+                    "rot_sky": -163.49564776531528
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 22/60",
+                "filter": "g_01",
+                "slew_time": 3.196852092559321,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6328507493758486,
+                    "dec": -44.02954291155361,
+                    "rot_sky": -164.36391293996218
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 23/60",
+                "filter": "g_01",
+                "slew_time": 3.258052433175248,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6376207232872193,
+                    "dec": -43.985997923846114,
+                    "rot_sky": -165.350917564667
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 24/60",
+                "filter": "g_01",
+                "slew_time": 3.4153626591093937,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6261937122171293,
+                    "dec": -44.15871598613238,
+                    "rot_sky": -166.04051898525108
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 25/60",
+                "filter": "g_01",
+                "slew_time": 3.3916567959863437,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6375777910560109,
+                    "dec": -44.07963393709914,
+                    "rot_sky": -167.11224532169177
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 26/60",
+                "filter": "g_01",
+                "slew_time": 3.327575568274575,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.630516087986435,
+                    "dec": -43.93781853488559,
+                    "rot_sky": -168.0605090758999
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 27/60",
+                "filter": "g_01",
+                "slew_time": 3.410166525493203,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6463819406220848,
+                    "dec": -44.06517034365359,
+                    "rot_sky": -169.02873877638876
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 28/60",
+                "filter": "g_01",
+                "slew_time": 3.5056490018581092,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6269756926169229,
+                    "dec": -44.17155214378127,
+                    "rot_sky": -169.68946425814443
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 29/60",
+                "filter": "g_01",
+                "slew_time": 3.5254590218285777,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6473462788434577,
+                    "dec": -44.018833773988085,
+                    "rot_sky": -170.89558112215855
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 30/60",
+                "filter": "g_01",
+                "slew_time": 3.414770010200166,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6319304724742351,
+                    "dec": -43.936432243816476,
+                    "rot_sky": -171.7267879081203
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 31/60",
+                "filter": "g_01",
+                "slew_time": 3.2595910261752046,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6371946138359275,
+                    "dec": -43.9189305871775,
+                    "rot_sky": -172.70059373160683
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 32/60",
+                "filter": "g_01",
+                "slew_time": 3.4701847769468923,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6222577406692099,
+                    "dec": -44.134320280407685,
+                    "rot_sky": -173.32262373327302
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 33/60",
+                "filter": "g_01",
+                "slew_time": 3.2957746481737904,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6248153868951237,
+                    "dec": -44.005237083350856,
+                    "rot_sky": -174.35193292538565
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 34/60",
+                "filter": "g_01",
+                "slew_time": 3.3736102868019664,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6373296741143402,
+                    "dec": -44.182827702039845,
+                    "rot_sky": -175.25089547109712
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 35/60",
+                "filter": "g_01",
+                "slew_time": 3.4943523411741984,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6133598514142922,
+                    "dec": -43.913817511263105,
+                    "rot_sky": -176.13900842882015
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 36/60",
+                "filter": "g_01",
+                "slew_time": 3.5922538518914324,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.643346648452707,
+                    "dec": -43.998022529391186,
+                    "rot_sky": -177.26387144847018
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 37/60",
+                "filter": "g_01",
+                "slew_time": 3.6195864458039746,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6116105096621992,
+                    "dec": -43.980949347508755,
+                    "rot_sky": -177.89785471947962
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 38/60",
+                "filter": "g_01",
+                "slew_time": 3.3773642456242357,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6209289987811445,
+                    "dec": -44.16710330682451,
+                    "rot_sky": -178.7583633551198
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 39/60",
+                "filter": "g_01",
+                "slew_time": 3.4652188487645277,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6245010201606213,
+                    "dec": -43.85566689394564,
+                    "rot_sky": -179.9332731891075
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 40/60",
+                "filter": "g_01",
+                "slew_time": 3.3208544905741832,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6246085606539248,
+                    "dec": -44.00074681409035,
+                    "rot_sky": 179.26048221632564
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 41/60",
+                "filter": "r_03",
+                "slew_time": 120.0,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6247477194906231,
+                    "dec": -44.04300044436936,
+                    "rot_sky": 159.38281795455822
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 42/60",
+                "filter": "r_03",
+                "slew_time": 3.2217085436715944,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6279831241645675,
+                    "dec": -44.10688200552622,
+                    "rot_sky": 158.48913077030699
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 43/60",
+                "filter": "r_03",
+                "slew_time": 3.4494365552309967,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.631510318859057,
+                    "dec": -43.81922106000161,
+                    "rot_sky": 157.32680236800482
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 44/60",
+                "filter": "r_03",
+                "slew_time": 3.2090105987681756,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6283949214175912,
+                    "dec": -43.854104601477,
+                    "rot_sky": 156.46920890214545
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 45/60",
+                "filter": "r_03",
+                "slew_time": 3.469390246842236,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6234451090475134,
+                    "dec": -44.16806399147714,
+                    "rot_sky": 155.84385403855688
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 46/60",
+                "filter": "r_03",
+                "slew_time": 3.4695123591866732,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6204863852570803,
+                    "dec": -43.86614209715441,
+                    "rot_sky": 154.7276177938541
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 47/60",
+                "filter": "r_03",
+                "slew_time": 3.486243195604648,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6300428504517527,
+                    "dec": -44.18055187322851,
+                    "rot_sky": 153.97044778636928
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 48/60",
+                "filter": "r_03",
+                "slew_time": 3.453096608429382,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6289483666909831,
+                    "dec": -43.897540922044136,
+                    "rot_sky": 152.8505659460621
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 49/60",
+                "filter": "r_03",
+                "slew_time": 3.4432596314921597,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6304786787481333,
+                    "dec": -44.16731444107517,
+                    "rot_sky": 152.1346586513618
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 50/60",
+                "filter": "r_03",
+                "slew_time": 3.390383396351283,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6328287438853963,
+                    "dec": -43.95345912502205,
+                    "rot_sky": 151.03511808683277
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 51/60",
+                "filter": "r_03",
+                "slew_time": 3.4627938615143874,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6153045939356413,
+                    "dec": -43.95078439998957,
+                    "rot_sky": 150.28464451754525
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 52/60",
+                "filter": "r_03",
+                "slew_time": 3.498463785705016,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6346380344772962,
+                    "dec": -43.86969882873712,
+                    "rot_sky": 149.13041054330023
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 53/60",
+                "filter": "r_03",
+                "slew_time": 3.45566366500778,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.619316115390705,
+                    "dec": -44.01140755151161,
+                    "rot_sky": 148.47365595820048
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 54/60",
+                "filter": "r_03",
+                "slew_time": 3.3362173478503063,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6252231532998571,
+                    "dec": -44.1587432088829,
+                    "rot_sky": 147.6246644880001
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 55/60",
+                "filter": "r_03",
+                "slew_time": 3.3328473746675074,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6285005630498205,
+                    "dec": -44.002813930437036,
+                    "rot_sky": 146.5591870233776
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 56/60",
+                "filter": "r_03",
+                "slew_time": 3.381731530613095,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6387003295769573,
+                    "dec": -43.85156460258554,
+                    "rot_sky": 145.43276895023132
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 57/60",
+                "filter": "r_03",
+                "slew_time": 3.4026709756849884,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6419577864475984,
+                    "dec": -44.06929993462627,
+                    "rot_sky": 144.66508334934554
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 58/60",
+                "filter": "r_03",
+                "slew_time": 3.2313173960933126,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6421567183862794,
+                    "dec": -43.995923007831706,
+                    "rot_sky": 143.69353212219508
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 59/60",
+                "filter": "r_03",
+                "slew_time": 3.433798602223585,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6283511506715846,
+                    "dec": -44.144472012563284,
+                    "rot_sky": 143.03257605673707
+                }
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exp_times": 30.0,
+                "note": "ELAIS_S1 245 60/60",
+                "filter": "r_03",
+                "slew_time": 3.1753990422333973,
+                "image_type": "OBJECT",
+                "nimages": 1,
+                "program": "BLOCK-297",
+                "sim": true,
+                "visit_metadata": {
+                    "ra": 0.6283420017300915,
+                    "dec": -44.102687597431874,
+                    "rot_sky": 142.08823662755077
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,274 @@
+{
+  "name": "BLOCK-296_z",
+  "id": "4399f02e-2850-4194-9b67-3ae9f00c6c4f",
+  "program": "BLOCK-296_z",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "el": 80,
+          "az": 0,
+          "mag_limit": 10.0,
+          "radius": 5,
+          "mag_range": 4.0
+        }
+      }
+    },
+    {
+      "name": "auxtel/latiss_take_sequence.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-296",
+        "reason": "SITCOM-1375-z",
+        "exposure_time_sequence": [
+          30,
+          30,
+          30
+        ],
+        "filter_sequence": [
+          "SDSSz_65mm",
+          "SDSSz_65mm",
+          "SDSSz_65mm"
+        ],
+        "grating_sequence": [
+          "empty_1",
+          "empty_1",
+          "empty_1"
+        ]
+      }
+    },
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "el": 50,
+          "az": 0,
+          "mag_limit": 10.0,
+          "radius": 5,
+          "mag_range": 4.0
+        }
+      }
+    },
+    {
+      "name": "auxtel/latiss_take_sequence.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-296",
+        "reason": "SITCOM-1375-z",
+        "exposure_time_sequence": [
+          30,
+          30,
+          30
+        ],
+        "filter_sequence": [
+          "SDSSz_65mm",
+          "SDSSz_65mm",
+          "SDSSz_65mm"
+        ],
+        "grating_sequence": [
+          "empty_1",
+          "empty_1",
+          "empty_1"
+        ]
+      }
+    },
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "el": 40,
+          "az": 0,
+          "mag_limit": 10.0,
+          "radius": 5,
+          "mag_range": 4.0
+        }
+      }
+    },
+    {
+      "name": "auxtel/latiss_take_sequence.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-296",
+        "reason": "SITCOM-1375-z",
+        "exposure_time_sequence": [
+          30,
+          30,
+          30
+        ],
+        "filter_sequence": [
+          "SDSSz_65mm",
+          "SDSSz_65mm",
+          "SDSSz_65mm"
+        ],
+        "grating_sequence": [
+          "empty_1",
+          "empty_1",
+          "empty_1"
+        ]
+      }
+    },
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "el": 30,
+          "az": 0,
+          "mag_limit": 10.0,
+          "radius": 5,
+          "mag_range": 4.0
+        }
+      }
+    },
+    {
+      "name": "auxtel/latiss_take_sequence.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-296",
+        "reason": "SITCOM-1375-z",
+        "exposure_time_sequence": [
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "filter_sequence": [
+          "SDSSz_65mm",
+          "SDSSz_65mm",
+          "SDSSz_65mm",
+          "SDSSz_65mm",
+          "SDSSz_65mm",
+          "SDSSz_65mm"
+        ],
+        "grating_sequence": [
+          "empty_1",
+          "empty_1",
+          "empty_1",
+          "empty_1",
+          "empty_1",
+          "empty_1"
+        ]
+      }
+    },
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "el": 40,
+          "az": 0,
+          "mag_limit": 10.0,
+          "radius": 5,
+          "mag_range": 4.0
+        }
+      }
+    },
+    {
+      "name": "auxtel/latiss_take_sequence.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-296",
+        "reason": "SITCOM-1375-z",
+        "exposure_time_sequence": [
+          30,
+          30,
+          30
+        ],
+        "filter_sequence": [
+          "SDSSz_65mm",
+          "SDSSz_65mm",
+          "SDSSz_65mm"
+        ],
+        "grating_sequence": [
+          "empty_1",
+          "empty_1",
+          "empty_1"
+        ]
+      }
+    },
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "el": 50,
+          "az": 0,
+          "mag_limit": 10.0,
+          "radius": 5,
+          "mag_range": 4.0
+        }
+      }
+    },
+    {
+      "name": "auxtel/latiss_take_sequence.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-296",
+        "reason": "SITCOM-1375-z",
+        "exposure_time_sequence": [
+          30,
+          30,
+          30
+        ],
+        "filter_sequence": [
+          "SDSSz_65mm",
+          "SDSSz_65mm",
+          "SDSSz_65mm"
+        ],
+        "grating_sequence": [
+          "empty_1",
+          "empty_1",
+          "empty_1"
+        ]
+      }
+    },
+    {
+      "name": "auxtel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "find_target": {
+          "el": 80,
+          "az": 0,
+          "mag_limit": 10.0,
+          "radius": 5,
+          "mag_range": 4.0
+        }
+      }
+    },
+    {
+      "name": "auxtel/latiss_take_sequence.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-296",
+        "reason": "SITCOM-1375-z",
+        "exposure_time_sequence": [
+          30,
+          30,
+          30
+        ],
+        "filter_sequence": [
+          "SDSSz_65mm",
+          "SDSSz_65mm",
+          "SDSSz_65mm"
+        ],
+        "grating_sequence": [
+          "empty_1",
+          "empty_1",
+          "empty_1"
+        ]
+      }
+    },
+    {
+      "name": "auxtel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
+    }
+  ]
+}
