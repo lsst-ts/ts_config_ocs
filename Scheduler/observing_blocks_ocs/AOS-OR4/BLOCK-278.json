@@ -1,195 +1,66 @@
 {
-    "name": "BLOCK-278",
-    "program": "BLOCK-278",
-    "constraints": [],
-    "scripts": [
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "CCCamera",
-                "cmd": "play",
-                "parameters": {
-                    "playlist": "or4_day1_aos_sweep_cam_dy",
-                    "repeat": false
-                }
-            }
-        },
-        {
-            "name": "maintel/offset_camera_hexapod.py",
-            "standard": true,
-            "parameters": {
-                "y": -7000.0
-            }
-        },
-        {
-            "name": "maintel/take_image_comcam.py",
-            "standard": true,
-            "parameters": {
-                "exp_times": 30.0,
-                "note": "Sweep Camera dY -7000um",
-                "filter": "i_06",
-                "image_type": "FOCUS",
-                "nimages": 1,
-                "program": "$program"
-            }
-        },
-        {
-            "name": "maintel/offset_camera_hexapod.py",
-            "standard": true,
-            "parameters": {
-                "y": 1750.0
-            }
-        },
-        {
-            "name": "maintel/take_image_comcam.py",
-            "standard": true,
-            "parameters": {
-                "exp_times": 30.0,
-                "note": "Sweep Camera dY -5250um",
-                "filter": "i_06",
-                "image_type": "FOCUS",
-                "nimages": 1,
-                "program": "$program"
-            }
-        },
-        {
-            "name": "maintel/offset_camera_hexapod.py",
-            "standard": true,
-            "parameters": {
-                "y": 1750.0
-            }
-        },
-        {
-            "name": "maintel/take_image_comcam.py",
-            "standard": true,
-            "parameters": {
-                "exp_times": 30.0,
-                "note": "Sweep Camera dY -3500um",
-                "filter": "i_06",
-                "image_type": "FOCUS",
-                "nimages": 1,
-                "program": "$program"
-            }
-        },
-        {
-            "name": "maintel/offset_camera_hexapod.py",
-            "standard": true,
-            "parameters": {
-                "y": 1750.0
-            }
-        },
-        {
-            "name": "maintel/take_image_comcam.py",
-            "standard": true,
-            "parameters": {
-                "exp_times": 30.0,
-                "note": "Sweep Camera dY -1750um",
-                "filter": "i_06",
-                "image_type": "FOCUS",
-                "nimages": 1,
-                "program": "$program"
-            }
-        },
-        {
-            "name": "maintel/offset_camera_hexapod.py",
-            "standard": true,
-            "parameters": {
-                "y": 1750.0
-            }
-        },
-        {
-            "name": "maintel/take_image_comcam.py",
-            "standard": true,
-            "parameters": {
-                "exp_times": 30.0,
-                "note": "Sweep Camera dY 0um",
-                "filter": "i_06",
-                "image_type": "FOCUS",
-                "nimages": 1,
-                "program": "$program"
-            }
-        },
-        {
-            "name": "maintel/offset_camera_hexapod.py",
-            "standard": true,
-            "parameters": {
-                "y": 1750.0
-            }
-        },
-        {
-            "name": "maintel/take_image_comcam.py",
-            "standard": true,
-            "parameters": {
-                "exp_times": 30.0,
-                "note": "Sweep Camera dY 1750um",
-                "filter": "i_06",
-                "image_type": "FOCUS",
-                "nimages": 1,
-                "program": "$program"
-            }
-        },
-        {
-            "name": "maintel/offset_camera_hexapod.py",
-            "standard": true,
-            "parameters": {
-                "y": 1750.0
-            }
-        },
-        {
-            "name": "maintel/take_image_comcam.py",
-            "standard": true,
-            "parameters": {
-                "exp_times": 30.0,
-                "note": "Sweep Camera dY 3500um",
-                "filter": "i_06",
-                "image_type": "FOCUS",
-                "nimages": 1,
-                "program": "$program"
-            }
-        },
-        {
-            "name": "maintel/offset_camera_hexapod.py",
-            "standard": true,
-            "parameters": {
-                "y": 1750.0
-            }
-        },
-        {
-            "name": "maintel/take_image_comcam.py",
-            "standard": true,
-            "parameters": {
-                "exp_times": 30.0,
-                "note": "Sweep Camera dY 5250um",
-                "filter": "i_06",
-                "image_type": "FOCUS",
-                "nimages": 1,
-                "program": "$program"
-            }
-        },
-        {
-            "name": "maintel/offset_camera_hexapod.py",
-            "standard": true,
-            "parameters": {
-                "y": 1750.0
-            }
-        },
-        {
-            "name": "maintel/take_image_comcam.py",
-            "standard": true,
-            "parameters": {
-                "exp_times": 30.0,
-                "note": "Sweep Camera dY 7000um",
-                "filter": "i_06",
-                "image_type": "FOCUS",
-                "nimages": 1,
-                "program": "$program"
-            }
-        },
-        {
-            "name": "maintel/stop_tracking.py",
-            "standard": true,
-            "parameters": {}
+  "name": "BLOCK-278",
+  "id": "caf80b18-76ce-46cc-a5ff-1f16dc1abbd1",
+  "program": "BLOCK-278",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CCCamera",
+        "cmd": "play",
+        "parameters": {
+          "playlist": "or4_day1_aos_sweep_cam_dy",
+          "repeat": false
         }
-    ]
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "MTHexapod:1",
+        "cmd": "move"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "MTHexapod:2",
+        "cmd": "move"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": 9.0,
+          "el": 75.0
+        },
+        "rot_value": -45.0,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/focus_sweep_comcam.py",
+      "standard": true,
+      "parameters": {
+        "axis": "y",
+        "focus_window": 14000,
+        "n_steps": 9,
+        "program": "$program",
+        "hexapod": "Camera",
+        "sim": true
+      }
+    },
+    {
+      "name": "maintel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
+    }
+  ],
+  "configuration_schema": ""
 }
