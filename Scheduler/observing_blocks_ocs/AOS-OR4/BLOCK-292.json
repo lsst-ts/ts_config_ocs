@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-292",
-  "id": "58080321-4150-427c-9d5a-dcb750a3e999",
+  "id": "a2a2ca91-8f6e-49ce-acbf-6bcc653be562",
   "program": "BLOCK-292",
   "constraints": [],
   "scripts": [
@@ -14,6 +14,22 @@
           "playlist": "or4_day2_aos_sweep_cam_dz_v2",
           "repeat": false
         }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "MTHexapod:1",
+        "cmd": "move"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "MTHexapod:2",
+        "cmd": "move"
       }
     },
     {
@@ -36,6 +52,7 @@
         "focus_window": 300,
         "focus_step": 30,
         "program": "$program",
+        "hexapod": "Camera",
         "sim": true
       }
     },
