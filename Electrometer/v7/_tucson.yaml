@@ -1,0 +1,128 @@
+# Testing of electrometer with new converter
+# Created on 2023-01-04
+electrometer_config:
+  - sal_index: 1 
+    mode: 1
+    range: -1.0
+    tcpip:
+      hostname: 10.10.10.3
+      port: 4001
+      timeout: 2
+    s3_instance: "tuc"
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_name_service: "http://comcam-mcm.tu.lsst.org"
+    filters:
+      median: false
+      general: false
+      average: false
+    sensor:
+      brand: "Hamamatsu"
+      model: "S2281"
+      serial_number: "S22818D091"
+    accessories:
+      vsource: false
+      temperature: false
+    location: "ComCam"
+    integration_time: 0.0001
+    electrometer_type: "Keysight"
+    electrometer_model: "A"
+  - sal_index: 3
+    mode: 1
+    range: -1.0
+    tcpip:
+      hostname: 'lan2laserElectrometer2.tu.lsst.org'
+      port: 4001
+      timeout: 2
+    s3_instance: "tuc"
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_name_service: "http://comcam-mcm.tu.lsst.org"
+    filters:
+      median: false
+      general: false
+      average: false
+    sensor:
+      brand: "Hamamatsu"
+      model: "S2281"
+      serial_number: "S22818D091"
+    accessories:
+      vsource: false
+      temperature: false
+    location: "ComCam"
+    integration_time: 0.0001
+    electrometer_type: "Keithley"
+    electrometer_model: "6517b"
+  - sal_index: 2
+    mode: 1
+    range: -1.0
+    tcpip:
+      hostname: 'lan2laserElectrometer4.tu.lsst.org'
+      port: 4001
+      timeout: 2
+    s3_instance: "tuc"
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_name_service: "http://comcam-mcm.tu.lsst.org"
+    filters:
+      median: false
+      general: false
+      average: false
+    sensor:
+      brand: "Hamamatsu"
+      model: "S2281"
+      serial_number: "S22818D091"
+    accessories:
+      vsource: false
+      temperature: false
+    location: "ComCam"
+    integration_time: 0.0001
+    electrometer_type: "Keithley"
+    electrometer_model: "6517b"
+  - sal_index: 4
+    mode: 1
+    range: -1.0
+    tcpip:
+      hostname: 'lan2laserElectrometer3.tu.lsst.org'
+      port: 4001
+      timeout: 2
+    s3_instance: "tuc"
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_name_service: "http://comcam-mcm.tu.lsst.org"
+    filters:
+      median: false
+      general: false
+      average: false
+    sensor:
+      brand: "Hamamatsu"
+      model: "S2281"
+      serial_number: "S22818D091"
+    accessories:
+      vsource: false
+      temperature: false
+    location: "ComCam"
+    integration_time: 0.0001
+    electrometer_type: "Keithley"
+    electrometer_model: "6517b"
+  - sal_index: 5
+    mode: 1
+    range: -1.0
+    tcpip:
+      hostname: 'lantoserialconverterforelectrometer.tu.lsst.org'
+      port: 4001
+      timeout: 2
+    s3_instance: "tuc"
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_name_service: "http://comcam-mcm.tu.lsst.org"
+    filters:
+      median: false
+      general: false
+      average: false
+    sensor:
+      brand: "Hamamatsu"
+      model: "S2281"
+      serial_number: "S22818D091"
+    accessories:
+      vsource: false
+      temperature: false
+    location: "ComCam"
+    integration_time: 0.0001
+    electrometer_type: "Keithley"
+    electrometer_model: "6517b"
