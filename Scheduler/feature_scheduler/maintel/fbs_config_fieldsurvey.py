@@ -33,13 +33,25 @@ def get_scheduler():
         Feature based scheduler.
     """
 
-    make_scheduler = MakeFieldSurveyScheduler()
+    make_scheduler = MakeFieldSurveyScheduler(ntiers=2)
 
+    tier = 0
+    # program must be the name of program in json BLOCK to be used
+    program = "COMCAM_IMAGING"
     field_names = [
         "EDFS_A", 
         "EDFS_B",
     ]
-    make_scheduler.add_field_surveys(field_names)
+    make_scheduler.add_field_surveys(tier, program, field_names)
+    
+    tier = 1
+    # program must be the name of program in json BLOCK to be used
+    program = "COMCAM_IMAGING"
+    field_names = [
+        "DEEP_A0", 
+        "DEEP_B0",
+    ]
+    make_scheduler.add_field_surveys(tier, program, field_names)
     
     return make_scheduler.get_scheduler()
 
