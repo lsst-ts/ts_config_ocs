@@ -16,6 +16,22 @@
             }
         },
         {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:1",
+                "cmd": "move"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "move"
+            }
+        },
+        {
             "name": "maintel/track_target.py",
             "standard": true,
             "parameters": {
@@ -284,6 +300,11 @@
                 "n_triplets": 1,
                 "program": "$program"
             }
+        },
+        {
+            "name": "maintel/stop_tracking.py",
+            "standard": true,
+            "parameters": {}
         }
     ]
 }
