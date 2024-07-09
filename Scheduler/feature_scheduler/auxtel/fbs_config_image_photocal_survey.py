@@ -129,7 +129,7 @@ def get_scheduler():
             target_name="HD146233",
             survey_name="spec_bright",
             ra=Angle("16:15:37", unit=units.hourangle),
-            dec=Angle("-08:22:10.0", unit=units.deg),
+            dec=Angle("-08:22:20.8", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["default"],
             filters=["r"],
