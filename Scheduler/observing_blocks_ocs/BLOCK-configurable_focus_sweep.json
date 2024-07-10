@@ -1,0 +1,91 @@
+{
+  "name": "BLOCK-configurable_focus_sweep",
+  "program": "focus-sweep",
+  "constraints": [],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-configurable_focus_sweep configuration\ndescription: Configuration for BLOCK-configurable_focus_sweep.\ntype: object\nproperties:\n  az:\n    description: Azimuth.\n    type: number\n    default: 0\n  el:\n    description: Elevation.\n    type: number\n    default: 0\n  rot:\n    description: Rotation.\n    type: number\n    default: 0\n  axis:\n    description: Focus sweep axis.\n    type: string\n    default: ''\n  focus_window:\n    description: Sweep window.\n    type: number\n    default: 0\n  n_steps:\n    description: Sweep steps.\n    type: number\n    default: 9\n",
+  "_schema_comment": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "BLOCK-configurable_focus_sweep configuration",
+    "description": "Configuration for BLOCK-configurable_focus_sweep.",
+    "type": "object",
+    "properties": {
+      "az": {
+        "description": "Azimuth.",
+        "type": "number",
+        "default": 0
+      },
+      "el": {
+        "description": "Elevation.",
+        "type": "number",
+        "default": 0
+      },
+      "rot": {
+        "description": "Rotation.",
+        "type": "number",
+        "default": 0
+      },
+      "axis": {
+        "description": "Focus sweep axis.",
+        "type": "string",
+        "default": ""
+      },
+      "focus_window": {
+        "description": "Sweep window.",
+        "type": "number",
+        "default": 0
+      },
+      "n_steps": {
+        "description": "Sweep steps.",
+        "type": "number",
+        "default": 9
+      }
+    }
+  },
+  "scripts": [
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "MTHexapod:1",
+        "cmd": "move"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "MTHexapod:2",
+        "cmd": "move"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$az",
+          "el": "$el"
+        },
+        "rot_value": "$rot",
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/focus_sweep_comcam.py",
+      "standard": true,
+      "parameters": {
+        "axis": "$axis",
+        "focus_window": "$focus_window",
+        "n_steps": "$n_steps",
+        "program": "$program",
+        "hexapod": "Camera",
+        "sim": true
+      }
+    },
+    {
+      "name": "maintel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
+    }
+  ]
+}
