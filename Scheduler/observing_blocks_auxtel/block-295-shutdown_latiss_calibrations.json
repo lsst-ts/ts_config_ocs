@@ -1,0 +1,24 @@
+{
+    "name": "shutdown_latiss_calibrations",
+    "program": "shutdown_latiss_calibrations",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/calibrations/power_off_atcalsys.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "ATWhiteLight",
+                        "STANDBY"
+                    ]
+                ]
+            }
+        }
+    ]
+}

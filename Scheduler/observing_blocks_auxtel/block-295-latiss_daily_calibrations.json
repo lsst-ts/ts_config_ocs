@@ -4,54 +4,6 @@
     "constraints": [],
     "scripts": [
         {
-            "name": "set_summary_state.py",
-            "standard": true,
-            "parameters": {
-                "data": [
-                    [
-                        "ATWhiteLight",
-                        "ENABLED"
-                    ]
-                ]
-            }
-        },
-        {
-            "name": "set_summary_state.py",
-            "standard": true,
-            "parameters": {
-                "data": [
-                    [
-                        "ATMonochromator",
-                        "ENABLED"
-                    ]
-                ]
-            }
-        },
-        {
-            "name": "set_summary_state.py",
-            "standard": true,
-            "parameters": {
-                "data": [
-                    [
-                        "OCPS:1",
-                        "ENABLED"
-                    ]
-                ]
-            }
-        },
-        {
-            "name": "auxtel/calibrations/power_on_atcalsys.py",
-            "standard": true,
-            "parameters": {
-                "use_atmonochromator": true
-            }
-        },
-        {
-            "name": "auxtel/prepare_for/flat.py",
-            "standard": true,
-            "parameters": {}
-        },
-        {
             "name": "auxtel/make_latiss_calibrations.py",
             "standard": false,
             "parameters": {
@@ -193,46 +145,6 @@
                     5.25,
                     46.44,
                     46.44
-                ]
-            }
-        },
-        {
-            "name": "auxtel/take_image_latiss.py",
-            "standard": true,
-            "parameters": {
-                "image_type": "FLAT",
-                "filter": "SDSSr_65mm",
-                "grating": "empty_1",
-                "program": "BLOCK-295",
-                "reason": "daily_sflat",
-                "exp_times": [
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    0.5,
-                    12.8,
-                    12.8,
-                    12.8,
-                    12.8,
-                    12.8
-                ]
-            }
-        },
-        {
-            "name": "auxtel/calibrations/power_off_atcalsys.py",
-            "standard": true,
-            "parameters": {}
-        },
-        {
-            "name": "set_summary_state.py",
-            "standard": true,
-            "parameters": {
-                "data": [
-                    [
-                        "ATWhiteLight",
-                        "STANDBY"
-                    ]
                 ]
             }
         }

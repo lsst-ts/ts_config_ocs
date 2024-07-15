@@ -1,0 +1,55 @@
+{
+    "name": "setup_latiss_calibrations",
+    "program": "setup_latiss_calibrations",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "ATWhiteLight",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "ATMonochromator",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "OCPS:1",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "auxtel/calibrations/power_on_atcalsys.py",
+            "standard": true,
+            "parameters": {
+                "use_atmonochromator": true
+            }
+        },
+        {
+            "name": "auxtel/prepare_for/flat.py",
+            "standard": true,
+            "parameters": {}
+        }
+    ]
+}
