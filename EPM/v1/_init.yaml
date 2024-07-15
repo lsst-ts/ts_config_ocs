@@ -15,7 +15,7 @@ instances:
     data_clients:
       - client_class: SnmpDataClient
         config:
-          host: 10.18.3.21
+          host: power-dp01.cp.lsst.org
           port: 161
           max_read_timeouts: 5
           device_name: Schneider Electric - PM5560
@@ -24,7 +24,7 @@ instances:
           poll_interval: 1.0
       - client_class: SnmpDataClient
         config:
-          host: 10.18.3.31
+          host: power-ups.cp.lsst.org
           port: 161
           max_read_timeouts: 5
           device_name: UPS01
@@ -33,7 +33,7 @@ instances:
           poll_interval: 1.0
       - client_class: SnmpDataClient
         config:
-          host: 10.18.3.62
+          host: aux-ups01.cp.lsst.org
           port: 161
           max_read_timeouts: 5
           device_name: UPS02
