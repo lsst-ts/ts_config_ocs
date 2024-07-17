@@ -1,0 +1,54 @@
+# Configuration for photodiode electrometer attached to comcam cart.
+# Created 2023-01-04
+
+electrometer_config:
+  - sal_index: 1
+    mode: CURR
+    range: 2.0e-08
+    tcpip:
+      hostname: 'electrometer-photodiode01.cp.lsst.org'
+      port: 5000
+      timeout: 2
+    s3_instance: "cp"
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_name_service: "http://ccs.lsst.org"
+    filters:
+      median: false
+      general: false
+      average: false
+    sensor:
+      brand: "Hamamatsu"
+      model: "S2281"
+      serial_number: "S22818D091"
+    accessories:
+      vsource: false
+      temperature: false
+    location: "ComCam"
+    integration_time: 0.1
+    electrometer_type: "Keithley"
+    electrometer_model: "6517b"
+  - sal_index: 201
+    mode: CURR
+    range: 2.0e-08
+    tcpip:
+      hostname: 'auxtel-electrometer.cp.lsst.org'
+      port: 4001
+      timeout: 2
+    s3_instance: "cp"
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_name_service: "http://ccs.lsst.org"
+    filters:
+      median: false
+      general: false
+      average: false
+    sensor:
+      brand: "Hamamatsu"
+      model: "S2281"
+      serial_number: ""
+    accessories:
+      vsource: false
+      temperature: false
+    location: "AuxTel"
+    integration_time: 0.1
+    electrometer_type: "Keithley"
+    electrometer_model: "6517b"

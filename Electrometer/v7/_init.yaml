@@ -1,6 +1,6 @@
 # init configuration
 electrometer_config:
-  - mode: 1
+  - mode: CURR
     fits_files_path: "~/develop/electrometerFitsFiles"
     range: -0.01
     integration_time: 0.01
@@ -10,3 +10,4 @@ electrometer_config:
     timeout: 2
     vsource_attached: false
     temperature_attached: false
+
