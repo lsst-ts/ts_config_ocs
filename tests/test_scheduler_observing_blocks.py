@@ -25,7 +25,10 @@ from string import Template
 
 import pytest
 import yaml
-from lsst.ts import externalscripts, observing, standardscripts
+try:
+    from lsst.ts import externalscripts, observing, standardscripts
+except ImportError:
+    pytest.skip(allow_module_level=True)
 from lsst.ts.salobj import DefaultingValidator
 
 scheduler_config_path = pathlib.Path(__file__).parents[1] / "Scheduler"
