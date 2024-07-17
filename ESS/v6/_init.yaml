@@ -160,22 +160,22 @@ instances:
               PowerSupply
               EnclosureOut
               EnclosureMid
-    - sal_index: 108
-      data_clients:
-        - client_class: ControllerDataClient
-          # CBP temperature sensors
-          config:
-            host: cbp-control.cp.lsst.org 
-            devices:
-            - name: CBP-ESS01
-              device_type: Serial
-              serial_port: 5001 #will be connected via RS-232 to a moxa device 
-              sensor_type: Temperature
-              location: >-
-                Photodiode
-                PrimaryMirror
-                MaskChanger
-                ElectronicsCabinet
+  - sal_index: 108
+    data_clients:
+      - client_class: ControllerDataClient
+        # CBP temperature sensors
+        config:
+          host: cbp-control.cp.lsst.org 
+          devices:
+          - name: CBP-ESS01
+            device_type: Serial
+            serial_port: 5001 #will be connected via RS-232 to a moxa device 
+            sensor_type: Temperature
+            location: >-
+              Photodiode
+              PrimaryMirror
+              MaskChanger
+              ElectronicsCabinet
 
 
   - sal_index: 201
