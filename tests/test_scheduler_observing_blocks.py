@@ -25,6 +25,7 @@ from string import Template
 
 import pytest
 import yaml
+
 try:
     from lsst.ts import externalscripts, observing, standardscripts
 except ImportError:
