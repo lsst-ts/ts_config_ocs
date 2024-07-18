@@ -1,0 +1,13 @@
+# init configuration
+electrometer_config:
+  - mode: CURR
+    fits_files_path: "~/develop/electrometerFitsFiles"
+    range: -0.01
+    integration_time: 0.01
+    median_filter_active: false
+    filter_active: false
+    avg_filter_active: false
+    timeout: 2
+    vsource_attached: false
+    temperature_attached: false
+
