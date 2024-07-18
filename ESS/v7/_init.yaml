@@ -8,8 +8,8 @@ instances:
           devices:
           - name: MTCameraAssembly-ESS01
             channels: 8
-            device_type: FTDI
-            ftdi_id: AK071D5X
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
             sensor_type: Temperature
             location: >-
               MT camera hexapod strut 7,
