@@ -10,7 +10,7 @@ instances:
       port: 5000
       timeout: 2
     s3_instance: "cp"
-    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
     image_name_service: "http://ccs.lsst.org"
     filters:
       median: false
@@ -35,7 +35,7 @@ instances:
       port: 4001
       timeout: 2
     s3_instance: "cp"
-    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
     image_name_service: "http://ccs.lsst.org"
     filters:
       median: false
