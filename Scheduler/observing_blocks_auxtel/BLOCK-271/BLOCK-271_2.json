@@ -4,112 +4,39 @@
     "constraints": [],
     "scripts": [
         {
-            "name": "set_summary_state.py",
+            "name": "auxtel/take_image_latiss.py",
             "standard": true,
             "parameters": {
-                "data": [
-                    [
-                        "ATWhiteLight",
-                        "ENABLED"
-                    ]
-                ]
+              "program": "BLOCK-271",
+              "reason": "BLOCK-271_2",
+              "nimages": 3,
+              "filter": "empty_1",
+              "grating": "empty_1",
+              "image_type": "BIAS"
             }
         },
         {
-            "name": "set_summary_state.py",
+            "name": "auxtel/take_image_latiss.py",
             "standard": true,
             "parameters": {
-                "data": [
-                    [
-                        "OCPS:1",
-                        "ENABLED"
-                    ]
-                ]
+              "program": "BLOCK-271",
+              "reason": "BLOCK-271_2",
+              "nimages": 3,
+              "exp_times": 30,
+              "filter": "empty_1",
+              "grating": "empty_1",
+              "image_type": "DARK"
             }
         },
         {
-            "name": "auxtel/make_latiss_calibrations.py",
-            "standard": false,
+            "name": "auxtel/calibrations/run_calibration_sequence.py",
+            "standard": true,
             "parameters": {
-                "script_mode": "BIAS_DARK_FLAT",
-                "filter": "SDSSr_65mm",
-                "grating": "empty_1",
+                "sequence_name": "ptc_2",
                 "program": "BLOCK-271",
-                "reason": "BLOCK-271_2",
-                "do_ptc": true,
-                "n_bias": 2,
-                "n_dark": 2,
-                "n_flat": 65,
-                "exp_times_dark": 30,
-                "exp_times_flat": [
-                    15.35,
-                    15.35,
-                    97.73,
-                    97.73,
-                    1.75,
-                    1.75,
-                    8.64,
-                    8.64,
-                    37.51,
-                    37.51,
-                    0.63,
-                    0.63,
-                    19.81,
-                    19.81,
-                    7.14,
-                    7.14,
-                    5.19,
-                    5.19,
-                    0.24,
-                    0.24,
-                    17.44,
-                    17.44,
-                    1.45,
-                    1.45,
-                    9.82,
-                    9.82,
-                    5.89,
-                    5.89,
-                    9.21,
-                    9.21,
-                    11.16,
-                    11.16,
-                    16.36,
-                    16.36,
-                    0.28,
-                    0.28,
-                    1.99,
-                    1.99,
-                    48.43,
-                    48.43,
-                    58.65,
-                    58.65,
-                    91.68,
-                    91.68,
-                    5.53,
-                    5.53,
-                    0.72,
-                    0.72,
-                    0.81,
-                    0.81,
-                    0.40,
-                    0.40,
-                    66.63,
-                    66.63,
-                    1.19,
-                    1.19,
-                    0.56,
-                    0.56,
-                    4.56,
-                    4.56,
-                    1.36,
-                    1.36,
-                    2.41,
-                    2.41,
-                    2.26,
-                    2.26
-                ]
+                "reason": "BLOCK-271_2"
             }
         }
     ]
 }
+

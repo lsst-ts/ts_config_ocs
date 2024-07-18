@@ -1,31 +1,11 @@
 # Testing of electrometer with new converter
 # Created on 2023-01-04
 electrometer_config:
-  - sal_index: 1 
+  - sal_index: 1
+    host: 'stubbsElectrometer.tu.lsst.org'
     mode: 1
     range: -1.0
     integration_time: 0.0001
-    median_filter_active: false
-    filter_active: false
-    avg_filter_active: false
-    timeout: 2
-    tcp_port:  4001
-    host: 10.10.10.3 
-    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
-    image_service_url: "http://comcam-mcm.tu.lsst.org"
-    s3_instance: "tuc"
-    brand: "Keysight"
-    model_id: "A"
-    location: "ComCam"
-    sensor_brand: "Hamamatsu"
-    sensor_model: "S2281"
-    sensor_serial: "S22818D091"
-    vsource_attached: false
-    temperature_attached: false
-  - sal_index: 3
-    mode: 1
-    range: -1.0 
-    integration_time: 0.0001 
     median_filter_active: false
     filter_active: false
     avg_filter_active: false
@@ -42,6 +22,7 @@ electrometer_config:
     sensor_serial: "S22818D091"
     vsource_attached: false
     temperature_attached: false
+
   - sal_index: 2
     host: '140.252.147.106'
     mode: 1
@@ -62,28 +43,32 @@ electrometer_config:
     sensor_model: "S2281"
     sensor_serial: "S22818D091"
     vsource_attached: false
+    temperature_attached: false
+
+  - sal_index: 3
+    host: '140.252.147.108'
+    mode: 1
+    range: -1.0
+    integration_time: 0.0001
+    median_filter_active: false
+    filter_active: false
+    avg_filter_active: false
+    timeout: 2
+    tcp_port: 4001
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_service_url: "http://comcam-mcm.tu.lsst.org"
+    s3_instance: "tuc"
+    brand: "Keithley"
+    model_id: "6517b"
+    location: "ComCam"
+    sensor_brand: "Hamamatsu"
+    sensor_model: "S2281"
+    sensor_serial: "S22818D091"
+    vsource_attached: false
+    temperature_attached: false
+
   - sal_index: 4
-    mode: 1
-    range: -1.0
-    integration_time: 0.0001
-    median_filter_active: false
-    filter_active: false
-    avg_filter_active: false
-    timeout: 2
-    tcp_port:  4001
     host: 'lan2laserElectrometer3.tu.lsst.org'
-    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
-    image_service_url: "http://comcam-mcm.tu.lsst.org"
-    s3_instance: "tuc"
-    brand: "Keithley"
-    model_id: "6517b"
-    location: "ComCam"
-    sensor_brand: "Hamamatsu"
-    sensor_model: "S2281"
-    sensor_serial: "S22818D091"
-    vsource_attached: false
-    temperature_attached: false
-  - sal_index: 5
     mode: 1
     range: -1.0
     integration_time: 0.0001
@@ -92,7 +77,6 @@ electrometer_config:
     avg_filter_active: false
     timeout: 2
     tcp_port:  4001
-    host: 'lantoserialconverterforelectrometer.tu.lsst.org'
     fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
     image_service_url: "http://comcam-mcm.tu.lsst.org"
     s3_instance: "tuc"
@@ -104,6 +88,29 @@ electrometer_config:
     sensor_serial: "S22818D091"
     vsource_attached: false
     temperature_attached: false
+
+  - sal_index: 5
+    host: 'lantoserialconverterforelectrometer.tu.lsst.org'
+    mode: 1
+    range: -1.0
+    integration_time: 0.0001
+    median_filter_active: false
+    filter_active: false
+    avg_filter_active: false
+    timeout: 2
+    tcp_port: 4001
+    fits_files_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_service_url: "http://comcam-mcm.tu.lsst.org"
+    s3_instance: "tuc"
+    brand: "Keithley"
+    model_id: "6517b"
+    location: "ComCam"
+    sensor_brand: "Hamamatsu"
+    sensor_model: "S2281"
+    sensor_serial: "S22818D091"
+    vsource_attached: false
+    temperature_attached: false
+
   - sal_index: 6
     host: 'cpbElectrometer.tu.lsst.org'
     mode: 1
