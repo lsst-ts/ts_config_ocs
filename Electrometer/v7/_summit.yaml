@@ -1,9 +1,9 @@
 # Configuration for photodiode electrometer attached to comcam cart.
 # Created 2023-01-04
 
-electrometer_config:
+instances:
   - sal_index: 1
-    mode: CURR
+    mode: 1
     range: 2.0e-08
     tcpip:
       hostname: 'electrometer-photodiode01.cp.lsst.org'
@@ -28,7 +28,7 @@ electrometer_config:
     electrometer_type: "Keithley"
     electrometer_model: "6517b"
   - sal_index: 201
-    mode: CURR
+    mode: 1
     range: 2.0e-08
     tcpip:
       hostname: 'auxtel-electrometer.cp.lsst.org'
