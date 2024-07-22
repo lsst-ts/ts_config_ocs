@@ -142,12 +142,11 @@ instances:
         config:
           host: laser-rpi.cp.lsst.org
           devices:
-# Commented out because the humidity sensor is under repair.
-#          - name: Laser-ESS01
-#            device_type: Serial
-#            serial_port: /dev/serial1 #this needs to be confirmed.
-#            sensor_type: HX85A
-#            location: Laser Enclosure
+          - name: Laser-ESS01
+            device_type: Serial
+            serial_port: /dev/ttyUSB1
+            sensor_type: HX85A
+            location: Laser Enclosure
           - name: Laser-ESS02
             channels: 8
             device_type: Serial
