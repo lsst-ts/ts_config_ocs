@@ -47,7 +47,7 @@ def get_scheduler():
     )
 
     image_nexp = 1  # number of exposures
-    image_exptime = 120.0  # total exposure time in seconds
+    image_exptime = 200.0  # total exposure time in seconds
     image_visit_gap = 12 * 60.0
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
 
@@ -59,8 +59,7 @@ def get_scheduler():
         (0.0, 24.0),
     ]
     image_ha_limit = [
-        (23.5, 24.0),
-        (0.0, 1.5),
+        (0.5, 1.5),
     ]
 
     spec_target_list = [
