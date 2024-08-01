@@ -119,7 +119,7 @@ instances:
       - client_class: ControllerDataClient
         # M2 temperature sensor readout box.
         config:
-          host: 139.229.178.196
+          host: m2-ess01.cp.lsst.org
           devices:
           - name: M2-ESS01
             channels: 8
