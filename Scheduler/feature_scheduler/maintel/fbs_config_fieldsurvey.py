@@ -21,6 +21,8 @@
 
 from lsst.ts.fbs.utils.maintel.make_fieldsurvey_scheduler import MakeFieldSurveyScheduler
 from lsst.ts.fbs.utils.maintel.basis_functions import get_basis_functions_field_survey
+from lsst.ts.fbs.utils.maintel.detailers import get_detailers_field_survey
+from lsst.ts.fbs.utils.data.field_survey_centers import get_sv_fields
 
 def get_scheduler():
     """Construct feature based scheduler.
@@ -35,20 +37,22 @@ def get_scheduler():
 
     nside = 32
 
-    make_scheduler = MakeFieldSurveyScheduler(nside=nside, ntiers=2)
+    make_scheduler = MakeFieldSurveyScheduler(nside=nside, ntiers=1)
 
-    nvis = [20, 20, 20]
-    sequence = "gri"
-    exptime = 30 # exposure time in seconds
-    nexp = 1 # 1 --> single 30 second exposure
+    nvisits = {'u': 20, 'g': 20, 'r': 20, 'i': 20, 'z': 20, 'y': 20}
+    sequence = "ugrizy"
+    # exposure time in seconds
+    exptimes = {'u': 38, 'g': 30, 'r': 30, 'i': 30, 'z': 30, 'y': 30}
+    # 1 --> single 30 second exposure
+    nexps = {'u': 1, 'g': 1, 'r': 1, 'i': 1, 'z': 1, 'y': 1}
     
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
 
     field_survey_kwargs = {
-        "nvis": nvis,
+        "nvisits": nvisits,
         "sequence": sequence,
-        "exptime": exptime,
-        "nexp": nexp,
+        "exptimes": exptimes,
+        "nexps": nexps,
     }
 
     # This might move to be part of a separate function
@@ -57,8 +61,24 @@ def get_scheduler():
         wind_speed_maximum=wind_speed_maximum,
     )
 
+    detailers = get_detailers_field_survey()
+
     program = "COMCAM_IMAGING"
 
+    #import pdb; pdb.set_trace()
+
+    tier = 0
+    field_names = get_sv_fields().keys()
+    make_scheduler.add_field_surveys(
+        tier,
+        program,
+        field_names,
+        basis_functions=basis_functions,
+        detailers=detailers,
+        **field_survey_kwargs,
+    )
+
+    """
     tier = 0
     # program must be the name of program in json BLOCK to be used
     field_names = [
@@ -66,13 +86,14 @@ def get_scheduler():
         "EDFS_B",
     ]
     make_scheduler.add_field_surveys(
-        tier, 
-        program, 
-        field_names, 
-        basis_functions=basis_functions, 
+        tier,
+        program,
+        field_names,
+        basis_functions=basis_functions,
+        detailers=detailers,
         **field_survey_kwargs,
     )
-    
+
     tier = 1
     # program must be the name of program in json BLOCK to be used
     field_names = [
@@ -84,9 +105,10 @@ def get_scheduler():
         program, 
         field_names, 
         basis_functions=basis_functions, 
+        detailers=detailers,
         **field_survey_kwargs,
     )
-    
+    """
     return make_scheduler.get_scheduler()
 
 if __name__ == "config":
