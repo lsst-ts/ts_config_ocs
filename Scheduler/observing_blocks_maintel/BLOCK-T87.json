@@ -1,36 +1,9 @@
 {
   "name": "BLOCK-T87",
-  "id": "c74ae90c-1fd2-4e0d-af38-8567b5b5f93e",
+  "id": "d41972b5-4c3d-43e8-9f90-b9bc29f7d037",
   "program": "BLOCK-T87",
   "constraints": [],
   "scripts": [
-    {
-      "name": "maintel/enable_hexapod_compensation_mode.py",
-      "standard": true,
-      "parameters": {
-        "components": [
-          "CameraHexapod"
-        ],
-        "program": "BLOCK-T87",
-        "reason": "CamHex_Workout"
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0,
-          "y": 0,
-          "z": 0,
-          "u": 0,
-          "v": 0,
-          "w": 0
-        }
-      }
-    },
     {
       "name": "maintel/offset_camera_hexapod.py",
       "standard": true,
@@ -50,20 +23,6 @@
       "standard": true,
       "parameters": {
         "z": 3000
-      }
-    },
-    {
-      "name": "sleep.py",
-      "standard": true,
-      "parameters": {
-        "sleep_for": 30
-      }
-    },
-    {
-      "name": "maintel/offset_camera_hexapod.py",
-      "standard": true,
-      "parameters": {
-        "z": -1500
       }
     },
     {
