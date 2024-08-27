@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T87",
-  "id": "d41972b5-4c3d-43e8-9f90-b9bc29f7d037",
+  "id": "b07a2321-d0e7-49d1-90e7-283d179845b7",
   "program": "BLOCK-T87",
   "constraints": [],
   "scripts": [
@@ -8,7 +8,18 @@
       "name": "maintel/offset_camera_hexapod.py",
       "standard": true,
       "parameters": {
-        "z": -1500
+        "z": -1500,
+        "ignore": [
+          "MTMount",
+          "MTPtg",
+          "MTAOS",
+          "MTM1M3",
+          "MTM2",
+          "MTHexapod:2",
+          "MTRotator",
+          "MTDome",
+          "MTDomeTrajectory"
+        ]
       }
     },
     {
@@ -22,7 +33,18 @@
       "name": "maintel/offset_camera_hexapod.py",
       "standard": true,
       "parameters": {
-        "z": 3000
+        "z": 3000,
+        "ignore": [
+          "MTMount",
+          "MTPtg",
+          "MTAOS",
+          "MTM1M3",
+          "MTM2",
+          "MTHexapod:2",
+          "MTRotator",
+          "MTDome",
+          "MTDomeTrajectory"
+        ]
       }
     },
     {
@@ -36,7 +58,18 @@
       "name": "maintel/offset_camera_hexapod.py",
       "standard": true,
       "parameters": {
-        "z": -1500
+        "z": -1500,
+        "ignore": [
+          "MTMount",
+          "MTPtg",
+          "MTAOS",
+          "MTM1M3",
+          "MTM2",
+          "MTHexapod:2",
+          "MTRotator",
+          "MTDome",
+          "MTDomeTrajectory"
+        ]
       }
     },
     {
