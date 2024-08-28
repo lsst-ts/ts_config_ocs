@@ -214,6 +214,11 @@ rules:
   - index: 1
   - index: 2
   - index: 3
+- classname: PowerOutage
+  configs:
+  - name: EPM:301
+    min_num_zeros_schneider: 3
+    generator_startup_time: 600
 escalation:
   - alarms:
     - ATCameraDewar
