@@ -63,7 +63,8 @@ def get_scheduler():
 
     detailers = get_detailers_field_survey()
 
-    program = "COMCAM_IMAGING"
+    # Specify the json BLOCK to be used
+    program = "MAINTEL_COMCAM_IMAGING"
 
     #import pdb; pdb.set_trace()
 
