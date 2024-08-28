@@ -37,6 +37,7 @@ rules:
   - name: Electrometer:101
   - name: Electrometer:102
   - name: Electrometer:202
+  - name: EPM:301
   - name: FiberSpectrograph:3
   - name: GCHeaderService:101
   - name: GCHeaderService:102
@@ -111,6 +112,7 @@ rules:
   - name: Electrometer:101
   - name: Electrometer:102
   - name: Electrometer:202
+  - name: EPM:301
   - name: FiberSpectrograph:3
   - name: GCHeaderService:101
   - name: GCHeaderService:102
@@ -212,6 +214,11 @@ rules:
   - index: 1
   - index: 2
   - index: 3
+- classname: PowerOutage
+  configs:
+  - name: EPM:301
+    min_num_zeros_schneider: 3
+    generator_startup_time: 600
 escalation:
   - alarms:
     - ATCameraDewar
