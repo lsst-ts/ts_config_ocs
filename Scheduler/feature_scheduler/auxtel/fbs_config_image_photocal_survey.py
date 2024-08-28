@@ -47,7 +47,7 @@ def get_scheduler():
     )
 
     image_nexp = 1  # number of exposures
-    image_exptime = 200.0  # total exposure time in seconds
+    image_exptime = 80.0  # total exposure time in seconds
     image_visit_gap = 12 * 60.0
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
 
@@ -59,7 +59,8 @@ def get_scheduler():
         (0.0, 24.0),
     ]
     image_ha_limit = [
-        (0.5, 1.5),
+        (23.0, 24.0),
+        (0.0, 0.5),
     ]
 
     spec_target_list = [
@@ -88,25 +89,12 @@ def get_scheduler():
             nexp=1,
         ),
         Target(
-            target_name="HD38666",
-            survey_name="spec_bright",
-            ra=Angle("05:46:00", unit=units.hourangle),
-            dec=Angle("-32:18:23.2", unit=units.deg),
-            hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["spec_boost"],
-            filters=["r"],
-            visit_gap=10.0,
-            exptime=420.0,
-            nexp=1,
-            moon_distance=20.0,
-        ),
-        Target(
             target_name="HD73495",
             survey_name="spec_bright",
             ra=Angle("08:37:52", unit=units.hourangle),
             dec=Angle("-26:15:18.0", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["default"],
+            reward_value=reward_values["spec_backup"],
             filters=["r"],
             visit_gap=10.0,
             exptime=420.0,
@@ -118,7 +106,7 @@ def get_scheduler():
             ra=Angle("12:53:15", unit=units.hourangle),
             dec=Angle("-18:31:20.0", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["spec_boost"],
+            reward_value=reward_values["spec_backup"],
             filters=["r"],
             visit_gap=10.0,
             exptime=420.0,
@@ -130,7 +118,7 @@ def get_scheduler():
             ra=Angle("16:15:37", unit=units.hourangle),
             dec=Angle("-08:22:20.8", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["default"],
+            reward_value=reward_values["spec_backup"],
             filters=["r"],
             visit_gap=10.0,
             exptime=420.0,
@@ -138,10 +126,10 @@ def get_scheduler():
             moon_distance=20.0,
         ),
         Target(
-            target_name="HD177517",
-            survey_name="spec_bright",
-            ra=Angle("19:05:41.18", unit=units.hourangle),
-            dec=Angle("-15:39:37.51", unit=units.deg),
+            target_name="HD160617",
+            survey_name="spec",
+            ra=Angle("17:42:49.20", unit=units.hourangle),
+            dec=Angle("-40:19:24.15", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["spec_boost"],
             filters=["r"],
@@ -151,16 +139,17 @@ def get_scheduler():
             moon_distance=20.0,
         ),
         Target(
-            target_name="HD202025",
+            target_name="HD160760",
             survey_name="spec",
-            ra=Angle("21:14:01.78", unit=units.hourangle),
-            dec=Angle("-22:12:43.64", unit=units.deg),
+            ra=Angle("18:17:44", unit=units.hourangle),
+            dec=Angle("-61:42:31.6", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["default"],
+            reward_value=reward_values["spec_backup"],
             filters=["r"],
             visit_gap=10.0,
             exptime=420.0,
             nexp=1,
+            moon_distance=20.0,
         ),
         Target(
             target_name="HD205905",
@@ -168,7 +157,7 @@ def get_scheduler():
             ra=Angle("21:39:10", unit=units.hourangle),
             dec=Angle("-27:18:23.7", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
-            reward_value=reward_values["spec_boost"],
+            reward_value=reward_values["spec_backup"],
             filters=["r"],
             visit_gap=10.0,
             exptime=420.0,
