@@ -67,13 +67,17 @@ def get_scheduler():
     detailers = get_detailers_field_survey()
 
     # Specify the json BLOCK to be used
-    program = "MAINTEL_COMCAM_IMAGING"
+    json_block = "MAINTEL_COMCAM_IMAGING"
+    observation_reason = "science"
+    science_program = "field survey"
 
     tier = 0
     field_names = get_sv_fields().keys()
     make_scheduler.add_field_surveys(
         tier,
-        program,
+        json_block,
+        observation_reason,
+        science_program,
         field_names,
         basis_functions=basis_functions,
         detailers=detailers,
@@ -82,7 +86,6 @@ def get_scheduler():
 
     """
     tier = 0
-    # program must be the name of program in json BLOCK to be used
     field_names = [
         "EDFS_A",
         "EDFS_B",
@@ -97,7 +100,6 @@ def get_scheduler():
     )
 
     tier = 1
-    # program must be the name of program in json BLOCK to be used
     field_names = [
         "DEEP_A0",
         "DEEP_B0",
