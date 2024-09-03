@@ -66,7 +66,7 @@ def get_scheduler():
     spec_target_list = [
         Target(
             target_name="HD185975",
-            survey_name="spec",
+            survey_name="BLOCK-311",
             ra=Angle("20:28:18", unit=units.hourangle),
             dec=Angle("-87:28:19.9", unit=units.deg),
             hour_angle_limit=spec_ha_limit_pole,
@@ -78,7 +78,7 @@ def get_scheduler():
         ),
         Target(
             target_name="HD2811",
-            survey_name="spec",
+            survey_name="BLOCK-311",
             ra=Angle("00:31:18", unit=units.hourangle),
             dec=Angle("-43:36:23.0", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
@@ -90,7 +90,7 @@ def get_scheduler():
         ),
         Target(
             target_name="HD73495",
-            survey_name="spec_bright",
+            survey_name="BLOCK-312",
             ra=Angle("08:37:52", unit=units.hourangle),
             dec=Angle("-26:15:18.0", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
@@ -102,7 +102,7 @@ def get_scheduler():
         ),
         Target(
             target_name="HD111980",
-            survey_name="spec",
+            survey_name="BLOCK-311",
             ra=Angle("12:53:15", unit=units.hourangle),
             dec=Angle("-18:31:20.0", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
@@ -114,7 +114,7 @@ def get_scheduler():
         ),
         Target(
             target_name="HD146233",
-            survey_name="spec_bright",
+            survey_name="BLOCK-312",
             ra=Angle("16:15:37", unit=units.hourangle),
             dec=Angle("-08:22:20.8", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
@@ -127,7 +127,7 @@ def get_scheduler():
         ),
         Target(
             target_name="HD160617",
-            survey_name="spec",
+            survey_name="BLOCK-311",
             ra=Angle("17:42:49.20", unit=units.hourangle),
             dec=Angle("-40:19:24.15", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
@@ -140,7 +140,7 @@ def get_scheduler():
         ),
         Target(
             target_name="HD160760",
-            survey_name="spec",
+            survey_name="BLOCK-311",
             ra=Angle("18:17:44", unit=units.hourangle),
             dec=Angle("-61:42:31.6", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
@@ -153,7 +153,7 @@ def get_scheduler():
         ),
         Target(
             target_name="HD205905",
-            survey_name="spec_bright",
+            survey_name="BLOCK-312",
             ra=Angle("21:39:10", unit=units.hourangle),
             dec=Angle("-27:18:23.7", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
