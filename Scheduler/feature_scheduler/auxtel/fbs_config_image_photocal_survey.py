@@ -50,6 +50,7 @@ def get_scheduler():
     image_exptime = 80.0  # total exposure time in seconds
     image_visit_gap = 12 * 60.0
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
+    avoid_wind = False
 
     spec_ha_limit = [
         (18.0, 24.0),
@@ -194,6 +195,7 @@ def get_scheduler():
         spec_detailers=spec_detailers,
         image_detailers=image_detailers,
         cwfs_block_name="BLOCK-305",
+        avoid_wind=avoid_wind,
     )
 
 
