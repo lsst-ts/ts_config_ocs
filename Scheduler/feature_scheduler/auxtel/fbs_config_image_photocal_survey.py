@@ -51,6 +51,7 @@ def get_scheduler():
     image_visit_gap = 12 * 60.0
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
     avoid_wind = False
+    cwfs_time_gap = 120.0
 
     spec_ha_limit = [
         (18.0, 24.0),
@@ -196,6 +197,7 @@ def get_scheduler():
         image_detailers=image_detailers,
         cwfs_block_name="BLOCK-305",
         avoid_wind=avoid_wind,
+        cwfs_time_gap=cwfs_time_gap,
     )
 
 
