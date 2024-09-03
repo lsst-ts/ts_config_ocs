@@ -168,7 +168,7 @@ def get_scheduler():
 
     image_tiles = [
         Tiles(
-            survey_name="AUXTEL_PHOTO_IMAGING",
+            survey_name="BLOCK-306",
             hour_angle_limit=image_ha_limit,
             reward_value=reward_values["default"],
             filters=["g"],
@@ -193,6 +193,7 @@ def get_scheduler():
         image_tiles=image_tiles,
         spec_detailers=spec_detailers,
         image_detailers=image_detailers,
+        cwfs_block_name="BLOCK-305",
     )
 
 
