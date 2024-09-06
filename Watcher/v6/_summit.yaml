@@ -219,7 +219,7 @@ rules:
   - name: EPM:301
     min_num_zeros_schneider: 3
     generator_startup_time: 600
-- classname: MTM2TotalForceMoment
+- classname: MTTotalForceMoment
   configs:
   - fx: 115.0
     fy: 17600.0
@@ -228,18 +228,18 @@ rules:
     my: 40.0
     mz: 300.0
     poll_interval: 1.0
-- classname: MTM2ForceError
+- classname: MTForceError
   configs:
   - force_error_axial: 5.0
     force_error_tangent: 10.0
     poll_interval: 1.0
-- classname: MTM2MirrorTemperature
+- classname: MTMirrorTemperature
   configs:
   - ring: 25.0
     intake: 25.0
     gradient: 10.0
     poll_interval: 1.0
-- classname: MTM2TangentLinkTemperature
+- classname: MTTangentLinkTemperature
   configs:
   - buffer: 10.0
     timeout: 3600.0
