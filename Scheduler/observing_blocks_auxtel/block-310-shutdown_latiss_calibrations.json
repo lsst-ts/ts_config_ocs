@@ -1,0 +1,48 @@
+{
+    "name": "shutdown_latiss_calibrations",
+    "program": "BLOCK-310",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/calibrations/power_off_atcalsys.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "ATWhiteLight",
+                        "STANDBY"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "Electrometer:201",
+                        "STANDBY"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "FiberSpectrograph:3",
+                        "STANDBY"
+                    ]
+                ]
+            }
+        }
+    ]
+}

@@ -22,6 +22,7 @@
 import numpy as np
 import rubin_scheduler.scheduler.basis_functions as bf
 import rubin_scheduler.scheduler.detailers as detailers
+from lsst.ts.fbs.utils.auxtel import generate_cwfs_survey
 from lsst.ts.scheduler.utils.test.feature_scheduler_sim import MJD_START
 from rubin_scheduler.scheduler.model_observatory import ModelObservatory
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
@@ -90,7 +91,7 @@ def gen_greedy_surveys(
         "seed": seed,
         "camera": "LSST",
         "dither": True,
-        "survey_name": "TEST_ANYTIME_SURVEY",
+        "survey_name": "BLOCK-303",
     }
 
     surveys = []
@@ -163,5 +164,11 @@ if __name__ == "config":
         footprints.footprints[i, :] = footprints_hp[key]
 
     greedy = gen_greedy_surveys(nside, nexp=1, footprints=footprints, seed=seed)
-    surveys = [greedy]
+    cwfs = generate_cwfs_survey(
+        nside=nside,
+        time_gap_min=120,
+        wind_speed_maximum=12,
+        cwfs_block_name="BLOCK-304",
+    )
+    surveys = [[cwfs], greedy]
     scheduler = CoreScheduler(surveys, nside=nside)

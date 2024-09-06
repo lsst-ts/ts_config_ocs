@@ -20,6 +20,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import pathlib
+import re
 import subprocess
 from string import Template
 
@@ -33,6 +34,10 @@ except ImportError:
 from lsst.ts.salobj import DefaultingValidator
 
 scheduler_config_path = pathlib.Path(__file__).parents[1] / "Scheduler"
+
+block_regex = re.compile(
+    r"(?P<block_test_case>BLOCK-T)?(?P<block>BLOCK-)?(?P<id>[0-9]*)"
+)
 
 
 def get_scripts_schema(
@@ -81,18 +86,43 @@ def test_blocks_valid_json(instance: list[str]) -> None:
         for script in observing_block.scripts:
             scripts.add((script.name, script.standard))
 
-    scripts_schema = get_scripts_schema(scripts)
-
     assert len(programs) == len(set(programs))
+
+    bad_names = list()
+    for program in programs:
+        match = block_regex.match(program)
+        if match.span()[1] == 0:
+            bad_names.append(program)
+            continue
+        try:
+            abs(int(match.groupdict()["id"]))
+        except ValueError:
+            bad_names.append(program)
+
+    assert (
+        len(bad_names) == 0
+    ), f"Bad program names: {', '.join(bad_names)}. Must be of the format BLOCK-000 or BLOCK-T000."
+
+    scripts_schema = get_scripts_schema(scripts)
 
     for block in observing_blocks:
         for script in block.scripts:
             script_config_validator = scripts_schema[(script.name, script.standard)]
             if script_config_validator is None:
                 continue
+
+            block_configuration = dict()
+            if block.configuration_schema:
+                block_configuration_validator = DefaultingValidator(
+                    schema=yaml.safe_load(block.configuration_schema)
+                )
+                block_configuration = block_configuration_validator.validate(None)
+
+            script_configuration_dict = get_driver_overrides()
+            script_configuration_dict.update(block_configuration)
             script_configuration = Template(
                 script.get_script_configuration()
-            ).substitute(**get_driver_overrides())
+            ).substitute(**script_configuration_dict)
             script.parameters = yaml.safe_load(script_configuration)
             try:
                 script_config_validator.validate(script.parameters)
