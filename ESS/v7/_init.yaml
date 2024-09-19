@@ -180,7 +180,19 @@ instances:
             PrimaryMirror
             MaskChanger
             ElectronicsCabinet
-
+  - sal_index: 109
+    data_clients:
+      - client_class: SiglentSSA3000xSpectrumAnalyzerDataClient
+        config:
+          host: spectrum-analyzer02.cp.lsst.org
+          port: 5025
+          connect_timeout: 5
+          read_timeout: 60
+          location: Clean room
+          sensor_name: SSA3000X
+          poll_interval: 1.0
+          freq_stop_value: 30.0
+          freq_stop_unit: MHz
   - sal_index: 201
     data_clients:
       - client_class: ControllerDataClient

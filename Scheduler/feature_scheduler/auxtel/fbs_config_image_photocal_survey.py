@@ -166,6 +166,19 @@ def get_scheduler():
             nexp=1,
             moon_distance=20.0,
         ),
+        Target(
+            target_name="PN Hen 2-113",
+            survey_name="BLOCK-273",
+            ra=Angle("14:59:53.4", unit=units.hourangle),
+            dec=Angle("-54:18:07", unit=units.deg),
+            hour_angle_limit=spec_ha_limit,
+            reward_value=50,
+            filters=["r"],
+            visit_gap=24 * 60.0,
+            exptime=520.0,
+            nexp=1,
+            moon_distance=20.0,
+        ),
     ]
 
     image_tiles = [
