@@ -117,7 +117,10 @@ def gen_greedy_surveys(
             (bf.StrictFilterBasisFunction(filtername=filtername), stayfilter_weight),
             (
                 bf.ZenithShadowMaskBasisFunction(
-                    nside=nside, shadow_minutes=shadow_minutes, max_alt=max_alt
+                    nside=nside,
+                    shadow_minutes=shadow_minutes,
+                    max_alt=max_alt,
+                    min_alt=30.0,
                 ),
                 0,
             ),

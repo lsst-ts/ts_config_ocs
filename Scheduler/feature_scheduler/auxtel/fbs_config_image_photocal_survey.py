@@ -61,7 +61,7 @@ def get_scheduler():
         (0.0, 24.0),
     ]
     image_ha_limit = [
-        (23.0, 24.0),
+        (22.5, 24.0),
         (0.0, 0.5),
     ]
 
@@ -75,7 +75,7 @@ def get_scheduler():
             reward_value=reward_values["spec_pole"],
             filters=["r"],
             visit_gap=105.0,
-            exptime=360.0,
+            exptime=420.0,
             nexp=1,
         ),
         Target(
@@ -98,8 +98,8 @@ def get_scheduler():
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["spec_backup"],
             filters=["r"],
-            visit_gap=10.0,
-            exptime=420.0,
+            visit_gap=6.0,
+            exptime=270.0,
             nexp=1,
         ),
         Target(
@@ -122,8 +122,8 @@ def get_scheduler():
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["spec_backup"],
             filters=["r"],
-            visit_gap=10.0,
-            exptime=420.0,
+            visit_gap=6.0,
+            exptime=270.0,
             nexp=1,
             moon_distance=20.0,
         ),
@@ -161,21 +161,8 @@ def get_scheduler():
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["spec_backup"],
             filters=["r"],
-            visit_gap=10.0,
-            exptime=420.0,
-            nexp=1,
-            moon_distance=20.0,
-        ),
-        Target(
-            target_name="PN Hen 2-113",
-            survey_name="BLOCK-273",
-            ra=Angle("14:59:53.4", unit=units.hourangle),
-            dec=Angle("-54:18:07", unit=units.deg),
-            hour_angle_limit=spec_ha_limit,
-            reward_value=50,
-            filters=["r"],
-            visit_gap=24 * 60.0,
-            exptime=520.0,
+            visit_gap=6.0,
+            exptime=270.0,
             nexp=1,
             moon_distance=20.0,
         ),
