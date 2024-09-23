@@ -90,6 +90,7 @@ maintel:
   driver_configuration:
     parameters:
       night_boundary: -10.0
+      cwfs_block_name: BLOCK-304
     stop_tracking_observing_script_name: auxtel/stop_tracking.py
   feature_scheduler_driver_configuration:
     observation_database_name: /home/saluser/rubin_sim_data/fbs_observation_database_maintel.sql
