@@ -1,0 +1,274 @@
+{
+  "name": "BLOCK-T86",
+  "id": "e2d5973f-da45-498f-9d3b-62830b5984d3",
+  "program": "BLOCK-T86",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 20
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 30
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 40
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 50
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 60
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 70
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 80
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 70
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 60
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 50
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 40
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 30
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 20
+        }
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1518",
+        "note": "LUT_elevation"
+      }
+    },
+    {
+      "name": "maintel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T86 configuration\ndescription: Configuration for BLOCK-T86.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  run_azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 20\n"
+}
