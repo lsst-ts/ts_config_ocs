@@ -1,28 +1,4 @@
 s3instance: cp
-auxtel:
-  telemetry:
-    efd_name: summit_efd
-    streams:
-      - name: seeing
-        efd_table: lsst.sal.DIMM.logevent_dimmMeasurement
-        efd_columns:
-          - fwhm
-        efd_delta_time: 300.0
-        fill_value: null
-      - name: wind_speed
-        efd_table: lsst.sal.ESS.airFlow
-        efd_columns:
-          - speed
-        efd_delta_time: 300.0
-        fill_value: 0.0
-        csc_index: 301
-      - name: wind_direction
-        efd_table: lsst.sal.ESS.airFlow
-        efd_columns:
-          - direction
-        efd_delta_time: 300.0
-        fill_value: 0.0
-        csc_index: 301
 maintel:
   driver_type: feature_scheduler
   mode: ADVANCE
