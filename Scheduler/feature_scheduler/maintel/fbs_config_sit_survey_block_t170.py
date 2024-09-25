@@ -95,13 +95,9 @@ def gen_greedy_surveys(
 
     surveys = []
     detailer = detailers.CameraRotDetailer(
-<<<<<<< HEAD
         min_rot=np.min(camera_rot_limits),
         max_rot=np.max(camera_rot_limits),
         per_night=False,
-=======
-        min_rot=np.min(camera_rot_limits), max_rot=np.max(camera_rot_limits)
->>>>>>> eac1340 (fixup! MTScheduler: add BLOCK-T170 for soak tests with rotator.)
     )
 
     for filtername in filters:
@@ -173,8 +169,4 @@ if __name__ == "config":
 
     greedy = gen_greedy_surveys(nside, nexp=1, footprints=footprints, seed=seed)
     surveys = [greedy]
-<<<<<<< HEAD
     scheduler = CoreScheduler(surveys, nside=nside)
-=======
-    scheduler = CoreScheduler(surveys, nside=nside)
->>>>>>> eac1340 (fixup! MTScheduler: add BLOCK-T170 for soak tests with rotator.)
