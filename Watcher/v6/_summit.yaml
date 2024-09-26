@@ -230,8 +230,8 @@ rules:
     poll_interval: 1.0
 - classname: MTForceError
   configs:
-  - force_error_axial: 5.0
-    force_error_tangent: 10.0
+  - force_error_axial: 10.0
+    force_error_tangent: 25.0
     poll_interval: 1.0
 - classname: MTMirrorTemperature
   configs:
