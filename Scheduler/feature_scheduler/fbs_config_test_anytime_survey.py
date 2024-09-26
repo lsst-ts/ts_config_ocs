@@ -116,7 +116,7 @@ def gen_greedy_surveys(
             ),
             (bf.StrictFilterBasisFunction(filtername=filtername), stayfilter_weight),
             (
-                bf.ZenithShadowMaskBasisFunction(
+                bf.AltAzShadowMaskBasisFunction(
                     nside=nside,
                     shadow_minutes=shadow_minutes,
                     max_alt=max_alt,
@@ -160,9 +160,7 @@ if __name__ == "config":
     sky = SkyAreaGenerator(nside=nside)
     footprints_hp, footprints_labels = sky.return_maps()
 
-    footprints = Footprint(
-        conditions.mjd_start, sun_ra_start=conditions.sun_ra_start, nside=nside
-    )
+    footprints = Footprint(MJD_START, sun_ra_start=conditions.sun_ra, nside=nside)
     for i, key in enumerate(footprints_hp.dtype.names):
         footprints.footprints[i, :] = footprints_hp[key]
 
