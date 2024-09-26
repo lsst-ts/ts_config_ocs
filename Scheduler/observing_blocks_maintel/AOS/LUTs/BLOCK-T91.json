@@ -1,0 +1,212 @@
+{
+  "name": "BLOCK-T91",
+  "id": "896f0664-8c8b-4f50-bb4c-53ca17ba5b34",
+  "program": "BLOCK-T91",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": "$run_elevation"
+        },
+        "rot_value": -75.0,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": "$run_elevation"
+        },
+        "rot_value": -63.75,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": "$run_elevation"
+        },
+        "rot_value": -42.5,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": "$run_elevation"
+        },
+        "rot_value": -21.25,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": "$run_elevation"
+        },
+        "rot_value": 0.0,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": "$run_elevation"
+        },
+        "rot_value": 21.25,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": "$run_elevation"
+        },
+        "rot_value": 42.5,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": "$run_elevation"
+        },
+        "rot_value": 63.75,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": "$run_elevation"
+        },
+        "rot_value": 75.0,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_triplet_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle"
+      }
+    },
+    {
+      "name": "maintel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T91 configuration\ndescription: Configuration for BLOCK-T91.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  run_azimuth:\n    description: Azimuth to use for the rotator angle sweep.\n    type: number\n    default: 20\n  run_elevation:\n    description: Elevation to use for the rotator angle sweep.\n    type: number\n    default: 80\n"
+}
