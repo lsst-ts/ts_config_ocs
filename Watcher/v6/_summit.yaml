@@ -244,6 +244,184 @@ rules:
   - buffer: 10.0
     timeout: 3600.0
     poll_interval: 1.0
+- classname: Hvac
+  configs:
+  - rule_name: Dynalene
+    callback_names: [tel_dynaleneP05]
+    individual_limits:
+    - item_name: dynCH01supTS05
+      limit_type: upper
+      limit_value: 30.0
+      severity: CRITICAL
+    - item_name: dynCH01supPS11
+      limit_type: lower
+      limit_value: 180.0
+      severity: CRITICAL
+    - item_name: dynCH01supFS01
+      limit_type: lower
+      limit_value: 10.0
+      time_span: 30.0
+      severity: CRITICAL
+    - item_name: dynCH01LS01
+      limit_type: lower
+      limit_value: 25.0
+      severity: CRITICAL
+    - item_name: dynCH02supTS07
+      limit_type: upper
+      limit_value: 30.0
+      severity: CRITICAL
+    - item_name: dynCH02supPS13
+      limit_type: lower
+      limit_value: 180.0
+      severity: CRITICAL
+    - item_name: dynCH02supFS02
+      limit_type: lower
+      limit_value: 10.0
+      time_span: 30.0
+      severity: CRITICAL
+    - item_name: dynCH02LS02
+      limit_type: lower
+      limit_value: 25.0
+      severity: CRITICAL
+    - item_name: dynTMAsupTS01
+      limit_type: upper
+      limit_value: 30.0
+      severity: CRITICAL
+    - item_name: dynTMAsupPS01
+      limit_type: lower
+      limit_value: 180.0
+      severity: CRITICAL
+    - item_name: dynTMAsupFS03
+      limit_type: lower
+      limit_value: 10.0
+      time_span: 30.0
+      severity: CRITICAL
+    - item_name: dynTMAretPS02
+      limit_type: lower
+      limit_value: 180.0
+      severity: CRITICAL
+    - item_name: dynTMAretPS02
+      limit_type: upper
+      limit_value: 30.0
+      severity: CRITICAL
+    - item_name: dynTAsupPS03
+      limit_type: lower
+      limit_value: 10.0
+      time_span: 30.0
+      severity: CRITICAL
+    - item_name: dynTAsupFS04
+      limit_type: lower
+      limit_value: 10.0
+      time_span: 30.0
+      severity: CRITICAL
+    - item_name: dynTAretPS04
+      limit_type: lower
+      limit_value: 180.0
+      severity: CRITICAL
+  - rule_name: Chiller01
+    callback_names: [tel_chiller01P01]
+    individual_limits:
+    - item_name: temperaturaAguaImpulsionEvaporador
+      limit_type: upper
+      limit_value: 30.0
+      severity: SERIOUS
+    - item_name: presionBajaCto1
+      limit_type: lower
+      limit_value: 180.0
+      severity: SERIOUS
+    - item_name: presionBajaCto2
+      limit_type: lower
+      limit_value: 180.0
+      severity: SERIOUS
+    - item_name: comandoEncendido
+      limit_type: lower
+      limit_value: 1
+      severity: CRITICAL
+    difference_limits:
+    - first_item_name: setpointActivo
+      second_item_name: temperaturaAguaImpulsionEvaporador
+      limit_type: lower
+      limit_value: 5.0
+      severity: WARNING
+    - first_item_name: setpointActivo
+      second_item_name: temperaturaAguaImpulsionEvaporador
+      limit_type: upper
+      limit_value: 5.0
+      severity: WARNING
+  - rule_name: Chiller02
+    callback_names: [tel_chiller02P01]
+    individual_limits:
+    - item_name: temperaturaAguaImpulsionEvaporador
+      limit_type: upper
+      limit_value: 30.0
+      severity: SERIOUS
+    - item_name: presionBajaCto1
+      limit_type: lower
+      limit_value: 180.0
+      severity: SERIOUS
+    - item_name: presionBajaCto2
+      limit_type: lower
+      limit_value: 180.0
+      severity: SERIOUS
+    - item_name: comandoEncendido
+      limit_type: lower
+      limit_value: 1
+      severity: CRITICAL
+    difference_limits:
+    - first_item_name: setpointActivo
+      second_item_name: temperaturaAguaImpulsionEvaporador
+      limit_type: lower
+      limit_value: 5.0
+      severity: WARNING
+    - first_item_name: setpointActivo
+      second_item_name: temperaturaAguaImpulsionEvaporador
+      limit_type: upper
+      limit_value: 5.0
+      severity: WARNING
+  - rule_name: Chiller03
+    callback_names: [tel_chiller03P01]
+    individual_limits:
+    - item_name: temperaturaAguaImpulsionEvaporador
+      limit_type: upper
+      limit_value: 30.0
+      severity: SERIOUS
+    - item_name: presionBajaCto1
+      limit_type: lower
+      limit_value: 180.0
+      severity: SERIOUS
+    - item_name: presionBajaCto2
+      limit_type: lower
+      limit_value: 180.0
+      severity: SERIOUS
+    - item_name: comandoEncendido
+      limit_type: lower
+      limit_value: 1
+      severity: CRITICAL
+    difference_limits:
+    - first_item_name: setpointActivo
+      second_item_name: temperaturaAguaImpulsionEvaporador
+      limit_type: lower
+      limit_value: 5.0
+      severity: WARNING
+    - first_item_name: setpointActivo
+      second_item_name: temperaturaAguaImpulsionEvaporador
+      limit_type: upper
+      limit_value: 5.0
+      severity: WARNING
+  - rule_name: AHU_CleanRoom
+    callback_names: [tel_manejadoraSblancaP04]
+    individual_limits:
+    - item_name: estadoFuncionamiento
+      limit_type: lower
+      limit_value: 1
+      severity: CRITICAL
+  - rule_name: AHU_WhiteRoom
+    callback_names: [tel_manejadoraSlimpiaP04]
+    individual_limits:
+    - item_name: estadoFuncionamiento
+      limit_type: lower
+      limit_value: 1
+      severity: CRITICAL
 escalation:
   - alarms:
     - ATCameraDewar
