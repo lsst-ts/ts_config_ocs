@@ -26,37 +26,37 @@ instances:
       - client_class: ControllerDataClient
         # MTDome ESS01 humidity sensors.
         config:
-          host: mtdome-ess01.cp.lsst.org
+          host: m1m3-ess01.cp.lsst.org
           devices:
-          - name: MTDome-ESS01
+          - name: M1M3-ESS01
             device_type: Serial
             serial_port: /dev/serial1
             sensor_type: HX85A
-            location: MT dome air handling unit 1; RPi with sticker 3
+            location: M1M3; RPi with sticker 3
   - sal_index: 102
     data_clients:
       - client_class: ControllerDataClient
         # MTDome ESS02 humidity sensors.
         config:
-          host: mtdome-ess02.cp.lsst.org
+          host: m2-ess01.cp.lsst.org
           devices:
           - name: MTDome-ESS02
             device_type: Serial
             serial_port: /dev/serial1
             sensor_type: HX85A
-            location: MT dome wall inside at 7th floor; RPi with sticker 1
+            location: M2; RPi with sticker 1
   - sal_index: 103
     data_clients:
       - client_class: ControllerDataClient
         # MTDome ESS03 humidity sensors.
         config:
-          host: mtdome-ess03.cp.lsst.org
+          host: camera-ess01.cp.lsst.org
           devices:
           - name: MTDome-ESS03
             device_type: Serial
             serial_port: /dev/serial1
             sensor_type: HX85BA
-            location: MT dome inside at 8th floor; RPi with sticker 4
+            location: Camera inlet plane; RPi with sticker 4
   - sal_index: 104
     data_clients:
       - client_class: LabJackAccelerometerDataClient
