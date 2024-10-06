@@ -1,0 +1,22 @@
+{
+    "name": "BLOCK-T189",
+    "program": "BLOCK-T189",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "nimages": "$num_exp",
+                "exp_times": "$exp_times",
+                "image_type": "ENGTEST",
+                "reason": "BLOCK-T189",
+                "program": "$run_id",
+                "note": "EO OpSim",
+                "slew_time": "$estimated_slew_time",
+                "filter": "$band_filter"
+            }
+        }
+    ],
+    "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T189 configuration\ndescription: Configuration for BLOCK-T189.\ntype: object\nproperties:\n  run_id:\n    description: Zephyr execution ID (Exxx) as run number.\n    type: string\n    default: BLOCK-T189\n"
+}
