@@ -21,42 +21,6 @@ instances:
               MT camera rotator motor 1,
               MT camera rotator motor 2
 
-  - sal_index: 101
-    data_clients:
-      - client_class: ControllerDataClient
-        # MTDome ESS01 humidity sensors.
-        config:
-          host: camera-ess01.cp.lsst.org
-          devices:
-          - name: M1M3-ESS01
-            device_type: Serial
-            serial_port: /dev/serial1
-            sensor_type: HX85A
-            location: Camera inlet plane; RPi with sticker 3
-  - sal_index: 102
-    data_clients:
-      - client_class: ControllerDataClient
-        # MTDome ESS02 humidity sensors.
-        config:
-          host: m2-ess01.cp.lsst.org
-          devices:
-          - name: MTDome-ESS02
-            device_type: Serial
-            serial_port: /dev/serial1
-            sensor_type: HX85A
-            location: M2; RPi with sticker 1
-  - sal_index: 103
-    data_clients:
-      - client_class: ControllerDataClient
-        # MTDome ESS03 humidity sensors.
-        config:
-          host: m1m3-ess01.cp.lsst.org
-          devices:
-          - name: MTDome-ESS03
-            device_type: Serial
-            serial_port: /dev/serial1
-            sensor_type: HX85BA
-            location: M1M3; RPi with sticker 4
   - sal_index: 104
     data_clients:
       - client_class: LabJackAccelerometerDataClient
@@ -209,6 +173,39 @@ instances:
           scales: [2.0, 2.0, 2.0, 22.0]
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
+  - sal_index: 111  # This used to be 101.
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: camera-ess01.cp.lsst.org
+          devices:
+          - name: M1M3-ESS01
+            device_type: Serial
+            serial_port: /dev/serial1
+            sensor_type: HX85A
+            location: Camera inlet plane; RPi with sticker 3
+  - sal_index: 112  # This used to be 102.
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: m2-ess01.cp.lsst.org
+          devices:
+          - name: MTDome-ESS02
+            device_type: Serial
+            serial_port: /dev/serial1
+            sensor_type: HX85A
+            location: M2; RPi with sticker 1
+  - sal_index: 113  # This used to be 103.
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: m1m3-ess01.cp.lsst.org
+          devices:
+          - name: MTDome-ESS03
+            device_type: Serial
+            serial_port: /dev/serial1
+            sensor_type: HX85BA
+            location: M1M3; RPi with sticker 4
 
   - sal_index: 201
     data_clients:
