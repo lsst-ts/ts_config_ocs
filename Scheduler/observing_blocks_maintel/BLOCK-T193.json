@@ -1,0 +1,29 @@
+{
+    "name": "SIT-Imaging",
+    "program": "BLOCK-T193",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra",
+                    "dec": "$dec"
+                },
+                "target_name": "$name",
+                "rot_value": 0,
+                "rot_type": "Physical",
+                "track_for": 32,
+                "ignore": [
+                    "mtm1m3",
+                    "mtm2",
+                    "mtaos",
+                    "mthexapod_1",
+                    "mthexapod_2",
+                    "mtrotator"
+                ]
+            }
+        }
+    ]
+}
