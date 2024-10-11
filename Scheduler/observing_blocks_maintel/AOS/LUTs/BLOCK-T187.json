@@ -1,7 +1,7 @@
 {
-  "name": "BLOCK-T86",
-  "id": "e2d5973f-da45-498f-9d3b-62830b5984d3",
-  "program": "BLOCK-T86",
+  "name": "BLOCK-T187",
+  "id": "c742020a-ae6e-4ea3-b5e0-d706478a3b03",
+  "program": "BLOCK-T187",
   "constraints": [],
   "scripts": [
     {
@@ -15,13 +15,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -35,13 +38,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -55,13 +61,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -75,13 +84,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -95,13 +107,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -115,13 +130,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -135,13 +153,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -155,13 +176,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -175,13 +199,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -195,13 +222,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -215,13 +245,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -235,13 +268,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -255,13 +291,16 @@
       }
     },
     {
-      "name": "maintel/take_triplet_comcam.py",
+      "name": "maintel/close_loop_comcam.py",
       "standard": true,
       "parameters": {
         "filter": "$run_filter",
         "program": "$program",
-        "reason": "SITCOM-1518",
-        "note": "LUT_elevation"
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": 30.0,
+        "max_iter": "$run_maxiter",
+        "used_dofs": "$run_dofs"
       }
     },
     {
@@ -270,5 +309,5 @@
       "parameters": {}
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T86 configuration\ndescription: Configuration for BLOCK-T86.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  run_azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 20\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T187 configuration\ndescription: Configuration for BLOCK-T187.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  run_azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 20\n  run_dofs:\n    description: Degrees of freedom to use for the elevation sweep.\n    type: array\n    default: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]\n    items:\n      type: integer\n      minimum: 0\n      maximum: 49\n  run_maxiter:\n    description: Maximum number of iterations for the elevation sweep.\n    type: integer\n    default: 5\n"
 }
