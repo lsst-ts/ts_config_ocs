@@ -1,0 +1,72 @@
+{
+    "name": "SIT-Imaging",
+    "program": "BLOCK-T204",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTHexapod:2",
+                        "ENABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "maintel/offset_m2_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": 100,
+                "ignore": [
+                    "mtmount",
+                    "mtaos",
+                    "mtm1m3",
+                    "mtm2",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtrotator",
+                    "mthexapod_1"
+                ]
+            }
+        },
+        {
+            "name": "maintel/offset_m2_hexapod.py",
+            "standard": true,
+            "parameters": {
+                "z": -100,
+                "ignore": [
+                    "mtmount",
+                    "mtaos",
+                    "mtm1m3",
+                    "mtm2",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtrotator",
+                    "mthexapod_1"
+                ]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [
+                    [
+                        "MTHexapod:2",
+                        "DISABLED"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 32
+            }
+        }
+    ]
+}
