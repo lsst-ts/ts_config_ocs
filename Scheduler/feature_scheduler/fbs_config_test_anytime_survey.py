@@ -23,11 +23,11 @@ import numpy as np
 import rubin_scheduler.scheduler.basis_functions as bf
 import rubin_scheduler.scheduler.detailers as detailers
 from lsst.ts.fbs.utils.auxtel import generate_cwfs_survey
-from lsst.ts.scheduler.utils.test.feature_scheduler_sim import MJD_START
 from rubin_scheduler.scheduler.model_observatory import ModelObservatory
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
 from rubin_scheduler.scheduler.surveys import GreedySurvey
 from rubin_scheduler.scheduler.utils import Footprint, SkyAreaGenerator
+from rubin_scheduler.utils import SURVEY_START_MJD as MJD_START
 
 
 def gen_greedy_surveys(
