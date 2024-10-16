@@ -1,0 +1,568 @@
+{
+    "name": "BLOCK-T81",
+    "program": "BLOCK-T81",
+    "constraints": [],
+    "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T81 Configuration\ndescription: Configuration for the BLOCK-T81 Reference Wavefront Generation Test WET-010.\ntype: object\nproperties:\n  ra:\n    description: Right Ascension.\n    type: number\n    default: 0\n  dec:\n    description: Declination.\n    type: number\n    default: 0\n  exposure_time:\n    description: Exposure Time.\n    type: number\n    default: 30.0\n",
+    "scripts": [
+        {
+            "name": "maintel/enable_comcam.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -82.8,
+                "rot_type": "PhysicalSky"
+            }
+        },    
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -75.6,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -68.4,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -61.2,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -54.0,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -46.8,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -39.6,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -32.4,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -25.2,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -18.0,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -10.8,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": -3.6,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 0.0,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 3.6,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 10.8,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 18.0,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 25.2,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 32.4,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 39.6,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 46.8,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 54.0,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 61.2,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 68.4,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 75.6,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra", 
+                    "dec": "$dec"
+                },
+                "rot_value": 82.8,
+                "rot_type": "PhysicalSky"
+            }
+        },  
+        {
+            "name": "maintel/take_triplet_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": "$exposure_time",
+                "program": "$program",
+                "reason": "SITCOM-1152",
+                "note": "reference_wavefront_generation"
+            }
+        },
+        {
+            "name": "maintel/stop_tracking.py",
+            "standard": true,
+            "parameters": {}
+        }
+    ]
+}
