@@ -1,0 +1,33 @@
+{
+    "name": "BLOCK-T220",
+    "program": "BLOCK-T220",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/make_comcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "n_bias": 10,
+                "n_dark": 10,
+                "exp_times_dark": 15,
+                "script_mode": "BIAS_DARK",
+                "generate_calibrations": false,
+                "program": "BLOCK-T220",
+                "reason": "comcam-daily-calibration"
+            }
+        },
+        {
+            "name": "maintel/make_comcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "n_bias": 10,
+                "n_dark": 10,
+                "exp_times_dark": 30,
+                "script_mode": "BIAS_DARK",
+                "generate_calibrations": false,
+                "program": "BLOCK-T220",
+                "reason": "comcam-daily-calibration"
+            }
+        }
+    ]
+}
