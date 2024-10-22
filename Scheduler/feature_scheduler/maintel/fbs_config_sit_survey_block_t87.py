@@ -94,9 +94,14 @@ def gen_greedy_surveys(
     }
 
     surveys = []
-    detailer = detailers.CameraRotDetailer(
-        min_rot=np.min(camera_rot_limits), max_rot=np.max(camera_rot_limits)
-    )
+    survey_detailers = [
+        detailers.TrackingInfoDetailer(
+            science_program=greed_survey_params["survey_name"]
+        ),
+        detailers.CameraRotDetailer(
+            min_rot=np.min(camera_rot_limits), max_rot=np.max(camera_rot_limits)
+        ),
+    ]
 
     for filtername in filters:
         bfs = [
@@ -137,7 +142,7 @@ def gen_greedy_surveys(
                 nside=nside,
                 ignore_obs=ignore_obs,
                 nexp=nexp,
-                detailers=[detailer],
+                detailers=survey_detailers,
                 **greed_survey_params,
             )
         )
