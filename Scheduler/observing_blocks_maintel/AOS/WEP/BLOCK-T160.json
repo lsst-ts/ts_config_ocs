@@ -20,11 +20,11 @@
             }
         },
         {
-            "name": "maintel/take_triplet_comcam.py",
+            "name": "maintel/take_aos_sequence_comcam.py",
             "standard": true,
             "parameters": {
                 "exposure_time": "$exposure_time",
-                "n_triplets": 2,
+                "n_sequences": 2,
                 "program": "$program",
                 "reason": "SITCOM-1150",
                 "note": "wavefront_estimation_chromaticity"            
