@@ -360,3 +360,13 @@ instances:
           scale_offset_wind_speed: [0.0834, 0]
           scale_rain_rate: 0.25
           location: "Weather tower"
+  - sal_index: 302
+    data_clients:
+      - client_class: EarthquakeDataClient
+        config:
+          host: 139.229.178.22
+          port: 6330
+          serial_id: 01000018753C8C49
+          max_read_timeouts: 5
+          sensor_name: Q330
+          location: Inside pier 5th floor
