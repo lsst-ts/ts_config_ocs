@@ -1,20 +1,17 @@
 {
   "name": "BLOCK-T222",
-  "id": "c58fbea9-d603-46c8-9517-792c96dbd999",
+  "id": "ed58a132-0536-4c55-946e-13af2bb09b6a",
   "program": "BLOCK-T222",
   "constraints": [],
   "scripts": [
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 80
-        },
+        "az": "$run_azimuth",
+        "el": 80,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -33,16 +30,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 70
-        },
+        "az": "$run_azimuth",
+        "el": 70,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -61,16 +55,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 60
-        },
+        "az": "$run_azimuth",
+        "el": 60,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -89,16 +80,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 50
-        },
+        "az": "$run_azimuth",
+        "el": 50,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -117,16 +105,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 40
-        },
+        "az": "$run_azimuth",
+        "el": 40,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -145,16 +130,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 30
-        },
+        "az": "$run_azimuth",
+        "el": 30,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -173,16 +155,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 20
-        },
+        "az": "$run_azimuth",
+        "el": 20,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -201,16 +180,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 30
-        },
+        "az": "$run_azimuth",
+        "el": 30,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -229,16 +205,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 40
-        },
+        "az": "$run_azimuth",
+        "el": 40,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -257,16 +230,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 50
-        },
+        "az": "$run_azimuth",
+        "el": 50,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -285,16 +255,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 60
-        },
+        "az": "$run_azimuth",
+        "el": 60,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -313,16 +280,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 70
-        },
+        "az": "$run_azimuth",
+        "el": 70,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
@@ -341,16 +305,13 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 80
-        },
+        "az": "$run_azimuth",
+        "el": 80,
         "ignore": [
-          "mtm1m3",
-          "mtaos"
+          "mtm1m3"
         ]
       }
     },
