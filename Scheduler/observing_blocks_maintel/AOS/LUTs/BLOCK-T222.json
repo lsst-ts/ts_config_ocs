@@ -1,153 +1,9 @@
 {
   "name": "BLOCK-T222",
-  "id": "da613be4-30e7-4315-82a8-6c4324ef813d",
+  "id": "d96c3841-09a6-44b2-bee4-255e328d0e5f",
   "program": "BLOCK-T222",
   "constraints": [],
   "scripts": [
-    {
-      "name": "maintel/track_target.py",
-      "standard": true,
-      "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 20
-        }
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "M2"
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera"
-      }
-    },
-    {
-      "name": "maintel/track_target.py",
-      "standard": true,
-      "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 30
-        }
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "M2"
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera"
-      }
-    },
-    {
-      "name": "maintel/track_target.py",
-      "standard": true,
-      "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 40
-        }
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "M2"
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera"
-      }
-    },
-    {
-      "name": "maintel/track_target.py",
-      "standard": true,
-      "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 50
-        }
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "M2"
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera"
-      }
-    },
-    {
-      "name": "maintel/track_target.py",
-      "standard": true,
-      "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 60
-        }
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "M2"
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera"
-      }
-    },
-    {
-      "name": "maintel/track_target.py",
-      "standard": true,
-      "parameters": {
-        "track_azel": {
-          "az": "$run_azimuth",
-          "el": 70
-        }
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "M2"
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera"
-      }
-    },
     {
       "name": "maintel/track_target.py",
       "standard": true,
@@ -299,6 +155,150 @@
         "track_azel": {
           "az": "$run_azimuth",
           "el": 20
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 30
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 40
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 50
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 60
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 70
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 80
         }
       }
     },
