@@ -174,7 +174,7 @@ if __name__ == "config":
     footprints_hp, footprints_labels = sky.return_maps()
 
     footprints = Footprint(MJD_START, sun_ra_start=conditions.sun_ra, nside=nside)
-    footprints_hp.dtype.names = ("u", "g_6", "r_57", "i", "r_57", "z", "y_10")
+    footprints_hp.dtype.names = ("u", "g_6", "r_57", "i", "z", "y_10")
     for i, key in enumerate(footprints_hp.dtype.names):
         footprints.footprints[i, :] = footprints_hp[key]
 
