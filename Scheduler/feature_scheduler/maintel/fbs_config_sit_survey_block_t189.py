@@ -188,6 +188,7 @@ if __name__ == "config":
         nexp=2,
         nexp_override=nexp_override,
         exptime_override=exptime_override,
+        filters=["g_6", "r_57", "y_10"],
         exptime=29.2,
         filters=eo_test_filters,
         footprints=footprints,
