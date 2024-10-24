@@ -103,7 +103,6 @@ def gen_greedy_surveys(
         ),
     ]
 
-
     for filtername in filters:
         bfs = [
             (
