@@ -35,7 +35,7 @@ def gen_greedy_surveys(
     nexp_override=None,
     exptime=30.0,
     exptime_override=None,
-    filters=["g", "r", "z"],
+    filters=["g_6", "r_57", "z_10"],
     camera_rot_limits=[-80.0, 80.0],
     shadow_minutes=60.0,
     max_alt=76.0,
@@ -178,17 +178,23 @@ if __name__ == "config":
         footprints.footprints[i, :] = footprints_hp[key]
 
     # Generate surveys for all filters to test "FilterLoaded" basis func
-    eo_test_filters = ["u", "y", "g", "i", "r", "z"]  # ['y', 'r', 'g'] actually present
+    eo_test_filters = [
+        "u",
+        "y_10",
+        "g_6",
+        "i",
+        "r_57",
+        "z",
+    ]  # ['y', 'r', 'g'] actually present
     # for EO OpSim, we'll have 'g' function like 'u' (IE 1 long exposure)
-    nexp_override = {"g": 1}
-    exptime_override = {"g": 38}
+    nexp_override = {"g_6": 1}
+    exptime_override = {"g_6": 38}
 
     greedy = gen_greedy_surveys(
         nside,
         nexp=2,
         nexp_override=nexp_override,
         exptime_override=exptime_override,
-        filters=["g_6", "r_57", "y_10"],
         exptime=29.2,
         filters=eo_test_filters,
         footprints=footprints,
