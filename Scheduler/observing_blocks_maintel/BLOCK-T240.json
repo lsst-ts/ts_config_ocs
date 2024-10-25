@@ -1,0 +1,46 @@
+{
+    "name": "BLOCK-T240",
+    "id": "fb258100-f697-4475-90b7-9a025bf4b3bc",
+    "program": "BLOCK-T240",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": "$az",
+                "el": "$start_el",
+                "ignore": "$ignore"
+            }
+        },
+        {
+            "name": "pause_queue.py",
+            "standard": true,
+            "parameters": {
+                "queue": "MAIN_TEL"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTMount",
+                "cmd": "applySettingsSet",
+                "parameters": {
+                    "settings": "$settings_sets",
+                    "restoreDefaults": "$reset_default_settings"
+                }
+            }
+        },
+        {
+            "name": "maintel/move_p2p.py",
+            "standard": true,
+            "parameters": {
+                "az": "$az",
+                "el": "$end_el",
+                "ignore": "$ignore"
+            }
+        }
+    ],
+    "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T240 configuration\ndescription: Configuration for BLOCK-T240.\ntype: object\nproperties:\n  az:\n    description: Azimuth position\n    type: number\n    default: 153\n  start_el:\n    description: Starting elevation position\n    type: number\n    default: 80\n  end_el:\n    description: Final El position\n    type: number\n    default: 40\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: []\n  settings_sets:\n    description: List of TMA settings sets to be applied\n    type: array\n    default: []\n  reset_default_settings:\n    description: Reset all the TMA settings to default\n    type: boolean\n    default: false\n"
+}
