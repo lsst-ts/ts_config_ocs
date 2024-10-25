@@ -177,6 +177,7 @@ if __name__ == "config":
     footprints_hp.dtype.names = ("u", "g_6", "r_57", "i", "z", "y_10")
     for i, key in enumerate(footprints_hp.dtype.names):
         footprints.footprints[i, :] = footprints_hp[key]
+    footprints.filters = ["u", "g_6", "r_57", "i", "z", "y_10"]
 
     # Generate surveys for all filters to test "FilterLoaded" basis func
     eo_test_filters = [
