@@ -1,1 +1,109 @@
-observing_blocks_maintel/BLOCK-T3.json
+{
+    "name": "BLOCK-T3",
+    "program": "BLOCK-T3",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/disable_hexapod_compensation_mode.py",
+            "standard": true,
+            "parameters": {
+                "components": [
+                    "M2Hexapod"
+                ]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "move",
+                "parameters": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "u": 0,
+                    "v": 0,
+                    "w": 0
+                }
+            }
+        },
+        {
+            "name": "maintel/warmup_hexapod.py",
+            "standard": false,
+            "parameters": {
+                "hexapod": "m2",
+                "axis": "z",
+                "max_position": 5000
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "move",
+                "parameters": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "u": 0,
+                    "v": 0,
+                    "w": 0
+                }
+            }
+        },
+        {
+            "name": "maintel/warmup_hexapod.py",
+            "standard": false,
+            "parameters": {
+                "hexapod": "m2",
+                "axis": "y",
+                "step_size": 125,
+                "max_position": 6500
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "move",
+                "parameters": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "u": 0,
+                    "v": 0,
+                    "w": 0
+                }
+            }
+        },
+        {
+            "name": "maintel/warmup_hexapod.py",
+            "standard": false,
+            "parameters": {
+                "hexapod": "m2",
+                "axis": "x",
+                "step_size": 125,
+                "max_position": 6500
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTHexapod:2",
+                "cmd": "move",
+                "parameters": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "u": 0,
+                    "v": 0,
+                    "w": 0
+                }
+            }
+        }
+    ]
+}
