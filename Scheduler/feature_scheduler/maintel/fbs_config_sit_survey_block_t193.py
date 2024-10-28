@@ -96,8 +96,7 @@ def gen_greedy_surveys(
     surveys = []
     survey_detailers = [
         detailers.TrackingInfoDetailer(
-            science_program=greed_survey_params["survey_name"],
-            target_name="SimTarget"
+            science_program=greed_survey_params["survey_name"], target_name="SimTarget"
         ),
         detailers.CameraRotDetailer(
             min_rot=np.min(camera_rot_limits), max_rot=np.max(camera_rot_limits)
