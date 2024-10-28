@@ -13,7 +13,12 @@
                 "reason": "BLOCK-T233",
                 "program": "BLOCK-T233",
                 "note": "EO OpSim",
-                "slew_time": "$estimated_slew_time"
+                "slew_time": "$estimated_slew_time",
+                "visit_metadata": {
+                    "ra": "$ra",
+                    "dec": "$dec",
+                    "rot_sky": "$rot" 
+                }
             }
         }
     ]
