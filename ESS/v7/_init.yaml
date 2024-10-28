@@ -182,7 +182,7 @@ instances:
         config:
           host: camera-ess01.cp.lsst.org
           devices:
-          - name: M1M3-ESS01
+          - name: Camera-ESS01
             device_type: Serial
             serial_port: /dev/serial1
             sensor_type: HX85A
@@ -193,7 +193,7 @@ instances:
         config:
           host: m2-ess02.cp.lsst.org
           devices:
-          - name: MTDome-ESS02
+          - name: M2-ESS02
             device_type: Serial
             serial_port: /dev/serial1
             sensor_type: HX85A
@@ -204,7 +204,7 @@ instances:
         config:
           host: m1m3-ess01.cp.lsst.org
           devices:
-          - name: MTDome-ESS03
+          - name: M1M3-ESS03
             device_type: Serial
             serial_port: /dev/serial1
             sensor_type: HX85BA
