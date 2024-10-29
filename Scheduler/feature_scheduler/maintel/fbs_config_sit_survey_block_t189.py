@@ -192,12 +192,9 @@ if __name__ == "config":
 
     # Generate surveys for all filters to test "FilterLoaded" basis func
     eo_test_filters = [
-        "u",
-        "y_10",
         "g_6",
-        "i",
         "r_57",
-        "z",
+        "y_10",
     ]  # ['y', 'r', 'g'] actually present
     # for EO OpSim, we'll have 'g' function like 'u' (IE 1 long exposure)
     nexp_override = {"g_6": 1}
