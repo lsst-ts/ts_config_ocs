@@ -1,0 +1,31 @@
+{
+    "name": "BLOCK-T248",
+    "program": "BLOCK-T248_1",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/offset_mtcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "x": -77.44160955124589,
+                    "y": 94.18916450092277
+                },
+                "relative": false,
+                "absorb": false
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "nimages": "$num_exp",
+                "exp_times": "$exp_times",
+                "image_type": "OBJECT",
+                "reason": "science",
+                "program": "PP-SURVEY",
+                "filter": "$band_filter"
+            }
+        }
+    ]
+}
