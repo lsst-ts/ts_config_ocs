@@ -32,7 +32,9 @@ from rubin_scheduler.utils import SURVEY_START_MJD as MJD_START
 def gen_greedy_surveys(
     nside=32,
     nexp=1,
+    nexp_override=None,
     exptime=30.0,
+    exptime_override=None,
     filters=["g", "r", "z"],
     camera_rot_limits=[-80.0, 80.0],
     shadow_minutes=60.0,
@@ -45,13 +47,9 @@ def gen_greedy_surveys(
     footprints=None,
     seed=42,
 ):
-    """Generate a feature scheduler survey configuration that does not employ
-    any daylight constraints. Useful for unit testing.
-
-    This is a convenience function to generate a list of survey objects that
-    can be used with lsst.sims.featureScheduler.schedulers.CoreScheduler.
-    To ensure we are robust against changes in the sims_featureScheduler
-    codebase, all kwargs are explicitly set.
+    """This function heavily borrows from a function of the same name
+    in fbs_config_sit_survey_block_t87.py. There are mild modifications
+    to support different exposures for different filters.
 
     Parameters
     ----------
@@ -59,8 +57,12 @@ def gen_greedy_surveys(
         The HEALpix nside to use.
     nexp : int (1)
         The number of exposures to use in a visit.
+    nexp_override : dict (None)
+        Key value pairs to override nexp for specific filters
     exptime : float (30.)
         The exposure time to use per visit (seconds).
+    exptime_override : dict (None)
+        Key value pairs to override exptime for specific filters
     filters : list of str (['r', 'i', 'z', 'y'])
         Which filters to generate surveys for.
     camera_rot_limits : list of float ([-80., 80.])
@@ -90,7 +92,7 @@ def gen_greedy_surveys(
         "seed": seed,
         "camera": "LSST",
         "dither": True,
-        "survey_name": "BLOCK-T87",
+        "survey_name": "BLOCK-T233",
     }
 
     surveys = []
@@ -102,6 +104,13 @@ def gen_greedy_surveys(
             min_rot=np.min(camera_rot_limits), max_rot=np.max(camera_rot_limits)
         ),
     ]
+
+    exptimes = {f: exptime for f in filters}
+    nexps = {f: nexp for f in filters}
+    if isinstance(exptime_override, dict):
+        exptimes.update(exptime_override)
+    if isinstance(nexp_override, dict):
+        nexps.update(nexp_override)
 
     for filtername in filters:
         bfs = [
@@ -137,11 +146,11 @@ def gen_greedy_surveys(
             GreedySurvey(
                 basis_functions,
                 weights,
-                exptime=exptime,
+                exptime=exptimes[filtername],
                 filtername=filtername,
                 nside=nside,
                 ignore_obs=ignore_obs,
-                nexp=nexp,
+                nexp=nexps[filtername],
                 detailers=survey_detailers,
                 **greed_survey_params,
             )
@@ -168,6 +177,28 @@ if __name__ == "config":
     for i, key in enumerate(footprints_hp.dtype.names):
         footprints.footprints[i, :] = footprints_hp[key]
 
-    greedy = gen_greedy_surveys(nside, nexp=1, footprints=footprints, seed=seed)
+    # Generate surveys for all filters to test "FilterLoaded" basis func
+    eo_test_filters = [
+        "u",
+        "y",
+        "g",
+        "i",
+        "r",
+        "z",
+    ]  # ['y', 'r', 'g'] actually present
+    # for EO OpSim, we'll have 'g' function like 'u' (IE 1 long exposure)
+    nexp_override = {"g": 1}
+    exptime_override = {"g": 38}
+
+    greedy = gen_greedy_surveys(
+        nside,
+        nexp=2,
+        nexp_override=nexp_override,
+        exptime_override=exptime_override,
+        exptime=29.2,
+        filters=eo_test_filters,
+        footprints=footprints,
+        seed=seed,
+    )
     surveys = [greedy]
     scheduler = CoreScheduler(surveys, nside=nside)

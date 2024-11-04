@@ -33,7 +33,7 @@ def gen_greedy_surveys(
     nside=32,
     nexp=1,
     exptime=30.0,
-    filters=["g", "r", "z"],
+    filters=["g", "i", "r"],
     camera_rot_limits=[-80.0, 80.0],
     shadow_minutes=60.0,
     max_alt=76.0,
@@ -90,7 +90,7 @@ def gen_greedy_surveys(
         "seed": seed,
         "camera": "LSST",
         "dither": True,
-        "survey_name": "BLOCK-T87",
+        "survey_name": "BLOCK-T223",
     }
 
     surveys = []

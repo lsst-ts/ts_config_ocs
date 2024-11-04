@@ -1,0 +1,42 @@
+{
+    "name": "SIT-Imaging",
+    "program": "BLOCK-T223",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra",
+                    "dec": "$dec"
+                },
+                "target_name": "$name",
+                "rot_value": "$rot",
+                "rot_type": "PhysicalSky",
+                "track_for": 1,
+                "stop_when_done": false,
+                "ignore": [
+                    "mtaos"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "nimages": "$num_exp",
+                "exp_times": "$exp_times",
+                "image_type": "DARK",
+                "reason": "BLOCK-T223",
+                "program": "BLOCK-T223",
+                "visit_metadata": {
+                    "ra": "$ra",
+                    "dec": "$dec",
+                    "rot_sky": "$rot" 
+
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "name": "InitialPtgVerification",
+    "id": "acd85fcc-38da-45d5-a6a5-54a685d343e4",
+    "program": "BLOCK-T208",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 4,
+                "exp_times": 15,
+                "reason": "PointingVerification",
+                "program": "$program",
+                "filter": "r_03"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 60
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 4,
+                "exp_times": 15,
+                "reason": "PointingVerification",
+                "program": "$program",
+                "filter": "r_03"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 60
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 4,
+                "exp_times": 15,
+                "reason": "PointingVerification",
+                "program": "$program",
+                "filter": "r_03"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 60
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 4,
+                "exp_times": 15,
+                "reason": "PointingVerification",
+                "program": "$program",
+                "filter": "r_03"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 60
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 4,
+                "exp_times": 15,
+                "reason": "PointingVerification",
+                "program": "$program",
+                "filter": "r_03"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 60
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 4,
+                "exp_times": 15,
+                "reason": "PointingVerification",
+                "program": "$program",
+                "filter": "r_03"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 60
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 4,
+                "exp_times": 15,
+                "reason": "PointingVerification",
+                "program": "$program",
+                "filter": "r_03"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 60
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 4,
+                "exp_times": 15,
+                "reason": "PointingVerification",
+                "program": "$program",
+                "filter": "r_03"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 60
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 4,
+                "exp_times": 15,
+                "reason": "PointingVerification",
+                "program": "$program",
+                "filter": "r_03"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 60
+            }
+        }
+    ],
+    "configuration_schema": ""
+}
