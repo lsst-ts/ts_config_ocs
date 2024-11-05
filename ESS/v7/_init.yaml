@@ -21,6 +21,9 @@ instances:
               MT camera rotator motor 1,
               MT camera rotator motor 2
 
+# - sal_index: 101 -> now 111
+# - sal_index: 102 -> now 112
+# - sal_index: 103 -> now 113
   - sal_index: 104
     data_clients:
       - client_class: LabJackAccelerometerDataClient
@@ -179,7 +182,7 @@ instances:
         config:
           host: camera-ess01.cp.lsst.org
           devices:
-          - name: M1M3-ESS01
+          - name: Camera-ESS01
             device_type: Serial
             serial_port: /dev/serial1
             sensor_type: HX85A
@@ -188,9 +191,9 @@ instances:
     data_clients:
       - client_class: ControllerDataClient
         config:
-          host: m2-ess01.cp.lsst.org
+          host: m2-ess02.cp.lsst.org
           devices:
-          - name: MTDome-ESS02
+          - name: M2-ESS02
             device_type: Serial
             serial_port: /dev/serial1
             sensor_type: HX85A
@@ -201,7 +204,7 @@ instances:
         config:
           host: m1m3-ess01.cp.lsst.org
           devices:
-          - name: MTDome-ESS03
+          - name: M1M3-ESS03
             device_type: Serial
             serial_port: /dev/serial1
             sensor_type: HX85BA
@@ -330,7 +333,7 @@ instances:
             location: AT Dome
             # 1 sample per second so for 1 minute that is 60 samples.
             num_samples: 60
-#  - sal_index: 205 This used to be used for the Gill anemometer which is now 110.
+#  - sal_index: 205 -> now 110
 
   - sal_index: 301
     data_clients:
@@ -357,3 +360,13 @@ instances:
           scale_offset_wind_speed: [0.0834, 0]
           scale_rain_rate: 0.25
           location: "Weather tower"
+  - sal_index: 302
+    data_clients:
+      - client_class: EarthquakeDataClient
+        config:
+          host: 139.229.178.22
+          port: 6330
+          serial_id: 01000018753C8C49
+          max_read_timeouts: 5
+          sensor_name: Q330
+          location: Inside pier 5th floor
