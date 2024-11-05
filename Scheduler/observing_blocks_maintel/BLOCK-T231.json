@@ -1,0 +1,19 @@
+{
+  "name": "BLOCK-T231",
+  "id": "48e14274-35dd-4b7b-923a-6d12b5bd1b7c",
+  "program": "BLOCK-T231",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$az",
+        "el": "$el",
+        "ignore": "$ignore",
+        "move_timeout": 1800
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T231 configuration\ndescription: Configuration for BLOCK-T231.\ntype: object\nproperties:\n  az:\n    description: Target Azimuth position\n    type: number\n    default: 0\n  el:\n    description: Target Elevation position\n    type: number\n    default: 80\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: []\n"
+}

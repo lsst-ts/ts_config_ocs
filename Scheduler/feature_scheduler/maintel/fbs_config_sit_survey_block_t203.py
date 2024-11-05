@@ -19,8 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from lsst.ts.fbs.utils import Tiles
-from lsst.ts.fbs.utils.auxtel.make_scheduler import MakeScheduler, SurveyType
+from lsst.ts.fbs.utils.maintel.make_scheduler import MakeScheduler, SurveyType
 
 
 def get_scheduler():
@@ -33,55 +32,21 @@ def get_scheduler():
     scheduler : Core_scheduler
         Feature based scheduler.
     """
-    nside = 64
-    reward_values = dict(
-        default=10.0,
-        image_pole=5.0,
-    )
+    nside = 32
 
-    image_nexp = 2  # number of exposures
-    image_exptime = 60.0  # total exposure time in seconds
-    image_visit_gap = 480.0
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
-
-    image_ha_limit = [
-        (24.0 - 3.5, 24.0),
-        (0.0, 3.5),
-    ]
-    image_ha_limit_pole = [
-        (0.0, 24.0),
-    ]
-
-    image_tiles = [
-        Tiles(
-            survey_name="LATISS_POLE",
-            hour_angle_limit=image_ha_limit_pole,
-            reward_value=reward_values["image_pole"],
-            filters=["g", "r", "i"],
-            visit_gap=image_visit_gap,
-            exptime=image_exptime,
-            nexp=image_nexp,
-        ),
-        Tiles(
-            survey_name="AUXTEL_DRP_IMAGING",
-            hour_angle_limit=image_ha_limit,
-            reward_value=reward_values["default"],
-            filters=["g", "r", "i"],
-            visit_gap=image_visit_gap,
-            exptime=image_exptime,
-            nexp=image_nexp,
-        ),
-    ]
 
     make_scheduler = MakeScheduler()
 
-    return make_scheduler.get_scheduler(
+    nside, scheduler = make_scheduler.get_scheduler(
         nside=nside,
         wind_speed_maximum=wind_speed_maximum,
-        survey_type=SurveyType.Image,
-        spec_targets=[],
-        image_tiles=image_tiles,
+        survey_type=SurveyType.SIT,
+        survey_name="BLOCK-T203",
+        image_tiles=[],
     )
+
+    return nside, scheduler
 
 
 if __name__ == "config":

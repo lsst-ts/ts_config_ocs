@@ -90,13 +90,13 @@ def gen_greedy_surveys(
         "seed": seed,
         "camera": "LSST",
         "dither": True,
-        "survey_name": "BLOCK-T87",
+        "survey_name": "BLOCK-T193",
     }
 
     surveys = []
     survey_detailers = [
         detailers.TrackingInfoDetailer(
-            science_program=greed_survey_params["survey_name"]
+            science_program=greed_survey_params["survey_name"], target_name="SimTarget"
         ),
         detailers.CameraRotDetailer(
             min_rot=np.min(camera_rot_limits), max_rot=np.max(camera_rot_limits)

@@ -7,6 +7,7 @@ DevelopPipeline(
     extra_packages: [
         // Dependencies
         "lsst-ts/ts_ess_common",
+        "lsst-ts/ts_ess_earthquake",
         "lsst-ts/ts_ess_labjack",
         "lsst-ts/ts_simactuators",
         "lsst-ts/ts_tcpip",
@@ -24,6 +25,8 @@ DevelopPipeline(
         "lsst-ts/ts_salobj",  // For the Test component.
         "lsst-ts/ts_observing",  // For the scheduler observing blocks test.
         // ts_scheduler has too many dependencies
-        "lsst-ts/ts_watcher"
+        "lsst-ts/ts_watcher",
+        "lsst-ts/ts_fbs_utils"
     ]
 )
+

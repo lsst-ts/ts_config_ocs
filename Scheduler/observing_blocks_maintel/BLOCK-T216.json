@@ -1,0 +1,26 @@
+{
+  "name": "BLOCK-T216",
+  "id": "e280f6b6-115a-477f-93ff-5e2e69cf7bab",
+  "program": "BLOCK-T216",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/take_twilight_flats_comcam.py",
+      "standard": false,
+      "parameters": {
+        "filter": "$run_filter",
+        "target_sky_counts": "$run_target_sky_counts",
+        "max_counts": "$run_max_counts",
+        "n_flat": "$run_n_flats",
+        "dither": "$run_dither",
+        "max_exp_time": "$run_max_exp",
+        "distance_from_sun": "$run_distance_from_sun",
+        "target_el": "$run_target_el",
+        "max_sun_elevation": "$run_max_sun_el",
+        "program": "$program",
+        "reason": "comcam_twilight_flat"
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T216 configuration\ndescription: Configuration for BLOCK-T216.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  run_target_sky_counts:\n    description: Target sky counts.\n    type: number\n    default: 15000\n  run_max_counts:\n    description: Max sky counts.\n    type: number\n    default: 80000\n  run_n_flats:\n    description: Target number of flats.\n    type: integer\n    default: 10\n  run_dither:\n    description: Dither distance in arcsec.\n    type: number\n    default: 10\n  run_max_exp:\n    description: Maximum exposure time allowed.\n    type: number\n    default: 300\n  run_distance_from_sun:\n    description: Distance from sun in degrees.\n    type: number\n    default: 179.0\n  run_target_el:\n    description: Target elevation for sky flats.\n    type: number\n    default: 45.0\n  run_max_sun_el:\n    description: Maximum sun elevation.\n    type: number\n    default: -5.0\n"
+}
