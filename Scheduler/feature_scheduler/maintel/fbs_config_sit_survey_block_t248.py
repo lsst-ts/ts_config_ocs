@@ -28,9 +28,9 @@ from rubin_scheduler.scheduler.surveys import FieldSurvey
 
 def gen_field_survey(
     name,
-    ra=30.0,
-    dec=-80.0,
-    sequence=["r_03", "i_06"],
+    ra=80.0,
+    dec=10.0,
+    sequence=["r_03"],
     visits=1,
     nexp=1,
     exptime=30.0,
@@ -111,7 +111,7 @@ def gen_field_survey(
                     nside=nside,
                     shadow_minutes=shadow_minutes,
                     max_alt=max_alt,
-                    min_alt=30.0,
+                    min_alt=0.0,
                 ),
                 0,
             ),
@@ -144,7 +144,7 @@ def gen_field_survey(
 if __name__ == "config":
     nside = 32
 
-    filters_list = ["i_06", "r_03"]
+    filters_list = ["r_03"]
 
     surveys = []
     for i in range(0, 30):
