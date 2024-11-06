@@ -28,8 +28,8 @@ from rubin_scheduler.scheduler.surveys import FieldSurvey
 
 def gen_field_survey(
     name,
-    ra=80.0,
-    dec=10.0,
+    ra=0.0,
+    dec=-70.0,
     sequence=["r_03"],
     visits=1,
     nexp=1,
@@ -94,6 +94,7 @@ def gen_field_survey(
     # think these are fairly set, so no need to promote to utility func kwargs
 
     survey_detailers = [
+        detailers.TrackingInfoDetailer(science_program=name),
         detailers.CameraRotDetailer(
             min_rot=np.min(camera_rot_limits), max_rot=np.max(camera_rot_limits)
         ),
@@ -101,20 +102,7 @@ def gen_field_survey(
 
     for filtername in sequence:
         bfs = [
-            (
-                bf.SlewtimeBasisFunction(filtername=filtername, nside=nside),
-                slewtime_weight,
-            ),
             (bf.StrictFilterBasisFunction(filtername=filtername), stayfilter_weight),
-            (
-                bf.AltAzShadowMaskBasisFunction(
-                    nside=nside,
-                    shadow_minutes=shadow_minutes,
-                    max_alt=max_alt,
-                    min_alt=0.0,
-                ),
-                0,
-            ),
             (bf.FilterLoadedBasisFunction(filternames=filtername), 0),
             (bf.VisitGap(name, gap_min=720.0), 0),
         ]
