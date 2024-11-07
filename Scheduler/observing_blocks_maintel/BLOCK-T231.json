@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T231",
-  "id": "48e14274-35dd-4b7b-923a-6d12b5bd1b7c",
+  "id": "235e9428-e595-4b46-b480-eb8d621098dd",
   "program": "BLOCK-T231",
   "constraints": [],
   "scripts": [
@@ -8,12 +8,12 @@
       "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "az": "$az",
-        "el": "$el",
+        "az": "$target_al",
+        "el": "$target_el",
         "ignore": "$ignore",
-        "move_timeout": 1800
+        "move_timeout": "$move_timeout"
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T231 configuration\ndescription: Configuration for BLOCK-T231.\ntype: object\nproperties:\n  az:\n    description: Target Azimuth position\n    type: number\n    default: 0\n  el:\n    description: Target Elevation position\n    type: number\n    default: 80\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: []\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T231 configuration\ndescription: Configuration for BLOCK-T231.\ntype: object\nproperties:\n  target_az:\n    description: Target Azimuth position\n    type: number\n    default: 0\n  target_el:\n    description: Target Elevation position\n    type: number\n    default: 80\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: []\n  move_timeout:\n    description: Timeout associated with the move_p2p scripts\n    type: number\n    default: 1800\n"
 }
