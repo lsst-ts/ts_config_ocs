@@ -410,6 +410,12 @@ rules:
       limit_type: lower
       limit_value: 1
       severity: CRITICAL
+- classname: MTDomeAzEnabled
+  configs:
+    - {}
+- classname: MTDomeCapacitorBanks
+  configs:
+    - {}
 escalation:
   - alarms:
     - ATCameraDewar
