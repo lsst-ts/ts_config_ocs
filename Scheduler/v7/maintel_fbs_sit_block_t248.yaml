@@ -10,18 +10,18 @@ maintel:
         filter_max_changes_burst_num: 1
         filter_max_changes_avg_num: 30000
         filter_mounted:
-        - g_01
+        - u_02
         - r_03
         - i_06
         filter_removable:
         - g_01
         - r_03
         - y
-        - u
+        - u_02
         - i_06
         - z
         filter_unmounted:
-        - u
+        - g
         - z
         - y
       telescope:
