@@ -43,7 +43,7 @@ def gen_greedy_surveys(
     ignore_obs="DD",
     footprint_weight=0.3,
     slewtime_weight=3.0,
-    stayfilter_weight=3.0,
+    stayfilter_weight=0.8,
     footprints=None,
     seed=42,
 ):
@@ -86,13 +86,14 @@ def gen_greedy_surveys(
     """
     # Define the extra parameters that are used in the greedy survey. I
     # think these are fairly set, so no need to promote to utility func kwargs
+    name = "BLOCK-T233"
     greed_survey_params = {
         "block_size": 1,
         "smoothing_kernel": None,
         "seed": seed,
         "camera": "LSST",
         "dither": True,
-        "survey_name": "BLOCK-T233",
+        "survey_name": name,
     }
 
     surveys = []
@@ -113,6 +114,7 @@ def gen_greedy_surveys(
         nexps.update(nexp_override)
 
     for filtername in filters:
+        note = f"{name}_{filtername}"
         bfs = [
             (
                 bf.FootprintBasisFunction(
@@ -137,7 +139,16 @@ def gen_greedy_surveys(
                 ),
                 0,
             ),
-            (bf.FilterLoadedBasisFunction(filternames=filtername), 0),
+            (bf.FilterLoadedBasisFunction(filternames=filtername), 1),
+            (bf.AvoidFastRevisitsBasisFunction(filtername=filtername, nside=nside), 1),
+            (
+                bf.BalanceVisits(
+                    nobs_reference=10, note_survey=note, note_interest=name, nside=nside
+                ),
+                1,
+            ),
+            (bf.FilterChangeBasisFunction(filtername=filtername),1),
+            (bf.FilterDistBasisFunction(filtername=filtername),1)
         ]
 
         weights = [val[1] for val in bfs]
@@ -173,29 +184,39 @@ if __name__ == "config":
     sky = SkyAreaGenerator(nside=nside)
     footprints_hp, footprints_labels = sky.return_maps()
 
-    footprints = Footprint(MJD_START, sun_ra_start=conditions.sun_ra, nside=nside)
+    footprints = Footprint(
+        MJD_START,
+        sun_ra_start=conditions.sun_ra,
+        nside=nside,
+        filters=["u", "g_6", "r_57", "i", "z", "y_10"],
+    )
     for i, key in enumerate(footprints_hp.dtype.names):
         footprints.footprints[i, :] = footprints_hp[key]
+    footprints.filters = dict(
+        u=0,
+        g_6=1,
+        r_57=2,
+        i=3,
+        z=4,
+        y_10=5,
+    )
 
     # Generate surveys for all filters to test "FilterLoaded" basis func
     eo_test_filters = [
-        "u",
-        "y",
-        "g",
-        "i",
-        "r",
-        "z",
+        "g_6",
+        "r_57",
+        "y_10",
     ]  # ['y', 'r', 'g'] actually present
     # for EO OpSim, we'll have 'g' function like 'u' (IE 1 long exposure)
-    nexp_override = {"g": 1}
-    exptime_override = {"g": 38}
+    nexp_override = {"g_6": 1}
+    exptime_override = {"g_6": 30.0}
 
     greedy = gen_greedy_surveys(
         nside,
         nexp=2,
         nexp_override=nexp_override,
         exptime_override=exptime_override,
-        exptime=29.2,
+        exptime=30.0,
         filters=eo_test_filters,
         footprints=footprints,
         seed=seed,
