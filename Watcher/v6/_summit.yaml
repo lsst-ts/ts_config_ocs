@@ -235,9 +235,9 @@ rules:
   configs:
   - force_error_axial: 15.0
     force_error_tangent: 50.0
-    max_num_axial: 10
-    max_num_tangent: 2
-    threshold_mtmount_acceleration: 0.05
+    max_num_axial: 15
+    max_num_tangent: 3
+    threshold_mtmount_acceleration: 0.08
     poll_interval: 1.0
 - classname: MTMirrorTemperature
   configs:
