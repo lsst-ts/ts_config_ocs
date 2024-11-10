@@ -30,7 +30,7 @@ def gen_field_survey(
     name,
     ra=0.0,
     dec=-70.0,
-    sequence=["u_02"],
+    sequence=["r_03"],
     visits=1,
     nexp=1,
     exptime=30.0,
@@ -132,7 +132,7 @@ def gen_field_survey(
 if __name__ == "config":
     nside = 32
 
-    filters_list = ["u_02"]
+    filters_list = ["r_03"]
 
     surveys = []
     for i in range(0, 30):
