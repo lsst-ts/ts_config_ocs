@@ -147,8 +147,8 @@ def gen_greedy_surveys(
                 ),
                 1,
             ),
-            (bf.FilterChangeBasisFunction(filtername=filtername),1),
-            (bf.FilterDistBasisFunction(filtername=filtername),1)
+            (bf.FilterChangeBasisFunction(filtername=filtername), 1),
+            (bf.FilterDistBasisFunction(filtername=filtername), 1),
         ]
 
         weights = [val[1] for val in bfs]
