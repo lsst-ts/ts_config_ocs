@@ -132,7 +132,7 @@ def gen_field_survey(
 if __name__ == "config":
     nside = 32
 
-    filters_list = ["r_03", "i_06"]
+    filters_list = ["z_03"]
 
     surveys = []
     for i in range(0, 30):
