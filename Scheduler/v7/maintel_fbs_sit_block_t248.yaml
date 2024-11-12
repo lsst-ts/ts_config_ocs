@@ -4,28 +4,6 @@ maintel:
   startup_type: COLD
   predicted_scheduler_window: 0.5
   startup_database: /home/saluser/rubin_sim_data/fbs_observation_database_maintel.sql
-  models:
-    observatory_model:
-      camera:
-        filter_max_changes_burst_num: 1
-        filter_max_changes_avg_num: 30000
-        filter_mounted:
-        - u_02
-        - r_03
-        - i_06
-        filter_removable:
-        - g_01
-        - r_03
-        - y
-        - u_02
-        - i_06
-        - z
-        filter_unmounted:
-        - g
-        - z
-        - y
-      telescope:
-        altitude_minpos: 20.0
   driver_configuration:
     parameters:
       night_boundary: -10.0
