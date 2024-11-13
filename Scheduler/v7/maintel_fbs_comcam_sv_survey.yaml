@@ -8,21 +8,6 @@ maintel:
       camera:
         filter_max_changes_burst_num: 1
         filter_max_changes_avg_num: 30000
-        filter_mounted:
-        - r_03
-        - i_06
-        - z_03
-        filter_removable:
-        - u_02
-        - g_01
-        - r_03
-        - i_06
-        - z_03
-        - y
-        filter_unmounted:
-        - u_02
-        - g_01
-        - y
       optics_loop_corr:
         tel_optics_cl_alt_limit:
           - 0
