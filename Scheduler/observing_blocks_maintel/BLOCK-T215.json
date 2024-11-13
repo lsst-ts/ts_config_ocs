@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T215",
-  "id": "c801f5fb-3b2e-4a28-b908-d2c686730990",
+  "id": "e6d46718-6bf3-4b76-be2d-52c7143e0b8d",
   "program": "BLOCK-T215",
   "constraints": [],
   "scripts": [
@@ -20,11 +20,11 @@
         "max_sun_elevation": "$run_max_sun_el",
         "tracking": "$run_tracking",
         "point_directly": "$run_point_directly",
-        "min_exp_time": "$run_min_exp_time",
+        "rotator_angle": "$run_rotator_angle",
         "program": "BLOCK-T215",
         "reason": "comcam_twilight_flat"
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T215 configuration\ndescription: Configuration for BLOCK-T215.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  run_target_sky_counts:\n    description: Target sky counts.\n    type: number\n    default: 15000\n  run_max_counts:\n    description: Max sky counts.\n    type: number\n    default: 80000\n  run_n_flats:\n    description: Target number of flats.\n    type: integer\n    default: 10\n  run_dither:\n    description: Dither distance in arcsec.\n    type: number\n    default: 10\n  run_max_exp:\n    description: Maximum exposure time allowed.\n    type: number\n    default: 300\n  run_distance_from_sun:\n    description: Distance from sun in degrees.\n    type: number\n    default: 179.0\n  run_target_el:\n    description: Target elevation for sky flats.\n    type: number\n    default: 45.0\n  run_max_sun_el:\n    description: Maximum sun elevation.\n    type: number\n    default: -5.0\n  run_min_exp_time:\n    description: Minimum exposure time.\n    type: number\n    default: 1\n  run_tracking:\n    description: If true, track the telescope.\n    type: boolean\n    default: True\n  run_point_directly:\n    description: If true, point directly. If false, point relative to sun.\n    type: boolean\n    default: False\n  run_target_az:\n    description: Target azimuth position.\n    type: number\n    default: 90.0\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T215 configuration\ndescription: Configuration for BLOCK-T215.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  run_target_sky_counts:\n    description: Target sky counts.\n    type: number\n    default: 15000\n  run_max_counts:\n    description: Max sky counts.\n    type: number\n    default: 80000\n  run_n_flats:\n    description: Target number of flats.\n    type: integer\n    default: 10\n  run_dither:\n    description: Dither distance in arcsec.\n    type: number\n    default: 10\n  run_max_exp:\n    description: Maximum exposure time allowed.\n    type: number\n    default: 300\n  run_distance_from_sun:\n    description: Distance from sun in degrees.\n    type: number\n    default: 179.0\n  run_target_el:\n    description: Target elevation for sky flats.\n    type: number\n    default: 45.0\n  run_max_sun_el:\n    description: Maximum sun elevation.\n    type: number\n    default: -5.0\n  run_tracking:\n    description: If true, track the telescope.\n    type: boolean\n    default: True\n  run_point_directly:\n    description: If true, point directly. If false, point relative to sun.\n    type: boolean\n    default: False\n  run_target_az:\n    description: Target azimuth position.\n    type: number\n    default: 90.0\n  run_rotator_angle:\n    description: Rotator angle in degrees relative to PhysicalSky.\n    type: number\n    default: 0\n"
 }
