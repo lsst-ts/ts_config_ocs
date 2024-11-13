@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T284",
-  "id": "75a3dc02-725c-4df4-96d4-e67707580a44",
+  "id": "80438144-d7bf-49d9-acc3-2875b715b1b5",
   "program": "BLOCK-T284",
   "constraints": [],
   "scripts": [
@@ -13,18 +13,6 @@
         "move_timeout": 2700,
         "ignore": "$ignore"
       }
-    },
-    {
-      "name": "sleep.py",
-      "standard": true,
-      "parameters": {
-        "sleep_for": 5
-      }
-    },
-    {
-      "name": "maintel/m2/disable_closed_loop.py",
-      "standard": true,
-      "parameters": {}
     },
     {
       "name": "sleep.py",
@@ -129,18 +117,6 @@
       }
     },
     {
-      "name": "maintel/m2/enable_closed_loop.py",
-      "standard": true,
-      "parameters": {}
-    },
-    {
-      "name": "sleep.py",
-      "standard": true,
-      "parameters": {
-        "sleep_for": 5
-      }
-    },
-    {
       "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
@@ -166,18 +142,6 @@
         "move_timeout": 2700,
         "ignore": "$ignore"
       }
-    },
-    {
-      "name": "sleep.py",
-      "standard": true,
-      "parameters": {
-        "sleep_for": 5
-      }
-    },
-    {
-      "name": "maintel/m2/disable_closed_loop.py",
-      "standard": true,
-      "parameters": {}
     },
     {
       "name": "sleep.py",
@@ -274,18 +238,6 @@
           ]
         ]
       }
-    },
-    {
-      "name": "sleep.py",
-      "standard": true,
-      "parameters": {
-        "sleep_for": 5
-      }
-    },
-    {
-      "name": "maintel/m2/enable_closed_loop.py",
-      "standard": true,
-      "parameters": {}
     },
     {
       "name": "sleep.py",
