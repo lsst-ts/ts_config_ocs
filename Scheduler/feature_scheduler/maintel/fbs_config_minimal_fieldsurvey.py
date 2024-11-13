@@ -56,7 +56,7 @@ def get_scheduler():
     }
 
     config_basis_functions = [
-        # basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
+        basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
         basis_functions.AltAzShadowMaskBasisFunction(
             nside=nside,
             min_alt=20.0,
