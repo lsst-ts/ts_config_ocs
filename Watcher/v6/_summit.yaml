@@ -152,6 +152,13 @@ rules:
   - name: ScriptQueue:3
   - name: TunableLaser
   - name: WeatherForecast
+- classname: Telemetry
+  configs:
+  - name: MTDome
+    callback_name: tel_azimuth
+    summary_states:
+      - DISABLED
+      - ENABLED
 - classname: DewPointDepression
   configs:
   - name: AT
