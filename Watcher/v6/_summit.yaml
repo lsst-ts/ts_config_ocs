@@ -152,6 +152,13 @@ rules:
   - name: ScriptQueue:3
   - name: TunableLaser
   - name: WeatherForecast
+- classname: Telemetry
+  configs:
+  - name: MTDome
+    callback_name: tel_azimuth
+    summary_states:
+      - DISABLED
+      - ENABLED
 - classname: DewPointDepression
   configs:
   - name: AT
@@ -169,6 +176,17 @@ rules:
     hysteresis: 0.2
     poll_interval: 1
     max_data_age: 30
+- classname: MTM1M3Temperature
+  configs:
+  - temperature_change_interval: 3600
+    m1m3_temperature_difference_threshold: 5.0
+    m1m3_temperature_change_threshold: 0.75
+- classname: MTMountAzimuth
+  configs:
+  - time_range_start: 7
+    time_range_end: 12
+    mtmount_azimuth_low_threshold: 0.0
+    mtmount_azimuth_high_threshold: 180.0
 - classname: Humidity
   configs:
   - name: AT
@@ -177,6 +195,48 @@ rules:
       sensor_names:
       - AuxTel-ESS02
     warning_level: 73
+    hysteresis: 1
+    poll_interval: 1
+    max_data_age: 30
+  - name: Camera humidity
+    humidity_sensors:
+    - sal_index: 111  # see ESS configuration
+      sensor_names:
+      - "Camera-ESS01"
+    warning_level: 70
+    serious_level: 80
+    critical_level: 90
+    hysteresis: 1
+    poll_interval: 1
+    max_data_age: 30
+  - name: M2 Humidity
+    humidity_sensors:
+    - sal_index: 112  # see ESS configuration
+      sensor_names:
+      - "M2-ESS02"
+    warning_level: 70
+    serious_level: 80
+    critical_level: 90
+    hysteresis: 1
+    poll_interval: 1
+    max_data_age: 30
+  - name: M1M3 Humidity
+    humidity_sensors:
+    - sal_index: 113  # see ESS configuration
+      sensor_names:
+      - "M1M3-ESS03"
+    warning_level: 70
+    serious_level: 80
+    critical_level: 90
+    hysteresis: 1
+    poll_interval: 1
+    max_data_age: 30
+  - name: WeatherStation
+    humidity_sensors:
+    - sal_index: 301  # see ESS configuration
+      sensor_names:
+      - "Weather tower relative humidity"
+    warning_level: 80
     hysteresis: 1
     poll_interval: 1
     max_data_age: 30
@@ -192,6 +252,38 @@ rules:
     warning_msg: Strut temperature is nearing the shutoff limit.
     critical_level: 30
     critical_msg: Disable the hexapod. Strut temperature is too high.
+    hysteresis: 1
+    poll_interval: 1
+    max_data_age: 30
+  - name: M1M3 Temperature Changes
+    temperature_sensors:
+    - sal_index: 113  # see ESS configuration
+      sensor_info:
+      - sensor_name: "M1M3-ESS03"
+    warning_level: 1.0
+    warning_msg: M1M3 ambient temperature changed more than 1.0 degC within one hour.
+    serious_level: 2.0
+    serious_msg: M1M3 ambient temperature changed more than 3.0 degC within one hour.
+    serious_period: 3600
+    critical_level: 3.0
+    critical_msg: M1M3 ambient temperature changed more than 3.0 degC within one hour.
+    hysteresis: 1
+    poll_interval: 1
+    max_data_age: 30
+  - name: WeatherStation Temperature Changes
+    temperature_sensors:
+    - sal_index: 301  # see ESS configuration
+      sensor_info:
+      - sensor_name: "Weather tower relative humidity"
+    warning_level: 1.0
+    warning_msg: WeatherStation temperature changed more than 1.0 degC within one hour.
+    warning_period: 3600
+    serious_level: 2.0
+    serious_msg: WeatherStation temperature changed more than 3.0 degC within one hour.
+    serious_period: 3600
+    critical_level: 3.0
+    critical_msg: WeatherStation temperature changed more than 3.0 degC within one hour.
+    critical_period: 3600
     hysteresis: 1
     poll_interval: 1
     max_data_age: 30
