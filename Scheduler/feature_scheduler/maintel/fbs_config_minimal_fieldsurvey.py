@@ -71,7 +71,10 @@ def get_scheduler():
         basis_functions.FilterLoadedBasisFunction(filternames=sequence),
     ]
 
-    config_detailers = [detailers.DitherDetailer(max_dither=0.2, per_night=False)]
+    config_detailers = [
+        detailers.DitherDetailer(max_dither=0.2, per_night=False),
+        detailers.CameraRotDetailer(max_rot=40.0, min_rot=-40.0, per_night=True),
+    ]
 
     observation_reason = "science"
     science_program = "BLOCK-320"  # json BLOCK to be used
