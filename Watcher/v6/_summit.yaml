@@ -262,29 +262,31 @@ rules:
       - sensor_name: "M1M3-ESS03"
     warning_level: 1.0
     warning_msg: M1M3 ambient temperature changed more than 1.0 degC within one hour.
+    warning_period: 3600
     serious_level: 2.0
-    serious_msg: M1M3 ambient temperature changed more than 3.0 degC within one hour.
+    serious_msg: M1M3 ambient temperature changed more than 2.0 degC within one hour.
     serious_period: 3600
     critical_level: 3.0
     critical_msg: M1M3 ambient temperature changed more than 3.0 degC within one hour.
-    hysteresis: 1
+    critical_period: 3600
+    hysteresis: 0
     poll_interval: 1
     max_data_age: 30
   - name: WeatherStation Temperature Changes
     temperature_sensors:
     - sal_index: 301  # see ESS configuration
       sensor_info:
-      - sensor_name: "Weather tower relative humidity"
+      - sensor_name: "Weather tower temperature"
     warning_level: 1.0
     warning_msg: WeatherStation temperature changed more than 1.0 degC within one hour.
     warning_period: 3600
     serious_level: 2.0
-    serious_msg: WeatherStation temperature changed more than 3.0 degC within one hour.
+    serious_msg: WeatherStation temperature changed more than 2.0 degC within one hour.
     serious_period: 3600
     critical_level: 3.0
     critical_msg: WeatherStation temperature changed more than 3.0 degC within one hour.
     critical_period: 3600
-    hysteresis: 1
+    hysteresis: 0
     poll_interval: 1
     max_data_age: 30
 - classname: ATCameraDewar
