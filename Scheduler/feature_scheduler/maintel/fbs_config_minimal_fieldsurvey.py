@@ -73,7 +73,6 @@ def get_scheduler():
 
     config_detailers = [
         detailers.DitherDetailer(max_dither=0.2, per_night=False),
-        detailers.CameraRotDetailer(max_rot=40.0, min_rot=-40.0, per_night=True),
     ]
 
     observation_reason = "science"
