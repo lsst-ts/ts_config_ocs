@@ -78,7 +78,6 @@ def get_scheduler():
 
     observation_reason = "science"
     science_program = "BLOCK-320"  # json BLOCK to be used
-    survey_name = science_program  # match nextVisit metadata
 
     tier = 0
     target_names = get_comcam_sv_targets().keys()
@@ -87,7 +86,6 @@ def get_scheduler():
         observation_reason,
         science_program,
         target_names,
-        survey_name=survey_name,
         basis_functions=config_basis_functions,
         detailers=config_detailers,
         **field_survey_kwargs,
