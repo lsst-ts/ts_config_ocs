@@ -41,7 +41,7 @@ def get_scheduler():
 
     make_scheduler = MakeFieldSurveyScheduler(nside=nside, ntiers=1)
 
-    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y": 5}
+    nvisits = {"u_02": 5, "g_01": 5, "r_03": 1, "i_06": 1, "z_03": 5, "y": 5}
     sequence = ["r_03", "i_06"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y": 30}
