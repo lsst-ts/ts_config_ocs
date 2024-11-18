@@ -1,5 +1,6 @@
 {
     "name": "BLOCK-T3",
+    "id": "317cd885-59b0-4d1e-be12-ee046ec8e268",
     "program": "BLOCK-T3",
     "constraints": [],
     "scripts": [
@@ -59,8 +60,8 @@
             "parameters": {
                 "hexapod": "m2",
                 "axis": "y",
-                "step_size": 150,
-                "max_position": 4500
+                "step_size": "$step_size",
+                "max_position": "$max_position"
             }
         },
         {
@@ -85,8 +86,8 @@
             "parameters": {
                 "hexapod": "m2",
                 "axis": "x",
-                "step_size": 150,
-                "max_position": 4500
+                "step_size": "$step_size",
+                "max_position": "$max_position"
             }
         },
         {
@@ -105,5 +106,6 @@
                 }
             }
         }
-    ]
+    ],
+    "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T3 configuration\ndescription: Configuration for BLOCK-T3.\ntype: object\nproperties:\n  step_size:\n    description: Step size in microns for x and y axes\n    type: number\n    default: 125\n  max_position:\n    description: Absolute maximum position for x and y axes\n    type: number\n    default: 4500\n"
 }

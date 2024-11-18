@@ -1,0 +1,278 @@
+{
+  "name": "BLOCK-T284",
+  "id": "80438144-d7bf-49d9-acc3-2875b715b1b5",
+  "program": "BLOCK-T284",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": 84,
+        "move_timeout": 2700,
+        "ignore": "$ignore"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTM2",
+            "DISABLED"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTM2",
+            "STANDBY"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTM2",
+            "DISABLED"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "MTM2",
+        "cmd": "selectInclinationSource",
+        "parameters": {
+          "source": 2,
+          "maxDifference": 5
+        }
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTM2",
+            "ENABLED"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": 70,
+        "move_timeout": 2700,
+        "ignore": "$ignore"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": 84,
+        "move_timeout": 2700,
+        "ignore": "$ignore"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTM2",
+            "DISABLED"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTM2",
+            "STANDBY"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTM2",
+            "DISABLED"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "MTM2",
+        "cmd": "selectInclinationSource",
+        "parameters": {
+          "source": 1,
+          "maxDifference": 2,
+          "enableComparison": false
+        }
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTM2",
+            "ENABLED"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": 70,
+        "move_timeout": 2700,
+        "ignore": "$ignore"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 5
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": 84,
+        "move_timeout": 2700,
+        "ignore": "$ignore"
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: T284 configuration\ndescription: Configuration for T284.\ntype: object\nproperties:\n  azimuth:\n    description: Start Azimuth position\n    type: number\n    default: -32\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['mtaos', 'mtdome', 'mtdometrajectory', 'mtrotator']\n"
+}

@@ -1,6 +1,6 @@
 {
-    "name": "BLOCK-T233",
-    "program": "BLOCK-T233",
+    "name": "BLOCK-T262",
+    "program": "BLOCK-T262",
     "constraints": [],
     "scripts": [
         {
@@ -9,17 +9,11 @@
             "parameters": {
                 "nimages": "$num_exp",
                 "exp_times": "$exp_times",
-                "image_type": "DARK",
-                "reason": "BLOCK-T233",
-                "program": "BLOCK-T233",
-                "note": "EO OpSim",
+                "image_type": "FLAT",
+                "reason": "EO_OpSim",
+                "program": "BLOCK-T262",
                 "slew_time": "$estimated_slew_time",
                 "filter": "$band_filter",
-                "visit_metadata": {
-                    "ra": "$ra",
-                    "dec": "$dec",
-                    "rot_sky": "$rot" 
-                },
                 "roi_spec": {
                     "common": {
                         "cols": 50,
@@ -68,7 +62,7 @@
                             "start_row": 975
                         }
                     }
-                }
+                } 
             }
         }
     ]

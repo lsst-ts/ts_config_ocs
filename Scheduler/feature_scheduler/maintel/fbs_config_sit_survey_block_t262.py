@@ -35,7 +35,7 @@ def gen_greedy_surveys(
     nexp_override=None,
     exptime=30.0,
     exptime_override=None,
-    filters=["g", "r", "z"],
+    filters=["g_6", "r_57", "z_10"],
     camera_rot_limits=[-80.0, 80.0],
     shadow_minutes=60.0,
     max_alt=76.0,
@@ -43,7 +43,7 @@ def gen_greedy_surveys(
     ignore_obs="DD",
     footprint_weight=0.3,
     slewtime_weight=3.0,
-    stayfilter_weight=0.8,
+    stayfilter_weight=3.0,
     footprints=None,
     seed=42,
 ):
@@ -86,7 +86,7 @@ def gen_greedy_surveys(
     """
     # Define the extra parameters that are used in the greedy survey. I
     # think these are fairly set, so no need to promote to utility func kwargs
-    name = "BLOCK-T233"
+    name = "BLOCK-T262"
     greed_survey_params = {
         "block_size": 1,
         "smoothing_kernel": None,
@@ -139,18 +139,16 @@ def gen_greedy_surveys(
                 ),
                 0,
             ),
-            (bf.FilterLoadedBasisFunction(filternames=filtername), 1),
-            (bf.AvoidFastRevisitsBasisFunction(filtername=filtername, nside=nside), 1),
+            (bf.FilterLoadedBasisFunction(filternames=filtername), 0),
+            (bf.AvoidFastRevisitsBasisFunction(filtername=filtername, nside=nside), 0),
             (
                 bf.BalanceVisits(
-                    nobs_reference=10, note_survey=note, note_interest=name, nside=nside
+                    nobs_reference=20, note_survey=note, note_interest=name, nside=nside
                 ),
-                1,
+                0,
             ),
-            (bf.FilterChangeBasisFunction(filtername=filtername), 1),
-            (bf.FilterDistBasisFunction(filtername=filtername), 1),
         ]
-
+        # (bf.BalanceVisits)
         weights = [val[1] for val in bfs]
         basis_functions = [val[0] for val in bfs]
         surveys.append(
@@ -163,6 +161,7 @@ def gen_greedy_surveys(
                 ignore_obs=ignore_obs,
                 nexp=nexps[filtername],
                 detailers=survey_detailers,
+                scheduler_note=note,
                 **greed_survey_params,
             )
         )
@@ -207,16 +206,11 @@ if __name__ == "config":
         "r_57",
         "y_10",
     ]  # ['y', 'r', 'g'] actually present
-    # for EO OpSim, we'll have 'g' function like 'u' (IE 1 long exposure)
-    nexp_override = {"g_6": 1}
-    exptime_override = {"g_6": 30.0}
 
     greedy = gen_greedy_surveys(
         nside,
-        nexp=2,
-        nexp_override=nexp_override,
-        exptime_override=exptime_override,
-        exptime=30.0,
+        nexp=1,
+        exptime=15.0,
         filters=eo_test_filters,
         footprints=footprints,
         seed=seed,
