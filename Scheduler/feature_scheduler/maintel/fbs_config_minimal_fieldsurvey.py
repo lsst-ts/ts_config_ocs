@@ -41,8 +41,8 @@ def get_scheduler():
 
     make_scheduler = MakeFieldSurveyScheduler(nside=nside, ntiers=1)
 
-    nvisits = {"u_02": 5, "g_01": 5, "r_03": 1, "i_06": 1, "z_03": 5, "y": 5}
-    sequence = ["r_03", "i_06"]
+    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y": 5}
+    sequence = ["r_03", "i_06", "z_03"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y": 30}
     # 1 --> single 30 second exposuree
@@ -56,7 +56,7 @@ def get_scheduler():
     }
 
     config_basis_functions = [
-        # basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
+        basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
         basis_functions.AltAzShadowMaskBasisFunction(
             nside=nside,
             min_alt=20.0,
