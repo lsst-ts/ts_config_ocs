@@ -73,9 +73,7 @@ def get_scheduler():
 
     config_detailers = [
         detailers.DitherDetailer(max_dither=0.2, per_night=False),
-        detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=40.0, min_rot=-40.0, telescope="comcam"
-        ),
+        detailers.CameraSmallRotPerObservationListDetailer(max_rot=40.0, min_rot=-40.0),
     ]
 
     observation_reason = "science"
