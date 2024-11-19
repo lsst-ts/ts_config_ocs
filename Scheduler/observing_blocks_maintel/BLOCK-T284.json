@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T284",
-  "id": "80438144-d7bf-49d9-acc3-2875b715b1b5",
+  "id": "9f7dd6e5-f9d5-4af5-9a96-6694dbb5e329",
   "program": "BLOCK-T284",
   "constraints": [],
   "scripts": [
@@ -19,6 +19,18 @@
       "standard": true,
       "parameters": {
         "sleep_for": 5
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTMount",
+            "DISABLED"
+          ]
+        ]
       }
     },
     {
@@ -110,6 +122,18 @@
       }
     },
     {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTMount",
+            "ENABLED"
+          ]
+        ]
+      }
+    },
+    {
       "name": "sleep.py",
       "standard": true,
       "parameters": {
@@ -148,6 +172,18 @@
       "standard": true,
       "parameters": {
         "sleep_for": 5
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTMount",
+            "DISABLED"
+          ]
+        ]
       }
     },
     {
@@ -234,6 +270,18 @@
         "data": [
           [
             "MTM2",
+            "ENABLED"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "set_summary_state.py",
+      "standard": true,
+      "parameters": {
+        "data": [
+          [
+            "MTMount",
             "ENABLED"
           ]
         ]
