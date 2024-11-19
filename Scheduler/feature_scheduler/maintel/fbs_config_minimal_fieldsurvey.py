@@ -41,12 +41,12 @@ def get_scheduler():
 
     make_scheduler = MakeFieldSurveyScheduler(nside=nside, ntiers=1)
 
-    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y": 5}
-    sequence = ["r_03", "i_06", "z_03"]
+    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y_04": 10}
+    sequence = ["r_03", "i_06", "y_04"]
     # exposure time in seconds
-    exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y": 30}
+    exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
     # 1 --> single 30 second exposuree
-    nexps = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y": 1}
+    nexps = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y_04": 1}
 
     field_survey_kwargs = {
         "nvisits": nvisits,
