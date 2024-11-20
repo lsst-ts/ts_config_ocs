@@ -1,0 +1,44 @@
+{
+    "name": "BLOCK-T299",
+    "program": "BLOCK-T299",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "track_azel": {
+                    "az": -64.287,
+                    "el": 29.095
+                },
+                "target_name": "EUTELSAT_117W_B",
+                "rot_value": 0.0,
+                "rot_type": "PhysicalSky"
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ENGTEST",
+                "program": "$program",
+                "nimages": 5,
+                "exp_times": 10,
+                "reason": "TimingCalibration",
+                "filter": "r_03"
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ENGTEST",
+                "program": "$program",
+                "nimages": 5,
+                "exp_times": 5,
+                "reason": "TimingCalibration",
+                "filter": "r_03"
+            }
+        }
+    ]
+}
