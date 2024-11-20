@@ -68,6 +68,7 @@ def get_scheduler():
         basis_functions.SlewtimeBasisFunction(filtername="r_03", nside=nside),
         basis_functions.SlewtimeBasisFunction(filtername="i_06", nside=nside),
         basis_functions.SlewtimeBasisFunction(filtername="z_03", nside=nside),
+        basis_functions.SlewtimeBasisFunction(filtername="y_04", nside=nside),
         basis_functions.FilterLoadedBasisFunction(filternames=sequence),
     ]
 
