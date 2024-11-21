@@ -1,0 +1,103 @@
+{
+    "name": "PtgModel",
+    "id": "00686ef0-771d-480f-bdc0-3a3c3d544232",
+    "program": "BLOCK-324",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "$name",
+                "slew_icrs": {
+                    "ra": "$ra",
+                    "dec": "$dec"
+                },
+                "rot_value": "$rot",
+                "rot_type": "PhysicalSky",
+                "az_wrap_strategy": "NOUNWRAP"
+            }
+        },
+        {
+            "name": "maintel/close_loop_comcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 15,
+                "max_iter": 2,
+                "gain_sequence": [
+                    0.75,
+                    0.5
+                ],
+                "mode": "FAM",
+                "program": "$program",
+                "note": "pointing_lut_closed_loop",
+                "reason": "PtgModel",
+                "filter": "r_03",
+                "used_dofs": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46
+                ],
+                "apply_corrections": true,
+                "use_ocps": true
+            }
+        },
+        {
+            "name": "maintel/take_image_comcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 1,
+                "exp_times": 15,
+                "reason": "PtgModel",
+                "program": "$program",
+                "filter": "r_03"
+            }
+        }
+    ],
+    "configuration_schema": ""
+}
