@@ -28,7 +28,6 @@ from rubin_scheduler.scheduler import basis_functions, detailers
 from rubin_scheduler.scheduler.detailers import BaseDetailer
 from rubin_scheduler.scheduler.utils import wrap_ra_dec
 from rubin_scheduler.utils import (
-    _approx_altaz2pa,
     _approx_ra_dec2_alt_az,
     gnomonic_project_tosky,
     rotation_converter,
@@ -120,19 +119,20 @@ class ComCamGridDitherDetailer(BaseDetailer):
         This is used to determine conversions between rotSkyPos and rotTelPos.
     """
 
-    def __init__(self, rotSkyPos=0.0, scale=0.355, dither=0.05, telescope="comcam"):
-        self.rotSkyPos = rotSkyPos
+    def __init__(
+        self, rotTelPos_desired=0.0, scale=0.355, dither=0.05, telescope="comcam"
+    ):
+        self.rotTelPos_desired = np.radians(rotTelPos_desired)
         self.scale = np.radians(scale)
         self.dither = np.radians(dither)
         self.rc = rotation_converter(telescope=telescope)
 
     def _rotate(self, x, y, angle):
-        angle = np.radians(angle)
         x_rot = x * np.cos(angle) - y * np.sin(angle)
         y_rot = x * np.sin(angle) + y * np.cos(angle)
         return x_rot, y_rot
 
-    def _generate_offsets(self, n_offsets, filter_list):
+    def _generate_offsets(self, n_offsets, filter_list, rotSkyPos):
         # 2 x 2 pointing grid
         x_grid = np.array(
             [-1.0 * self.scale, -1.0 * self.scale, self.scale, self.scale]
@@ -140,7 +140,7 @@ class ComCamGridDitherDetailer(BaseDetailer):
         y_grid = np.array(
             [-1.0 * self.scale, self.scale, self.scale, -1.0 * self.scale]
         )
-        x_grid_rot, y_grid_rot = self._rotate(x_grid, y_grid, -1.0 * self.rotSkyPos)
+        x_grid_rot, y_grid_rot = self._rotate(x_grid, y_grid, -1.0 * rotSkyPos)
         offsets_grid_rot = np.array([x_grid_rot, y_grid_rot]).T
 
         # Dither pattern within grid to fill chip gaps
@@ -163,9 +163,7 @@ class ComCamGridDitherDetailer(BaseDetailer):
                 -0.5 * self.dither,
             ]
         )
-        x_dither_rot, y_dither_rot = self._rotate(
-            x_dither, y_dither, -1.0 * self.rotSkyPos
-        )
+        x_dither_rot, y_dither_rot = self._rotate(x_dither, y_dither, -1.0 * rotSkyPos)
         offsets_dither_rot = np.array([x_dither_rot, y_dither_rot]).T
 
         # Find the indices of the filter changes
@@ -197,8 +195,19 @@ class ComCamGridDitherDetailer(BaseDetailer):
 
         filter_list = [np.asarray(obs["filter"]).item() for obs in observation_list]
 
+        # Initial estimate of rotSkyPos corresponding to desired rotTelPos
+        alt, az, pa = _approx_ra_dec2_alt_az(
+            observation_list[0]["RA"],
+            observation_list[0]["dec"],
+            conditions.site.latitude_rad,
+            conditions.site.longitude_rad,
+            conditions.mjd,
+            return_pa=True,
+        )
+        rotSkyPos = self.rc._rottelpos2rotskypos(self.rotTelPos_desired, pa)
+
         # Generate offsets in RA and Dec
-        offsets = self._generate_offsets(len(observation_list), filter_list)
+        offsets = self._generate_offsets(len(observation_list), filter_list, rotSkyPos)
 
         # Project offsets onto sky
         obs_array = np.concatenate(observation_list)
@@ -212,17 +221,17 @@ class ComCamGridDitherDetailer(BaseDetailer):
             observation_list[ii]["RA"] = new_ra[ii]
             observation_list[ii]["dec"] = new_dec[ii]
 
-            alt, az = _approx_ra_dec2_alt_az(
+            alt, az, pa = _approx_ra_dec2_alt_az(
                 new_ra[ii],
                 new_dec[ii],
                 conditions.site.latitude_rad,
                 conditions.site.longitude_rad,
                 conditions.mjd,
+                return_pa=True,
             )
-            pa = _approx_altaz2pa(alt, az, conditions.site.latitude_rad)
-            observation_list[ii]["rotSkyPos"] = self.rotSkyPos
+            observation_list[ii]["rotSkyPos"] = rotSkyPos
             observation_list[ii]["rotTelPos"] = self.rc._rotskypos2rottelpos(
-                self.rotSkyPos, pa
+                rotSkyPos, pa
             )
 
         return observation_list
