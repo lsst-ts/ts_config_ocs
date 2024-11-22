@@ -102,7 +102,7 @@ def get_scheduler():
 
     # Ecliptic Field
 
-    nvisits = {"u_02": 24, "g_01": 24, "r_03": 24, "i_06": 24, "z_03": 24, "y_04": 24}
+    nvisits = {"u_02": 12, "g_01": 12, "r_03": 12, "i_06": 12, "z_03": 12, "y_04": 12}
     sequence = ["r_03", "i_06"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
@@ -117,6 +117,7 @@ def get_scheduler():
     }
 
     config_detailers = [detailers.ComCamGridDitherDetailer()]
+    config_detailers[0].survey_features = {}
 
     tier = 0
     target_names = ecliptic_targets
