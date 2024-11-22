@@ -19,11 +19,20 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+import numpy as np
 from lsst.ts.fbs.utils.maintel.make_fieldsurvey_scheduler import (
     MakeFieldSurveyScheduler,
     get_comcam_sv_targets,
 )
 from rubin_scheduler.scheduler import basis_functions, detailers
+from rubin_scheduler.scheduler.detailers import BaseDetailer
+from rubin_scheduler.scheduler.utils import wrap_ra_dec
+from rubin_scheduler.utils import (
+    _approx_altaz2pa,
+    _approx_ra_dec2_alt_az,
+    gnomonic_project_tosky,
+    rotation_converter,
+)
 
 
 def get_scheduler():
@@ -92,6 +101,131 @@ def get_scheduler():
     )
 
     return make_scheduler.get_scheduler()
+
+
+class ComCamGridDitherDetailer(BaseDetailer):
+    """
+    Generate an offset pattern to synthesize a 2x2 grid of ComCam pointings.
+
+    Parameters
+    ----------
+    rotSkyPos : `float`, (0.)
+        The rotation angle of the camera relative to the sky E of N. (degrees)
+    scale : `float` (0.355)
+        Half of the offset between grid pointing centers. (degrees)
+    dither : `float` (0.05)
+        Dither offsets within grid to fill chip gaps. (degrees)
+    telescope : `str`, optional
+        Telescope name. Options of "rubin" or "auxtel". Default "rubin".
+        This is used to determine conversions between rotSkyPos and rotTelPos.
+    """
+
+    def __init__(self, rotSkyPos=0.0, scale=0.355, dither=0.05, telescope="rubin"):
+        self.rotSkyPos = rotSkyPos
+        self.scale = np.radians(scale)
+        self.dither = np.radians(dither)
+        self.rc = rotation_converter(telescope=telescope)
+
+    def _rotate(self, x, y, angle):
+        angle = np.radians(angle)
+        x_rot = x * np.cos(angle) - y * np.sin(angle)
+        y_rot = x * np.sin(angle) + y * np.cos(angle)
+        return x_rot, y_rot
+
+    def _generate_offsets(self, n_offsets, filter_list):
+        # 2 x 2 pointing grid
+        x_grid = np.array(
+            [-1.0 * self.scale, -1.0 * self.scale, self.scale, self.scale]
+        )
+        y_grid = np.array(
+            [-1.0 * self.scale, self.scale, self.scale, -1.0 * self.scale]
+        )
+        x_grid_rot, y_grid_rot = self._rotate(x_grid, y_grid, -1.0 * self.rotSkyPos)
+        offsets_grid_rot = np.array([x_grid_rot, y_grid_rot]).T
+
+        # Dither pattern within grid to fill chip gaps
+        # Psuedo-random offsets
+        x_dither = np.array(
+            [
+                0.0,
+                -0.5 * self.dither,
+                -1.25 * self.dither,
+                1.5 * self.dither,
+                0.75 * self.dither,
+            ]
+        )
+        y_dither = np.array(
+            [
+                0.0,
+                -0.75 * self.dither,
+                1.5 * self.dither,
+                1.25 * self.dither,
+                -0.5 * self.dither,
+            ]
+        )
+        x_dither_rot, y_dither_rot = self._rotate(
+            x_dither, y_dither, -1.0 * self.rotSkyPos
+        )
+        offsets_dither_rot = np.array([x_dither_rot, y_dither_rot]).T
+
+        # Find the indices of the filter changes
+        filter_changes = np.where(
+            np.array(filter_list[:-1]) != np.array(filter_list[1:])
+        )[0]
+        filter_changes = np.concatenate([np.array([-1]), filter_changes])
+        filter_changes += 1
+
+        offsets = []
+        index_filter = 0
+        for ii in range(0, n_offsets):
+            if ii in filter_changes:
+                # Reset the count after each filter change
+                index_filter = 0
+
+            index_grid = index_filter % 4
+            index_dither = np.floor(index_filter / 4).astype(int) % 5
+            offsets.append(
+                offsets_grid_rot[index_grid] + offsets_dither_rot[index_dither]
+            )
+            index_filter += 1
+
+        return np.vstack(offsets)
+
+    def __call__(self, observation_list, conditions):
+        if len(observation_list) == 0:
+            return observation_list
+
+        filter_list = [np.asarray(obs["filter"]).item() for obs in observation_list]
+
+        # Generate offsets in RA and Dec
+        offsets = self._generate_offsets(len(observation_list), filter_list)
+
+        # Project offsets onto sky
+        obs_array = np.concatenate(observation_list)
+        new_ra, new_dec = gnomonic_project_tosky(
+            offsets[:, 0], offsets[:, 1], obs_array["RA"], obs_array["dec"]
+        )
+        new_ra, new_dec = wrap_ra_dec(new_ra, new_dec)
+
+        # Update observations
+        for ii in range(0, len(observation_list)):
+            observation_list[ii]["RA"] = new_ra[ii]
+            observation_list[ii]["dec"] = new_dec[ii]
+
+            alt, az = _approx_ra_dec2_alt_az(
+                new_ra[ii],
+                new_dec[ii],
+                conditions.site.latitude_rad,
+                conditions.site.longitude_rad,
+                conditions.mjd,
+            )
+            pa = _approx_altaz2pa(alt, az, conditions.site.latitude_rad)
+            observation_list[ii]["rotSkyPos"] = self.rotSkyPos
+            observation_list[ii]["rotTelPos"] = self.rc._rotskypos2rottelpos(
+                self.rotSkyPos, pa
+            )
+
+        return observation_list
 
 
 if __name__ == "config":
