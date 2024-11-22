@@ -120,7 +120,7 @@ class ComCamGridDitherDetailer(BaseDetailer):
         This is used to determine conversions between rotSkyPos and rotTelPos.
     """
 
-    def __init__(self, rotSkyPos=0.0, scale=0.355, dither=0.05, telescope="rubin"):
+    def __init__(self, rotSkyPos=0.0, scale=0.355, dither=0.05, telescope="comcam"):
         self.rotSkyPos = rotSkyPos
         self.scale = np.radians(scale)
         self.dither = np.radians(dither)
