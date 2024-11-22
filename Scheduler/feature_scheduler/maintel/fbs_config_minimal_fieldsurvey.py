@@ -49,11 +49,11 @@ def get_scheduler():
 
     make_scheduler = MakeFieldSurveyScheduler(nside=nside, ntiers=1)
 
-    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y": 5}
+    nvisits = {"u_02": 24, "g_01": 24, "r_03": 24, "i_06": 24, "z_03": 24, "y": 24}
     sequence = ["r_03", "i_06", "z_03"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y": 30}
-    # 1 --> single 30 second exposuree
+    # 1 --> single 30 second exposure
     nexps = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y": 1}
 
     field_survey_kwargs = {
@@ -80,8 +80,9 @@ def get_scheduler():
     ]
 
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.2, per_night=False),
-        detailers.CameraRotDetailer(max_rot=10.0, min_rot=-10.0),
+        # detailers.DitherDetailer(max_dither=0.2, per_night=False),
+        # detailers.CameraRotDetailer(max_rot=10.0, min_rot=-10.0),
+        detailers.ComCamGridDitherDetailer(),
     ]
 
     observation_reason = "science"
