@@ -102,7 +102,7 @@ def get_scheduler():
 
     # Ecliptic Field
 
-    nvisits = {"u_02": 12, "g_01": 12, "r_03": 12, "i_06": 12, "z_03": 12, "y_04": 12}
+    nvisits = {"u_02": 16, "g_01": 16, "r_03": 16, "i_06": 16, "z_03": 16, "y_04": 16}
     sequence = ["r_03", "i_06"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
