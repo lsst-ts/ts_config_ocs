@@ -45,8 +45,8 @@ def get_scheduler():
 
     # ComCam Deep Drilling Fields
 
-    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y_04": 5}
-    sequence = ["y_04", "i_06", "r_03"]
+    nvisits = {"u_02": 5, "g_01": 10, "r_03": 5, "i_06": 5, "z_03": 5, "y_04": 5}
+    sequence = ["g_01", "r_03", "i_06"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
     # 1 --> single 30 second exposure
@@ -102,8 +102,8 @@ def get_scheduler():
 
     # Ecliptic Field
 
-    nvisits = {"u_02": 16, "g_01": 16, "r_03": 16, "i_06": 16, "z_03": 16, "y_04": 16}
-    sequence = ["r_03", "i_06"]
+    nvisits = {"u_02": 8, "g_01": 16, "r_03": 8, "i_06": 8, "z_03": 8, "y_04": 8}
+    sequence = ["g_01", "r_03", "i_06"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
     # 1 --> single 30 second exposure
