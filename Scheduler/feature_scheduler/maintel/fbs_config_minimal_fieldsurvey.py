@@ -62,6 +62,10 @@ def get_scheduler():
         obslist["RA"] = np.radians(target_info[target]["ra"])
         obslist["dec"] = np.radians(target_info[target]["dec"])
         obslist["rotTelPos"] = np.radians(0)
+        obslist["science_program"] = aos_science_program
+        obslist["scheduler_note"] = aos_scheduler_note
+        obslist["target_name"] = target
+        obslist["filter"] = "r"
         # I'm assuming that most of the aos_obs request will be overridden by
         # the json block, but the scheduler_note should be maintained
         # and the result of this observation should be fed back to the FBS
@@ -95,7 +99,6 @@ def get_scheduler():
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
     # 1 --> single 30 second exposure
     nexps = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y_04": 1}
-
     field_survey_kwargs = {
         "nvisits": nvisits,
         "sequence": sequence,
@@ -163,6 +166,7 @@ def get_scheduler():
             ra=target_info[target]["ra"],
             dec=target_info[target]["dec"],
             scheduler_note=aos_scheduler_note,
+            science_program=aos_science_program,
         )
         make_scheduler.add_field_surveys(
             tier,

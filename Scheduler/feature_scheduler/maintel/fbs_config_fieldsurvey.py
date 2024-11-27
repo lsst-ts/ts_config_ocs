@@ -68,6 +68,10 @@ def get_scheduler():
         obslist["RA"] = np.radians(target_info[target]["ra"])
         obslist["dec"] = np.radians(target_info[target]["dec"])
         obslist["rotTelPos"] = np.radians(0)
+        obslist["filter"] = "r"
+        obslist["science_program"] = aos_science_program
+        obslist["scheduler_note"] = aos_scheduler_note
+        obslist["target_name"] = target
         aos_obs_lists[target] = [obslist]
 
     # Define the standard sequence for all field surveys.
