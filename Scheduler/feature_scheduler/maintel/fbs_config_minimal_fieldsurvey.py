@@ -65,7 +65,7 @@ def get_scheduler():
         obslist["science_program"] = aos_science_program
         obslist["scheduler_note"] = aos_scheduler_note
         obslist["target_name"] = target
-        obslist["filter"] = "r"
+        obslist["filter"] = "r_03"
         # I'm assuming that most of the aos_obs request will be overridden by
         # the json block, but the scheduler_note should be maintained
         # and the result of this observation should be fed back to the FBS
