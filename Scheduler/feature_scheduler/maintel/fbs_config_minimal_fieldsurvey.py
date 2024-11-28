@@ -93,7 +93,7 @@ def get_scheduler():
     # Configure ecliptic target survey
     ecliptic_targets = ["Rubin_SV_38_7"]
 
-    nvisits = {"u_02": 8, "g_01": 16, "r_03": 8, "i_06": 8, "z_03": 8, "y_04": 8}
+    nvisits = {"u_02": 8, "g_01": 16, "r_03": 2, "i_06": 2, "z_03": 8, "y_04": 8}
     sequence = ["r_03", "i_06"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
@@ -133,7 +133,7 @@ def get_scheduler():
     # And now configure standard survey fields
     # ComCam Deep Drilling Fields
 
-    nvisits = {"u_02": 5, "g_01": 10, "r_03": 5, "i_06": 5, "z_03": 5, "y_04": 5}
+    nvisits = {"u_02": 5, "g_01": 10, "r_03": 2, "i_06": 2, "z_03": 5, "y_04": 5}
     sequence = ["r_03", "i_06"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
