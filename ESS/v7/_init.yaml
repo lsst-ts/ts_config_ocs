@@ -304,7 +304,7 @@ instances:
           devices:
           - name: AuxTel-ElectricField01
             device_type: Serial
-            serial_port: /dev/ttyUSB0
+            serial_port: /dev/ttyUSB_lower_right
             sensor_type: EFM100C
             safe_interval: 10
             num_samples: 20
@@ -313,7 +313,7 @@ instances:
             location: Calibration Hill
           - name: AuxTel-Lightning01
             device_type: Serial
-            serial_port: /dev/ttyUSB1
+            serial_port: /dev/ttyUSB_upper_right
             sensor_type: LD250
             safe_interval: 2
             baud_rate: 9600
