@@ -41,7 +41,7 @@ def get_scheduler():
 
     make_scheduler = MakeFieldSurveyScheduler(nside=nside, ntiers=1)
 
-    nvisits = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y": 1}
+    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y": 5}
     sequence = ["r_03", "i_06", "z_03"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y": 30}
@@ -56,7 +56,7 @@ def get_scheduler():
     }
 
     config_basis_functions = [
-        # basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
+        basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
         basis_functions.AltAzShadowMaskBasisFunction(
             nside=nside,
             min_alt=20.0,
@@ -71,11 +71,13 @@ def get_scheduler():
         basis_functions.FilterLoadedBasisFunction(filternames=sequence),
     ]
 
-    config_detailers = [detailers.DitherDetailer(max_dither=0.2, per_night=False)]
+    config_detailers = [
+        detailers.DitherDetailer(max_dither=0.2, per_night=False),
+        detailers.CameraRotDetailer(max_rot=10.0, min_rot=-10.0),
+    ]
 
     observation_reason = "science"
     science_program = "BLOCK-320"  # json BLOCK to be used
-    survey_name = science_program  # match nextVisit metadata
 
     tier = 0
     target_names = get_comcam_sv_targets().keys()
@@ -84,7 +86,6 @@ def get_scheduler():
         observation_reason,
         science_program,
         target_names,
-        survey_name=survey_name,
         basis_functions=config_basis_functions,
         detailers=config_detailers,
         **field_survey_kwargs,

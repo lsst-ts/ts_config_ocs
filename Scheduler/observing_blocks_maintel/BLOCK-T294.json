@@ -1,7 +1,7 @@
 {
-  "name": "BLOCK-T227",
-  "id": "8430e45f-23ff-4719-aa9d-26b86675eb08",
-  "program": "BLOCK-T227",
+  "name": "BLOCK-T294",
+  "id": "e0c90aca-3c35-4bfe-89af-7463829d14d5",
+  "program": "BLOCK-T294",
   "constraints": [],
   "scripts": [
     {
@@ -9,7 +9,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 82.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -26,7 +26,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 46.0,
+        "el": 70.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -43,7 +43,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 82.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -59,25 +59,8 @@
       "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "az": -51.0,
-        "el": 34.0,
-        "move_timeout": "$move_timeout",
-        "ignore": "$ignore"
-      }
-    },
-    {
-      "name": "sleep.py",
-      "standard": true,
-      "parameters": {
-        "sleep_for": 30
-      }
-    },
-    {
-      "name": "maintel/move_p2p.py",
-      "standard": true,
-      "parameters": {
-        "az": -75.0,
-        "el": 34.0,
+        "az": -99.0,
+        "el": 82.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -94,7 +77,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 37.5,
+        "el": 82.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -111,24 +94,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
-        "move_timeout": "$move_timeout",
-        "ignore": "$ignore"
-      }
-    },
-    {
-      "name": "sleep.py",
-      "standard": true,
-      "parameters": {
-        "sleep_for": 30
-      }
-    },
-    {
-      "name": "maintel/move_p2p.py",
-      "standard": true,
-      "parameters": {
-        "az": -71.5,
-        "el": 34.0,
+        "el": 78.5,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -145,7 +111,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 82.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -161,8 +127,8 @@
       "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "az": -66.52,
-        "el": 42.480000000000004,
+        "az": -78.5,
+        "el": 82.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -179,7 +145,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 50.96000000000001,
+        "el": 82.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -196,7 +162,7 @@
       "standard": true,
       "parameters": {
         "az": -83.48,
-        "el": 42.480000000000004,
+        "el": 73.52,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -213,7 +179,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 65.03999999999999,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -229,8 +195,8 @@
       "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "az": -72.53,
-        "el": 36.47,
+        "az": -66.52,
+        "el": 73.52,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -247,7 +213,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 38.94,
+        "el": 82.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -264,7 +230,7 @@
       "standard": true,
       "parameters": {
         "az": -77.47,
-        "el": 36.47,
+        "el": 79.53,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -281,7 +247,41 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 77.06,
+        "move_timeout": "$move_timeout",
+        "ignore": "$ignore"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 30
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": -72.53,
+        "el": 79.53,
+        "move_timeout": "$move_timeout",
+        "ignore": "$ignore"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 30
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": -75.0,
+        "el": 82.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -294,5 +294,5 @@
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T227 configuration\ndescription: Configuration for BLOCK-T227.\ntype: object\nproperties:\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: []\n  move_timeout:\n    description: Timeout for the move_p2p.py scripts\n    type: number\n    default: 1800\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T294 configuration\ndescription: Configuration for BLOCK-T294.\ntype: object\nproperties:\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: []\n  move_timeout:\n    description: Timeout for the move_p2p.py scripts\n    type: number\n    default: 1800\n"
 }

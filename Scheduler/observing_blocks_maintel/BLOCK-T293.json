@@ -1,7 +1,7 @@
 {
-  "name": "BLOCK-T227",
-  "id": "8430e45f-23ff-4719-aa9d-26b86675eb08",
-  "program": "BLOCK-T227",
+  "name": "BLOCK-T293",
+  "id": "64432038-bcfc-47b9-a5d8-e05aab6c0ce1",
+  "program": "BLOCK-T293",
   "constraints": [],
   "scripts": [
     {
@@ -9,7 +9,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 70.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -26,7 +26,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 46.0,
+        "el": 82.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -43,7 +43,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 70.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -60,7 +60,7 @@
       "standard": true,
       "parameters": {
         "az": -51.0,
-        "el": 34.0,
+        "el": 70.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -77,7 +77,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 70.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -94,7 +94,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 37.5,
+        "el": 73.5,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -111,7 +111,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 70.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -128,7 +128,7 @@
       "standard": true,
       "parameters": {
         "az": -71.5,
-        "el": 34.0,
+        "el": 70.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -145,7 +145,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 70.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -162,7 +162,7 @@
       "standard": true,
       "parameters": {
         "az": -66.52,
-        "el": 42.480000000000004,
+        "el": 78.48,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -179,7 +179,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 50.96000000000001,
+        "el": 86.96000000000001,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -196,7 +196,7 @@
       "standard": true,
       "parameters": {
         "az": -83.48,
-        "el": 42.480000000000004,
+        "el": 78.48,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -213,7 +213,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 70.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -230,7 +230,7 @@
       "standard": true,
       "parameters": {
         "az": -72.53,
-        "el": 36.47,
+        "el": 72.47,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -247,7 +247,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 38.94,
+        "el": 74.94,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -264,7 +264,7 @@
       "standard": true,
       "parameters": {
         "az": -77.47,
-        "el": 36.47,
+        "el": 72.47,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -281,7 +281,7 @@
       "standard": true,
       "parameters": {
         "az": -75.0,
-        "el": 34.0,
+        "el": 70.0,
         "move_timeout": "$move_timeout",
         "ignore": "$ignore"
       }
@@ -294,5 +294,5 @@
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T227 configuration\ndescription: Configuration for BLOCK-T227.\ntype: object\nproperties:\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: []\n  move_timeout:\n    description: Timeout for the move_p2p.py scripts\n    type: number\n    default: 1800\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T293 configuration\ndescription: Configuration for BLOCK-T293.\ntype: object\nproperties:\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: []\n  move_timeout:\n    description: Timeout for the move_p2p.py scripts\n    type: number\n    default: 1800\n"
 }
