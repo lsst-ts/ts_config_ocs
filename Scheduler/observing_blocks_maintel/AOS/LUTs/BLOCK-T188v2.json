@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T188v2",
-  "id": "32c53809-d36f-4fc2-9497-f1faeddfeea0",
+  "id": "560f4e9d-b45e-4271-bcf4-e5ab569decb7",
   "program": "BLOCK-T188v2",
   "constraints": [],
   "scripts": [
@@ -26,7 +26,12 @@
         "note": "LUT_rotator_angle_closed_loop_v2",
         "exposure_time": 15.0,
         "max_iter": "$run_maxiter",
-        "used_dofs": "$run_dofs"
+        "used_dofs": "$run_dofs",
+        "mode": "FAM",
+        "gain_sequence": [
+          0.75,
+          0.5
+        ]
       }
     },
     {
@@ -51,7 +56,12 @@
         "note": "LUT_rotator_angle_closed_loop_v2",
         "exposure_time": 15.0,
         "max_iter": "$run_maxiter",
-        "used_dofs": "$run_dofs"
+        "used_dofs": "$run_dofs",
+        "mode": "FAM",
+        "gain_sequence": [
+          0.75,
+          0.5
+        ]
       }
     },
     {
@@ -76,7 +86,12 @@
         "note": "LUT_rotator_angle_closed_loop_v2",
         "exposure_time": 15.0,
         "max_iter": "$run_maxiter",
-        "used_dofs": "$run_dofs"
+        "used_dofs": "$run_dofs",
+        "mode": "FAM",
+        "gain_sequence": [
+          0.75,
+          0.5
+        ]
       }
     },
     {
@@ -101,7 +116,12 @@
         "note": "LUT_rotator_angle_closed_loop_v2",
         "exposure_time": 15.0,
         "max_iter": "$run_maxiter",
-        "used_dofs": "$run_dofs"
+        "used_dofs": "$run_dofs",
+        "mode": "FAM",
+        "gain_sequence": [
+          0.75,
+          0.5
+        ]
       }
     },
     {
@@ -126,7 +146,12 @@
         "note": "LUT_rotator_angle_closed_loop_v2",
         "exposure_time": 15.0,
         "max_iter": "$run_maxiter",
-        "used_dofs": "$run_dofs"
+        "used_dofs": "$run_dofs",
+        "mode": "FAM",
+        "gain_sequence": [
+          0.75,
+          0.5
+        ]
       }
     },
     {
@@ -151,7 +176,12 @@
         "note": "LUT_rotator_angle_closed_loop_v2",
         "exposure_time": 15.0,
         "max_iter": "$run_maxiter",
-        "used_dofs": "$run_dofs"
+        "used_dofs": "$run_dofs",
+        "mode": "FAM",
+        "gain_sequence": [
+          0.75,
+          0.5
+        ]
       }
     },
     {
@@ -176,7 +206,12 @@
         "note": "LUT_rotator_angle_closed_loop_v2",
         "exposure_time": 15.0,
         "max_iter": "$run_maxiter",
-        "used_dofs": "$run_dofs"
+        "used_dofs": "$run_dofs",
+        "mode": "FAM",
+        "gain_sequence": [
+          0.75,
+          0.5
+        ]
       }
     },
     {
@@ -201,7 +236,12 @@
         "note": "LUT_rotator_angle_closed_loop_v2",
         "exposure_time": 15.0,
         "max_iter": "$run_maxiter",
-        "used_dofs": "$run_dofs"
+        "used_dofs": "$run_dofs",
+        "mode": "FAM",
+        "gain_sequence": [
+          0.75,
+          0.5
+        ]
       }
     },
     {
@@ -210,5 +250,5 @@
       "parameters": {}
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T188 configuration\ndescription: Configuration for BLOCK-T188.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  run_azimuth:\n    description: Azimuth to use for the rotator angle sweep.\n    type: number\n    default: 20\n  run_elevation:\n    description: Elevation to use for the rotator angle sweep.\n    type: number\n    default: 80\n  run_dofs:\n    description: Degrees of freedom to use for the elevation sweep.\n    type: array\n    default: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]\n    items:\n      type: integer\n      minimum: 0\n      maximum: 49\n  run_maxiter:\n    description: Maximum number of iterations for the elevation sweep.\n    type: integer\n    default: 5\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T188 configuration\ndescription: Configuration for BLOCK-T188.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  run_azimuth:\n    description: Azimuth to use for the rotator angle sweep.\n    type: number\n    default: 20\n  run_elevation:\n    description: Elevation to use for the rotator angle sweep.\n    type: number\n    default: 80\n  run_dofs:\n    description: Degrees of freedom to use for the elevation sweep.\n    type: array\n    default: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 22, 23, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 45, 46]\n    items:\n      type: integer\n      minimum: 0\n      maximum: 49\n  run_maxiter:\n    description: Maximum number of iterations for the elevation sweep.\n    type: integer\n    default: 3\n"
 }
