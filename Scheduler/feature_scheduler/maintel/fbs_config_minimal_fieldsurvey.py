@@ -41,12 +41,16 @@ def get_scheduler():
 
     make_scheduler = MakeFieldSurveyScheduler(nside=nside, ntiers=1)
 
-    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y": 5}
-    sequence = ["r_03", "i_06", "z_03"]
+    ecliptic_targets = ["Rubin_SV_38_7"]
+
+    # ComCam Deep Drilling Fields
+
+    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y_04": 5}
+    sequence = ["u_02", "g_01", "r_03"]
     # exposure time in seconds
-    exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y": 30}
-    # 1 --> single 30 second exposuree
-    nexps = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y": 1}
+    exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
+    # 1 --> single 30 second exposure
+    nexps = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y_04": 1}
 
     field_survey_kwargs = {
         "nvisits": nvisits,
@@ -59,7 +63,7 @@ def get_scheduler():
         basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
         basis_functions.AltAzShadowMaskBasisFunction(
             nside=nside,
-            min_alt=20.0,
+            min_alt=40.0,
             max_alt=83.0,
             shadow_minutes=2.0,
         ),
@@ -68,19 +72,55 @@ def get_scheduler():
         basis_functions.SlewtimeBasisFunction(filtername="r_03", nside=nside),
         basis_functions.SlewtimeBasisFunction(filtername="i_06", nside=nside),
         basis_functions.SlewtimeBasisFunction(filtername="z_03", nside=nside),
+        basis_functions.SlewtimeBasisFunction(filtername="y_04", nside=nside),
         basis_functions.FilterLoadedBasisFunction(filternames=sequence),
     ]
 
     config_detailers = [
         detailers.DitherDetailer(max_dither=0.2, per_night=False),
-        detailers.CameraRotDetailer(max_rot=10.0, min_rot=-10.0),
+        detailers.CameraSmallRotPerObservationListDetailer(
+            max_rot=40.0, min_rot=-40.0, telescope="comcam"
+        ),
     ]
 
     observation_reason = "science"
     science_program = "BLOCK-320"  # json BLOCK to be used
 
     tier = 0
-    target_names = get_comcam_sv_targets().keys()
+    target_names = get_comcam_sv_targets(
+        exclude=ecliptic_targets,
+    ).keys()
+    make_scheduler.add_field_surveys(
+        tier,
+        observation_reason,
+        science_program,
+        target_names,
+        basis_functions=config_basis_functions,
+        detailers=config_detailers,
+        **field_survey_kwargs,
+    )
+
+    # Ecliptic Field
+
+    nvisits = {"u_02": 8, "g_01": 12, "r_03": 8, "i_06": 8, "z_03": 8, "y_04": 8}
+    sequence = ["g_01", "r_03", "i_06"]
+    # exposure time in seconds
+    exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
+    # 1 --> single 30 second exposure
+    nexps = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y_04": 1}
+
+    field_survey_kwargs = {
+        "nvisits": nvisits,
+        "sequence": sequence,
+        "exptimes": exptimes,
+        "nexps": nexps,
+    }
+
+    config_detailers = [detailers.ComCamGridDitherDetailer()]
+    config_detailers[0].survey_features = {}
+
+    tier = 0
+    target_names = ecliptic_targets
     make_scheduler.add_field_surveys(
         tier,
         observation_reason,
