@@ -42,19 +42,19 @@ maintel:
         filter_max_changes_avg_num: 30000
         filter_mounted:
         - r_03
-        - i_06
-        - z_03
+        - u_02
+        - g_01
         filter_removable:
         - u_02
         - g_01
         - r_03
         - i_06
         - z_03
-        - y
+        - y_04
         filter_unmounted:
-        - u_02
-        - g_01
-        - y
+        - i_06
+        - y_04
+        - z_03
       park:
         filter_position: r_03
       optics_loop_corr:
@@ -64,7 +64,7 @@ maintel:
           - 90
       telescope:
         altitude_maxpos: 84.0
-        altitude_minpos: 20.0
+        altitude_minpos: 40.0
         azimuth_maxpos: 200.0
         azimuth_minpos: -200.0
       rotator:
