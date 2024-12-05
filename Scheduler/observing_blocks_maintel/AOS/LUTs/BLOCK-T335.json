@@ -1,0 +1,234 @@
+{
+  "name": "BLOCK-T335",
+  "id": "f39f70aa-bf37-444d-91ba-f428f6b22423",
+  "program": "BLOCK-T335",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 80
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 70
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 60
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 50
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 40
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 30
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 35
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 45
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 55
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 65
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$run_azimuth",
+          "el": 75
+        }
+      }
+    },
+    {
+      "name": "maintel/take_aos_sequence_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "r_01",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "exposure_time": 15.0
+      }
+    },
+    {
+      "name": "maintel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T335 configuration\ndescription: Configuration for BLOCK-T335.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  run_azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 0\n"
+}
