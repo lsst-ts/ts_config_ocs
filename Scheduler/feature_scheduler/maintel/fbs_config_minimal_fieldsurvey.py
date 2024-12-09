@@ -45,7 +45,7 @@ def get_scheduler():
 
     # ComCam Deep Drilling Fields
 
-    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 25, "y_04": 5}
+    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y_04": 5}
     sequence = ["g_01", "r_03", "z_03"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
