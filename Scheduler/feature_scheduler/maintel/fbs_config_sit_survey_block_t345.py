@@ -74,7 +74,7 @@ def get_scheduler():
         footprints_hp=footprint_hp_filter,
         camera_rot_limits=[-80, 80],
         pair_time=30,
-        exp_time=150,
+        exptime=150,
         nexp=1,
         science_program="BLOCK-T345",
     )
