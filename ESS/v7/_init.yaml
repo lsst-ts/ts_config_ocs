@@ -111,13 +111,13 @@ instances:
           devices:
           - name: Laser-ESS01
             device_type: Serial
-            serial_port: /dev/ttyUSB0
+            serial_port: /dev/ttyUSB_upper_right
             sensor_type: HX85A
             location: Laser Enclosure
           - name: Laser-ESS02
             channels: 8
             device_type: Serial
-            serial_port: /dev/ttyUSB1
+            serial_port: /dev/ttyUSB_lower_right
             sensor_type: Temperature
             location: >-
               EnclosureFan
