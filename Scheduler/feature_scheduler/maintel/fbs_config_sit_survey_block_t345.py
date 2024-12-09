@@ -21,8 +21,8 @@
 
 import numpy as np
 from rubin_scheduler.scheduler import example
-from rubin_scheduler.scheduler.utils import CurrentAreaMap
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
+from rubin_scheduler.scheduler.utils import CurrentAreaMap
 
 
 def get_scheduler():
