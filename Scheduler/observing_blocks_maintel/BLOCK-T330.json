@@ -1,0 +1,1412 @@
+{
+  "name": "BLOCK-T330",
+  "id": "8740c464-a411-440f-97d3-8176cf7629b9",
+  "program": "BLOCK-T330",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7300
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7305
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7310
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7315
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7320
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7325
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7330
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7335
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7340
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7345
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7350
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7355
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7360
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7365
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7370
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7375
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7380
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7385
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7390
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7395
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7400
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7405
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7410
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7415
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7420
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7425
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7430
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7435
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7440
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7445
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7450
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7455
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7460
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7465
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7470
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7475
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7480
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7485
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7490
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7495
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7500
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7505
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7510
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7515
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7520
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7525
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7530
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7535
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7540
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7545
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7550
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7555
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7560
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7565
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7570
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7575
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7580
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7585
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7590
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7595
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 7600
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep"
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T330 configuration\ndescription: Configuration for BLOCK-T330.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"g_01\"\n  run_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 0.2\n"
+}
