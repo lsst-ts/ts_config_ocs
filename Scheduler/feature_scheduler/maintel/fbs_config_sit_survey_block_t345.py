@@ -81,7 +81,7 @@ def get_scheduler():
     new_dtype = np.dtype([(map_band_to_filtername[f], "<f8") for f in "ugrizy"])
     footprint_hp_filter = footprint_hp.astype(new_dtype)
     for i, f in enumerate([filtername, filtername2]):
-        footprints.footprints[i, :] = footprint_hp_filter[f]
+        footprints.set_footprint(f, footprint_hp_filter[f])
 
     # Now set up basis functions
     m5_weight = 6.0
