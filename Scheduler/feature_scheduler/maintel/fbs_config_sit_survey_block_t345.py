@@ -78,10 +78,10 @@ def get_scheduler():
     # need to remap this to filtername not band
     footprint = CurrentAreaMap(nside=nside)
     footprint_hp, labels = footprint.return_maps()
-    new_dtype = np.dtype([(f, "<f8") for f in [filtername, filtername2]])
+    new_dtype = np.dtype([(map_band_to_filtername[f], "<f8") for f in "ugrizy"])
     footprint_hp_filter = footprint_hp.astype(new_dtype)
-    for i, f in enumerate(footprint_hp_filter.dtype.names):
-        footprints.footprints[i, :] = footprint_hp_filter[f]
+    for i, f in enumerate([filtername, filtername2]):
+        footprints.footprints[i, :] = footprint_hp_filter[map_band_to_filtername[f]]
 
     # Now set up basis functions
     m5_weight = 6.0
