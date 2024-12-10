@@ -78,7 +78,7 @@ def get_scheduler():
     # need to remap this to filtername not band
     footprint = CurrentAreaMap(nside=nside)
     footprint_hp, labels = footprint.return_maps()
-    new_dtype = np.dtype([(map_band_to_filtername[f], "<f8") for f in "ugrizy"])
+    new_dtype = np.dtype([(f, "<f8") for f in [filtername, filtername2]])
     footprint_hp_filter = footprint_hp.astype(new_dtype)
     for i, f in enumerate(footprint_hp_filter.dtype.names):
         footprints.footprints[i, :] = footprint_hp_filter[f]
