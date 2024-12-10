@@ -20,8 +20,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import numpy as np
-from rubin_scheduler.scheduler import (basis_functions, detailers, example,
-                                       features)
+from rubin_scheduler.scheduler import basis_functions, detailers, example, features
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
 from rubin_scheduler.scheduler.surveys import BlobSurvey
 from rubin_scheduler.scheduler.utils import CurrentAreaMap, Footprint
