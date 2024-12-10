@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T339",
-  "id": "3cce0038-6074-4dd5-a8fa-09900637ac2b",
+  "id": "79dfc404-3e8b-4df0-911a-7033a341c2b1",
   "program": "BLOCK-T339",
   "constraints": [],
   "scripts": [
@@ -73,7 +73,7 @@
       "name": "maintel/take_image_comcam.py",
       "standard": true,
       "parameters": {
-        "filter": "empty",
+        "filter": "none",
         "image_type": "ACQ",
         "exp_times": "$run_exp_time_empty",
         "program": "$program",
@@ -150,7 +150,7 @@
       "name": "maintel/take_image_comcam.py",
       "standard": true,
       "parameters": {
-        "filter": "empty",
+        "filter": "none",
         "image_type": "ACQ",
         "exp_times": "$run_exp_time_empty",
         "program": "$program",
