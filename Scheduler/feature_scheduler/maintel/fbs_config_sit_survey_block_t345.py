@@ -20,7 +20,8 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import numpy as np
-from rubin_scheduler.scheduler import basis_functions, detailers, example, features
+from rubin_scheduler.scheduler import (basis_functions, detailers, example,
+                                       features)
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
 from rubin_scheduler.scheduler.surveys import BlobSurvey
 from rubin_scheduler.scheduler.utils import CurrentAreaMap, Footprint
@@ -69,8 +70,11 @@ def get_scheduler():
     sun_moon_info = almanac.get_sun_moon_positions(survey_start)
     sun_ra_start = sun_moon_info["sun_RA"].copy()
     # Let's set the footprint using the physical bandnames
+    filterdict = {}
+    for i, f in enumerate(map_band_to_filtername.values()):
+        filterdict[f] = i
     footprints = Footprint(
-        filters=[filtername, filtername2],
+        filters=filterdict,
         mjd_start=survey_start,
         sun_ra_start=sun_ra_start,
         nside=nside,
@@ -80,7 +84,7 @@ def get_scheduler():
     footprint_hp, labels = footprint.return_maps()
     new_dtype = np.dtype([(map_band_to_filtername[f], "<f8") for f in "ugrizy"])
     footprint_hp_filter = footprint_hp.astype(new_dtype)
-    for i, f in enumerate([filtername, filtername2]):
+    for f in footprint_hp_filter.dtype.names:
         footprints.set_footprint(f, footprint_hp_filter[f])
 
     # Now set up basis functions
