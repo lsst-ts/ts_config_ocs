@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T339",
-  "id": "ea591374-4934-47af-b909-d2a8b568bfdd",
+  "id": "da3612d9-a4dd-4800-970b-4100c1d012ca",
   "program": "BLOCK-T339",
   "constraints": [],
   "scripts": [
@@ -32,7 +32,7 @@
         "exp_times": "$run_exp_time_g",
         "program": "$program",
         "reason": "CBP_filter_scan",
-        "note": "$run_wavelength"
+        "note": "'$run_wavelength'"
       }
     },
     {
@@ -55,7 +55,7 @@
         "exp_times": "$run_exp_time_r",
         "program": "$program",
         "reason": "CBP_filter_scan",
-        "note": "$run_wavelength"
+        "note": "'$run_wavelength'"
       }
     },
     {
@@ -78,7 +78,7 @@
         "exp_times": "$run_exp_time_empty",
         "program": "$program",
         "reason": "CBP_filter_scan",
-        "note": "$run_wavelength"
+        "note": "'$run_wavelength'"
       }
     },
     {
