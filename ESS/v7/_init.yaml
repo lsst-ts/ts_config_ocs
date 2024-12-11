@@ -104,30 +104,50 @@ instances:
               Unused
   - sal_index: 107
     data_clients:
-      - client_class: ControllerDataClient
-        # Laser Enclosure humidity and temperature sensors
+      # - client_class: ControllerDataClient
+      #   # Laser Enclosure humidity and temperature sensors
+      #   config:
+      #     host: laser-rpi.cp.lsst.org
+      #     devices:
+      #     - name: Laser-ESS01
+      #       device_type: Serial
+      #       serial_port: /dev/ttyUSB_upper_right
+      #       sensor_type: HX85A
+      #       location: Laser Enclosure
+          # - name: Laser-ESS02
+          #   channels: 8
+          #   device_type: Serial
+          #   serial_port: /dev/ttyUSB_lower_right
+          #   sensor_type: Temperature
+          #   location: >-
+          #     EnclosureFan
+          #     FCUnit
+          #     LaserTop
+          #     LaserBottom
+          #     LaserFan
+          #     PowerSupply
+          #     EnclosureOut
+          #     EnclosureMid
+      - client_class: TcpipDataClient
         config:
-          host: laser-rpi.cp.lsst.org
-          devices:
-          - name: Laser-ESS01
-            device_type: Serial
-            serial_port: /dev/ttyUSB_upper_right
-            sensor_type: HX85A
-            location: Laser Enclosure
-          - name: Laser-ESS02
-            channels: 8
-            device_type: Serial
-            serial_port: /dev/ttyUSB_lower_right
-            sensor_type: Temperature
-            location: >-
-              EnclosureFan
-              FCUnit
-              LaserTop
-              LaserBottom
-              LaserFan
-              PowerSupply
-              EnclosureOut
-              EnclosureMid
+          name: Laser-ESS02
+          host: 127.0.0.1
+          port: 15000
+          connect_timeout: 5
+          read_timeout: 5
+          max_read_timeouts: 2
+          channels: 8
+          baud_rate: 19200
+          sensor_type: Temperature
+          location: >-
+            EnclosureFan
+            FCUnit
+            LaserTop
+            LaserBottom
+            LaserFan
+            PowerSupply
+            EnclosureOut
+            EnclosureMid
   - sal_index: 108
     data_clients:
       - client_class: TcpipDataClient
