@@ -55,7 +55,7 @@ def get_scheduler():
         # I think these are the values appropriate for alt limits now?
         min_alt=40,
         max_alt=70,
-        min_az=0,
+        min_az=220,
         max_az=360,
         # Avoid going into avoidance regions 30 minutes into the future
         shadow_minutes=30,
