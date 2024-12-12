@@ -104,34 +104,20 @@ instances:
               Unused
   - sal_index: 107
     data_clients:
-      # - client_class: ControllerDataClient
-      #   # Laser Enclosure humidity and temperature sensors
-      #   config:
-      #     host: laser-rpi.cp.lsst.org
-      #     devices:
-      #     - name: Laser-ESS01
-      #       device_type: Serial
-      #       serial_port: /dev/ttyUSB_upper_right
-      #       sensor_type: HX85A
-      #       location: Laser Enclosure
-          # - name: Laser-ESS02
-          #   channels: 8
-          #   device_type: Serial
-          #   serial_port: /dev/ttyUSB_lower_right
-          #   sensor_type: Temperature
-          #   location: >-
-          #     EnclosureFan
-          #     FCUnit
-          #     LaserTop
-          #     LaserBottom
-          #     LaserFan
-          #     PowerSupply
-          #     EnclosureOut
-          #     EnclosureMid
+      - client_class: ControllerDataClient
+        # Laser Enclosure humidity and temperature sensors
+        config:
+          host: laser-rpi.cp.lsst.org
+          devices:
+          - name: Laser-ESS01
+            device_type: Serial
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: HX85A
+            location: Laser Enclosure
       - client_class: TcpipDataClient
         config:
           name: Laser-ESS02
-          host: 127.0.0.1
+          host: laser-rpi.cp.lsst.org
           port: 15000
           connect_timeout: 5
           read_timeout: 5
