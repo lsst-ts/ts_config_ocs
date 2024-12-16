@@ -46,7 +46,7 @@ def get_scheduler():
     # ComCam Deep Drilling Fields
 
     nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y_04": 5}
-    sequence = ["u_02", "g_01", "r_03"]
+    sequence = ["g_01", "r_03"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
     # 1 --> single 30 second exposure
@@ -63,7 +63,7 @@ def get_scheduler():
         basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
         basis_functions.AltAzShadowMaskBasisFunction(
             nside=nside,
-            min_alt=40.0,
+            min_alt=30.0,
             max_alt=83.0,
             shadow_minutes=2.0,
         ),
@@ -102,8 +102,8 @@ def get_scheduler():
 
     # Ecliptic Field
 
-    nvisits = {"u_02": 8, "g_01": 12, "r_03": 8, "i_06": 8, "z_03": 8, "y_04": 8}
-    sequence = ["g_01", "r_03", "i_06"]
+    nvisits = {"u_02": 8, "g_01": 5, "r_03": 5, "i_06": 8, "z_03": 20, "y_04": 8}
+    sequence = ["g_01", "r_03"]
     # exposure time in seconds
     exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
     # 1 --> single 30 second exposure
