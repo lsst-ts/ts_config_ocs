@@ -127,7 +127,9 @@ def test_blocks_valid_json(instance: list[str]) -> None:
             try:
                 script_config_validator.validate(script.parameters)
             except Exception as e:
-                raise AssertionError(f"Failed to validate {script.name}. {e}") from e
+                raise AssertionError(
+                    f"Failed to validate {script.name} in {block}. {e}"
+                ) from e
 
 
 def get_driver_overrides() -> dict:
