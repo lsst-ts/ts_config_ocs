@@ -7,9 +7,10 @@
             "name": "auxtel/track_target.py",
             "standard": true,
             "parameters": {
-                "track_azel": {
+                "find_target": {
                     "az": "$az",
-                    "el": "$alt"
+                    "el": "$alt",
+                    "mag_range": 8.0
                 },
                 "track_for": 120
             }
