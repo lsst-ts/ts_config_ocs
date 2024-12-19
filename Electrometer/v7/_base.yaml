@@ -6,10 +6,10 @@ instances:
     mode: 1
     range: 2.0e-08
     tcpip:
-      hostname: 'cbp-calElectrometer.cp.lsst.org'
+      hostname: 'localhost'
       port: 5024
       timeout: 2
-    s3_instance: "cp"
+    s3_instance: "ls"
     fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
     image_name_service: "http://ccs.lsst.org"
     filters:
@@ -32,10 +32,10 @@ instances:
     mode: 1
     range: 2.0e-08
     tcpip:
-      hostname: 'cbp-Electrometer.cp.lsst.org'
+      hostname: 'localhost'
       port: 5024
       timeout: 2
-    s3_instance: "cp"
+    s3_instance: "ls"
     fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
     image_name_service: "http://ccs.lsst.org"
     filters:
@@ -58,10 +58,10 @@ instances:
     mode: 1
     range: 2.0e-08
     tcpip:
-      hostname: 'auxtel-electrometer.cp.lsst.org'
+      hostname: 'localhost'
       port: 4001
       timeout: 2
-    s3_instance: "cp"
+    s3_instance: "ls"
     fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
     image_name_service: "http://ccs.lsst.org"
     filters:
