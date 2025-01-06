@@ -66,7 +66,7 @@ def get_scheduler():
         Target(
             target_name="HD60753",
             survey_name="BLOCK-311",
-            ra=Angle("07:333:22.3", unit=units.hourangle),
+            ra=Angle("07:33:22.3", unit=units.hourangle),
             dec=Angle("-50:35:03.7", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["spec_boost"],
