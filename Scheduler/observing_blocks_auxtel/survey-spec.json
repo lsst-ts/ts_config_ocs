@@ -13,19 +13,22 @@
                 "do_acquire": true,
                 "acq_filter": "empty_1",
                 "acq_grating": "holo4_003",
-                "acq_exposure_time": 5.0,
+                "acq_exposure_time": 1.0,
                 "do_blind_offset": true,
                 "do_take_sequence": true,
                 "target_pointing_verification": false,
                 "exposure_time_sequence": [
-                    60.0,
-                    60.0
+                    30.0,
+                    30.0,
+                    30.0
                 ],
                 "filter_sequence": [
                     "empty_1",
-                    "empty_1"
+                    "BG40_65mm_1", 
+                    "OG550_65mm_1"
                 ],
                 "grating_sequence": [
+                    "holo4_003",
                     "holo4_003",
                     "holo4_003"
                 ],
