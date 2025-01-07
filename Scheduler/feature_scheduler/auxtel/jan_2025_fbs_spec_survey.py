@@ -47,7 +47,7 @@ def get_scheduler():
     )
 
     image_nexp = 1  # number of exposures
-    image_exptime = 80.0  # total exposure time in seconds
+    image_exptime = 35.0  # total exposure time in seconds
     image_visit_gap = 12 * 60.0
     wind_speed_maximum = 13.0  # maximum direct wind in m/s
     avoid_wind = False
@@ -82,7 +82,7 @@ def get_scheduler():
             survey_name="BLOCK-306",
             hour_angle_limit=image_ha_limit,
             reward_value=reward_values["default"],
-            filters=["g"],
+            filters=["r"],
             visit_gap=image_visit_gap,
             exptime=image_exptime,
             nexp=image_nexp,
