@@ -64,10 +64,10 @@ def get_scheduler():
 
     spec_target_list = [
         Target(
-            target_name="HD60753",
+            target_name="HD38666",
             survey_name="BLOCK-311",
-            ra=Angle("07:33:22.3", unit=units.hourangle),
-            dec=Angle("-50:35:03.7", unit=units.deg),
+            ra=Angle("05:46:00", unit=units.hourangle),
+            dec=Angle("-32:18:23.2", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["spec_boost"],
             filters=["r"],
