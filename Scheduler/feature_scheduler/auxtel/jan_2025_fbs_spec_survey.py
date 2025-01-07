@@ -54,22 +54,33 @@ def get_scheduler():
     cwfs_time_gap = 120.0
 
     spec_ha_limit = [
-        (18.0, 24.0),
-        (0.0, 6.0),
+        (0.0, 24.0),
     ]
     image_ha_limit = [
-        (23.0, 24.0),
-        (0, 0.5),
+        (21.0, 24.0),
+        (0, 3.0),
     ]
 
     spec_target_list = [
         Target(
             target_name="HD38666",
-            survey_name="BLOCK-311",
+            survey_name="BLOCK-312",
             ra=Angle("05:46:00", unit=units.hourangle),
             dec=Angle("-32:18:23.2", unit=units.deg),
             hour_angle_limit=spec_ha_limit,
             reward_value=reward_values["spec_boost"],
+            filters=["r"],
+            visit_gap=0.0,
+            exptime=420.0,
+            nexp=1,
+        ),
+        Target(
+            target_name="HD185975",
+            survey_name="BLOCK-311",
+            ra=Angle("20:28:18", unit=units.hourangle),
+            dec=Angle("-87:28:19.9", unit=units.deg),
+            hour_angle_limit=spec_ha_limit,
+            reward_value=reward_values["spec_backup"],
             filters=["r"],
             visit_gap=0.0,
             exptime=420.0,
