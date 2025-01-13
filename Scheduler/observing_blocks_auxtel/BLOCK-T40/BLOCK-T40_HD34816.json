@@ -1,0 +1,723 @@
+{
+    "name": "BLOCK-T40_HD34816",
+    "id": "1ffc6451-c0e6-42a2-a213-ac9e8f0cee79",
+    "program": "BLOCK-T40_HD34816",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "auxtel/latiss_acquire_and_take_sequence.py",
+            "standard": false,
+            "parameters": {
+                "object_ra": "05:19:34.5223",
+                "object_dec": "-13:10:36.3698",
+                "object_name": "HD34816",
+                "do_acquire": true,
+                "acq_filter": "empty_1",
+                "acq_grating": "holo4_003",
+                "acq_exposure_time": 1.0,
+                "do_blind_offset": true,
+                "do_take_sequence": true,
+                "target_pointing_verification": false,
+                "exposure_time_sequence": [
+                    30.0
+                ],
+                "filter_sequence": [
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003"
+                ],
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353"
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": -80
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": -70
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": -60
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": -50
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": -40
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": -30
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": -20
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": -10
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": 0
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": 10
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": 20
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": 30
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": 40
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": 50
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": 60
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        },
+        {
+            "name": "auxtel/offset_atcs.py",
+            "standard": true,
+            "parameters": {
+                "offset_xy": {
+                    "y": 0,
+                    "x": 70
+                },
+                "relative": false
+            }
+        },
+        {
+            "name": "auxtel/latiss_take_sequence.py",
+            "standard": true,
+            "parameters": {
+                "program": "BLOCK-T40_HD34816",
+                "reason": "SITCOM-1353",
+                "exposure_time_sequence": [
+                    30,
+                    30,
+                    30,
+                    30,
+                    30,
+                    30
+                ],
+                "filter_sequence": [
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1",
+                    "empty_1"
+                ],
+                "grating_sequence": [
+                    "holo4_003",
+                    "holo4_003",
+                    "holo4_003",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1",
+                    "blue300lpmm_qn1"
+                ]
+            }
+        }
+    ]
+}

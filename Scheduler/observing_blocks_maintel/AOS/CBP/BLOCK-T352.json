@@ -1,0 +1,459 @@
+{
+  "name": "BLOCK-T352",
+  "id": "0267d2b9-f970-4779-8609-5d1ec10af6e4",
+  "program": "BLOCK-T352",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_baseline",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": 3
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B1": 3.0
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B1=3.0",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B1": -3.0,
+        "M2_B2": 3.0
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B2=3.0",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B2": -3.0,
+        "M2_B3": 3.0
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B3=3.0",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B3": -3.0,
+        "M2_B4": 3.0
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B4=3.0",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B4": -3.0,
+        "M2_B5": 3.0
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B5=3.0",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B5": -3.0,
+        "M2_B6": 0.5
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B6=0.5",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B6": -0.5,
+        "M2_B7": 0.5
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B7=0.5",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B7": -0.5,
+        "M2_B8": 1.0
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B8=1.0",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B8": -1.0,
+        "M2_B9": 1.0
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B9=1.0",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B9": -1.0,
+        "M2_B10": 0.5
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B10=0.5",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B10": -0.5,
+        "M2_B11": 0.5
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B11=0.5",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B11": -0.5,
+        "M2_B12": 0.5
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B12=0.5",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B12": -0.5,
+        "M2_B13": 0.5
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B13=0.5",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B13": -0.5,
+        "M2_B14": 0.4
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B14=0.4",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B14": -0.4,
+        "M2_B15": 0.4
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B15=0.4",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B15": -0.4,
+        "M2_B16": 0.3
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B16=0.3",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B16": -0.3,
+        "M2_B17": 0.3
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B17=0.3",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B17": -0.3,
+        "M2_B18": 0.1
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B18=0.1",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B18": -0.1,
+        "M2_B19": 0.1
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B19=0.1",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B19": -0.1,
+        "M2_B20": 0.1
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_test",
+        "note": "M2_B20=0.1",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": "$n_test_images"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "M2_B20": -0.1
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "program": "$program",
+        "reason": "spot_dance_baseline",
+        "exp_times": "$exposure_time",
+        "image_type": "ENGTEST",
+        "nimages": 3
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T352 configuration\ndescription: Configuration for BLOCK-T352.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"r_03\"\n  exposure_time:\n    description: Exposure time in seconds.\n    type: number\n    default: 0.2\n  n_test_images:\n    description: Number of test images for each dof.\n    type: number\n    default: 1\n"
+}

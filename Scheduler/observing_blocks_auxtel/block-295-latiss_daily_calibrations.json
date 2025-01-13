@@ -21,21 +21,6 @@
             "parameters": {
                 "n_bias": 1,
                 "n_dark": 1,
-                "exp_times_dark": 6,
-                "n_flat": 20,
-                "exp_times_flat": 6,
-                "script_mode": "BIAS_DARK_FLAT",
-                "filter": "SDSSg_65mm",
-                "grating": "empty_1",
-                "program": "BLOCK-295"
-            }
-        },
-        {
-            "name": "auxtel/make_latiss_calibrations.py",
-            "standard": false,
-            "parameters": {
-                "n_bias": 1,
-                "n_dark": 1,
                 "exp_times_dark": 1,
                 "n_flat": 20,
                 "exp_times_flat": 1,

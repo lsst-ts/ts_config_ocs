@@ -4,17 +4,16 @@
     "constraints": [],
     "scripts": [
         {
-            "name": "auxtel/latiss_wep_align.py",
-            "standard": false,
+            "name": "auxtel/track_target.py",
+            "standard": true,
             "parameters": {
                 "find_target": {
                     "az": "$az",
                     "el": "$alt",
-                    "mag_limit": 8.0
+                    "mag_limit": 8.0,
+                    "radius": 10
                 },
-                "filter": "SDSSr_65mm",
-                "camera_playlist": "cwfs-test_take_sequence",
-                "program": "$program"
+                "track_for": 120
             }
         }
     ]

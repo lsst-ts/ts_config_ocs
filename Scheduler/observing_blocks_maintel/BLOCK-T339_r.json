@@ -1,0 +1,2345 @@
+{
+  "name": "BLOCK-T339_r",
+  "id": "ddd57351-8eb6-4aa1-9329-12120c1ec4c8",
+  "program": "BLOCK-T339_r",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 676
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "676"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 678
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "678"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 680
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "680"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 682
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "682"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 684
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "684"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 686
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "686"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 688
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "688"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 690
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "690"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 692
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "692"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 694
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "694"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 696
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "696"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 698
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "698"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 700
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "700"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 702
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "702"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 704
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "704"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 706
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "706"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$run_filter",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 676
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "676"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 678
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "678"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 680
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "680"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 682
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "682"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 684
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "684"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 686
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "686"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 688
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "688"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 690
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "690"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 692
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "692"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 694
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "694"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 696
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "696"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 698
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "698"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 700
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "700"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 702
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "702"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 704
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "704"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 706
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "706"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_comcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "none",
+        "image_type": "ACQ",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_filter_scan_r_edge",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T339_r configuration\ndescription: Configuration for BLOCK-T339_r.\ntype: object\nproperties:\n  run_exp_time:\n    description: exposure time to use.\n    type: number\n    default: 20\n  run_filter:\n    description: filter to use.\n    type: string\n    default: \"r_03\"\n  run_electrometer_scan_duration:\n    description: Electrometer scan duration to use.\n    type: number\n    default: 0.5\n"
+}
