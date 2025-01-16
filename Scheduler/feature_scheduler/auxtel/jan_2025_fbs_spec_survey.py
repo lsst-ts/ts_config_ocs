@@ -55,7 +55,7 @@ def get_scheduler():
 
     spec_ha_limit = [
         (0.0, 12.0),
-        (14.2, 24.0),
+        (15.0, 24.0),
     ]
     image_ha_limit = [
         (21.0, 24.0),
