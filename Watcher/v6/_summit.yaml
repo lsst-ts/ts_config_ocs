@@ -276,7 +276,7 @@ rules:
     temperature_sensors:
     - sal_index: 301  # see ESS configuration
       sensor_info:
-      - sensor_name: "Weather tower temperature"
+      - sensor_name: "Weather tower air temperature"
     warning_level: 1.0
     warning_msg: WeatherStation temperature changed more than 1.0 degC within one hour.
     warning_period: 3600
