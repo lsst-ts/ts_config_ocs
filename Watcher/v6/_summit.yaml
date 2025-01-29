@@ -1,3 +1,5 @@
+auto_unacknowledge_delay: 0
+auto_acknowledge_delay: 30
 rules:
 - classname: Enabled
   configs:
@@ -15,9 +17,9 @@ rules:
   - name: ATSpectrograph
   - name: ATWhiteLight
   - name: CBP
-  - name: CCCamera
-  - name: CCHeaderService
-  - name: CCOODS
+#  - name: CCCamera
+#  - name: CCHeaderService
+#  - name: CCOODS
   - name: DIMM:1
   - name: ESS:1
   - name: ESS:104
@@ -91,9 +93,9 @@ rules:
   - name: ATSpectrograph
   - name: ATWhiteLight
   - name: CBP
-  - name: CCCamera
-  - name: CCHeaderService
-  - name: CCOODS
+#  - name: CCCamera
+#  - name: CCHeaderService
+#  - name: CCOODS
   - name: DIMM:1
   - name: ESS:1
   - name: ESS:104
@@ -272,23 +274,23 @@ rules:
     hysteresis: 0
     poll_interval: 1
     max_data_age: 30
-  - name: WeatherStation Temperature Changes
-    temperature_sensors:
-    - sal_index: 301  # see ESS configuration
-      sensor_info:
-      - sensor_name: "Weather tower air temperature"
-    warning_level: 1.0
-    warning_msg: WeatherStation temperature changed more than 1.0 degC within one hour.
-    warning_period: 3600
-    serious_level: 2.0
-    serious_msg: WeatherStation temperature changed more than 2.0 degC within one hour.
-    serious_period: 3600
-    critical_level: 3.0
-    critical_msg: WeatherStation temperature changed more than 3.0 degC within one hour.
-    critical_period: 3600
-    hysteresis: 0
-    poll_interval: 1
-    max_data_age: 30
+#  - name: WeatherStation Temperature Changes
+#    temperature_sensors:
+#    - sal_index: 301  # see ESS configuration
+#      sensor_info:
+#      - sensor_name: "Weather tower air temperature"
+#    warning_level: 1.0
+#    warning_msg: WeatherStation temperature changed more than 1.0 degC within one hour.
+#    warning_period: 3600
+#    serious_level: 2.0
+#    serious_msg: WeatherStation temperature changed more than 2.0 degC within one hour.
+#    serious_period: 3600
+#    critical_level: 3.0
+#    critical_msg: WeatherStation temperature changed more than 3.0 degC within one hour.
+#    critical_period: 3600
+#    hysteresis: 0
+#    poll_interval: 1
+#    max_data_age: 30
 - classname: ATCameraDewar
   configs:
   - min_warning_ccd_temp: -105
