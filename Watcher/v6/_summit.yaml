@@ -154,13 +154,6 @@ rules:
   - name: ScriptQueue:3
   - name: TunableLaser
   - name: WeatherForecast
-- classname: Telemetry
-  configs:
-  - name: MTDome
-    callback_name: tel_azimuth
-    summary_states:
-      - DISABLED
-      - ENABLED
 - classname: DewPointDepression
   configs:
   - name: AT
@@ -178,17 +171,6 @@ rules:
     hysteresis: 0.2
     poll_interval: 1
     max_data_age: 30
-- classname: MTM1M3Temperature
-  configs:
-  - temperature_change_interval: 3600
-    m1m3_temperature_difference_threshold: 5.0
-    m1m3_temperature_change_threshold: 0.75
-- classname: MTMountAzimuth
-  configs:
-  - time_range_start: 7
-    time_range_end: 12
-    mtmount_azimuth_low_threshold: 0.0
-    mtmount_azimuth_high_threshold: 180.0
 - classname: Humidity
   configs:
   - name: AT
@@ -274,23 +256,6 @@ rules:
     hysteresis: 0
     poll_interval: 1
     max_data_age: 30
-#  - name: WeatherStation Temperature Changes
-#    temperature_sensors:
-#    - sal_index: 301  # see ESS configuration
-#      sensor_info:
-#      - sensor_name: "Weather tower air temperature"
-#    warning_level: 1.0
-#    warning_msg: WeatherStation temperature changed more than 1.0 degC within one hour.
-#    warning_period: 3600
-#    serious_level: 2.0
-#    serious_msg: WeatherStation temperature changed more than 2.0 degC within one hour.
-#    serious_period: 3600
-#    critical_level: 3.0
-#    critical_msg: WeatherStation temperature changed more than 3.0 degC within one hour.
-#    critical_period: 3600
-#    hysteresis: 0
-#    poll_interval: 1
-#    max_data_age: 30
 - classname: ATCameraDewar
   configs:
   - min_warning_ccd_temp: -105
@@ -318,34 +283,6 @@ rules:
   - name: EPM:301
     min_num_zeros_schneider: 3
     generator_startup_time: 600
-- classname: MTTotalForceMoment
-  configs:
-  - fx: 115.0
-    fy: 17600.0
-    fz: 17600.0
-    mx: 1500.0
-    my: 40.0
-    mz: 300.0
-    poll_interval: 1.0
-- classname: MTForceError
-  configs:
-  - force_error_axial: 15.0
-    force_error_tangent: 50.0
-    max_num_axial: 15
-    max_num_tangent: 3
-    threshold_mtmount_acceleration: 0.08
-    poll_interval: 1.0
-- classname: MTMirrorTemperature
-  configs:
-  - ring: 25.0
-    intake: 25.0
-    gradient: 10.0
-    poll_interval: 1.0
-- classname: MTTangentLinkTemperature
-  configs:
-  - buffer: 10.0
-    timeout: 3600.0
-    poll_interval: 1.0
 - classname: Hvac
   configs:
   - rule_name: Dynalene
@@ -509,12 +446,6 @@ rules:
       limit_type: lower
       limit_value: 1
       severity: CRITICAL
-- classname: MTDomeAzEnabled
-  configs:
-    - {}
-- classname: MTDomeCapacitorBanks
-  configs:
-    - {}
 escalation:
   - alarms:
     - ATCameraDewar
