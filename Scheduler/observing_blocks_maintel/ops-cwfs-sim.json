@@ -7,11 +7,11 @@
             "name": "maintel/track_target.py",
             "standard": true,
             "parameters": {
-                "find_target": {
+                "track_azel": {
                     "az": "$az",
-                    "el": "$alt",
-                    "mag_limit": 8.0
-                }
+                    "el": "$alt"
+                },
+                "track_for": 60.0
             }
         }
     ]

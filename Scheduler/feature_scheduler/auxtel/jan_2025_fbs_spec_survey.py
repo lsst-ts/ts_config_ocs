@@ -54,7 +54,8 @@ def get_scheduler():
     cwfs_time_gap = 120.0
 
     spec_ha_limit = [
-        (0.0, 24.0),
+        (0.0, 12.0),
+        (14.2, 24.0),
     ]
     image_ha_limit = [
         (21.0, 24.0),
