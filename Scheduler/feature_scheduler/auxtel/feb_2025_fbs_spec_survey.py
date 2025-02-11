@@ -19,6 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+
 from astropy import units
 from astropy.coordinates import Angle
 from lsst.ts.fbs.utils import Target
@@ -48,11 +49,38 @@ def get_scheduler():
     if avoid_wind:
         wind_speed_maximum = 13.0  # maximum direct wind in m/s
     else:
-        wind_speed_maximum = 0
+        wind_speed_maximum = 30
+
+    # Detailers - for now, just simple image or spectroscopy detailers.
+    image_detailers = [
+        # Dither up to half the FOV, per exposure.
+        DitherDetailer(max_dither=(7 / 2 / 60), per_night=False)
+    ]
+    spec_detailers = []
 
     # Get target information - edit YAML file for updates
-    target_pointings = get_auxtel_targets("auxtel_targets.yaml")
-    # It would be possible to drop targets here too, but easier in yaml.
+    # Yaml file is in ts_fbs_utils :
+    # ts_fbs_utils/python/lsst/ts/fbs/utils/data/auxtel_targets.yaml
+    target_pointings = get_auxtel_targets()
+
+    # The targets below must be in the target_pointings
+    # But can be specified to be all or just a subset
+
+    # Imaging priority - high priority imaging, tier 1
+    imaging_priority_targets = ["Photo08000-1"]
+    # Imaging backup - low priority imaging, backup for everything - tier 3
+    imaging_backup_targets = ["Photo08000-1"]
+
+    # Spectroscopy priority - high priority spectroscopy - tier 1
+    spectroscopy_priority_targets = [
+        "WD_0621-376",
+        "HD60753",
+        "HD42525",
+        "HD38666",
+        "WD_0859-039",
+    ]
+    # Backup spectroscopy - tier 2
+    spectroscopy_backup_targets = ["HD185975"]
 
     # CWFS - tier 0
     cwfs_time_gap = 120.0  # Gap between cwfs images, in minutes
@@ -65,20 +93,7 @@ def get_scheduler():
         cwfs_block_name=cwfs_block,
     )
 
-    # Tier 1 will be primary surveys
-    # This includes imaging survey and spectroscopic surveys
-
-    # IMAGING
-    image_nexp = 8  # number of imaging exposures in sequence (per filter)
-    image_filters = ["r"]
-    image_exptime = 35.0  # total exposure time in seconds
-    image_visit_gap = 10 * 60  # gap between return visits, in minutes
-    image_detailers = [
-        # Dither up to half the FOV, per exposure.
-        DitherDetailer(max_dither=(7 / 2 / 60), per_night=False)
-    ]
-    # Note we will put imaging program in backup tier as well
-
+    # Go through imaging targets ('auxtel_imaging_targets' category)
     imaging_priority = []
     imaging_backup = []
     for target_name in target_pointings["auxtel_imaging_targets"]:
@@ -87,46 +102,44 @@ def get_scheduler():
         target = Target(
             target_name=target_name,
             survey_name=f"{cat}:{target_name}",
-            scheduler_note=f"{target_name}",
             science_program=tt["block"],
             ra=Angle(tt["ra"], unit=units.hourangle),
             dec=Angle(tt["dec"], unit=units.deg),
-            hour_angle_limit=[],
-            filters=image_filters,
-            visit_gap=image_visit_gap,
-            exptime=image_exptime,
-            nexp=image_nexp,
+            hour_angle_limit=None,
+            filters=["r"],
+            visit_gap=tt.get("visit_gap", 0),
+            exptime=tt.get("exptime", 30),
+            nexp=tt.get("nexp", 8),
             reward_value=tt.get("priority", 1),
         )
-        imaging_priority.append(
-            generate_image_survey_from_target(
-                nside=nside,
-                target=target,
-                wind_speed_maximum=wind_speed_maximum,
-                survey_detailers=image_detailers,
-                include_slew=False,
+        if target_name in imaging_priority_targets:
+            imaging_priority.append(
+                generate_image_survey_from_target(
+                    nside=nside,
+                    target=target,
+                    wind_speed_maximum=wind_speed_maximum,
+                    survey_detailers=image_detailers,
+                    include_slew=False,
+                )
             )
-        )
-        # Add to backup tier with similar setup, but no visit_gap
-        target.visit_gap = 0
-        imaging_backup.append(
-            generate_image_survey_from_target(
-                nside=nside,
-                target=target,
-                wind_speed_maximum=wind_speed_maximum,
-                survey_detailers=image_detailers,
-                include_slew=True,
+        if target_name in imaging_backup_targets:
+            # Add to backup tier with similar setup, but no visit_gap
+            target.survey_name = f"{cat}:{target_name} backup"
+            target.visit_gap = 0
+            imaging_backup.append(
+                generate_image_survey_from_target(
+                    nside=nside,
+                    target=target,
+                    wind_speed_maximum=wind_speed_maximum,
+                    survey_detailers=image_detailers,
+                    include_slew=True,
+                )
             )
-        )
 
-    # SPECTROSCOPY
-    # The Spectroscopy targets are handled with more complicated
-    # JSON BLOCKS. The exptime is pulled from the yaml, because
-    # it can vary widely (needs improvement). The nexp is always 1,
-    # and filters don't matter (as long as only one listed).
-    spec_detailers = []
+    # Go through spectroscopy targets - WD and CALSPEC categories
     spectroscopy_categories = ["auxtel_wd_targets", "auxtel_calspec_targets"]
     spectroscopy_priority = []
+    spectroscopy_backup = []
     for category in spectroscopy_categories:
         cat = category.split("_")[1].upper()
         for target_name in target_pointings[category]:
@@ -137,34 +150,53 @@ def get_scheduler():
                 science_program=tt["block"],
                 ra=Angle(tt["ra"], unit=units.hourangle),
                 dec=Angle(tt["dec"], unit=units.deg),
-                hour_angle_limit=[],
+                hour_angle_limit=None,
                 filters=["r"],
-                visit_gap=tt.get("visit_gap", 5),
+                visit_gap=tt.get("visit_gap", 0),
                 exptime=tt.get("exptime", 300),
-                nexp=1,
+                nexp=tt.get("nexp", 1),
                 reward_value=tt.get("priority", 1),
             )
-            spectroscopy_priority.append(
-                generate_spectroscopic_survey(
-                    nside=nside,
-                    target=target,
-                    wind_speed_maximum=wind_speed_maximum,
-                    survey_detailers=spec_detailers,
-                    include_slew=False,
+            if target_name in spectroscopy_priority_targets:
+                spectroscopy_priority.append(
+                    generate_spectroscopic_survey(
+                        nside=nside,
+                        target=target,
+                        wind_speed_maximum=wind_speed_maximum,
+                        survey_detailers=spec_detailers,
+                        include_slew=False,
+                        nfields=0,
+                        avoid_wind=avoid_wind,
+                    )
                 )
-            )
+            if target_name in spectroscopy_backup_targets:
+                target.survey_name = f"{cat}:{target_name} backup"
+                target.visit_gap = 0
+                target.nexp = 1
+                spectroscopy_backup.append(
+                    generate_spectroscopic_survey(
+                        nside=nside,
+                        target=target,
+                        wind_speed_maximum=wind_speed_maximum,
+                        survey_detailers=spec_detailers,
+                        include_slew=False,
+                        nfields=0,
+                        avoid_wind=avoid_wind,
+                    )
+                )
 
     # assemble surveys into list of lists
     surveys = [
         [cwfs_survey],
-        [imaging_priority + spectroscopy_priority],
-        [imaging_backup],
+        imaging_priority + spectroscopy_priority,
+        spectroscopy_backup,
+        imaging_backup,
     ]
 
     scheduler = CoreScheduler(
         surveys=surveys,
         nside=nside,
-        telescope="auxtel",
+        telescope="rubin",
     )
     return nside, scheduler
 
