@@ -376,3 +376,32 @@ instances:
           max_read_timeouts: 5
           sensor_name: Q330
           location: Inside pier 5th floor
+  - sal_index: 303
+    data_clients:
+      - client_class: SnmpDataClient
+        config:
+          host: power-dp01.cp.lsst.org
+          port: 161
+          max_read_timeouts: 5
+          device_name: Schneider Electric - PM5560
+          device_type: schneiderPm5xxx
+          snmp_community: public
+          poll_interval: 1.0
+      - client_class: SnmpDataClient
+        config:
+          host: power-ups.cp.lsst.org
+          port: 161
+          max_read_timeouts: 5
+          device_name: UPS01
+          device_type: xups
+          snmp_community: public
+          poll_interval: 1.0
+      - client_class: SnmpDataClient
+        config:
+          host: aux-ups01.cp.lsst.org
+          port: 161
+          max_read_timeouts: 5
+          device_name: UPS02
+          device_type: xups
+          snmp_community: lsst_network
+          poll_interval: 1.0
