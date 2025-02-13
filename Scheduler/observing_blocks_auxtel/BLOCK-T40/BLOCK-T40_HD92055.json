@@ -1,16 +1,16 @@
 {
-  "name": "BLOCK-T40_HD34816",
-  "id": "bff9c071-18a2-4f4b-884f-4b66244b99af",
-  "program": "BLOCK-T40_HD34816",
+  "name": "BLOCK-T40_HD92055",
+  "id": "aeee261a-8509-4a17-a1f4-c07faa3fa120",
+  "program": "BLOCK-T40_HD92055",
   "constraints": [],
   "scripts": [
     {
       "name": "auxtel/latiss_acquire_and_take_sequence.py",
       "standard": false,
       "parameters": {
-        "object_ra": "05:19:34.5223",
-        "object_dec": "-13:10:36.3698",
-        "object_name": "HD34816",
+        "object_ra": "10:37:33.2730",
+        "object_dec": "-13:23:04.3529",
+        "object_name": "HD92055",
         "do_acquire": true,
         "acq_filter": "empty_1",
         "acq_grating": "holo4_003",
@@ -19,12 +19,12 @@
         "do_take_sequence": true,
         "target_pointing_verification": false,
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -42,7 +42,7 @@
           "blue300lpmm_qn1",
           "blue300lpmm_qn1"
         ],
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_0"
       }
     },
@@ -61,15 +61,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_-8",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -104,15 +104,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_1",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -147,15 +147,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_-7",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -190,15 +190,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_2",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -233,15 +233,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_-6",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -276,15 +276,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_3",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -319,15 +319,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_-5",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -362,15 +362,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_4",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -405,15 +405,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_-4",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -448,15 +448,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_5",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -491,15 +491,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_-3",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -534,15 +534,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_6",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -577,15 +577,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_-2",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -620,15 +620,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_7",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -663,15 +663,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_-1",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",
@@ -706,15 +706,15 @@
       "name": "auxtel/latiss_take_sequence.py",
       "standard": true,
       "parameters": {
-        "program": "BLOCK-T40_HD34816",
+        "program": "BLOCK-T40_HD92055",
         "reason": "SITCOM-1353_8",
         "exposure_time_sequence": [
-          15,
-          15,
-          15,
-          15,
-          15,
-          15
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
         ],
         "filter_sequence": [
           "empty_1",

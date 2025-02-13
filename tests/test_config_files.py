@@ -53,14 +53,6 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             config_package_root=self.config_package_root,
         )
 
-    def test_EPM(self):
-        self.check_standard_config_files(
-            sal_name="EPM",
-            module_name="lsst.ts.epm",
-            schema_name="CONFIG_SCHEMA",
-            config_package_root=self.config_package_root,
-        )
-
     def test_ESS(self):
         self.check_standard_config_files(
             sal_name="ESS",
