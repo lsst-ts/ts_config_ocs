@@ -515,6 +515,10 @@ rules:
 - classname: MTDomeCapacitorBanks
   configs:
     - {}
+- classname: MTHexapodOvercurrent
+  configs:
+  - name: MTHexapod:1
+  - name: MTHexapod:2
 escalation:
   - alarms:
     - ATCameraDewar
