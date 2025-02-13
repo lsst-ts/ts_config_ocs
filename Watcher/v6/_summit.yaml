@@ -446,6 +446,10 @@ rules:
       limit_type: lower
       limit_value: 1
       severity: CRITICAL
+- classname: MTHexapodOvercurrent
+  configs:
+  - name: MTHexapod:1
+  - name: MTHexapod:2
 escalation:
   - alarms:
     - ATCameraDewar
