@@ -44,7 +44,7 @@ def get_scheduler():
         Feature based scheduler.
     """
     # Information for all surveys
-    nside = 64
+    nside = 32
     avoid_wind = False
     if avoid_wind:
         wind_speed_maximum = 13.0  # maximum direct wind in m/s
@@ -68,8 +68,6 @@ def get_scheduler():
 
     # Imaging priority - high priority imaging, tier 1
     imaging_priority_targets = ["Photo08000-1"]
-    # Imaging backup - low priority imaging, backup for everything - tier 3
-    imaging_backup_targets = ["Photo08000-1"]
 
     # Spectroscopy priority - high priority spectroscopy - tier 1
     spectroscopy_priority_targets = [
@@ -95,7 +93,6 @@ def get_scheduler():
 
     # Go through imaging targets ('auxtel_imaging_targets' category)
     imaging_priority = []
-    imaging_backup = []
     for target_name in target_pointings["auxtel_imaging_targets"]:
         tt = target_pointings["auxtel_imaging_targets"][target_name]
         cat = "IMG"
@@ -120,19 +117,6 @@ def get_scheduler():
                     wind_speed_maximum=wind_speed_maximum,
                     survey_detailers=image_detailers,
                     include_slew=False,
-                )
-            )
-        if target_name in imaging_backup_targets:
-            # Add to backup tier with similar setup, but no visit_gap
-            target.survey_name = f"{cat}:{target_name} backup"
-            target.visit_gap = 0
-            imaging_backup.append(
-                generate_image_survey_from_target(
-                    nside=nside,
-                    target=target,
-                    wind_speed_maximum=wind_speed_maximum,
-                    survey_detailers=image_detailers,
-                    include_slew=True,
                 )
             )
 
@@ -190,7 +174,6 @@ def get_scheduler():
         [cwfs_survey],
         imaging_priority + spectroscopy_priority,
         spectroscopy_backup,
-        imaging_backup,
     ]
 
     scheduler = CoreScheduler(
