@@ -515,6 +515,14 @@ rules:
 - classname: MTDomeCapacitorBanks
   configs:
     - {}
+- classname: MTCameraHexapodOvercurrent
+  configs:
+  - threshold_current: 4.0
+    time_window: 10
+- classname: MTM2HexapodOvercurrent
+  configs:
+  - threshold_current: 4.0
+    time_window: 10
 escalation:
   - alarms:
     - ATCameraDewar
