@@ -118,6 +118,8 @@ def get_scheduler():
         image_tiles=image_tiles,
         spec_detailers=spec_detailers,
         image_detailers_tiles=image_detailers,
+        image_targets=[],
+        image_detailers_targets=[],
         cwfs_block_name="BLOCK-305",
         avoid_wind=avoid_wind,
         cwfs_time_gap=cwfs_time_gap,
