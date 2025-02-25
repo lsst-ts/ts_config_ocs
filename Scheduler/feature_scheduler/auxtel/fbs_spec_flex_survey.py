@@ -71,7 +71,7 @@ def get_scheduler():
 
     # Spectroscopy priority - high priority spectroscopy - tier 1
     spectroscopy_priority_targets = [
-        "HD111980",
+        "HD132096",
     ]
     # Standard spectroscopy - tier 2
     spectroscopy_standard_targets = ["HD38666"]
