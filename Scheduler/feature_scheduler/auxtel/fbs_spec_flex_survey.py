@@ -71,7 +71,7 @@ def get_scheduler():
 
     # Spectroscopy priority - high priority spectroscopy - tier 1
     spectroscopy_priority_targets = [
-        "HD132096",
+        "HD111980",
     ]
     # Standard spectroscopy - tier 2
     spectroscopy_standard_targets = ["HD38666"]
@@ -80,7 +80,7 @@ def get_scheduler():
     spectroscopy_backup_targets = ["HD185975"]
 
     # CWFS - tier 0
-    cwfs_time_gap = 300.0  # Gap between cwfs images, in minutes
+    cwfs_time_gap = 720.0  # Gap between cwfs images, in minutes
     cwfs_block = "BLOCK-305"
 
     cwfs_survey = generate_cwfs_survey(
