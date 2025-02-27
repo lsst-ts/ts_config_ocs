@@ -118,7 +118,7 @@ def gen_greedy_surveys(
                 bf.SlewtimeBasisFunction(filtername=filtername, nside=nside),
                 slewtime_weight,
             ),
-            (bf.StrictFilterBasisFunction(filtername=filtername), stayfilter_weight),
+            # (bf.StrictFilterBasisFunction(filtername=filtername), stayfilter_weight),
             (
                 bf.AltAzShadowMaskBasisFunction(
                     nside=nside,
@@ -128,7 +128,7 @@ def gen_greedy_surveys(
                 ),
                 0,
             ),
-            (bf.FilterLoadedBasisFunction(filternames=filtername), 0),
+            # (bf.FilterLoadedBasisFunction(filternames=filtername), 0),
         ]
 
         weights = [val[1] for val in bfs]
