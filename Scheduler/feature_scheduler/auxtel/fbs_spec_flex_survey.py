@@ -19,6 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+import os
 
 from astropy import units
 from astropy.coordinates import Angle
@@ -59,9 +60,10 @@ def get_scheduler():
     spec_detailers = []
 
     # Get target information - edit YAML file for updates
-    # Yaml file is in ts_fbs_utils :
-    # ts_fbs_utils/python/lsst/ts/fbs/utils/data/auxtel_targets.yaml
-    target_pointings = get_auxtel_targets()
+    # YAML file should be in
+    # ts_config_ocs/Scheduler/feature_scheduler/auxtel/auxtel_targets.yaml
+    target_file = os.path.join(os.path.split(__file__)[0], "auxtel_targets.yaml")
+    target_pointings = get_auxtel_targets(target_file)
 
     # The targets below must be in the target_pointings
     # But can be specified to be all or just a subset
