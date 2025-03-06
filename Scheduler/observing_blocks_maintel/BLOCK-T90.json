@@ -1,0 +1,56 @@
+{
+  "name": "BLOCK-T90",
+  "program": "BLOCK-T90",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/take_whitelight_flats_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "sequence_name": "whitelight_u_source",
+        "use_camera": false,
+      }
+    },
+    {
+      "name": "maintel/take_whitelight_flats_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "sequence_name": "whitelight_g_source",
+        "use_camera": false,
+      }
+    },
+    {
+      "name": "maintel/take_whitelight_flats_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "sequence_name": "whitelight_r_source",
+        "use_camera": false,
+      }
+    },
+    {
+      "name": "maintel/take_whitelight_flats_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "sequence_name": "whitelight_i_source",
+        "use_camera": false,
+      }
+    },
+    {
+      "name": "maintel/take_whitelight_flats_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "sequence_name": "whitelight_z_source",
+        "use_camera": false,
+      }
+    },
+    {
+      "name": "maintel/take_whitelight_flats_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "sequence_name": "whitelight_y_source",
+        "use_camera": false,
+      }
+    },
+
+  ],
+}
