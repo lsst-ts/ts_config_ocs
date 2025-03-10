@@ -70,7 +70,16 @@ auxtel_candidate_catalog_targets:
     exptime: 300
     nexp: 2
     visit_gap: 15
-    priority: 1  
+    priority: 1
+  HD99685:
+    #type A0IV, V=7.8
+    ra: "09:56:37.5"
+    dec: "-89:46:56.7"
+    block: "BLOCK-311"
+    exptime: 420
+    nexp: 2
+    visit_gap: 15
+    priority: 1   
 auxtel_standard_catalog_targets:
   HD2811:
     # type A3V, V=7.5
