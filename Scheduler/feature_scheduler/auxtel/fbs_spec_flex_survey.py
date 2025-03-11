@@ -19,6 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+from pathlib import Path
 
 from astropy import units
 from astropy.coordinates import Angle
@@ -59,9 +60,13 @@ def get_scheduler():
     spec_detailers = []
 
     # Get target information - edit YAML file for updates
-    # Yaml file is in ts_fbs_utils :
-    # ts_fbs_utils/python/lsst/ts/fbs/utils/data/auxtel_targets.yaml
-    target_pointings = get_auxtel_targets()
+    # YAML file should be in the same directory as this .py config
+    # ts_config_ocs/Scheduler/feature_scheduler/auxtel/auxtel_targets.yaml
+    target_dir = Path(__file__).parent
+    target_file = Path.joinpath(target_dir, "auxtel_targets.yaml")
+    if not Path.exists(target_file):
+        raise ValueError(f"Expected target yaml file does not exist at {target_file}")
+    target_pointings = get_auxtel_targets(target_file)
 
     # The targets below must be in the target_pointings
     # But can be specified to be all or just a subset
@@ -74,13 +79,13 @@ def get_scheduler():
         "HD111980",
     ]
     # Standard spectroscopy - tier 2
-    spectroscopy_standard_targets = ["HD38666"]
+    spectroscopy_standard_targets = ["HD99685"]
 
     # Backup spectroscopy - tier 3
     spectroscopy_backup_targets = ["HD185975"]
 
     # CWFS - tier 0
-    cwfs_time_gap = 300.0  # Gap between cwfs images, in minutes
+    cwfs_time_gap = 720.0  # Gap between cwfs images, in minutes
     cwfs_block = "BLOCK-305"
 
     cwfs_survey = generate_cwfs_survey(
