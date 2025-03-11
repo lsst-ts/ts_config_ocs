@@ -1,0 +1,285 @@
+{
+  "name": "BLOCK-T372",
+  "id": "2888e346-b36d-45b1-b97b-cd7827b9ba83",
+  "program": "BLOCK-T372",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "az": 0.0,
+        "el": 0,
+        "ignore": [
+          "mtdome",
+          "mtdometrajectory"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "ph_5"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "y_10"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "r_57"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "ef_43"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "g_6"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "az": 0.0,
+        "el": 30,
+        "ignore": [
+          "mtdome",
+          "mtdometrajectory"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "ph_5"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "y_10"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "r_57"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "ef_43"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "g_6"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "az": 0.0,
+        "el": 60,
+        "ignore": [
+          "mtdome",
+          "mtdometrajectory"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "ph_5"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "y_10"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "r_57"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "ef_43"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "g_6"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "az": 0.0,
+        "el": 85,
+        "ignore": [
+          "mtdome",
+          "mtdometrajectory"
+        ]
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "ph_5"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "y_10"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "r_57"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "ef_43"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "BLOCK-T372",
+        "reason": "BLOCK-348",
+        "nimages": 1,
+        "image_type": "BIAS",
+        "filter": "g_6"
+      }
+    }
+  ],
+  "configuration_schema": ""
+}
