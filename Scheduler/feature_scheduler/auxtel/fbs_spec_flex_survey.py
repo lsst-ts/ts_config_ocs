@@ -60,7 +60,7 @@ def get_scheduler():
     spec_detailers = []
     # HA used in rubin-scheduler runs 0-24
     # The limits here are the *allowed* values
-    spec_default_ha_limits = [[1, 5], [7, 23]]
+    spec_default_ha_limits = [(1, 5), (7, 23)]
 
     # Get target information - edit YAML file for updates
     # YAML file should be in the same directory as this .py config
@@ -234,7 +234,7 @@ def get_scheduler():
     surveys = [
         [cwfs_survey],
         imaging_priority + spectroscopy_priority,
-        spectroscopy_standard,
+        # spectroscopy_standard,
         spectroscopy_backup,
         imaging_backup,
     ]
