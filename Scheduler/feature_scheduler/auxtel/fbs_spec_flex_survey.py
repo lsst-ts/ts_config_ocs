@@ -234,7 +234,7 @@ def get_scheduler():
     surveys = [
         [cwfs_survey],
         imaging_priority + spectroscopy_priority,
-        # spectroscopy_standard,
+        spectroscopy_standard,
         spectroscopy_backup,
         imaging_backup,
     ]
