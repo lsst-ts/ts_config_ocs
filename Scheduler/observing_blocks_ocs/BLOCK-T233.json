@@ -7,8 +7,8 @@
             "name": "maintel/take_image_lsstcam.py",
             "standard": true,
             "parameters": {
-                "nimages": "$num_exp",
-                "exp_times": "$exp_times",
+                "nimages": 1,
+                "exp_times": 15.0,
                 "image_type": "DARK",
                 "reason": "BLOCK-T233",
                 "program": "BLOCK-T233",
