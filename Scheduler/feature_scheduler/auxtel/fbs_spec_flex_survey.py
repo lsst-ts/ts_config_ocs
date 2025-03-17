@@ -86,7 +86,7 @@ def get_scheduler():
         "HD132096",
     ]
     # Standard spectroscopy - tier 2
-    spectroscopy_standard_targets = ["HD111980"]  # ["HD99685"]
+    spectroscopy_standard_targets = []  # ["HD99685"]
 
     # Backup spectroscopy - tier 3
     spectroscopy_backup_targets = ["HD185975"]
