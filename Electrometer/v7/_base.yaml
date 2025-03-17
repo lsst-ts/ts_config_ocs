@@ -54,6 +54,32 @@ instances:
     electrometer_type: "Keysight"
     electrometer_model: "B2985B"
     electrometer_config: {}
+  - sal_index: 103
+    mode: 1
+    range: 2.0e-08
+    tcpip:
+      hostname: 'localhost'
+      port: 4002
+      timeout: 2
+    s3_instance: "ls"
+    fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_name_service: "http://ccs.lsst.org"
+    filters:
+      median: false
+      general: false
+      average: false
+    sensor:
+      brand: "Hamamatsu"
+      model: "S2281"
+      serial_number: "S22818D091"
+    accessories:
+      vsource: false
+      temperature: false
+    location: "Calibration Screen"
+    integration_time: 0.1
+    electrometer_type: "Keithley"
+    electrometer_model: "6517b"
+    electrometer_config: {}
   - sal_index: 201
     mode: 1
     range: 2.0e-08
@@ -80,4 +106,3 @@ instances:
     electrometer_type: "Keithley"
     electrometer_model: "6517b"
     electrometer_config: {}
-    

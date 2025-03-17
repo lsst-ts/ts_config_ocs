@@ -1,14 +1,15 @@
-# Testing of electrometer with new converter
-# Created on 2023-01-04
+# Configuration for photodiode electrometer attached to comcam cart.
+# Created 2023-01-04
+
 instances:
   - sal_index: 101
     mode: 1
     range: 2.0e-08
     tcpip:
-      hostname: 'cbp-calElectrometer.cp.lsst.org'
+      hostname: 'localhost'
       port: 5024
       timeout: 2
-    s3_instance: "cp"
+    s3_instance: "tuc"
     fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
     image_name_service: "http://comcam-mcm.tu.lsst.org"
     filters:
@@ -31,10 +32,10 @@ instances:
     mode: 1
     range: 2.0e-08
     tcpip:
-      hostname: 'cbp-Electrometer.cp.lsst.org'
+      hostname: 'localhost'
       port: 5024
       timeout: 2
-    s3_instance: "cp"
+    s3_instance: "tuc"
     fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
     image_name_service: "http://comcam-mcm.tu.lsst.org"
     filters:
@@ -53,14 +54,40 @@ instances:
     electrometer_type: "Keysight"
     electrometer_model: "B2985B"
     electrometer_config: {}
+  - sal_index: 103
+    mode: 1
+    range: 2.0e-08
+    tcpip:
+      hostname: 'localhost'
+      port: 4002
+      timeout: 2
+    s3_instance: "tuc"
+    fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
+    image_name_service: "http://comcam-mcm.tu.lsst.org"
+    filters:
+      median: false
+      general: false
+      average: false
+    sensor:
+      brand: "Hamamatsu"
+      model: "S2281"
+      serial_number: "S22818D091"
+    accessories:
+      vsource: false
+      temperature: false
+    location: "Calibration Screen"
+    integration_time: 0.1
+    electrometer_type: "Keithley"
+    electrometer_model: "6517b"
+    electrometer_config: {}
   - sal_index: 201
     mode: 1
     range: 2.0e-08
     tcpip:
-      hostname: 'auxtel-electrometer.cp.lsst.org'
+      hostname: 'localhost'
       port: 4001
       timeout: 2
-    s3_instance: "cp"
+    s3_instance: "tuc"
     fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
     image_name_service: "http://comcam-mcm.tu.lsst.org"
     filters:
@@ -79,4 +106,3 @@ instances:
     electrometer_type: "Keithley"
     electrometer_model: "6517b"
     electrometer_config: {}
-    
