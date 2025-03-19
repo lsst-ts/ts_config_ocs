@@ -30,7 +30,7 @@ from lsst.ts.fbs.utils.auxtel.surveys import (
     generate_spectroscopic_survey,
     get_auxtel_targets,
 )
-from rubin_scheduler.scheduler.detailers import DitherDetailer
+from rubin_scheduler.scheduler.detailers import DitherDetailer, FixedSkyAngleDetailer
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
 
 
@@ -57,7 +57,8 @@ def get_scheduler():
         # Dither up to half the FOV, per exposure.
         DitherDetailer(max_dither=(7 / 2 / 60), per_night=False)
     ]
-    spec_detailers = []
+    spec_detailers_zero = [FixedSkyAngleDetailer(sky_angle=0)]
+    spec_detailers_flip = [FixedSkyAngleDetailer(sky_angle=180)]
     # HA used in rubin-scheduler runs 0-24
     # The limits here are the *allowed* values
     spec_default_ha_limits = [(1, 5), (7, 23)]
@@ -83,10 +84,10 @@ def get_scheduler():
 
     # Spectroscopy priority - high priority spectroscopy - tier 1
     spectroscopy_priority_targets = [
-        "HD60753",
+        "HD99685",
     ]
     # Standard spectroscopy - tier 2
-    spectroscopy_standard_targets = ["HD185975"]  # ["HD99685"]
+    spectroscopy_standard_targets = ["HD185975", "HD60753"]  # ["HD99685"]
 
     # Backup spectroscopy - tier 3
     spectroscopy_backup_targets = [
@@ -170,6 +171,11 @@ def get_scheduler():
         cat = category.split("_")[1].upper()
         for target_name in target_pointings[category]:
             tt = target_pointings[category][target_name]
+            flip = tt.get("flip", False)
+            if flip:
+                spec_detailers = spec_detailers_flip
+            else:
+                spec_detailers = spec_detailers_zero
             target = Target(
                 target_name=target_name,
                 survey_name=f"{cat}:{target_name}",
@@ -217,7 +223,7 @@ def get_scheduler():
                     hour_angle_limit=tt.get("ha_limits", spec_default_ha_limits),
                     filters=["r"],
                     visit_gap=0,
-                    exptime=tt.get("exptime", 300),
+                    exptime=tt.get("exptime", 400),
                     nexp=1,
                     reward_value=tt.get("priority", 1),
                 )
