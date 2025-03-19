@@ -4,7 +4,7 @@ auxtel_candidate_catalog_targets:
     ra: "05:34:04.0"
     dec: "-01:28:12.9"
     block: "BLOCK-312"
-    exptime: 410
+    exptime: 400
     nexp: 2
     visit_gap: 8
     priority: 1
@@ -13,7 +13,7 @@ auxtel_candidate_catalog_targets:
     ra: "06:06:09"
     dec: "-66:02:23"
     block: "BLOCK-312"
-    exptime: 410
+    exptime: 400
     nexp: 2
     visit_gap: 15
     priority: 1
@@ -22,7 +22,7 @@ auxtel_candidate_catalog_targets:
     ra: "07:33:27"
     dec: "-50:35:03.3"
     block: "BLOCK-312"
-    exptime: 410
+    exptime: 360
     nexp: 3
     visit_gap: 24
     priority: 1
@@ -31,7 +31,7 @@ auxtel_candidate_catalog_targets:
     ra: "08:37:52"
     dec: "-26:15:18.0"
     block: "BLOCK-312"
-    exptime: 410
+    exptime: 400
     nexp: 2
     visit_gap: 15
     priority: 1
@@ -44,7 +44,6 @@ auxtel_candidate_catalog_targets:
     nexp: 5
     visit_gap: 15
     priority: 1
-    ha_limits: [[1.0, 23.0]]
   HD132096:
     # type K1III, V=7.3
     ra: "14:58:36.5"
@@ -53,13 +52,14 @@ auxtel_candidate_catalog_targets:
     exptime: 480
     nexp: 5
     visit_gap: 20
-    priority: 1 
+    priority: 1
+    flip: True
   HD146233:
     #type G2V, V=5.5
     ra: "16:15:37"
     dec: "-08:22:10.0"
     block: "BLOCK-312"
-    exptime: 410
+    exptime: 400
     nexp: 2
     visit_gap: 20
     priority: 1
@@ -77,7 +77,7 @@ auxtel_candidate_catalog_targets:
     ra: "21:39:10"
     dec: "-27:18:23.7"
     block: "BLOCK-312"
-    exptime: 410
+    exptime: 400
     nexp: 2
     visit_gap: 15
     priority: 1
@@ -87,10 +87,11 @@ auxtel_candidate_catalog_targets:
     dec: "-89:46:56.7"
     block: "BLOCK-311"
     exptime: 480
-    nexp: 3
-    visit_gap: 15
+    nexp: 4
+    visit_gap: 28
     priority: 1
-    ha_limits:  [[2.5, 4], [8, 21.5]]
+    ha_limits:  [[0.8, 23]]
+    flip: True
 auxtel_standard_catalog_targets:
   HD2811:
     # type A3V, V=7.5
@@ -115,7 +116,7 @@ auxtel_standard_catalog_targets:
     ra: "20:28:18"
     dec: "-87:28:19"
     block: "BLOCK-308"
-    exptime: 470
+    exptime: 480
     nexp: 4
     visit_gap: 28
     priority: 1
