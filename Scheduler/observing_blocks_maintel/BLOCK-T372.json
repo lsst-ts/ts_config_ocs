@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T372",
-  "id": "c33fdf34-9979-48c3-aa69-ea33d2934f0a",
+  "id": "435db425-50cc-40da-b23d-3c3da3be2b6d",
   "program": "BLOCK-T372",
   "constraints": [],
   "scripts": [
@@ -81,7 +81,7 @@
         "program": "BLOCK-T372",
         "reason": "BLOCK-348",
         "az": 0.0,
-        "el": 30,
+        "el": 45,
         "rot_tel": 0.0,
         "ignore": [
           "mtdome",
@@ -151,77 +151,7 @@
         "program": "BLOCK-T372",
         "reason": "BLOCK-348",
         "az": 0.0,
-        "el": 60,
-        "rot_tel": 0.0,
-        "ignore": [
-          "mtdome",
-          "mtdometrajectory"
-        ]
-      }
-    },
-    {
-      "name": "maintel/take_image_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "program": "BLOCK-T372",
-        "reason": "BLOCK-348",
-        "nimages": 1,
-        "image_type": "BIAS",
-        "filter": "ph_5"
-      }
-    },
-    {
-      "name": "maintel/take_image_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "program": "BLOCK-T372",
-        "reason": "BLOCK-348",
-        "nimages": 1,
-        "image_type": "BIAS",
-        "filter": "y_10"
-      }
-    },
-    {
-      "name": "maintel/take_image_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "program": "BLOCK-T372",
-        "reason": "BLOCK-348",
-        "nimages": 1,
-        "image_type": "BIAS",
-        "filter": "r_57"
-      }
-    },
-    {
-      "name": "maintel/take_image_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "program": "BLOCK-T372",
-        "reason": "BLOCK-348",
-        "nimages": 1,
-        "image_type": "BIAS",
-        "filter": "ef_43"
-      }
-    },
-    {
-      "name": "maintel/take_image_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "program": "BLOCK-T372",
-        "reason": "BLOCK-348",
-        "nimages": 1,
-        "image_type": "BIAS",
-        "filter": "g_6"
-      }
-    },
-    {
-      "name": "maintel/point_azel.py",
-      "standard": true,
-      "parameters": {
-        "program": "BLOCK-T372",
-        "reason": "BLOCK-348",
-        "az": 0.0,
-        "el": 85,
+        "el": 86.5,
         "rot_tel": 0.0,
         "ignore": [
           "mtdome",
