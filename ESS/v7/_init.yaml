@@ -412,3 +412,21 @@ instances:
           db_uri: mysql+aiomysql://{RINGSS_USER}:{RINGSS_PASSWORD}@mysql/cpdata
           table_name: cpdata.ringss
           poll_interval: 10
+  - sal_index: 305
+    data_clients:
+      - client_class: ModbusDataClient
+        config:
+          host: main-generator01.cp.lsst.org
+          port: 502
+          max_read_timeouts: 5
+          device_name: Main Generator 1
+          device_type: agc150genset
+  - sal_index: 306
+    data_clients:
+      - client_class: ModbusDataClient
+        config:
+          host: main-generator02.cp.lsst.org
+          port: 502
+          max_read_timeouts: 5
+          device_name: Main Generator 1
+          device_type: agc150genset
