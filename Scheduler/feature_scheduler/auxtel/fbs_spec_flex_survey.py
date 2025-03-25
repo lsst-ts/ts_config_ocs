@@ -30,7 +30,7 @@ from lsst.ts.fbs.utils.auxtel.surveys import (
     generate_spectroscopic_survey,
     get_auxtel_targets,
 )
-from rubin_scheduler.scheduler.detailers import DitherDetailer
+from rubin_scheduler.scheduler.detailers import DitherDetailer, FixedSkyAngleDetailer
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
 
 
@@ -57,7 +57,12 @@ def get_scheduler():
         # Dither up to half the FOV, per exposure.
         DitherDetailer(max_dither=(7 / 2 / 60), per_night=False)
     ]
-    spec_detailers = []
+    spec_detailers_zero = [FixedSkyAngleDetailer(sky_angle=0)]
+    spec_detailers_flip = [FixedSkyAngleDetailer(sky_angle=180)]
+    # HA used in rubin-scheduler runs 0-24
+    # The limits here are the *allowed* values
+    spec_default_ha_limits = None
+    flip_default = True
 
     # Get target information - edit YAML file for updates
     # YAML file should be in the same directory as this .py config
@@ -73,16 +78,23 @@ def get_scheduler():
 
     # Imaging priority - high priority imaging, tier 1
     imaging_priority_targets = ["Photo08000-1"]
+    # Imaging backup - low priority, tier -1
+    # These are added because spectroscopy targets unavailable near transit
+    # So if there are few spectroscopy targets, a backup imaging is good.
+    imaging_backup_targets = ["Photo08000-1"]
 
     # Spectroscopy priority - high priority spectroscopy - tier 1
     spectroscopy_priority_targets = [
-        "HD111980",
+        "HD132096",
     ]
     # Standard spectroscopy - tier 2
-    spectroscopy_standard_targets = ["HD99685"]
+    spectroscopy_standard_targets = ["HD185975", "HD60753"]
 
     # Backup spectroscopy - tier 3
-    spectroscopy_backup_targets = ["HD185975"]
+    spectroscopy_backup_targets = [
+        "HD132096",
+        "HD185975",
+    ]
 
     # CWFS - tier 0
     cwfs_time_gap = 720.0  # Gap between cwfs images, in minutes
@@ -97,6 +109,7 @@ def get_scheduler():
 
     # Go through imaging targets ('auxtel_imaging_targets' category)
     imaging_priority = []
+    imaging_backup = []
     for target_name in target_pointings["auxtel_imaging_targets"]:
         tt = target_pointings["auxtel_imaging_targets"][target_name]
         cat = "IMG"
@@ -123,6 +136,29 @@ def get_scheduler():
                     include_slew=False,
                 )
             )
+        if target_name in imaging_backup_targets:
+            target = Target(
+                target_name=target_name,
+                survey_name=f"{cat}:{target_name} backup",
+                science_program=tt["block"],
+                ra=Angle(tt["ra"], unit=units.hourangle),
+                dec=Angle(tt["dec"], unit=units.deg),
+                hour_angle_limit=None,
+                filters=["r"],
+                visit_gap=0,
+                exptime=tt.get("exptime", 30),
+                nexp=1,
+                reward_value=tt.get("priority", 1),
+            )
+            imaging_backup.append(
+                generate_image_survey_from_target(
+                    nside=nside,
+                    target=target,
+                    wind_speed_maximum=wind_speed_maximum,
+                    survey_detailers=image_detailers,
+                    include_slew=True,
+                )
+            )
 
     # Go through spectroscopy targets
     spectroscopy_categories = [
@@ -136,13 +172,18 @@ def get_scheduler():
         cat = category.split("_")[1].upper()
         for target_name in target_pointings[category]:
             tt = target_pointings[category][target_name]
+            flip = tt.get("flip", flip_default)
+            if flip:
+                spec_detailers = spec_detailers_flip
+            else:
+                spec_detailers = spec_detailers_zero
             target = Target(
                 target_name=target_name,
                 survey_name=f"{cat}:{target_name}",
                 science_program=tt["block"],
                 ra=Angle(tt["ra"], unit=units.hourangle),
                 dec=Angle(tt["dec"], unit=units.deg),
-                hour_angle_limit=None,
+                hour_angle_limit=tt.get("ha_limits", spec_default_ha_limits),
                 filters=["r"],
                 visit_gap=tt.get("visit_gap", 0),
                 exptime=tt.get("exptime", 300),
@@ -174,9 +215,19 @@ def get_scheduler():
                     )
                 )
             if target_name in spectroscopy_backup_targets:
-                target.survey_name = f"{cat}:{target_name} backup"
-                target.visit_gap = 0
-                target.nexp = 1
+                target = Target(
+                    target_name=target_name,
+                    survey_name=f"{cat}:{target_name} backup",
+                    science_program=tt["block"],
+                    ra=Angle(tt["ra"], unit=units.hourangle),
+                    dec=Angle(tt["dec"], unit=units.deg),
+                    hour_angle_limit=tt.get("ha_limits", spec_default_ha_limits),
+                    filters=["r"],
+                    visit_gap=0,
+                    exptime=tt.get("exptime", 400),
+                    nexp=1,
+                    reward_value=tt.get("priority", 1),
+                )
                 spectroscopy_backup.append(
                     generate_spectroscopic_survey(
                         nside=nside,
@@ -195,6 +246,7 @@ def get_scheduler():
         imaging_priority + spectroscopy_priority,
         spectroscopy_standard,
         spectroscopy_backup,
+        imaging_backup,
     ]
 
     scheduler = CoreScheduler(
