@@ -1,0 +1,589 @@
+{
+  "name": "BLOCK-T393",
+  "id": "9eadcbbd-92fe-45af-af9f-ef1df695c85d",
+  "program": "BLOCK-T393",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 20
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 25
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 30
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 35
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 40
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 45
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 50
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 55
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 60
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 65
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 70
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 75
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 80
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 75
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 70
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 65
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 60
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 55
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 50
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 45
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 40
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 35
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 30
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 25
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 20
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T393 configuration\ndescription: Configuration for BLOCK-T393.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"r_57\"\n  azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 80\n  exptime:\n    description: Exposure time.\n    type: number\n    default: 30.0\n  dofs:\n    description: Degrees of freedom to use for the elevation sweep.\n    type: array\n    default: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]\n    items:\n      type: integer\n      minimum: 0\n      maximum: 49\n  maxiter:\n    description: Maximum number of iterations for the closed loop.\n    type: integer\n    default: 1\n"
+}
