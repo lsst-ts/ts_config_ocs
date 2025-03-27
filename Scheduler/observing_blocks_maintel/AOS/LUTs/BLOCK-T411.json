@@ -1,0 +1,69 @@
+{
+  "name": "BLOCK-T411",
+  "id": "e0f053f5-f3d9-4d2a-b660-f22c933a13ca",
+  "program": "BLOCK-T411",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "wet013_exposure_time_5s",
+        "exp_times": 5.0,
+        "image_type": "ACQ",
+        "nimages": "$maxiter"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "wet013_exposure_time_15s",
+        "exp_times": 15.0,
+        "image_type": "ACQ",
+        "nimages": "$maxiter"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "wet013_exposure_time_30s",
+        "exp_times": 30.0,
+        "image_type": "ACQ",
+        "nimages": "$maxiter"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "wet013_exposure_time_60s",
+        "exp_times": 60.0,
+        "image_type": "ACQ",
+        "nimages": "$maxiter"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "wet013_exposure_time_120s",
+        "exp_times": 120.0,
+        "image_type": "ACQ",
+        "nimages": "$maxiter"
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T411 configuration\ndescription: Configuration for BLOCK-T411.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"r_57\"\n  maxiter:\n    description: Maximum number of iterations for each of the exposure times.\n    type: integer\n    default: 5\n"
+}
