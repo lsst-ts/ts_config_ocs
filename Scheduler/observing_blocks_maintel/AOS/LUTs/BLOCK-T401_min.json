@@ -1,0 +1,98 @@
+{
+  "name": "BLOCK-T401",
+  "id": "864426ff-2da6-42a6-8ff0-a2febe11b702",
+  "program": "BLOCK-T401_min",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 10
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 45
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 85
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T401 configuration\ndescription: Configuration for BLOCK-T401.\ntype: object\nproperties:\n  azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 0\n"
+}
