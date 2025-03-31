@@ -9,7 +9,6 @@ DevelopPipeline(
         "lsst-ts/ts_ess_common",
         "lsst-ts/ts_ess_earthquake",
         "lsst-ts/ts_ess_labjack",
-        "lsst-ts/ts_ess_ringss",
         "lsst-ts/ts_simactuators",
         "lsst-ts/ts_tcpip",
         // Package tested by this package

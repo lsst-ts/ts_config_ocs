@@ -405,10 +405,3 @@ instances:
           device_type: xups
           snmp_community: lsst_network
           poll_interval: 1.0
-  - sal_index: 304
-    data_clients:
-      - client_class: RingssDataClient
-        config:
-          db_uri: mysql+aiomysql://{RINGSS_USER}:{RINGSS_PASSWORD}@mysql/cpdata
-          table_name: cpdata.ringss
-          poll_interval: 10
