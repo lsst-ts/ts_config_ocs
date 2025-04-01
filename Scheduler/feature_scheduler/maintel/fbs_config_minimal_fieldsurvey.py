@@ -66,7 +66,7 @@ def get_scheduler():
         targets=targets, nside=nside, ntiers=1, band_to_filter=band_to_filter
     )
 
-    nvisits = {"u": 10, "g": 10, "r": 10, "i": 10, "z": 10, "y": 10}
+    nvisits = {"u": 5, "g": 5, "r": 5, "i": 5, "z": 5, "y": 5}
     sequence = ["g", "r", "i"]
     # exposure time in seconds
     exptimes = {"u": 38, "g": 30, "r": 30, "i": 30, "z": 30, "y": 30}
@@ -81,7 +81,8 @@ def get_scheduler():
     }
 
     config_basis_functions = [
-        basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
+        # TODO: return NotTwilightBasisFunction when rotator test is completed.
+        # basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
         basis_functions.AltAzShadowMaskBasisFunction(
             nside=nside,
             min_alt=30.0,
@@ -94,18 +95,19 @@ def get_scheduler():
     ]
 
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.2, per_night=False),
+        detailers.DitherDetailer(max_dither=0.7, per_night=False),
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=40.0,
-            min_rot=-40.0,
+            max_rot=45.0,
+            min_rot=-45.0,
+            per_visit_rot=1.0,
         ),
     ]
 
-    observation_reason = "science"
-    science_program = "BLOCK-365"  # json BLOCK to be used
+    observation_reason = "rotator_tracking_test"
+    science_program = "BLOCK-T423"  # json BLOCK to be used
 
     tier = 0
-    target_names = targets.keys()
+    target_names = ["rotator_test_target"]
     make_scheduler.add_field_surveys(
         tier,
         observation_reason,
