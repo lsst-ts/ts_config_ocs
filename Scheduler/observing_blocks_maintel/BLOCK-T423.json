@@ -1,0 +1,31 @@
+{
+    "name": "BLOCK-T423",
+    "program": "BLOCK-T423",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra",
+                    "dec": "$dec"
+                },
+                "target_name": "$name",
+                "rot_value": "$rot",
+                "rot_type": "PhysicalSky",
+                "track_for": 32,
+                "ignore": [
+                    "mtm1m3",
+                    "mtm2",
+                    "mtaos",
+                    "mtdome",
+                    "mtdometrajectory",
+                    "mtmount",
+                    "mthexapod_1",
+                    "mthexapod_2"
+                ]
+            }
+        }
+    ]
+}
