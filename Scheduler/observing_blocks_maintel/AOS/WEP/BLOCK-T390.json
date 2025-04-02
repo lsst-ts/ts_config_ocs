@@ -5,11 +5,6 @@
     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T390 Configuration\ndescription: Configuration for the BLOCK-T390 Wavefront Estimation Chromaticity Test WET-008.\ntype: object\nproperties:\n  ra:\n    description: Right Ascension.\n    type: number\n    default: 0\n  dec:\n    description: Declination.\n    type: number\n    default: 0\n",
     "scripts": [
         {
-            "name": "maintel/enable_mtcs.py",
-            "standard": true,
-            "parameters": {}
-        },
-        {
             "name": "maintel/track_target.py",
             "standard": true,
             "parameters": {
