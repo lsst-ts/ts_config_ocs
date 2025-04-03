@@ -188,28 +188,18 @@ if __name__ == "config":
         MJD_START,
         sun_ra_start=conditions.sun_ra,
         nside=nside,
-        filters=["u", "g_6", "r_57", "i", "z", "y_10"],
-    )
-    for i, key in enumerate(footprints_hp.dtype.names):
-        footprints.footprints[i, :] = footprints_hp[key]
-    footprints.filters = dict(
-        u=0,
-        g_6=1,
-        r_57=2,
-        i=3,
-        z=4,
-        y_10=5,
+        filters=["u", "g", "r", "i", "z", "y"],
     )
 
     # Generate surveys for all filters to test "FilterLoaded" basis func
     eo_test_filters = [
-        "g_6",
-        "r_57",
-        "y_10",
+        "g",
+        "r",
+        "y",
     ]  # ['y', 'r', 'g'] actually present
     # for EO OpSim, we'll have 'g' function like 'u' (IE 1 long exposure)
-    nexp_override = {"g_6": 1}
-    exptime_override = {"g_6": 30.0}
+    nexp_override = {"g": 1}
+    exptime_override = {"g": 30.0}
 
     greedy = gen_greedy_surveys(
         nside,
@@ -222,4 +212,16 @@ if __name__ == "config":
         seed=seed,
     )
     surveys = [greedy]
-    scheduler = CoreScheduler(surveys, nside=nside)
+
+    # Mapping from band to filter from
+    # obs_lsst/python/lsst/obs/lsst/filters.py
+    band_to_filter = {
+        "u": "u_24",
+        "g": "g_6",
+        "r": "r_57",
+        "i": "i_39",
+        "z": "z_20",
+        "y": "y_10",
+    }
+
+    scheduler = CoreScheduler(surveys, nside=nside, band_to_filter=band_to_filter)
