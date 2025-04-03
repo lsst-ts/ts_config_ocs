@@ -116,15 +116,15 @@ def gen_greedy_surveys(
     for filtername in filters:
         note = f"{name}_{filtername}"
         bfs = [
-            (
-                bf.FootprintBasisFunction(
-                    filtername=filtername,
-                    footprint=footprints,
-                    out_of_bounds_val=np.nan,
-                    nside=nside,
-                ),
-                footprint_weight,
-            ),
+            # (
+            #     bf.FootprintBasisFunction(
+            #         filtername=filtername,
+            #         footprint=footprints,
+            #         out_of_bounds_val=np.nan,
+            #         nside=nside,
+            #     ),
+            #     footprint_weight,
+            # ),
             (
                 bf.SlewtimeBasisFunction(filtername=filtername, nside=nside),
                 slewtime_weight,
