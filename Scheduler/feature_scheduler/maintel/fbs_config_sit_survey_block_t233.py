@@ -139,7 +139,7 @@ def gen_greedy_surveys(
                 ),
                 0,
             ),
-            (bf.FilterLoadedBasisFunction(filternames=filtername), 1),
+            # (bf.FilterLoadedBasisFunction(filternames=filtername), 1),
             (bf.AvoidFastRevisitsBasisFunction(filtername=filtername, nside=nside), 1),
             (
                 bf.BalanceVisits(
