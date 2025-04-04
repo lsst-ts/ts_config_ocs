@@ -19,9 +19,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+from pathlib import Path
+
 from lsst.ts.fbs.utils.maintel.make_fieldsurvey_scheduler import (
     MakeFieldSurveyScheduler,
-    get_comcam_sv_targets,
+    get_sv_targets,
 )
 from rubin_scheduler.scheduler import basis_functions, detailers
 
@@ -39,18 +41,37 @@ def get_scheduler():
 
     nside = 32
 
-    make_scheduler = MakeFieldSurveyScheduler(nside=nside, ntiers=1)
+    # Mapping from band to filter from
+    # obs_lsst/python/lsst/obs/lsst/filters.py
+    band_to_filter = {
+        "u": "u_24",
+        "g": "g_6",
+        "r": "r_57",
+        "i": "i_39",
+        "z": "z_20",
+        "y": "y_10",
+    }
 
-    ecliptic_targets = ["Rubin_SV_38_7"]
+    # Get target coordinates - edit YAML file for updates
+    # YAML file should be in the same directory as this .py config
+    # ts_config_ocs/Scheduler/feature_scheduler/maintel/
+    # fieldsurvey_centers.yaml
+    target_dir = Path(__file__).parent
+    target_file = Path.joinpath(target_dir, "fieldsurvey_centers.yaml")
+    if not Path.exists(target_file):
+        raise ValueError(f"Expected target yaml file does not exist at {target_file}")
+    targets = get_sv_targets(target_file)
 
-    # ComCam Deep Drilling Fields
+    make_scheduler = MakeFieldSurveyScheduler(
+        targets=targets, nside=nside, ntiers=1, band_to_filter=band_to_filter
+    )
 
-    nvisits = {"u_02": 5, "g_01": 5, "r_03": 5, "i_06": 5, "z_03": 5, "y_04": 5}
-    sequence = ["g_01", "r_03"]
+    nvisits = {"u": 5, "g": 5, "r": 5, "i": 5, "z": 5, "y": 5}
+    sequence = ["g", "r", "i"]
     # exposure time in seconds
-    exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
+    exptimes = {"u": 38, "g": 30, "r": 30, "i": 30, "z": 30, "y": 30}
     # 1 --> single 30 second exposure
-    nexps = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y_04": 1}
+    nexps = {"u": 1, "g": 1, "r": 1, "i": 1, "z": 1, "y": 1}
 
     field_survey_kwargs = {
         "nvisits": nvisits,
@@ -60,67 +81,33 @@ def get_scheduler():
     }
 
     config_basis_functions = [
-        basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
+        # TODO: return NotTwilightBasisFunction when rotator test is completed.
+        # basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
         basis_functions.AltAzShadowMaskBasisFunction(
             nside=nside,
             min_alt=30.0,
             max_alt=83.0,
-            shadow_minutes=2.0,
+            shadow_minutes=10.0,
         ),
-        basis_functions.SlewtimeBasisFunction(filtername="u_02", nside=nside),
-        basis_functions.SlewtimeBasisFunction(filtername="g_01", nside=nside),
-        basis_functions.SlewtimeBasisFunction(filtername="r_03", nside=nside),
-        basis_functions.SlewtimeBasisFunction(filtername="i_06", nside=nside),
-        basis_functions.SlewtimeBasisFunction(filtername="z_03", nside=nside),
-        basis_functions.SlewtimeBasisFunction(filtername="y_04", nside=nside),
-        basis_functions.FilterLoadedBasisFunction(filternames=sequence),
+        basis_functions.SlewtimeBasisFunction(bandname=None, nside=nside),
+        # TODO: add basis function to mask out azimuth range at end of night
+        # once SP-2080 functionality is available at summit.
     ]
 
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.2, per_night=False),
+        detailers.DitherDetailer(max_dither=0.7, per_night=False),
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=40.0, min_rot=-40.0, telescope="comcam"
+            max_rot=45.0,
+            min_rot=-45.0,
+            per_visit_rot=1.0,
         ),
     ]
 
-    observation_reason = "science"
-    science_program = "BLOCK-320"  # json BLOCK to be used
+    observation_reason = "rotator_tracking_test"
+    science_program = "BLOCK-T423"  # json BLOCK to be used
 
     tier = 0
-    target_names = get_comcam_sv_targets(
-        exclude=ecliptic_targets,
-    ).keys()
-    make_scheduler.add_field_surveys(
-        tier,
-        observation_reason,
-        science_program,
-        target_names,
-        basis_functions=config_basis_functions,
-        detailers=config_detailers,
-        **field_survey_kwargs,
-    )
-
-    # Ecliptic Field
-
-    nvisits = {"u_02": 8, "g_01": 5, "r_03": 5, "i_06": 8, "z_03": 20, "y_04": 8}
-    sequence = ["g_01", "r_03"]
-    # exposure time in seconds
-    exptimes = {"u_02": 38, "g_01": 30, "r_03": 30, "i_06": 30, "z_03": 30, "y_04": 30}
-    # 1 --> single 30 second exposure
-    nexps = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y_04": 1}
-
-    field_survey_kwargs = {
-        "nvisits": nvisits,
-        "sequence": sequence,
-        "exptimes": exptimes,
-        "nexps": nexps,
-    }
-
-    config_detailers = [detailers.ComCamGridDitherDetailer()]
-    config_detailers[0].survey_features = {}
-
-    tier = 0
-    target_names = ecliptic_targets
+    target_names = ["rotator_test_target"]
     make_scheduler.add_field_surveys(
         tier,
         observation_reason,
