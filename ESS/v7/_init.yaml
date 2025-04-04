@@ -409,9 +409,10 @@ instances:
     data_clients:
       - client_class: RingssDataClient
         config:
-          db_uri: mysql+aiomysql://{RINGSS_USER}:{RINGSS_PASSWORD}@mysql/cpdata
+          db_uri: mysql+aiomysql://{RINGSS_USER}:{RINGSS_PASSWORD}@139.229.34.57/cpdata
           table_name: cpdata.ringss
           poll_interval: 10
+          max_read_timeouts: 6
   - sal_index: 305
     data_clients:
       - client_class: ModbusDataClient
