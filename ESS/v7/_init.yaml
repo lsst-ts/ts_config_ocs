@@ -431,3 +431,14 @@ instances:
           max_read_timeouts: 5
           device_name: Main Generator 1
           device_type: agc150genset
+  - sal_index: 307
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: dimm.cp.lsst.org
+          devices:
+          - name: DIMM
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
+            sensor_type: Aurora
+            location: DIMM
