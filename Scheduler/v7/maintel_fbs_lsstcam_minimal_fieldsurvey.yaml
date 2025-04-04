@@ -2,27 +2,22 @@ maintel:
   driver_type: feature_scheduler
   mode: ADVANCE
   startup_type: COLD
-  startup_database: /home/saluser/rubin_sim_data/fbs_observation_database_maintel.sql
-  instrument_name: CCCamera
+  startup_database: /home/saluser/rubin_sim_data/fbs_observation_database.sql
+  instrument_name: MTCamera
   models:
     observatory_model:
       camera:
         filter_max_changes_burst_num: 1000000
         filter_max_changes_avg_num: 30000
-      optics_loop_corr:
-        tel_optics_cl_alt_limit:
-          - 0
-          - 60
-          - 90
       park:
-        filter_position: r_03
+        filter_position: r
   driver_configuration:
     parameters:
       night_boundary: -10.0
     stop_tracking_observing_script_name: maintel/stop_tracking.py
   feature_scheduler_driver_configuration:
-    observation_database_name: /home/saluser/rubin_sim_data/fbs_observation_database_maintel.sql
-    scheduler_config: /net/obs-env/auto_base_packages/ts_config_ocs/Scheduler/feature_scheduler/maintel/fbs_config_sit_survey_block_t345.py
+    observation_database_name: /home/saluser/rubin_sim_data/fbs_observation_database.sql
+    scheduler_config: /net/obs-env/auto_base_packages/ts_config_ocs/Scheduler/feature_scheduler/maintel/fbs_config_minimal_fieldsurvey.py
   telemetry:
     streams:
       - name: seeing
