@@ -33,6 +33,10 @@ auxtel:
   predicted_scheduler_window: 0.05
   models:
     observatory_model:
+      telescope:
+        azimuth_maxpos: 250.0
+        azimuth_minpos: -250.0
+        settle_time: 3.0
       camera:
         filter_max_changes_burst_num: 1
         filter_max_changes_avg_num: 30000
