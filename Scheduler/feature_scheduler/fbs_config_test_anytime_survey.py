@@ -126,6 +126,8 @@ def gen_greedy_surveys(
                     shadow_minutes=shadow_minutes,
                     max_alt=max_alt,
                     min_alt=46.0,
+                    min_az=-200,
+                    max_az=200,
                 ),
                 0,
             ),
