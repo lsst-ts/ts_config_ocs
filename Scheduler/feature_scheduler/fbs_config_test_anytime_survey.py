@@ -171,7 +171,9 @@ if __name__ == "config":
     for i, key in enumerate(footprints_hp.dtype.names):
         footprints.footprints[i, :] = footprints_hp[key]
 
-    greedy = gen_greedy_surveys(nside, nexp=1, footprints=footprints, seed=seed)
+    greedy = gen_greedy_surveys(
+        nside, nexp=1, footprints=footprints, seed=seed, filters=["r"]
+    )
     cwfs = generate_cwfs_survey(
         nside=nside,
         time_gap_min=120,
