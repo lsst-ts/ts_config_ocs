@@ -1,0 +1,882 @@
+{
+  "name": "BLOCK-T401",
+  "id": "761f0263-eacf-4952-b644-437219fd30e4",
+  "program": "BLOCK-T401",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 85
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 80
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 75
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 70
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 65
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 60
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 55
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 50
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 45
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 40
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 35
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 30
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 25
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 20
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 15
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 10
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 15
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 20
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 25
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 30
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 35
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 40
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 45
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 50
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 55
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 60
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 65
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 70
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 75
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 80
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 85
+        }
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "M2",
+        "program": "$program",
+        "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T401 configuration\ndescription: Configuration for BLOCK-T401.\ntype: object\nproperties:\n  azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 0\n"
+}
