@@ -112,7 +112,7 @@ instances:
           - name: Laser-ESS01
             device_type: Serial
             serial_port: /dev/ttyUSB_upper_right
-            sensor_type: HX85A
+            sensor_type: HX85BA
             location: Laser Enclosure
       - client_class: TcpipDataClient
         config:
