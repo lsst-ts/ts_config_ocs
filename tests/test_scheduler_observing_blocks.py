@@ -144,7 +144,9 @@ def get_driver_overrides() -> dict:
     return {
         "targetid": 123,
         "band_filter": "r",
+        "filter_name": "r_57",
         "name": "Target",
+        "note": "Note",
         "ra": "abc",
         "dec": "abc",
         "rot_sky": 0.0,
