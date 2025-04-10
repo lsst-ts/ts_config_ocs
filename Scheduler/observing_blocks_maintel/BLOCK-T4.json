@@ -1,5 +1,6 @@
 {
     "name": "BLOCK-T4",
+    "id": "a541a009-19eb-428e-a143-3193b3d38720",
     "program": "BLOCK-T4",
     "constraints": [],
     "scripts": [
@@ -7,9 +8,7 @@
             "name": "maintel/disable_hexapod_compensation_mode.py",
             "standard": true,
             "parameters": {
-                "components": [
-                    "CameraHexapod"
-                ]
+                "components": "CameraHexapod"
             }
         },
         {
@@ -33,7 +32,11 @@
             "standard": false,
             "parameters": {
                 "hexapod": "camera",
-                "max_position": 5000
+                "axis": "z",
+                "step_size": "$step_size",
+                "max_position": "$max_position",
+                "max_verification_position": "$max_verification_position",
+                "sleep_time": "$sleep_time"
             }
         },
         {
@@ -52,5 +55,6 @@
                 }
             }
         }
-    ]
+    ],
+    "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T4 configuration\ndescription: Configuration for BLOCK-T4.\ntype: object\nproperties:\n  step_size:\n    description: Step size in microns for z axis\n    type: number\n    default: 100\n  max_position:\n    description: Absolute maximum position for z axis\n    type: number\n    default: 5000\n  max_verification_position:\n    description: Maximum verification position for z axis\n    type: number\n    default: 5000\n  sleep_time:\n    description: Sleep time in seconds between movements\n    type: number\n    default: 0\n"
 }
