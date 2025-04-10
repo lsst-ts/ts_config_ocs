@@ -127,6 +127,7 @@ def gen_greedy_surveys(
                 ),
                 0,
             ),
+            (bf.AvoidFastRevisitsBasisFunction(bandname=filtername, gap_min=60.0), 0),
         ]
 
         weights = [val[1] for val in bfs]
