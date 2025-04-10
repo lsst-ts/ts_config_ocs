@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T398",
-  "id": "58dcae5d-0671-4455-a315-c23952e85543",
+  "id": "eb7445af-75b0-49aa-963e-3dac5e257bf9",
   "program": "BLOCK-T398",
   "constraints": [],
   "scripts": [
@@ -11,55 +11,55 @@
         "program": "BLOCK-T398",
         "reason": "BLOCK-358",
         "nimages": 2,
-        "exp_times": 1,
+        "exp_times": 30,
         "image_type": "DARK",
         "filter": null,
         "roi_spec": {
           "common": {
-            "rows": 200,
-            "cols": 200,
+            "rows": 400,
+            "cols": 400,
             "integration_time_millis": 200
           },
           "roi": {
             "R00SG0": {
-              "segment": 1,
-              "start_row": 100,
-              "start_col": 100
+              "segment": 7,
+              "start_row": 800,
+              "start_col": 56
             },
             "R00SG1": {
-              "segment": 2,
-              "start_row": 100,
-              "start_col": 100
+              "segment": 0,
+              "start_row": 800,
+              "start_col": 56
             },
             "R04SG0": {
-              "segment": 3,
-              "start_row": 100,
-              "start_col": 100
+              "segment": 7,
+              "start_row": 800,
+              "start_col": 56
             },
             "R04SG1": {
-              "segment": 4,
-              "start_row": 100,
-              "start_col": 100
+              "segment": 0,
+              "start_row": 800,
+              "start_col": 56
             },
             "R40SG0": {
-              "segment": 5,
-              "start_row": 100,
-              "start_col": 100
+              "segment": 7,
+              "start_row": 800,
+              "start_col": 56
             },
             "R40SG1": {
-              "segment": 6,
-              "start_row": 100,
-              "start_col": 100
+              "segment": 0,
+              "start_row": 800,
+              "start_col": 56
             },
             "R44SG0": {
               "segment": 7,
-              "start_row": 100,
-              "start_col": 100
+              "start_row": 800,
+              "start_col": 56
             },
             "R44SG1": {
-              "segment": 8,
-              "start_row": 100,
-              "start_col": 100
+              "segment": 0,
+              "start_row": 800,
+              "start_col": 56
             }
           }
         }
