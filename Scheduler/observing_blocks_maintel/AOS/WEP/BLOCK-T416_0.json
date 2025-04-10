@@ -1,0 +1,433 @@
+{
+  "name": "BLOCK-T416",
+  "id": "65cb9d6e-99d8-4ed1-9661-2f1a9dcdb437",
+  "program": "BLOCK-T416_0",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/set_dof.py",
+      "standard": true,
+      "parameters": {
+        "day": "$day",
+        "seq": "$seq"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "dofs": [
+          150.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "exposure_time": "$exposure_time",
+        "max_iter": "$maxiter",
+        "program": "$program",
+        "reason": "WET-001",
+        "note": "optical_state_m2_bdz",
+        "used_dofs": [
+          0,
+          1,
+          2
+        ],
+        "apply_corrections": "$apply_corrections"
+      }
+    },
+    {
+      "name": "maintel/set_dof.py",
+      "standard": true,
+      "parameters": {
+        "day": "$day",
+        "seq": "$seq"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "dofs": [
+          0.0,
+          4000.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "exposure_time": "$exposure_time",
+        "max_iter": "$maxiter",
+        "program": "$program",
+        "reason": "WET-001",
+        "note": "optical_state_m2_bdx",
+        "used_dofs": [
+          1,
+          2
+        ],
+        "apply_corrections": "$apply_corrections"
+      }
+    },
+    {
+      "name": "maintel/set_dof.py",
+      "standard": true,
+      "parameters": {
+        "day": "$day",
+        "seq": "$seq"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "dofs": [
+          0.0,
+          0.0,
+          4000.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "exposure_time": "$exposure_time",
+        "max_iter": "$maxiter",
+        "program": "$program",
+        "reason": "WET-001",
+        "note": "optical_state_m2_bdy",
+        "used_dofs": [
+          1,
+          2
+        ],
+        "apply_corrections": "$apply_corrections"
+      }
+    },
+    {
+      "name": "maintel/set_dof.py",
+      "standard": true,
+      "parameters": {
+        "day": "$day",
+        "seq": "$seq"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "dofs": [
+          0.0,
+          0.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "exposure_time": "$exposure_time",
+        "max_iter": "$maxiter",
+        "program": "$program",
+        "reason": "WET-001",
+        "note": "optical_state_m2_brx",
+        "used_dofs": [
+          3,
+          4
+        ],
+        "apply_corrections": "$apply_corrections"
+      }
+    },
+    {
+      "name": "maintel/set_dof.py",
+      "standard": true,
+      "parameters": {
+        "day": "$day",
+        "seq": "$seq"
+      }
+    },
+    {
+      "name": "maintel/apply_dof.py",
+      "standard": true,
+      "parameters": {
+        "dofs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.02,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "exposure_time": "$exposure_time",
+        "max_iter": "$maxiter",
+        "program": "$program",
+        "reason": "WET-001",
+        "note": "optical_state_m2_bry",
+        "used_dofs": [
+          3,
+          4
+        ],
+        "apply_corrections": "$apply_corrections"
+      }
+    },
+    {
+      "name": "maintel/set_dof.py",
+      "standard": true,
+      "parameters": {
+        "day": "$day",
+        "seq": "$seq"
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T416 configuration\ndescription: Configuration for BLOCK-T416.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"r_57\"\n  day:\n    description: Day of the year for the reference state.\n    type: integer\n    default: 1\n  seq:\n    description: Sequence number for the reference state.\n    type: integer\n    default: 1\n  exposure_time:\n    description: Exposure time.\n    type: number\n    default: 30.0\n  maxiter:\n    description: Maximum number of iterations for the closed loop.\n    type: integer\n    default: 1\n  apply_corrections:\n    description: Apply corrections.\n    type: boolean\n    default: False\n"
+}
