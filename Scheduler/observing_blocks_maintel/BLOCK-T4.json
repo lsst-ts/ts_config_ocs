@@ -1,6 +1,6 @@
 {
     "name": "BLOCK-T4",
-    "id": "a541a009-19eb-428e-a143-3193b3d38720",
+    "id": "aa3594a1-7622-4d6b-aea7-86bae686c59e",
     "program": "BLOCK-T4",
     "constraints": [],
     "scripts": [
@@ -8,7 +8,9 @@
             "name": "maintel/disable_hexapod_compensation_mode.py",
             "standard": true,
             "parameters": {
-                "components": "CameraHexapod"
+                "components": [
+                    "CameraHexapod"
+                ]
             }
         },
         {
