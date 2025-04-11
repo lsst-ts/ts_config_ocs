@@ -15,7 +15,10 @@
                 "rot_value": 0,
                 "rot_type": "PhysicalSky",
                 "track_for": 32,
-                "slew_timeout": 600
+                "slew_timeout": 600,
+                "ignore": [
+                  "mtdome"
+                ]
             }
         }
     ]
