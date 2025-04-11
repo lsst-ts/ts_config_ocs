@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T436",
-  "id": "f9e18074-7d3a-4b00-8dbc-47c39be086ed",
+  "id": "c1868804-1052-4543-a759-bf4f412e2a8f",
   "program": "BLOCK-T436",
   "constraints": [],
   "scripts": [
@@ -9,38 +9,6 @@
       "standard": true,
       "parameters": {
         "angle": -85.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": -80.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": -75.0
       }
     },
     {
@@ -72,71 +40,7 @@
       "name": "maintel/mtrotator/move_rotator.py",
       "standard": true,
       "parameters": {
-        "angle": -65.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": -60.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
         "angle": -55.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": -50.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": -45.0
       }
     },
     {
@@ -168,71 +72,7 @@
       "name": "maintel/mtrotator/move_rotator.py",
       "standard": true,
       "parameters": {
-        "angle": -35.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": -30.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
         "angle": -25.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": -20.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": -15.0
       }
     },
     {
@@ -264,71 +104,7 @@
       "name": "maintel/mtrotator/move_rotator.py",
       "standard": true,
       "parameters": {
-        "angle": -5.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": 0.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
         "angle": 5.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": 10.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": 15.0
       }
     },
     {
@@ -360,71 +136,7 @@
       "name": "maintel/mtrotator/move_rotator.py",
       "standard": true,
       "parameters": {
-        "angle": 25.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": 30.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
         "angle": 35.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": 40.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": 45.0
       }
     },
     {
@@ -456,71 +168,7 @@
       "name": "maintel/mtrotator/move_rotator.py",
       "standard": true,
       "parameters": {
-        "angle": 55.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": 60.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
         "angle": 65.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": 70.0
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "laser_tracker_rotator"
-      }
-    },
-    {
-      "name": "maintel/mtrotator/move_rotator.py",
-      "standard": true,
-      "parameters": {
-        "angle": 75.0
       }
     },
     {
