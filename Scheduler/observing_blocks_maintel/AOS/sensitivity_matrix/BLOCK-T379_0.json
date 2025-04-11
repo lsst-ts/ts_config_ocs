@@ -1,0 +1,89 @@
+{
+  "name": "BLOCK-T379",
+  "id": "4fa04516-65e1-42fd-8bea-1860019affd0",
+  "program": "BLOCK-T379_0",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/parameter_march_lsstcam.py",
+      "standard": false,
+      "parameters": {
+        "exp_time": "$exp_time",
+        "dof_index": 30,
+        "rotation_sequence": "$rotation_sequence",
+        "range": 1,
+        "n_steps": "$num_steps",
+        "program": "$program",
+        "filter": "$filter",
+        "reason": "sensitivity_m2_b1",
+        "az": "$az",
+        "el": "$el"
+      }
+    },
+    {
+      "name": "maintel/parameter_march_lsstcam.py",
+      "standard": false,
+      "parameters": {
+        "exp_time": "$exp_time",
+        "dof_index": 31,
+        "rotation_sequence": "$rotation_sequence",
+        "range": 1,
+        "n_steps": "$num_steps",
+        "program": "$program",
+        "filter": "$filter",
+        "reason": "sensitivity_m2_b2",
+        "az": "$az",
+        "el": "$el"
+      }
+    },
+    {
+      "name": "maintel/parameter_march_lsstcam.py",
+      "standard": false,
+      "parameters": {
+        "exp_time": "$exp_time",
+        "dof_index": 32,
+        "rotation_sequence": "$rotation_sequence",
+        "range": 1,
+        "n_steps": "$num_steps",
+        "program": "$program",
+        "filter": "$filter",
+        "reason": "sensitivity_m2_b3",
+        "az": "$az",
+        "el": "$el"
+      }
+    },
+    {
+      "name": "maintel/parameter_march_lsstcam.py",
+      "standard": false,
+      "parameters": {
+        "exp_time": "$exp_time",
+        "dof_index": 33,
+        "rotation_sequence": "$rotation_sequence",
+        "range": 1,
+        "n_steps": "$num_steps",
+        "program": "$program",
+        "filter": "$filter",
+        "reason": "sensitivity_m2_b4",
+        "az": "$az",
+        "el": "$el"
+      }
+    },
+    {
+      "name": "maintel/parameter_march_lsstcam.py",
+      "standard": false,
+      "parameters": {
+        "exp_time": "$exp_time",
+        "dof_index": 34,
+        "rotation_sequence": "$rotation_sequence",
+        "range": 0.5,
+        "n_steps": "$num_steps",
+        "program": "$program",
+        "filter": "$filter",
+        "reason": "sensitivity_m2_b5",
+        "az": "$az",
+        "el": "$el"
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T379 configuration\ndescription: Configuration for BLOCK-T379.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"r_57\"\n  num_steps:\n    description: Number of steps for the sensitivity matrix.\n    type: integer\n    default: 9\n  exp_time:\n    description: Exposure time.\n    type: number\n    default: 15.0\n  rotation_sequence:\n    description: Rotation sequence.\n    type: array\n    default: [-75.0, -63.75, -42.5, -21.25, 0.0, 21.25, 42.5, 63.75, 75.0]\n    items:\n      type: number\n  el:\n    description: Elevation.\n    type: number\n    default: 60.0\n  az:\n    description: Azimuth.\n    type: number\n    default: 0.0\n"
+}
