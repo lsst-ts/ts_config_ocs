@@ -1,6 +1,6 @@
 {
     "name": "BLOCK-T4",
-    "id": "aa3594a1-7622-4d6b-aea7-86bae686c59e",
+    "id": "ab2f1ff8-1d43-4ae5-b03a-1b23cb2fa76b",
     "program": "BLOCK-T4",
     "constraints": [],
     "scripts": [
@@ -58,5 +58,5 @@
             }
         }
     ],
-    "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T4 configuration\ndescription: Configuration for BLOCK-T4.\ntype: object\nproperties:\n  step_size:\n    description: Step size in microns for z axis\n    type: number\n    default: 100\n  max_position:\n    description: Absolute maximum position for z axis\n    type: number\n    default: 5000\n  max_verification_position:\n    description: Maximum verification position for z axis\n    type: number\n    default: 5000\n  sleep_time:\n    description: Sleep time in seconds between movements\n    type: number\n    default: 0\n"
+    "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T4 configuration\ndescription: Configuration for BLOCK-T4.\ntype: object\nproperties:\n  step_size:\n    description: Step size in microns for z axis\n    type: number\n    default: 100\n  max_position:\n    description: Absolute maximum position for z axis\n    type: number\n    default: 5000\n  max_verification_position:\n    description: Maximum verification position for z axis\n    type: number\n    default: 5000\n  sleep_time:\n    description: Sleep time in seconds between movements\n    type: number\n    default: 2\n"
 }
