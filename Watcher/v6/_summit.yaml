@@ -256,9 +256,6 @@ rules:
     hysteresis: 0
     poll_interval: 1
     max_data_age: 30
-- classname: MTM1M3ThermalFans
-  configs:
-  - "": none
 - classname: ATCameraDewar
   configs:
   - min_warning_ccd_temp: -105
