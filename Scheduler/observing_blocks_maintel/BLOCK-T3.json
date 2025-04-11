@@ -1,6 +1,6 @@
 {
     "name": "BLOCK-T3",
-    "id": "a555ef22-4203-4591-a933-d94008a1fc0f",
+    "id": "4384b41c-70cd-4523-a6af-0b3d2dd8ce7a",
     "program": "BLOCK-T3",
     "constraints": [],
     "scripts": [
@@ -8,7 +8,9 @@
             "name": "maintel/disable_hexapod_compensation_mode.py",
             "standard": true,
             "parameters": {
-                "components": "M2Hexapod"
+                "components": [
+                    "M2Hexapod"
+                ]
             }
         },
         {
