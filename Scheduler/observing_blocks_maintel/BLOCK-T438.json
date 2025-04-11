@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T438",
-  "id": "b6e30605-529b-4af4-90ef-5605751232ae",
+  "id": "ad775c2f-6a04-4d62-ae04-9bd9964b72f6",
   "program": "BLOCK-T438",
   "constraints": [],
   "scripts": [
@@ -17,5 +17,5 @@
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T438 configuration\ndescription: Configuration for BLOCK-T438.\ntype: object\nproperties:\n  grid_az:\n    description: Grid of azimuth positions to start short and long slews\n    type: ['number', 'array']\n    default: 70\n  grid_el:\n    description: Grid of elevation positions to start short and long slews\n    type: ['number', 'array']\n    default: 30\n  direction:\n    description: Direction of the first slew ('forward' or 'backward')\n    type: string\n    default: \"forward\"\n  pause_for:\n    description: Pause duration between movements in seconds\n    type: number\n    default: 30\n  move_timeout:\n    description: Timeout for each move command\n    type: number\n    default: 120\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: []\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T438 configuration\ndescription: Configuration for BLOCK-T438.\ntype: object\nproperties:\n  grid_az:\n    description: Grid of azimuth positions to start short and long slews\n    type: ['number', 'array']\n    default: -75\n  grid_el:\n    description: Grid of elevation positions to start short and long slews\n    type: ['number', 'array']\n    default: 70\n  direction:\n    description: Direction of the first slew ('forward' or 'backward')\n    type: string\n    default: \"forward\"\n  pause_for:\n    description: Pause duration between movements in seconds\n    type: number\n    default: 30\n  move_timeout:\n    description: Timeout for each move command\n    type: number\n    default: 120\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: []\n"
 }
