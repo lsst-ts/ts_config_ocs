@@ -1,0 +1,124 @@
+{
+  "name": "BLOCK-T374",
+  "id": "d743fdcd-bd93-4e9c-9ae3-8ce1f86aacc0",
+  "program": "BLOCK-T374",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "move_timeout": 2700,
+        "ignore": "$ignore"
+      }
+    },
+    {
+      "name": "maintel/mtrotator/move_rotator.py",
+      "standard": true,
+      "parameters": {
+        "angle": -89.5
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 300.0
+      }
+    },
+    {
+      "name": "maintel/mtrotator/move_rotator.py",
+      "standard": true,
+      "parameters": {
+        "angle": -60
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 300.0
+      }
+    },
+    {
+      "name": "maintel/mtrotator/move_rotator.py",
+      "standard": true,
+      "parameters": {
+        "angle": -30
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 300.0
+      }
+    },
+    {
+      "name": "maintel/mtrotator/move_rotator.py",
+      "standard": true,
+      "parameters": {
+        "angle": 0
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 300.0
+      }
+    },
+    {
+      "name": "maintel/mtrotator/move_rotator.py",
+      "standard": true,
+      "parameters": {
+        "angle": 30
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 300.0
+      }
+    },
+    {
+      "name": "maintel/mtrotator/move_rotator.py",
+      "standard": true,
+      "parameters": {
+        "angle": 60
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 300.0
+      }
+    },
+    {
+      "name": "maintel/mtrotator/move_rotator.py",
+      "standard": true,
+      "parameters": {
+        "angle": 89.5
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": 300.0
+      }
+    },
+    {
+      "name": "maintel/mtrotator/move_rotator.py",
+      "standard": true,
+      "parameters": {
+        "angle": 0
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T374 configuration\ndescription: Configuration for BLOCK-T374.\ntype: object\nproperties:\n  azimuth:\n    description: Target azimuth angle\n    type: number\n    default: 0\n  elevation:\n    description: Target elevation angle\n    type: number\n    default: 80\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['mtaos', 'mtdome', 'mtdometrajectory']\n"
+}
