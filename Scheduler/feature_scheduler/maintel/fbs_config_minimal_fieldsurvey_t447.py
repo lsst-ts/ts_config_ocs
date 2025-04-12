@@ -107,7 +107,7 @@ def get_scheduler():
     science_program = "BLOCK-T447"  # json BLOCK to be used
 
     tier = 0
-    target_names = ["dome_closed_test_target"]
+    target_names = ["ENGTEST"]
     make_scheduler.add_field_surveys(
         tier,
         observation_reason,
