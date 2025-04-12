@@ -1,0 +1,38 @@
+{
+    "name": "BLOCK-T449",
+    "program": "BLOCK-T449",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "nimages": 1,
+                "exp_times": 0,
+                "image_type": "BIAS",
+                "reason": "BLOCK-T449",
+                "program": "BLOCK-T449",
+                "note": "All_day_bias_dark"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 30
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "nimages": 1,
+                "exp_times": 30,
+                "image_type": "DARK",
+                "reason": "BLOCK-T449",
+                "program": "BLOCK-T449",
+                "note": "All_day_bias_dark"
+            }
+        }
+    ]
+}
