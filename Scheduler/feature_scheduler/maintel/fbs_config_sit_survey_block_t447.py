@@ -19,156 +19,107 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import numpy as np
-import rubin_scheduler.scheduler.basis_functions as bf
-import rubin_scheduler.scheduler.detailers as detailers
-from rubin_scheduler.scheduler.model_observatory import ModelObservatory
-from rubin_scheduler.scheduler.schedulers import CoreScheduler
-from rubin_scheduler.scheduler.surveys import GreedySurvey
-from rubin_scheduler.scheduler.utils import Footprint, SkyAreaGenerator
-from rubin_scheduler.utils import SURVEY_START_MJD as MJD_START
+from pathlib import Path
+
+from lsst.ts.fbs.utils.maintel.make_fieldsurvey_scheduler import (
+    MakeFieldSurveyScheduler,
+    get_sv_targets,
+)
+from rubin_scheduler.scheduler import basis_functions, detailers
 
 
-def gen_greedy_surveys(
-    nside=32,
-    nexp=1,
-    exptime=30.0,
-    filters=["g", "r", "z"],
-    camera_rot_limits=[-80.0, 80.0],
-    shadow_minutes=60.0,
-    max_alt=76.0,
-    moon_distance=30.0,
-    ignore_obs="DD",
-    footprint_weight=0.3,
-    slewtime_weight=3.0,
-    stayfilter_weight=3.0,
-    footprints=None,
-    seed=42,
-):
-    """Generate a feature scheduler survey configuration that does not employ
-    any daylight constraints. Useful for unit testing.
+def get_scheduler():
+    """Construct feature based scheduler.
 
-    This is a convenience function to generate a list of survey objects that
-    can be used with lsst.sims.featureScheduler.schedulers.CoreScheduler.
-    To ensure we are robust against changes in the sims_featureScheduler
-    codebase, all kwargs are explicitly set.
-
-    Parameters
-    ----------
-    nside : int (32)
-        The HEALpix nside to use.
-    nexp : int (1)
-        The number of exposures to use in a visit.
-    exptime : float (30.)
-        The exposure time to use per visit (seconds).
-    filters : list of str (['r', 'i', 'z', 'y'])
-        Which filters to generate surveys for.
-    camera_rot_limits : list of float ([-80., 80.])
-        The limits to impose when rotationally dithering the camera (degrees).
-    shadow_minutes : float (60.)
-        Used to mask regions around zenith (minutes).
-    max_alt : float (76.)
-        The maximium altitude to use when masking zenith (degrees).
-    moon_distance : float (30.)
-        The mask radius to apply around the moon (degrees).
-    ignore_obs : str or list of str ('DD')
-        Ignore observations by surveys that include the given substring(s).
-    footprint_weight : float (0.3)
-        The weight on the survey footprint basis function.
-    slewtime_weight : float (3.)
-        The weight on the slewtime basis function.
-    stayfilter_weight : float (3.)
-        The weight on basis function that tries to stay avoid filter changes.
-    seed : int (42)
-        The random generator seed.
+    Returns
+    -------
+    nside : int
+        Healpix map resolution.
+    scheduler : Core_scheduler
+        Feature based scheduler.
     """
-    # Define the extra parameters that are used in the greedy survey. I
-    # think these are fairly set, so no need to promote to utility func kwargs
-    greed_survey_params = {
-        "block_size": 1,
-        "smoothing_kernel": None,
-        "seed": seed,
-        "camera": "LSST",
-        "dither": True,
-        "survey_name": "BLOCK-T447",
+
+    nside = 32
+
+    # Mapping from band to filter from
+    # obs_lsst/python/lsst/obs/lsst/filters.py
+    band_to_filter = {
+        "u": "u_24",
+        "g": "g_6",
+        "r": "r_57",
+        "i": "i_39",
+        "z": "z_20",
+        "y": "y_10",
     }
 
-    surveys = []
-    survey_detailers = [
-        detailers.TrackingInfoDetailer(
-            science_program=greed_survey_params["survey_name"], target_name="SimTarget"
+    # Get target coordinates - edit YAML file for updates
+    # YAML file should be in the same directory as this .py config
+    # ts_config_ocs/Scheduler/feature_scheduler/maintel/
+    # fieldsurvey_centers.yaml
+    target_dir = Path(__file__).parent
+    target_file = Path.joinpath(target_dir, "fieldsurvey_centers.yaml")
+    if not Path.exists(target_file):
+        raise ValueError(f"Expected target yaml file does not exist at {target_file}")
+    targets = get_sv_targets(target_file)
+
+    make_scheduler = MakeFieldSurveyScheduler(
+        targets=targets, nside=nside, ntiers=1, band_to_filter=band_to_filter
+    )
+
+    nvisits = {"u": 5, "g": 5, "r": 5, "i": 5, "z": 5, "y": 5}
+    sequence = ["g", "r", "i"]
+    # exposure time in seconds
+    exptimes = {"u": 38, "g": 30, "r": 30, "i": 30, "z": 30, "y": 30}
+    # 1 --> single 30 second exposure
+    nexps = {"u": 1, "g": 1, "r": 1, "i": 1, "z": 1, "y": 1}
+
+    field_survey_kwargs = {
+        "nvisits": nvisits,
+        "sequence": sequence,
+        "exptimes": exptimes,
+        "nexps": nexps,
+    }
+
+    config_basis_functions = [
+        # TODO: return NotTwilightBasisFunction when rotator test is completed.
+        # basis_functions.NotTwilightBasisFunction(sun_alt_limit=-12.0),
+        basis_functions.AltAzShadowMaskBasisFunction(
+            nside=nside,
+            min_alt=30.0,
+            max_alt=83.0,
+            shadow_minutes=10.0,
         ),
-        detailers.CameraRotDetailer(
-            min_rot=np.min(camera_rot_limits), max_rot=np.max(camera_rot_limits)
+        basis_functions.SlewtimeBasisFunction(bandname=None, nside=nside),
+        # TODO: add basis function to mask out azimuth range at end of night
+        # once SP-2080 functionality is available at summit.
+    ]
+
+    config_detailers = [
+        detailers.DitherDetailer(max_dither=0.7, per_night=False),
+        detailers.CameraSmallRotPerObservationListDetailer(
+            max_rot=45.0,
+            min_rot=-45.0,
+            per_visit_rot=1.0,
         ),
     ]
 
-    for filtername in filters:
-        bfs = [
-            (
-                bf.FootprintBasisFunction(
-                    filtername=filtername,
-                    footprint=footprints,
-                    out_of_bounds_val=np.nan,
-                    nside=nside,
-                ),
-                footprint_weight,
-            ),
-            (
-                bf.SlewtimeBasisFunction(filtername=filtername, nside=nside),
-                slewtime_weight,
-            ),
-            (
-                bf.AltAzShadowMaskBasisFunction(
-                    nside=nside,
-                    shadow_minutes=shadow_minutes,
-                    max_alt=max_alt,
-                    min_alt=30.0,
-                ),
-                0,
-            ),
-            (bf.AvoidFastRevisitsBasisFunction(bandname=filtername, gap_min=60.0), 0),
-        ]
+    observation_reason = "Full System ENGTEST"
+    science_program = "BLOCK-T447"  # json BLOCK to be used
 
-        weights = [val[1] for val in bfs]
-        basis_functions = [val[0] for val in bfs]
-        surveys.append(
-            GreedySurvey(
-                basis_functions,
-                weights,
-                exptime=exptime,
-                filtername=filtername,
-                nside=nside,
-                ignore_obs=ignore_obs,
-                nexp=nexp,
-                detailers=survey_detailers,
-                **greed_survey_params,
-            )
-        )
+    tier = 0
+    target_names = ["rotator_test_target"]
+    make_scheduler.add_field_surveys(
+        tier,
+        observation_reason,
+        science_program,
+        target_names,
+        basis_functions=config_basis_functions,
+        detailers=config_detailers,
+        **field_survey_kwargs,
+    )
 
-    return surveys
+    return make_scheduler.get_scheduler()
 
 
 if __name__ == "config":
-    nside = 32
-    per_night = True  # Dither DDF per night
-    seed = 42
-
-    camera_ddf_rot_limit = 75.0
-
-    observatory = ModelObservatory(nside=nside, mjd_start=MJD_START)
-    observatory.sky_model.load_length = 3
-    conditions = observatory.return_conditions()
-
-    sky = SkyAreaGenerator(nside=nside)
-    footprints_hp, footprints_labels = sky.return_maps()
-
-    footprints = Footprint(MJD_START, sun_ra_start=conditions.sun_ra, nside=nside)
-    for i, key in enumerate(footprints_hp.dtype.names):
-        footprints.footprints[i, :] = footprints_hp[key]
-
-    greedy = gen_greedy_surveys(
-        nside, nexp=1, footprints=footprints, seed=seed, filters=["r"]
-    )
-    surveys = [greedy]
-    scheduler = CoreScheduler(surveys, nside=nside)
+    nside, scheduler = get_scheduler()
