@@ -40,7 +40,7 @@ def gen_greedy_surveys(
     moon_distance=30.0,
     ignore_obs="DD",
     footprint_weight=0.3,
-    slewtime_weight=3.0,
+    slewtime_weight=6.0,
     stayfilter_weight=3.0,
     footprints=None,
     seed=42,
