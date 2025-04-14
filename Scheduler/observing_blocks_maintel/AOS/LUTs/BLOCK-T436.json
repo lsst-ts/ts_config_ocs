@@ -1,16 +1,18 @@
 {
   "name": "BLOCK-T436",
-  "id": "703ed33e-442d-437b-aed7-90255b4a4d70",
+  "id": "d86f7be3-ef86-4246-b109-e37fc2340e89",
   "program": "BLOCK-T436",
   "constraints": [],
   "scripts": [
     {
-      "name": "maintel/point_azel.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "az": "$azimuth",
-        "el": "$elevation",
-        "rot_tel": -75.0
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -75.0
       }
     },
     {
@@ -23,12 +25,14 @@
       }
     },
     {
-      "name": "maintel/point_azel.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "az": "$azimuth",
-        "el": "$elevation",
-        "rot_tel": -60.0
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -60.0
       }
     },
     {
@@ -41,12 +45,14 @@
       }
     },
     {
-      "name": "maintel/point_azel.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "az": "$azimuth",
-        "el": "$elevation",
-        "rot_tel": -45.0
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -45.0
       }
     },
     {
@@ -59,12 +65,14 @@
       }
     },
     {
-      "name": "maintel/point_azel.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "az": "$azimuth",
-        "el": "$elevation",
-        "rot_tel": -30.0
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -30.0
       }
     },
     {
@@ -77,12 +85,14 @@
       }
     },
     {
-      "name": "maintel/point_azel.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "az": "$azimuth",
-        "el": "$elevation",
-        "rot_tel": -15.0
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -15.0
       }
     },
     {
@@ -95,12 +105,14 @@
       }
     },
     {
-      "name": "maintel/point_azel.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "az": "$azimuth",
-        "el": "$elevation",
-        "rot_tel": 0.0
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 0.0
       }
     },
     {
@@ -113,12 +125,14 @@
       }
     },
     {
-      "name": "maintel/point_azel.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "az": "$azimuth",
-        "el": "$elevation",
-        "rot_tel": 15.0
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 15.0
       }
     },
     {
@@ -131,12 +145,14 @@
       }
     },
     {
-      "name": "maintel/point_azel.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "az": "$azimuth",
-        "el": "$elevation",
-        "rot_tel": 30.0
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 30.0
       }
     },
     {
@@ -149,12 +165,14 @@
       }
     },
     {
-      "name": "maintel/point_azel.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "az": "$azimuth",
-        "el": "$elevation",
-        "rot_tel": 45.0
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 45.0
       }
     },
     {
@@ -167,12 +185,14 @@
       }
     },
     {
-      "name": "maintel/point_azel.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "az": "$azimuth",
-        "el": "$elevation",
-        "rot_tel": 60.0
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 60.0
       }
     },
     {
