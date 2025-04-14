@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T436",
-  "id": "c1868804-1052-4543-a759-bf4f412e2a8f",
+  "id": "9ca78ab3-e8f9-475d-9fd6-d667ec57b9ab",
   "program": "BLOCK-T436",
   "constraints": [],
   "scripts": [
@@ -131,7 +131,7 @@
         "track_azel": {
           "az": "$azimuth",
           "el": "$elevation"
-        },    
+        },
         "rot_value": 5.0
       }
     },
@@ -211,7 +211,7 @@
         "track_azel": {
           "az": "$azimuth",
           "el": "$elevation"
-        },      
+        },
         "rot_value": 65.0
       }
     },
@@ -245,5 +245,5 @@
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T436 configuration\ndescription: Configuration for BLOCK-T436.\ntype: object\nproperties:\n  azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 0\n elevation:\n    description: Elevation to use for the elevation sweep.\n    type: number\n    default: 0\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T436 configuration\ndescription: Configuration for BLOCK-T436.\ntype: object\nproperties:\n  azimuth:\n    description: Azimuth to use for the rotator sweep.\n    type: number\n    default: 0\n  elevation:\n    description: Elevation to use for the rotator sweep.\n    type: number\n    default: 0\n"
 }
