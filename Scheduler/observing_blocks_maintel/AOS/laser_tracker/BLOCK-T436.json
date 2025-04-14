@@ -5,21 +5,14 @@
   "constraints": [],
   "scripts": [
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": -85.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -85.0
       }
     },
     {
@@ -32,21 +25,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": -70.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -70.0
       }
     },
     {
@@ -59,21 +45,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": -55.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -55.0
       }
     },
     {
@@ -86,21 +65,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": -40.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -40.0
       }
     },
     {
@@ -113,21 +85,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": -25.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -25.0
       }
     },
     {
@@ -140,21 +105,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": -10.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -10.0
       }
     },
     {
@@ -167,21 +125,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": 5.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },    
+        "rot_value": 5.0
       }
     },
     {
@@ -194,21 +145,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": 20.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 20.0
       }
     },
     {
@@ -221,21 +165,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": 35.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 35.0
       }
     },
     {
@@ -248,21 +185,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": 50.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 50.0
       }
     },
     {
@@ -275,21 +205,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": 65.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },      
+        "rot_value": 65.0
       }
     },
     {
@@ -302,21 +225,14 @@
       }
     },
     {
-      "name": "maintel/mtrotator/move_rotator.py",
+      "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
-        "angle": 80.0
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "MTHexapod:1",
-        "cmd": "move",
-        "parameters": {
-          "x": 0.0
-        }
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 80.0
       }
     },
     {
@@ -329,5 +245,5 @@
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T436 configuration\ndescription: Configuration for BLOCK-T436.\ntype: object\nproperties:\n  azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 0\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T436 configuration\ndescription: Configuration for BLOCK-T436.\ntype: object\nproperties:\n  azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 0\n elevation:\n    description: Elevation to use for the elevation sweep.\n    type: number\n    default: 0\n"
 }
