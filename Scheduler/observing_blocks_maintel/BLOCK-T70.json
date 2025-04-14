@@ -1,0 +1,32 @@
+{
+    "name": "BLOCK-T70",
+    "id": "f26e5b21-91ab-4232-bb11-ea863d0d1c6a",
+    "program": "BLOCK-T70",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDome",
+                "cmd": "openShutter"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": "$sleep_for"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDome",
+                "cmd": "closeShutter"
+            }
+        }
+    ],
+    "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T70 configuration\ndescription: Configuration for BLOCK-T70.\ntype: object\nproperties:\n  sleep_for:\n    description: Duration of the sleep between opening and cllosing the shutter.\n    type: number\n    default: 30\n"
+}
