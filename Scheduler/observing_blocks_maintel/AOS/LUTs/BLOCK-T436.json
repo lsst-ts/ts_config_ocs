@@ -1,0 +1,189 @@
+{
+  "name": "BLOCK-T436",
+  "id": "703ed33e-442d-437b-aed7-90255b4a4d70",
+  "program": "BLOCK-T436",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot_tel": -75.0
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "laser_tracker_rotator"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot_tel": -60.0
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "laser_tracker_rotator"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot_tel": -45.0
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "laser_tracker_rotator"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot_tel": -30.0
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "laser_tracker_rotator"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot_tel": -15.0
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "laser_tracker_rotator"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot_tel": 0.0
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "laser_tracker_rotator"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot_tel": 15.0
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "laser_tracker_rotator"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot_tel": 30.0
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "laser_tracker_rotator"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot_tel": 45.0
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "laser_tracker_rotator"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot_tel": 60.0
+      }
+    },
+    {
+      "name": "maintel/laser_tracker/measure.py",
+      "standard": true,
+      "parameters": {
+        "target": "Camera",
+        "program": "$program",
+        "reason": "laser_tracker_rotator"
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T436 configuration\ndescription: Configuration for BLOCK-T436.\ntype: object\nproperties:\n  azimuth:\n    description: Azimuth to use for the rotator sweep.\n    type: number\n    default: 0\n  elevation:\n    description: Elevation to use for the rotator sweep.\n    type: number\n    default: 0\n"
+}
