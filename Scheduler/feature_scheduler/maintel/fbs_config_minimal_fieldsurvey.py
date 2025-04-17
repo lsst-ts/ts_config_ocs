@@ -94,7 +94,7 @@ def get_scheduler():
     science_program = "BLOCK-365"  # json BLOCK to be used
 
     nvisits = {"u": 30, "g": 30, "r": 30, "i": 30, "z": 30, "y": 30}
-    sequence = ["u", "g", "r", "i", "z", "y"]
+    sequence = ["i"]
     # exposure time in seconds
     exptimes = {"u": 38.0, "g": 30.0, "r": 30.0, "i": 30.0, "z": 30.0, "y": 30.0}
     # 1 --> single 30 second exposure
@@ -108,7 +108,7 @@ def get_scheduler():
 
     # LARGE FILL FACTOR TARGETS
 
-    field_survey_kwargs["sequence"] = ["u", "g", "r", "i"]
+    field_survey_kwargs["sequence"] = ["i"]
 
     # Carina
     # Custom landscape dither
@@ -196,7 +196,7 @@ def get_scheduler():
 
     # LOW ECLIPTIC LATITUDE TARGETS
 
-    field_survey_kwargs["sequence"] = ["g", "r", "i"]
+    field_survey_kwargs["sequence"] = ["i"]
 
     # Low ecliptic latitude, near opposition April / May
     # Detector scale dithers
@@ -226,7 +226,7 @@ def get_scheduler():
 
     # LSST DEEP DRILLING FIELDS
 
-    field_survey_kwargs["sequence"] = ["u", "g", "r", "i", "z", "y"]
+    field_survey_kwargs["sequence"] = ["i"]
 
     # LSST DDFs
     # Detector scale dithers
@@ -258,7 +258,7 @@ def get_scheduler():
 
     # DENSELY DITHERED STAR FIELDS
 
-    field_survey_kwargs["sequence"] = ["u", "g", "r", "i", "z", "y"]
+    field_survey_kwargs["sequence"] = ["i"]
 
     # Densely dithered star fields
     # Spectrophotometric calibrators
