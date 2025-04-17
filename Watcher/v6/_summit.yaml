@@ -294,35 +294,9 @@ rules:
   - rule_name: Dynalene
     callback_names: [tel_dynaleneP05]
     individual_limits:
-    - item_name: dynCH01supTS05
-      limit_type: upper
-      limit_value: 30.0
-      severity: CRITICAL
-    - item_name: dynCH01supPS11
-      limit_type: lower
-      limit_value: 180000.0
-      severity: CRITICAL
-    - item_name: dynCH01supFS01
-      limit_type: lower
-      limit_value: 10.0
-      time_span: 30.0
-      severity: CRITICAL
     - item_name: dynCH01LS01
       limit_type: lower
       limit_value: 25.0
-      severity: CRITICAL
-    - item_name: dynCH02supTS07
-      limit_type: upper
-      limit_value: 30.0
-      severity: CRITICAL
-    - item_name: dynCH02supPS13
-      limit_type: lower
-      limit_value: 180000.0
-      severity: CRITICAL
-    - item_name: dynCH02supFS02
-      limit_type: lower
-      limit_value: 10.0
-      time_span: 30.0
       severity: CRITICAL
     - item_name: dynCH02LS02
       limit_type: lower
@@ -334,7 +308,7 @@ rules:
       severity: CRITICAL
     - item_name: dynTMAsupPS01
       limit_type: lower
-      limit_value: 180000.0
+      limit_value: 172368.932 #lower than 25 PSI
       severity: CRITICAL
     - item_name: dynTMAsupFS03
       limit_type: lower
@@ -343,16 +317,15 @@ rules:
       severity: CRITICAL
     - item_name: dynTMAretPS02
       limit_type: lower
-      limit_value: 180000.0
+      limit_value: 172368.932 #lower than 25 PSI
       severity: CRITICAL
-    - item_name: dynTMAretPS02
+    - item_name: dynTAsupTS03
       limit_type: upper
       limit_value: 30.0
       severity: CRITICAL
     - item_name: dynTAsupPS03
       limit_type: lower
-      limit_value: 10.0
-      time_span: 30.0
+      limit_value: 172368.932 #lower than 25 PSI
       severity: CRITICAL
     - item_name: dynTAsupFS04
       limit_type: lower
@@ -361,7 +334,7 @@ rules:
       severity: CRITICAL
     - item_name: dynTAretPS04
       limit_type: lower
-      limit_value: 180000.0
+      limit_value: 172368.932 #lower than 25 PSI
       severity: CRITICAL
   - rule_name: Chiller01
     callback_names: [tel_chiller01P01]
