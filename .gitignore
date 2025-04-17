@@ -3,9 +3,14 @@
 pytest_session.txt
 __pycache__
 
+# Jupyter notebooks
+**/*.ipynb
+
 # Editors
 .idea
 .vscode
+
+# pre-commit hooks config files
 .pre-commit-config.yaml
 .flake8
 .isort.cfg
