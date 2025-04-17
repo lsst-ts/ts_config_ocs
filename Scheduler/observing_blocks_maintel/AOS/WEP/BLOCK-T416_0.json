@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T416",
-  "id": "65cb9d6e-99d8-4ed1-9661-2f1a9dcdb437",
+  "id": "d678e08b-4e41-44d5-bfe7-65954f7e7e88",
   "program": "BLOCK-T416_0",
   "constraints": [],
   "scripts": [
@@ -9,7 +9,7 @@
       "standard": true,
       "parameters": {
         "day": "$day",
-        "seq": "$seq"
+        "seqnum": "$seqnum"
       }
     },
     {
@@ -17,7 +17,6 @@
       "standard": true,
       "parameters": {
         "dofs": [
-          150.0,
           0.0,
           0.0,
           0.0,
@@ -48,6 +47,7 @@
           0.0,
           0.0,
           0.0,
+          1.0,
           0.0,
           0.0,
           0.0,
@@ -75,15 +75,14 @@
       "standard": true,
       "parameters": {
         "filter": "$filter",
-        "exposure_time": "$exposure_time",
+        "exp_time": "$exp_time",
         "max_iter": "$maxiter",
         "program": "$program",
         "reason": "WET-001",
-        "note": "optical_state_m2_bdz",
+        "note": "optical_state_m2_b1",
         "used_dofs": [
-          0,
-          1,
-          2
+          30,
+          31
         ],
         "apply_corrections": "$apply_corrections"
       }
@@ -93,7 +92,7 @@
       "standard": true,
       "parameters": {
         "day": "$day",
-        "seq": "$seq"
+        "seqnum": "$seqnum"
       }
     },
     {
@@ -102,7 +101,6 @@
       "parameters": {
         "dofs": [
           0.0,
-          4000.0,
           0.0,
           0.0,
           0.0,
@@ -133,6 +131,7 @@
           0.0,
           0.0,
           0.0,
+          1.0,
           0.0,
           0.0,
           0.0,
@@ -159,14 +158,14 @@
       "standard": true,
       "parameters": {
         "filter": "$filter",
-        "exposure_time": "$exposure_time",
+        "exp_time": "$exp_time",
         "max_iter": "$maxiter",
         "program": "$program",
         "reason": "WET-001",
-        "note": "optical_state_m2_bdx",
+        "note": "optical_state_m2_b2",
         "used_dofs": [
-          1,
-          2
+          30,
+          31
         ],
         "apply_corrections": "$apply_corrections"
       }
@@ -176,7 +175,7 @@
       "standard": true,
       "parameters": {
         "day": "$day",
-        "seq": "$seq"
+        "seqnum": "$seqnum"
       }
     },
     {
@@ -186,7 +185,6 @@
         "dofs": [
           0.0,
           0.0,
-          4000.0,
           0.0,
           0.0,
           0.0,
@@ -217,6 +215,7 @@
           0.0,
           0.0,
           0.0,
+          1.0,
           0.0,
           0.0,
           0.0,
@@ -242,14 +241,14 @@
       "standard": true,
       "parameters": {
         "filter": "$filter",
-        "exposure_time": "$exposure_time",
+        "exp_time": "$exp_time",
         "max_iter": "$maxiter",
         "program": "$program",
         "reason": "WET-001",
-        "note": "optical_state_m2_bdy",
+        "note": "optical_state_m2_b3",
         "used_dofs": [
-          1,
-          2
+          32,
+          33
         ],
         "apply_corrections": "$apply_corrections"
       }
@@ -259,7 +258,7 @@
       "standard": true,
       "parameters": {
         "day": "$day",
-        "seq": "$seq"
+        "seqnum": "$seqnum"
       }
     },
     {
@@ -270,7 +269,6 @@
           0.0,
           0.0,
           0.0,
-          0.02,
           0.0,
           0.0,
           0.0,
@@ -301,6 +299,7 @@
           0.0,
           0.0,
           0.0,
+          1.0,
           0.0,
           0.0,
           0.0,
@@ -325,14 +324,14 @@
       "standard": true,
       "parameters": {
         "filter": "$filter",
-        "exposure_time": "$exposure_time",
+        "exp_time": "$exp_time",
         "max_iter": "$maxiter",
         "program": "$program",
         "reason": "WET-001",
-        "note": "optical_state_m2_brx",
+        "note": "optical_state_m2_b4",
         "used_dofs": [
-          3,
-          4
+          32,
+          33
         ],
         "apply_corrections": "$apply_corrections"
       }
@@ -342,7 +341,7 @@
       "standard": true,
       "parameters": {
         "day": "$day",
-        "seq": "$seq"
+        "seqnum": "$seqnum"
       }
     },
     {
@@ -354,7 +353,6 @@
           0.0,
           0.0,
           0.0,
-          0.02,
           0.0,
           0.0,
           0.0,
@@ -385,6 +383,7 @@
           0.0,
           0.0,
           0.0,
+          0.5,
           0.0,
           0.0,
           0.0,
@@ -408,14 +407,15 @@
       "standard": true,
       "parameters": {
         "filter": "$filter",
-        "exposure_time": "$exposure_time",
+        "exp_time": "$exp_time",
         "max_iter": "$maxiter",
         "program": "$program",
         "reason": "WET-001",
-        "note": "optical_state_m2_bry",
+        "note": "optical_state_m2_b5",
         "used_dofs": [
-          3,
-          4
+          32,
+          33,
+          34
         ],
         "apply_corrections": "$apply_corrections"
       }
@@ -425,9 +425,9 @@
       "standard": true,
       "parameters": {
         "day": "$day",
-        "seq": "$seq"
+        "seqnum": "$seqnum"
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T416 configuration\ndescription: Configuration for BLOCK-T416.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"r_57\"\n  day:\n    description: Day of the year for the reference state.\n    type: integer\n    default: 1\n  seq:\n    description: Sequence number for the reference state.\n    type: integer\n    default: 1\n  exposure_time:\n    description: Exposure time.\n    type: number\n    default: 30.0\n  maxiter:\n    description: Maximum number of iterations for the closed loop.\n    type: integer\n    default: 1\n  apply_corrections:\n    description: Apply corrections.\n    type: boolean\n    default: False\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T416 configuration\ndescription: Configuration for BLOCK-T416.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"r_57\"\n  day:\n    description: Day of the year for the reference state.\n    type: integer\n    default: 1\n  seq:\n    description: Sequence number for the reference state.\n    type: integer\n    default: 1\n  exp_time:\n    description: Exposure time.\n    type: number\n    default: 30.0\n  maxiter:\n    description: Maximum number of iterations for the closed loop.\n    type: integer\n    default: 1\n  apply_corrections:\n    description: Apply corrections.\n    type: boolean\n    default: False\n"
 }
