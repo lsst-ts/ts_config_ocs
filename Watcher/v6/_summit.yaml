@@ -380,7 +380,7 @@ rules:
       limit_value: 1
       severity: CRITICAL
     difference_limits:
-    - first_item_name: setpointActivo
+    - first_item_name: activeSetpoint
       second_item_name: waterEvaporatorSupplyTemp
       limit_type: upper
       limit_value: 5.0
@@ -405,7 +405,7 @@ rules:
       limit_value: 1
       severity: CRITICAL
     difference_limits:
-    - first_item_name: setpointActivo
+    - first_item_name: activeSetpoint
       second_item_name: waterEvaporatorSupplyTemp
       limit_type: upper
       limit_value: 5.0
@@ -430,7 +430,7 @@ rules:
       limit_value: 1
       severity: CRITICAL
     difference_limits:
-    - first_item_name: setpointActivo
+    - first_item_name: activeSetpoint
       second_item_name: waterEvaporatorSupplyTemp
       limit_type: upper
       limit_value: 5.0
