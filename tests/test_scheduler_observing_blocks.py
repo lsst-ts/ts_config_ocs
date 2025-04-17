@@ -160,4 +160,5 @@ def get_driver_overrides() -> dict:
         ],
         "estimated_slew_time": 0.0,
         "program": "PROGRAM",
+        "observation_reason": "REASON",
     }
