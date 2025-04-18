@@ -1,0 +1,31 @@
+{
+    "name": "BLOCK-T389",
+    "program": "BLOCK-T389",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/take_aos_sequence_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 60.0,
+                "dz": 6000,
+                "n_sequences": 2,
+                "program": "$program",
+                "reason": "SITCOM-1147",
+                "note": "giant_donut"
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ACQ",
+                "nimages": 2,
+                "exp_times": 30.0,
+                "program": "$program",
+                "reason": "SITCOM-1147",
+                "note": "giant_donut"
+            }
+        }
+    ]
+}
