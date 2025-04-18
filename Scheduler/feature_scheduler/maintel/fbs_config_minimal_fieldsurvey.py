@@ -90,7 +90,7 @@ def get_scheduler():
         basis_functions.SlewtimeBasisFunction(bandname=None, nside=nside),
     ]
 
-    observation_reason = "small field science"
+    observation_reason = "field_survey_science"
     science_program = "BLOCK-365"  # json BLOCK to be used
 
     nvisits = {"u": 30, "g": 30, "r": 30, "i": 30, "z": 30, "y": 30}
