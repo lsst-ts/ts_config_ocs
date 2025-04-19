@@ -108,22 +108,33 @@ def get_scheduler():
 
     # LARGE FILL FACTOR TARGETS
 
-    field_survey_kwargs["sequence"] = ["i"]
+    carina_field_survey_kwargs = {
+        "nvisits": {"u": 4, "g": 4, "r": 4, "i": 4, "z": 4, "y": 4},
+        "sequence": sequence,
+        "exptimes": exptimes,
+        "nexps": nexps,
+    }
 
     # Carina
     # Custom landscape dither
-    radius = np.sqrt(1.8)
+    radius = np.sqrt(2.0)
     orientation = np.radians(-10.0)
-    delta_ra = [-1.0 * radius * np.cos(orientation), radius * np.cos(orientation)]
-    delta_dec = [-1.0 * radius * np.sin(orientation), radius * np.sin(orientation)]
+    linear = radius * np.array([-1.0, 0.9, 0.0, -0.9, 1.0])
+    delta_ra = linear * np.cos(orientation)
+    delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.7, per_night=False),
+        detailers.DitherDetailer(max_dither=0.4, per_night=False),
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
-        # Note: 2 centers * 2 deg per visit * 30 visits = 120 deg
+        # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=60.0,
-            min_rot=-60.0,
-            per_visit_rot=2.0,
+            # TODO: Fix for LSSTCam rotator angle conventions
+            max_rot=67.5,
+            min_rot=-67.5,
+            per_visit_rot=4.5,
+            telescope="comcam",
+            # max_rot=-90.,
+            # min_rot=-90.,
+            # per_visit_rot=0.,
         ),
     ]
     tier = 0
@@ -135,7 +146,7 @@ def get_scheduler():
         target_names,
         basis_functions=config_basis_functions,
         detailers=config_detailers,
-        **field_survey_kwargs,
+        **carina_field_survey_kwargs,
     )
 
     # Trifid-Lagoon
@@ -149,9 +160,14 @@ def get_scheduler():
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 2 centers * 2 deg per visit * 30 visits = 120 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=60.0,
-            min_rot=-60.0,
+            # TODO: Fix for LSSTCam rotator angle conventions
+            max_rot=67.5,
+            min_rot=-67.5,
             per_visit_rot=2.0,
+            telescope="comcam",
+            # max_rot=-90.,
+            # min_rot=-90.,
+            # per_visit_rot=0.,
         ),
     ]
     tier = 0
@@ -177,9 +193,14 @@ def get_scheduler():
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 2 centers * 2 deg per visit * 30 visits = 120 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=60.0,
-            min_rot=-60.0,
+            # TODO: Fix for LSSTCam rotator angle conventions
+            max_rot=67.5,
+            min_rot=-67.5,
             per_visit_rot=2.0,
+            telescope="comcam",
+            # max_rot=-90.,
+            # min_rot=-90.,
+            # per_visit_rot=0.,
         ),
     ]
     tier = 0
@@ -204,9 +225,14 @@ def get_scheduler():
         detailers.DitherDetailer(max_dither=0.2, per_night=False),
         # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=45.0,
-            min_rot=-45.0,
+            # TODO: Fix for LSSTCam rotator angle conventions
+            max_rot=67.5,
+            min_rot=-67.5,
             per_visit_rot=3.0,
+            telescope="comcam",
+            # max_rot=-90.,
+            # min_rot=-90.,
+            # per_visit_rot=0.,
         ),
     ]
     tier = 0
@@ -234,9 +260,14 @@ def get_scheduler():
         detailers.DitherDetailer(max_dither=0.2, per_night=False),
         # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=45.0,
-            min_rot=-45.0,
+            # TODO: Fix for LSSTCam rotator angle conventions
+            max_rot=67.5,
+            min_rot=-67.5,
             per_visit_rot=3.0,
+            telescope="comcam",
+            # max_rot=-90.,
+            # min_rot=-90.,
+            # per_visit_rot=0.,
         ),
     ]
     tier = 0
@@ -268,9 +299,14 @@ def get_scheduler():
         detailers.DitherDetailer(max_dither=1.4, per_night=False),
         # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=45.0,
-            min_rot=-45.0,
+            # TODO: Fix for LSSTCam rotator angle conventions
+            max_rot=67.5,
+            min_rot=-67.5,
             per_visit_rot=3.0,
+            telescope="comcam",
+            # max_rot=-90.,
+            # min_rot=-90.,
+            # per_visit_rot=0.,
         ),
     ]
     tier = 0
