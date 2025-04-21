@@ -256,6 +256,9 @@ rules:
     hysteresis: 0
     poll_interval: 1
     max_data_age: 30
+- classname: MTDomeAzEnabled
+  configs:
+  - {}
 - classname: MTM1M3ThermalFans
   configs:
   - {}
