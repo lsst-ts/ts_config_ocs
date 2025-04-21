@@ -3,6 +3,7 @@
     "program": "BLOCK-T454",
     "constraints": [],
     "scripts": [
+        {"name":"maintel/track_target.py","standard":true,"parameters":{"slew_icrs":{"dec":-33,"ra":"18 08 0"}},"rot_type":"PhysicalSky"},
         {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ACQ", "reason": "BLOCK-T454", "program": "BLOCK-T454", "note": "Shutter_timing_test"}, "exp_times": 2},
         {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ACQ", "reason": "BLOCK-T454", "program": "BLOCK-T454", "note": "Shutter_timing_test"}, "exp_times": 4},
         {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ACQ", "reason": "BLOCK-T454", "program": "BLOCK-T454", "note": "Shutter_timing_test"}, "exp_times": 6},
