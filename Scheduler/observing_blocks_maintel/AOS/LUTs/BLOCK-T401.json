@@ -5,13 +5,14 @@
   "constraints": [],
   "scripts": [
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 85
-        }
+        "az": "$azimuth",
+        "el": 85,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -33,13 +34,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 80
-        }
+        "az": "$azimuth",
+        "el": 80,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -61,13 +63,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 75
-        }
+        "az": "$azimuth",
+        "el": 75,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -89,13 +92,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 70
-        }
+        "az": "$azimuth",
+        "el": 70,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -117,13 +121,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 65
-        }
+        "az": "$azimuth",
+        "el": 65,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -145,13 +150,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 60
-        }
+        "az": "$azimuth",
+        "el": 60,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -173,13 +179,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 55
-        }
+        "az": "$azimuth",
+        "el": 55,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -201,13 +208,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 50
-        }
+        "az": "$azimuth",
+        "el": 50,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -229,13 +237,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 45
-        }
+        "az": "$azimuth",
+        "el": 45,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -257,13 +266,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 40
-        }
+        "az": "$azimuth",
+        "el": 40,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -285,13 +295,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 35
-        }
+        "az": "$azimuth",
+        "el": 35,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -313,13 +324,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 30
-        }
+        "az": "$azimuth",
+        "el": 30,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -341,13 +353,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 25
-        }
+        "az": "$azimuth",
+        "el": 25,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -369,13 +382,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 20
-        }
+        "az": "$azimuth",
+        "el": 20,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -397,13 +411,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 15
-        }
+        "az": "$azimuth",
+        "el": 15,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -425,13 +440,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 10
-        }
+        "az": "$azimuth",
+        "el": 10,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -453,13 +469,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 15
-        }
+        "az": "$azimuth",
+        "el": 15,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -481,13 +498,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 20
-        }
+        "az": "$azimuth",
+        "el": 20,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -509,13 +527,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 25
-        }
+        "az": "$azimuth",
+        "el": 25,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -537,13 +556,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 30
-        }
+        "az": "$azimuth",
+        "el": 30,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -565,13 +585,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 35
-        }
+        "az": "$azimuth",
+        "el": 35,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -593,13 +614,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 40
-        }
+        "az": "$azimuth",
+        "el": 40,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -621,13 +643,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 45
-        }
+        "az": "$azimuth",
+        "el": 45,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -649,13 +672,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 50
-        }
+        "az": "$azimuth",
+        "el": 50,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -677,13 +701,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 55
-        }
+        "az": "$azimuth",
+        "el": 55,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -705,13 +730,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 60
-        }
+        "az": "$azimuth",
+        "el": 60,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -733,13 +759,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 65
-        }
+        "az": "$azimuth",
+        "el": 65,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -761,13 +788,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 70
-        }
+        "az": "$azimuth",
+        "el": 70,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -789,13 +817,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 75
-        }
+        "az": "$azimuth",
+        "el": 75,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -817,13 +846,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 80
-        }
+        "az": "$azimuth",
+        "el": 80,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
@@ -845,13 +875,14 @@
       }
     },
     {
-      "name": "maintel/track_target.py",
+      "name": "maintel/move_p2p.py",
       "standard": true,
       "parameters": {
-        "track_azel": {
-          "az": "$azimuth",
-          "el": 85
-        }
+        "az": "$azimuth",
+        "el": 85,
+        "ignore": [
+          "mtdome"
+        ]
       }
     },
     {
