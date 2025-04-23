@@ -1,0 +1,41 @@
+{
+    "name": "SIT-Imaging",
+    "program": "BLOCK-T444",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "slew_icrs": {
+                    "ra": "$ra",
+                    "dec": "$dec"
+                },
+                "target_name": "$name",
+                "rot_value": "$rot",
+                "rot_type": "PhysicalSky",
+                "stop_when_done": false,
+                "ignore": [
+                    "mtdome"
+                ]
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "nimages": "$num_exp",
+                "exp_times": "$exp_times",
+                "image_type": "DARK",
+                "reason": "BLOCK-T444",
+                "program": "BLOCK-T444",
+                "visit_metadata": {
+                    "ra": "$ra",
+                    "dec": "$dec",
+                    "rot_sky": "$rot" 
+
+                }
+            }
+        }
+    ]
+}
