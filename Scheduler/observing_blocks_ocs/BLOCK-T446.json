@@ -1,0 +1,26 @@
+{
+    "name": "BLOCK-T446",
+    "program": "BLOCK-T446",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "nimages": 1,
+                "exp_times": 0,
+                "image_type": "BIAS",
+                "reason": "BLOCK-T446",
+                "program": "BLOCK-T446",
+                "note": "BIAS_every_30s"
+            }
+        },
+        {
+            "name": "sleep.py",
+            "standard": true,
+            "parameters": {
+                "sleep_for": 30
+            }
+        }
+    ]
+}
