@@ -1,0 +1,24 @@
+{
+    "name": "BLOCK-T465",
+    "program": "BLOCK-T465",
+    "constraints": [],
+    "scripts": [
+        {"name":"maintel/track_target.py","standard":true,"parameters":{"slew_icrs":{"ra":18.9176944,"dec":-30.4832973}},"rot_type":"PhysicalSky"},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 2},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 4},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 6},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 8},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 10},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 12},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 14},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 16},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 18},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 20},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 22},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 24},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 26},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 28},
+        {"name": "maintel/take_image_lsstcam.py", "standard": true, "parameters": {"nimages": 2, "image_type": "ENGTEST", "reason": "BLOCK-T465", "program": "BLOCK-T465", "note": "Shutter_timing_test"}, "exp_times": 30}
+        
+    ]
+}
