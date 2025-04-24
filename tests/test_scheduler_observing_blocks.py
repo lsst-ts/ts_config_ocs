@@ -41,7 +41,7 @@ block_regex = re.compile(
 
 
 def get_scripts_schema(
-    scripts: set[tuple[str, bool]]
+    scripts: set[tuple[str, bool]],
 ) -> dict[tuple[str, bool], DefaultingValidator | None]:
     standardscripts_scripts_dir = standardscripts.utils.get_scripts_dir()
     externalscripts_scripts_dir = externalscripts.utils.get_scripts_dir()
