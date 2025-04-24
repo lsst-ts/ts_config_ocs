@@ -101,6 +101,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             classname = rule["classname"]
             client_class = watcher.get_rule_class(classname)
             config_schema = client_class.get_schema()
-            validator = salobj.DefaultingValidator(config_schema)
-            for rule_config in rule["configs"]:
-                validator.validate(rule_config)
+            if config_schema is not None:
+                validator = salobj.DefaultingValidator(config_schema)
+                for rule_config in rule["configs"]:
+                    validator.validate(rule_config)

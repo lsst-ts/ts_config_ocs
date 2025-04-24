@@ -37,10 +37,12 @@ rules:
   - name: ESS:204
   - name: ESS:301
   - name: ESS:302
+  - name: ESS:303
+  - name: ESS:304
+  - name: ESS:305
   - name: Electrometer:101
   - name: Electrometer:102
   - name: Electrometer:201
-  - name: EPM:301
   - name: FiberSpectrograph:3
   - name: GCHeaderService:101
   - name: GCHeaderService:102
@@ -114,10 +116,12 @@ rules:
   - name: ESS:204
   - name: ESS:301
   - name: ESS:302
+  - name: ESS:303
+  - name: ESS:304
+  - name: ESS:305
   - name: Electrometer:101
   - name: Electrometer:102
   - name: Electrometer:201
-  - name: EPM:301
   - name: FiberSpectrograph:3
   - name: GCHeaderService:101
   - name: GCHeaderService:102
@@ -256,6 +260,9 @@ rules:
     hysteresis: 0
     poll_interval: 1
     max_data_age: 30
+- classname: MTDomeAzEnabled
+  configs:
+  - {}
 - classname: MTM1M3ThermalFans
   configs:
   - {}

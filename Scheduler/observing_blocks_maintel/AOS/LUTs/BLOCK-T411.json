@@ -65,5 +65,5 @@
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T411 configuration\ndescription: Configuration for BLOCK-T411.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"r_57\"\n  maxiter:\n    description: Maximum number of iterations for each of the exposure times.\n    type: integer\n    default: 5\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T411 configuration\ndescription: Configuration for BLOCK-T411.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"i_39\"\n  maxiter:\n    description: Maximum number of iterations for each of the exposure times.\n    type: integer\n    default: 5\n"
 }
