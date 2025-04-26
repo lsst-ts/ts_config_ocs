@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T330",
-  "id": "8740c464-a411-440f-97d3-8176cf7629b9",
+  "id": "2dcd02ec-d43e-4ef3-ab31-3f4071c6ee73",
   "program": "BLOCK-T330",
   "constraints": [],
   "scripts": [
@@ -11,20 +11,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7300
+          "focus": 3500
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -34,20 +34,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7305
+          "focus": 3510
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -57,20 +57,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7310
+          "focus": 3520
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -80,20 +80,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7315
+          "focus": 3530
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -103,20 +103,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7320
+          "focus": 3540
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -126,20 +126,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7325
+          "focus": 3550
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -149,20 +149,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7330
+          "focus": 3560
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -172,20 +172,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7335
+          "focus": 3570
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -195,20 +195,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7340
+          "focus": 3580
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -218,20 +218,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7345
+          "focus": 3590
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -241,20 +241,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7350
+          "focus": 3600
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -264,20 +264,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7355
+          "focus": 3610
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -287,20 +287,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7360
+          "focus": 3620
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -310,20 +310,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7365
+          "focus": 3630
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -333,20 +333,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7370
+          "focus": 3640
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -356,20 +356,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7375
+          "focus": 3650
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -379,20 +379,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7380
+          "focus": 3660
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -402,20 +402,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7385
+          "focus": 3670
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -425,20 +425,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7390
+          "focus": 3680
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -448,20 +448,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7395
+          "focus": 3690
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -471,20 +471,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7400
+          "focus": 3700
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -494,20 +494,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7405
+          "focus": 3710
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -517,20 +517,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7410
+          "focus": 3720
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -540,20 +540,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7415
+          "focus": 3730
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -563,20 +563,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7420
+          "focus": 3740
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -586,20 +586,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7425
+          "focus": 3750
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -609,20 +609,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7430
+          "focus": 3760
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -632,20 +632,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7435
+          "focus": 3770
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -655,20 +655,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7440
+          "focus": 3780
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -678,20 +678,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7445
+          "focus": 3790
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -701,20 +701,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7450
+          "focus": 3800
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -724,20 +724,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7455
+          "focus": 3810
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -747,20 +747,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7460
+          "focus": 3820
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -770,20 +770,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7465
+          "focus": 3830
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -793,20 +793,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7470
+          "focus": 3840
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -816,20 +816,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7475
+          "focus": 3850
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -839,20 +839,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7480
+          "focus": 3860
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -862,20 +862,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7485
+          "focus": 3870
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -885,20 +885,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7490
+          "focus": 3880
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -908,20 +908,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7495
+          "focus": 3890
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -931,20 +931,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7500
+          "focus": 3900
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -954,20 +954,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7505
+          "focus": 3910
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -977,20 +977,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7510
+          "focus": 3920
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1000,20 +1000,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7515
+          "focus": 3930
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1023,20 +1023,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7520
+          "focus": 3940
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1046,20 +1046,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7525
+          "focus": 3950
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1069,20 +1069,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7530
+          "focus": 3960
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1092,20 +1092,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7535
+          "focus": 3970
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1115,20 +1115,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7540
+          "focus": 3980
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1138,20 +1138,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7545
+          "focus": 3990
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1161,20 +1161,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7550
+          "focus": 4000
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1184,20 +1184,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7555
+          "focus": 4010
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1207,20 +1207,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7560
+          "focus": 4020
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1230,20 +1230,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7565
+          "focus": 4030
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1253,20 +1253,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7570
+          "focus": 4040
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1276,20 +1276,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7575
+          "focus": 4050
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1299,20 +1299,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7580
+          "focus": 4060
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1322,20 +1322,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7585
+          "focus": 4070
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1345,20 +1345,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7590
+          "focus": 4080
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1368,20 +1368,20 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7595
+          "focus": 4090
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     },
     {
@@ -1391,22 +1391,942 @@
         "component": "CBP",
         "cmd": "setFocus",
         "parameters": {
-          "focus": 7600
+          "focus": 4100
         }
       }
     },
     {
-      "name": "maintel/take_image_comcam.py",
+      "name": "maintel/take_image_lsstcam.py",
       "standard": true,
       "parameters": {
-        "filter": "$run_filter",
-        "image_type": "ACQ",
+        "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep"
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4110
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4120
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4130
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4140
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4150
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4160
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4170
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4180
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4190
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4200
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4210
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4220
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4230
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4240
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4250
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4260
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4270
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4280
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4290
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4300
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4310
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4320
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4330
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4340
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4350
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4360
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4370
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4380
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4390
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4400
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4410
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4420
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4430
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4440
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4450
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4460
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4470
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4480
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4490
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "setFocus",
+        "parameters": {
+          "focus": 4500
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_focus_sweep",
+        "note": "CBP_focus_sweep",
+        "slew_time": 13
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T330 configuration\ndescription: Configuration for BLOCK-T330.\ntype: object\nproperties:\n  run_filter:\n    description: ComCam filter to use.\n    type: string\n    default: \"g_01\"\n  run_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 0.2\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T330 configuration\ndescription: Configuration for BLOCK-T330.\ntype: object\nproperties:\n  run_filter:\n    description: LSSTCam filter to use.\n    type: string\n    default: \"g_6\"\n  run_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 1\n"
 }
