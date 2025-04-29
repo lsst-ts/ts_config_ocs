@@ -436,6 +436,18 @@ rules:
   configs:
   - name: MTHexapod:1
   - name: MTHexapod:2
+- classname: PowerGeneratorRunning
+  configs:
+  - name: ESS:305
+    severity: WARNING
+  - name: ESS:306
+    severity: WARNING
+- classname: PowerGeneratorFail
+  configs:
+  - name_primary: ESS:306
+    name_secondary: ESS:305
+    severity_individual_fail: SERIOUS
+    severity_both_fail: CRITICAL
 escalation:
   - alarms:
     - ATCameraDewar
