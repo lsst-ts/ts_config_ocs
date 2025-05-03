@@ -1,0 +1,1907 @@
+{
+  "name": "BLOCK-T339_red_leak",
+  "id": "fa8091e2-2a95-450e-9ce2-f4e254f58015",
+  "program": "BLOCK-T339_red_leak",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1000
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 5,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1000"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 5,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1010
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 5,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1010"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 5,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1020
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 5,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1020"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 5,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1030
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 5,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1030"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 5,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1040
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 5,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1040"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 5,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1050
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1050"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1060
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1060"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1070
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1070"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1080
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1080"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1090
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1090"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1100
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1100"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1110
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1110"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1120
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1120"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1130
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1130"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1140
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1140"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1150
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1150"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1160
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1160"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1170
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1170"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1180
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1180"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1190
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1190"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 10,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1200
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1200"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1210
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1210"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1220
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1220"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1230
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1230"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1240
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1240"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 1250
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "startPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "1250"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "stopPropagateLaser"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "nimages": 1,
+        "program": "$program",
+        "exp_times": 15,
+        "reason": "CBP_filter_scan_red_leak",
+        "note": "laser_off"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:102",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$run_electrometer_scan_duration"
+        }
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T339_red_leak configuration\ndescription: Configuration for BLOCK-T339_red_leak.\ntype: object\nproperties:\n  run_electrometer_scan_duration:\n    description: Electrometer scan duration to use.\n    type: number\n    default: 1\n"
+}
