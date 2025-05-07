@@ -1,0 +1,30 @@
+{
+  "name": "BLOCK-T481",
+  "program": "BLOCK-T481",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/offset_mtcs.py",
+      "standard": true,
+      "parameters": {
+        "offset_xy": {
+          "x": 2.23,
+          "y": 2.23
+        },
+        "relative": true
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "nimages": 1,
+        "exp_times": 1,
+        "image_type": "ACQ",
+        "reason": "BLOCK-T481",
+        "program": "BLOCK-T481"
+      }
+    }
+  ],
+  "configuration_schema": ""
+}
