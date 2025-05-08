@@ -1,0 +1,34 @@
+{
+    "name": "PtgModel",
+    "id": "9c706aec-6a74-4cb0-975f-fd330e5f04e9",
+    "program": "BLOCK-387",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/track_target.py",
+            "standard": true,
+            "parameters": {
+                "target_name": "$name",
+                "slew_icrs": {
+                    "ra": "$ra",
+                    "dec": "$dec"
+                },
+                "rot_value": "$rot",
+                "rot_type": "Sky",
+                "az_wrap_strategy": "NOUNWRAP"
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "image_type": "ENGTEST",
+                "nimages": 1,
+                "exp_times": 15,
+                "reason": "PtgModel",
+                "program": "$program"
+            }
+        }
+    ],
+    "configuration_schema": ""
+}
