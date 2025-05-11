@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T395_4",
-  "id": "ed30f1c6-45b6-4226-9c09-2fbc21080a8e",
+  "id": "8d9638a3-0e98-40e1-8a4a-23cfb032c222",
   "program": "BLOCK-T395_4",
   "constraints": [],
   "scripts": [
@@ -137,6 +137,31 @@
           "az": "$azimuth",
           "el": "$elevation"
         },
+        "rot_value": 70,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
         "rot_value": 65,
         "rot_type": "PhysicalSky"
       }
@@ -163,6 +188,31 @@
           "el": "$elevation"
         },
         "rot_value": 55,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 78,
         "rot_type": "PhysicalSky"
       }
     },
