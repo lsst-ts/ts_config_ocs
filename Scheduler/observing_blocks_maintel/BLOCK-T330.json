@@ -1,7 +1,7 @@
 {
-  "name": "BLOCK-T330",
-  "id": "2dcd02ec-d43e-4ef3-ab31-3f4071c6ee73",
-  "program": "BLOCK-T330",
+  "name": "BLOCK-T443",
+  "id": "06a7f0be-c9a8-47fe-af76-97be3e3445e5",
+  "program": "BLOCK-T443",
   "constraints": [],
   "scripts": [
     {
@@ -9,9 +9,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3500
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -22,9 +23,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -32,9 +33,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3510
+          "azimuth": 0.01,
+          "elevation": -45.5
         }
       }
     },
@@ -45,9 +47,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -55,9 +57,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3520
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -68,9 +71,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -78,9 +81,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3530
+          "azimuth": -0.01,
+          "elevation": -45.5
         }
       }
     },
@@ -91,9 +95,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -101,9 +105,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3540
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -114,9 +119,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -124,9 +129,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3550
+          "azimuth": 0,
+          "elevation": -45.49
         }
       }
     },
@@ -137,9 +143,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -147,9 +153,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3560
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -160,9 +167,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -170,9 +177,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3570
+          "azimuth": 0,
+          "elevation": -45.51
         }
       }
     },
@@ -183,9 +191,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -193,9 +201,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3580
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -206,9 +215,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -216,9 +225,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3590
+          "azimuth": 0.01,
+          "elevation": -45.49
         }
       }
     },
@@ -229,9 +239,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -239,9 +249,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3600
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -252,9 +263,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -262,9 +273,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3610
+          "azimuth": -0.01,
+          "elevation": -45.51
         }
       }
     },
@@ -275,9 +287,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -285,9 +297,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3620
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -298,9 +311,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -308,9 +321,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3630
+          "azimuth": 0.1,
+          "elevation": -45.5
         }
       }
     },
@@ -321,9 +335,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -331,9 +345,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3640
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -344,9 +359,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -354,9 +369,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3650
+          "azimuth": -0.1,
+          "elevation": -45.5
         }
       }
     },
@@ -367,9 +383,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -377,9 +393,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3660
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -390,9 +407,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -400,9 +417,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3670
+          "azimuth": 0,
+          "elevation": -45.4
         }
       }
     },
@@ -413,9 +431,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -423,9 +441,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3680
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -436,9 +455,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -446,9 +465,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3690
+          "azimuth": 0,
+          "elevation": -45.6
         }
       }
     },
@@ -459,9 +479,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -469,9 +489,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3700
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -482,9 +503,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -492,9 +513,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3710
+          "azimuth": 0.1,
+          "elevation": -45.4
         }
       }
     },
@@ -505,9 +527,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -515,9 +537,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3720
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -528,9 +551,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -538,9 +561,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3730
+          "azimuth": -0.1,
+          "elevation": -45.6
         }
       }
     },
@@ -551,9 +575,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -561,9 +585,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3740
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -574,9 +599,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -584,9 +609,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3750
+          "azimuth": 0.25,
+          "elevation": -45.5
         }
       }
     },
@@ -597,9 +623,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -607,9 +633,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3760
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -620,9 +647,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -630,9 +657,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3770
+          "azimuth": -0.25,
+          "elevation": -45.5
         }
       }
     },
@@ -643,9 +671,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -653,9 +681,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3780
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -666,9 +695,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -676,9 +705,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3790
+          "azimuth": 0,
+          "elevation": -45.25
         }
       }
     },
@@ -689,9 +719,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -699,9 +729,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3800
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -712,9 +743,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -722,9 +753,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3810
+          "azimuth": 0,
+          "elevation": -45.75
         }
       }
     },
@@ -735,9 +767,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -745,9 +777,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3820
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -758,9 +791,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -768,9 +801,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3830
+          "azimuth": 0.25,
+          "elevation": -45.25
         }
       }
     },
@@ -781,9 +815,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -791,9 +825,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3840
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -804,9 +839,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -814,9 +849,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3850
+          "azimuth": -0.25,
+          "elevation": -45.75
         }
       }
     },
@@ -827,9 +863,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -837,9 +873,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3860
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -850,9 +887,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -860,9 +897,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3870
+          "azimuth": 0.5,
+          "elevation": -45.5
         }
       }
     },
@@ -873,9 +911,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -883,9 +921,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3880
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -896,9 +935,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -906,9 +945,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3890
+          "azimuth": -0.5,
+          "elevation": -45.5
         }
       }
     },
@@ -919,9 +959,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -929,9 +969,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3900
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -942,9 +983,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -952,9 +993,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3910
+          "azimuth": 0,
+          "elevation": -45.0
         }
       }
     },
@@ -965,9 +1007,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -975,9 +1017,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3920
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -988,9 +1031,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -998,9 +1041,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3930
+          "azimuth": 0,
+          "elevation": -46.0
         }
       }
     },
@@ -1011,9 +1055,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1021,9 +1065,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3940
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1034,9 +1079,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1044,9 +1089,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3950
+          "azimuth": 0.5,
+          "elevation": -45.0
         }
       }
     },
@@ -1057,9 +1103,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1067,9 +1113,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3960
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1080,9 +1127,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1090,9 +1137,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3970
+          "azimuth": -0.5,
+          "elevation": -46.0
         }
       }
     },
@@ -1103,9 +1151,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1113,9 +1161,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3980
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1126,9 +1175,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1136,9 +1185,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 3990
+          "azimuth": 1,
+          "elevation": -45.5
         }
       }
     },
@@ -1149,9 +1199,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1159,9 +1209,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4000
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1172,9 +1223,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1182,9 +1233,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4010
+          "azimuth": -1,
+          "elevation": -45.5
         }
       }
     },
@@ -1195,9 +1247,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1205,9 +1257,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4020
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1218,9 +1271,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1228,9 +1281,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4030
+          "azimuth": 0,
+          "elevation": -44.5
         }
       }
     },
@@ -1241,9 +1295,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1251,9 +1305,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4040
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1264,9 +1319,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1274,9 +1329,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4050
+          "azimuth": 0,
+          "elevation": -46.5
         }
       }
     },
@@ -1287,9 +1343,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1297,9 +1353,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4060
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1310,9 +1367,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1320,9 +1377,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4070
+          "azimuth": 1,
+          "elevation": -44.5
         }
       }
     },
@@ -1333,9 +1391,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1343,9 +1401,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4080
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1356,9 +1415,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1366,9 +1425,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4090
+          "azimuth": -1,
+          "elevation": -46.5
         }
       }
     },
@@ -1379,9 +1439,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1389,9 +1449,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4100
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1402,9 +1463,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1412,9 +1473,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4110
+          "azimuth": 5,
+          "elevation": -45.5
         }
       }
     },
@@ -1425,9 +1487,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1435,9 +1497,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4120
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1448,9 +1511,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1458,9 +1521,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4130
+          "azimuth": -5,
+          "elevation": -45.5
         }
       }
     },
@@ -1471,9 +1535,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1481,9 +1545,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4140
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1494,9 +1559,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1504,9 +1569,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4150
+          "azimuth": 0,
+          "elevation": -40.5
         }
       }
     },
@@ -1517,9 +1583,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1527,9 +1593,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4160
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1540,9 +1607,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1550,9 +1617,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4170
+          "azimuth": 0,
+          "elevation": -50.5
         }
       }
     },
@@ -1563,9 +1631,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1573,9 +1641,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4180
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1586,9 +1655,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1596,9 +1665,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4190
+          "azimuth": 5,
+          "elevation": -40.5
         }
       }
     },
@@ -1609,9 +1679,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1619,9 +1689,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4200
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1632,9 +1703,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1642,9 +1713,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4210
+          "azimuth": -5,
+          "elevation": -50.5
         }
       }
     },
@@ -1655,9 +1727,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1665,9 +1737,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4220
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1678,9 +1751,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1688,9 +1761,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4230
+          "azimuth": 10,
+          "elevation": -45.5
         }
       }
     },
@@ -1701,9 +1775,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1711,9 +1785,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4240
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1724,9 +1799,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1734,9 +1809,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4250
+          "azimuth": -10,
+          "elevation": -45.5
         }
       }
     },
@@ -1747,9 +1823,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1757,9 +1833,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4260
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1770,9 +1847,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1780,9 +1857,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4270
+          "azimuth": 0,
+          "elevation": -35.5
         }
       }
     },
@@ -1793,9 +1871,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1803,9 +1881,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4280
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1816,9 +1895,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1826,9 +1905,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4290
+          "azimuth": 0,
+          "elevation": -55.5
         }
       }
     },
@@ -1839,9 +1919,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1849,9 +1929,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4300
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1862,9 +1943,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1872,9 +1953,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4310
+          "azimuth": 10,
+          "elevation": -35.5
         }
       }
     },
@@ -1885,9 +1967,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1895,9 +1977,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4320
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1908,9 +1991,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1918,9 +2001,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4330
+          "azimuth": -10,
+          "elevation": -55.5
         }
       }
     },
@@ -1931,9 +2015,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1941,9 +2025,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4340
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -1954,9 +2039,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1964,9 +2049,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4350
+          "azimuth": 20,
+          "elevation": -45.5
         }
       }
     },
@@ -1977,9 +2063,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -1987,9 +2073,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4360
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -2000,9 +2087,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -2010,9 +2097,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4370
+          "azimuth": -20,
+          "elevation": -45.5
         }
       }
     },
@@ -2023,9 +2111,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -2033,9 +2121,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4380
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -2046,9 +2135,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -2056,9 +2145,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4390
+          "azimuth": 0,
+          "elevation": -25.5
         }
       }
     },
@@ -2069,9 +2159,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -2079,9 +2169,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4400
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -2092,9 +2183,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -2102,9 +2193,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4410
+          "azimuth": 0,
+          "elevation": -65.5
         }
       }
     },
@@ -2115,9 +2207,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -2125,9 +2217,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4420
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -2138,9 +2231,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -2148,9 +2241,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4430
+          "azimuth": 20,
+          "elevation": -25.5
         }
       }
     },
@@ -2161,9 +2255,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -2171,9 +2265,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4440
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -2184,9 +2279,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -2194,9 +2289,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4450
+          "azimuth": -20,
+          "elevation": -65.5
         }
       }
     },
@@ -2207,9 +2303,9 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     },
     {
@@ -2217,9 +2313,10 @@
       "standard": true,
       "parameters": {
         "component": "CBP",
-        "cmd": "setFocus",
+        "cmd": "move",
         "parameters": {
-          "focus": 4460
+          "azimuth": 0,
+          "elevation": -45.5
         }
       }
     },
@@ -2230,103 +2327,11 @@
         "image_type": "FLAT",
         "exp_times": "$run_exp_time",
         "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "setFocus",
-        "parameters": {
-          "focus": 4470
-        }
-      }
-    },
-    {
-      "name": "maintel/take_image_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "image_type": "FLAT",
-        "exp_times": "$run_exp_time",
-        "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "setFocus",
-        "parameters": {
-          "focus": 4480
-        }
-      }
-    },
-    {
-      "name": "maintel/take_image_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "image_type": "FLAT",
-        "exp_times": "$run_exp_time",
-        "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "setFocus",
-        "parameters": {
-          "focus": 4490
-        }
-      }
-    },
-    {
-      "name": "maintel/take_image_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "image_type": "FLAT",
-        "exp_times": "$run_exp_time",
-        "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "setFocus",
-        "parameters": {
-          "focus": 4500
-        }
-      }
-    },
-    {
-      "name": "maintel/take_image_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "image_type": "FLAT",
-        "exp_times": "$run_exp_time",
-        "program": "$program",
-        "reason": "CBP_focus_sweep",
-        "note": "CBP_focus_sweep",
-        "slew_time": 13
+        "reason": "CBP_motion_test",
+        "note": "CBP_motion_test",
+        "slew_time": 10
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T330 configuration\ndescription: Configuration for BLOCK-T330.\ntype: object\nproperties:\n  run_filter:\n    description: LSSTCam filter to use.\n    type: string\n    default: \"g_6\"\n  run_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 1\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T443 configuration\ndescription: Configuration for BLOCK-T443.\ntype: object\nproperties:\n  run_filter:\n    description: LSSTCam filter to use.\n    type: string\n    default: \"g_6\"\n  run_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 1\n"
 }
