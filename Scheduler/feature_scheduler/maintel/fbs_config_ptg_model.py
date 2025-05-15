@@ -38,14 +38,24 @@ def get_scheduler():
 
     nside = 32
 
-    make_scheduler = MakeFieldSurveyScheduler(nside=nside, ntiers=1)
+    # Mapping from band to filter from
+    # obs_lsst/python/lsst/obs/lsst/filters.py
+    band_to_filter = {
+        "u": "u_24",
+        "g": "g_6",
+        "r": "r_57",
+        "i": "i_39",
+        "z": "z_20",
+        "y": "y_10",
+    }
 
-    nvisits = {"u_02": 0, "g_01": 0, "r_03": 1, "i_06": 0, "z_03": 0, "y": 0}
-    sequence = ["r_03"]
+    nvisits = {"u": 0, "g": 0, "r": 1, "i": 0, "z_03": 0, "y": 0}
+    sequence = ["r"]
+
     # exposure time in seconds
-    exptimes = {"u_02": 38, "g_01": 30, "r_03": 15, "i_06": 30, "z_03": 30, "y": 30}
+    exptimes = {"u": 38, "g": 30, "r": 15, "i": 30, "z": 30, "y": 30}
     # 1 --> single 30 second exposuree
-    nexps = {"u_02": 1, "g_01": 1, "r_03": 1, "i_06": 1, "z_03": 1, "y": 1}
+    nexps = {"u": 1, "g": 1, "r": 1, "i": 1, "z": 1, "y": 1}
 
     min_alt = 40.0
 
@@ -63,16 +73,31 @@ def get_scheduler():
             max_alt=83.0,
             shadow_minutes=2.0,
         ),
+        basis_functions.SlewtimeBasisFunction(bandname=None, nside=nside),
+        basis_functions.MoonAvoidanceBasisFunction(nside=nside),
     ]
 
-    config_detailers = [detailers.AltAz2RaDecDetailer()]
+    config_detailers = [
+        detailers.AltAz2RaDecDetailer(),
+        detailers.CameraRotDetailer(
+            max_rot=70,
+            min_rot=-70,
+            dither="all",
+        ),
+    ]
 
     observation_reason = "ptg_model"
-    science_program = "BLOCK-328"  # json BLOCK to be used
+    science_program = "BLOCK-387"  # json BLOCK to be used
     survey_name = science_program  # match nextVisit metadata
 
     tier = 0
 
+    make_scheduler = MakeFieldSurveyScheduler(
+        targets=dict(),
+        nside=nside,
+        ntiers=1,
+        band_to_filter=band_to_filter,
+    )
     make_scheduler.add_field_altaz_surveys(
         tier,
         observation_reason,

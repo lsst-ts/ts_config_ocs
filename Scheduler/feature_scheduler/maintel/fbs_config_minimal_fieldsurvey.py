@@ -76,6 +76,7 @@ def get_scheduler():
             min_alt=30.0,
             max_alt=83.0,
             shadow_minutes=10.0,
+            pad=0.0,
         ),
         basis_functions.AltAzShadowTimeLimitedBasisFunction(
             nside=nside,
@@ -84,6 +85,7 @@ def get_scheduler():
             min_az=180.0,
             max_az=270.0,
             shadow_minutes=10.0,
+            pad=0.0,
             time_to_sun=3.0,
             sun_keys=["sunrise"],
         ),
@@ -94,7 +96,7 @@ def get_scheduler():
     science_program = "BLOCK-365"  # json BLOCK to be used
 
     nvisits = {"u": 30, "g": 30, "r": 30, "i": 30, "z": 30, "y": 30}
-    sequence = ["u", "g", "r", "i"]
+    sequence = ["u"]
     # exposure time in seconds
     exptimes = {"u": 38.0, "g": 30.0, "r": 30.0, "i": 30.0, "z": 30.0, "y": 30.0}
     # 1 --> single 30 second exposure
@@ -109,7 +111,7 @@ def get_scheduler():
     # LARGE FILL FACTOR TARGETS
 
     large_fill_factor_field_survey_kwargs = {
-        "nvisits": {"u": 4, "g": 4, "r": 4, "i": 4, "z": 4, "y": 4},
+        "nvisits": {"u": 6, "g": 6, "r": 6, "i": 6, "z": 6, "y": 6},
         "sequence": sequence,
         "exptimes": exptimes,
         "nexps": nexps,
@@ -117,19 +119,22 @@ def get_scheduler():
 
     # Carina
     # Custom landscape dither
-    radius = np.sqrt(2.0)
+    radius = np.sqrt(2.4)
     orientation = np.radians(-10.0)
     linear = radius * np.array([-1.0, 0.9, 0.0, -0.9, 1.0])
     delta_ra = linear * np.cos(orientation)
     delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.4, per_night=False),
+        detailers.DitherDetailer(max_dither=0.7, per_night=False),
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=67.5,
-            min_rot=-67.5,
-            per_visit_rot=4.5,
+            # max_rot=67.5,
+            # min_rot=-67.5,
+            # per_visit_rot=4.5,
+            max_rot=15.0,
+            min_rot=-15.0,
+            per_visit_rot=1.0,
         ),
     ]
     tier = 0
@@ -146,19 +151,22 @@ def get_scheduler():
 
     # M49
     # Custom landscape dither
-    radius = np.sqrt(2.0)
+    radius = np.sqrt(2.4)
     orientation = np.radians(50.0)
     linear = radius * np.array([-1.0, 0.9, 0.0, -0.9, 1.0])
     delta_ra = linear * np.cos(orientation)
     delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.4, per_night=False),
+        detailers.DitherDetailer(max_dither=0.7, per_night=False),
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=67.5,
-            min_rot=-67.5,
-            per_visit_rot=4.5,
+            # max_rot=67.5,
+            # min_rot=-67.5,
+            # per_visit_rot=4.5,
+            max_rot=15.0,
+            min_rot=-15.0,
+            per_visit_rot=1.0,
         ),
     ]
     tier = 0
@@ -185,9 +193,12 @@ def get_scheduler():
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=67.5,
-            min_rot=-67.5,
-            per_visit_rot=4.5,
+            # max_rot=67.5,
+            # min_rot=-67.5,
+            # per_visit_rot=4.5,
+            max_rot=15.0,
+            min_rot=-15.0,
+            per_visit_rot=1.0,
         ),
     ]
     tier = 0
@@ -214,9 +225,12 @@ def get_scheduler():
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=67.5,
-            min_rot=-67.5,
-            per_visit_rot=4.5,
+            # max_rot=67.5,
+            # min_rot=-67.5,
+            # per_visit_rot=4.5,
+            max_rot=15.0,
+            min_rot=-15.0,
+            per_visit_rot=1.0,
         ),
     ]
     tier = 0
@@ -231,25 +245,93 @@ def get_scheduler():
         **large_fill_factor_field_survey_kwargs,
     )
 
-    # LOW ECLIPTIC LATITUDE TARGETS
-
-    field_survey_kwargs["sequence"] = ["g", "r", "i"]
-
-    # Low ecliptic latitude, near opposition April / May
-    # Detector scale dithers
+    # Eagle-Omega
+    # Custom landscape dither
+    radius = np.sqrt(2.4)
+    orientation = np.radians(-80.0)
+    linear = radius * np.array([-1.0, 0.9, 0.0, -0.9, 1.0])
+    delta_ra = linear * np.cos(orientation)
+    delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.2, per_night=False),
-        # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
+        detailers.DitherDetailer(max_dither=0.7, per_night=False),
+        detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
+        # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=67.5,
-            min_rot=-67.5,
-            per_visit_rot=3.0,
+            # max_rot=67.5,
+            # min_rot=-67.5,
+            # per_visit_rot=4.5,
+            max_rot=15.0,
+            min_rot=-15.0,
+            per_visit_rot=1.0,
         ),
     ]
     tier = 0
+    target_names = ["Eagle-Omega"]
+    make_scheduler.add_field_surveys(
+        tier,
+        observation_reason,
+        science_program,
+        target_names,
+        basis_functions=config_basis_functions,
+        detailers=config_detailers,
+        **large_fill_factor_field_survey_kwargs,
+    )
+
+    # LOW ECLIPTIC LATITUDE TARGETS
+
+    low_ecliptic_latitude_field_survey_kwargs = {
+        "nvisits": {"u": 6, "g": 6, "r": 6, "i": 6, "z": 6, "y": 6},
+        # "nvisits": {"u": 4, "g": 4, "r": 4, "i": 4, "z": 4, "y": 4},
+        "sequence": ["r"],
+        "exptimes": exptimes,
+        "nexps": nexps,
+    }
+
+    # Low ecliptic latitude, near opposition April / May
+    # Extended pointing pattern
+    radius = 3.0
+    # orientation = np.radians([0, 10.0, -50.0])  # Aligned with ecliptic
+    # linear = radius * np.array([0, 1.0, 1.0])
+    orientation = np.radians([0, 190.0, 130.0])  # Aligned with ecliptic
+    linear = radius * np.array([0, 1.0, 1.0])
+    delta_ra = linear * np.cos(orientation)
+    delta_dec = linear * np.sin(orientation)
+    config_detailers = [
+        detailers.DitherDetailer(max_dither=0.7, per_night=False),
+        detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
+        # Note: 3 centers * 1 deg per visit * 4 visits = 90 deg
+        detailers.CameraSmallRotPerObservationListDetailer(
+            # max_rot=67.5,
+            # min_rot=-67.5,
+            # per_visit_rot=4.5,
+            max_rot=10.0,
+            min_rot=-10.0,
+            per_visit_rot=1.0,
+        ),
+    ]
+
+    # field_survey_kwargs["sequence"] = ["g", "r", "i"]
+
+    # # Low ecliptic latitude, near opposition April / May
+    # # Detector scale dithers
+    # config_detailers = [
+    #     detailers.DitherDetailer(max_dither=0.4, per_night=False),
+    #     # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
+    #     detailers.CameraSmallRotPerObservationListDetailer(
+    #         # max_rot=67.5,
+    #         # min_rot=-67.5,
+    #         # per_visit_rot=3.0,
+    #         max_rot=15.0,
+    #         min_rot=-15.0,
+    #         per_visit_rot=1.0,
+    #     ),
+    # ]
+
+    tier = 0
     target_names = [
-        "Rubin_SV_216_-17",
-        "Rubin_SV_225_-19",
+        # "Rubin_SV_216_-17",
+        # "Rubin_SV_225_-19",
+        "Rubin_SV_212_-7",
     ]
     make_scheduler.add_field_surveys(
         tier,
@@ -258,7 +340,10 @@ def get_scheduler():
         target_names,
         basis_functions=config_basis_functions,
         detailers=config_detailers,
-        **field_survey_kwargs,
+        # Detector scale dithers
+        # **field_survey_kwargs,
+        # Extended pattern
+        **low_ecliptic_latitude_field_survey_kwargs,
     )
 
     # LSST DEEP DRILLING FIELDS
@@ -271,9 +356,12 @@ def get_scheduler():
         detailers.DitherDetailer(max_dither=0.2, per_night=False),
         # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=67.5,
-            min_rot=-67.5,
-            per_visit_rot=3.0,
+            # max_rot=67.5,
+            # min_rot=-67.5,
+            # per_visit_rot=3.0,
+            max_rot=15.0,
+            min_rot=-15.0,
+            per_visit_rot=1.0,
         ),
     ]
     tier = 0
@@ -305,9 +393,12 @@ def get_scheduler():
         detailers.DitherDetailer(max_dither=1.4, per_night=False),
         # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            max_rot=67.5,
-            min_rot=-67.5,
-            per_visit_rot=3.0,
+            # max_rot=67.5,
+            # min_rot=-67.5,
+            # per_visit_rot=3.0,
+            max_rot=15.0,
+            min_rot=-15.0,
+            per_visit_rot=1.0,
         ),
     ]
     tier = 0
@@ -316,6 +407,8 @@ def get_scheduler():
         "M49",
         "Trifid-Lagoon",
         "Prawn",
+        "Eagle-Omega",
+        "Rubin_SV_212_-7",
         "Rubin_SV_216_-17",
         "Rubin_SV_225_-19",
         "COSMOS",
@@ -324,7 +417,6 @@ def get_scheduler():
         "ECDFS",
     ]
     target_names = get_sv_targets(target_file, exclude=exclude)
-
     make_scheduler.add_field_surveys(
         tier,
         observation_reason,

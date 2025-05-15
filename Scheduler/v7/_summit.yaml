@@ -35,6 +35,14 @@ maintel:
   startup_type: COLD
   predicted_scheduler_window: 0.5
   startup_database: ' '
+  instrument_name: MTCamera
+  filter_band_mapping:
+    NONE: ""
+    u_24: u
+    g_6 : g
+    r_57: r
+    i_39: i
+    ph_5: ""
   models:
     observatory_model:
       camera:
@@ -102,6 +110,14 @@ ocs:
   startup_type: COLD
   predicted_scheduler_window: 0.5
   startup_database: ' '
+  instrument_name: MTCamera
+  filter_band_mapping:
+    NONE: ""
+    u_24: u
+    g_6 : g
+    r_57: r
+    i_39: i
+    ph_5: ""
   models:
     observatory_model:
       camera:
