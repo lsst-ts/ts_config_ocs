@@ -215,6 +215,50 @@ instances:
             serial_port: /dev/serial1
             sensor_type: HX85BA
             location: M1M3; RPi with sticker 4
+  - sal_index: 114
+    data_clients:
+      - client_class: GecThermalscannerDataClient
+        config:
+          host: m1m3-ts-01.cp.lsst.org
+          port: 4447
+          connect_timeout: 5
+          read_timeout: 1800  # Long timeout because recovering M1M3 takes 30 minutes.
+          max_read_timeouts: 5
+          location: M1M3
+          sensor_name: m1m3-ts-01
+  - sal_index: 115
+    data_clients:
+      - client_class: GecThermalscannerDataClient
+        config:
+          host: m1m3-ts-02.cp.lsst.org
+          port: 4447
+          connect_timeout: 5
+          read_timeout: 1800  # Long timeout because recovering M1M3 takes 30 minutes.
+          max_read_timeouts: 5
+          location: M1M3
+          sensor_name: m1m3-ts-02
+  - sal_index: 116
+    data_clients:
+      - client_class: GecThermalscannerDataClient
+        config:
+          host: m1m3-ts-03.cp.lsst.org
+          port: 4447
+          connect_timeout: 5
+          read_timeout: 1800  # Long timeout because recovering M1M3 takes 30 minutes.
+          max_read_timeouts: 5
+          location: M1M3
+          sensor_name: m1m3-ts-03
+  - sal_index: 117
+    data_clients:
+      - client_class: GecThermalscannerDataClient
+        config:
+          host: m1m3-ts-04.cp.lsst.org
+          port: 4447
+          connect_timeout: 5
+          read_timeout: 1800  # Long timeout because recovering M1M3 takes 30 minutes.
+          max_read_timeouts: 5
+          location: M1M3
+          sensor_name: m1m3-ts-04
 
   - sal_index: 201
     data_clients:
