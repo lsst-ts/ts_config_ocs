@@ -7,9 +7,9 @@
       "name": "maintel/offset_mtcs.py",
       "standard": true,
       "parameters": {
-        "offset_xy": {
-          "x": 2.23,
-          "y": 2.23
+        "offset_azel": {
+          "az": 3.6,
+          "el": 3.6
         },
         "relative": true
       }
@@ -19,7 +19,7 @@
       "standard": true,
       "parameters": {
         "nimages": 1,
-        "exp_times": 1,
+        "exp_times": 5,
         "image_type": "ACQ",
         "reason": "BLOCK-T481",
         "program": "BLOCK-T481"
