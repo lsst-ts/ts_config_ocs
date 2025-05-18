@@ -1,0 +1,358 @@
+{
+    "name": "BLOCK-T510_5",
+    "program": "BLOCK-T510_5",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/change_filter_lsstcam.py",
+            "standard": true,
+            "parameters":{
+                "filter": "y_10"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -80.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -72.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -64.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -56.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -48.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -40.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -32.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -24.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -16.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -8.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 8.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 16.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 24.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 32.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 40.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 48.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 56.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 64.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 72.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 80.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_y_10_single",
+                "reason": "flat",
+                "program": "BLOCK-T510"
+            }
+        },
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": -80.0
+            }
+        }
+    ]
+}
+    
