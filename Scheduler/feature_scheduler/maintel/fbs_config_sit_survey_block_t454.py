@@ -50,7 +50,7 @@ def get_scheduler():
     }
 
     nvisits = {"u": 0, "g": 0, "r": 1, "i": 0, "z_03": 0, "y": 0}
-    sequence = ["r"]
+    sequence = ["u", "g", "r", "i", "z", "y"]
 
     # exposure time in seconds
     exptimes = {"u": 38, "g": 30, "r": 15, "i": 30, "z": 30, "y": 30}
@@ -78,26 +78,27 @@ def get_scheduler():
         ntiers=1,
         band_to_filter=band_to_filter,
     )
-    make_scheduler.surveys[0].append(
-        surveys.FieldAltAzSurvey(
-            basis_functions=config_basis_functions,
-            alt=45,
-            az=0,
-            sequence=sequence,
-            nvisits=nvisits,
-            exptimes=exptimes,
-            nexps=nexps,
-            ignore_obs=None,
-            survey_name=survey_name,
-            target_name=target_name,
-            science_program=science_program,
-            observation_reason=observation_reason,
-            scheduler_note=target_name,
-            nside=nside,
-            flush_pad=30.0,
-            detailers=config_detailers,
+    for sequence_band_name in sequence:
+        make_scheduler.surveys[0].append(
+            surveys.FieldAltAzSurvey(
+                basis_functions=config_basis_functions,
+                alt=45,
+                az=0,
+                sequence=[sequence_band_name],
+                nvisits=nvisits,
+                exptimes=exptimes,
+                nexps=nexps,
+                ignore_obs=None,
+                survey_name=survey_name,
+                target_name=target_name,
+                science_program=science_program,
+                observation_reason=observation_reason,
+                scheduler_note=target_name,
+                nside=nside,
+                flush_pad=30.0,
+                detailers=config_detailers,
+            )
         )
-    )
 
     return make_scheduler.get_scheduler()
 
