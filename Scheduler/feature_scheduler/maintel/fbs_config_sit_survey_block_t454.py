@@ -49,7 +49,7 @@ def get_scheduler():
         "y": "y_10",
     }
 
-    nvisits = {"u": 0, "g": 0, "r": 1, "i": 0, "z_03": 0, "y": 0}
+    nvisits = {"u": 1, "g": 1, "r": 1, "i": 1, "z": 1, "y": 1}
     sequence = ["u", "g", "r", "i", "z", "y"]
 
     # exposure time in seconds
