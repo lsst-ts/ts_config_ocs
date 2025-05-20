@@ -8,9 +8,9 @@
             "standard": true,
             "parameters": {
                 "target_name": "$name",
-                "slew_icrs": {
-                    "ra": "$ra",
-                    "dec": "$dec"
+                "track_azel": {
+                    "az": "$az",
+                    "el": "$alt"
                 },
                 "rot_value": "$rot",
                 "rot_type": "Sky",
