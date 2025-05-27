@@ -1,7 +1,7 @@
 {
-  "name": "BLOCK-T395_2",
-  "id": "16f58669-cc6a-49fd-85ea-fc2fb83c46d3",
-  "program": "BLOCK-T395_2",
+  "name": "BLOCK-T393_1",
+  "id": "2e576831-1be2-45cb-9a26-435ebae65e0d",
+  "program": "BLOCK-T393_1",
   "constraints": [],
   "scripts": [
     {
@@ -10,10 +10,8 @@
       "parameters": {
         "track_azel": {
           "az": "$azimuth",
-          "el": "$elevation"
-        },
-        "rot_value": 60,
-        "rot_type": "PhysicalSky"
+          "el": 60
+        }
       }
     },
     {
@@ -22,8 +20,8 @@
       "parameters": {
         "filter": "$filter",
         "program": "$program",
-        "reason": "SITCOM-1491",
-        "note": "LUT_rotator_angle_closed_loop",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
         "exposure_time": "$exptime",
         "max_iter": "$maxiter",
         "used_dofs": "$dofs"
@@ -35,10 +33,8 @@
       "parameters": {
         "track_azel": {
           "az": "$azimuth",
-          "el": "$elevation"
-        },
-        "rot_value": 40,
-        "rot_type": "PhysicalSky"
+          "el": 55
+        }
       }
     },
     {
@@ -47,8 +43,8 @@
       "parameters": {
         "filter": "$filter",
         "program": "$program",
-        "reason": "SITCOM-1491",
-        "note": "LUT_rotator_angle_closed_loop",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
         "exposure_time": "$exptime",
         "max_iter": "$maxiter",
         "used_dofs": "$dofs"
@@ -60,10 +56,8 @@
       "parameters": {
         "track_azel": {
           "az": "$azimuth",
-          "el": "$elevation"
-        },
-        "rot_value": 20,
-        "rot_type": "PhysicalSky"
+          "el": 50
+        }
       }
     },
     {
@@ -72,8 +66,8 @@
       "parameters": {
         "filter": "$filter",
         "program": "$program",
-        "reason": "SITCOM-1491",
-        "note": "LUT_rotator_angle_closed_loop",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
         "exposure_time": "$exptime",
         "max_iter": "$maxiter",
         "used_dofs": "$dofs"
@@ -85,10 +79,8 @@
       "parameters": {
         "track_azel": {
           "az": "$azimuth",
-          "el": "$elevation"
-        },
-        "rot_value": 0,
-        "rot_type": "PhysicalSky"
+          "el": 45
+        }
       }
     },
     {
@@ -97,8 +89,8 @@
       "parameters": {
         "filter": "$filter",
         "program": "$program",
-        "reason": "SITCOM-1491",
-        "note": "LUT_rotator_angle_closed_loop",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
         "exposure_time": "$exptime",
         "max_iter": "$maxiter",
         "used_dofs": "$dofs"
@@ -110,10 +102,8 @@
       "parameters": {
         "track_azel": {
           "az": "$azimuth",
-          "el": "$elevation"
-        },
-        "rot_value": -20,
-        "rot_type": "PhysicalSky"
+          "el": 40
+        }
       }
     },
     {
@@ -122,8 +112,8 @@
       "parameters": {
         "filter": "$filter",
         "program": "$program",
-        "reason": "SITCOM-1491",
-        "note": "LUT_rotator_angle_closed_loop",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
         "exposure_time": "$exptime",
         "max_iter": "$maxiter",
         "used_dofs": "$dofs"
@@ -135,10 +125,8 @@
       "parameters": {
         "track_azel": {
           "az": "$azimuth",
-          "el": "$elevation"
-        },
-        "rot_value": -40,
-        "rot_type": "PhysicalSky"
+          "el": 35
+        }
       }
     },
     {
@@ -147,8 +135,8 @@
       "parameters": {
         "filter": "$filter",
         "program": "$program",
-        "reason": "SITCOM-1491",
-        "note": "LUT_rotator_angle_closed_loop",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
         "exposure_time": "$exptime",
         "max_iter": "$maxiter",
         "used_dofs": "$dofs"
@@ -160,10 +148,8 @@
       "parameters": {
         "track_azel": {
           "az": "$azimuth",
-          "el": "$elevation"
-        },
-        "rot_value": -60,
-        "rot_type": "PhysicalSky"
+          "el": 30
+        }
       }
     },
     {
@@ -172,13 +158,64 @@
       "parameters": {
         "filter": "$filter",
         "program": "$program",
-        "reason": "SITCOM-1491",
-        "note": "LUT_rotator_angle_closed_loop",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
         "exposure_time": "$exptime",
         "max_iter": "$maxiter",
         "used_dofs": "$dofs"
       }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 25
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": 20
+        }
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "$filter",
+        "program": "$program",
+        "reason": "SITCOM-1489",
+        "note": "LUT_elevation_closed_loop",
+        "exposure_time": "$exptime",
+        "max_iter": "$maxiter",
+        "used_dofs": "$dofs"
+      }
+    },
+    {
+      "name": "maintel/stop_tracking.py",
+      "standard": true,
+      "parameters": {}
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T395 configuration\ndescription: Configuration for BLOCK-T395.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"r_57\"\n  elevation:\n    description: Elevation to use for the rotator angle sweep.\n    type: number\n    default: 70\n  azimuth:\n    description: Azimuth to use for the rotator angle sweep.\n    type: number\n    default: 0\n  exptime:\n    description: Exposure time.\n    type: number\n    default: 30.0\n  dofs:\n    description: Degrees of freedom to use for the rotator angle sweep.\n    type: array\n    default: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]\n    items:\n      type: integer\n      minimum: 0\n      maximum: 49\n  maxiter:\n    description: Maximum number of iterations for the closed loop.\n    type: integer\n    default: 1\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T393_1 configuration\ndescription: Configuration for BLOCK-T393_1.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"r_57\"\n  azimuth:\n    description: Azimuth to use for the elevation sweep.\n    type: number\n    default: 80\n  exptime:\n    description: Exposure time.\n    type: number\n    default: 30.0\n  dofs:\n    description: Degrees of freedom to use for the elevation sweep.\n    type: array\n    default: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]\n    items:\n      type: integer\n      minimum: 0\n      maximum: 49\n  maxiter:\n    description: Maximum number of iterations for the closed loop.\n    type: integer\n    default: 1\n"
 }
