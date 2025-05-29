@@ -1,0 +1,75 @@
+{
+    "name": "BLOCK-T399",
+    "program": "BLOCK-T399",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTReflector",
+                "cmd": "open"
+            }
+        },
+        {
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS_DARK",
+                "n_bias": 3,
+                "n_discard_bias": 1,
+                "n_dark": 3,
+                "n_discard_dark": 1,
+                "exp_times_dark": [15, 30, 38],
+                "wait_between_exposures": 30,
+                "generate_calibrations": true,
+                "do_verify": true,
+                "reason": "daily_bias_dark",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/setup_whitelight_flats.py",
+            "standard": false,
+            "parameters":{
+                "ignore": "$ignore"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": "$sequence_names",
+                "reason": "daily_flat",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["ptc_daily"],
+                "reason": "daily_ptc",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/park_calibration_projector.py",
+            "standard": false,
+            "parameters": {
+                "ignore": "$ignore"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTReflector",
+                "cmd": "close"
+            }
+        }
+
+    ],
+     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T399 configuration\ndescription: Configuration for BLOCK-T399.\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T399\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102']\n  sequence_names:\n    description: List of sequence names to run for whitelight flats script.\n    type: array\n    default: ['daily']\n"
+}
+
