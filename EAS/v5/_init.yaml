@@ -6,5 +6,9 @@ m1m3_setpoint_cadence: 300
 features_to_disable: []
 twilight_definition: astronomical
 weather_ess_index: 301
+indoor_ess_index: 112
 glycol_setpoint_delta: -2
 heater_setpoint_delta: -1
+setpoint_deadband_heating: 1
+setpoint_deadband_cooling: 0.5
+maximum_heating_rate: 0.5
