@@ -404,10 +404,10 @@ if __name__ == "config":
         mjd_start=mjd_start,
         band1s=["u", "u", "g", "r", "i", "z", "y"],
         band2s=["g", "r", "r", "i", "z", "y", "y"],
-        camera_rot_limits=[-80.0, 80.0],
-        target_name=None,
-        science_program=None,
-        observation_reason=None,
+        camera_rot_limits=[-60.0, 60.0],
+        target_name="all_sky_aos_test",
+        science_program="BLOCK-365",
+        observation_reason="BLOCK-T548",
     )
 
     surveys = blobs
