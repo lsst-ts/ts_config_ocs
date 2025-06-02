@@ -381,6 +381,15 @@ if __name__ == "config":
     nside = DEFAULT_NSIDE
     nexp = 1  # number of snaps per visit
 
+    band_to_filter = {
+        "u": "u_24",
+        "g": "g_6",
+        "r": "r_57",
+        "i": "i_39",
+        "z": "z_20",
+        "y": "y_10",
+    }
+
     # set the start to 2 days ago
     start_from_now = -2
     t_now = Time(datetime.datetime.now(datetime.UTC), scale="utc")
@@ -411,4 +420,4 @@ if __name__ == "config":
 
     surveys = blobs
 
-    scheduler = CoreScheduler(surveys, nside=nside)
+    scheduler = CoreScheduler(surveys, nside=nside, band_to_filter=band_to_filter)
