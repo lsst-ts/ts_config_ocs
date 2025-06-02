@@ -295,7 +295,6 @@ def generate_blobs(
                 min_rot=np.min(camera_rot_limits), max_rot=np.max(camera_rot_limits)
             )
         )
-        detailer_list.append(detailers.Rottep2RotspDesiredDetailer())
         detailer_list.append(detailers.CloseAltDetailer())
         detailer_list.append(detailers.FlushForSchedDetailer())
         detailer_list.append(
