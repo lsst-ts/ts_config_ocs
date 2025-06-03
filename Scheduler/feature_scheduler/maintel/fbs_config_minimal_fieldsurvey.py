@@ -96,7 +96,7 @@ def get_scheduler():
     science_program = "BLOCK-365"  # json BLOCK to be used
 
     nvisits = {"u": 30, "g": 30, "r": 30, "i": 30, "z": 30, "y": 30}
-    sequence = ["u", "g", "r", "i", "z"]
+    sequence = ["i", "z", "y"]
     # exposure time in seconds
     exptimes = {"u": 38.0, "g": 30.0, "r": 30.0, "i": 30.0, "z": 30.0, "y": 30.0}
     # 1 --> single 30 second exposure
@@ -385,7 +385,7 @@ def get_scheduler():
 
     hexgrid_field_survey_kwargs = {
         "nvisits": {"u": 5, "g": 5, "r": 5, "i": 5, "z": 5, "y": 5},
-        "sequence": ["g", "r", "i"],
+        "sequence": ["i", "z", "y"],
         "exptimes": exptimes,
         "nexps": nexps,
     }
@@ -451,6 +451,7 @@ def get_scheduler():
         "Rubin_SV_212_-7",
         "Rubin_SV_216_-17",
         "Rubin_SV_225_-19",
+        "Rubin_SV_320_-15",
         "COSMOS",
         "ELAIS_S1",
         "XMM_LSS",
