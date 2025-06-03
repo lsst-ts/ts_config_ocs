@@ -1,0 +1,111 @@
+{
+  "name": "BLOCK-T539",
+  "id": "ac38403c-9537-4c86-9876-5ba97e0730eb",
+  "program": "BLOCK-T539",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/set_dof.py",
+      "standard": true,
+      "parameters": {
+        "day": "$day",
+        "seq": "$seq"
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "initial_alignment",
+        "note": "closed_loop_hexapods",
+        "exposure_time": 30.0,
+        "max_iter": 5,
+        "used_dofs": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "truncation_index": 6,
+        "gain_sequence": [
+          0.75,
+          0.5,
+          0.5,
+          0.25
+        ]
+      }
+    },
+    {
+      "name": "maintel/close_loop_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "initial_alignment",
+        "note": "closed_loop_alldofs",
+        "exposure_time": 30.0,
+        "max_iter": 5,
+        "used_dofs": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "truncation_index": 11
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T539 configuration\ndescription: Configuration for BLOCK-T539.\ntype: object\nproperties:\n  day:\n    description: Day of the year for the reference state.\n    type: integer\n    default: 1\n  seq:\n    description: Sequence number for the reference state.\n    type: integer\n    default: 1\n"
+}
