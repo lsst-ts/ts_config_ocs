@@ -381,6 +381,46 @@ def get_scheduler():
         **field_survey_kwargs,
     )
 
+    # HEXGRID DITHER
+
+    hexgrid_field_survey_kwargs = {
+        "nvisits": {"u": 5, "g": 5, "r": 5, "i": 5, "z": 5, "y": 5},
+        "sequence": ["g", "r", "i"],
+        "exptimes": exptimes,
+        "nexps": nexps,
+    }
+
+    # Custom hexgrid dither
+    radius = 3.0
+    orientation = np.radians([0.0, 0.0, 60.0, 120.0, 180.0, 240.0, 300.0])
+    linear = np.array([0.0, radius, radius, radius, radius, radius, radius])
+    delta_ra = linear * np.cos(orientation)
+    delta_dec = linear * np.sin(orientation)
+    config_detailers = [
+        detailers.DitherDetailer(max_dither=1.4, per_night=False),
+        detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
+        # Note: 7 centers * 1 deg per visit * 5 visits = 35 deg
+        detailers.CameraSmallRotPerObservationListDetailer(
+            # max_rot=67.5,
+            # min_rot=-67.5,
+            # per_visit_rot=4.5,
+            max_rot=20.0,
+            min_rot=-20.0,
+            per_visit_rot=1.0,
+        ),
+    ]
+    tier = 0
+    target_names = ["Rubin_SV_320_-15"]
+    make_scheduler.add_field_surveys(
+        tier,
+        observation_reason,
+        science_program,
+        target_names,
+        basis_functions=config_basis_functions,
+        detailers=config_detailers,
+        **hexgrid_field_survey_kwargs,
+    )
+
     # DENSELY DITHERED STAR FIELDS
 
     field_survey_kwargs["sequence"] = sequence
