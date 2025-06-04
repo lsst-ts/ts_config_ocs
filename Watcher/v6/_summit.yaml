@@ -260,9 +260,16 @@ rules:
     hysteresis: 0
     poll_interval: 1
     max_data_age: 30
-- classname: MTDomeAzEnabled
+- classname: MTDomeSubsystemEnabled
   configs:
-  - {}
+  - subsystem_name: azimuth rotation
+    event_name: evt_azEnabled
+    csc_state: [ENABLED]
+    severity: CRITICAL
+  - subsystem_name: aperture shutter
+    event_name: evt_shutterEnabled
+    csc_state: [ENABLED]
+    severity: CRITICAL
 - classname: MTM1M3ThermalFans
   configs:
   - {}
