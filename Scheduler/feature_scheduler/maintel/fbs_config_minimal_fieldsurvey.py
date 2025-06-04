@@ -96,7 +96,7 @@ def get_scheduler():
     science_program = "BLOCK-365"  # json BLOCK to be used
 
     nvisits = {"u": 30, "g": 30, "r": 30, "i": 30, "z": 30, "y": 30}
-    sequence = ["i"]
+    sequence = ["i", "z", "y"]
     # exposure time in seconds
     exptimes = {"u": 38.0, "g": 30.0, "r": 30.0, "i": 30.0, "z": 30.0, "y": 30.0}
     # 1 --> single 30 second exposure
