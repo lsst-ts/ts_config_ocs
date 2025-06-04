@@ -1,13 +1,22 @@
 {
-    "name": "BLOCK-T510_1",
-    "program": "BLOCK-T510_1",
+    "name": "BLOCK-T511_4",
+    "program": "BLOCK-T511_4",
     "constraints": [],
     "scripts": [
         {
-            "name": "maintel/change_filter_lsstcam.py",
+            "name": "maintel/mtrotator/move_rotator.py",
             "standard": true,
-            "parameters":{
-                "filter": "g_6"
+            "parameters": {
+                "angle": 0.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -21,9 +30,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -37,9 +46,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -53,9 +62,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -69,9 +78,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -85,9 +94,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -101,9 +110,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -117,9 +126,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -133,9 +142,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -149,9 +158,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -165,9 +174,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -181,9 +190,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -197,9 +206,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -213,9 +222,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -229,9 +238,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -245,9 +254,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -261,9 +270,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -277,9 +286,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -293,9 +302,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -309,9 +318,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -325,9 +334,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -341,9 +350,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M455L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -357,9 +366,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -373,9 +382,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -389,9 +398,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -405,9 +414,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -421,9 +430,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -437,9 +446,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -453,9 +462,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -469,9 +478,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -485,9 +494,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -501,9 +510,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -517,9 +526,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -533,9 +542,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -549,9 +558,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -565,9 +574,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -581,9 +590,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -597,9 +606,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -613,9 +622,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -629,9 +638,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -645,9 +654,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -661,9 +670,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         },
         {
@@ -677,9 +686,9 @@
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
-                "sequence_name": "whitelight_g_6_M505L4",
-                "reason": "flat",
-                "program": "BLOCK-T510"
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "BLOCK-T511_4"
             }
         }
     ]
