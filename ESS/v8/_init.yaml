@@ -1,0 +1,536 @@
+instances:
+  - sal_index: 1
+    csc_name: Camera Hexapod/Rotator
+    data_clients:
+      - client_class: ControllerDataClient
+        # Camera Hexapod Rotator temperature sensor readout box.
+        config:
+          host: hexrot-ess01.cp.lsst.org
+          devices:
+          - name: MTCameraAssembly-ESS01
+            channels: 8
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
+            sensor_type: Temperature
+            location: >-
+              MT camera hexapod strut 7,
+              MT camera hexapod strut 8,
+              MT camera hexapod strut 9,
+              MT camera hexapod strut 10,
+              MT camera hexapod strut 11,
+              MT camera hexapod strut 12,
+              MT camera rotator motor 1,
+              MT camera rotator motor 2
+  - sal_index: 2
+    csc_name: M2 Hexapod
+    data_clients:
+      - client_class: ControllerDataClient
+      # M2 Hexapod temperature sensor readout box.
+        config:
+          host: m2hex-ess01.cp.lsst.org
+          devices:
+          - name: M2-ESS02
+            channels: 8
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
+            sensor_type: Temperature
+            location: >-
+              M2 hexapod strut 1,
+              M2 hexapod strut 2,
+              M2 hexapod strut 3,
+              M2 hexapod strut 4,
+              M2 hexapod strut 5,
+              M2 hexapod strut 6,
+              Unused,
+              Unused
+
+# - sal_index: 101 -> now 111
+# - sal_index: 102 -> now 112
+# - sal_index: 103 -> now 113
+  - sal_index: 104
+    csc_name: TEA Accelerometers
+    data_clients:
+      - client_class: LabJackAccelerometerDataClient
+        # LabJack reading 4 accelerometers attached to the SST.
+        config:
+          device_type: T7
+          connection_type: TCP
+          identifier: tma-labjack01.cp.lsst.org
+          max_frequency: 100
+          accelerometers:
+            - sensor_name: "SST top end ring +x -y"
+              location: "SST top end ring +x -y side, at base plate of star tracker: x = -azimuth, y = elevation"
+              analog_inputs: [0, 1, 2]
+              # serial number: A435781
+              # published offsets: [2486.22, 2488.33, 2457.21]
+              # published scales:  [997.92, 1046.44, 1021.42]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4862, 2.4883, 2.4572]
+              scales: [9.8204, 9.3651, 9.5945]
+            - sensor_name: "SST top end ring -x -y"
+              location: "SST top end ring -x -y side, at base plate of DIMM telescope: x = -azimuth, y = elevation"
+              analog_inputs: [3, 4, 5]
+              # serial number: A435784
+              # published offsets: [2510.84, 2512.03, 2458.48]
+              # published scales:  [992.51, 1031.08, 1018.55]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.5108, 2.5120, 2.4585]
+              scales: [9.8740, 9.5046, 9.6215]
+            - sensor_name: "SST spider spindle"
+              location: "SST cental spider spindle, before hexapod at -x side: x = -azimuth, y = elevation"
+              analog_inputs: [6, 7, 8]
+              # serial number: A435788
+              # published offsets: [2489.26, 2509.10, 2448.83]
+              # published scales:  [985.83, 1015.88, 1011.85]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4893, 2.5091, 2.4488]
+              scales: [9.9409, 9.6468, 9.6852]
+            - sensor_name: "SST M2 surrogate"
+              location: "SST M2 surrogate mass, -x side of front flange: x = -azimuth, y = elevation"
+              analog_inputs: [9, 10, 11]
+              # serial number: A435804
+              # published offsets: [2469.15, 2518.43, 2455.70]
+              # published scales:  [1010.00, 1008.81, 1003.92]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4691, 2.5184, 2.4557]
+              scales: [9.7030, 9.7144, 9.7617]
+  - sal_index: 105
+    csc_name: Spectrum Analyzer
+    data_clients:
+      - client_class: SiglentSSA3000xSpectrumAnalyzerDataClient
+        config:
+          host: spectrum-analyzer01.cp.lsst.org
+          port: 5025
+          connect_timeout: 5
+          read_timeout: 60
+          location: MT dome wall
+          sensor_name: SSA3000X
+          poll_interval: 1.0
+  - sal_index: 106
+    csc_name: M2 Mirror
+    data_clients:
+      - client_class: ControllerDataClient
+        # M2 temperature sensor readout box.
+        config:
+          host: m2-ess01.cp.lsst.org
+          devices:
+          - name: M2-ESS01
+            channels: 8
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
+            sensor_type: Temperature
+            location: >-
+              Unused,
+              Tangent link A1,
+              Tangent link A2,
+              Tangent link A3,
+              Tangent link A4,
+              Tangent link A5,
+              Tangent link A6,
+              Unused
+  - sal_index: 107
+    csc_name: Laser Enclosure
+    data_clients:
+      - client_class: ControllerDataClient
+        # Laser Enclosure humidity and temperature sensors
+        config:
+          host: laser-rpi.cp.lsst.org
+          devices:
+          - name: Laser-ESS01
+            device_type: Serial
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: HX85BA
+            location: Laser Enclosure
+      - client_class: TcpipDataClient
+        config:
+          name: Laser-ESS02
+          host: laser-rpi.cp.lsst.org
+          port: 15000
+          connect_timeout: 5
+          read_timeout: 5
+          max_read_timeouts: 2
+          channels: 8
+          baud_rate: 19200
+          sensor_type: Temperature
+          location: >-
+            EnclosureFan
+            FCUnit
+            LaserTop
+            LaserBottom
+            LaserFan
+            PowerSupply
+            EnclosureOut
+            EnclosureMid
+  - sal_index: 108
+    csc_name: CBP
+    data_clients:
+      - client_class: TcpipDataClient
+        # CBP temperature sensors
+        config:
+          name: CBP-ESS01
+          host: cbp-control.cp.lsst.org
+          port: 4001
+          connect_timeout: 5
+          read_timeout: 5
+          max_read_timeouts: 2
+          channels: 4
+          baud_rate: 19200
+          sensor_type: Temperature
+          location: >-
+            Photodiode
+            PrimaryMirror
+            MaskChanger
+            ElectronicsCabinet
+  - sal_index: 109
+    csc_name: Spectrum Analyzer
+    data_clients:
+      - client_class: SiglentSSA3000xSpectrumAnalyzerDataClient
+        config:
+          host: spectrum-analyzer02.cp.lsst.org
+          port: 5025
+          connect_timeout: 5
+          read_timeout: 60
+          location: Clean room
+          sensor_name: SSA3000X
+          poll_interval: 1.0
+          freq_stop_value: 30.0
+          freq_stop_unit: MHz
+  - sal_index: 110  # This used to be 205.
+    csc_name: TMA Gill
+    data_clients:
+      - client_class: LabJackDataClient
+        config:
+          device_type: T7
+          connection_type: TCP
+          identifier: mtdome-labjack01.cp.lsst.org
+          poll_interval: 0.2
+          processor: AirTurbulenceProcessor
+          sensor_name: TMA-GillLabJack01
+          location: TMA (unknown location)
+          channel_names: [AIN0, AIN1, AIN2, AIN3]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [2.0, 2.0, 2.0, 22.0]
+          # 5 samples per second so for 1 second that's 5 samples.
+          num_samples: 5
+  - sal_index: 111  # This used to be 101.
+    csc_name: Camera Inlet Humidity
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: camera-ess01.cp.lsst.org
+          devices:
+          - name: Camera-ESS01
+            device_type: Serial
+            serial_port: /dev/serial1
+            sensor_type: HX85A
+            location: Camera inlet plane; RPi with sticker 3
+  - sal_index: 112  # This used to be 102.
+    csc_name: M2 Humidity
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: m2-ess02.cp.lsst.org
+          devices:
+          - name: M2-ESS02
+            device_type: Serial
+            serial_port: /dev/serial1
+            sensor_type: HX85A
+            location: M2; RPi with sticker 1
+  - sal_index: 113  # This used to be 103.
+    csc_name: M1M3 Humidity
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: m1m3-ess01.cp.lsst.org
+          devices:
+          - name: M1M3-ESS03
+            device_type: Serial
+            serial_port: /dev/serial1
+            sensor_type: HX85BA
+            location: M1M3; RPi with sticker 4
+  - sal_index: 114
+    csc_name: M1M3 Mirror
+    data_clients:
+      - client_class: GecThermalscannerDataClient
+        config:
+          host: m1m3-ts-01.cp.lsst.org
+          port: 4447
+          connect_timeout: 5
+          read_timeout: 1800  # Long timeout because recovering M1M3 takes 30 minutes.
+          max_read_timeouts: 5
+          location: M1M3
+          sensor_name: m1m3-ts-01
+  - sal_index: 115
+    csc_name: M1M3 Mirror
+    data_clients:
+      - client_class: GecThermalscannerDataClient
+        config:
+          host: m1m3-ts-02.cp.lsst.org
+          port: 4447
+          connect_timeout: 5
+          read_timeout: 1800  # Long timeout because recovering M1M3 takes 30 minutes.
+          max_read_timeouts: 5
+          location: M1M3
+          sensor_name: m1m3-ts-02
+  - sal_index: 116
+    csc_name: M1M3 Mirror
+    data_clients:
+      - client_class: GecThermalscannerDataClient
+        config:
+          host: m1m3-ts-03.cp.lsst.org
+          port: 4447
+          connect_timeout: 5
+          read_timeout: 1800  # Long timeout because recovering M1M3 takes 30 minutes.
+          max_read_timeouts: 5
+          location: M1M3
+          sensor_name: m1m3-ts-03
+  - sal_index: 117
+    csc_name: M1M3 Mirror
+    data_clients:
+      - client_class: GecThermalscannerDataClient
+        config:
+          host: m1m3-ts-04.cp.lsst.org
+          port: 4447
+          connect_timeout: 5
+          read_timeout: 1800  # Long timeout because recovering M1M3 takes 30 minutes.
+          max_read_timeouts: 5
+          location: M1M3
+          sensor_name: m1m3-ts-04
+
+  - sal_index: 201
+    csc_name: AuxTel Misc
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: auxtel-ess01.cp.lsst.org
+          devices:
+          # AuxTel temperature sensor readout box
+          - name: AuxTel-ESS01
+            channels: 8
+            device_type: Serial
+            serial_port: /dev/serial4
+            sensor_type: Temperature
+            location: unused, AT air, AT truss, AT M2, unused, unused, unused, unused
+          # AuxTel humidity sensor
+          - name: AuxTel-ESS02
+            device_type: Serial
+            serial_port: /dev/serial1
+            sensor_type: HX85BA
+            location: AT azimuth axis
+          # AuxTel temperature sensor readout box
+          - name: AuxTel-ESS03
+            channels: 5
+            device_type: FTDI
+            ftdi_id: AL05OBVR
+            sensor_type: Temperature
+            location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5
+          # AuxTel 3D anemometer
+          - name: AuxTel-ESS04
+            device_type: Serial
+            serial_port: /dev/ttyS0
+            sensor_type: CSAT3B
+            baud_rate: 115200
+            location: AT Dome
+            # 10 samples per second so for 1 second that's 10 samples.
+            num_samples: 10
+      - client_class: LabJackDataClient
+        # LabJack reading AuxTel camera coolant pressures
+        config:
+          device_type: T4
+          connection_type: TCP
+          identifier: auxtel-labjack01.cp.lsst.org
+          poll_interval: 5
+          processor: AuxTelCameraCoolantPressureProcessor
+          sensor_name: AuxTel-LabJack01
+          location: Camera coolant high side, Camera coolant low side
+          channel_names: [AIN0, AIN1]
+          offsets: [0, 0]
+          scales: [344738.0, 344738.0]
+  - sal_index: 202
+    csc_name: AuxTel Accelerometers
+    data_clients:
+      - client_class: LabJackAccelerometerDataClient
+        # LabJack reading three accelerometers
+        config:
+          device_type: T7
+          connection_type: TCP
+          identifier: aux-labjackwired.cp.lsst.org
+          max_frequency: 100
+          accelerometers:
+            - sensor_name: "AuxTel-M2"
+              location: "AuxTel M2 x=el y=az"
+              analog_inputs: [1, 2, 3]
+              # serial number: A395429
+              # published offsets: [2490.17, 2444.24, 2445.89]
+              # published scales:  [989.58, 985.72, 999.46]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4902, 2.4442, 2.4459]
+              scales: [9.9032, 9.9420, 9.8053]
+            - sensor_name: "AuxTel-Truss"
+              location: "AuxTel Truss x=el z=az"
+              analog_inputs: [4, 5, 6]
+              # serial number: A395423
+              # published offsets: [2498.74, 2495.95, 2414.23]
+              # published scales:  [997.40, 1001.42, 995.95]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4987, 2.4959, 2.4142]
+              scales: [9.8255, 9.7861, 9.8399]
+            - sensor_name: "AuxTel-M1"
+              location: "AuxTel M1 x=el y=az"
+              analog_inputs: [7, 8, 9]
+              # serial number: A395446
+              # published offsets: [2478.30, 2480.88, 2413.85]
+              # published scales:  [979.57, 986.99, 1003.76]
+              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
+              offsets: [2.4783, 2.4809, 2.4139]
+              scales: [10.0044, 9.9292, 9.7633]
+  - sal_index: 203
+    csc_name: AuxTel Lightning
+    data_clients:
+      - client_class: ControllerDataClient
+        # Lightning and Electric Field Strength detectors.
+        config:
+          host: auxtel-lightning01.cp.lsst.org
+          devices:
+          - name: AuxTel-ElectricField01
+            device_type: Serial
+            serial_port: /dev/ttyUSB_lower_right
+            sensor_type: EFM100C
+            safe_interval: 10
+            num_samples: 20
+            threshold: 10.0
+            baud_rate: 9600
+            location: Calibration Hill
+          - name: AuxTel-Lightning01
+            device_type: Serial
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: LD250
+            safe_interval: 2
+            baud_rate: 9600
+            location: Calibration Hill
+  - sal_index: 204
+    csc_name: AuxTel Windsonic
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: auxtel-ess02.cp.lsst.org
+          devices:
+          # AuxTel 2D anemometer
+          - name: AuxTel-Windsonic
+            device_type: Serial
+            serial_port: /dev/serial4
+            sensor_type: Windsonic
+            baud_rate: 9600
+            location: AT Dome
+            # 1 sample per second so for 1 minute that is 60 samples.
+            num_samples: 60
+#  - sal_index: 205 -> now 110
+
+  - sal_index: 301
+    csc_name: Weather Station
+    data_clients:
+      - client_class: Young32400WeatherStationDataClient
+        config:
+          host: calibhill-weatherstation01.cp.lsst.org
+          port: 4001
+          connect_timeout: 5
+          read_timeout: 120
+          num_samples_airflow: 20
+          num_samples_temperature: 60
+          rain_stopped_interval: 160
+          sensor_name_airflow: "Weather tower airflow"
+          sensor_name_dew_point: "Weather tower computed dew point"
+          sensor_name_humidity: "Weather tower relative humidity"
+          sensor_name_pressure: "Weather tower atmospheric pressure"
+          sensor_name_rain: "Weather tower rain tip count"
+          sensor_name_temperature: "Weather tower air temperature"
+          # See ts-ess-common docs for an explanation of the values of scale and offset.
+          scale_offset_humidity: [0.025, 0]
+          scale_offset_pressure: [15.0, 50000]
+          scale_offset_temperature: [0.025, -50]
+          scale_offset_wind_direction: [0.1, 0]
+          scale_offset_wind_speed: [0.0834, 0]
+          scale_rain_rate: 0.25
+          location: "Weather tower"
+  - sal_index: 302
+    csc_name: Earrthquake
+    data_clients:
+      - client_class: EarthquakeDataClient
+        config:
+          host: 139.229.178.22
+          port: 6330
+          serial_id: 01000018753C8C49
+          max_read_timeouts: 5
+          sensor_name: Q330
+          location: Inside pier 5th floor
+  - sal_index: 303
+    csc_name: UPSs
+    data_clients:
+      - client_class: SnmpDataClient
+        config:
+          host: power-dp01.cp.lsst.org
+          port: 161
+          max_read_timeouts: 5
+          device_name: Schneider Electric - PM5560
+          device_type: schneiderPm5xxx
+          snmp_community: public
+          poll_interval: 1.0
+      - client_class: SnmpDataClient
+        config:
+          host: power-ups.cp.lsst.org
+          port: 161
+          max_read_timeouts: 5
+          device_name: UPS01
+          device_type: xups
+          snmp_community: public
+          poll_interval: 1.0
+      - client_class: SnmpDataClient
+        config:
+          host: aux-ups01.cp.lsst.org
+          port: 161
+          max_read_timeouts: 5
+          device_name: UPS02
+          device_type: xups
+          snmp_community: lsst_network
+          poll_interval: 1.0
+  - sal_index: 304
+    csc_name: RINGSS
+    data_clients:
+      - client_class: RingssDataClient
+        config:
+          db_uri: mysql+aiomysql://{RINGSS_USER}:{RINGSS_PASSWORD}@139.229.34.57/cpdata
+          table_name: cpdata.ringss
+          poll_interval: 10
+          max_read_timeouts: 6
+  - sal_index: 305
+    csc_name: Main Generator 1
+    data_clients:
+      - client_class: ModbusDataClient
+        config:
+          host: main-generator01.cp.lsst.org
+          port: 502
+          max_read_timeouts: 5
+          device_name: Main Generator 1
+          device_type: agc150genset
+  - sal_index: 306
+    csc_name: Main Generator 2
+    data_clients:
+      - client_class: ModbusDataClient
+        config:
+          host: main-generator02.cp.lsst.org
+          port: 502
+          max_read_timeouts: 5
+          device_name: Main Generator 2
+          device_type: agc150genset
+  - sal_index: 307
+    csc_name: DIMM
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: dimm.cp.lsst.org
+          devices:
+          - name: DIMM
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
+            sensor_type: Aurora
+            location: DIMM
