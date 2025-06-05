@@ -1,0 +1,35 @@
+maintel:
+  driver_type: feature_scheduler
+  mode: ADVANCE
+  startup_type: COLD
+  predicted_scheduler_window: 0.5
+  startup_database: ' '
+  driver_configuration:
+    parameters:
+      night_boundary: -10.0
+    stop_tracking_observing_script_name: maintel/stop_tracking.py
+  feature_scheduler_driver_configuration:
+    observation_database_name: /home/saluser/rubin_sim_data/fbs_observation_database_maintel.sql
+    scheduler_config: /net/obs-env/auto_base_packages/ts_config_ocs/Scheduler/feature_scheduler/maintel/fbs_config_sit_survey_block_t540.py
+  telemetry:
+    streams:
+      - name: seeing
+        efd_table: lsst.sal.DIMM.logevent_dimmMeasurement
+        efd_columns:
+          - fwhm
+        efd_delta_time: 300.0
+        fill_value: 1.0
+      - name: wind_speed
+        efd_table: lsst.sal.ESS.airFlow
+        efd_columns:
+          - speed
+        efd_delta_time: 300.0
+        fill_value: 0.0
+        csc_index: 301
+      - name: wind_direction
+        efd_table: lsst.sal.ESS.airFlow
+        efd_columns:
+          - direction
+        efd_delta_time: 300.0
+        fill_value: 0.0
+        csc_index: 301
