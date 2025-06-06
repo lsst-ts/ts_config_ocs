@@ -385,7 +385,7 @@ def get_scheduler():
 
     hexgrid_field_survey_kwargs = {
         "nvisits": {"u": 5, "g": 5, "r": 5, "i": 5, "z": 5, "y": 5},
-        "sequence": ["g", "r", "i"],
+        "sequence": ["i", "z", "y"],
         "exptimes": exptimes,
         "nexps": nexps,
     }
