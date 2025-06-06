@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T378",
-  "id": "34a5f7e1-b62e-4385-a4b3-a10effed2fd0",
+  "id": "0393471b-2515-4b9b-aa1a-7a10bff40f91",
   "program": "BLOCK-T378_3",
   "constraints": [],
   "scripts": [
@@ -11,7 +11,7 @@
         "exp_time": "$exp_time",
         "dof_index": 25,
         "rotation_sequence": "$rotation_sequence",
-        "range": 0.125,
+        "range": 0.0625,
         "n_steps": "$num_steps",
         "program": "$program",
         "filter": "$filter",
@@ -27,7 +27,7 @@
         "exp_time": "$exp_time",
         "dof_index": 26,
         "rotation_sequence": "$rotation_sequence",
-        "range": 0.2,
+        "range": 0.1,
         "n_steps": "$num_steps",
         "program": "$program",
         "filter": "$filter",
@@ -43,7 +43,7 @@
         "exp_time": "$exp_time",
         "dof_index": 27,
         "rotation_sequence": "$rotation_sequence",
-        "range": 0.2,
+        "range": 0.1,
         "n_steps": "$num_steps",
         "program": "$program",
         "filter": "$filter",
@@ -59,7 +59,7 @@
         "exp_time": "$exp_time",
         "dof_index": 28,
         "rotation_sequence": "$rotation_sequence",
-        "range": 0.15,
+        "range": 0.075,
         "n_steps": "$num_steps",
         "program": "$program",
         "filter": "$filter",
@@ -75,7 +75,7 @@
         "exp_time": "$exp_time",
         "dof_index": 29,
         "rotation_sequence": "$rotation_sequence",
-        "range": 0.1,
+        "range": 0.05,
         "n_steps": "$num_steps",
         "program": "$program",
         "filter": "$filter",
@@ -85,5 +85,5 @@
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T378 configuration\ndescription: Configuration for BLOCK-T378.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"i_39\"\n  num_steps:\n    description: Number of steps for the sensitivity matrix.\n    type: integer\n    default: 9\n  exp_time:\n    description: Exposure time.\n    type: number\n    default: 15.0\n  rotation_sequence:\n    description: Rotation sequence.\n    type: array\n    default: [-75.0, -63.75, -42.5, -21.25, 0.0, 21.25, 42.5, 63.75, 75.0]\n    items:\n      type: number\n  el:\n    description: Elevation.\n    type: number\n    default: 60.0\n  az:\n    description: Azimuth.\n    type: number\n    default: 0.0\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T378 configuration\ndescription: Configuration for BLOCK-T378.\ntype: object\nproperties:\n  filter:\n    description: Filter to use.\n    type: string\n    default: \"r_57\"\n  num_steps:\n    description: Number of steps for the sensitivity matrix.\n    type: integer\n    default: 9\n  exp_time:\n    description: Exposure time.\n    type: number\n    default: 15.0\n  rotation_sequence:\n    description: Rotation sequence.\n    type: array\n    default: [-75.0, -63.75, -42.5, -21.25, 0.0, 21.25, 42.5, 63.75, 75.0]\n    items:\n      type: number\n  el:\n    description: Elevation.\n    type: number\n    default: 60.0\n  az:\n    description: Azimuth.\n    type: number\n    default: 0.0\n"
 }

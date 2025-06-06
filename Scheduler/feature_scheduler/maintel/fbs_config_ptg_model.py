@@ -57,7 +57,7 @@ def get_scheduler():
     # 1 --> single 30 second exposuree
     nexps = {"u": 1, "g": 1, "r": 1, "i": 1, "z": 1, "y": 1}
 
-    min_alt = 40.0
+    min_alt = 20.0
 
     field_survey_kwargs = {
         "nvisits": nvisits,
@@ -75,6 +75,11 @@ def get_scheduler():
         ),
         basis_functions.SlewtimeBasisFunction(bandname=None, nside=nside),
         basis_functions.MoonAvoidanceBasisFunction(nside=nside),
+        basis_functions.AvoidFastRevisitsBasisFunction(
+            nside=nside,
+            bandname="r",
+            gap_min=720.0,
+        ),
     ]
 
     config_detailers = [
