@@ -337,7 +337,27 @@ def generate_blobs(
         bfs.append(
             (
                 bf.AltAzShadowMaskBasisFunction(
-                    nside=nside, shadow_minutes=shadow_minutes, max_alt=max_alt, pad=3.0
+                    nside=nside,
+                    shadow_minutes=shadow_minutes,
+                    max_alt=max_alt,
+                    min_alt=30.0,
+                    pad=3.0,
+                ),
+                0.0,
+            )
+        )
+        bfs.append(
+            (
+                bf.AltAzShadowTimeLimitedBasisFunction(
+                    nside=nside,
+                    min_alt=30.0,
+                    max_alt=max_alt,
+                    min_az=180.0,
+                    max_az=270.0,
+                    shadow_minutes=10.0,
+                    pad=0.0,
+                    time_to_sun=3.0,
+                    sun_keys=["sunrise"],
                 ),
                 0.0,
             )
@@ -377,7 +397,6 @@ def generate_blobs(
 
 
 if __name__ == "config":
-
     nside = DEFAULT_NSIDE
     nexp = 1  # number of snaps per visit
 
