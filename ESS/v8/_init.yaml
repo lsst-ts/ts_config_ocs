@@ -1,5 +1,6 @@
 instances:
   - sal_index: 1
+    csc_name: Camera Hexapod/Rotator
     data_clients:
       - client_class: ControllerDataClient
         # Camera Hexapod Rotator temperature sensor readout box.
@@ -21,6 +22,7 @@ instances:
               MT camera rotator motor 1,
               MT camera rotator motor 2
   - sal_index: 2
+    csc_name: M2 Hexapod
     data_clients:
       - client_class: ControllerDataClient
       # M2 Hexapod temperature sensor readout box.
@@ -46,6 +48,7 @@ instances:
 # - sal_index: 102 -> now 112
 # - sal_index: 103 -> now 113
   - sal_index: 104
+    csc_name: TEA Accelerometers
     data_clients:
       - client_class: LabJackAccelerometerDataClient
         # LabJack reading 4 accelerometers attached to the SST.
@@ -92,6 +95,7 @@ instances:
               offsets: [2.4691, 2.5184, 2.4557]
               scales: [9.7030, 9.7144, 9.7617]
   - sal_index: 105
+    csc_name: Spectrum Analyzer
     data_clients:
       - client_class: SiglentSSA3000xSpectrumAnalyzerDataClient
         config:
@@ -103,6 +107,7 @@ instances:
           sensor_name: SSA3000X
           poll_interval: 1.0
   - sal_index: 106
+    csc_name: M2 Mirror
     data_clients:
       - client_class: ControllerDataClient
         # M2 temperature sensor readout box.
@@ -124,6 +129,7 @@ instances:
               Tangent link A6,
               Unused
   - sal_index: 107
+    csc_name: Laser Enclosure
     data_clients:
       - client_class: ControllerDataClient
         # Laser Enclosure humidity and temperature sensors
@@ -156,6 +162,7 @@ instances:
             EnclosureOut
             EnclosureMid
   - sal_index: 108
+    csc_name: CBP
     data_clients:
       - client_class: TcpipDataClient
         # CBP temperature sensors
@@ -175,6 +182,7 @@ instances:
             MaskChanger
             ElectronicsCabinet
   - sal_index: 109
+    csc_name: Spectrum Analyzer
     data_clients:
       - client_class: SiglentSSA3000xSpectrumAnalyzerDataClient
         config:
@@ -188,6 +196,7 @@ instances:
           freq_stop_value: 30.0
           freq_stop_unit: MHz
   - sal_index: 110  # This used to be 205.
+    csc_name: TMA Gill
     data_clients:
       - client_class: LabJackDataClient
         config:
@@ -204,6 +213,7 @@ instances:
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
   - sal_index: 111  # This used to be 101.
+    csc_name: Camera Inlet Humidity
     data_clients:
       - client_class: ControllerDataClient
         config:
@@ -215,6 +225,7 @@ instances:
             sensor_type: HX85A
             location: Camera inlet plane; RPi with sticker 3
   - sal_index: 112  # This used to be 102.
+    csc_name: M2 Humidity
     data_clients:
       - client_class: ControllerDataClient
         config:
@@ -226,6 +237,7 @@ instances:
             sensor_type: HX85A
             location: M2; RPi with sticker 1
   - sal_index: 113  # This used to be 103.
+    csc_name: M1M3 Humidity
     data_clients:
       - client_class: ControllerDataClient
         config:
@@ -237,6 +249,7 @@ instances:
             sensor_type: HX85BA
             location: M1M3; RPi with sticker 4
   - sal_index: 114
+    csc_name: M1M3 Thermal Scanner 1
     data_clients:
       - client_class: GecThermalscannerDataClient
         config:
@@ -248,6 +261,7 @@ instances:
           location: M1M3
           sensor_name: m1m3-ts-01
   - sal_index: 115
+    csc_name: M1M3 Thermal Scanner 2
     data_clients:
       - client_class: GecThermalscannerDataClient
         config:
@@ -259,6 +273,7 @@ instances:
           location: M1M3
           sensor_name: m1m3-ts-02
   - sal_index: 116
+    csc_name: M1M3 Thermal Scanner 3
     data_clients:
       - client_class: GecThermalscannerDataClient
         config:
@@ -270,6 +285,7 @@ instances:
           location: M1M3
           sensor_name: m1m3-ts-03
   - sal_index: 117
+    csc_name: M1M3 Thermal Scanner 4
     data_clients:
       - client_class: GecThermalscannerDataClient
         config:
@@ -282,6 +298,7 @@ instances:
           sensor_name: m1m3-ts-04
 
   - sal_index: 201
+    csc_name: AuxTel Misc
     data_clients:
       - client_class: ControllerDataClient
         config:
@@ -330,6 +347,7 @@ instances:
           offsets: [0, 0]
           scales: [344738.0, 344738.0]
   - sal_index: 202
+    csc_name: AuxTel Accelerometers
     data_clients:
       - client_class: LabJackAccelerometerDataClient
         # LabJack reading three accelerometers
@@ -367,6 +385,7 @@ instances:
               offsets: [2.4783, 2.4809, 2.4139]
               scales: [10.0044, 9.9292, 9.7633]
   - sal_index: 203
+    csc_name: AuxTel Lightning
     data_clients:
       - client_class: ControllerDataClient
         # Lightning and Electric Field Strength detectors.
@@ -390,6 +409,7 @@ instances:
             baud_rate: 9600
             location: Calibration Hill
   - sal_index: 204
+    csc_name: AuxTel Windsonic
     data_clients:
       - client_class: ControllerDataClient
         config:
@@ -407,6 +427,7 @@ instances:
 #  - sal_index: 205 -> now 110
 
   - sal_index: 301
+    csc_name: Weather Station
     data_clients:
       - client_class: Young32400WeatherStationDataClient
         config:
@@ -432,6 +453,7 @@ instances:
           scale_rain_rate: 0.25
           location: "Weather tower"
   - sal_index: 302
+    csc_name: Earthquake
     data_clients:
       - client_class: EarthquakeDataClient
         config:
@@ -442,6 +464,7 @@ instances:
           sensor_name: Q330
           location: Inside pier 5th floor
   - sal_index: 303
+    csc_name: UPSs
     data_clients:
       - client_class: SnmpDataClient
         config:
@@ -471,6 +494,7 @@ instances:
           snmp_community: lsst_network
           poll_interval: 1.0
   - sal_index: 304
+    csc_name: RINGSS
     data_clients:
       - client_class: RingssDataClient
         config:
@@ -479,6 +503,7 @@ instances:
           poll_interval: 10
           max_read_timeouts: 6
   - sal_index: 305
+    csc_name: Main Generator 1
     data_clients:
       - client_class: ModbusDataClient
         config:
@@ -488,15 +513,17 @@ instances:
           device_name: Main Generator 1
           device_type: agc150genset
   - sal_index: 306
+    csc_name: Main Generator 2
     data_clients:
       - client_class: ModbusDataClient
         config:
           host: main-generator02.cp.lsst.org
           port: 502
           max_read_timeouts: 5
-          device_name: Main Generator 1
+          device_name: Main Generator 2
           device_type: agc150genset
   - sal_index: 307
+    csc_name: DIMM
     data_clients:
       - client_class: ControllerDataClient
         config:
