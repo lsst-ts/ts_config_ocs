@@ -18,9 +18,9 @@
                 "script_mode": "BIAS_DARK",
                 "n_bias": 3,
                 "n_discard_bias": 1,
-                "n_dark": 3,
+                "n_dark": 9,
                 "n_discard_dark": 1,
-                "exp_times_dark": [15, 30, 38],
+                "exp_times_dark": [15, 15, 15, 15, 30, 30, 30, 38, 38, 38],
                 "wait_between_exposures": 30,
                 "generate_calibrations": true,
                 "do_verify": true,
@@ -70,6 +70,6 @@
         }
 
     ],
-     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T399 configuration\ndescription: Configuration for BLOCK-T399.\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T399\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102']\n  sequence_names:\n    description: List of sequence names to run for whitelight flats script.\n    type: array\n    default: ['daily']\n"
+     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T399 configuration\ndescription: Configuration for BLOCK-T399.\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T399\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102','FiberSpectrograph:101','FiberSpectrograph:102']\n  sequence_names:\n    description: List of sequence names to run for whitelight flats script.\n    type: array\n    default: ['daily']\n"
 }
 
