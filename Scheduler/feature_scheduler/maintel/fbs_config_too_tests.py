@@ -431,7 +431,7 @@ if __name__ == "config":
     nvis = [1, 1, 1, 1, 1, 1]
     exptimes = [120.0, 120.0, 120.0, 180.0, 180.0, 180.0]
 
-    # This is a duplicate of the GW_case_B_C strategy from   
+    # This is a duplicate of the GW_case_B_C strategy from
     # rubin_scheduler/rubin_scheduler/scheduler/surveys/too_scripted_surveys.py
     ToOSurv = ToOScriptedSurvey(bf_list,
                                 nside=nside,
