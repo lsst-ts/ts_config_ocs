@@ -431,7 +431,7 @@ if __name__ == "config":
     nvis = [1, 1, 1, 1, 1, 1]
     exptimes = [120.0, 120.0, 120.0, 180.0, 180.0, 180.0]
 
-    # This is a duplicate of the GW_case_B_C strategy from     
+    # This is a duplicate of the GW_case_B_C strategy from   
     # rubin_scheduler/rubin_scheduler/scheduler/surveys/too_scripted_surveys.py
     ToOSurv = ToOScriptedSurvey(bf_list,
                                 nside=nside,
@@ -447,7 +447,7 @@ if __name__ == "config":
                                 split_long=False, # Verify this
                                 flushtime=48,
                                 n_snaps=2)
-  
+
     surveys = [blobs,ToOSurv]
 
     scheduler = CoreScheduler(surveys, nside=nside, band_to_filter=band_to_filter)
