@@ -433,23 +433,20 @@ if __name__ == "config":
 
     # This is a duplicate of the GW_case_B_C strategy from     
     # rubin_scheduler/rubin_scheduler/scheduler/surveys/too_scripted_surveys.py
-    ToOSurv = ToOScriptedSurvey(
-            bf_list,
-            nside=nside,
-            followup_footprint=None, # Verify this
-            times=times,
-            bands_at_times=bands_at_times,
-            nvis=nvis,
-            exptimes=exptimes,
-            detailers=detailer_list,
-            too_types_to_follow=["GW_case_B", "GW_case_C"],
-            survey_name="ToO, GW_case_B_C",
-            target_name_base="GW_case_B_C",
-            split_long=False, # Verify this
-            flushtime=48,
-            n_snaps=2,
-        )
-    )
+    ToOSurv = ToOScriptedSurvey(bf_list,
+                                nside=nside,
+                                followup_footprint=None, # Verify this
+                                times=times,
+                                bands_at_times=bands_at_times,
+                                nvis=nvis,
+                                exptimes=exptimes,
+                                detailers=detailer_list,
+                                too_types_to_follow=["GW_case_B", "GW_case_C"],
+                                survey_name="ToO, GW_case_B_C",
+                                target_name_base="GW_case_B_C",
+                                split_long=False, # Verify this
+                                flushtime=48,
+                                n_snaps=2)
   
     surveys = [blobs,ToOSurv]
 
