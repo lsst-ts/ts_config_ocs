@@ -296,6 +296,51 @@ instances:
           max_read_timeouts: 90
           location: M1M3
           sensor_name: m1m3-ts-04
+  - sal_index: 118
+    csc_name: Rubin WiFi Test 1
+    data_clients:
+      - client_class: TcpipDataClient
+        config:
+          name: RubinWiFiTest1
+          host: mtdome-ess10.cp.lsst.org
+          port: 4001
+          connect_timeout: 60
+          read_timeout: 5
+          max_read_timeouts: 5
+          channels: 8
+          baud_rate: 9600
+          sensor_type: Windsonic
+          location: MTDome-ESS10
+  - sal_index: 119
+    csc_name: Rubin WiFi Test 2
+    data_clients:
+      - client_class: TcpipDataClient
+        config:
+          name: RubinWiFiTest2
+          host: mtdome-ess11.cp.lsst.org
+          port: 4001
+          connect_timeout: 60
+          read_timeout: 5
+          max_read_timeouts: 5
+          channels: 8
+          baud_rate: 19200
+          sensor_type: Temperature
+          location: MTDome-ESS11
+  - sal_index: 120
+    csc_name: Rubin WiFi Test 3
+    data_clients:
+      - client_class: TcpipDataClient
+        config:
+          name: RubinWiFiTest3
+          host: mtdome-ess12.cp.lsst.org
+          port: 4001
+          connect_timeout: 60
+          read_timeout: 5
+          max_read_timeouts: 5
+          channels: 8
+          baud_rate: 9600
+          sensor_type: Windsonic
+          location: MTDome-ESS12
 
   - sal_index: 201
     csc_name: AuxTel Misc
