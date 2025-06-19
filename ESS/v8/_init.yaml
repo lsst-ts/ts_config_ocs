@@ -307,6 +307,8 @@ instances:
           connect_timeout: 60
           read_timeout: 5
           max_read_timeouts: 5
+          # 1 sample per second so for 1 minute that is 60 samples.
+          num_samples: 60
           channels: 8
           baud_rate: 9600
           sensor_type: Windsonic
@@ -337,6 +339,8 @@ instances:
           connect_timeout: 60
           read_timeout: 5
           max_read_timeouts: 5
+          # 1 sample per second so for 1 minute that is 60 samples.
+          num_samples: 60
           channels: 8
           baud_rate: 9600
           sensor_type: Windsonic
