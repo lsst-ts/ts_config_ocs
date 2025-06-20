@@ -23,7 +23,7 @@ auxtel_candidate_catalog_targets:
     dec: "-50:35:03.3"
     block: "BLOCK-312"
     exptime: 360
-    nexp: 3
+    nexp: 2
     visit_gap: 24
     priority: 1
   HD73495:
@@ -50,26 +50,17 @@ auxtel_candidate_catalog_targets:
     dec: "-39:54:25.8"
     block: "BLOCK-311"
     exptime: 480
-    nexp: 5
+    nexp: 2
     visit_gap: 20
     priority: 1
-  # HD132096:
-  #   # type K1III, V=7.3
-  #   ra: "14:58:36.5"
-  #   dec: "-39:54:25.8"
-  #   block: "BLOCK-308"
-  #   exptime: 320
-  #   nexp: 3
-  #   visit_gap: 0
-  #   priority: 1
   HD146233:
     #type G2V, V=5.5
     ra: "16:15:37"
     dec: "-08:22:10.0"
     block: "BLOCK-312"
     exptime: 400
-    nexp: 2
-    visit_gap: 20
+    nexp: 3
+    visit_gap: 10
     priority: 1
   HD167060:
     #type G3V, V=8.9
@@ -87,7 +78,7 @@ auxtel_candidate_catalog_targets:
     block: "BLOCK-312"
     exptime: 400
     nexp: 2
-    visit_gap: 15
+    visit_gap: 10
     priority: 1
 auxtel_standard_catalog_targets:
   HD2811:
@@ -96,7 +87,7 @@ auxtel_standard_catalog_targets:
     dec: "-43:36:23.0"
     block: "BLOCK-311"
     exptime: 480
-    nexp: 5
+    nexp: 2
     visit_gap: 20
     priority: 1
   HD38666:
@@ -105,7 +96,7 @@ auxtel_standard_catalog_targets:
     dec: "-32:18:23.2"
     block: "BLOCK-312"
     exptime: 410
-    nexp: 5
+    nexp: 2
     visit_gap: 15
     priority: 2
   # HD185975:
@@ -123,7 +114,7 @@ auxtel_standard_catalog_targets:
     dec: "-87:28:19"
     block: "BLOCK-312"
     exptime: 480
-    nexp: 3
+    nexp: 1
     visit_gap: 28
     priority: 1
 auxtel_imaging_targets:

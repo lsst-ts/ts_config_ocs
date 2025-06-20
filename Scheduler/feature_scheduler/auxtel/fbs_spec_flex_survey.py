@@ -84,16 +84,15 @@ def get_scheduler():
     imaging_backup_targets = ["Photo08000-1"]
 
     # Spectroscopy priority - high priority spectroscopy - tier 1
-    spectroscopy_priority_targets = [
-        "111980",
-    ]
+    spectroscopy_priority_targets = ["HD146233", "HD205905"]
     # Standard spectroscopy - tier 2
-    spectroscopy_standard_targets = ["HD185975", "HD60753"]
+    spectroscopy_standard_targets = ["HD185975"]
 
     # Backup spectroscopy - tier 3
     spectroscopy_backup_targets = [
-        "HD132096",
         "HD185975",
+        "HD111980",
+        "HD167060",
     ]
 
     # CWFS - tier 0
@@ -243,7 +242,7 @@ def get_scheduler():
     # assemble surveys into list of lists
     surveys = [
         [cwfs_survey],
-        imaging_priority + spectroscopy_priority,
+        spectroscopy_priority,
         spectroscopy_standard,
         spectroscopy_backup,
         imaging_backup,
