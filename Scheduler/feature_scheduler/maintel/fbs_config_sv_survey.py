@@ -154,7 +154,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
     twi_blobs = svs.generate_twi_blobs(
         nside=nside,
         footprints=footprints,
-        pair_time=pair_time,
+        pair_time=15.0,
         camera_rot_limits=camera_rot_limits,
         exptime=exptime,
         nexp=nexp,
@@ -188,14 +188,6 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
         nexp=nexp,
         science_program=science_program,
     )
-    # Remove detailer (will move this to ts_fbs_utils)
-    bad_detailer = detailers.Rottep2RotspDesiredDetailer
-    for survey in lvk_templates:
-        good_dets = []
-        for det in survey.detailers:
-            if not isinstance(det, bad_detailer):
-                good_dets.append(det)
-        survey.detailers = good_dets
 
     # No near-sun twilight survey yet
     # No Roman survey yet
