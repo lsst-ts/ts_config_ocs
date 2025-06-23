@@ -4,9 +4,6 @@
     "constraints": [],
     "scripts": [
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
             "name": "run_command.py",
             "standard": true,
             "parameters": {
@@ -15,43 +12,43 @@
             }
         },
         {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
             "parameters": {
-                "nimages": 25,
-                "exp_times": 0,
-                "sleep_between_exposures": 30,
-                "image_type": "BIAS",
+                "script_mode": "BIAS",
+                "n_bias": 25,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 30,
+                "generate_calibrations": false,
+                "do_verify": false,
                 "reason": "bias",
                 "program": "$program"
             }
         },
         {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
             "parameters": {
-                "nimages": 25,
-                "exp_times": 30,
-                "sleep_between_exposures": 0,
-                "image_type": "DARK",
+                "script_mode": "DARK",
+                "n_dark": 25,
+                "n_discard_dark": 0,
+                "exp_times_dark": [30],
+                "wait_between_exposures": 0,
+                "generate_calibrations": false,
+                "do_verify": false,
                 "reason": "dark",
                 "program": "$program"
             }
         },
         {
-=======
->>>>>>> parent of db8e249 (drop! remove setup whitelight)
             "name": "maintel/setup_whitelight_flats.py",
             "standard": false,
             "parameters":{
+                "sequence_name": "whitelight_i_source",
                 "ignore": "$ignore"
             }
         },
         {
-<<<<<<< HEAD
->>>>>>> parent of e4b05d5 (drop! temp change for sequencer test)
-=======
->>>>>>> parent of db8e249 (drop! remove setup whitelight)
             "name": "maintel/take_whitelight_flats_lsstcam.py",
             "standard": false,
             "parameters": {
@@ -70,61 +67,80 @@
             }
         },
         {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
             "parameters": {
-                "nimages": 1,
-                "exp_times": 0,
-                "sleep_between_exposures": 30,
-                "image_type": "BIAS",
+                "sequence_names": ["whitelight_i_39_dark"],
+                "reason": "gain_stability",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS",
+                "n_bias": 1,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 30,
+                "generate_calibrations": false,
+                "do_verify": false,
                 "reason": "bias_stability",
                 "program": "$program"
             }
         },
         {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
             "parameters": {
-                "nimages": 1,
-                "exp_times": 0,
-                "sleep_between_exposures": 60,
-                "image_type": "BIAS",
+                "script_mode": "BIAS",
+                "n_bias": 1,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 60,
+                "generate_calibrations": false,
+                "do_verify": false,
                 "reason": "bias_stability",
                 "program": "$program"
             }
         },
         {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
             "parameters": {
-                "nimages": 1,
-                "exp_times": 0,
-                "sleep_between_exposures": 120,
-                "image_type": "BIAS",
+                "script_mode": "BIAS",
+                "n_bias": 1,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 120,
+                "generate_calibrations": false,
+                "do_verify": false,
                 "reason": "bias_stability",
                 "program": "$program"
             }
         },
         {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
             "parameters": {
-                "nimages": 1,
-                "exp_times": 0,
-                "sleep_between_exposures": 180,
-                "image_type": "BIAS",
+                "script_mode": "BIAS",
+                "n_bias": 1,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 180,
+                "generate_calibrations": false,
+                "do_verify": false,
                 "reason": "bias_stability",
                 "program": "$program"
             }
         },
         {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
             "parameters": {
-                "nimages": 2,
-                "exp_times": 0,
-                "sleep_between_exposures": 240,
-                "image_type": "BIAS",
+                "script_mode": "BIAS",
+                "n_bias": 2,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 240,
+                "generate_calibrations": false,
+                "do_verify": false,
                 "reason": "bias_stability",
                 "program": "$program"
             }
@@ -139,13 +155,16 @@
             }
         },
         {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
             "parameters": {
-                "nimages": 5,
-                "exp_times": 30,
-                "sleep_between_exposures": 30,
-                "image_type": "DARK",
+                "script_mode": "DARK",
+                "n_dark": 5,
+                "n_discard_dark": 0,
+                "exp_times_dark": [30],
+                "wait_between_exposures": 0,
+                "generate_calibrations": false,
+                "do_verify": false,
                 "reason": "persistence",
                 "program": "$program"
             }
