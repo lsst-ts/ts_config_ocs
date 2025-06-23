@@ -1,0 +1,206 @@
+{
+    "name": "BLOCK-T546",
+    "program": "BLOCK-T546",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTReflector",
+                "cmd": "open"
+            }
+        },
+        {
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS",
+                "n_bias": 25,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 30,
+                "generate_calibrations": false,
+                "do_verify": false,
+                "reason": "bias",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS_DARK",
+                "n_bias": 1,
+                "n_discard_bias": 1,
+                "n_dark": 25,
+                "n_discard_dark": 0,
+                "exp_times_dark": [30],
+                "wait_between_exposures": 0,
+                "generate_calibrations": false,
+                "do_verify": false,
+                "reason": "dark",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/setup_whitelight_flats.py",
+            "standard": false,
+            "parameters":{
+                "sequence_name": "whitelight_i_source",
+                "ignore": "$ignore"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["whitelight_i_39_dark"],
+                "reason": "gain_stability",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["whitelight_i_39_dark"],
+                "reason": "gain_stability",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["whitelight_i_39_dark"],
+                "reason": "gain_stability",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS",
+                "n_bias": 1,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 30,
+                "generate_calibrations": false,
+                "do_verify": false,
+                "reason": "bias_stability",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS",
+                "n_bias": 1,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 60,
+                "generate_calibrations": false,
+                "do_verify": false,
+                "reason": "bias_stability",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS",
+                "n_bias": 1,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 120,
+                "generate_calibrations": false,
+                "do_verify": false,
+                "reason": "bias_stability",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS",
+                "n_bias": 1,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 180,
+                "generate_calibrations": false,
+                "do_verify": false,
+                "reason": "bias_stability",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS",
+                "n_bias": 2,
+                "n_discard_bias": 0,
+                "wait_between_exposures": 240,
+                "generate_calibrations": false,
+                "do_verify": false,
+                "reason": "bias_stability",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "nimages": 1,
+                "exp_times": 60,
+                "image_type": "FLAT",
+                "reason": "persistence",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/make_lsstcam_calibrations.py",
+            "standard": false,
+            "parameters": {
+                "script_mode": "BIAS_DARK",
+                "n_bias": 1,
+                "n_discard_bias": 1,
+                "n_dark": 5,
+                "n_discard_dark": 0,
+                "exp_times_dark": [30],
+                "wait_between_exposures": 0,
+                "generate_calibrations": false,
+                "do_verify": false,
+                "reason": "persistence",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["ptc_i_39_100"],
+                "reason": "ptc",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/park_calibration_projector.py",
+            "standard": false,
+            "parameters": {
+                "ignore": "$ignore"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTReflector",
+                "cmd": "close"
+            }
+        }
+
+    ],
+     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T546 configuration\ndescription: Configuration for BLOCK-T546.\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T546\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102','FiberSpectrograph:101','FiberSpectrograph:102']\n "
+}
+
