@@ -146,8 +146,8 @@ instances:
           name: Laser-ESS02
           host: laser-rpi.cp.lsst.org
           port: 15000
-          connect_timeout: 5
-          read_timeout: 5
+          connect_timeout: 60
+          read_timeout: 60
           max_read_timeouts: 2
           channels: 8
           baud_rate: 19200
@@ -170,8 +170,8 @@ instances:
           name: CBP-ESS01
           host: cbp-control.cp.lsst.org
           port: 4001
-          connect_timeout: 5
-          read_timeout: 5
+          connect_timeout: 60
+          read_timeout: 60
           max_read_timeouts: 2
           channels: 4
           baud_rate: 19200
