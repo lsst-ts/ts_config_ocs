@@ -148,12 +148,10 @@
             }
         },
         {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
             "parameters": {
-                "nimages": 1,
-                "exp_times": 60,
-                "image_type": "FLAT",
+                "sequence_names": ["persistence_i_39"],
                 "reason": "persistence",
                 "program": "$program"
             }
