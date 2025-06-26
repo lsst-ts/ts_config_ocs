@@ -4,38 +4,6 @@
     "constraints": [],
     "scripts": [
         {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "MTReflector",
-                "cmd": "open"
-            }
-        },
-        {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
-            "parameters": {
-                "nimages": 25,
-                "exp_times": 0,
-                "sleep_between_exposures": 30,
-                "image_type": "BIAS",
-                "reason": "bias",
-                "program": "$program"
-            }
-        },
-        {
-            "name": "maintel/take_image_lsstcam.py",
-            "standard": true,
-            "parameters": {
-                "nimages": 25,
-                "exp_times": 30,
-                "sleep_between_exposures": 0,
-                "image_type": "DARK",
-                "reason": "dark",
-                "program": "$program"
-            }
-        },
-        {
             "name": "maintel/setup_whitelight_flats.py",
             "standard": false,
             "parameters":{
