@@ -1,5 +1,278 @@
 {
   "name": "BLOCK-T395_v3",
+  "id": "30fbfbb1-5d0c-4256-b704-ce45478727ea",
+  "program": "BLOCK-T395_v3",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -75,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -30,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -60,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 30,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 0,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -45,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 15,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": -15,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 60,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 45,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    },
+    {
+      "name": "maintel/track_target.py",
+      "standard": true,
+      "parameters": {
+        "track_azel": {
+          "az": "$azimuth",
+          "el": "$elevation"
+        },
+        "rot_value": 75,
+        "rot_type": "PhysicalSky"
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_rotator_angle_closed_loop",
+        "exp_times": "$exptime",
+        "nimages": 1,
+        "image_type": "ACQ"
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T395 configuration\ndescription: Configuration for BLOCK-T395.\ntype: object\nproperties:\n  elevation:\n    description: Elevation to use for the rotator angle sweep.\n    type: number\n    default: 70\n  azimuth:\n    description: Azimuth to use for the rotator angle sweep.\n    type: number\n    default: 0\n  exptime:\n    description: Exposure time.\n    type: number\n    default: 30.0\n"
+}
+{
+  "name": "BLOCK-T395_v3",
   "id": "a5d6cd4d-88ff-404f-a764-b94ca0980bce",
   "program": "BLOCK-T395_v3",
   "constraints": [],
