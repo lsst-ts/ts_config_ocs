@@ -59,8 +59,12 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
 
     # DDF dither dithers
     camera_ddf_rot_limit = -75  # Rotator limit for DDF (degrees)
-    max_dither = 0.2  # Max radial dither for DDF (degrees)
-    per_night = True  # Dither DDF per night
+    max_dither = 1.5  # Max radial dither for DDF (degrees)
+    per_night = False  # Dither DDF per night
+    if per_night:
+        dd_opt = "night"
+    else:
+        dd_opt = "call"
     # Get path for ddf sequence configuration file
     config_dir = Path(__file__).parent
     ddf_config_file = Path.joinpath(config_dir, "ddf_sv.dat")
@@ -105,7 +109,9 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
     )
     detailer_list = [
         detailers.CameraRotDetailer(
-            min_rot=-camera_ddf_rot_limit, max_rot=camera_ddf_rot_limit
+            min_rot=-camera_ddf_rot_limit,
+            max_rot=camera_ddf_rot_limit,
+            dither=dd_opt,
         ),
         dither_detailer,
         detailers.BandSortDetailer(),
