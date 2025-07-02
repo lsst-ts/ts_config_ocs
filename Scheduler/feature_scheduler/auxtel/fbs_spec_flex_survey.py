@@ -84,7 +84,7 @@ def get_scheduler():
     imaging_backup_targets = ["Photo08000-1"]
 
     # Spectroscopy priority - high priority spectroscopy - tier 1
-    spectroscopy_priority_targets = ["HD146233", "HD205905"]
+    spectroscopy_priority_targets = ["HD111980", "HD167060", "HD205905"]
     # Standard spectroscopy - tier 2
     spectroscopy_standard_targets = ["HD185975"]
 
