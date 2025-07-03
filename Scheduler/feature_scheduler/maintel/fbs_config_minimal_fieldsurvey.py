@@ -433,12 +433,12 @@ def get_scheduler():
         detailers.DitherDetailer(max_dither=1.4, per_night=False),
         # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            # max_rot=45.0,
-            # min_rot=-45.0,
-            # per_visit_rot=3.0,
-            max_rot=15.0,
-            min_rot=-15.0,
-            per_visit_rot=1.0,
+            max_rot=45.0,
+            min_rot=-45.0,
+            per_visit_rot=3.0,
+            # max_rot=15.0,
+            # min_rot=-15.0,
+            # per_visit_rot=1.0,
         ),
     ]
     tier = 0
