@@ -200,7 +200,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
     bf_list.append(bf.AvoidDirectWind(wind_speed_maximum=20, nside=nside))
     bf_list.append(bf.MoonAvoidanceBasisFunction(moon_distance=30.0))
 
-    detailer_list = None
+    detailer_list = []
     times = [0, 1, 2, 24, 48, 72]
     bands_at_times = ["griz", "griz", "griz", "ri", "ri", "ri"]
     nvis = [1, 1, 1, 1, 1, 1]
@@ -221,7 +221,6 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
                                 target_name_base="GW_case_B_C",
                                 split_long=False,
                                 flushtime=48,
-                                detailers=[],
                                 n_snaps=2)
 
     surveys = [ddfs, long_gaps, templ_surveys, blobs, twi_blobs, greedy, lvk_templates, too_survey]
