@@ -1,4 +1,31 @@
 auxtel_candidate_catalog_targets:
+  HD009051:
+    #type A, V=8.9
+    ra: "01:28:46"
+    dec: "-24:20:25.4"
+    block: "BLOCK-311"
+    exptime: 400
+    nexp: 2
+    visit_gap: 15
+    priority: 1
+  HD14943:
+    #type A5, V=5.5
+    ra: "02:22:54"
+    dec: "-51:05:31.7"
+    block: "BLOCK-312"
+    exptime: 400
+    nexp: 2
+    visit_gap: 8
+    priority: 1
+  HD031128:
+    #type F3, V=9.1
+    ra: "04:52:09"
+    dec: "-27:03:50.9"
+    block: "BLOCK-311"
+    exptime: 480
+    nexp: 2
+    visit_gap: 15
+    priority: 1
   HD36780:
     # type K4III C, V=5.9
     ra: "05:34:04.0"
@@ -7,6 +34,15 @@ auxtel_candidate_catalog_targets:
     exptime: 400
     nexp: 2
     visit_gap: 8
+    priority: 1
+  HD38949: 
+    # type G1, V=7.8
+    ra: "05:48:20"
+    dec: "-24:27:49.9"
+    block: "BLOCK-311"
+    exptime: 480
+    nexp: 2
+    visit_gap: 15
     priority: 1
   HD42525:
     # type A0V, V=5.7
@@ -44,6 +80,14 @@ auxtel_candidate_catalog_targets:
     nexp: 3
     visit_gap: 27
     priority: 1
+  HD115169:
+    # type G3, V=9.2
+    ra: "13:15:47.38"
+    dec: "-29 30 21.18"
+    block: "BLOCK-311"
+    exptime: 480
+    visit_gap: 15
+    priority: 1
   HD132096:
     # type K1III, V=7.3
     ra: "14:58:36.5"
@@ -52,6 +96,15 @@ auxtel_candidate_catalog_targets:
     exptime: 480
     nexp: 2
     visit_gap: 20
+    priority: 1
+  HD142331:
+    # type G5, V=8.8
+    ra: "15:54:19"
+    dec: "-08:34:49.4"
+    block: "BLOCK-311"
+    exptime: 480
+    nexp: 2
+    visit_gap: 15
     priority: 1
   HD146233:
     #type G2V, V=5.5
@@ -66,6 +119,15 @@ auxtel_candidate_catalog_targets:
     #type G3V, V=8.9
     ra: "18:17:44"
     dec: "-61:42:31.6"
+    block: "BLOCK-311"
+    exptime: 480
+    nexp: 2
+    visit_gap: 15
+    priority: 1
+  HD200654:
+    #type C, V=9.1
+    ra: "21:06:34"
+    dec: "-49:57:50.3"
     block: "BLOCK-311"
     exptime: 480
     nexp: 2
@@ -99,15 +161,6 @@ auxtel_standard_catalog_targets:
     nexp: 1
     visit_gap: 15
     priority: 2
-  # HD185975:
-  #   # pole star
-  #   ra: "20:28:18"
-  #   dec: "-87:28:19"
-  #   block: "BLOCK-308"
-  #   exptime: 480
-  #   nexp: 4
-  #   visit_gap: 28
-  #   priority: 1
   HD185975:
     # pole star
     ra: "20:28:18"
