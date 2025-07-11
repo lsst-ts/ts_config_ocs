@@ -26,7 +26,7 @@ maintel:
   telemetry:
     too_client:
       topic_name: lsst.scimma.too_alert
-      delta_time: 900.0
+      delta_time: 7200.0
       db_name: lsst.scimma
     streams:
       - name: seeing
