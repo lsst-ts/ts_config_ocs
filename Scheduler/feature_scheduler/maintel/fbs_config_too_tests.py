@@ -6,7 +6,6 @@ import rubin_scheduler.scheduler.detailers as detailers
 from astropy.time import Time
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
 from rubin_scheduler.scheduler.surveys import LongGapSurvey
-import rubin_scheduler.scheduler.basis_functions as bf
 from rubin_scheduler.scheduler.surveys.too_scripted_surveys import ToOScriptedSurvey
 
 __all__ = ("get_scheduler",)
