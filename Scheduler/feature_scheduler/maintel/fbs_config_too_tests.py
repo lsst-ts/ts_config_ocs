@@ -4,7 +4,6 @@ import healpy
 import lsst.ts.fbs.utils.maintel.sv_config as svc
 import lsst.ts.fbs.utils.maintel.sv_surveys as svs
 import numpy as np
-import rubin_scheduler.scheduler.basis_functions as bf
 import rubin_scheduler.scheduler.detailers as detailers
 from astropy.time import Time
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
