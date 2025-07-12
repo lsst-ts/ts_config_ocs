@@ -196,15 +196,12 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
 
     # ToO survey configuration
 
-    bf_list = []
-    bf_list.append(bf.AvoidDirectWind(wind_speed_maximum=20, nside=nside))
-    bf_list.append(bf.MoonAvoidanceBasisFunction(moon_distance=30.0))
-
-    detailer_list = []
-    times = [0, 1, 2, 24, 48, 72]
-    bands_at_times = ["griz", "griz", "griz", "ri", "ri", "ri"]
-    nvis = [1, 1, 1, 1, 1, 1]
-    exptimes = [120.0, 120.0, 120.0, 180.0, 180.0, 180.0]
+    bf_list = svs.safety_masks(nside=nside)
+    detailer_list = [detailers.DitherDetailer(per_night="call", max_dither=0.02)]
+    times = [0, 1, 2, 24,]
+    bands_at_times = ["griz", "griz", "griz", "ri"]
+    nvis = [2,2,2,2]
+    exptimes = [30, 30, 30, 30,]
 
     # This is a duplicate of the GW_case_B_C strategy from
     # rubin_scheduler/rubin_scheduler/scheduler/surveys/too_scripted_surveys.py
@@ -223,7 +220,16 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
                                 flushtime=48,
                                 n_snaps=2)
 
-    surveys = [ddfs, long_gaps, templ_surveys, blobs, twi_blobs, greedy, lvk_templates, too_survey]
+    surveys = [
+        too_survey,
+        ddfs,
+        long_gaps,
+        templ_surveys,
+        blobs,
+        twi_blobs,
+        greedy,
+        lvk_templates,
+    ]
 
     # Label regions for all surveys
     for tier in surveys:
