@@ -198,15 +198,12 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
 
     # ToO survey configuration
 
-    bf_list = []
-    bf_list.append(bf.AvoidDirectWind(wind_speed_maximum=20, nside=nside))
-    bf_list.append(bf.MoonAvoidanceBasisFunction(moon_distance=30.0))
-
-    detailer_list = [detailers.DitherDetailer(per_night="call", max_dither=0.02)]
-    times = [0, 1, 2, 24,]
-    bands_at_times = ["griz", "griz", "griz", "ri"]
-    nvis = [2,2,2,2]
-    exptimes = [30, 30, 30, 30,]
+    bf_list = svs.safety_masks(nside=nside)
+    detailer_list = [detailers.DitherDetailer(per_night="call", max_dither=0.01)]
+    times = [0]
+    bands_at_times = ["grizy"]
+    nvis = [4]
+    exptimes = [30]
 
     # This is a duplicate of the GW_case_B_C strategy from
     # rubin_scheduler/rubin_scheduler/scheduler/surveys/too_scripted_surveys.py
@@ -222,7 +219,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
             detailers=detailer_list,
             too_types_to_follow=["GW_case_B", "GW_case_C"],
             survey_name="ToO, GW_case_B_C",
-            target_name_base="ToO_3I",
+            target_name_base="ToO_SSO",
             split_long=False,
             flushtime=48,
             n_snaps=1,
