@@ -1,0 +1,39 @@
+{
+    "name": "BLOCK-T529",
+    "program": "BLOCK-T529",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/setup_whitelight_flats.py",
+            "standard": false,
+            "parameters":{
+                "ignore": "$ignore"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["whitelight_u_24_M385L3_source","whitelight_i_39_M730L5_source",
+                                    "whitelight_i_39_M810L3_source","whitelight_g_6_M455L4_source",
+                                    "whitelight_g_6_M505L4_source","whitelight_r_57_M565L3_source",
+                                    "whitelight_r_57_M660L4_source","whitelight_z_20_M850L3_source",
+                                    "whitelight_z_20_M940L3_source","whitelight_y_10_M940L3_source",
+                                    "whitelight_y_10_M970L4_source"],
+                "config_tcs": false,
+                "use_camera": false,
+                "reason": "whitelight_single_led_source",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/park_calibration_projector.py",
+            "standard": false,
+            "parameters":{
+                "ignore": "$ignore"
+            }
+        }
+    ],
+     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T529 configuration\ndescription: Configuration for BLOCK-T399.\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T529\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102','FiberSpectrograph:101','FiberSpectrograph:102']\n"
+}
+    
