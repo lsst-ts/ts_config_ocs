@@ -77,21 +77,21 @@ def get_scheduler():
     # But can be specified to be all or just a subset
 
     # Imaging priority - high priority imaging, tier 1
-    imaging_priority_targets = ["Photo08000-1"]
+    imaging_priority_targets = []
     # Imaging backup - low priority, tier -1
     # These are added because spectroscopy targets unavailable near transit
     # So if there are few spectroscopy targets, a backup imaging is good.
-    imaging_backup_targets = ["Photo08000-1"]
+    imaging_backup_targets = []
 
     # Spectroscopy priority - high priority spectroscopy - tier 1
-    spectroscopy_priority_targets = ["HD146233", "HD205905"]
+    spectroscopy_priority_targets = ["HD115169", "HD205905"]
     # Standard spectroscopy - tier 2
-    spectroscopy_standard_targets = ["HD185975"]
+    spectroscopy_standard_targets = ["HD185975", "HD2811"]
 
     # Backup spectroscopy - tier 3
     spectroscopy_backup_targets = [
         "HD185975",
-        "HD111980",
+        "HD115169",
         "HD167060",
     ]
 
@@ -245,7 +245,6 @@ def get_scheduler():
         spectroscopy_priority,
         spectroscopy_standard,
         spectroscopy_backup,
-        imaging_backup,
     ]
 
     scheduler = CoreScheduler(

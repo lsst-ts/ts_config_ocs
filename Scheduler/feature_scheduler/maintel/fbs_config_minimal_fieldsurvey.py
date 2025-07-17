@@ -96,7 +96,7 @@ def get_scheduler():
     science_program = "BLOCK-365"  # json BLOCK to be used
 
     nvisits = {"u": 30, "g": 30, "r": 30, "i": 30, "z": 30, "y": 30}
-    sequence = ["g", "r"]
+    sequence = ["i", "z", "g", "r"]
     # exposure time in seconds
     exptimes = {"u": 38.0, "g": 30.0, "r": 30.0, "i": 30.0, "z": 30.0, "y": 30.0}
     # 1 --> single 30 second exposure
@@ -111,8 +111,7 @@ def get_scheduler():
     # LARGE FILL FACTOR TARGETS
 
     large_fill_factor_field_survey_kwargs = {
-        # "nvisits": {"u": 6, "g": 6, "r": 6, "i": 6, "z": 6, "y": 6},
-        "nvisits": {"g": 6, "r": 6},
+        "nvisits": {"u": 6, "g": 6, "r": 6, "i": 6, "z": 6, "y": 6},
         "sequence": sequence,
         "exptimes": exptimes,
         "nexps": nexps,
@@ -434,12 +433,12 @@ def get_scheduler():
         detailers.DitherDetailer(max_dither=1.4, per_night=False),
         # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
-            # max_rot=45.0,
-            # min_rot=-45.0,
-            # per_visit_rot=3.0,
-            max_rot=15.0,
-            min_rot=-15.0,
-            per_visit_rot=1.0,
+            max_rot=45.0,
+            min_rot=-45.0,
+            per_visit_rot=3.0,
+            # max_rot=15.0,
+            # min_rot=-15.0,
+            # per_visit_rot=1.0,
         ),
     ]
     tier = 0
