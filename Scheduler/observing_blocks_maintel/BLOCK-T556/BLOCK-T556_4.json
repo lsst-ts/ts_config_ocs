@@ -1,0 +1,32 @@
+{
+    "name": "BLOCK-T556_4",
+    "program": "BLOCK-T556_4",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0.0
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["whitelight_z_20_M850L3"],
+                "reason": "single_led_flat_M850L3",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["whitelight_z_20_M940L3"],
+                "reason": "single_led_flat_M940L3",
+                "program": "$program"
+            }
+        }
+    ]
+}
