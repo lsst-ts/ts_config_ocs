@@ -1,0 +1,30 @@
+{
+  "name": "BLOCK-T540",
+  "program": "BLOCK-T540",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/offset_mtcs.py",
+      "standard": true,
+      "parameters": {
+        "offset_azel": {
+          "az": 0,
+          "el": 60
+        },
+        "relative": true
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "nimages": 1,
+        "exp_times": 30,
+        "image_type": "ACQ",
+        "reason": "BLOCK-T540",
+        "program": "BLOCK-T540"
+      }
+    }
+  ],
+  "configuration_schema": ""
+}
