@@ -52,6 +52,8 @@ def get_scheduler():
     else:
         wind_speed_maximum = 30
 
+    sun_alt_limit = -8
+
     # Detailers - for now, just simple image or spectroscopy detailers.
     image_detailers = [
         # Dither up to half the FOV, per exposure.
@@ -104,6 +106,7 @@ def get_scheduler():
         time_gap_min=cwfs_time_gap,
         wind_speed_maximum=wind_speed_maximum,
         cwfs_block_name=cwfs_block,
+        sun_alt_limit=sun_alt_limit,
     )
 
     # Go through imaging targets ('auxtel_imaging_targets' category)
@@ -156,6 +159,7 @@ def get_scheduler():
                     wind_speed_maximum=wind_speed_maximum,
                     survey_detailers=image_detailers,
                     include_slew=True,
+                    sun_alt_limit=sun_alt_limit,
                 )
             )
 
@@ -199,6 +203,7 @@ def get_scheduler():
                         include_slew=False,
                         nfields=0,
                         avoid_wind=avoid_wind,
+                        sun_alt_limit=sun_alt_limit,
                     )
                 )
             if target_name in spectroscopy_standard_targets:
@@ -211,6 +216,7 @@ def get_scheduler():
                         include_slew=False,
                         nfields=0,
                         avoid_wind=avoid_wind,
+                        sun_alt_limit=sun_alt_limit,
                     )
                 )
             if target_name in spectroscopy_backup_targets:
@@ -236,6 +242,7 @@ def get_scheduler():
                         include_slew=False,
                         nfields=0,
                         avoid_wind=avoid_wind,
+                        sun_alt_limit=sun_alt_limit,
                     )
                 )
 
