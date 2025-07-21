@@ -260,6 +260,9 @@ rules:
     hysteresis: 0
     poll_interval: 1
     max_data_age: 30
+- classname: MTDomeCapacitorBanks
+  configs:
+  - {}
 - classname: MTDomeSubsystemEnabled
   configs:
   - subsystem_name: azimuth rotation
