@@ -96,7 +96,7 @@ def get_scheduler():
     science_program = "BLOCK-365"  # json BLOCK to be used
 
     nvisits = {"u": 30, "g": 30, "r": 30, "i": 30, "z": 30, "y": 30}
-    sequence = ["u", "g", "r", "i", "z"]
+    sequence = ["u", "g", "z"]
     # exposure time in seconds
     exptimes = {"u": 38.0, "g": 30.0, "r": 30.0, "i": 30.0, "z": 30.0, "y": 30.0}
     # 1 --> single 30 second exposure
@@ -353,7 +353,10 @@ def get_scheduler():
     # LSST DDFs
     # Detector scale dithers
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.2, per_night=False),
+        # Default for LSST DDFs
+        # detailers.DitherDetailer(max_dither=0.2, per_night=False),
+        # Experimental larger dither pattern
+        detailers.DitherDetailer(max_dither=1.4, per_night=False),
         # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
             max_rot=45.0,
