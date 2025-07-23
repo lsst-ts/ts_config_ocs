@@ -1,739 +1,1336 @@
 {
-    "name": "BLOCK-T564",
-    "program": "BLOCK-T564",
-    "constraints": [],
-    "scripts": [
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "setRange",
-                "parameters": {
-                    "setRange": 0.0000002
-                }
-            }
-        },
-        {
-        "name": "run_command.py",
-        "standard": true,
-        "parameters": {
-            "component": "Electrometer:103",
-            "cmd": "startScanDt",
-            "parameters": {
-                "scanDuration": 5.0
-            }
-        }
+  "name": "BLOCK-T564",
+  "id": "6629455b-13de-4540-b77b-a839264bc090",
+  "program": "BLOCK-T564",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/setup_whitelight_flats.py",
+      "standard": false,
+      "parameters": {
+        "sequence_name": "$sequence_name"
+      }
     },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 1.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.9
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.8
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.7
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.6
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.5
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.4
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.3
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.2
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.1
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "setRange",
-                "parameters": {
-                    "setRange": 0.00000002
-                }
-            }
-        },
-        {
-        "name": "run_command.py",
-        "standard": true,
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
         "parameters": {
-            "component": "Electrometer:103",
-            "cmd": "startScanDt",
-            "parameters": {
-                "scanDuration": 5.0
-            }
+          "dacValue": 1.0
         }
+      }
     },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 1.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.9
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.8
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.7
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.6
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.5
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.4
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.3
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.2
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.1
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "setRange",
-                "parameters": {
-                    "setRange": 0.00000002
-                }
-            }
-        },
-        {
-        "name": "run_command.py",
-        "standard": true,
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
         "parameters": {
-            "component": "Electrometer:103",
-            "cmd": "startScanDt",
-            "parameters": {
-                "scanDuration": 5.0
-            }
+          "scanDuration": "$elec_exp_time"
         }
+      }
     },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 1.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.9
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.8
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.7
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.6
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.5
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.4
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.3
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.2
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "LEDProjector",
-                "cmd": "adjustAllDACPower",
-                "parameters": {
-                    "dacValue": 0.1
-                }
-            }
-        },
-        {
-            "name": "run_command.py",
-            "standard": true,
-            "parameters": {
-                "component": "Electrometer:103",
-                "cmd": "startScanDt",
-                "parameters": {
-                    "scanDuration": 5.0
-                }
-            }
-
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
         }
-
-    ],
-     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T399 configuration\ndescription: Configuration for BLOCK-T399.\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T399\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102','FiberSpectrograph:101','FiberSpectrograph:102']\n  sequence_names:\n    description: List of sequence names to run for whitelight flats script.\n    type: array\n    default: ['daily']\n"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.9
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.8
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.7
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.6
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.5
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.4
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.3
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.2
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.18
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.15
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.14
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.13
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.12
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.11
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.1
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.08
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.06
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.04
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "LEDProjector",
+        "cmd": "adjustAllDACPower",
+        "parameters": {
+          "dacValue": 0.02
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "Electrometer:103",
+        "cmd": "startScanDt",
+        "parameters": {
+          "scanDuration": "$elec_exp_time"
+        }
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T564 configuration\ndescription: Configuration for BLOCK-T564.\ntype: object\nproperties:\n  elec_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 1\n  sequence_name:\n    description: defines which LED source test to run\n    type: string\n    default: \"whitelight_i_39_M730L5_source\"\n"
 }
-
