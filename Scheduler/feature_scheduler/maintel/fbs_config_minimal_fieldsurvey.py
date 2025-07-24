@@ -80,10 +80,10 @@ def get_scheduler():
         ),
         basis_functions.AltAzShadowTimeLimitedBasisFunction(
             nside=nside,
-            min_alt=30.0,
+            min_alt=20.0,
             max_alt=83.0,
-            min_az=180.0,
-            max_az=270.0,
+            min_az=120.0,
+            max_az=290.0,
             shadow_minutes=10.0,
             pad=0.0,
             time_to_sun=3.0,
