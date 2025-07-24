@@ -11,7 +11,7 @@ ess_timeout: 600
 glycol_setpoint_delta: -2
 heater_setpoint_delta: -1
 top_end_setpoint_delta: -1
-setpoint_deadband_heating: 1
-setpoint_deadband_cooling: 0.5
-maximum_heating_rate: 0.5
+setpoint_deadband_heating: 0.10
+setpoint_deadband_cooling: 0.10
+maximum_heating_rate: 1.0
 setpoint_lower_limit: 6
