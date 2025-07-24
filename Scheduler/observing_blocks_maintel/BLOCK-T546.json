@@ -29,9 +29,7 @@
             "name": "maintel/make_lsstcam_calibrations.py",
             "standard": false,
             "parameters": {
-                "script_mode": "BIAS_DARK",
-                "n_bias": 1,
-                "n_discard_bias": 1,
+                "script_mode": "DARK",
                 "n_dark": 25,
                 "n_discard_dark": 0,
                 "exp_times_dark": 30,
@@ -45,8 +43,8 @@
         {
             "name": "maintel/setup_whitelight_flats.py",
             "standard": false,
+            "sequence_name": "whitelight_i_source",
             "parameters":{
-                "sequence_name": "whitelight_i_source",
                 "ignore": "$ignore"
             }
         },
@@ -151,9 +149,7 @@
             "name": "maintel/make_lsstcam_calibrations.py",
             "standard": false,
             "parameters": {
-                "script_mode": "BIAS_DARK",
-                "n_bias": 1,
-                "n_discard_bias": 1,
+                "script_mode": "DARK",
                 "n_dark": 5,
                 "n_discard_dark": 0,
                 "exp_times_dark": 30,
@@ -190,6 +186,6 @@
         }
 
     ],
-     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T546 configuration\ndescription: Configuration for BLOCK-T546.\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T546\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['Electrometer:103','LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102','FiberSpectrograph:101','FiberSpectrograph:102']\n "
+     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T546 configuration\ndescription: Configuration for BLOCK-T546\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T546\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['Electrometer:103','LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102','FiberSpectrograph:101','FiberSpectrograph:102']\n "
 }
 
