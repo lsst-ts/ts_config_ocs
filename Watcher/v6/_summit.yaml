@@ -282,6 +282,11 @@ rules:
 - classname: MTAirCompressorsState
   configs:
   - {}
+- classname: MTAirCompressorsPressure
+  configs:
+  - one_severity: CRITICAL
+    both_severity: CRITICAL
+    minimal_pressure: 6400
 - classname: ATCameraDewar
   configs:
   - min_warning_ccd_temp: -105
