@@ -58,8 +58,8 @@ instances:
     mode: 1
     range: 2.0e-08
     tcpip:
-      hostname: 'flatfield-stages.cp.lsst.org'
-      port: 4002
+      hostname: 'flatfield-calElectrometer.cp.lsst.org'
+      port: 5024
       timeout: 2
     s3_instance: "cp"
     fits_file_path: '/home/saluser/develop/electrometerFitsFiles'
@@ -77,8 +77,8 @@ instances:
       temperature: false
     location: "Calibration Screen"
     integration_time: 0.1
-    electrometer_type: "Keithley"
-    electrometer_model: "6517b"
+    electrometer_type: "Keysight"
+    electrometer_model: "B2985B"
     electrometer_config: {}
   - sal_index: 201
     mode: 1
