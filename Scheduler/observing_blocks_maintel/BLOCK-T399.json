@@ -4,6 +4,21 @@
     "constraints": [],
     "scripts": [
         {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [["LEDProjector", "ENABLED"],
+                        ["OCPS:1", "ENABLED"],
+                        ["OCPS:2", "ENABLED"],
+                        ["OCPS:3", "ENABLED"],
+                        ["Electrometer:103", "ENABLED"],
+                        ["LinearStage:101", "ENABLED"],
+                        ["LinearStage:102", "ENABLED"],
+                        ["LinearStage:103", "ENABLED"],
+                        ["MTReflector", "ENABLED"]]
+            }
+        },
+        {
             "name": "run_command.py",
             "standard": true,
             "parameters": {
@@ -66,6 +81,21 @@
             "parameters": {
                 "component": "MTReflector",
                 "cmd": "close"
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters": {
+                "data": [["LEDProjector", "STANDBY"],
+                        ["OCPS:1", "STANDBY"],
+                        ["OCPS:2", "STANDBY"],
+                        ["OCPS:3", "STANDBY"],
+                        ["Electrometer:103", "STANDBY"],
+                        ["LinearStage:101", "STANDBY"],
+                        ["LinearStage:102", "STANDBY"],
+                        ["LinearStage:103", "STANDBY"],
+                        ["MTReflector", "STANDBY"]]
             }
         }
 
