@@ -1,0 +1,19 @@
+{
+    "name": "BLOCK-T600",
+    "program": "BLOCK-T600",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/take_aos_sequence_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "exposure_time": 60.0,
+                "dz": 7500,
+                "n_sequences": 1,
+                "program": "$program",
+                "reason": "SITCOM-2194",
+                "note": "dalmatian_pattern_investigation"
+            }
+        }
+    ]
+}
