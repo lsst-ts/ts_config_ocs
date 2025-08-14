@@ -1,0 +1,171 @@
+{
+    "name": "BLOCK-T523_0",
+    "program": "BLOCK-T523_0",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "TunableLaser",
+                "cmd": "stopPropagateLaser"
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters":{
+                "nimages": 4,
+                "exp_times": 30,
+                "image_type": "FLAT",
+                "reason": "flat_off",
+                "program": "BLOCK-T523_0"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "TunableLaser",
+                "cmd": "startPropagateLaser"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters":{
+                "sequence_names": ["scan_g"],
+                "reason": "mono_g_band",
+                "program": "BLOCK-T523_0"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "TunableLaser",
+                "cmd": "stopPropagateLaser"
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters":{
+                "nimages": 4,
+                "exp_times": 30,
+                "image_type": "FLAT",
+                "reason": "flat_off",
+                "program": "BLOCK-T523_0"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "TunableLaser",
+                "cmd": "startPropagateLaser"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters":{
+                "sequence_names": ["scan_r"],
+                "reason": "mono_r_band",
+                "program": "BLOCK-T523_0"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "TunableLaser",
+                "cmd": "stopPropagateLaser"
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters":{
+                "nimages": 4,
+                "exp_times": 30,
+                "image_type": "FLAT",
+                "reason": "flat_off",
+                "program": "BLOCK-T523_0"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "TunableLaser",
+                "cmd": "startPropagateLaser"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters":{
+                "sequence_names": ["scan_i"],
+                "reason": "mono_i_band",
+                "program": "BLOCK-T523_0"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "TunableLaser",
+                "cmd": "stopPropagateLaser"
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters":{
+                "nimages": 4,
+                "exp_times": 30,
+                "image_type": "FLAT",
+                "reason": "flat_off",
+                "program": "BLOCK-T523_0"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "TunableLaser",
+                "cmd": "startPropagateLaser"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters":{
+                "sequence_names": ["scan_z"],
+                "reason": "mono_z_band",
+                "program": "BLOCK-T523_0"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "TunableLaser",
+                "cmd": "stopPropagateLaser"
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters":{
+                "nimages": 4,
+                "exp_times": 30,
+                "image_type": "FLAT",
+                "reason": "flat_off",
+                "program": "BLOCK-T523_0"
+            }
+        }
+    ]
+}
+
