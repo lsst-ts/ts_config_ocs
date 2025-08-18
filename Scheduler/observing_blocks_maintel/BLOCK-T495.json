@@ -1,0 +1,101 @@
+{
+    "name": "BLOCK-T495",
+    "program": "BLOCK-T495",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/mtrotator/move_rotator.py",
+            "standard": true,
+            "parameters": {
+                "angle": 0.0
+            }
+        },
+        {
+            "name": "maintel/open_mirror_covers.py",
+            "standard": true,
+            "parameters":{}
+        },
+        {
+            "name": "maintel/enable_hexapod_compensation_mode.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "maintel/set_dof.py",
+            "standard": true,
+            "parameters": {
+                "dofs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+                "ignore": ["mtdome","mtdometrajectory"]
+            }
+        },
+        {
+            "name": "maintel/mtdome/slew_dome.py",
+            "standard": true,
+            "parameters": {
+                "az": 328,
+                "ignore": ["mtm1m3","mtm2","mtaos","mthexapod_1","mthexapod_2","mtmount","mtptg","mtrotator"]
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTDome",
+                "cmd": "stop",
+                "parameters":{
+                    "engageBrakes": true,
+                    "subSystemIds": 1
+                }  
+            }
+        },
+        
+        {
+            "name": "maintel/point_azel.py",
+            "standard": true,
+            "parameters": {
+                "az": -126.2,
+                "el": 22.0,
+                "ignore": ["mtdome","mtdometrajectory"]
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters":{
+                "data": [["LaserTracker:1","ENABLED"]]
+            }
+        },
+        {
+            "name": "maintel/laser_tracker/align.py",
+            "standard": true,
+            "parameters": {
+                "target": "CALIBRATION_SCREEN",
+                "tolerance_angular": 0.01,
+                "reason": "Align TMA to Calibration Screen",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "LaserTracker:1",
+                "cmd": "measurePoint",
+                "parameters":{
+                    "collection": "A",
+                    "pointgroup": "M1M3",
+                    "target":"p2"
+                }  
+            }
+        },
+        {
+            "name": "set_summary_state.py",
+            "standard": true,
+            "parameters":{
+                "data": [["LaserTracker:1","STANDBY"]]
+            }
+        }
+    ],
+     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T495 configuration\ndescription: Configuration for BLOCK-T495.\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T495\n"
+}
+

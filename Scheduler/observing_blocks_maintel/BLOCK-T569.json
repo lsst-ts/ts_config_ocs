@@ -1,0 +1,94 @@
+{
+    "name": "BLOCK-T569",
+    "program": "BLOCK-T569",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTReflector",
+                "cmd": "open"
+            }
+        },
+        {
+            "name": "maintel/setup_whitelight_flats.py",
+            "standard": false,
+            "parameters": {
+                "sequence_name": "whitelight_i_source"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["low_level_0.1"],
+                "reason": "low_light_dac_0.1",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["low_level_0.11"],
+                "reason": "low_light_dac_0.11",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["low_level_0.12"],
+                "reason": "low_light_dac_0.12",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["low_level_0.13"],
+                "reason": "low_light_dac_0.13",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["low_level_0.14"],
+                "reason": "low_light_dac_0.14",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters": {
+                "sequence_names": ["low_level_0.15"],
+                "reason": "low_light_dac_0.15",
+                "program": "$program"
+            }
+        },
+        {
+            "name": "maintel/park_calibration_projector.py",
+            "standard": false,
+            "parameters": {
+                "ignore": "$ignore"
+            }
+        },
+        {
+            "name": "run_command.py",
+            "standard": true,
+            "parameters": {
+                "component": "MTReflector",
+                "cmd": "close"
+            }
+        }
+
+    ],
+     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T569 configuration\ndescription: Configuration for BLOCK-T569\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T569\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102','FiberSpectrograph:101','FiberSpectrograph:102']\n "
+}
+
