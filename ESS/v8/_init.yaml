@@ -351,6 +351,8 @@ instances:
     data_clients:
       - client_class: ControllerDataClient
         config:
+          # Minimize the rate limit because of AuxTel-ESS04.
+          rate_limit: 0
           host: auxtel-ess01.cp.lsst.org
           devices:
           # AuxTel temperature sensor readout box
