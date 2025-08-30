@@ -36,6 +36,8 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
     u_exptime = 38
     u_nexp = 1
 
+    footprint_weight = 10.0  # standard is 1.5 for blob surveys
+
     # survey_start is used to "start the clock" for several basis functions
     survey_start_mjd = Time("2025-06-20T12:00:00", format="isot", scale="utc").mjd
     # survey_length controls distribution of DDF sequences
@@ -59,8 +61,8 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
 
     # DDF dither dithers
     camera_ddf_rot_limit = 75  # Rotator limit for DDF (degrees)
-    camera_ddf_rot_per_visit = 1.0  # small rotation per visit (degrees)
-    max_dither = 0.2  # Max radial dither for DDF (degrees)
+    camera_ddf_rot_per_visit = 2.0  # small rotation per visit (degrees)
+    max_dither = 0.5  # Max radial dither for DDF (degrees)
     per_night = False  # Dither DDF per night (True) or per visit (False)
     # Get path for ddf sequence configuration file
     config_dir = Path(__file__).parent
@@ -95,6 +97,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
         u_nexp=u_nexp,
         night_pattern=gaps_night_pattern,
         blob_survey_params=blob_survey_params,
+        footprint_weight=footprint_weight,
     )
 
     # Set up the DDF surveys to dither
@@ -153,6 +156,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
         u_nexp=u_nexp,
         survey_start=survey_start_mjd,
         blob_survey_params=blob_survey_params,
+        footprint_weight=footprint_weight,
     )
 
     twi_blobs = svs.generate_twi_blobs(
@@ -164,6 +168,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
         nexp=nexp,
         night_pattern=[True, True],
         blob_survey_params=blob_survey_params,
+        footprint_weight=footprint_weight,
     )
 
     templ_surveys = svs.gen_template_surveys(
@@ -180,6 +185,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
         HA_max=24 - template_ha_range,
         science_program=science_program,
         blob_survey_params=blob_survey_params,
+        footprint_weight=footprint_weight,
     )
 
     lvk_templates = svs.gen_lvk_templates(
@@ -206,7 +212,12 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
             else:
                 survey.detailers.append(detailers.LabelRegionsAndDDFs())
 
-    scheduler = CoreScheduler(surveys, nside=nside, band_to_filter=band_to_filter)
+    scheduler = CoreScheduler(
+        surveys,
+        nside=nside,
+        band_to_filter=band_to_filter,
+        survey_start_mjd=survey_start_mjd,
+    )
 
     return (nside, scheduler)
 
