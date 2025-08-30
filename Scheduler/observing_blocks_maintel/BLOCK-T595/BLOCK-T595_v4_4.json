@@ -1,0 +1,174 @@
+{
+  "name": "BLOCK-T595",
+  "id": "4d8538b1-d5c0-4b21-9be3-c67e739f30ad",
+  "program": "BLOCK-T595_v4_4",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 245.76000000000002,
+        "el": 62.0,
+        "slew_timeout": 600.0
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -6.3500000000000005,
+          "elevation": -46.6
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_radial_scan",
+        "note": "TMA Az 245.76, TMA El 62.00, CBP Az -6.35, CBP El -46.60",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -65.86000000000001,
+        "el": 66.0,
+        "slew_timeout": 600.0
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": 4.8,
+          "elevation": -45.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_radial_scan",
+        "note": "TMA Az -65.86, TMA El 66.00, CBP Az 4.80, CBP El -45.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -65.83999999999997,
+        "el": 65.75,
+        "slew_timeout": 600.0
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": 4.8500000000000005,
+          "elevation": -45.449999999999996
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_radial_scan",
+        "note": "TMA Az -65.84, TMA El 65.75, CBP Az 4.85, CBP El -45.45",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -65.82,
+        "el": 65.5,
+        "slew_timeout": 600.0
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": 4.9,
+          "elevation": -45.5
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_radial_scan",
+        "note": "TMA Az -65.82, TMA El 65.50, CBP Az 4.90, CBP El -45.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -65.80000000000001,
+        "el": 65.25,
+        "slew_timeout": 600.0
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": 4.95,
+          "elevation": -45.55
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_radial_scan",
+        "note": "TMA Az -65.80, TMA El 65.25, CBP Az 4.95, CBP El -45.55",
+        "slew_time": 2
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T595 configuration\ndescription: Configuration for BLOCK-T595.\ntype: object\nproperties:\n  program:\n    description: Block number\n    type: string\n    default: \"BLOCK-T595\"\n  run_filter:\n    description: LSSTCam filter to use.\n    type: string\n    default: \"NONE\"\n  run_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 60\n"
+}
