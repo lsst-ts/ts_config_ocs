@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T581",
-  "id": "dee92278-60e1-4da5-8632-8303b8fae306",
+  "id": "3d61f181-dcb7-431e-bbd1-fe146fc7beb9",
   "program": "BLOCK-T581",
   "constraints": [],
   "scripts": [
@@ -39,6 +39,195 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 46.00, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.8,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.6,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.4,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.2,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.0,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.8,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.6,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.4,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 46.0,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -1.05, CBP El -46.50",
         "slew_time": 2
       }
@@ -60,7 +249,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -81,7 +270,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -102,7 +291,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -123,7 +312,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -144,7 +333,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -165,7 +354,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -186,7 +375,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -207,7 +396,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -246,6 +435,195 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 46.00, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.8,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.6,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.4,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.2,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.0,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.8,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.6,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.4,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 46.0,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -1.05, CBP El -46.50",
         "slew_time": 2
       }
@@ -267,7 +645,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -288,7 +666,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -309,7 +687,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -330,7 +708,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -351,7 +729,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -372,7 +750,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -393,7 +771,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -414,7 +792,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -453,6 +831,195 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 46.00, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.8,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.6,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.4,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.2,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.0,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.8,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.6,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.4,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 46.0,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -1.05, CBP El -46.50",
         "slew_time": 2
       }
@@ -474,7 +1041,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -495,7 +1062,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -516,7 +1083,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -537,7 +1104,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -558,7 +1125,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -579,7 +1146,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -600,7 +1167,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -621,7 +1188,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -660,7 +1227,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 46.00, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 46.00, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -681,7 +1248,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -702,7 +1269,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -723,7 +1290,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -744,7 +1311,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -765,7 +1332,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -786,7 +1353,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -807,7 +1374,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -828,26 +1395,8 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
-      }
-    },
-    {
-      "name": "maintel/change_filter_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "filter": "z_20"
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "TunableLaser",
-        "cmd": "changeWavelength",
-        "parameters": {
-          "wavelength": 870
-        }
       }
     },
     {
@@ -888,7 +1437,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -909,7 +1458,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -930,7 +1479,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -951,7 +1500,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -972,7 +1521,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -993,7 +1542,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -1014,7 +1563,7 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     },
@@ -1035,10 +1584,406 @@
         "exp_times": "$run_exp_time",
         "program": "$program",
         "reason": "CBP_reflectance_test",
-        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -1.05, CBP El -46.50",
+        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/change_filter_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "filter": "z_20"
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "TunableLaser",
+        "cmd": "changeWavelength",
+        "parameters": {
+          "wavelength": 870
+        }
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 46.0,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 46.00, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.8,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.6,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.4,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.2,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.0,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.8,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.6,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.4,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 46.0,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 46.00, CBP Az -1.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.8,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.6,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.4,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.2,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 45.0,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.8,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.6,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -91.0,
+        "el": 44.4,
+        "slew_timeout": 300
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_reflectance_test",
+        "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T581 configuration\ndescription: Configuration for BLOCK-T581.\ntype: object\nproperties:\n  program:\n    description: Block number\n    type: string\n    default: \"BLOCK-T581\"\n  run_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 30\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T581 configuration\ndescription: Configuration for BLOCK-T581.\ntype: object\nproperties:\n  program:\n    description: Block number\n    type: string\n    default: \"BLOCK-T581\"\n  run_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 10\n"
 }
