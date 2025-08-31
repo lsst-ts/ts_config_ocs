@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T581",
-  "id": "f1217c88-b1ef-44b8-88d4-037391a4a33a",
+  "id": "6e660649-05cc-4e17-ad24-90482c8d5c63",
   "program": "BLOCK-T581",
   "constraints": [],
   "scripts": [
@@ -1985,5 +1985,5 @@
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T581 configuration\ndescription: Configuration for BLOCK-T581.\ntype: object\nproperties:\n  program:\n    description: Block number\n    type: string\n    default: \"BLOCK-T581\"\n  run_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 10\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T581 configuration\ndescription: Configuration for BLOCK-T581.\ntype: object\nproperties:\n  program:\n    description: Block number\n    type: string\n    default: \"BLOCK-T581\"\n  i_exp_time:\n    description: Exposure time to use for i band.\n    type: number\n    default: 30\n  r_exp_time:\n    description: Exposure time to use for r band.\n    type: number\n    default: 15\n  z_exp_time:\n    description: Exposure time to use for z band.\n    type: number\n    default: 15\n  g_none_exp_time:\n    description: Exposure time to use for g and none band.\n    type: number\n    default: 1\n"
 }
