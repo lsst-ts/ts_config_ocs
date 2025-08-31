@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T581",
-  "id": "c551abdc-9faa-408c-9d13-a0713cc3fc0b",
+  "id": "f1217c88-b1ef-44b8-88d4-037391a4a33a",
   "program": "BLOCK-T581",
   "constraints": [],
   "scripts": [
@@ -18,7 +18,7 @@
         "component": "TunableLaser",
         "cmd": "changeWavelength",
         "parameters": {
-          "wavelength": 459
+          "wavelength": 519
         }
       }
     },
@@ -36,7 +36,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -0.05, CBP El -46.50",
@@ -57,7 +57,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
@@ -78,7 +78,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
@@ -99,7 +99,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
@@ -120,7 +120,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
@@ -141,7 +141,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
@@ -162,7 +162,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
@@ -183,7 +183,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
@@ -204,7 +204,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
@@ -225,7 +225,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -1.05, CBP El -46.50",
@@ -246,7 +246,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
@@ -267,7 +267,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
@@ -288,7 +288,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
@@ -309,7 +309,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
@@ -330,7 +330,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
@@ -351,7 +351,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
@@ -372,7 +372,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
@@ -393,7 +393,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
@@ -414,7 +414,7 @@
         "component": "TunableLaser",
         "cmd": "changeWavelength",
         "parameters": {
-          "wavelength": 460
+          "wavelength": 520
         }
       }
     },
@@ -432,7 +432,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -0.05, CBP El -46.50",
@@ -453,7 +453,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
@@ -474,7 +474,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
@@ -495,7 +495,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
@@ -516,7 +516,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
@@ -537,7 +537,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
@@ -558,7 +558,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
@@ -579,7 +579,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
@@ -600,7 +600,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
@@ -621,7 +621,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -1.05, CBP El -46.50",
@@ -642,7 +642,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
@@ -663,7 +663,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
@@ -684,7 +684,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
@@ -705,7 +705,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
@@ -726,7 +726,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
@@ -747,7 +747,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
@@ -768,7 +768,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
@@ -789,7 +789,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 10,
+        "exp_times": "$g_none_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
@@ -828,7 +828,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -0.05, CBP El -46.50",
@@ -849,7 +849,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
@@ -870,7 +870,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
@@ -891,7 +891,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
@@ -912,7 +912,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
@@ -933,7 +933,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
@@ -954,7 +954,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
@@ -975,7 +975,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
@@ -996,7 +996,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
@@ -1017,7 +1017,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -1.05, CBP El -46.50",
@@ -1038,7 +1038,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
@@ -1059,7 +1059,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
@@ -1080,7 +1080,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
@@ -1101,7 +1101,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
@@ -1122,7 +1122,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
@@ -1143,7 +1143,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
@@ -1164,7 +1164,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
@@ -1185,7 +1185,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$r_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
@@ -1224,7 +1224,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -0.05, CBP El -46.50",
@@ -1245,7 +1245,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
@@ -1266,7 +1266,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
@@ -1287,7 +1287,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
@@ -1308,7 +1308,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
@@ -1329,7 +1329,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
@@ -1350,7 +1350,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
@@ -1371,7 +1371,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
@@ -1392,7 +1392,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
@@ -1413,7 +1413,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -1.05, CBP El -46.50",
@@ -1434,7 +1434,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
@@ -1455,7 +1455,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
@@ -1476,7 +1476,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
@@ -1497,7 +1497,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
@@ -1518,7 +1518,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
@@ -1539,7 +1539,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
@@ -1560,7 +1560,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
@@ -1581,7 +1581,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 30,
+        "exp_times": "$i_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
@@ -1620,7 +1620,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -0.05, CBP El -46.50",
@@ -1641,7 +1641,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
@@ -1662,7 +1662,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
@@ -1683,7 +1683,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
@@ -1704,7 +1704,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
@@ -1725,7 +1725,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
@@ -1746,7 +1746,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
@@ -1767,7 +1767,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
@@ -1788,7 +1788,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
@@ -1809,7 +1809,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 46.00, CBP Az -1.05, CBP El -46.50",
@@ -1830,7 +1830,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.80, CBP Az -0.05, CBP El -46.50",
@@ -1851,7 +1851,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.60, CBP Az -0.05, CBP El -46.50",
@@ -1872,7 +1872,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.40, CBP Az -0.05, CBP El -46.50",
@@ -1893,7 +1893,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.20, CBP Az -0.05, CBP El -46.50",
@@ -1914,7 +1914,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 45.00, CBP Az -0.05, CBP El -46.50",
@@ -1935,7 +1935,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.80, CBP Az -0.05, CBP El -46.50",
@@ -1956,7 +1956,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -0.05, CBP El -46.50",
@@ -1977,7 +1977,7 @@
       "standard": true,
       "parameters": {
         "image_type": "FLAT",
-        "exp_times": 15,
+        "exp_times": "$z_exp_time$",
         "program": "$program",
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
