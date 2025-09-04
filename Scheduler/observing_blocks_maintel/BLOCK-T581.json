@@ -1,6 +1,6 @@
 {
   "name": "BLOCK-T581",
-  "id": "d5ac541c-6210-4b08-84de-6fd0ec251692",
+  "id": "453d53cf-3661-43ee-93ec-40a2b0a36a93",
   "program": "BLOCK-T581",
   "constraints": [],
   "scripts": [
@@ -19,6 +19,18 @@
         "cmd": "changeWavelength",
         "parameters": {
           "wavelength": 519
+        }
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -0.05,
+          "elevation": -46.5
         }
       }
     },
@@ -191,18 +203,6 @@
       }
     },
     {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "move",
-        "parameters": {
-          "azimuth": -0.05,
-          "elevation": -46.5
-        }
-      }
-    },
-    {
       "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
@@ -221,6 +221,18 @@
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -1.05,
+          "elevation": -46.5
+        }
       }
     },
     {
@@ -389,18 +401,6 @@
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -1.05, CBP El -46.50",
         "slew_time": 2
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "move",
-        "parameters": {
-          "azimuth": -1.05,
-          "elevation": -46.5
-        }
       }
     },
     {
@@ -443,6 +443,18 @@
       }
     },
     {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -0.05,
+          "elevation": -46.5
+        }
+      }
+    },
+    {
       "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
@@ -611,18 +623,6 @@
       }
     },
     {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "move",
-        "parameters": {
-          "azimuth": -0.05,
-          "elevation": -46.5
-        }
-      }
-    },
-    {
       "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
@@ -641,6 +641,18 @@
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -1.05,
+          "elevation": -46.5
+        }
       }
     },
     {
@@ -809,18 +821,6 @@
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -1.05, CBP El -46.50",
         "slew_time": 2
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "move",
-        "parameters": {
-          "azimuth": -1.05,
-          "elevation": -46.5
-        }
       }
     },
     {
@@ -863,6 +863,18 @@
       }
     },
     {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -0.05,
+          "elevation": -46.5
+        }
+      }
+    },
+    {
       "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
@@ -1031,18 +1043,6 @@
       }
     },
     {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "move",
-        "parameters": {
-          "azimuth": -0.05,
-          "elevation": -46.5
-        }
-      }
-    },
-    {
       "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
@@ -1061,6 +1061,18 @@
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -1.05,
+          "elevation": -46.5
+        }
       }
     },
     {
@@ -1229,18 +1241,6 @@
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -1.05, CBP El -46.50",
         "slew_time": 2
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "move",
-        "parameters": {
-          "azimuth": -1.05,
-          "elevation": -46.5
-        }
       }
     },
     {
@@ -1283,6 +1283,18 @@
       }
     },
     {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -0.05,
+          "elevation": -46.5
+        }
+      }
+    },
+    {
       "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
@@ -1451,18 +1463,6 @@
       }
     },
     {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "move",
-        "parameters": {
-          "azimuth": -0.05,
-          "elevation": -46.5
-        }
-      }
-    },
-    {
       "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
@@ -1481,6 +1481,18 @@
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -1.05,
+          "elevation": -46.5
+        }
       }
     },
     {
@@ -1649,18 +1661,6 @@
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -1.05, CBP El -46.50",
         "slew_time": 2
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "move",
-        "parameters": {
-          "azimuth": -1.05,
-          "elevation": -46.5
-        }
       }
     },
     {
@@ -1703,6 +1703,18 @@
       }
     },
     {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -0.05,
+          "elevation": -46.5
+        }
+      }
+    },
+    {
       "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
@@ -1871,18 +1883,6 @@
       }
     },
     {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "move",
-        "parameters": {
-          "azimuth": -0.05,
-          "elevation": -46.5
-        }
-      }
-    },
-    {
       "name": "maintel/point_azel.py",
       "standard": true,
       "parameters": {
@@ -1901,6 +1901,18 @@
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.40, CBP Az -0.05, CBP El -46.50",
         "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -1.05,
+          "elevation": -46.5
+        }
       }
     },
     {
@@ -2069,18 +2081,6 @@
         "reason": "CBP_reflectance_test",
         "note": "TMA Az -91.00, TMA El 44.60, CBP Az -1.05, CBP El -46.50",
         "slew_time": 2
-      }
-    },
-    {
-      "name": "run_command.py",
-      "standard": true,
-      "parameters": {
-        "component": "CBP",
-        "cmd": "move",
-        "parameters": {
-          "azimuth": -1.05,
-          "elevation": -46.5
-        }
       }
     },
     {
