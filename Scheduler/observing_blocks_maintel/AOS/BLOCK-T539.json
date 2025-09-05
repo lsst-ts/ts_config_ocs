@@ -13,6 +13,9 @@
         "note": "closed_loop_22dof_trunc11",
         "exposure_time": 30.0,
         "max_iter": "$maxiter",
+        "az": "$azimuth",
+        "el": "$elevation",
+        "rot": "$rotation_angle",
         "used_dofs": [
           0,
           1,
@@ -47,5 +50,5 @@
       }
     }
   ],
-  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T539 configuration\ndescription: Configuration for BLOCK-T539.\ntype: object\nproperties:\n  maxiter:\n    description: Number of iterations for the closed-loop.\n    type: integer\n    default: 5\n"
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T539 configuration\ndescription: Configuration for BLOCK-T539.\ntype: object\nproperties:\n  rotation_angle:\n    description: Rotation angle.\n    type: number\n    default: 70\n  elevation:\n    description: Elevation angle.\n    type: number\n    default: 70\n  azimuth:\n    description: Azimuth angle.\n    type: number\n    default: 70\n  maxiter:\n    description: Number of iterations for the closed-loop.\n    type: integer\n    default: 5\n"
 }
