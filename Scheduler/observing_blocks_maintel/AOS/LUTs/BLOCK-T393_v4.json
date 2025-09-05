@@ -17,6 +17,16 @@
       }
     },
     {
+      "name": "maintel/take_aos_sequence_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "program": "$program",
+        "reason": "SITCOM-1491",
+        "note": "LUT_elevation",
+        "exposure_time": "$exptime"
+      }
+    },
+    {
       "name": "maintel/track_target.py",
       "standard": true,
       "parameters": {
