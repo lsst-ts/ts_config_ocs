@@ -10,37 +10,7 @@
       "parameters": {
         "program": "$program",
         "reason": "initial_alignment",
-        "note": "closed_loop_hexapods",
-        "exposure_time": 30.0,
-        "max_iter": "$maxiter",
-        "used_dofs": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9
-        ],
-        "truncation_index": 5,
-        "gain_sequence": [
-          0.75,
-          0.5,
-          0.5,
-          0.25
-        ]
-      }
-    },
-    {
-      "name": "maintel/close_loop_lsstcam.py",
-      "standard": true,
-      "parameters": {
-        "program": "$program",
-        "reason": "initial_alignment",
-        "note": "closed_loop_hexapod_bendingmodes",
+        "note": "closed_loop_22dof_trunc11",
         "exposure_time": 30.0,
         "max_iter": "$maxiter",
         "used_dofs": [
@@ -67,7 +37,13 @@
           33,
           34
         ],
-        "truncation_index": 12
+        "truncation_index": 11,
+        "gain_sequence": [
+          0.75,
+          0.75,
+          0.75,
+          0.5
+        ]
       }
     }
   ],
