@@ -99,7 +99,9 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
 
     # Set up the DDF surveys to dither
     single_ddf_dither = detailers.DitherDetailer(
-        per_night=per_night, max_dither=max_dither
+        per_night=per_night,
+        max_dither=max_dither,
+        nnights=100,
     )
     # per_night true requires an update of FBS for Euclid
     # dither_detailer = detailers.SplitDetailer(
