@@ -117,6 +117,8 @@ def get_scheduler():
         "nexps": nexps,
     }
 
+    nnights = 200
+
     # Carina
     # Custom landscape dither
     radius = np.sqrt(2.4)
@@ -125,7 +127,7 @@ def get_scheduler():
     delta_ra = linear * np.cos(orientation)
     delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.7, per_night=False, nnights=10),
+        detailers.DitherDetailer(max_dither=0.7, per_night=False, nnights=nnights),
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
@@ -157,7 +159,7 @@ def get_scheduler():
     delta_ra = linear * np.cos(orientation)
     delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.7, per_night=False, nnights=10),
+        detailers.DitherDetailer(max_dither=0.7, per_night=False, nnights=nnights),
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
@@ -189,7 +191,7 @@ def get_scheduler():
     delta_ra = linear * np.cos(orientation)
     delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.4, per_night=False, nnights=10),
+        detailers.DitherDetailer(max_dither=0.4, per_night=False, nnights=nnights),
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
@@ -221,7 +223,7 @@ def get_scheduler():
     delta_ra = linear * np.cos(orientation)
     delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.7, per_night=False, nnights=10),
+        detailers.DitherDetailer(max_dither=0.7, per_night=False, nnights=nnights),
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
@@ -253,7 +255,7 @@ def get_scheduler():
     delta_ra = linear * np.cos(orientation)
     delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.7, per_night=False, nnights=10),
+        detailers.DitherDetailer(max_dither=0.7, per_night=False, nnights=nnights),
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 5 centers * 4.5 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
@@ -297,7 +299,7 @@ def get_scheduler():
     delta_ra = linear * np.cos(orientation)
     delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=0.7, per_night=False, nnights=10),
+        detailers.DitherDetailer(max_dither=0.7, per_night=False, nnights=nnights),
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 3 centers * 1 deg per visit * 4 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
@@ -356,7 +358,7 @@ def get_scheduler():
         # Default for LSST DDFs
         # detailers.DitherDetailer(max_dither=0.2, per_night=False),
         # Experimental larger dither pattern
-        detailers.DitherDetailer(max_dither=1.4, per_night=False, nnights=10),
+        detailers.DitherDetailer(max_dither=1.4, per_night=False, nnights=nnights),
         # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
             max_rot=45.0,
@@ -400,7 +402,7 @@ def get_scheduler():
     delta_ra = linear * np.cos(orientation)
     delta_dec = linear * np.sin(orientation)
     config_detailers = [
-        detailers.DitherDetailer(max_dither=1.4, per_night=False, nnights=10),
+        detailers.DitherDetailer(max_dither=1.4, per_night=False, nnights=nnights),
         detailers.DeltaCoordDitherDetailer(delta_ra=delta_ra, delta_dec=delta_dec),
         # Note: 7 centers * 1 deg per visit * 5 visits = 35 deg
         detailers.CameraSmallRotPerObservationListDetailer(
@@ -433,7 +435,7 @@ def get_scheduler():
     # Default for other fields
     # 2x raft scale dithers
     config_detailers = [
-        detailers.DitherDetailer(max_dither=1.4, per_night=False, nnights=10),
+        detailers.DitherDetailer(max_dither=1.4, per_night=False, nnights=nnights),
         # Note: 1 center * 3 deg per visit * 30 visits = 90 deg
         detailers.CameraSmallRotPerObservationListDetailer(
             max_rot=45.0,
