@@ -117,7 +117,7 @@ def get_scheduler():
         "nexps": nexps,
     }
 
-    nnights = 200
+    nnights = 500
 
     # Carina
     # Custom landscape dither
