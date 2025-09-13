@@ -1,0 +1,153 @@
+{
+  "name": "BLOCK-T617",
+  "id": "c6edc530-8552-4c2b-bb18-3808850a915a",
+  "program": "BLOCK-T617",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$az1",
+        "el": "$el",
+        "slew_timeout": 2700,
+        "ignore": "$ignore",
+        "reason": "BLOCK-T617",
+        "program": "BLOCK-T617"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": "$sleep_time"
+      }
+    },
+    {
+      "name": "maintel/m1m3/enable_m1m3_slew_controller_flags.py",
+      "standard": true,
+      "parameters": {
+        "slew_flags": [
+          "ACCELERATIONFORCES",
+          "BALANCEFORCES",
+          "VELOCITYFORCES",
+          "BOOSTERVALVES"
+        ],
+        "enable": [
+          "$acceleration_forces",
+          "$balance_forces",
+          "$velocity_forces",
+          "$booster_valves"
+        ]
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$az2",
+        "el": "$el",
+        "slew_timeout": 2700,
+        "ignore": "$ignore",
+        "reason": "BLOCK-T617",
+        "program": "BLOCK-T617"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": "$sleep_time"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$az1",
+        "el": "$el",
+        "slew_timeout": 2700,
+        "ignore": "$ignore",
+        "reason": "BLOCK-T617",
+        "program": "BLOCK-T617"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": "$sleep_time"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$az2",
+        "el": "$el",
+        "slew_timeout": 2700,
+        "ignore": "$ignore",
+        "reason": "BLOCK-T617",
+        "program": "BLOCK-T617"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": "$sleep_time"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$az1",
+        "el": "$el",
+        "slew_timeout": 2700,
+        "ignore": "$ignore",
+        "reason": "BLOCK-T617",
+        "program": "BLOCK-T617"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": "$sleep_time"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$az2",
+        "el": "$el",
+        "slew_timeout": 2700,
+        "ignore": "$ignore",
+        "reason": "BLOCK-T617",
+        "program": "BLOCK-T617"
+      }
+    },
+    {
+      "name": "sleep.py",
+      "standard": true,
+      "parameters": {
+        "sleep_for": "$sleep_time"
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": "$az1",
+        "el": "$el",
+        "slew_timeout": 2700,
+        "ignore": "$ignore",
+        "reason": "BLOCK-T617",
+        "program": "BLOCK-T617"
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T617 configuration\ndescription: Configuration for BLOCK-T617.\ntype: object\nproperties:\n  sleep_time:\n    description: Sleep time between slews\n    type: number\n    default: 20\n  az1:\n    description: Initial azimuth angle\n    type: number\n    default: 0\n  az2:\n    description: Second azimuth angle. Ideally +/-30 deg from the `az1`\n    type: number\n    default: 30\n  el:\n    description: Initial elevation angle.\n    type: number\n    default: 85\n  booster_valves:\n    description: Slew flag associated with the Booster Valves\n    type: boolean\n    default: True\n  balance_forces:\n    description: Slew flag associated with the Balance Forces\n    type: boolean\n    default: True\n  acceleration_forces:\n    description: Slew flag associated with the Acceleration Forces\n    type: boolean\n    default: True\n  velocity_forces:\n    description: Slew flag associated with the Velocity Forces\n    type: boolean\n    default: True\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['mtaos', 'mtdome', 'mtdometrajectory']\n"
+}
