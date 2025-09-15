@@ -2,8 +2,10 @@ from pathlib import Path
 
 import lsst.ts.fbs.utils.maintel.sv_config as svc
 import lsst.ts.fbs.utils.maintel.sv_surveys as svs
+import numpy as np
 import rubin_scheduler.scheduler.detailers as detailers
 from astropy.time import Time
+from rubin_scheduler.scheduler.basis_functions import AltAzShadowMaskBasisFunction
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
 from rubin_scheduler.scheduler.surveys import LongGapSurvey
 
@@ -86,6 +88,24 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
     # footprints for primary Surveys
     footprints = survey_info["Footprints"]
 
+    # Hack the footprint to only contain area only in i, z and
+    # in the region 300-324, -26 to -10
+    mask = np.where(
+        (survey_info["skymap"]["ra"] > 300)
+        & (survey_info["skymap"]["ra"] < 324)
+        & (survey_info["skymap"]["dec"] > -26)
+        & (survey_info["skymap"]["dec"] < -10),
+        1,
+        0,
+    )
+    for f in survey_info["fp_array"].dtype.names:
+        if f == "i" or f == "z":
+            survey_info["Footprints"].set_footprint(
+                f, survey_info["fp_array"][f] * mask
+            )
+        else:
+            survey_info["Footprints"].set_footprint(f, survey_info["fp_array"][f] * 0)
+
     long_gaps = svs.gen_long_gaps_survey(
         nside=nside,
         footprints=footprints,
@@ -102,7 +122,8 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
 
     # Set up the DDF surveys to dither
     single_ddf_dither = detailers.DitherDetailer(
-        per_night=per_night, max_dither=max_dither
+        per_night=per_night,
+        max_dither=max_dither,
     )
     # per_night true requires an update of FBS for Euclid
     # dither_detailer = detailers.SplitDetailer(
@@ -211,6 +232,40 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
                 survey.scripted_survey.detailers.append(detailers.LabelRegionsAndDDFs())
             else:
                 survey.detailers.append(detailers.LabelRegionsAndDDFs())
+
+    # Add AltAz basis function to mask off all of the sky outside of the
+    # morning azimuth range, for the entire night
+    altaz_mask = AltAzShadowMaskBasisFunction(
+        nside=nside,
+        min_alt=40,
+        max_alt=86.5,
+        shadow_minutes=40,
+    )
+    altaz_mask2 = AltAzShadowMaskBasisFunction(
+        nside=nside,
+        min_alt=40,
+        max_alt=86.5,
+        shadow_minutes=60,
+    )
+    for tier in surveys:
+        for survey in tier:
+            if isinstance(survey, LongGapSurvey):
+                survey.blob_survey.basis_functions.append(altaz_mask)
+                survey.blob_survey.basis_functions.append(altaz_mask2)
+                survey.blob_survey.basis_weights = np.concatenate(
+                    [survey.blob_survey.basis_weights, np.array([0, 0])]
+                )
+                survey.scripted_survey.basis_functions.append(altaz_mask)
+                survey.scripted_survey.basis_functions.append(altaz_mask2)
+                survey.scripted_survey.basis_weights = np.concatenate(
+                    [survey.scripted_survey.basis_weights, np.array([0, 0])]
+                )
+            else:
+                survey.basis_functions.append(altaz_mask)
+                survey.basis_functions.append(altaz_mask2)
+                survey.basis_weights = np.concatenate(
+                    [survey.basis_weights, np.array([0, 0])]
+                )
 
     scheduler = CoreScheduler(
         surveys,
