@@ -2,8 +2,10 @@ from pathlib import Path
 
 import lsst.ts.fbs.utils.maintel.sv_config as svc
 import lsst.ts.fbs.utils.maintel.sv_surveys as svs
+import numpy as np
 import rubin_scheduler.scheduler.detailers as detailers
 from astropy.time import Time
+from rubin_scheduler.scheduler.basis_functions import AltAzShadowMaskBasisFunction
 from rubin_scheduler.scheduler.schedulers import CoreScheduler
 from rubin_scheduler.scheduler.surveys import LongGapSurvey
 
@@ -36,6 +38,8 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
     u_exptime = 38
     u_nexp = 1
 
+    footprint_weight = 10.0  # standard is 1.5 for blob surveys
+
     # survey_start is used to "start the clock" for several basis functions
     survey_start_mjd = Time("2025-06-20T12:00:00", format="isot", scale="utc").mjd
     # survey_length controls distribution of DDF sequences
@@ -59,12 +63,12 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
 
     # DDF dither dithers
     camera_ddf_rot_limit = 75  # Rotator limit for DDF (degrees)
-    camera_ddf_rot_per_visit = 1.0  # small rotation per visit (degrees)
-    max_dither = 0.2  # Max radial dither for DDF (degrees)
+    camera_ddf_rot_per_visit = 2.0  # small rotation per visit (degrees)
+    max_dither = 0.5  # Max radial dither for DDF (degrees)
     per_night = False  # Dither DDF per night (True) or per visit (False)
     # Get path for ddf sequence configuration file
     config_dir = Path(__file__).parent
-    ddf_config_file = Path.joinpath(config_dir, "ddf_sv.dat")
+    ddf_config_file = Path.joinpath(config_dir, "ddf_sv_generator.dat")
     if not Path.exists(ddf_config_file):
         raise ValueError(
             f"Expected target yaml file does not exist at {ddf_config_file}"
@@ -95,6 +99,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
         u_nexp=u_nexp,
         night_pattern=gaps_night_pattern,
         blob_survey_params=blob_survey_params,
+        footprint_weight=footprint_weight,
     )
 
     # Set up the DDF surveys to dither
@@ -155,6 +160,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
         u_nexp=u_nexp,
         survey_start=survey_start_mjd,
         blob_survey_params=blob_survey_params,
+        footprint_weight=footprint_weight,
     )
 
     twi_blobs = svs.generate_twi_blobs(
@@ -166,6 +172,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
         nexp=nexp,
         night_pattern=[True, True],
         blob_survey_params=blob_survey_params,
+        footprint_weight=footprint_weight,
     )
 
     templ_surveys = svs.gen_template_surveys(
@@ -182,6 +189,7 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
         HA_max=24 - template_ha_range,
         science_program=science_program,
         blob_survey_params=blob_survey_params,
+        footprint_weight=footprint_weight,
     )
 
     lvk_templates = svs.gen_lvk_templates(
@@ -208,7 +216,50 @@ def get_scheduler() -> tuple[int, CoreScheduler]:
             else:
                 survey.detailers.append(detailers.LabelRegionsAndDDFs())
 
-    scheduler = CoreScheduler(surveys, nside=nside, band_to_filter=band_to_filter)
+    # Add AltAz basis function to mask off all of the sky outside of the
+    # morning azimuth range, for the entire night
+    altaz_mask = AltAzShadowMaskBasisFunction(
+        nside=nside,
+        min_alt=20,
+        max_alt=86.5,
+        min_az=120,
+        max_az=290,
+        shadow_minutes=40,
+    )
+    altaz_mask2 = AltAzShadowMaskBasisFunction(
+        nside=nside,
+        min_alt=20,
+        max_alt=86.5,
+        min_az=120,
+        max_az=290,
+        shadow_minutes=60,
+    )
+    for tier in surveys:
+        for survey in tier:
+            if isinstance(survey, LongGapSurvey):
+                survey.blob_survey.basis_functions.append(altaz_mask)
+                survey.blob_survey.basis_functions.append(altaz_mask2)
+                survey.blob_survey.basis_weights = np.concatenate(
+                    [survey.blob_survey.basis_weights, np.array([0, 0])]
+                )
+                survey.scripted_survey.basis_functions.append(altaz_mask)
+                survey.scripted_survey.basis_functions.append(altaz_mask2)
+                survey.scripted_survey.basis_weights = np.concatenate(
+                    [survey.scripted_survey.basis_weights, np.array([0, 0])]
+                )
+            else:
+                survey.basis_functions.append(altaz_mask)
+                survey.basis_functions.append(altaz_mask2)
+                survey.basis_weights = np.concatenate(
+                    [survey.basis_weights, np.array([0, 0])]
+                )
+
+    scheduler = CoreScheduler(
+        surveys,
+        nside=nside,
+        band_to_filter=band_to_filter,
+        survey_start_mjd=survey_start_mjd,
+    )
 
     return (nside, scheduler)
 
