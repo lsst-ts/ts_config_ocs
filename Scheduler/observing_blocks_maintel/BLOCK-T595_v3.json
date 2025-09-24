@@ -1,0 +1,1673 @@
+{
+  "name": "BLOCK-T595",
+  "id": "a9595f1f-8e88-482b-9700-85b6f9c05903",
+  "program": "BLOCK-T595_v3",
+  "constraints": [],
+  "scripts": [
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -74.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": 3.25,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -74.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -74.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -74.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -75.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -75.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -75.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -75.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -76.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -76.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -76.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -76.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -77.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -77.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -77.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -77.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -78.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -78.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -78.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -78.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -79.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -79.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -79.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -79.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -80.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -80.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -80.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -80.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -81.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -81.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -81.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -81.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -82.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -82.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -82.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -82.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -83.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -83.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -83.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -83.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -84.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -84.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -84.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -84.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -85.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -85.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -85.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -85.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -86.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -86.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -86.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -86.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -87.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -87.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -87.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -87.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -88.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -88.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -88.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -88.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -89.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -89.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -89.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -89.50, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": -90.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az -90.00, TMA El 66.00, CBP Az 3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 258.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -0.55,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -0.55, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -0.8500000000000001,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -0.85, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -1.1500000000000001,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -1.15, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -1.4500000000000002,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -1.45, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -1.7500000000000002,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -1.75, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -2.05,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -2.05, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -2.35,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -2.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -2.6500000000000004,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -2.65, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -2.95,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -2.95, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -3.25,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -3.25, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -3.3499999999999996,
+          "elevation": -46.4
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 258.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 257.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 257.50, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 257.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 257.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 256.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 256.50, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 256.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 256.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 255.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 255.50, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 255.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 255.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 254.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 254.50, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 254.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 254.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 253.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 253.50, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 253.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 253.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 252.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 252.50, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 252.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 252.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 251.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 251.50, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 251.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 251.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 250.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 250.50, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 250.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 250.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 249.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 249.50, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 249.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 249.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 248.5,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 248.50, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 248.0,
+        "el": 66.0
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 248.00, TMA El 66.00, CBP Az -3.35, CBP El -46.40",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "maintel/point_azel.py",
+      "standard": true,
+      "parameters": {
+        "az": 246.0,
+        "el": 65.0
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -4.05,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -4.05, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -4.35,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -4.35, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -4.6499999999999995,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -4.65, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -4.949999999999999,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -4.95, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -5.249999999999999,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -5.25, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -5.549999999999999,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -5.55, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -5.849999999999999,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -5.85, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -6.149999999999999,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -6.15, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -6.449999999999998,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -6.45, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -6.749999999999998,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -6.75, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -7.049999999999998,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -7.05, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -7.349999999999998,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -7.35, CBP El -46.00",
+        "slew_time": 2
+      }
+    },
+    {
+      "name": "run_command.py",
+      "standard": true,
+      "parameters": {
+        "component": "CBP",
+        "cmd": "move",
+        "parameters": {
+          "azimuth": -7.649999999999998,
+          "elevation": -46.0
+        }
+      }
+    },
+    {
+      "name": "maintel/take_image_lsstcam.py",
+      "standard": true,
+      "parameters": {
+        "image_type": "FLAT",
+        "exp_times": "$run_exp_time",
+        "program": "$program",
+        "reason": "CBP_scratched_tape_polar_scan",
+        "note": "TMA Az 246.00, TMA El 65.00, CBP Az -7.65, CBP El -46.00",
+        "slew_time": 2
+      }
+    }
+  ],
+  "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T595 configuration\ndescription: Configuration for BLOCK-T595.\ntype: object\nproperties:\n  program:\n    description: Block number\n    type: string\n    default: \"BLOCK-T595\"\n  run_filter:\n    description: LSSTCam filter to use.\n    type: string\n    default: \"NONE\"\n  run_exp_time:\n    description: Exposure time to use.\n    type: number\n    default: 60\n"
+}

@@ -11,7 +11,7 @@
         "el": 85,
         "ignore": [
           "mtdome",
-          "mthexapod_2"
+          "mtdometrajectory"
         ]
       }
     },
@@ -19,9 +19,21 @@
       "name": "maintel/laser_tracker/measure.py",
       "standard": true,
       "parameters": {
-        "target": "Camera",
+        "target": "M2",
         "program": "$program",
         "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": 80,
+        "ignore": [
+          "mtdome",
+          "mtdometrajectory"
+        ]
       }
     },
     {
@@ -41,7 +53,7 @@
         "el": 75,
         "ignore": [
           "mtdome",
-          "mthexapod_2"
+          "mtdometrajectory"
         ]
       }
     },
@@ -49,9 +61,21 @@
       "name": "maintel/laser_tracker/measure.py",
       "standard": true,
       "parameters": {
-        "target": "Camera",
+        "target": "M2",
         "program": "$program",
         "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": 70,
+        "ignore": [
+          "mtdome",
+          "mtdometrajectory"
+        ]
       }
     },
     {
@@ -71,7 +95,7 @@
         "el": 65,
         "ignore": [
           "mtdome",
-          "mthexapod_2"
+          "mtdometrajectory"
         ]
       }
     },
@@ -79,9 +103,21 @@
       "name": "maintel/laser_tracker/measure.py",
       "standard": true,
       "parameters": {
-        "target": "Camera",
+        "target": "M2",
         "program": "$program",
         "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": 60,
+        "ignore": [
+          "mtdome",
+          "mtdometrajectory"
+        ]
       }
     },
     {
@@ -101,7 +137,7 @@
         "el": 55,
         "ignore": [
           "mtdome",
-          "mthexapod_2"
+          "mtdometrajectory"
 
         ]
       }
@@ -110,9 +146,21 @@
       "name": "maintel/laser_tracker/measure.py",
       "standard": true,
       "parameters": {
-        "target": "Camera",
+        "target": "M2",
         "program": "$program",
         "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": 50,
+        "ignore": [
+          "mtdome",
+          "mtdometrajectory"
+        ]
       }
     },
     {
@@ -132,8 +180,7 @@
         "el": 45,
         "ignore": [
           "mtdome",
-          "mthexapod_2"
-
+          "mtdometrajectory"
         ]
       }
     },
@@ -141,9 +188,21 @@
       "name": "maintel/laser_tracker/measure.py",
       "standard": true,
       "parameters": {
-        "target": "Camera",
+        "target": "M2",
         "program": "$program",
         "reason": "LUT_elevation_hexapod_lasertracker"
+      }
+    },
+    {
+      "name": "maintel/move_p2p.py",
+      "standard": true,
+      "parameters": {
+        "az": "$azimuth",
+        "el": 40,
+        "ignore": [
+          "mtdome",
+          "mtdometrajectory"
+        ]
       }
     },
     {
@@ -163,107 +222,8 @@
         "el": 35,
         "ignore": [
           "mtdome",
-          "mthexapod_2"
+          "mtdometrajectory"
         ]
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "LUT_elevation_hexapod_lasertracker"
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "M2",
-        "program": "$program",
-        "reason": "LUT_elevation_hexapod_lasertracker"
-      }
-    },
-    {
-      "name": "maintel/move_p2p.py",
-      "standard": true,
-      "parameters": {
-        "az": "$azimuth",
-        "el": 25,
-        "ignore": [
-          "mtdome",
-          "mthexapod_2"
-        ]
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "LUT_elevation_hexapod_lasertracker"
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "M2",
-        "program": "$program",
-        "reason": "LUT_elevation_hexapod_lasertracker"
-      }
-    },
-    {
-      "name": "maintel/move_p2p.py",
-      "standard": true,
-      "parameters": {
-        "az": "$azimuth",
-        "el": 15,
-        "ignore": [
-          "mtdome",
-          "mthexapod_2"
-        ]
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "LUT_elevation_hexapod_lasertracker"
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "M2",
-        "program": "$program",
-        "reason": "LUT_elevation_hexapod_lasertracker"
-      }
-    },
-    {
-      "name": "maintel/move_p2p.py",
-      "standard": true,
-      "parameters": {
-        "az": "$azimuth",
-        "el": 10,
-        "ignore": [
-          "mtdome",
-          "mthexapod_2"
-        ]
-      }
-    },
-    {
-      "name": "maintel/laser_tracker/measure.py",
-      "standard": true,
-      "parameters": {
-        "target": "Camera",
-        "program": "$program",
-        "reason": "LUT_elevation_hexapod_lasertracker"
       }
     },
     {
