@@ -1,48 +1,6 @@
 instances:
-  - sal_index: 1
-    csc_name: Camera Hexapod/Rotator
-    data_clients:
-      - client_class: ControllerDataClient
-        # Camera Hexapod Rotator temperature sensor readout box.
-        config:
-          host: hexrot-ess01.cp.lsst.org
-          devices:
-          - name: MTCameraAssembly-ESS01
-            channels: 8
-            device_type: Serial
-            serial_port: /dev/ttyUSB0
-            sensor_type: Temperature
-            location: >-
-              MT camera hexapod strut 7,
-              MT camera hexapod strut 8,
-              MT camera hexapod strut 9,
-              MT camera hexapod strut 10,
-              MT camera hexapod strut 11,
-              MT camera hexapod strut 12,
-              MT camera rotator motor 1,
-              MT camera rotator motor 2
-  - sal_index: 2
-    csc_name: M2 Hexapod
-    data_clients:
-      - client_class: ControllerDataClient
-      # M2 Hexapod temperature sensor readout box.
-        config:
-          host: m2hex-ess01.cp.lsst.org
-          devices:
-          - name: M2-ESS02
-            channels: 8
-            device_type: Serial
-            serial_port: /dev/ttyUSB0
-            sensor_type: Temperature
-            location: >-
-              M2 hexapod strut 1,
-              M2 hexapod strut 2,
-              M2 hexapod strut 3,
-              M2 hexapod strut 4,
-              M2 hexapod strut 5,
-              M2 hexapod strut 6,
-              +X/+Y Truss Structure,
-              -X/-Y Truss Structure
+#  - sal_index: 1 -> now 121
+#  - sal_index: 2 -> now 122
 
 # - sal_index: 101 -> now 111
 # - sal_index: 102 -> now 112
@@ -345,6 +303,51 @@ instances:
           baud_rate: 9600
           sensor_type: Windsonic
           location: MTDome-ESS12
+  - sal_index: 121
+    csc_name: Camera Hexapod/Rotator
+    data_clients:
+      - client_class: ControllerDataClient
+        # Camera Hexapod Rotator temperature sensor readout box.
+        config:
+          host: hexrot-ess01.cp.lsst.org
+          devices:
+          - name: MTCameraAssembly-ESS01
+            channels: 8
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
+            sensor_type: Temperature
+            location: >-
+              MT camera hexapod strut 7,
+              MT camera hexapod strut 8,
+              MT camera hexapod strut 9,
+              MT camera hexapod strut 10,
+              MT camera hexapod strut 11,
+              MT camera hexapod strut 12,
+              MT camera rotator motor 1,
+              MT camera rotator motor 2
+  - sal_index: 122
+    csc_name: M2 Hexapod
+    data_clients:
+      - client_class: ControllerDataClient
+      # M2 Hexapod temperature sensor readout box.
+        config:
+          host: m2hex-ess01.cp.lsst.org
+          devices:
+          - name: M2-ESS02
+            channels: 8
+            device_type: Serial
+            serial_port: /dev/ttyUSB0
+            sensor_type: Temperature
+            location: >-
+              M2 hexapod strut 1,
+              M2 hexapod strut 2,
+              M2 hexapod strut 3,
+              M2 hexapod strut 4,
+              M2 hexapod strut 5,
+              M2 hexapod strut 6,
+              +X/+Y Truss Structure,
+              -X/-Y Truss Structure
+
 
   - sal_index: 201
     csc_name: AuxTel Misc
@@ -435,30 +438,7 @@ instances:
               # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g
               offsets: [2.4783, 2.4809, 2.4139]
               scales: [10.0044, 9.9292, 9.7633]
-  - sal_index: 203
-    csc_name: AuxTel Lightning
-    data_clients:
-      - client_class: ControllerDataClient
-        # Lightning and Electric Field Strength detectors.
-        config:
-          host: auxtel-lightning01.cp.lsst.org
-          devices:
-          - name: AuxTel-ElectricField01
-            device_type: Serial
-            serial_port: /dev/ttyUSB_lower_right
-            sensor_type: EFM100C
-            safe_interval: 10
-            num_samples: 20
-            threshold: 10.0
-            baud_rate: 9600
-            location: Calibration Hill
-          - name: AuxTel-Lightning01
-            device_type: Serial
-            serial_port: /dev/ttyUSB_upper_right
-            sensor_type: LD250
-            safe_interval: 2
-            baud_rate: 9600
-            location: Calibration Hill
+#  - sal_index: 203 -> now 308
   - sal_index: 204
     csc_name: AuxTel Windsonic
     data_clients:
@@ -585,3 +565,27 @@ instances:
             serial_port: /dev/ttyUSB0
             sensor_type: Aurora
             location: DIMM
+  - sal_index: 308
+    csc_name: AuxTel Lightning
+    data_clients:
+      - client_class: ControllerDataClient
+        # Lightning and Electric Field Strength detectors.
+        config:
+          host: auxtel-lightning01.cp.lsst.org
+          devices:
+          - name: AuxTel-ElectricField01
+            device_type: Serial
+            serial_port: /dev/ttyUSB_lower_right
+            sensor_type: EFM100C
+            safe_interval: 10
+            num_samples: 20
+            threshold: 10.0
+            baud_rate: 9600
+            location: Calibration Hill
+          - name: AuxTel-Lightning01
+            device_type: Serial
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: LD250
+            safe_interval: 2
+            baud_rate: 9600
+            location: Calibration Hill
