@@ -1,0 +1,28 @@
+weather:
+  efd_name: test
+  ess_index: 301
+  indoor_ess_index: 113
+  wind_average_window: 1800
+  wind_minimum_window: 600
+hvac:
+  setpoint_lower_limit: 6
+  wind_threshold: 10
+  vec04_hold_time: 300
+  glycol_band_low: -10.0
+  glycol_band_high: -5.0
+  glycol_average_offset: -7.5
+  glycol_dew_point_margin: 1.0
+  glycol_setpoints_delta: 1.0
+  glycol_absolute_minimum: -10.0
+tma:
+  glycol_setpoint_delta: -2.5
+  heater_setpoint_delta: -1.5
+  top_end_setpoint_delta: -1.0
+  m1m3_setpoint_cadence: 300
+  setpoint_deadband_heating: 0.05
+  setpoint_deadband_cooling: 0.05
+  maximum_heating_rate: 2.0
+  slow_cooling_rate: 1.00
+  fast_cooling_rate: 10.0
+features_to_disable: []
+twilight_definition: astronomical
