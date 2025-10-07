@@ -12,9 +12,12 @@
                         ["OCPS:2", "ENABLED"],
                         ["OCPS:3", "ENABLED"],
                         ["Electrometer:103", "ENABLED"],
+                        ["FiberSpectrograph:101", "ENABLED"],
+                        ["FiberSpectrograph:102", "ENABLED"],
                         ["LinearStage:101", "ENABLED"],
                         ["LinearStage:102", "ENABLED"],
                         ["LinearStage:103", "ENABLED"],
+                        ["LinearStage:104", "ENABLED"],
                         ["MTReflector", "ENABLED"]]
             }
         },
@@ -92,14 +95,17 @@
                         ["OCPS:2", "STANDBY"],
                         ["OCPS:3", "STANDBY"],
                         ["Electrometer:103", "STANDBY"],
+                        ["FiberSpectrograph:101", "STANDBY"],
+                        ["FiberSpectrograph:102", "STANDBY"],
                         ["LinearStage:101", "STANDBY"],
                         ["LinearStage:102", "STANDBY"],
                         ["LinearStage:103", "STANDBY"],
+                        ["LinearStage:104", "STANDBY"],
                         ["MTReflector", "STANDBY"]]
             }
         }
 
     ],
-     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T399 configuration\ndescription: Configuration for BLOCK-T399.\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T399\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102','FiberSpectrograph:101','FiberSpectrograph:102']\n  sequence_names:\n    description: List of sequence names to run for whitelight flats script.\n    type: array\n    default: ['daily']\n"
+     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T399 configuration\ndescription: Configuration for BLOCK-T399.\ntype: object\nproperties:\n  program:\n    description: Name of program\n    type: string\n    default: BLOCK-T399\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['TunableLaser','CBP','Electrometer:101','Electrometer:102']\n  sequence_names:\n    description: List of sequence names to run for whitelight flats script.\n    type: array\n    default: ['daily']\n"
 }
 
