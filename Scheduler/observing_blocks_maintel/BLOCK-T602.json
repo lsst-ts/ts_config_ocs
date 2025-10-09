@@ -24,14 +24,17 @@
             "parameters": {
                 "data": [["LEDProjector", "STANDBY"],
                         ["Electrometer:103", "STANDBY"],
+                        ["FiberSpectrograph:101", "STANDBY"],
+                        ["FiberSpectrograph:102", "STANDBY"],
                         ["LinearStage:101", "STANDBY"],
                         ["LinearStage:102", "STANDBY"],
                         ["LinearStage:103", "STANDBY"],
+                        ["LinearStage:104", "STANDBY"],
                         ["MTReflector", "STANDBY"]]
             }
         }
 
     ],
-     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T602 configuration\ndescription: Configuration for BLOCK-T602.\ntype: object\nproperties:\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['LinearStage:104','TunableLaser','CBP','Electrometer:101','Electrometer:102','FiberSpectrograph:101','FiberSpectrograph:102']\n"
+     "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T602 configuration\ndescription: Configuration for BLOCK-T602.\ntype: object\nproperties:\n  ignore:\n    description: Name of the CSCs we want to ignore\n    type: array\n    default: ['TunableLaser','CBP','Electrometer:101','Electrometer:102']\n"
 }
 
