@@ -1,0 +1,61 @@
+{
+    "name": "BLOCK-T523_3",
+    "program": "BLOCK-T523_3",
+    "constraints": [],
+    "scripts": [
+        {
+            "name": "maintel/calibration/power_off_tunablelaser.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "maintel/change_filter_lsstcam.py",
+            "standard": true,
+            "parameters": {
+                "filter": "i_39"
+            }
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters":{
+                "nimages": 4,
+                "exp_times": 30,
+                "image_type": "FLAT",
+                "reason": "flat_off_i_band",
+                "program": "BLOCK-T523_3"
+            }
+        },
+        {
+            "name": "maintel/calibration/power_on_tunablelaser.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "maintel/take_whitelight_flats_lsstcam.py",
+            "standard": false,
+            "parameters":{
+                "sequence_names": ["scan_i"],
+                "reason": "mono_i_band",
+                "program": "BLOCK-T523_3"
+            }
+        },
+        {
+            "name": "maintel/calibration/power_off_tunablelaser.py",
+            "standard": true,
+            "parameters": {}
+        },
+        {
+            "name": "maintel/take_image_lsstcam.py",
+            "standard": true,
+            "parameters":{
+                "nimages": 4,
+                "exp_times": 30,
+                "image_type": "FLAT",
+                "reason": "flat_off_i_band",
+                "program": "BLOCK-T523_3"
+            }
+        }
+    ]
+}
+
