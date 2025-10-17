@@ -1,0 +1,285 @@
+{
+    "name": "BLOCK-T580",
+    "program": "BLOCK-T580",
+    "constraints": [],
+    "scripts": [
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "CBP",
+          "cmd": "move",
+          "parameters": {
+            "azimuth": 10.0,
+            "elevation": -34.5
+          }
+        }
+      },
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 810
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "810nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      },
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 820
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "820nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      },
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 830
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "830nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      },
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 840
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "840nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      },
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 850
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "850nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      },
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 860
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "860nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      },
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 870
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "870nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      },
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 880
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "880nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      },
+          {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 890
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "890nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      },
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 900
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "900nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      },
+      {
+        "name": "run_command.py",
+        "standard": true,
+        "parameters": {
+          "component": "TunableLaser",
+          "cmd": "changeWavelength",
+          "parameters": {
+            "wavelength": 910
+          }
+        }
+      },
+      {
+        "name": "maintel/take_image_lsstcam.py",
+        "standard": true,
+        "parameters": {
+          "filter": "NONE",
+          "exp_times": 120,
+          "nimages": 4,
+          "image_type": "FLAT",
+          "program": "$program",
+          "reason": "$reason",
+          "note": "910nm, deg=16.04, az=10.0, el=-34.5"
+        }
+      }
+    ],
+    "configuration_schema": "$schema: http://json-schema.org/draft-07/schema#\ntitle: BLOCK-T580 configuration\ndescription: Configuration for BLOCK-T580.\ntype: object\nproperties:\n  program:\n    description: Block number\n    type: string\n    default: \"BLOCK-T580\"\n  reason:\n    description: reason for the script\n    type: string\n    default: \"M2_baffle_stray_light_z\"\n"
+  }
+  
