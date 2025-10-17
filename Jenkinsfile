@@ -21,7 +21,6 @@ DevelopPipeline(
         "lsst-ts/ts_fiberspectrograph",
         "lsst-ts/ts_genericcamera",
         "lsst-ts/ts_gis",
-        "lsst-ts/ts_mteec",
         "lsst-ts/ts_pmd",
         "lsst-ts/ts_salobj",  // For the Test component.
         "lsst-ts/ts_watcher",
