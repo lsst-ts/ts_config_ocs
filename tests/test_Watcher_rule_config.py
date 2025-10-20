@@ -64,9 +64,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         # Get a list of all site config files, for which the name starts with
         # an "_" and doesn't equal "_init.yaml" to avoid validating
         # ["_init.yaml", "_init.yaml"].
-        site_config_files = [
-            f for f in list(self.config_dir.glob("_*.yaml")) if f.name != "_init.yaml"
-        ]
+        site_config_files = [f for f in list(self.config_dir.glob("_*.yaml")) if f.name != "_init.yaml"]
 
         # Validate "_init.yaml".
         self.validate_config_file_list([])
@@ -77,9 +75,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
 
         # Also get a list of user config files, for which the name does not
         # start with an "_".
-        user_config_files = [
-            f for f in list(self.config_dir.glob("*.yaml")) if f.name[0] != "_"
-        ]
+        user_config_files = [f for f in list(self.config_dir.glob("*.yaml")) if f.name[0] != "_"]
 
         # Now test all combinations of the user and site config files.
         for user_config_file in user_config_files:
