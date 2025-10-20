@@ -89,18 +89,13 @@ for i, accelerometer_dict in enumerate(data_dict["accelerometers"]):
     offsets_str = ", ".join(f"{value / 1000:0.4f}" for value in published_offsets)
     scales_str = ", ".join(f"{1000 * 9.8 / value:0.4f}" for value in published_scales)
     base_input = initial_analog_input + (i * 3)
-    analog_inputs_str = ", ".join(
-        str(input) for input in range(base_input, base_input + 3)
-    )
+    analog_inputs_str = ", ".join(str(input) for input in range(base_input, base_input + 3))
     print(f'            - sensor_name: "{accelerometer.sensor_name}"')
     print(f'              location: "{accelerometer.location}"')
     print(f"              analog_inputs: [{analog_inputs_str}]")
     print(f"              # serial number: {accelerometer.serial}")
     print(f"              # published offsets: [{published_offsets_str}]")
     print(f"              # published scales:  [{published_scales_str}]")
-    print(
-        "              # desired scale (m/s2)/V = "
-        "1000 mv/V * 9.8 (m/s2)/g / published scale mV/g"
-    )
+    print("              # desired scale (m/s2)/V = 1000 mv/V * 9.8 (m/s2)/g / published scale mV/g")
     print(f"              offsets: [{offsets_str}]")
     print(f"              scales: [{scales_str}]")
