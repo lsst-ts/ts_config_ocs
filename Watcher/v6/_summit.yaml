@@ -66,7 +66,7 @@ rules:
   - name: GenericCamera:103
   - name: HVAC
   - name: LaserTracker:1
-  - name: M1M3TS
+  - name: MTM1M3TS
   - name: MTAOS
   - name: MTAirCompressor:1
   - name: MTAirCompressor:2
@@ -134,7 +134,7 @@ rules:
   - name: ESS:122
   - name: ESS:201
   - name: ESS:202
-  - name: ESS:203
+#  - name: ESS:203  # Oct 8, 2025 disabled until further notice.
   - name: ESS:204
   - name: ESS:301
   - name: ESS:302
@@ -157,7 +157,7 @@ rules:
   - name: GenericCamera:103
   - name: HVAC
   - name: LaserTracker:1
-  - name: M1M3TS
+  - name: MTM1M3TS
   - name: MTAOS
   - name: MTAirCompressor:1
   - name: MTAirCompressor:2
@@ -261,7 +261,7 @@ rules:
   configs:
   - name: MT Camera Hexapod
     temperature_sensors:
-    - sal_index: 1  # see ESS configuration
+    - sal_index: 121  # see ESS configuration
       sensor_info:
       - sensor_name: MTCameraAssembly-ESS01
         indices: [0, 1, 2, 3, 4, 5]  # struts 7-12
