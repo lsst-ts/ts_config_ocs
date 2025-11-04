@@ -261,7 +261,7 @@ rules:
   configs:
   - name: MT Camera Hexapod
     temperature_sensors:
-    - sal_index: 1  # see ESS configuration
+    - sal_index: 121  # see ESS configuration
       sensor_info:
       - sensor_name: MTCameraAssembly-ESS01
         indices: [0, 1, 2, 3, 4, 5]  # struts 7-12
