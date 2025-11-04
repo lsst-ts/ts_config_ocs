@@ -22,6 +22,7 @@ rules:
 #  - name: CCHeaderService
 #  - name: CCOODS
   - name: DIMM:1
+  - name: EAS
   - name: ESS:104
   - name: ESS:105
   - name: ESS:106
@@ -65,6 +66,7 @@ rules:
   - name: GenericCamera:103
   - name: HVAC
   - name: LaserTracker:1
+  - name: M1M3TS
   - name: MTAOS
   - name: MTAirCompressor:1
   - name: MTAirCompressor:2
@@ -111,6 +113,7 @@ rules:
 #  - name: CCHeaderService
 #  - name: CCOODS
   - name: DIMM:1
+  - name: EAS
   - name: ESS:104
   - name: ESS:105
   - name: ESS:106
@@ -154,6 +157,7 @@ rules:
   - name: GenericCamera:103
   - name: HVAC
   - name: LaserTracker:1
+  - name: M1M3TS
   - name: MTAOS
   - name: MTAirCompressor:1
   - name: MTAirCompressor:2
@@ -306,9 +310,9 @@ rules:
   - {}
 - classname: MTAirCompressorsPressure
   configs:
-  - one_severity: CRITICAL
+  - one_severity: SERIOUS
     both_severity: CRITICAL
-    minimal_pressure: 6400
+    minimal_pressure: 3500
 - classname: ATCameraDewar
   configs:
   - min_warning_ccd_temp: -105

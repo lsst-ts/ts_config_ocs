@@ -77,9 +77,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         # DataClients of each instance.
         for instance in config.instances:
             for client_data in instance["data_clients"]:
-                client_class = common.data_client.get_data_client_class(
-                    client_data["client_class"]
-                )
+                client_class = common.data_client.get_data_client_class(client_data["client_class"])
                 config_schema = client_class.get_config_schema()
                 validator = salobj.DefaultingValidator(config_schema)
                 client_config_dict = client_data["config"]

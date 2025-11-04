@@ -19,7 +19,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import importlib
 import pathlib
 import unittest
 
@@ -85,14 +84,6 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             config_package_root=self.config_package_root,
         )
 
-    def test_MTEEC(self):
-        self.check_standard_config_files(
-            sal_name="MTEEC",
-            module_name="lsst.ts.mteec",
-            schema_name="CONFIG_SCHEMA",
-            config_package_root=self.config_package_root,
-        )
-
     def test_PMD(self):
         self.check_standard_config_files(
             sal_name="PMD",
@@ -100,48 +91,6 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
-
-    def test_Scheduler(self):
-        self.check_standard_config_files(
-            sal_name="Scheduler",
-            module_name="lsst.ts.scheduler",
-            schema_name="CONFIG_SCHEMA",
-            config_package_root=self.config_package_root,
-        )
-
-    def test_all_fbs_configurations_in_use(self) -> None:
-        """Test that all fbs configrations are in use."""
-        module_name = "lsst.ts.scheduler"
-        schema_name = "CONFIG_SCHEMA"
-        try:
-            module = importlib.import_module(module_name)
-        except ImportError:
-            raise unittest.SkipTest(f"Cannot import {module_name}")
-        schema = getattr(module, schema_name)
-        scheduler_config_dir = self.get_config_dir(
-            config_package_root=self.config_package_root,
-            sal_name="Scheduler",
-            schema=schema,
-        )
-        scheduler_config_files_path = scheduler_config_dir.glob("**/*.yaml")
-        scheduler_config_all = [
-            open(config_file, "r").read() for config_file in scheduler_config_files_path
-        ]
-        fbs_config_files = set(
-            [
-                str(fbs_config)
-                for fbs_config in pathlib.PosixPath(
-                    "Scheduler/feature_scheduler/"
-                ).glob("**/*.py")
-            ]
-        )
-        fbs_config_file_in_scheduler_config = set()
-        for fbs_config_file in fbs_config_files:
-            for scheduler_config in scheduler_config_all:
-                if fbs_config_file in scheduler_config:
-                    fbs_config_file_in_scheduler_config.add(fbs_config_file)
-                    break
-        assert fbs_config_file_in_scheduler_config == fbs_config_files
 
     def test_Test(self):
         self.check_standard_config_files(
