@@ -589,3 +589,42 @@ instances:
             safe_interval: 2
             baud_rate: 9600
             location: Calibration Hill
+  - sal_index: 309
+    csc_name: MTDome Sensirion 1
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: mtdome-ess09.cp.lsst.org
+          devices:
+          - name: MTDome-Sensirion-1
+            device_type: Sensirion
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: Sps30
+            baud_rate: 0
+            location: MTDome 1
+  - sal_index: 310
+    csc_name: MTDome Sensirion 2
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: mtdome-ess-particle01.cp.lsst.org
+          devices:
+          - name: MTDome-Sensirion-2
+            device_type: Sensirion
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: Sps30
+            baud_rate: 0
+            location: MTDome 2
+  - sal_index: 311
+    csc_name: MTDome Sensirion 3
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: mtdome-ess-particle02.cp.lsst.org
+          devices:
+          - name: MTDome-Sensirion-3
+            device_type: Sensirion
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: Sps30
+            baud_rate: 0
+            location: MTDome 3
