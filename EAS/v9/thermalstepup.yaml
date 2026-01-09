@@ -1,0 +1,19 @@
+tma:
+  glycol_setpoint_delta: -1
+  heater_setpoint_delta: 0
+  top_end_setpoint_delta: -2
+  m1m3_setpoint_cadence: 150
+  setpoint_deadband_heating: 0.9
+  setpoint_deadband_cooling: 99
+  maximum_heating_rate: 99
+  slow_cooling_rate: 0.75
+  fast_cooling_rate: 0.75
+  fan_speed:
+    fan_speed_min: 700.0
+    fan_speed_max: 1500.0
+    fan_glycol_heater_offset_min: -1.0
+    fan_glycol_heater_offset_max: -1.5
+    fan_throttle_turn_on_temp_diff: 0.5
+    fan_throttle_max_temp_diff: 1.0
+features_to_disable:
+  - require_dome_open

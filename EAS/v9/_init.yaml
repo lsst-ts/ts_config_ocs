@@ -14,7 +14,10 @@ hvac:
   glycol_dew_point_margin: 1.0
   glycol_setpoints_delta: 1.0
   glycol_absolute_minimum: -10.0
+  glycol_absolute_maximum: 9.0
+  ahu_setpoint_delta: -2.5 
 tma:
+  after_open_delay: 1800
   glycol_setpoint_delta: -2
   heater_setpoint_delta: -1
   top_end_setpoint_delta: -3
@@ -23,15 +26,15 @@ tma:
   setpoint_deadband_cooling: 0.2
   maximum_heating_rate: 0.75
   slow_cooling_rate: 0.75
-  fast_cooling_rate: 10.0
+  fast_cooling_rate: 0.75
   fan_speed:
     fan_speed_min: 700.0
-    fan_speed_max: 2000.0
+    fan_speed_max: 1500.0
     fan_glycol_heater_offset_min: -1.0
-    fan_glycol_heater_offset_max: -4.0
-    fan_throttle_turn_on_temp_diff: 0.0
+    fan_glycol_heater_offset_max: -1.5
+    fan_throttle_turn_on_temp_diff: 0.5
     fan_throttle_max_temp_diff: 1.0
 dome:
-  dome_open_threshold: 50.0
-features_to_disable: [fanspeed]
+  dome_open_threshold: 25.0
+features_to_disable: []
 twilight_definition: astronomical
