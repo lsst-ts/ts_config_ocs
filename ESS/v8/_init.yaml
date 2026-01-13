@@ -658,7 +658,8 @@ instances:
             safe_interval: 2
             baud_rate: 9600
             location: Calibration Hill
-  - sal_index: 309
+
+  - sal_index: 401
     csc_name: MTDome Sensirion 1
     data_clients:
       - client_class: ControllerDataClient
@@ -671,7 +672,7 @@ instances:
             sensor_type: Sps30
             baud_rate: 0
             location: MTDome 1
-  - sal_index: 310
+  - sal_index: 402
     csc_name: MTDome Sensirion 2
     data_clients:
       - client_class: ControllerDataClient
@@ -684,7 +685,7 @@ instances:
             sensor_type: Sps30
             baud_rate: 0
             location: MTDome 2
-  - sal_index: 311
+  - sal_index: 403
     csc_name: MTDome Sensirion 3
     data_clients:
       - client_class: ControllerDataClient
