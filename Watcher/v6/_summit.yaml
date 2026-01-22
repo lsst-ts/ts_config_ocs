@@ -339,7 +339,7 @@ rules:
   configs:
   - name: ESS:303
     min_num_zeros_schneider: 3
-    generator_startup_time: 600
+    generator_startup_time: 120
 - classname: Hvac
   configs:
   - rule_name: Dynalene
