@@ -6,7 +6,7 @@ instances:
 # - sal_index: 102 -> now 112
 # - sal_index: 103 -> now 113
   - sal_index: 104
-    csc_name: TEA Accelerometers
+    csc_name: TMA Accelerometers
     data_clients:
       - client_class: LabJackAccelerometerDataClient
         # LabJack reading 4 accelerometers attached to the SST.
@@ -347,10 +347,8 @@ instances:
               M2 hexapod strut 6,
               +X/+Y Truss Structure,
               -X/-Y Truss Structure
-
-
   - sal_index: 123
-    csc_name: TEA Gill 3D-ANEM-01-S
+    csc_name: TMA Top Ring Gill 3D-ANEM-01-S
     data_clients:
       - client_class: LabJackDataClient
         config:
@@ -359,15 +357,15 @@ instances:
           identifier: tea-3danem-01.cp.lsst.org
           poll_interval: 0.2
           processor: AirTurbulenceProcessor
-          sensor_name: TEA-3D-ANEM-01-S
-          location: TEA (-X/-Y)
+          sensor_name: TMA-3D-ANEM-01-S
+          location: TMA Top Ring (-X/-Y)
           channel_names: [AIN0, AIN1, AIN2, AIN3]
           offsets: [2.5, 2.5, 2.5, 1.81818]
           scales: [2.0, 2.0, 2.0, 22.0]
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
   - sal_index: 124
-    csc_name: TEA Gill 3D-ANEM-02-S
+    csc_name: TMA Top Ring Gill 3D-ANEM-02-S
     data_clients:
       - client_class: LabJackDataClient
         config:
@@ -376,15 +374,15 @@ instances:
           identifier: tea-3danem-02.cp.lsst.org
           poll_interval: 0.2
           processor: AirTurbulenceProcessor
-          sensor_name: TEA-3D-ANEM-02-S
-          location: TEA (+X/-Y)
+          sensor_name: TMA-3D-ANEM-02-S
+          location: TMA Top Ring (+X/-Y)
           channel_names: [AIN0, AIN1, AIN2, AIN3]
           offsets: [2.5, 2.5, 2.5, 1.81818]
           scales: [2.0, 2.0, 2.0, 22.0]
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
   - sal_index: 125
-    csc_name: TEA Gill 3D-ANEM-03-P
+    csc_name: TMA Top Ring Gill 3D-ANEM-03-P
     data_clients:
       - client_class: LabJackDataClient
         config:
@@ -393,15 +391,15 @@ instances:
           identifier: tea-3danem-03.cp.lsst.org
           poll_interval: 0.2
           processor: AirTurbulenceProcessor
-          sensor_name: TEA-3D-ANEM-03-P
-          location: TEA (+X/+Y)
+          sensor_name: TMA-3D-ANEM-03-P
+          location: TMA Top Ring (+X/+Y)
           channel_names: [AIN0, AIN1, AIN2, AIN3]
           offsets: [2.5, 2.5, 2.5, 1.81818]
           scales: [2.0, 2.0, 2.0, 22.0]
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
   - sal_index: 126
-    csc_name: TEA Gill 3D-ANEM-04-S
+    csc_name: TMA Top Ring Gill 3D-ANEM-04-S
     data_clients:
       - client_class: LabJackDataClient
         config:
@@ -410,8 +408,8 @@ instances:
           identifier: tea-3danem-04.cp.lsst.org
           poll_interval: 0.2
           processor: AirTurbulenceProcessor
-          sensor_name: TEA-3D-ANEM-04-S
-          location: TEA (-X/+Y)
+          sensor_name: TMA-3D-ANEM-04-S
+          location: TMA Top Ring (-X/+Y)
           channel_names: [AIN0, AIN1, AIN2, AIN3]
           offsets: [2.5, 2.5, 2.5, 1.81818]
           scales: [2.0, 2.0, 2.0, 22.0]
