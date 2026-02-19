@@ -476,6 +476,24 @@ rules:
       limit_type: lower
       limit_value: 1
       severity: CRITICAL
+  - rule_name: GlycolSensorSupplyFlowChiller01
+    callback_names: [tel_glycolSensor]
+    stale_value_limits:
+      - item_name: supplyFlowChiller01
+        num_samples: 25
+        severity: CRITICAL
+  - rule_name: GlycolSensorSupplyFlowChiller02
+    callback_names: [tel_glycolSensor]
+    stale_value_limits:
+      - item_name: supplyFlowChiller02
+        num_samples: 25
+        severity: CRITICAL
+  - rule_name: GlycolSensorSupplyFlowChiller03
+    callback_names: [tel_glycolSensor]
+    stale_value_limits:
+      - item_name: supplyFlowChiller03
+        num_samples: 25
+        severity: CRITICAL
 - classname: MTHexapodOvercurrent
   configs:
   - name: MTHexapod:1
@@ -483,9 +501,9 @@ rules:
 - classname: PowerGeneratorRunning
   configs:
   - name: ESS:305
-    severity: WARNING
+    severity: SERIOUS
   - name: ESS:306
-    severity: WARNING
+    severity: SERIOUS
 - classname: PowerGeneratorFail
   configs:
   - name_primary: ESS:306
