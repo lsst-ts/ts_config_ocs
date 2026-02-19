@@ -483,9 +483,9 @@ rules:
 - classname: PowerGeneratorRunning
   configs:
   - name: ESS:305
-    severity: WARNING
+    severity: SERIOUS
   - name: ESS:306
-    severity: WARNING
+    severity: SERIOUS
 - classname: PowerGeneratorFail
   configs:
   - name_primary: ESS:306
