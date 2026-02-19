@@ -17,7 +17,9 @@ hvac:
   glycol_absolute_maximum: 9.0
   ahu_setpoint_delta: -2.5 
 tma:
-  after_open_delay: 1800
+  m1m3ts_delay_mode:
+    mode: time_delay
+    delay: 1800.0
   glycol_setpoint_delta: -2
   heater_setpoint_delta: -1
   top_end_setpoint_delta: -3
