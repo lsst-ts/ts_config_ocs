@@ -17,15 +17,15 @@ hvac:
   ahu_setpoint_delta: -2.5 
 tma:
   after_open_delay: 1800
-  glycol_setpoint_delta: -2
-  heater_setpoint_delta: -1
+  glycol_setpoint_delta: -1.75
+  heater_setpoint_delta: -0.75
   top_end_setpoint_delta: -3
   m1m3_setpoint_cadence: 150
-  setpoint_deadband_heating: 0.2
-  setpoint_deadband_cooling: 0.2
-  maximum_heating_rate: 0.75
-  slow_cooling_rate: 0.75
-  fast_cooling_rate: 0.75
+  setpoint_deadband_heating: 0.1
+  setpoint_deadband_cooling: 0.1
+  maximum_heating_rate: 0.65
+  slow_cooling_rate: 0.65
+  fast_cooling_rate: 0.65
   fan_speed:
     fan_speed_min: 700.0
     fan_speed_max: 1500.0
