@@ -6,7 +6,7 @@ instances:
 # - sal_index: 102 -> now 112
 # - sal_index: 103 -> now 113
   - sal_index: 104
-    csc_name: TEA Accelerometers
+    csc_name: TMA Accelerometers
     data_clients:
       - client_class: LabJackAccelerometerDataClient
         # LabJack reading 4 accelerometers attached to the SST.
@@ -164,7 +164,7 @@ instances:
           poll_interval: 0.2
           processor: AirTurbulenceProcessor
           sensor_name: TMA-GillLabJack01
-          location: TMA (unknown location)
+          location: TMA deployable platform
           channel_names: [AIN0, AIN1, AIN2, AIN3]
           offsets: [2.5, 2.5, 2.5, 1.81818]
           scales: [2.0, 2.0, 2.0, 22.0]
@@ -347,7 +347,74 @@ instances:
               M2 hexapod strut 6,
               +X/+Y Truss Structure,
               -X/-Y Truss Structure
-
+  - sal_index: 123
+    csc_name: TMA Top Ring Gill 3D-ANEM-01-S
+    data_clients:
+      - client_class: LabJackDataClient
+        config:
+          device_type: T4
+          connection_type: TCP
+          identifier: tea-3danem-01.cp.lsst.org
+          poll_interval: 0.2
+          processor: AirTurbulenceProcessor
+          sensor_name: TMA-3D-ANEM-01-S
+          location: TMA Top Ring (-X/-Y)
+          channel_names: [AIN0, AIN1, AIN2, AIN3]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [2.0, 2.0, 2.0, 22.0]
+          # 5 samples per second so for 1 second that's 5 samples.
+          num_samples: 5
+  - sal_index: 124
+    csc_name: TMA Top Ring Gill 3D-ANEM-02-S
+    data_clients:
+      - client_class: LabJackDataClient
+        config:
+          device_type: T4
+          connection_type: TCP
+          identifier: tea-3danem-02.cp.lsst.org
+          poll_interval: 0.2
+          processor: AirTurbulenceProcessor
+          sensor_name: TMA-3D-ANEM-02-S
+          location: TMA Top Ring (+X/-Y)
+          channel_names: [AIN0, AIN1, AIN2, AIN3]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [2.0, 2.0, 2.0, 22.0]
+          # 5 samples per second so for 1 second that's 5 samples.
+          num_samples: 5
+  - sal_index: 125
+    csc_name: TMA Top Ring Gill 3D-ANEM-03-P
+    data_clients:
+      - client_class: LabJackDataClient
+        config:
+          device_type: T4
+          connection_type: TCP
+          identifier: tea-3danem-03.cp.lsst.org
+          poll_interval: 0.2
+          processor: AirTurbulenceProcessor
+          sensor_name: TMA-3D-ANEM-03-P
+          location: TMA Top Ring (+X/+Y)
+          channel_names: [AIN0, AIN1, AIN2, AIN3]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [2.0, 2.0, 2.0, 22.0]
+          # 5 samples per second so for 1 second that's 5 samples.
+          num_samples: 5
+  - sal_index: 126
+    csc_name: TMA Top Ring Gill 3D-ANEM-04-S
+    data_clients:
+      - client_class: LabJackDataClient
+        config:
+          device_type: T4
+          connection_type: TCP
+          identifier: tea-3danem-04.cp.lsst.org
+          poll_interval: 0.2
+          processor: AirTurbulenceProcessor
+          sensor_name: TMA-3D-ANEM-04-S
+          location: TMA Top Ring (-X/+Y)
+          channel_names: [AIN0, AIN1, AIN2, AIN3]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [2.0, 2.0, 2.0, 22.0]
+          # 5 samples per second so for 1 second that's 5 samples.
+          num_samples: 5
 
   - sal_index: 201
     csc_name: AuxTel Misc
@@ -373,11 +440,14 @@ instances:
             location: AT azimuth axis
           # AuxTel temperature sensor readout box
           - name: AuxTel-ESS03
-            channels: 5
+            channels: 6
             device_type: FTDI
             ftdi_id: AL05OBVR
             sensor_type: Temperature
-            location: M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5
+            # Note that there are 5 sensors but 6 temperatures are emitted. The
+            # first "temperature" is a diganostic value that should be ignored.
+            # It is actively set to NaN in the telemetry by the CSC.
+            location: unused, M1 sensor 1, M1 sensor 2, M1 sensor 3, M1 sensor 4, M1 sensor 5
           # AuxTel 3D anemometer
           - name: AuxTel-ESS04
             device_type: Serial
@@ -589,3 +659,43 @@ instances:
             safe_interval: 2
             baud_rate: 9600
             location: Calibration Hill
+
+  - sal_index: 401
+    csc_name: MTDome Sensirion 1
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: mtdome-ess09.cp.lsst.org
+          devices:
+          - name: MTDome-Sensirion-1
+            device_type: Sensirion
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: Sps30
+            baud_rate: 0
+            location: MTDome 1
+  - sal_index: 402
+    csc_name: MTDome Sensirion 2
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: mtdome-ess-particle01.cp.lsst.org
+          devices:
+          - name: MTDome-Sensirion-2
+            device_type: Sensirion
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: Sps30
+            baud_rate: 0
+            location: MTDome 2
+  - sal_index: 403
+    csc_name: MTDome Sensirion 3
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: mtdome-ess-particle02.cp.lsst.org
+          devices:
+          - name: MTDome-Sensirion-3
+            device_type: Sensirion
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: Sps30
+            baud_rate: 0
+            location: MTDome 3
