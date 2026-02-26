@@ -166,8 +166,8 @@ instances:
           sensor_name: TMA-GillLabJack01
           location: TMA deployable platform
           channel_names: [AIN0, AIN1, AIN2, AIN3]
-          offsets: [10.0, 10.0, 10.0, 1.81818]
-          scales: [4.0, 4.0, 4.0, 22.0]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [8.0, 8.0, 8.0, 22.0]
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
   - sal_index: 111  # This used to be 101.
@@ -360,8 +360,8 @@ instances:
           sensor_name: TMA-3D-ANEM-01-S
           location: TMA Top Ring (-X/-Y)
           channel_names: [AIN0, AIN1, AIN2, AIN3]
-          offsets: [10.0, 10.0, 10.0, 1.81818]
-          scales: [4.0, 4.0, 4.0, 22.0]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [8.0, 8.0, 8.0, 22.0]
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
   - sal_index: 124
@@ -377,8 +377,8 @@ instances:
           sensor_name: TMA-3D-ANEM-02-S
           location: TMA Top Ring (+X/-Y)
           channel_names: [AIN0, AIN1, AIN2, AIN3]
-          offsets: [10.0, 10.0, 10.0, 1.81818]
-          scales: [4.0, 4.0, 4.0, 22.0]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [8.0, 8.0, 8.0, 22.0]
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
   - sal_index: 125
@@ -394,8 +394,8 @@ instances:
           sensor_name: TMA-3D-ANEM-03-P
           location: TMA Top Ring (+X/+Y)
           channel_names: [AIN0, AIN1, AIN2, AIN3]
-          offsets: [10.0, 10.0, 10.0, 1.81818]
-          scales: [4.0, 4.0, 4.0, 22.0]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [8.0, 8.0, 8.0, 22.0]
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
   - sal_index: 126
@@ -411,8 +411,8 @@ instances:
           sensor_name: TMA-3D-ANEM-04-S
           location: TMA Top Ring (-X/+Y)
           channel_names: [AIN0, AIN1, AIN2, AIN3]
-          offsets: [10.0, 10.0, 10.0, 1.81818]
-          scales: [4.0, 4.0, 4.0, 22.0]
+          offsets: [2.5, 2.5, 2.5, 1.81818]
+          scales: [8.0, 8.0, 8.0, 22.0]
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
 
