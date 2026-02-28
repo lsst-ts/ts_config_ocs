@@ -194,12 +194,15 @@ rules:
     - sal_index: 201  # see ESS configuration
       sensor_names:
       - AuxTel-ESS02
+    - sal_index: 301  # see ESS configuration
+      sensor_names:
+      - "Weather tower computed dew point"
     temperature_sensors:
     - sal_index: 201
       sensor_info:
       - sensor_name: AuxTel-ESS01
         indices: [1, 2, 3]
-    warning_level: 3
+    warning_level: 2.5
     critical_level: 2
     hysteresis: 0.2
     poll_interval: 1
@@ -211,7 +214,7 @@ rules:
     - sal_index: 201  # see ESS configuration
       sensor_names:
       - AuxTel-ESS02
-    warning_level: 73
+    warning_level: 70
     hysteresis: 1
     poll_interval: 1
     max_data_age: 30
