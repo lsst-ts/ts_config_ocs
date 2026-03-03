@@ -86,59 +86,8 @@ instances:
               Tangent link A5,
               Tangent link A6,
               Unused
-  - sal_index: 107
-    csc_name: Laser Enclosure
-    data_clients:
-      - client_class: ControllerDataClient
-        # Laser Enclosure humidity and temperature sensors
-        config:
-          host: laser-rpi.cp.lsst.org
-          devices:
-          - name: Laser-ESS01
-            device_type: Serial
-            serial_port: /dev/ttyUSB_upper_right
-            sensor_type: HX85BA
-            location: Laser Enclosure
-      - client_class: TcpipDataClient
-        config:
-          name: Laser-ESS02
-          host: laser-rpi.cp.lsst.org
-          port: 15000
-          connect_timeout: 60
-          read_timeout: 60
-          max_read_timeouts: 2
-          channels: 8
-          baud_rate: 19200
-          sensor_type: Temperature
-          location: >-
-            EnclosureFan
-            FCUnit
-            LaserTop
-            LaserBottom
-            LaserFan
-            PowerSupply
-            EnclosureOut
-            EnclosureMid
-  - sal_index: 108
-    csc_name: CBP
-    data_clients:
-      - client_class: TcpipDataClient
-        # CBP temperature sensors
-        config:
-          name: CBP-ESS01
-          host: cbp-control.cp.lsst.org
-          port: 4001
-          connect_timeout: 60
-          read_timeout: 60
-          max_read_timeouts: 2
-          channels: 4
-          baud_rate: 19200
-          sensor_type: Temperature
-          location: >-
-            Photodiode
-            PrimaryMirror
-            MaskChanger
-            ElectronicsCabinet
+#  - sal_index: 107 -> now 404. March 03, 2026
+#  - sal_index: 108 -> now 405. March 03, 2026
   - sal_index: 109
     csc_name: Spectrum Analyzer
     data_clients:
@@ -369,6 +318,45 @@ instances:
           scales: [8.0, 8.0, 8.0, 22.0]
           # 5 samples per second so for 1 second that's 5 samples.
           num_samples: 5
+  - sal_index: 127  # This used to be 401. March 03, 2026
+    csc_name: MTDome Sensirion 1
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: mtdome-ess09.cp.lsst.org
+          devices:
+          - name: MTDome-Sensirion-1
+            device_type: Sensirion
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: Sps30
+            baud_rate: 0
+            location: MTDome 1
+  - sal_index: 128  # This used to be 402. March 03, 2026
+    csc_name: MTDome Sensirion 2
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: mtdome-ess-particle01.cp.lsst.org
+          devices:
+          - name: MTDome-Sensirion-2
+            device_type: Sensirion
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: Sps30
+            baud_rate: 0
+            location: MTDome 2
+  - sal_index: 129  # This used to be 403. March 03, 2026
+    csc_name: MTDome Sensirion 3
+    data_clients:
+      - client_class: ControllerDataClient
+        config:
+          host: mtdome-ess-particle02.cp.lsst.org
+          devices:
+          - name: MTDome-Sensirion-3
+            device_type: Sensirion
+            serial_port: /dev/ttyUSB_upper_right
+            sensor_type: Sps30
+            baud_rate: 0
+            location: MTDome 3
 
   - sal_index: 201
     csc_name: AuxTel Misc
@@ -616,49 +604,66 @@ instances:
 
 # MTDome ESS instances for WiFi devices.
 # 401 to 421 are for general MTDome.
-  - sal_index: 401
-    csc_name: MTDome Sensirion 1
+#  - sal_index: 401 -> now 127 March 03, 2026
+#  - sal_index: 402 -> now 128 March 03, 2026
+#  - sal_index: 403 -> now 129 March 03, 2026
+  - sal_index: 404  # This used to be 107. March 03, 2026
+    csc_name: Laser Enclosure
     data_clients:
       - client_class: ControllerDataClient
+        # Laser Enclosure humidity and temperature sensors
         config:
-          host: mtdome-ess09.cp.lsst.org
+          host: laser-rpi.cp.lsst.org
           devices:
-          - name: MTDome-Sensirion-1
-            device_type: Sensirion
+          - name: Laser-ESS01
+            device_type: Serial
             serial_port: /dev/ttyUSB_upper_right
-            sensor_type: Sps30
-            baud_rate: 0
-            location: MTDome 1
-  - sal_index: 402
-    csc_name: MTDome Sensirion 2
+            sensor_type: HX85BA
+            location: Laser Enclosure
+      - client_class: TcpipDataClient
+        config:
+          name: Laser-ESS02
+          host: laser-rpi.cp.lsst.org
+          port: 15000
+          connect_timeout: 60
+          read_timeout: 60
+          max_read_timeouts: 2
+          channels: 8
+          baud_rate: 19200
+          sensor_type: Temperature
+          location: >-
+            EnclosureFan
+            FCUnit
+            LaserTop
+            LaserBottom
+            LaserFan
+            PowerSupply
+            EnclosureOut
+            EnclosureMid
+  - sal_index: 405  # This used to be 108. March 03, 2026
+    csc_name: CBP
     data_clients:
-      - client_class: ControllerDataClient
+      - client_class: TcpipDataClient
+        # CBP temperature sensors
         config:
-          host: mtdome-ess-particle01.cp.lsst.org
-          devices:
-          - name: MTDome-Sensirion-2
-            device_type: Sensirion
-            serial_port: /dev/ttyUSB_upper_right
-            sensor_type: Sps30
-            baud_rate: 0
-            location: MTDome 2
-  - sal_index: 403
-    csc_name: MTDome Sensirion 3
-    data_clients:
-      - client_class: ControllerDataClient
-        config:
-          host: mtdome-ess-particle02.cp.lsst.org
-          devices:
-          - name: MTDome-Sensirion-3
-            device_type: Sensirion
-            serial_port: /dev/ttyUSB_upper_right
-            sensor_type: Sps30
-            baud_rate: 0
-            location: MTDome 3
+          name: CBP-ESS01
+          host: cbp-control.cp.lsst.org
+          port: 4001
+          connect_timeout: 60
+          read_timeout: 60
+          max_read_timeouts: 2
+          channels: 4
+          baud_rate: 19200
+          sensor_type: Temperature
+          location: >-
+            Photodiode
+            PrimaryMirror
+            MaskChanger
+            ElectronicsCabinet
 
 # 421 to 454 are for louver anemometers. The indices below are temporary until it is clear which one is
 # linked to which louver. Note that there temporarily is a temperature scanner as well.
-  - sal_index: 441  # This used to be 118.  February 26, 2026
+  - sal_index: 441  # This used to be 118. March 03, 2026
     csc_name: Louver H1 Anemometer
     data_clients:
       - client_class: TcpipDataClient
@@ -675,7 +680,7 @@ instances:
           baud_rate: 9600
           sensor_type: Windsonic
           location: MTDomeLouver-H1
-  - sal_index: 442  # This used to be 119.  February 26, 2026
+  - sal_index: 442  # This used to be 119. March 03, 2026
     csc_name: Louver H1 And H2 Temperature Scanner
     data_clients:
       - client_class: TcpipDataClient
@@ -690,7 +695,7 @@ instances:
           baud_rate: 19200
           sensor_type: Temperature
           location: MTDomeLouver-H1, MTDomeLouver-H2, unused, unused, unused, unused, unused, unused
-  - sal_index: 443  # This used to be 120.  February 26, 2026
+  - sal_index: 443  # This used to be 120. March 03, 2026
     csc_name: Louver H2 Anemometer
     data_clients:
       - client_class: TcpipDataClient
