@@ -5,6 +5,7 @@ weather:
   wind_average_window: 1800
   wind_minimum_window: 600
 hvac:
+  ahu_control: [1, 2, 3, 4]
   setpoint_lower_limit: 6
   wind_threshold: 10
   vec04_hold_time: 300
