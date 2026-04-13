@@ -306,6 +306,22 @@ rules:
     event_name: evt_shutterEnabled
     csc_state: [ENABLED]
     severity: CRITICAL
+  - subsystem_name: calibration screen
+    event_name: evt_calibrationScreenEnabled
+    csc_state: [ENABLED]
+    severity: CRITICAL
+  - subsystem_name: light/wind screen
+    event_name: evt_elEnabled
+    csc_state: [ENABLED]
+    severity: CRITICAL
+  - subsystem_name: louvers
+    event_name: evt_louversEnabled
+    csc_state: [ENABLED]
+    severity: CRITICAL
+  - subsystem_name: rear access door
+    event_name: evt_radEnabled
+    csc_state: [ENABLED]
+    severity: CRITICAL
 - classname: MTM1M3ThermalFans
   configs:
   - {}
