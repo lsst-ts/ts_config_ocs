@@ -17,6 +17,7 @@ hvac:
   glycol_absolute_minimum: -10.0
   glycol_absolute_maximum: 20.0
   ahu_setpoint_delta: -2.5 
+  forecast_ahu_setpoint_delta: -3.0
 tma:
   m1m3ts_delay_mode:
     mode: time_delay
@@ -24,6 +25,9 @@ tma:
   glycol_setpoint_delta: -1.75
   heater_setpoint_delta: -0.75
   top_end_setpoint_delta: -3
+  forecast_glycol_setpoint_delta: -2.25
+  forecast_heater_setpoint_delta: -1.25
+  forecast_top_end_setpoint_delta: -3.5
   m1m3_setpoint_cadence: 150
   setpoint_deadband_heating: 0.1
   setpoint_deadband_cooling: 0.1
