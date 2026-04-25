@@ -5,6 +5,7 @@ weather:
   wind_average_window: 1800
   wind_minimum_window: 600
 hvac:
+  ahu_control: [1, 2, 3, 4]
   setpoint_lower_limit: 5 # for AHU setting based on Camera cryo compressor performance
   wind_threshold: 10
   vec04_hold_time: 300
@@ -16,6 +17,7 @@ hvac:
   glycol_absolute_minimum: -10.0
   glycol_absolute_maximum: 10.0 # while PCS chiller is on cold EGW
   ahu_setpoint_delta: -2.5
+  forecast_ahu_setpoint_delta: -3.0
 tma:
   m1m3ts_delay_mode:
     mode: wait_for_convergence  # time_delay, wait_for_convergence, evening_controlled_convergence
@@ -27,6 +29,9 @@ tma:
   glycol_setpoint_delta: -1.75
   heater_setpoint_delta: -0.75
   top_end_setpoint_delta: -3
+  forecast_glycol_setpoint_delta: -2.25
+  forecast_heater_setpoint_delta: -1.25
+  forecast_top_end_setpoint_delta: -3.5
   m1m3_setpoint_cadence: 150
   setpoint_deadband_heating: 0.1
   setpoint_deadband_cooling: 0.1
