@@ -23,9 +23,9 @@ tma:
     mode: wait_for_convergence  # time_delay, wait_for_convergence, evening_controlled_convergence
     tolerance_positive: 0.5 # convergence criteria
     tolerance_negative: 0.5 # convergence criteria
-    slew_rate: 1.0 # (eventing_controlled_convergence only) how fast to converge (override normal rates)
+#    slew_rate: 1.0 # (eventing_controlled_convergence only) how fast to converge (override normal rates)
     timeout: 3600.0 # convergence timeout
-    delay: 3600.0 # (time_delay only) usual venting time (30 minutes) plus 30 minutes
+#    delay: 3600.0 # (time_delay only) usual venting time (30 minutes) plus 30 minutes
   glycol_setpoint_delta: -1.75
   heater_setpoint_delta: -0.75
   top_end_setpoint_delta: -3
