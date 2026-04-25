@@ -5,7 +5,7 @@ weather:
   wind_average_window: 1800
   wind_minimum_window: 600
 hvac:
-  setpoint_lower_limit: 6 # for AHU setting based on Camera cryo compressor performance
+  setpoint_lower_limit: 5 # for AHU setting based on Camera cryo compressor performance
   wind_threshold: 10
   vec04_hold_time: 300
   glycol_band_low: -10.0
@@ -21,7 +21,7 @@ tma:
     mode: wait_for_convergence  # time_delay, wait_for_convergence, evening_controlled_convergence
     tolerance_positive: 0.5 # convergence criteria
     tolerance_negative: 0.5 # convergence criteria
-    slew_rate: 1.0 # (controlled convergence only) how fast to converge (override normal rates)
+    slew_rate: 1.0 # (eventing_controlled_convergence only) how fast to converge (override normal rates)
     timeout: 3600.0 # convergence timeout
     delay: 3600.0 # (time_delay only) usual venting time (30 minutes) plus 30 minutes
   glycol_setpoint_delta: -1.75
