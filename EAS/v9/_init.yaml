@@ -17,6 +17,7 @@ hvac:
   glycol_absolute_minimum: -10.0
   glycol_absolute_maximum: 10.0 # while PCS chiller is on cold EGW
   ahu_setpoint_delta: -2.5
+  ahu_setpoint_delta_closedatnite: 0.0
   forecast_ahu_setpoint_delta: -3.0
 tma:
   m1m3ts_delay_mode:
