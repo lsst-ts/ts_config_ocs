@@ -601,6 +601,16 @@ instances:
             safe_interval: 2
             baud_rate: 9600
             location: Calibration Hill
+  - sal_index: 309
+    csc_name: Automatic Transfer Switch
+    data_clients:
+      - client_class: ModbusDataClient
+        config:
+          host: tta-gen.cp.lsst.org
+          port: 502
+          max_read_timeouts: 5
+          device_name: Automatic Transfer Switch (ATS)
+          device_type: agc150mains
 
 # MTDome ESS instances for WiFi devices.
 # 401 to 421 are for general MTDome.
