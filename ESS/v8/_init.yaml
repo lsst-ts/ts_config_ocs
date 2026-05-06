@@ -611,6 +611,26 @@ instances:
           max_read_timeouts: 5
           device_name: Automatic Transfer Switch (ATS)
           device_type: agc150mains
+  - sal_index: 310
+    csc_name: Server Room UPS 1
+    data_clients:
+      - client_class: ModbusDataClient
+        config:
+          host: sdc-upsmod01.cp.lsst.org
+          port: 502
+          max_read_timeouts: 5
+          device_name: Server Room UPS 1
+          device_type: eaton9sx
+  - sal_index: 311
+    csc_name: Server Room UPS 2
+    data_clients:
+      - client_class: ModbusDataClient
+        config:
+          host: sdc-upsmod02.cp.lsst.org
+          port: 502
+          max_read_timeouts: 5
+          device_name: Server Room UPS 2
+          device_type: eaton9sx
 
 # MTDome ESS instances for WiFi devices.
 # 401 to 421 are for general MTDome.
