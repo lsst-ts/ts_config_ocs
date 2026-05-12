@@ -140,6 +140,7 @@ rules:
   - index: 1
   - index: 2
   - index: 3
-- classname: MTCameraAlert
+- classname: CameraAlert
   configs:
-  - {}
+  - alertId: evt_alertRaised
+    camera: MTCamera
