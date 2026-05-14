@@ -140,4 +140,650 @@ rules:
   - index: 1
   - index: 2
   - index: 3
-
+- classname: CameraAlert
+  configs:
+  #
+  # MTCamera alerts
+  #
+  - name: chiller_asserted_external_emo
+    camera: MTCamera
+  - name: chiller_burst_disk_high_pressure
+    camera: MTCamera
+  - name: chiller_burst_disk_pressure_error
+    camera: MTCamera
+  - name: chiller_burst_disk_pressure_warning
+    camera: MTCamera
+  - name: chiller_controller_problem
+    camera: MTCamera
+  - name: chiller_dead_plc
+    camera: MTCamera
+  - name: chiller_device_offline
+    camera: MTCamera
+  - name: chiller_high_channel_value
+    camera: MTCamera
+  - name: chiller_high_cold_plate_temp
+    camera: MTCamera
+  - name: chiller_invalid_dut_temp
+    camera: MTCamera
+  - name: chiller_leak_detected
+    camera: MTCamera
+  - name: chiller_leak_detector_fault
+    camera: MTCamera
+  - name: chiller_left_set_point
+    camera: MTCamera
+  - name: chiller_lost_listened_to_subsystem
+    camera: MTCamera
+  - name: chiller_low_channel_value
+    camera: MTCamera
+  - name: chiller_low_cold_plate_temp
+    camera: MTCamera
+  - name: chiller_missing_thermal
+    camera: MTCamera
+  - name: chiller_no_permit
+    camera: MTCamera
+  - name: chiller_setting_timeout
+    camera: MTCamera
+  - name: chiller_smoke_detected
+    camera: MTCamera
+  - name: chiller_vacuum_high_pressure
+    camera: MTCamera
+  - name: cluster_deserialization_problem
+    camera: MTCamera
+  - name: cluster_monitor_cluster_split
+    camera: MTCamera
+  - name: command_failure
+    camera: MTCamera
+  - name: configuration_mismatch
+    camera: MTCamera
+  - name: configuration_operation_exception
+    camera: MTCamera
+  - name: configuration_service_unavailable
+    camera: MTCamera
+  - name: daq_monitor_device_offline
+    camera: MTCamera
+  - name: daq_monitor_failed_auto_purge
+    camera: MTCamera
+  - name: daq_monitor_high_incremental_count
+    camera: MTCamera
+  - name: daq_monitor_low_store_free_space
+    camera: MTCamera
+  - name: fcs_ac_align_follower_failure
+    camera: MTCamera
+  - name: fcs_ac_online_clamps_closed_at_startup
+    camera: MTCamera
+  - name: fcs_ac_online_clamps_stay_enabled
+    camera: MTCamera
+  - name: fcs_ac_sensor_error
+    camera: MTCamera
+  - name: fcs_ac_trucks_error
+    camera: MTCamera
+  - name: fcs_bad_serial_number
+    camera: MTCamera
+  - name: fcs_ca_locking_issue
+    camera: MTCamera
+  - name: fcs_ca_locking_recovery_failure
+    camera: MTCamera
+  - name: fcs_ca_locking_recovery_success
+    camera: MTCamera
+  - name: fcs_ca_rotation_recovery
+    camera: MTCamera
+  - name: fcs_ca_rotation_recovery_failure
+    camera: MTCamera
+  - name: fcs_ca_rotation_recovery_success
+    camera: MTCamera
+  - name: fcs_ca_sensor_error
+    camera: MTCamera
+  - name: fcs_ca_unlocking_recovery_failure
+    camera: MTCamera
+  - name: fcs_ca_unlocking_recovery_success
+    camera: MTCamera
+  - name: fcs_canbus_not_initialized
+    camera: MTCamera
+  - name: fcs_canbus_reading_error
+    camera: MTCamera
+  - name: fcs_canbus_timeout
+    camera: MTCamera
+  - name: fcs_component_sdo_error
+    camera: MTCamera
+  - name: fcs_controller_fault
+    camera: MTCamera
+  - name: fcs_device_emergency
+    camera: MTCamera
+  - name: fcs_device_unsync_boot
+    camera: MTCamera
+  - name: fcs_hardware_error
+    camera: MTCamera
+  - name: fcs_hardware_missing
+    camera: MTCamera
+  - name: fcs_lo_sensor_error
+    camera: MTCamera
+  - name: fcs_parameter_error
+    camera: MTCamera
+  - name: fcs_sdo_error
+    camera: MTCamera
+  - name: fcs_update_error
+    camera: MTCamera
+  - name: focal_plane_aspics_high_temp
+    camera: MTCamera
+  - name: focal_plane_aspics_low_temp
+    camera: MTCamera
+  - name: focal_plane_bad_pixels
+    camera: MTCamera
+  - name: focal_plane_device_offline
+    camera: MTCamera
+  - name: focal_plane_image_timed_out
+    camera: MTCamera
+  - name: focal_plane_reb_board_high_temp
+    camera: MTCamera
+  - name: focal_plane_reb_board_low_temp
+    camera: MTCamera
+  - name: hex_device_offline
+    camera: MTCamera
+  - name: hex_high_channel_value
+    camera: MTCamera
+  - name: hex_low_evaporator_exit_temp
+    camera: MTCamera
+  - name: image_handling_missingHeaders
+    camera: MTCamera
+  - name: influx_database_problem
+    camera: MTCamera
+  - name: java_runtime_problem
+    camera: MTCamera
+  - name: jvm_freeze
+    camera: MTCamera
+  - name: jvm_gc_duration
+    camera: MTCamera
+  - name: jvm_low_available_memory
+    camera: MTCamera
+  - name: localdb_batch_exception
+    camera: MTCamera
+  - name: localdb_batch_ingestion_queue_size
+    camera: MTCamera
+  - name: localdb_batch_rollback_exception
+    camera: MTCamera
+  - name: localdb_long_running_process
+    camera: MTCamera
+  - name: localdb_wrong_state_persistence
+    camera: MTCamera
+  - name: mcm_controlled_subsystem_fault
+    camera: MTCamera
+  - name: mcm_controlled_subsystem_gone
+    camera: MTCamera
+  - name: mcm_controlled_subsystem_lost_lock
+    camera: MTCamera
+  - name: mmm_missing_subsystems
+    camera: MTCamera
+  - name: mpm_bad_vacuum
+    camera: MTCamera
+  - name: mpm_dead_plc
+    camera: MTCamera
+  - name: mpm_device_offline
+    camera: MTCamera
+  - name: mpm_high_temp
+    camera: MTCamera
+  - name: mpm_low_temp
+    camera: MTCamera
+  - name: mpm_ut_leak_detected
+    camera: MTCamera
+  - name: mpm_ut_leak_detector_fault
+    camera: MTCamera
+  - name: mpm_ut_smoke_detected
+    camera: MTCamera
+  - name: mpm_ut_smoke_detector_fault
+    camera: MTCamera
+  - name: periodic_task_failure
+    camera: MTCamera
+  - name: platform_pdu_device_offline
+    camera: MTCamera
+  - name: platform_pdu_inconsistent_outlet
+    camera: MTCamera
+  - name: platform_pdu_problem
+    camera: MTCamera
+  - name: quadbox_device_offline
+    camera: MTCamera
+  - name: quadbox_emergency_action_failed
+    camera: MTCamera
+  - name: quadbox_pdu_alert
+    camera: MTCamera
+  - name: rebpower_board_high_temp
+    camera: MTCamera
+  - name: rebpower_device_offline
+    camera: MTCamera
+  - name: rebpower_emergency_action_failed
+    camera: MTCamera
+  - name: rebpower_hv_bias_high_current
+    camera: MTCamera
+  - name: rebpower_hv_bias_high_voltage
+    camera: MTCamera
+  - name: refrig_bad_sensor_reading_plc
+    camera: MTCamera
+  - name: refrig_bad_vacuum
+    camera: MTCamera
+  - name: refrig_check_filter_dryers
+    camera: MTCamera
+  - name: refrig_cryo_low_temp
+    camera: MTCamera
+  - name: refrig_dead_plc
+    camera: MTCamera
+  - name: refrig_device_offline
+    camera: MTCamera
+  - name: refrig_discharge_high_pressure
+    camera: MTCamera
+  - name: refrig_discharge_high_pressure_plc
+    camera: MTCamera
+  - name: refrig_discharge_high_temp
+    camera: MTCamera
+  - name: refrig_discharge_high_temp_plc
+    camera: MTCamera
+  - name: refrig_discharge_low_temp
+    camera: MTCamera
+  - name: refrig_external_permit_plc
+    camera: MTCamera
+  - name: refrig_high_after_cooler_temp
+    camera: MTCamera
+  - name: refrig_high_compressor_power
+    camera: MTCamera
+  - name: refrig_high_compressor_power_plc
+    camera: MTCamera
+  - name: refrig_high_phase_separator_temp
+    camera: MTCamera
+  - name: refrig_high_pressure_difference
+    camera: MTCamera
+  - name: refrig_high_water_in_temp
+    camera: MTCamera
+  - name: refrig_high_water_out_temp
+    camera: MTCamera
+  - name: refrig_low_oil_level
+    camera: MTCamera
+  - name: refrig_low_oil_level_plc
+    camera: MTCamera
+  - name: refrig_smoke_detector_plc
+    camera: MTCamera
+  - name: refrig_suction_low_temp
+    camera: MTCamera
+  - name: refrig_suction_low_temp_plc
+    camera: MTCamera
+  - name: rest_server_data_unavailable
+    camera: MTCamera
+  - name: rest_server_unavailable
+    camera: MTCamera
+  - name: shutter_controller_error
+    camera: MTCamera
+  - name: shutter_controller_state
+    camera: MTCamera
+  - name: shutter_motion_profile
+    camera: MTCamera
+  - name: shutter_motor_problem
+    camera: MTCamera
+  - name: shutter_stop_all_motion
+    camera: MTCamera
+  - name: thermal_device_offline
+    camera: MTCamera
+  - name: thermal_high_channel_value
+    camera: MTCamera
+  - name: thermal_high_plate_temp
+    camera: MTCamera
+  - name: thermal_low_channel_value
+    camera: MTCamera
+  - name: thermal_low_plate_temp
+    camera: MTCamera
+  - name: utiltrunk_coolant_flow
+    camera: MTCamera
+  - name: utiltrunk_device_offline
+    camera: MTCamera
+  - name: utiltrunk_high_speed
+    camera: MTCamera
+  - name: utiltrunk_high_temp
+    camera: MTCamera
+  - name: utiltrunk_low_temp
+    camera: MTCamera
+  - name: utiltrunk_over_temp
+    camera: MTCamera
+  - name: utiltrunk_speed_error
+    camera: MTCamera
+  - name: utiltrunk_valve_error
+    camera: MTCamera
+  - name: vacuum_bad_air_pressure
+    camera: MTCamera
+  - name: vacuum_bad_foreline_valve_state
+    camera: MTCamera
+  - name: vacuum_bad_relay_direction
+    camera: MTCamera
+  - name: vacuum_bad_relay_trip
+    camera: MTCamera
+  - name: vacuum_bad_turbo_pump
+    camera: MTCamera
+  - name: vacuum_bad_vacuum
+    camera: MTCamera
+  - name: vacuum_cannot_open_gate
+    camera: MTCamera
+  - name: vacuum_closed_foreline_valve_by_gate
+    camera: MTCamera
+  - name: vacuum_closed_foreline_valve_by_high_pressure
+    camera: MTCamera
+  - name: vacuum_closed_foreline_valve_by_turbo
+    camera: MTCamera
+  - name: vacuum_closed_gate_valve
+    camera: MTCamera
+  - name: vacuum_closed_turbo_pump_vent
+    camera: MTCamera
+  - name: vacuum_dead_vacuum_plc
+    camera: MTCamera
+  - name: vacuum_device_offline
+    camera: MTCamera
+  - name: vacuum_failed_verify
+    camera: MTCamera
+  - name: vacuum_high_foreline_pressure
+    camera: MTCamera
+  - name: vacuum_high_turbo_power
+    camera: MTCamera
+  - name: vacuum_high_turbo_temp
+    camera: MTCamera
+  - name: vacuum_high_vacuum
+    camera: MTCamera
+  - name: vacuum_inconsistent_gate_position
+    camera: MTCamera
+  - name: vacuum_ion_pump_stopped
+    camera: MTCamera
+  - name: vacuum_pump_in_auto_tuning
+    camera: MTCamera
+  - name: vacuum_relay_not_enabled
+    camera: MTCamera
+  - name: vacuum_removed_refrig_permits
+    camera: MTCamera
+  - name: vacuum_shut_gate_valve
+    camera: MTCamera
+  - name: vacuum_simultaneous_vent_and_pump
+    camera: MTCamera
+  - name: vacuum_stopped_turbo_cold_cathode
+    camera: MTCamera
+  - name: vacuum_stopped_turbo_pump
+    camera: MTCamera
+  - name: vacuum_stopped_vacuum_cold_cathode
+    camera: MTCamera
+  - name: vacuum_stuck_gate_valve
+    camera: MTCamera
+  - name: vacuum_turbo_pump_failure
+    camera: MTCamera
+  #
+  # ATCamera alerts
+  #
+  - name: ats_device_offline
+    camera: ATCamera
+  - name: bonn_shutter_device_offline
+    camera: ATCamera
+  - name: bonn_shutter_error
+    camera: ATCamera
+  - name: bonn_shutter_gpio_driver
+    camera: ATCamera
+  - name: bonn_shutter_voltage_limit
+    camera: ATCamera
+  - name: bonn_shutter_wrong_state
+    camera: ATCamera
+  - name: cluster_deserialization_problem
+    camera: ATCamera
+  - name: cluster_monitor_cluster_split
+    camera: ATCamera
+  - name: command_failure
+    camera: ATCamera
+  - name: configuration_mismatch
+    camera: ATCamera
+  - name: configuration_operation_exception
+    camera: ATCamera
+  - name: configuration_service_unavailable
+    camera: ATCamera
+  - name: daq_monitor_device_offline
+    camera: ATCamera
+  - name: daq_monitor_failed_auto_purge
+    camera: ATCamera
+  - name: daq_monitor_high_incremental_count
+    camera: ATCamera
+  - name: daq_monitor_low_store_free_space
+    camera: ATCamera
+  - name: focal_plane_aspics_high_temp
+    camera: ATCamera
+  - name: focal_plane_aspics_low_temp
+    camera: ATCamera
+  - name: focal_plane_bad_pixels
+    camera: ATCamera
+  - name: focal_plane_device_offline
+    camera: ATCamera
+  - name: focal_plane_image_timed_out
+    camera: ATCamera
+  - name: focal_plane_reb_board_high_current
+    camera: ATCamera
+  - name: focal_plane_reb_board_high_temp
+    camera: ATCamera
+  - name: focal_plane_reb_board_low_temp
+    camera: ATCamera
+  - name: image_handling_missingHeaders
+    camera: ATCamera
+  - name: influx_database_problem
+    camera: ATCamera
+  - name: java_runtime_problem
+    camera: ATCamera
+  - name: jvm_freeze
+    camera: ATCamera
+  - name: jvm_gc_duration
+    camera: ATCamera
+  - name: jvm_low_available_memory
+    camera: ATCamera
+  - name: localdb_batch_exception
+    camera: ATCamera
+  - name: localdb_batch_ingestion_queue_size
+    camera: ATCamera
+  - name: localdb_batch_rollback_exception
+    camera: ATCamera
+  - name: localdb_long_running_process
+    camera: ATCamera
+  - name: localdb_wrong_state_persistence
+    camera: ATCamera
+  - name: mcm_controlled_subsystem_fault
+    camera: ATCamera
+  - name: mcm_controlled_subsystem_gone
+    camera: ATCamera
+  - name: mcm_controlled_subsystem_lost_lock
+    camera: ATCamera
+  - name: mmm_missing_subsystems
+    camera: ATCamera
+  - name: periodic_task_failure
+    camera: ATCamera
+  - name: rebpower_device_offline
+    camera: ATCamera
+  - name: rest_server_unavailable
+    camera: ATCamera
+  #
+  # CCCamera alerts
+  #
+  - name: cluster_deserialization_problem
+    camera: CCCamera
+  - name: cluster_monitor_cluster_split
+    camera: CCCamera
+  - name: comcam_quadbox_device_offline
+    camera: CCCamera
+  - name: comcam_quadbox_high_current
+    camera: CCCamera
+  - name: comcam_quadbox_low_voltage
+    camera: CCCamera
+  - name: command_failure
+    camera: CCCamera
+  - name: configuration_mismatch
+    camera: CCCamera
+  - name: configuration_operation_exception
+    camera: CCCamera
+  - name: configuration_service_unavailable
+    camera: CCCamera
+  - name: daq_monitor_device_offline
+    camera: CCCamera
+  - name: daq_monitor_failed_auto_purge
+    camera: CCCamera
+  - name: daq_monitor_high_incremental_count
+    camera: CCCamera
+  - name: daq_monitor_low_store_free_space
+    camera: CCCamera
+  - name: focal_plane_aspics_high_temp
+    camera: CCCamera
+  - name: focal_plane_aspics_low_temp
+    camera: CCCamera
+  - name: focal_plane_bad_pixels
+    camera: CCCamera
+  - name: focal_plane_device_offline
+    camera: CCCamera
+  - name: focal_plane_image_timed_out
+    camera: CCCamera
+  - name: focal_plane_reb_board_high_temp
+    camera: CCCamera
+  - name: focal_plane_reb_board_low_temp
+    camera: CCCamera
+  - name: hexvalves_device_offline
+    camera: CCCamera
+  - name: image_handling_missingHeaders
+    camera: CCCamera
+  - name: influx_database_problem
+    camera: CCCamera
+  - name: java_runtime_problem
+    camera: CCCamera
+  - name: jvm_freeze
+    camera: CCCamera
+  - name: jvm_gc_duration
+    camera: CCCamera
+  - name: jvm_low_available_memory
+    camera: CCCamera
+  - name: localdb_batch_exception
+    camera: CCCamera
+  - name: localdb_batch_ingestion_queue_size
+    camera: CCCamera
+  - name: localdb_batch_rollback_exception
+    camera: CCCamera
+  - name: localdb_long_running_process
+    camera: CCCamera
+  - name: localdb_wrong_state_persistence
+    camera: CCCamera
+  - name: mcm_controlled_subsystem_fault
+    camera: CCCamera
+  - name: mcm_controlled_subsystem_gone
+    camera: CCCamera
+  - name: mcm_controlled_subsystem_lost_lock
+    camera: CCCamera
+  - name: mmm_missing_subsystems
+    camera: CCCamera
+  - name: mpm_bad_vacuum
+    camera: CCCamera
+  - name: mpm_dead_plc
+    camera: CCCamera
+  - name: mpm_device_offline
+    camera: CCCamera
+  - name: mpm_high_temp
+    camera: CCCamera
+  - name: mpm_low_temp
+    camera: CCCamera
+  - name: mpm_ut_leak_detected
+    camera: CCCamera
+  - name: mpm_ut_leak_detector_fault
+    camera: CCCamera
+  - name: mpm_ut_smoke_detected
+    camera: CCCamera
+  - name: mpm_ut_smoke_detector_fault
+    camera: CCCamera
+  - name: pathfinder_bad_relay_direction
+    camera: CCCamera
+  - name: pathfinder_bad_relay_trip
+    camera: CCCamera
+  - name: pathfinder_bad_turbo_pump
+    camera: CCCamera
+  - name: pathfinder_cannot_open_hx_gate
+    camera: CCCamera
+  - name: pathfinder_device_offline
+    camera: CCCamera
+  - name: pathfinder_failed_verify
+    camera: CCCamera
+  - name: pathfinder_generic_alert
+    camera: CCCamera
+  - name: pathfinder_hx_vacuum_bad
+    camera: CCCamera
+  - name: pathfinder_load_rtd_temp
+    camera: CCCamera
+  - name: pathfinder_pf_high_temp
+    camera: CCCamera
+  - name: pathfinder_pressure_high
+    camera: CCCamera
+  - name: pathfinder_pressure_low
+    camera: CCCamera
+  - name: pathfinder_pump_in_auto_tuning
+    camera: CCCamera
+  - name: pathfinder_quadbox_device_offline
+    camera: CCCamera
+  - name: pathfinder_relay_not_enabled
+    camera: CCCamera
+  - name: pathfinder_shut_hx_gate_valve
+    camera: CCCamera
+  - name: pathfinder_turbo_pump_failure
+    camera: CCCamera
+  - name: pathfinder_turbo_pump_over_temp
+    camera: CCCamera
+  - name: pathfinder_ups_disconnected
+    camera: CCCamera
+  - name: pathfinder_ups_on_battery
+    camera: CCCamera
+  - name: pathfinder_ut_flow
+    camera: CCCamera
+  - name: pathfinder_ut_high_speed
+    camera: CCCamera
+  - name: pathfinder_ut_high_temp
+    camera: CCCamera
+  - name: pathfinder_ut_temp_low
+    camera: CCCamera
+  - name: pathfinder_vacuum_plc_not_alive
+    camera: CCCamera
+  - name: periodic_task_failure
+    camera: CCCamera
+  - name: rebpower_board_high_temp
+    camera: CCCamera
+  - name: rebpower_device_offline
+    camera: CCCamera
+  - name: rebpower_emergency_action_failed
+    camera: CCCamera
+  - name: rebpower_hv_bias_high_current
+    camera: CCCamera
+  - name: rebpower_hv_bias_high_voltage
+    camera: CCCamera
+  - name: rest_server_unavailable
+    camera: CCCamera
+  - name: vacuum_bad_relay_direction
+    camera: CCCamera
+  - name: vacuum_bad_relay_trip
+    camera: CCCamera
+  - name: vacuum_bad_turbo_pump
+    camera: CCCamera
+  - name: vacuum_cooler_auto_shut_off
+    camera: CCCamera
+  - name: vacuum_cooler_power_setting_low
+    camera: CCCamera
+  - name: vacuum_cooler_temp_low
+    camera: CCCamera
+  - name: vacuum_dead_vacuum_plc
+    camera: CCCamera
+  - name: vacuum_device_offline
+    camera: CCCamera
+  - name: vacuum_failed_verify
+    camera: CCCamera
+  - name: vacuum_generic_alert
+    camera: CCCamera
+  - name: vacuum_high_pressure
+    camera: CCCamera
+  - name: vacuum_high_temp
+    camera: CCCamera
+  - name: vacuum_low_pressure
+    camera: CCCamera
+  - name: vacuum_plate_high_temp
+    camera: CCCamera
+  - name: vacuum_plate_low_temp
+    camera: CCCamera
+  - name: vacuum_pump_in_auto_tuning
+    camera: CCCamera
+  - name: vacuum_relay_not_enabled
+    camera: CCCamera
+  - name: vacuum_turbo_pump_failure
+    camera: CCCamera
+  - name: vacuum_turbo_pump_over_temp
+    camera: CCCamera
