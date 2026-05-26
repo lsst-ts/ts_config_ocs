@@ -30,8 +30,8 @@ tma:
   glycol_setpoint_delta: -1.75
   heater_setpoint_delta: -0.75
   top_end_setpoint_delta: -3
-  m1m3_extra_delta_closedatnite: 0.0 # extra offset between inside and outside temps
-  top_end_setpoint_delta_closedatnite: 0.0 # extra offset between inside and outside temps
+  m1m3_extra_delta_closedatnite: 1.0 # extra offset between inside and outside temps
+  top_end_setpoint_delta_closedatnite: -1.0 # extra offset between inside and outside temps
   forecast_glycol_setpoint_delta: -1.0
   forecast_heater_setpoint_delta: 0.0
   forecast_top_end_setpoint_delta: -1.0
