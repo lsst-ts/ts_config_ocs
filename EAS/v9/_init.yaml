@@ -17,7 +17,9 @@ hvac:
   glycol_absolute_minimum: -10.0
   glycol_absolute_maximum: 10.0 # while PCS chiller is on cold EGW
   ahu_setpoint_delta: -2.5
-  ahu_setpoint_delta_closedatnite: -2.5
+  forecast_ahu_setpoint_delta: -2.0
+  ahu_setpoint_delta_closed_at_night: -2.5
+  closed_at_night_setpoint_cadence: 60.0
   forecast_ahu_setpoint_delta: -2.0
 tma:
   m1m3ts_delay_mode:
@@ -30,12 +32,13 @@ tma:
   glycol_setpoint_delta: -1.75
   heater_setpoint_delta: -0.75
   top_end_setpoint_delta: -3
-  m1m3_extra_delta_closedatnite: 1.0 # extra offset between inside and outside temps
-  top_end_setpoint_delta_closedatnite: -1.0 # extra offset between inside and outside temps
+  m1m3_extra_delta_closed_at_night: 1.0 # extra offset to apply based on difference between near m1m3 air and outside temps
+  top_end_setpoint_delta_closed_at_night: -1.0 # extra offset for top end
   forecast_glycol_setpoint_delta: -1.0
   forecast_heater_setpoint_delta: 0.0
   forecast_top_end_setpoint_delta: -1.0
   m1m3_setpoint_cadence: 150
+  closed_at_night_setpoint_cadence: 150
   setpoint_deadband_heating: 0.1
   setpoint_deadband_cooling: 0.1
   maximum_heating_rate: 0.4 # was 0.75
