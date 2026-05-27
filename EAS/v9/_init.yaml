@@ -17,7 +17,7 @@ hvac:
   glycol_absolute_minimum: -10.0
   glycol_absolute_maximum: 10.0 # while PCS chiller is on cold EGW
   ahu_setpoint_delta: -2.5
-  ahu_setpoint_delta_closedatnite: -3.0
+  ahu_setpoint_delta_closedatnite: -2.5
   forecast_ahu_setpoint_delta: -2.0
 tma:
   m1m3ts_delay_mode:
@@ -26,7 +26,7 @@ tma:
     tolerance_negative: 0.5 # convergence criteria
 #    slew_rate: 1.0 # (eventing_controlled_convergence only) how fast to converge (override normal rates)
     timeout: 3600.0 # convergence timeout
-#    delay: 3600.0 # (time_delay only) usual venting time (30 minutes) plus 30 minutes
+#    delay: 3600.0 # (time_delay only) set to usual venting time (30 minutes) plus 30 minutes
   glycol_setpoint_delta: -1.75
   heater_setpoint_delta: -0.75
   top_end_setpoint_delta: -3
@@ -38,8 +38,8 @@ tma:
   m1m3_setpoint_cadence: 150
   setpoint_deadband_heating: 0.1
   setpoint_deadband_cooling: 0.1
-  maximum_heating_rate: 0.75
-  slow_cooling_rate: 0.75
+  maximum_heating_rate: 0.4 # was 0.75
+  slow_cooling_rate: 0.4 # was 0.75
   fast_cooling_rate: 2.00 # maximum cooling during daytime or dome closed
   fan_speed:
     fan_speed_min: 700.0
@@ -50,5 +50,5 @@ tma:
     fan_throttle_max_temp_diff: 5.0
 dome:
   dome_open_threshold: 25.0
-features_to_disable: []
+features_to_disable: [fanspeed] # during slowdown test
 twilight_definition: astronomical
