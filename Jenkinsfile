@@ -4,6 +4,7 @@ DevelopPipeline(
     idl_names: [], 
     module_name: "",
     has_doc_site: false,
+    require_scons: true,
     extra_packages: [
         // Dependencies
         "lsst-ts/ts_ess_common",

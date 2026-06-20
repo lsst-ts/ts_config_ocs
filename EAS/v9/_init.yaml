@@ -17,8 +17,9 @@ hvac:
   glycol_absolute_minimum: -10.0
   glycol_absolute_maximum: 10.0 # while PCS chiller is on cold EGW
   ahu_setpoint_delta: -2.5
-  ahu_setpoint_delta_closedatnite: 0.0
-  forecast_ahu_setpoint_delta: -3.0
+  ahu_setpoint_delta_closed_at_night: -2.5
+  closed_at_night_setpoint_cadence: 60.0
+  forecast_ahu_setpoint_delta: -2.0
 tma:
   m1m3ts_delay_mode:
     mode: wait_for_convergence  # time_delay, wait_for_convergence, evening_controlled_convergence
@@ -26,29 +27,30 @@ tma:
     tolerance_negative: 0.5 # convergence criteria
 #    slew_rate: 1.0 # (eventing_controlled_convergence only) how fast to converge (override normal rates)
     timeout: 3600.0 # convergence timeout
-#    delay: 3600.0 # (time_delay only) usual venting time (30 minutes) plus 30 minutes
+#    delay: 3600.0 # (time_delay only) set to usual venting time (30 minutes) plus 30 minutes
   glycol_setpoint_delta: -1.75
   heater_setpoint_delta: -0.75
   top_end_setpoint_delta: -3
-  m1m3_extra_delta_closedatnite: 1.5 # offset between inside (near m1m3) and outside temps
-  top_end_setpoint_delta_closedatnite: 1.0 # offset between inside (near m2) and outside temps
-  forecast_glycol_setpoint_delta: -2.25
-  forecast_heater_setpoint_delta: -1.25
-  forecast_top_end_setpoint_delta: -3.5
+  m1m3_extra_delta_closed_at_night: 1.0 # extra offset to apply based on difference between near m1m3 air and outside temps
+  top_end_setpoint_delta_closed_at_night: -1.0 # extra offset for top end
+  forecast_glycol_setpoint_delta: -1.0
+  forecast_heater_setpoint_delta: 0.0
+  forecast_top_end_setpoint_delta: -1.0
   m1m3_setpoint_cadence: 150
+  closed_at_night_setpoint_cadence: 150
   setpoint_deadband_heating: 0.1
   setpoint_deadband_cooling: 0.1
-  maximum_heating_rate: 0.75
-  slow_cooling_rate: 0.75
-  fast_cooling_rate: 2.00 # maximum cooling during daytime or dome closed
+  maximum_heating_rate: 0.4 # was 0.75
+  slow_cooling_rate: 0.4 # was 0.75
+  fast_cooling_rate: 2.0 # maximum cooling during daytime or dome closed
   fan_speed:
     fan_speed_min: 700.0
-    fan_speed_max: 1200.0
+    fan_speed_max: 1500.0
     fan_glycol_heater_offset_min: -1.0
-    fan_glycol_heater_offset_max: -2.50
+    fan_glycol_heater_offset_max: -2.0
     fan_throttle_turn_on_temp_diff: 0.5
     fan_throttle_max_temp_diff: 1.0
 dome:
   dome_open_threshold: 25.0
-features_to_disable: []
+features_to_disable: [forecast] # during slowdown test
 twilight_definition: astronomical
