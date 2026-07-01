@@ -195,11 +195,17 @@ rules:
   configs:
   - name: AT
     dew_point_sensors:
-    - sal_index: 201  # see ESS configuration
+    - sal_name: ESS
+      sal_index: 201  # see ESS configuration
+      sal_topic: tel_dewPoint
+      sal_field: dewPointItem
       sensor_names:
       - AuxTel-ESS02
     temperature_sensors:
-    - sal_index: 201
+    - sal_name: ESS
+      sal_index: 201  # see ESS configuration
+      sal_topic: tel_temperature
+      sal_field: temperatureItem
       sensor_info:
       - sensor_name: AuxTel-ESS01
         indices: [1, 2, 3]
@@ -210,11 +216,17 @@ rules:
     max_data_age: 30
   - name: AT External
     dew_point_sensors:
-    - sal_index: 301  # see ESS configuration
+    - sal_name: ESS
+      sal_index: 301  # see ESS configuration
+      sal_topic: tel_dewPoint
+      sal_field: dewPointItem
       sensor_names:
       - "Weather tower computed dew point"
     temperature_sensors:
-    - sal_index: 301 # see ESS configuration
+    - sal_name: ESS
+      sal_index: 301  # see ESS configuration
+      sal_topic: tel_temperature
+      sal_field: temperatureItem
       sensor_info:
       - sensor_name: "Weather tower air temperature"
     warning_level: 2.5
