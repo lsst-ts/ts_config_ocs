@@ -155,10 +155,10 @@ rules:
       sensor_names:
       - Camera-ESS01
     temperature_sensors:
-    - sal_name: MTCamera
+    - sal_name: MTM2
       sal_index: 0
-      sal_topic: tel_utiltrunk_UT
-      sal_field: coolPipeSplyTemp
+      sal_topic: tel_temperature
+      sal_field: ring0
     warning_level: 4.0
     critical_level: 3.5
     hysteresis: 0.2
