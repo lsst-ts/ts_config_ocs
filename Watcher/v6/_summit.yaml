@@ -628,6 +628,9 @@ rules:
 - classname: MTAOSLag
   configs:
   - {}
+- classname: MTImageIngestionLag
+  configs:
+  - {}
 escalation:
   - alarms:
     - ATCameraDewar
