@@ -622,6 +622,9 @@ rules:
     name_secondary: ESS:305
     severity_individual_fail: SERIOUS
     severity_both_fail: CRITICAL
+- classname: ClosedLoopDisabled
+  configs:
+  - {}
 escalation:
   - alarms:
     - ATCameraDewar
