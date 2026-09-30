@@ -144,3 +144,21 @@ rules:
   configs:
   - alertId: evt_alertRaised
     camera: MTCamera
+- classname: ClosedLoopDisabled
+  configs:
+  - {}
+- classname: MTAOSLag
+  configs:
+  - {}
+- classname: MTImageIngestionLag
+  configs:
+  - {}
+- classname: Telemetry
+  configs:
+  - name: DIMM:1
+    callback_name: tel_status
+    summary_states:
+    - DISABLED
+    - ENABLED
+    warning_timeout: 15
+    serious_timeout: 60
