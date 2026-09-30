@@ -625,6 +625,9 @@ rules:
 - classname: ClosedLoopDisabled
   configs:
   - {}
+- classname: MTAOSLag
+  configs:
+  - {}
 escalation:
   - alarms:
     - ATCameraDewar
