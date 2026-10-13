@@ -1,0 +1,68 @@
+weather:
+  efd_name: test
+  ess_index: 301
+  indoor_ess_index: 113
+  wind_average_window: 1800
+  wind_minimum_window: 600
+  anemometer_ess_indices: [123, 124, 125, 126] # inside the dome, for nighttime louver control
+hvac:
+  ahu_control: [1, 2, 3, 4]
+  setpoint_lower_limit: 2 # for AHU setting based on Camera cryo compressor performance
+  wind_threshold: 10
+  vec04_hold_time: 300
+  glycol_band_low: -10.0
+  glycol_band_high: -5.0
+  glycol_average_offset: -7.5
+  glycol_dew_point_margin: 1.0
+  glycol_setpoints_delta: 1.0
+  glycol_absolute_minimum: -10.0
+  glycol_absolute_maximum: 10.0 # while PCS chiller is on cold EGW
+  ahu_setpoint_delta: -2.5
+  ahu_setpoint_delta_closed_at_night: -2.0
+  closed_at_night_setpoint_cadence: 60.0
+  forecast_ahu_setpoint_delta: -2.0
+tma:
+  m1m3ts_delay_mode:
+    mode: wait_for_convergence  # time_delay, wait_for_convergence, evening_controlled_convergence
+    tolerance_positive: 0.5 # convergence criteria
+    tolerance_negative: 0.5 # convergence criteria
+    timeout: 3600.0 # convergence timeout
+  glycol_setpoint_delta: -1.75
+  heater_setpoint_delta: -0.75
+  top_end_setpoint_delta: -3
+  m1m3_extra_delta_closed_at_night: 1.0 # extra offset to apply based on difference between near m1m3 air and outside temps
+  top_end_setpoint_delta_closed_at_night: -1.0 # extra offset for top end
+  forecast_glycol_setpoint_delta: -1.0
+  forecast_heater_setpoint_delta: 0.0
+  forecast_top_end_setpoint_delta: -1.0
+  m1m3_setpoint_cadence: 150
+  closed_at_night_setpoint_cadence: 150
+  setpoint_deadband_heating: 0.1
+  setpoint_deadband_cooling: 0.1
+  maximum_heating_rate: 0.75
+  slow_cooling_rate: 0.75
+  fast_cooling_rate: 2.0 # maximum cooling during daytime or dome closed
+  fan_speed:
+    fan_speed_min: 900.0
+    fan_speed_max: 1700.0
+    fan_glycol_heater_offset_min: -1.0
+    fan_glycol_heater_offset_max: -1.6
+    fan_throttle_turn_on_temp_diff: 0.05
+    fan_throttle_max_temp_diff: 0.2
+dome:
+  dome_open_threshold: 25.0
+louver:
+  louver_sun_angle: 60.0 # deg; by day, louvers this close to the sun's azimuth are capped
+  louver_exposed_command: 50.0 # %; the daytime cap
+  sun_altitude_threshold: -1.0 # deg; sun altitude dividing day and night louver control
+  nighttime_vent_delay: 1800.0 # s after the louvers open before nighttime control starts
+  inside_windspeed_threshold: 2.0 # m/s; target windspeed inside the dome
+  inside_windspeed_deadband: 0.2 # m/s either side of the target
+  upwind_interval: 10.0 # %; nighttime step for upwind louvers
+  downwind_interval: 25.0 # %; nighttime step for downwind louvers
+  wind_interval: 60.0 # s; outside wind direction average
+  anemometer_interval: 15.0 # s; inside windspeed average
+  nighttime_adjustment_interval: 15.0 # s between nighttime steps
+features_to_disable:
+  - forecast  # disabled due to unreliable forecast updates
+twilight_definition: astronomical
