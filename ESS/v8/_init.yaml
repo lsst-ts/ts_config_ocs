@@ -381,6 +381,15 @@ instances:
     csc_name: M1M3 Thermal Gradients
     data_clients:
       - client_class: ThermalGradientsDataClient
+        config:
+          max_data_age: 120
+          max_missing: 0
+          min_publish_interval: 30
+          radius_limit: null
+          remove_nonstandard_cells: true
+          connect_timeout: 60
+          read_timeout: 120
+          max_read_timeouts: 5
 
   - sal_index: 201
     csc_name: AuxTel Misc
