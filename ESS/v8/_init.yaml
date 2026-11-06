@@ -357,6 +357,39 @@ instances:
             sensor_type: Sps30
             baud_rate: 0
             location: MTDome 3
+  - sal_index: 130
+    csc_name: M1M3 Flow Meter 1
+    data_clients:
+      - client_class: ModbusDataClient
+        config:
+          host: m1m3-crio-ts.cp.lsst.org
+          port: 1501
+          connect_timeout: 5
+          device_name: Flow Meter 1
+          device_type: flowmeter
+  - sal_index: 131
+    csc_name: M1M3 Flow Meter 2
+    data_clients:
+      - client_class: ModbusDataClient
+        config:
+          host: m1m3-crio-ts.cp.lsst.org
+          port: 1502
+          connect_timeout: 5
+          device_name: Flow Meter 2
+          device_type: flowmeter
+  - sal_index: 132
+    csc_name: M1M3 Thermal Gradients
+    data_clients:
+      - client_class: ThermalGradientsDataClient
+        config:
+          max_data_age: 120
+          max_missing: 0
+          min_publish_interval: 30
+          radius_limit: null
+          remove_nonstandard_cells: true
+          connect_timeout: 60
+          read_timeout: 120
+          max_read_timeouts: 5
 
   - sal_index: 201
     csc_name: AuxTel Misc
