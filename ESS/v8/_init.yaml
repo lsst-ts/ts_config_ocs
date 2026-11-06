@@ -357,6 +357,19 @@ instances:
             sensor_type: Sps30
             baud_rate: 0
             location: MTDome 3
+  - sal_index: 130
+    csc_name: M1M3 Thermal Gradients
+    data_clients:
+      # Computes the M1M3 glass thermal gradients from the thermal scanner
+      # (ESS:114-117) temperatures and publishes them as the
+      # ESS.m1m3ThermalGradients telemetry. Needs no hardware of its own.
+      - client_class: ThermalGradientsDataClient
+        config:
+          # Long timeouts because recovering M1M3 takes 30 minutes, matching
+          # the scanner instances above.
+          connect_timeout: 60
+          read_timeout: 120
+          max_read_timeouts: 90
 
   - sal_index: 201
     csc_name: AuxTel Misc

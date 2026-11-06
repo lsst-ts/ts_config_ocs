@@ -12,6 +12,8 @@ DevelopPipeline(
         "lsst-ts/ts_ess_labjack",
         "lsst-ts/ts_ess_ringss",
         "lsst-ts/ts_ess_epm",
+        "lsst-ts/ts_ess_m1m3",
+        "lsst-ts/ts_m1m3_utils",  // Required by ts_ess_m1m3.
         "lsst-ts/ts_simactuators",
         "lsst-ts/ts_tcpip",
         // Package tested by this package
