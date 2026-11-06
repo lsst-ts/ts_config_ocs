@@ -6,6 +6,15 @@ Version History
 
 .. towncrier release notes start
 
+v0.30.0 (2026-10-16)
+====================
+
+New Features
+------------
+
+- Updated EAS configuration to schema v10, adding the louver section for nighttime louver control and the in-dome anemometer ESS indices. The v9 configuration is kept for EAS versions from before OSW-1891. (`OSW-2426 <https://rubinobs.atlassian.net//browse/OSW-2426>`_)
+
+
 v0.29.0 (2026-09-30)
 ====================
 
