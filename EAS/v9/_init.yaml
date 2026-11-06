@@ -7,7 +7,7 @@ weather:
 hvac:
   ahu_control: [1, 2, 3, 4]
   setpoint_lower_limit: 2 # for AHU setting based on Camera cryo compressor performance
-  wind_threshold: 10
+  wind_threshold: 30
   vec04_hold_time: 300
   glycol_band_low: -10.0
   glycol_band_high: -5.0
