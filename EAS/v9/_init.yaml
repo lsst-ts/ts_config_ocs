@@ -26,7 +26,7 @@ tma:
     tolerance_positive: 0.5 # convergence criteria
     tolerance_negative: 0.5 # convergence criteria
 #    slew_rate: 1.0 # (eventing_controlled_convergence only) how fast to converge (override normal rates)
-    timeout: 3600.0 # convergence timeout
+    timeout: 60.0 # convergence timeout
 #    delay: 3600.0 # (time_delay only) set to usual venting time (30 minutes) plus 30 minutes
   glycol_setpoint_delta: -1.75
   heater_setpoint_delta: -0.75
