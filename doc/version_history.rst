@@ -6,6 +6,15 @@ Version History
 
 .. towncrier release notes start
 
+v0.30.1 (2026-11-05)
+====================
+
+Other Changes and Additions
+---------------------------
+
+- Changed VEC-04 fan windspeed threshold from 10 m/s to 30 m/s. (`SCC-32 <https://rubinobs.atlassian.net//browse/SCC-32>`_)
+
+
 v0.30.0 (2026-10-16)
 ====================
 
