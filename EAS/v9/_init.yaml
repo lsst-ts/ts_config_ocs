@@ -12,7 +12,7 @@ hvac:
   glycol_band_low: -10.0
   glycol_band_high: -5.0
   glycol_average_offset: -7.5
-  glycol_dew_point_margin: 1.0
+  glycol_dew_point_margin: -100 # disable glycol setpoint constraint
   glycol_setpoints_delta: 1.0
   glycol_absolute_minimum: -10.0
   glycol_absolute_maximum: 10.0 # while PCS chiller is on cold EGW
