@@ -302,48 +302,6 @@ rules:
     hysteresis: 1
     poll_interval: 1
     max_data_age: 30
-  - name: Camera humidity
-    humidity_sensors:
-    - sal_index: 111  # see ESS configuration
-      sensor_names:
-      - "Camera-ESS01"
-    warning_level: 70
-    serious_level: 80
-    critical_level: 90
-    hysteresis: 1
-    poll_interval: 1
-    max_data_age: 30
-  - name: M2 Humidity
-    humidity_sensors:
-    - sal_index: 112  # see ESS configuration
-      sensor_names:
-      - "M2-ESS02"
-    warning_level: 70
-    serious_level: 80
-    critical_level: 90
-    hysteresis: 1
-    poll_interval: 1
-    max_data_age: 30
-  - name: M1M3 Humidity
-    humidity_sensors:
-    - sal_index: 113  # see ESS configuration
-      sensor_names:
-      - "M1M3-ESS03"
-    warning_level: 70
-    serious_level: 80
-    critical_level: 90
-    hysteresis: 1
-    poll_interval: 1
-    max_data_age: 30
-  - name: WeatherStation
-    humidity_sensors:
-    - sal_index: 301  # see ESS configuration
-      sensor_names:
-      - "Weather tower relative humidity"
-    warning_level: 80
-    hysteresis: 1
-    poll_interval: 1
-    max_data_age: 30
 - classname: OverTemperature
   configs:
   - name: MT Camera Hexapod
