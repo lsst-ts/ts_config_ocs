@@ -6,6 +6,18 @@ Version History
 
 .. towncrier release notes start
 
+v0.30.2 (2026-11-11)
+====================
+
+Other Changes and Additions
+---------------------------
+
+- Updated EAS v9 configuration: reduced the TMA convergence timeout from 3600 s to 60 s. (`SVAB-28 <https://rubinobs.atlassian.net//browse/SVAB-28>`_)
+- Updated EAS v9 configuration: changed the maximum fan glycol heater offset from -1.6 to -2.0. (`SVAB-28 <https://rubinobs.atlassian.net//browse/SVAB-28>`_)
+- Updated EAS v9 configuration: disabled the glycol dew point constraint. (`SVAB-28 <https://rubinobs.atlassian.net//browse/SVAB-28>`_)
+- Updated EAS v9 configuration: reduced maximum TMA fan speed from 1700 to 1500. (`SVAB-28 <https://rubinobs.atlassian.net//browse/SVAB-28>`_)
+
+
 v0.30.1 (2026-11-05)
 ====================
 
