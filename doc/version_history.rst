@@ -6,6 +6,16 @@ Version History
 
 .. towncrier release notes start
 
+v0.30.3 (2026-11-11)
+====================
+
+Other Changes and Additions
+---------------------------
+
+- Added M1M3 flow meters. (`SSW-3141 <https://rubinobs.atlassian.net//browse/SSW-3141>`_)
+- Added ESS 132 (M1M3 Thermal Gradients). (`SSW-3141 <https://rubinobs.atlassian.net//browse/SSW-3141>`_)
+
+
 v0.30.2 (2026-11-11)
 ====================
 
