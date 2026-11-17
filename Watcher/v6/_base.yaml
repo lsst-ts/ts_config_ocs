@@ -162,3 +162,114 @@ rules:
     - ENABLED
     warning_timeout: 15
     serious_timeout: 60
+- classname: DewPointDepression
+  configs:
+  - name: AT
+    dew_point_sensors:
+    - sal_name: ESS
+      sal_index: 201  # see ESS configuration
+      sal_topic: tel_dewPoint
+      sal_field: dewPointItem
+      sensor_names:
+      - AuxTel-ESS02
+    temperature_sensors:
+    - sal_name: ESS
+      sal_index: 201  # see ESS configuration
+      sal_topic: tel_temperature
+      sal_field: temperatureItem
+      sensor_info:
+      - sensor_name: AuxTel-ESS01
+        indices: [1, 2, 3]
+    warning_level: 2.5
+    critical_level: 2
+    hysteresis: 0.2
+    poll_interval: 1
+    max_data_age: 30
+  - name: Simonyi_ESS_111
+    dew_point_sensors:
+    - sal_name: ESS
+      sal_index: 111 # see ESS configuration
+      sal_topic: tel_dewPoint
+      sal_field: dewPointItem
+      sensor_names:
+      - "Camera-ESS01"
+    temperature_sensors:
+    - sal_name: ESS
+      sal_index: 111 # see ESS configuration
+      sal_topic: tel_temperature
+      sal_field: temperatureItem
+      sensor_info:
+      - sensor_name: "Camera-ESS01"
+    warning_level: 2
+    hysteresis: 0.2
+    poll_interval: 1
+    max_data_age: 30
+  - name: Simonyi_ESS_112
+    dew_point_sensors:
+    - sal_name: ESS
+      sal_index: 112 # see ESS configuration
+      sal_topic: tel_dewPoint
+      sal_field: dewPointItem
+      sensor_names:
+      - "M2-ESS02"
+    temperature_sensors:
+    - sal_name: ESS
+      sal_index: 112 # see ESS configuration
+      sal_topic: tel_temperature
+      sal_field: temperatureItem
+      sensor_info:
+      - sensor_name: "M2-ESS02"
+    warning_level: 2
+    hysteresis: 0.2
+    poll_interval: 1
+    max_data_age: 30
+  - name: Simonyi_ESS_113
+    dew_point_sensors:
+    - sal_name: ESS
+      sal_index: 113 # see ESS configuration
+      sal_topic: tel_dewPoint
+      sal_field: dewPointItem
+      sensor_names:
+      - "M1M3-ESS03"
+    temperature_sensors:
+    - sal_name: ESS
+      sal_index: 113 # see ESS configuration
+      sal_topic: tel_temperature
+      sal_field: temperatureItem
+      sensor_info:
+      - sensor_name: "M1M3-ESS03"
+    warning_level: 2
+    hysteresis: 0.2
+    poll_interval: 1
+    max_data_age: 30
+  - name: WeatherStation
+    dew_point_sensors:
+    - sal_name: ESS
+      sal_index: 301 # see ESS configuration
+      sal_topic: tel_dewPoint
+      sal_field: dewPointItem
+      sensor_names:
+      - "Weather tower computed dew point"
+    temperature_sensors:
+    - sal_name: ESS
+      sal_index: 301 # see ESS configuration
+      sal_topic: tel_temperature
+      sal_field: temperatureItem
+      sensor_info:
+      - sensor_name: "Weather tower air temperature"
+    warning_level: 2
+    critical_level: 1
+    hysteresis: 0.85
+    poll_interval: 1
+    max_data_age: 30
+- classname: Humidity
+  configs:
+  - name: AT
+    humidity_sensors:
+    - sal_index: 201  # see ESS configuration
+      sensor_names:
+      - AuxTel-ESS02
+    warning_level: 70
+    hysteresis: 1
+    poll_interval: 1
+    max_data_age: 30
