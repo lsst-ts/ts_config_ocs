@@ -234,6 +234,23 @@ rules:
     hysteresis: 0.2
     poll_interval: 1
     max_data_age: 30
+  - name: DynaleneNearElWrap
+    dew_point_sensors:
+    - sal_name: ESS
+      sal_index: 111  # see ESS configuration
+      sal_topic: tel_dewPoint
+      sal_field: dewPointItem
+      sensor_names:
+      - Camera-ESS01
+    temperature_sensors:
+    - sal_name: MTCamera
+      sal_index: 0
+      sal_topic: tel_utiltrunk_UT
+      sal_field: coolPipeSplyTemp
+    warning_level: 2.0
+    hysteresis: 0.2
+    poll_interval: 1
+    max_data_age: 30
   - name: Simonyi
     dew_point_sensors:
     - sal_name: ESS
