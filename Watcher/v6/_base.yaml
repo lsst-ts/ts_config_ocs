@@ -259,7 +259,7 @@ rules:
       - sensor_name: "Weather tower air temperature"
     warning_level: 2
     critical_level: 1
-    hysteresis: 0.85
+    hysteresis: 1.0
     poll_interval: 1
     max_data_age: 30
 - classname: Humidity
