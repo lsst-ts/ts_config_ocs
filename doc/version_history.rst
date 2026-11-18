@@ -6,6 +6,18 @@ Version History
 
 .. towncrier release notes start
 
+v0.30.4 (2026-11-18)
+====================
+
+New Features
+------------
+
+- Updated Watcher configuration (SCC-33): WeatherStation & Simonyi Humidity alarms have been removed. (`RSO-1189 <https://rubinobs.atlassian.net//browse/RSO-1189>`_)
+- Updated Watcher configuration (SCC-33): Simonyi External DewPointDepression is now WeatherStation DewPointDepression and has the new limits (2°C/1°C) and new hysteresis (0.2 → 0.85°C). (`RSO-1189 <https://rubinobs.atlassian.net//browse/RSO-1189>`_)
+- Updated Watcher configuration (SCC-33): Simonyi DewPointDepression internal alarms are now separated into ESS 111, 112, and 113 alarms. Each is a warning alarm at 2°C. (`RSO-1189 <https://rubinobs.atlassian.net//browse/RSO-1189>`_)
+- Updated Watcher configuration (SCC-33): AT External DewPointDepression has been removed. (`RSO-1189 <https://rubinobs.atlassian.net//browse/RSO-1189>`_)
+
+
 v0.30.3 (2026-11-11)
 ====================
 
