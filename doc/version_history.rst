@@ -6,6 +6,15 @@ Version History
 
 .. towncrier release notes start
 
+v0.30.5 (2026-11-19)
+====================
+
+Other Changes and Additions
+---------------------------
+
+- Updated Watcher configuration (SCC-33): Changed DewPointDepression and Humidity alarm names to help clarify their location. (`RSO-1189 <https://rubinobs.atlassian.net//browse/RSO-1189>`_)
+
+
 v0.30.4 (2026-11-18)
 ====================
 
